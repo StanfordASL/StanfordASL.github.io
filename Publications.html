@@ -1,0 +1,27 @@
+---
+title: Publications
+permalink: /publications/
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+  <body id="page-top" class="index">
+  	{% include navbar.html %}
+  	<header>
+      <div class="container">
+        <br />
+        <p>Code can be found on our GitHub page: <a href="https://github.com/StanfordASL" target="_blank"><i class="fa fa-github fa-lg"></i> StanfordASL</a></p>
+        <div class="row">
+    	  <div class="col-md-12">
+    		{% bibliography -q @article %}
+        {% bibliography -q @inproceedings %}
+        {% bibliography -q @techreport %}
+        {% bibliography -q @phdthesis %}
+    	  </div>
+    	</div>
+      </div>
+    </header>
+    {% include javascript.html %}
+    {% include footer.html %}
+  </body>
+</html>

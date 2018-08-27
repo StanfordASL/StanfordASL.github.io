@@ -1,0 +1,43 @@
+branches:
+  only:
+    - master
+    - stage
+
+# ---
+#machine:
+#  environment:
+#    NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
+
+# ---
+dependencies:
+  pre:
+    - bundle install
+
+  post:
+    - bundle exec jekyll build
+  #post:
+  #  prod:
+  #    - bundle exec jekyll build
+    #stage:
+    #  - bundle exec jekyll build --config _config_stage.yml
+
+# ---
+test:
+  override:
+    - "true"
+#test:
+#  post:
+#    - bundle exec htmlproofer ./_site --check-html --disable-external
+
+# ---
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync _site s3://${PROD_BUCKET} --delete
+  stage:
+    branch: stage
+    commands:
+      - aws s3 sync _site s3://${STAGE_BUCKET} --delete
+
+# ---

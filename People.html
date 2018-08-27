@@ -1,0 +1,98 @@
+---
+title: People
+permalink: /people/
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="page-top" class="index">
+    {% include navbar.html %}
+      <header>
+      <div class="container">
+        
+        <div class="row">
+    	    <div class="col-sm-12">
+            <h1> <b>Faculty</b> </h1>
+          </div>
+          {% assign sortedPeople = site.people | sort: 'last' %}
+          {% for person in sortedPeople %}{% if person.position == "faculty" %}
+            <div class="col-sm-12">
+              <h3>{{ person.title }}</h3>
+            </div>
+              {% if person.img %}
+                <div class="col-sm-4">
+                  <a href={{person.url}}><img class="img-responsive" src="{{site.url}}{{site.baseurl}}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}" ></a>
+                </div>
+              {% endif %}
+            <div class="col-sm-8">
+              <p>{{ person.excerpt }}</p>
+            </div>
+          {% endif %}{% endfor %}
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h1> <b>Ph.D. Students and Postdocs</b> </h1>
+          </div>
+        </div>
+        {% assign loopindex = 0 %}
+        {% for person in sortedPeople %}{% if person.position == "postdoc" or person.position == "phd" %}   
+          {% assign loopindex = loopindex | plus: 1 %}
+          {% assign rowfinder = loopindex | modulo: 3 %}
+          {% if rowfinder == 1 %}
+          <div class="row">
+          {% endif %}
+            <div class="col-4 col-sm-4 col-md-4">
+              <h3><center>{{ person.title }}</center></h3>
+              {% if person.img %}
+              <a href={{person.url}}><img class="img-responsive img-resize" src="{{site.url}}{{site.baseurl}}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}"></a>
+              {% endif %}
+              {% if person.position == "postdoc" %}
+              <h6><center>Postdoctoral student</center></h6>
+              {% endif %}
+              <p><center>{{ person.excerpt }}</center></p>
+            </div>
+          {% if rowfinder == 0 %}
+          </div>
+          {% endif %}
+        {% endif %}{% endfor %}
+        {% if rowfinder != 0 %}
+          <!-- In case the last row has < 3 people. -->
+          </div>
+        {% endif %}
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h1> <b>Alumni</b> </h1>
+          </div>
+        </div>
+        {% assign loopindex = 0 %}
+        {% for person in sortedPeople %}{% if person.position == "alumni" %}   
+          {% assign loopindex = loopindex | plus: 1 %}
+          {% assign rowfinder = loopindex | modulo: 3 %}
+          {% if rowfinder == 1 %}
+          <div class="row">
+          {% endif %}
+            <div class="col-4 col-sm-4 col-md-4">
+              <h3><center>{{ person.title }}</center></h3>
+              {% if person.img %}
+              <a href={{person.url}}><img class="img-responsive img-resize" src="{{site.url}}{{site.baseurl}}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}"></a>
+              {% endif %}
+              <h6><center>{{ person.current }}</center></h6>
+              <p><center>{{ person.excerpt }}</center></p>
+            </div>
+          {% if rowfinder == 0 %}
+          </div>
+          {% endif %}
+        {% endif %}{% endfor %}
+        {% if rowfinder != 0 %}
+          <!-- In case the last row has < 3 people. -->
+          </div>
+        {% endif %}
+
+      </div>
+    </header>
+    {% include javascript.html %}
+    {% include footer.html %}
+  </body>
+</html>

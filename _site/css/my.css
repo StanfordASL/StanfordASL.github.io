@@ -1,0 +1,321 @@
+/* Text Highlighting */
+/*::selection {
+    background-color: #2864b7;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #2864b7;
+    color: #fff;
+}
+
+::-o-selection {
+    background-color: #2864b7;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: #2864b7;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background-color: #2864b7;
+    color: #fff;
+}*/
+
+/*Reduce max page width */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px; /* or 850px */
+}
+
+/*Title typography and colors */
+.navbar-brand, a .navbar-brand  {
+	font-weight: 500;
+ 	font-size: 2em;
+}
+.navbar-brand {
+  padding-top:5px !important; 
+  padding-bottom:0 !important; 
+} 
+.navbar {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  min-height: 30px !important;
+  margin-bottom: 0px;
+
+  -webkit-box-shadow: 0 -11px 6px 11px #000;
+  -moz-box-shadow: 0 -11px 6px 11px #000;
+  box-shadow: 0 -11px 6px 11px #000;
+}
+.navbar-nav{
+  margin-right: 0px;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #222;
+}
+.nav > li > a {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+.navbar-brand > img {
+  max-width: 100%;
+  max-height: 100%; 
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #222222;
+}
+/*Navbar colors*/
+.navbar-default {
+  background-color: #ffffff;
+  border-bottom-color: rgb(40, 100, 183);
+  border-bottom-width: 2px;
+  padding-bottom: 6px;
+}
+/*Link colors*/
+a, a:hover {
+  color: #494949; 
+}
+
+a:link, a:active, a:focus {
+  color: #222222;
+}
+
+li > span >a:link, a:active, a:focus, .entry-title {
+  color: #337ab7;
+}
+/*Overall typography: change font, less bold and more sharp*/
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;  
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* Anchors to account for header space */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+/* Tweaks to Jabref's CSS are in JabRef.css*/
+/*Image head*/
+header .img-head { /* Default is extra-small*/
+	display: block;
+	margin: auto;
+	border-radius: 6pt;
+	width: 330px;
+	max-width: 80%;
+	margin-bottom: 20pt;
+	/*margin-left: 24pt;
+	margin-right: 24pt;
+	margin-bottom: 24pt;
+	float: left;*/
+}
+
+@media (min-width: 544px) { /* Small */
+	header .img-head {width: 300px; max-width: 90%;}
+}
+@media (min-width: 768px) { /* Medium */
+	header .img-head {width: 330px; max-width: 90%;}
+}
+
+/* Images */
+/* img {margin: auto; margin-bottom: 1em;} */
+
+/* Inspired by freelancer.css, distributed under a MIT license*/
+header .container {
+  padding-top: 75px;
+  padding-bottom: 10px;
+  /*display: flex;*/
+  align-items: center;
+}
+header img {
+  display: block;
+/*  margin: 0 auto 20px; */
+  max-width: 100%;
+}
+header .intro-text .name {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+  vertical-align: middle
+}
+header .intro-text .skills {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* **** PUBLICATIONS STYLES ***** */
+.entry, .infolinks{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.abstract, .bibtex {
+  max-width: 100%;
+}
+
+/*.section-even {background: #fafafa;} */
+
+/* Edit this to get a different collapse behavior */
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+      display:block !important;
+      margin-top: 5px;
+  }
+  .collapsing{
+    margin-top: 5px;
+  }
+
+  /* Twitter */
+  .twitter-feed {
+    display: none;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.list-group-flush .list-group-item {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.list-group-flush .first-child {
+  border-top: 0;
+}
+
+
+/* Centering */
+.col-horizontal-center {
+  float: none;
+  margin: 0 auto;
+}
+
+.col-vertical-center {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.centered-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Front Page Carousel */
+#myCarousel {
+  margin-bottom: 10px;
+}
+
+#myCarousel #carouselDots {
+  bottom: -10px;
+}
+
+#myCarousel #carouselText {
+  padding: 10px 0px 35px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: -11px;
+  right: 0%;
+  left: 0%;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+/* Project Page */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid grey;
+  margin: 15px 0 15px 0;
+}
+
+/*.footer-line {
+  border-top: 1px solid rgb(40, 100, 183);
+  margin: 15px 0 5px 0;
+}*/
+
+/* Image Resizing */
+.img-resize {
+  width: 100%;
+  height: 100%;
+}
+
+/* Copyright */
+.copyright-text {
+  padding: 10px 0;
+  margin-top: 15px;
+  font-size: 13px;
+  color: white;
+  background-color: rgb(40, 100, 183);
+  text-align: center;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+footer {
+  display:none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+}
