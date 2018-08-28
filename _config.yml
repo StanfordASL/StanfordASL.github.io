@@ -24,6 +24,7 @@ github_username:  StanfordASL
 
 # Build settings
 markdown: kramdown
+encoding: utf-8
 theme: minima
 gems:
   - jekyll-feed
