@@ -1,4 +1,5 @@
 <head>
+    {% include relBase.html %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,7 @@
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Crimson+Text:400,400italic,700,600" rel="stylesheet" type="text/css">
 	<!-- JabRef CSS -->
-	<link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/css/JabRef.css">
+	<link rel="stylesheet" href="{{ relBase }}css/JabRef.css">
 	 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> 
     <!-- Not required -->
@@ -21,7 +22,7 @@
     <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     
     <!-- My CSS -->
-    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/css/my.css"> 
+    <link rel="stylesheet" href="{{ relBase }}css/my.css"> 
 
     <!-- Analytics -->
     {% if jekyll.environment == 'production' %}

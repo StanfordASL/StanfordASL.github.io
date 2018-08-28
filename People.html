@@ -5,6 +5,7 @@ permalink: /people/
 <!DOCTYPE html>
 <html>
   {% include head.html %}
+  {% include relBase.html %}
   <body id="page-top" class="index">
     {% include navbar.html %}
       <header>
@@ -21,7 +22,7 @@ permalink: /people/
             </div>
               {% if person.img %}
                 <div class="col-sm-4">
-                  <a href={{person.url}}><img class="img-responsive" src="{{site.url}}{{site.baseurl}}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}" ></a>
+                  <a href={{person.url}}><img class="img-responsive" src="{{ relBase }}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}" ></a>
                 </div>
               {% endif %}
             <div class="col-sm-8">
@@ -45,7 +46,7 @@ permalink: /people/
             <div class="col-4 col-sm-4 col-md-4">
               <h3><center>{{ person.title }}</center></h3>
               {% if person.img %}
-              <a href={{person.url}}><img class="img-responsive img-resize" src="{{site.url}}{{site.baseurl}}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}"></a>
+              <a href={{person.url}}><img class="img-responsive img-resize" src="{{ relBase }}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}"></a>
               {% endif %}
               {% if person.position == "postdoc" %}
               <h6><center>Postdoctoral student</center></h6>
@@ -76,7 +77,7 @@ permalink: /people/
             <div class="col-4 col-sm-4 col-md-4">
               <h3><center>{{ person.title }}</center></h3>
               {% if person.img %}
-              <a href={{person.url}}><img class="img-responsive img-resize" src="{{site.url}}{{site.baseurl}}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}"></a>
+              <a href={{person.url}}><img class="img-responsive img-resize" src="{{ relBase }}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}"></a>
               {% endif %}
               <h6><center>{{ person.current }}</center></h6>
               <p><center>{{ person.excerpt }}</center></p>

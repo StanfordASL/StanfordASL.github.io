@@ -5,6 +5,7 @@ permalink: /press/
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+{% include relBase.html %}
 <body id="page-top" class="index">
   {% include navbar.html %}
   <header>
@@ -21,7 +22,7 @@ permalink: /press/
       {% endif %}
       <div class="row centered-contents">
         <div class="col-md-4 hide-on-mobile">
-          <a href={{release.source_url}}><img class="img-responsive" src="{{site.url}}{{site.baseurl}}{{release.imgurl}}{{release.img}}" alt="{{ release.alt_text }}"></a>
+          <a href={{release.source_url}}><img class="img-responsive" src="{{ relBase }}{{release.imgurl}}{{release.img}}" alt="{{ release.alt_text }}"></a>
         </div>
         <div class="col-md-8">
           <h4><b><a href={{release.source_url}}>{{release.title}}</a></b></h4>

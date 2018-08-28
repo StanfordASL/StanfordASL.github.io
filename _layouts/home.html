@@ -4,6 +4,7 @@ title: {{site.title}}
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+{% include relBase.html %}
 <body id="page-top" class="index">
   {% include navbar.html %}
   <header>
@@ -34,7 +35,7 @@ title: {{site.title}}
               {% else %}
               <div class="item">
               {% endif %}
-                <img src="{{site.url}}{{site.baseurl}}{{slide.imgurl}}{{slide.img}}" alt="{{slide.alt_text}}">
+                <img src="{{ relBase }}{{slide.imgurl}}{{slide.img}}" alt="{{slide.alt_text}}">
                 <div id="carouselText" class="carousel-caption">
                   {{slide.alt_text}}
                 </div>

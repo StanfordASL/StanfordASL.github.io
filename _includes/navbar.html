@@ -1,4 +1,5 @@
 <!-- Navigation -->
+{% include relBase.html %}
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -10,8 +11,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{site.url}}{{site.baseurl}}">
-                    <img src="{{site.url}}{{site.baseurl}}/img/ASL_Logo.svg" alt="">
+                <a class="navbar-brand" href="{{ relBase }}">
+                    <img src="{{ relBase }}img/ASL_Logo.svg" alt="">
                 </a>
             </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,25 +22,25 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{ site.url }}{{{site.baseurl}}">Home</a>
+                        <a href="{{ relBase }}">Home</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{ site.url }}{{{site.baseurl}}/projects">Projects</a>
+                        <a href="{{ relBase }}projects">Projects</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{ site.url }}{{{site.baseurl}}/publications">Publications</a>
+                        <a href="{{ relBase }}publications">Publications</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{ site.url }}{{{site.baseurl}}/people">People</a>
+                        <a href="{{ relBase }}people">People</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{ site.url }}{{{site.baseurl}}/press">In the Press</a>
+                        <a href="{{ relBase }}press">In the Press</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{ site.url }}{{{site.baseurl}}/gallery">Gallery</a>
+                        <a href="{{ relBase }}gallery">Gallery</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{ site.url }}{{{site.baseurl}}/contact">Contact</a>
+                        <a href="{{ relBase }}contact">Contact</a>
                     </li>
                 </ul>
             </div>
