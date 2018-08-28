@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+{% include relBase.html %}
   <body id="page-top" class="index">
     {% include navbar.html %}
     <header>
@@ -12,7 +13,7 @@
         </div>
         <div class="row">
   	      <div class="col-md-4 col-xs-12 col-vertical-center">
-  	        {% if page.img %}  <img src="{{site.url}}{{site.baseurl}}{{page.imgurl}}{{page.img}}" alt="{{ page.title }}" class="img-responsive center-block">{% endif %}
+  	        {% if page.img %}  <img src="{{ relBase }}{{page.imgurl}}{{page.img}}" alt="{{ page.title }}" class="img-responsive center-block">{% endif %}
   		    </div><!--
        --><div class="col-md-8 col-xs-12 col-vertical-center">
     		    {{ page.content }}
