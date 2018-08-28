@@ -1,0 +1,72 @@
+<html>
+<title>ASL IT infrastructure</title>
+
+
+
+
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/ASLlight.css">
+</head>
+<body>
+
+<h1>ASL IT infrastructure</h1>
+<h3> Updated: November 28, 2017</h3>
+
+<b>Jump to: </b> <a href="#website"> the website</a>, <a href="#segovia">Segovia</a>, <a href="#phobos">Phobos</a>, <a href="#medicean">GPU machines</a>, <a href="#other">other machines</a>, <a href="#portable">laptops and tablets</a>, <a href="#licenses">MATLAB licenses</a>.
+
+<h2 id="website">The website</h2>
+
+<p align="justify"> The ASL website is accessible at asl.stanford.edu . It is hosted on Stanford infrastructure. The website runs Wordpress.</p>
+<p align="justify">The website is on the lab AFS (/afs/ir/group/asl/cgi-bin/wordpress/). To gain access to the AFS, a user that is currently a member of asl-admins should log into any FarmShare system (e.g., cardinal.stanford.edu) and run the following command for each new admin, replacing SUNETID as appropriate:<br>
+
+<code>pts adduser -user SUNETID -group asl-admins</code>
+<br>
+To gain access to the Wordpress install, a current admin should add the user from the WP panel.</p>
+<p align="justify">The current sysadmins for the ASL website are Ed Schmerling (schmrlng) and Federico Rossi (frossi2). </p>
+
+<p align="justify">Website load times are sometimes slow. We believe this is due to the host machine. <a href=http://web.stanford.edu/group/asl/SpeedTest/ASLSpeedHistory>This page</a> monitors load times every 15 minutes since August 2015.</p>
+
+<h2 id="segovia">Segovia</h2>
+<p align="justify">Segovia is a HP Proliant DL380e Gen8 server running Windows Server 2012. It is located in Rack 3/11-12U of the Huang 002 datacenter. Access to the datacenter and hardware support is provided by School of Engineering IT (SoEIT).</p>
+<p align="justify">Segovia is accessible via Microsoft Remote Desktop at segovia.stanford.edu . Access via Remote Desktop is only allowed from the Stanford VPN. To get an administrative account on Segovia, talk to the current sysadmins.</p>
+<p align="justify">Segovia hosts a SVN server (served through https at https://segovia.stanford.edu/svn/) managed with VisualSVN. The SVN server is accessible from the whole Internet.
+Segovia also hosts a FTP-SSL server (served through ftpes://segovia.stanford.edu) managed with FileZilla Server. The FTP server is accessible from the Stanford VPN only.</p>
+
+<p align="justify">The iLOM module for Segovia, which allows to shut down and restart the machine remotely, is accessible from the Stanford VPN at segovia-ilom.stanford.edu. Prof. Pavone is the custodian of the login credentials.</p>
+
+<p align="justify">The current sysadmins of Segovia are Federico Rossi (frossi2) and Andrew Bylard (bylard). Note: all sysadmins should be subscribed to the <a href="https://mailman.stanford.edu/mailman/listinfo/hecserverroomoccupants"><i>hecserverroomoccupants</i></a> mailing list, managed by SoEIT.</p>
+
+<h2 id="phobos">Phobos</h2>
+<p align="justify"> Phobos is a custom-build desktop machine running Ubuntu 16.04. It is hosted in Durand 009 (under Stefan's desk).</p>
+<p align="justify">Phobos is accessible via ssh at phobos.stanford.edu . Access is only allowed from the <a href="https://uit.stanford.edu/service/vpn">Stanford VPN</a>. Note that you need to be on the Stanford VPN even if you are connecting from campus!
+<!-- An exception: if you are on the NETGEAR19 network in Room 9, you do not need to be on VPN. -->
+To get an account on Phobos, talk to the current sysadmins.</p>
+<p align="justify">Phobos does not currently expose publicly available services other than ssh. Individual users may have their own services exposed to the Stanford VPN.
+Phobos also hosts a full backup of Segovia's ASL SVN repository (at the time of writing, only the ASL repository is backed up).</p>
+<p align="justify">Phobos does not have a iLOM module.</p>
+
+<p align="justify">The current sysadmins of Phobos are Ed Schmerling (schmrlng) and Federico Rossi (frossi2).
+
+<h2 id="medicean">GPU workstations: Io, Europa, Ganymede, and Callisto</h2>
+<p align="justify">The lab has 4+1 workstations for GPU-heavy workloads. Io, Europa, Ganymede and Callisto have AMD Ryzen 1700X processors and a combination of NVIDIA GTX 1080 and Titan graphics cards. Ceres is a small-form-factor computer for embedded automotive applications.</p>
+<p align="justify">The sysadmins are James (Io), Ed (Europa, Callisto, and Ceres), Brian (Ganymede), and Karen (Callisto and Ceres). Access policies to the GPU workstations vary: to get access to one or more of the machines, ask the sysadmins.</p>
+
+<h2 id="other">Other machines: Deimos, Skynet and Sputnik</h2>
+<p align="justify">Deimos, Skynet and Sputnik are Windows workstations hosted in Durand 009b (Deimos and Skynet) and Durand 010 (Sputnik).</p>
+<p align="justify">Skynet acts as the server for the Vicon system installed in 009b. Sputnik acts as the server for the Optitrack system installed in Durand 010. Deimos is primarily a CAD machine.</p>
+<p align="justify">Deimos, Skynet an Sputnik are not remotely accessible and they have a single user, "ASL". There is no designated sysadmin for these machines. To gain (local) access to one of these machines, talk to any lab member.</p>
+
+<h2 id="portable">Laptops and tablets</h2>
+<p align="justify">The lab owns a Razer laptop (2016), a Acer laptop (2016) <strike>three</strike> two 2012 Lenovo Ideapad laptops, a 2016 13'' Macbook Pro and one older HP laptop. When not in use, they can be found on the bookshelves below the printer in Durand 009. To use a laptop, ask Andrew or Federico.</p>
+<p align="justify">The lab also owns an iPad Air, mainly used for poster presentations. The iPad lives on the bookshelves under the printer. For access, ask Ben (bhockman).</p>
+<p align="justify">The lab also owns a couple of general-purpose oDroid embedded computers (in addition to the Space Robotics Facility's dedicated computers). Ask Stefan (stefantj) if you need to use them.</p>
+
+
+<h2 id="licenses"> MATLAB licenses</h2>
+<p align="justify"> The lab has access to seven network MATLAB licenses. If you need access to a license, contact Andrew.</p>
+</body>
+</html>
+
+<!-- V1.2, 2017/11/28: added information about GPU machines (Medicean moons), updated number of available MATLAB licenses. -->
+<!-- Update 20170220: removed reference to asl-new VM, added link to ASL website speed test, updated Phobos OS from Ubuntu 14.04 to 16.04 -Federico -->
+<!-- Made with (L) by Federico, April 21, 2016 -->

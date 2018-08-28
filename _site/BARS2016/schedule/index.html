@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/BARS2016/">
+    <title>
+    Schedule | BARS 2016
+    </title>
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Custom Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+      
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/main.css">
+      
+    </head>
+    <body id = "schedule">
+      <header>
+        <a href="">
+          <h1 class="site-title active">
+          </h1>
+        </a>
+        <nav>
+          <ul>
+            <li class="item homenav">
+              <a href="" class="homenav">
+                Home
+              </a>
+            </li>
+            <li class="item schedulenav">
+              <a href="schedule/" class="schedulenav">
+                Schedule
+              </a>
+            </li>
+            <li class="item registrationnav">
+              <a href="registration/" class="registrationnav">
+                Registration
+              </a>
+            </li>
+            <li class="item participantsnav">
+              <a href="participants/" class="participantsnav">
+                Participants
+              </a>
+            </li>
+            <li class="item directionsnav">
+              <a href="directions/" class="directionsnav">
+                Directions
+              </a>
+            </li>
+            <li class="item parkingnav">
+              <a href="parking/" class="parkingnav">
+                Parking
+              </a>
+            </li>
+            <li class="item diningnav">
+              <a href="dining/" class="diningnav">
+                Dining
+              </a>
+            </li>
+            <li class="item wifinav">
+              <a href="wifi/" class="wifinav">
+                WiFi
+              </a>
+            </li>
+            <li class="item contactnav">
+              <a href="contact/" class="contactnav">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <script>
+function updateDetailedSchedule(i) {
+  // if (window.innerWidth > 700) {
+  if (false) {
+    switch(i) {
+      case 1:
+        document.getElementById("detailed-schedule").innerHTML = "<h4 id=faculty-and-industry-talks-1>Faculty and Industry Talks 1</h4><table><thead><tr><th>Time</th><th>Name</th><th>Affiliation</th></tr></thead><tbody><tr><td>09:10am - 09:22am</td><td><a href=http://charm.stanford.edu/Main/AllisonOkamura/> Allison Okamura </a></td><td>Stanford University</td></tr><tr><td>09:22am - 09:34am</td><td><a href=https://people.eecs.berkeley.edu/~anca/> Anca Dragan </a></td><td>UC Berkeley</td></tr><tr><td>09:34am - 09:46am</td><td><a href=https://engineering.stanford.edu/people/sean-follmer> Sean Follmer </a></td><td>Stanford University</td></tr><tr><td>09:46am - 09:58am</td><td><a href=http://web.stanford.edu/~pavone/> Marco Pavone </a></td><td>Stanford University</td></tr></tbody></table>";
+        break;
+      case 2:
+        document.getElementById("detailed-schedule").innerHTML = "<h4 id=faculty-and-industry-talks-2>Faculty and Industry Talks 2</h4><table><thead><tr><th>Time</th><th>Name</th><th>Affiliation</th></tr></thead><tbody><tr><td>11:10am - 11:22am</td><td><a href=http://www.wendyju.com/> Wendy Ju </a></td><td>Stanford University</td></tr><tr><td>11:22am - 11:34am</td><td><a href=https://people.eecs.berkeley.edu/~svlevine/> Sergey Levine </a></td><td>UC Berkeley</td></tr><tr><td>11:34am - 11:46am</td><td><a href=https://med.stanford.edu/profiles/david-camarillo> David Camarillo </a></td><td>Stanford University</td></tr><tr><td>11:46am - 11:58am</td><td><a href=http://goldberg.berkeley.edu/> Ken Goldberg </a></td><td>UC Berkeley</td></tr><tr><td>11:58am - 12:10pm</td><td><a href=https://www.skydio.com/> Adam Bry </a></td><td>Skydio</td></tr></tbody></table>";
+        break;
+      case 3:
+        document.getElementById("detailed-schedule").innerHTML = "<h4 id=faculty-and-industry-talks-3>Faculty and Industry Talks 3</h4><table><thead><tr><th>Time</th><th>Name</th><th>Affiliation</th></tr></thead><tbody><tr><td>02:10pm - 02:22pm</td><td><a href=https://people.eecs.berkeley.edu/~pabbeel/> Pieter Abbeel </a></td><td>UC Berkeley</td></tr><tr><td>02:22pm - 02:34pm</td><td><a href=https://web.stanford.edu/~schwager/> Mac Schwager </a></td><td>Stanford University</td></tr><tr><td>02:34pm - 02:46pm</td><td><a href=http://cs.stanford.edu/groups/manips/people/oussama-khatib/> Oussama Khatib </a></td><td>Stanford University</td></tr><tr><td>02:46pm - 02:58pm</td><td><a href=http://www.cse.usf.edu/~yusun/> Yu Sun </a></td><td>Stanford University / University of South Florida</td></tr><tr><td>02:58pm - 03:10pm</td><td><a href=https://www.linkedin.com/in/karenkaushansky> Karen Kaushansky </a></td><td>Zoox</td></tr></tbody></table>";
+        break;
+      case 4:
+        document.getElementById("detailed-schedule").innerHTML = "<h4 id=faculty-and-industry-talks-4>Faculty and Industry Talks 4</h4><table><thead><tr><th>Time</th><th>Name</th><th>Affiliation</th></tr></thead><tbody><tr><td>04:20pm - 04:32pm</td><td><a href=http://robotics.eecs.berkeley.edu/~ronf/> Ron Fearing </a></td><td>UC Berkeley</td></tr><tr><td>04:32pm - 04:44pm</td><td><a href=http://www-cdr.stanford.edu/~cutkosky/> Mark Cutkosky </a></td><td>Stanford University</td></tr><tr><td>04:44pm - 04:56pm</td><td><a href=https://hybrid.soe.ucsc.edu/> Ricardo Sanfelice </a></td><td>UC Santa Cruz</td></tr><tr><td>04:56pm - 05:08pm</td><td><a href=https://www.nasa.gov/audience/foreducators/robotics/careercorner/Terry_Fong.html#.V-m-YvArJhE> Terry Fong (NASA) </a></td><td>NASA Ames</td></tr><tr><td>05:08pm - 05:20pm</td><td><a href=http://www.leilatakayama.org/wp/about-leila/> Leila Takayama </a></td><td>UC Santa Cruz</td></tr><tr><td>05:20pm - 05:32pm</td><td><a href=http://www.eecs.berkeley.edu/~bajcsy/> Ruzena Bajcsy </a></td><td>UC Berkeley</td></tr></tbody></table>";
+        break;
+      case 5:
+        document.getElementById("detailed-schedule").innerHTML = "<h4 id=spotlight-talks-1>Spotlight Talks 1</h4><table><thead><tr><th></th><th>Time</th><th>Name</th><th>Affiliation</th></tr></thead><tbody><tr><td>1</td><td>10:02am</td><td>Lorenzo Riano</td><td>Bosch</td></tr><tr><td>2</td><td>10:04am</td><td>Jiafeng Zhu</td><td>Huawei</td></tr><tr><td>3</td><td>10:00am</td><td>James Kuffner</td><td>Toyota Research Institute</td></tr><tr><td>4</td><td>10:06am</td><td>Iro Armeni</td><td>Stanford University</td></tr><tr><td>5</td><td>10:07am</td><td>Chris Choy</td><td>Stanford University</td></tr><tr><td>6</td><td>10:08am</td><td>Eric Cristofalo</td><td>Stanford University</td></tr><tr><td>7</td><td>10:10am</td><td>Ben Hockman</td><td>Stanford University</td></tr><tr><td>8</td><td>10:11am</td><td>Sandy Huang</td><td>UC Berkeley</td></tr><tr><td>9</td><td>10:12am</td><td>Sanjay Krishnan</td><td>UC Berkeley</td></tr><tr><td>10</td><td>10:13am</td><td>Changliu Liu</td><td>UC Berkeley</td></tr><tr><td>11</td><td>10:14am</td><td>Laura Matloff</td><td>Stanford University</td></tr><tr><td>12</td><td>10:15am</td><td>Brian Mok</td><td>Stanford University</td></tr><tr><td>13</td><td>10:16am</td><td>Fereshteh Sadeghi</td><td>UC Berkeley</td></tr><tr><td>14</td><td>10:17am</td><td>Sam Schorr</td><td>Stanford University</td></tr><tr><td>15</td><td>10:18am</td><td>Hannah Stuart</td><td>Stanford University</td></tr><tr><td>16</td><td>10:19am</td><td>Aviv Tamar</td><td>UC Berkeley</td></tr><tr><td>17</td><td>10:20am</td><td>Edward Zhu</td><td>UC Berkeley</td></tr></tbody></table>";
+        break;
+      case 6:
+        document.getElementById("detailed-schedule").innerHTML = "<h4 id=spotlight-talks-2>Spotlight Talks 2</h4><table><thead><tr><th></th><th>Time</th><th>Name</th><th>Affiliation</th></tr></thead><tbody><tr><td>1</td><td>03:10pm</td><td>Steve Cousins</td><td>Savioke</td></tr><tr><td>2</td><td>03:12pm</td><td>Hanns Anders</td><td>iRobot</td></tr><tr><td>3</td><td>03:14pm</td><td>Jesse Levinson</td><td>Zoox</td></tr><tr><td>4</td><td>03:16pm</td><td>Yuhang Che</td><td>Stanford University</td></tr><tr><td>5</td><td>03:17pm</td><td>Mo Chen</td><td>UC Berkeley</td></tr><tr><td>6</td><td>03:18pm</td><td>Mallory Daly</td><td>UC Berkeley</td></tr><tr><td>7</td><td>03:19pm</td><td>David Held</td><td>UC Berkeley</td></tr><tr><td>8</td><td>03:20pm</td><td>Sylvia Herbert</td><td>UC Berkeley</td></tr><tr><td>9</td><td>03:21pm</td><td>Gregory Kahn</td><td>UC Berkeley</td></tr><tr><td>10</td><td>03:22pm</td><td>Michael David Laskey</td><td>UC Berkeley</td></tr><tr><td>11</td><td>03:23pm</td><td>Jeff Mahler</td><td>UC Berkeley</td></tr><tr><td>12</td><td>03:24pm</td><td>Mike Roberts</td><td>Stanford University</td></tr><tr><td>13</td><td>03:25pm</td><td>Dorsa Sadigh</td><td>UC Berkeley</td></tr><tr><td>14</td><td>03:26pm</td><td>Jake Sganga</td><td>Stanford University</td></tr><tr><td>15</td><td>03:27pm</td><td>Sumeet  Singh</td><td>Stanford University</td></tr><tr><td>16</td><td>03:28pm</td><td>Catherine Smith</td><td>Stanford University</td></tr><tr><td>17</td><td>03:29pm</td><td>Amanda Stowers</td><td>Stanford University</td></tr><tr><td>18</td><td>03:30pm</td><td>Zijian Wang</td><td>Stanford University</td></tr></tbody></table>";
+        break;
+    }
+  } else {
+    switch(i) {
+      case 1:
+        window.location = "schedule/#Session1";
+        break;
+      case 2:
+        window.location = "schedule/#Session2";
+        break;
+      case 3:
+        window.location = "schedule/#Session3";
+        break;
+      case 4:
+        window.location = "schedule/#Session4";
+        break;
+      case 5:
+        window.location = "schedule/#Session5";
+        break;
+      case 6:
+        window.location = "schedule/#Session6";
+        break;
+    }
+  }
+}
+</script>
+
+<main>
+<article>
+<!-- <a href="/schedule/"><h2 class="title active red">Schedule</h2></a> -->
+<br>
+<div class="content schedule">
+<table><thead>
+<tr>
+<th>Program</th>
+<th>November 18, 2016</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>8:45am onward</td>
+<td>Registration</td>
+</tr>
+<tr>
+<td>9:00am - 9:10am</td>
+<td>Welcome</td>
+</tr>
+<tr>
+<td>9:10am - 10:00am</td>
+<td><a onclick="updateDetailedSchedule(1);"> Faculty and Industry Talks 1 </a></td>
+</tr>
+<tr>
+<td>10:00am - 10:20am</td>
+<td><a onclick="updateDetailedSchedule(5);"> Spotlight Talks 1 </a></td>
+</tr>
+<tr>
+<td>10:20am - 11:10am</td>
+<td>Bosch Coffee Break Poster Session 1</td>
+</tr>
+<tr>
+<td>11:10am - 12:10pm</td>
+<td><a onclick="updateDetailedSchedule(2);"> Faculty and Industry Talks 2 </a></td>
+</tr>
+<tr>
+<td>12:10pm - 1:40pm</td>
+<td>Lunch Break</td>
+</tr>
+<tr>
+<td>1:40pm - 2:10pm</td>
+<td>Invited Talk: <a href="https://people.eecs.berkeley.edu/~russell/"> Stuart Russell </a></td>
+</tr>
+<tr>
+<td>2:10pm - 3:10pm</td>
+<td><a onclick="updateDetailedSchedule(3);"> Faculty and Industry Talks 3 </a></td>
+</tr>
+<tr>
+<td>3:10pm - 3:30pm</td>
+<td><a onclick="updateDetailedSchedule(6);"> Spotlight Talks 2 </a></td>
+</tr>
+<tr>
+<td>3:30pm - 4:20pm</td>
+<td>Coffee Break Poster Session 2</td>
+</tr>
+<tr>
+<td>4:20pm - 5:30pm</td>
+<td><a onclick="updateDetailedSchedule(4);"> Faculty and Industry Talks 4 </a></td>
+</tr>
+</tbody></table>
+
+</div>
+<div class="content detailed-schedule" id = "detailed-schedule">
+<h4 id="faculty-and-industry-talks-1">Faculty and Industry Talks 1</h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>09:10am - 09:22am</td>
+<td><a href="http://charm.stanford.edu/Main/AllisonOkamura/"> Allison Okamura </a></td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>09:22am - 09:34am</td>
+<td><a href="https://people.eecs.berkeley.edu/~anca/"> Anca Dragan </a></td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>09:34am - 09:46am</td>
+<td><a href="https://engineering.stanford.edu/people/sean-follmer"> Sean Follmer </a></td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>09:46am - 09:58am</td>
+<td><a href="http://web.stanford.edu/~pavone/"> Marco Pavone </a></td>
+<td>Stanford University</td>
+</tr>
+</tbody></table>
+
+</div>
+
+<hr>
+
+<div class="content full-schedule" id = "full-schedule">
+<h3> Full Schedule </h3>
+
+<div class="table100">
+<a id = "Session1"> </a>
+<h4 id="faculty-and-industry-talks-1">Faculty and Industry Talks 1</h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>09:10am - 09:22am</td>
+<td><a href="http://charm.stanford.edu/Main/AllisonOkamura/"> Allison Okamura </a></td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>09:22am - 09:34am</td>
+<td><a href="https://people.eecs.berkeley.edu/~anca/"> Anca Dragan </a></td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>09:34am - 09:46am</td>
+<td><a href="https://engineering.stanford.edu/people/sean-follmer"> Sean Follmer </a></td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>09:46am - 09:58am</td>
+<td><a href="http://web.stanford.edu/~pavone/"> Marco Pavone </a></td>
+<td>Stanford University</td>
+</tr>
+</tbody></table>
+
+</div>
+
+<div class="table100">
+<a id = "Session2"> </a>
+<h4 id="faculty-and-industry-talks-2">Faculty and Industry Talks 2</h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>11:10am - 11:22am</td>
+<td><a href="http://www.wendyju.com/"> Wendy Ju </a></td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>11:22am - 11:34am</td>
+<td><a href="https://people.eecs.berkeley.edu/~svlevine/"> Sergey Levine </a></td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>11:34am - 11:46am</td>
+<td><a href="https://med.stanford.edu/profiles/david-camarillo"> David Camarillo </a></td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>11:46am - 11:58am</td>
+<td><a href="http://goldberg.berkeley.edu/"> Ken Goldberg </a></td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>11:58am - 12:10pm</td>
+<td><a href="https://www.skydio.com/"> Adam Bry </a></td>
+<td>Skydio</td>
+</tr>
+</tbody></table>
+
+</div>
+
+<div class="table100">
+<a id = "Session3"> </a>
+<h4 id="faculty-and-industry-talks-3">Faculty and Industry Talks 3</h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>02:10pm - 02:22pm</td>
+<td><a href="https://people.eecs.berkeley.edu/~pabbeel/"> Pieter Abbeel </a></td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>02:22pm - 02:34pm</td>
+<td><a href="https://web.stanford.edu/~schwager/"> Mac Schwager </a></td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>02:34pm - 02:46pm</td>
+<td><a href="http://cs.stanford.edu/groups/manips/people/oussama-khatib/"> Oussama Khatib </a></td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>02:46pm - 02:58pm</td>
+<td><a href="http://www.cse.usf.edu/~yusun/"> Yu Sun </a></td>
+<td>Stanford University / University of South Florida</td>
+</tr>
+<tr>
+<td>02:58pm - 03:10pm</td>
+<td><a href="https://www.linkedin.com/in/karenkaushansky"> Karen Kaushansky </a></td>
+<td>Zoox</td>
+</tr>
+</tbody></table>
+
+</div>
+
+<div class="table100">
+<a id = "Session4"> </a>
+<h4 id="faculty-and-industry-talks-4">Faculty and Industry Talks 4</h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>04:20pm - 04:32pm</td>
+<td><a href="http://robotics.eecs.berkeley.edu/~ronf/"> Ron Fearing </a></td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>04:32pm - 04:44pm</td>
+<td><a href="http://www-cdr.stanford.edu/~cutkosky/"> Mark Cutkosky </a></td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>04:44pm - 04:56pm</td>
+<td><a href="https://hybrid.soe.ucsc.edu/"> Ricardo Sanfelice </a></td>
+<td>UC Santa Cruz</td>
+</tr>
+<tr>
+<td>04:56pm - 05:08pm</td>
+<td><a href="https://www.nasa.gov/audience/foreducators/robotics/careercorner/Terry_Fong.html#.V-m-YvArJhE"> Terry Fong (NASA) </a></td>
+<td>NASA Ames</td>
+</tr>
+<tr>
+<td>05:08pm - 05:20pm</td>
+<td><a href="http://www.leilatakayama.org/wp/about-leila/"> Leila Takayama </a></td>
+<td>UC Santa Cruz</td>
+</tr>
+<tr>
+<td>05:20pm - 05:32pm</td>
+<td><a href="http://www.eecs.berkeley.edu/~bajcsy/"> Ruzena Bajcsy </a></td>
+<td>UC Berkeley</td>
+</tr>
+</tbody></table>
+
+</div>
+
+<div class="table100">
+<a id = "Session5"> </a>
+<h4 id="spotlight-talks-1">Spotlight Talks 1</h4>
+
+<table><thead>
+<tr>
+<th></th>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>10:02am</td>
+<td>Lorenzo Riano</td>
+<td>Bosch</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10:04am</td>
+<td>Jiafeng Zhu</td>
+<td>Huawei</td>
+</tr>
+<tr>
+<td>3</td>
+<td>10:00am</td>
+<td>James Kuffner</td>
+<td>Toyota Research Institute</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10:06am</td>
+<td>Iro Armeni</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>5</td>
+<td>10:07am</td>
+<td>Chris Choy</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>6</td>
+<td>10:08am</td>
+<td>Eric Cristofalo</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>7</td>
+<td>10:10am</td>
+<td>Ben Hockman</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>8</td>
+<td>10:11am</td>
+<td>Sandy Huang</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10:12am</td>
+<td>Sanjay Krishnan</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>10</td>
+<td>10:13am</td>
+<td>Changliu Liu</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>11</td>
+<td>10:14am</td>
+<td>Laura Matloff</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>12</td>
+<td>10:15am</td>
+<td>Brian Mok</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>13</td>
+<td>10:16am</td>
+<td>Fereshteh Sadeghi</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>14</td>
+<td>10:17am</td>
+<td>Sam Schorr</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>15</td>
+<td>10:18am</td>
+<td>Hannah Stuart</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>16</td>
+<td>10:19am</td>
+<td>Aviv Tamar</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>17</td>
+<td>10:20am</td>
+<td>Edward Zhu</td>
+<td>UC Berkeley</td>
+</tr>
+</tbody></table>
+
+</div>
+
+<div class="table100">
+<a id = "Session6"> </a>
+<h4 id="spotlight-talks-2">Spotlight Talks 2</h4>
+
+<table><thead>
+<tr>
+<th></th>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>03:10pm</td>
+<td>Steve Cousins</td>
+<td>Savioke</td>
+</tr>
+<tr>
+<td>2</td>
+<td>03:12pm</td>
+<td>Hanns Anders</td>
+<td>iRobot</td>
+</tr>
+<tr>
+<td>3</td>
+<td>03:14pm</td>
+<td>Jesse Levinson</td>
+<td>Zoox</td>
+</tr>
+<tr>
+<td>4</td>
+<td>03:16pm</td>
+<td>Yuhang Che</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>5</td>
+<td>03:17pm</td>
+<td>Mo Chen</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>6</td>
+<td>03:18pm</td>
+<td>Mallory Daly</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>7</td>
+<td>03:19pm</td>
+<td>David Held</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>8</td>
+<td>03:20pm</td>
+<td>Sylvia Herbert</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>9</td>
+<td>03:21pm</td>
+<td>Gregory Kahn</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>10</td>
+<td>03:22pm</td>
+<td>Michael David Laskey</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>11</td>
+<td>03:23pm</td>
+<td>Jeff Mahler</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>12</td>
+<td>03:24pm</td>
+<td>Mike Roberts</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>13</td>
+<td>03:25pm</td>
+<td>Dorsa Sadigh</td>
+<td>UC Berkeley</td>
+</tr>
+<tr>
+<td>14</td>
+<td>03:26pm</td>
+<td>Jake Sganga</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>15</td>
+<td>03:27pm</td>
+<td>Sumeet  Singh</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>16</td>
+<td>03:28pm</td>
+<td>Catherine Smith</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>17</td>
+<td>03:29pm</td>
+<td>Amanda Stowers</td>
+<td>Stanford University</td>
+</tr>
+<tr>
+<td>18</td>
+<td>03:30pm</td>
+<td>Zijian Wang</td>
+<td>Stanford University</td>
+</tr>
+</tbody></table>
+
+</div>
+
+</article>
+</main>
+
+
+
+      
+      
+    </body>
+  </html>

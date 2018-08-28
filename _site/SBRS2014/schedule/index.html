@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/SBRS2014/">
+    <title>
+    Schedule | SBRS 2014
+    </title>
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Custom Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+      
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/main.css">
+      
+    </head>
+    <body id = "schedule">
+      <header>
+        <a href="">
+          <h1 class="site-title active">
+          Stanford-Berkeley Robotics Symposium (SBRS) 2014
+          </h1>
+        </a>
+        <nav>
+          <ul>
+            <li class="item homenav">
+              <a href="" class="homenav">
+                Home
+              </a>
+            </li>
+            <li class="item schedulenav">
+              <a href="schedule/" class="schedulenav">
+                Schedule
+              </a>
+            </li>
+            <li class="item biosnav">
+              <a href="bios/" class="biosnav">
+                Speaker Bios
+              </a>
+            </li>
+            <li class="item registrationnav">
+              <a href="registration/" class="registrationnav">
+                Registration
+              </a>
+            </li>
+            <li class="item participantsnav">
+              <a href="participants/" class="participantsnav">
+                Participants
+              </a>
+            </li>
+            <li class="item directionsnav">
+              <a href="directions/" class="directionsnav">
+                Directions
+              </a>
+            </li>
+            <li class="item parkingnav">
+              <a href="parking/" class="parkingnav">
+                Parking
+              </a>
+            </li>
+            <li class="item diningnav">
+              <a href="dining/" class="diningnav">
+                Dining
+              </a>
+            </li>
+            <li class="item wifinav">
+              <a href="wifi/" class="wifinav">
+                WiFi
+              </a>
+            </li>
+            <li class="item contactnav">
+              <a href="contact/" class="contactnav">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <script>
+function updateDetailedSchedule(i) {
+  // if (window.innerWidth > 700) {
+  if (false) {
+    switch(i) {
+      case 1:
+        document.getElementById("detailed-schedule").innerHTML = "<h4 id=presentation-session-1>Presentation Session 1</h4><table><thead><tr><th>Time</th><th>Name</th><th>Affiliation</th><th>Talk Title</th></tr></thead><tbody><tr><td>10:20am - 10:30am</td><td><a href=http://www-cdr.stanford.edu/~cutkosky/> Mark Cutkosky </a></td><td>Stanford University</td><td><a href=https://www.youtube.com/watch?v=v39KYIRciC8>Adhesive Scaling</a></td></tr><tr><td>10:30am - 10:40am</td><td><a href=http://www.eecs.berkeley.edu/~bajcsy/> Ruzena Bajcsy </a></td><td>UC Berkeley</td><td><a href=https://www.youtube.com/watch?v=BI8AQQNSGcs>Cyberphysical Systems with Humans in the Loop</a></td></tr><tr><td>10:40am - 10:50am</td><td><a href=http://cvgl.stanford.edu/silvio/> Silvio Savarese </a></td><td>Stanford University</td><td><a href=https://www.youtube.com/watch?v=us05kIQ3cIE> What makes an environment smart?</a></td></tr><tr><td>10:50am - 11:00am</td><td><a href=http://goldberg.berkeley.edu/> Ken Goldberg </a></td><td>UC Berkeley</td><td><a href=https://www.youtube.com/watch?v=PEehZjNPLRk>Learning by Observation for Surgical Subtasks</a></td></tr><tr><td>11:00am - 11:05am</td><td>Henry Bradlow</td><td><a href=http://www.getlily.com/> Lily Robotics </a></td><td>Adventures in Flight and Sight</td></tr><tr><td>11:05am - 11:10am</td><td>Morgan Quigley</td><td><a href=http://www.osrfoundation.org/> OSRF </a></td><td><a href=https://www.youtube.com/watch?v=6gtQQZ7fh2s>Free! Fun! New and improved! ROS 2 and Gazebo 4</a></td></tr><tr><td>11:10am - 11:15am</td><td>Lorenzo Riano</td><td><a href=http://www.bosch.us/content/language1/html/rtc.htm> Bosch Research Institute </a></td><td><a href=https://www.youtube.com/watch?v=Y49xKg5ksIs>Semantic Point Clouds Interpretation</a> </td></tr><tr><td>11:15am - 11:45am</td><td colspan=\"3\"><a href = schedule/#PosterHighlights> Student Poster Highlights </a></td></tr></tbody></table>";
+        break;
+      case 2:
+        document.getElementById("detailed-schedule").innerHTML = "<h4 id=presentation-session-2>Presentation Session 2</h4><table><thead><tr><th>Time</th><th>Name</th><th>Affiliation</th><th>Talk Title</th></tr></thead><tbody><tr><td>02:30pm - 02:40pm</td><td><a href=https://profiles.stanford.edu/stephen-rock> Steve Rock </a></td><td>Stanford University</td><td><a href=https://www.youtube.com/watch?v=GsNtrpp7IEo>Terrain-Relative Navigation for Return-to-Site AUV Missions in the Deep Ocean</a></td></tr><tr><td>02:40pm - 02:50pm</td><td><a href=http://charm.stanford.edu/Main/AllisonOkamura/> Allison Okamura </a></td><td>Stanford University</td><td><a href=https://www.youtube.com/watch?v=W0Oklk1dbKM>At Your Fingertips: Tactile Displays for Robotic Teleoperation and Augmented Reality</a></td></tr><tr><td>03:00pm - 03:10pm</td><td><a href=http://www.eecs.berkeley.edu/~tomlin/> Claire Tomlin </a></td><td>UC Berkeley</td><td><a href=https://www.youtube.com/watch?v=1AGDm5KlKWE>Safe Learning in Robotics</a></td></tr><tr><td>03:10pm - 03:20pm</td><td><a href=http://robotics.eecs.berkeley.edu/~ronf/> Ron Fearing </a></td><td>UC Berkeley</td><td><a href=https://www.youtube.com/watch?v=fm3tPU0tVc0>Dynamic Locomotion with Millibots</a></td></tr><tr><td>03:20pm - 03:30pm</td><td><a href=http://www.me.berkeley.edu/~congwang/> Cong Wang </a></td><td>UC Berkeley</td><td><a href=https://www.youtube.com/watch?v=w9GlZFjbq0I>Data-Driven Approaches for Better Motion Control</a></td></tr></tbody></table>";
+        break;
+      case 3:
+        document.getElementById("detailed-schedule").innerHTML = "<h4 id=presentation-session-3>Presentation Session 3</h4><table><thead><tr><th>Time</th><th>Name</th><th>Affiliation</th><th>Talk Title</th></tr></thead><tbody><tr><td>04:00pm - 04:10pm</td><td><a href=http://web.stanford.edu/~pavone/> Marco Pavone </a></td><td>Stanford University</td><td><a href=https://www.youtube.com/watch?v=AscdWFY0YjI>Planning and Control for Spacecraft and Space Robots</a></td></tr><tr><td>04:10pm - 04:20pm</td><td><a href=http://cs.stanford.edu/groups/manips/people/oussama-khatib/> Oussama Khatib </a></td><td>Stanford University</td><td><a href=https://www.youtube.com/watch?v=fkz5qXnmB1o>Working with Robots</a></td></tr><tr><td>04:20pm - 04:30pm</td><td><a href=http://www.cs.berkeley.edu/~pabbeel/> Pieter Abbeel </a></td><td>UC Berkeley</td><td><a href=https://www.youtube.com/watch?v=Ak9eVZuvOF0>Machine Learning and Optimization for Robotics</a></td></tr><tr><td>04:30pm - 04:40pm</td><td><a href=http://mykel.kochenderfer.com/> Mykel Kochenderfer </a></td><td>Stanford University</td><td>Decision Theoretic Planning for Unmanned Aircraft Collision Avoidance</td></tr><tr><td>04:40pm - 04:50pm</td><td><a href=http://www.cs.stanford.edu/people/asaxena/> Ashutosh Saxena</td><td>Cornell University</td><td><a href=https://www.youtube.com/watch?v=5HmPv6CwGtY>The Robo Brain Project</a></td></tr></tbody></table>";
+        break;
+    }
+  } else {
+    switch(i) {
+      case 1:
+        window.location = "schedule/#Session1";
+        break;
+      case 2:
+        window.location = "schedule/#Session2";
+        break;
+      case 3:
+        window.location = "schedule/#Session3";
+        break;
+    }
+  }
+}
+</script>
+
+<main>
+<article>
+<!-- <a href="/schedule/"><h2 class="title active red">Schedule</h2></a> -->
+<br>
+<div class="content schedule">
+<table><thead>
+<tr>
+<th>Program</th>
+<th>October 17, 2014</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>8:45am onward</td>
+<td>Registration</td>
+</tr>
+<tr>
+<td>9:00am - 9:15am</td>
+<td>Welcome</td>
+</tr>
+<tr>
+<td>9:15am - 10:00am</td>
+<td>Long Talk: <a href="http://www.cs.berkeley.edu/~jordan/"> Michael Jordan</a></td>
+</tr>
+<tr>
+<td>10:00am - 10:20am</td>
+<td>Coffee Break</td>
+</tr>
+<tr>
+<td>10:20am - 11:30am</td>
+<td><a onclick="updateDetailedSchedule(1);"> Presentations (Session 1) </a></td>
+</tr>
+<tr>
+<td>11:45am - 12:30pm</td>
+<td>Poster Session</td>
+</tr>
+<tr>
+<td>12:30pm - 1:30pm</td>
+<td>Lunch Break</td>
+</tr>
+<tr>
+<td>1:30pm - 2:15pm</td>
+<td>Long Talk: <a href="http://stanford.edu/~boyd/"> Stephen Boyd</a></td>
+</tr>
+<tr>
+<td>2:15pm - 2:30pm</td>
+<td>Coffee Break</td>
+</tr>
+<tr>
+<td>2:30pm - 3:30pm</td>
+<td><a onclick="updateDetailedSchedule(2);"> Presentations (Session 2) </a></td>
+</tr>
+<tr>
+<td>3:30pm - 4:00pm</td>
+<td>Coffee Break</td>
+</tr>
+<tr>
+<td>4:00pm - 4:50pm</td>
+<td><a onclick="updateDetailedSchedule(3);"> Presentations (Session 3) </a></td>
+</tr>
+<tr>
+<td>4:50pm - 5:00pm</td>
+<td>Closing address</td>
+</tr>
+</tbody></table>
+
+</div>
+<div class="content detailed-schedule" id = "detailed-schedule">
+<h4 id="presentation-session-1">Presentation Session 1</h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+<th>Talk Title</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>10:20am - 10:30am</td>
+<td><a href="http://www-cdr.stanford.edu/~cutkosky/"> Mark Cutkosky </a></td>
+<td>Stanford University</td>
+<td><a href="https://www.youtube.com/watch?v=v39KYIRciC8">Adhesive Scaling</a></td>
+</tr>
+<tr>
+<td>10:30am - 10:40am</td>
+<td><a href="http://www.eecs.berkeley.edu/~bajcsy/"> Ruzena Bajcsy </a></td>
+<td>UC Berkeley</td>
+<td><a href="https://www.youtube.com/watch?v=BI8AQQNSGcs">Cyberphysical Systems with Humans in the Loop</a></td>
+</tr>
+<tr>
+<td>10:40am - 10:50am</td>
+<td><a href="http://cvgl.stanford.edu/silvio/"> Silvio Savarese </a></td>
+<td>Stanford University</td>
+<td><a href="https://www.youtube.com/watch?v=us05kIQ3cIE"> What makes an environment smart?</a></td>
+</tr>
+<tr>
+<td>10:50am - 11:00am</td>
+<td><a href="http://goldberg.berkeley.edu/"> Ken Goldberg </a></td>
+<td>UC Berkeley</td>
+<td><a href="https://www.youtube.com/watch?v=PEehZjNPLRk">Learning by Observation for Surgical Subtasks</a></td>
+</tr>
+<tr>
+<td>11:00am - 11:05am</td>
+<td>Henry Bradlow</td>
+<td><a href="http://www.getlily.com/"> Lily Robotics </a></td>
+<td>Adventures in Flight and Sight</td>
+</tr>
+<tr>
+<td>11:05am - 11:10am</td>
+<td>Morgan Quigley</td>
+<td><a href="http://www.osrfoundation.org/"> OSRF </a></td>
+<td><a href="https://www.youtube.com/watch?v=6gtQQZ7fh2s">Free! Fun! New and improved! ROS 2 and Gazebo 4</a></td>
+</tr>
+<tr>
+<td>11:10am - 11:15am</td>
+<td>Lorenzo Riano</td>
+<td><a href="http://www.bosch.us/content/language1/html/rtc.htm"> Bosch Research Institute </a></td>
+<td><a href="https://www.youtube.com/watch?v=Y49xKg5ksIs">Semantic Point Clouds Interpretation</a> </td></tr><tr><td>11:15am - 11:45am</td><td colspan="3"><a href = "schedule/#PosterHighlights"> Student Poster Highlights </a></td>
+</tr>
+</tbody></table>
+
+</div>
+
+<hr>
+
+<div class="content full-schedule" id = "full-schedule">
+<h3> Full Schedule </h3>
+Click the title links to see YouTube videos of each talk; a playlist of the entire symposium may be found <a href="http://www.youtube.com/playlist?list=PL8-2mtIlFIJqzBDDDOq7CcbGLwP07dKYt">here</a>.
+<h4> Morning Program </h4>
+<table><tbody>
+<tr>
+<td>8:45am onward</td>
+<td>Registration</td>
+</tr>
+<tr>
+<td>9:00am - 9:15am</td>
+<td>Welcome</td>
+</tr>
+<tr>
+<td>9:15am - 10:00am</td>
+<td> <a href="http://www.cs.berkeley.edu/~jordan/"> Michael Jordan:</a> <a href="https://www.youtube.com/watch?v=xiTPRqmopY0"> MAD-Bayes and SDA-Bayes: Towards Scalability for Bayesian Nonparametrics</a></td>
+</tr>
+<tr>
+<td>10:00am - 10:20am</td>
+<td>Coffee Break</td>
+</tr>
+</tbody></table>
+
+<div class="table100">
+<a id = "Session1"> </a>
+<h4 id="presentation-session-1">Presentation Session 1</h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+<th>Talk Title</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>10:20am - 10:30am</td>
+<td><a href="http://www-cdr.stanford.edu/~cutkosky/"> Mark Cutkosky </a></td>
+<td>Stanford University</td>
+<td><a href="https://www.youtube.com/watch?v=v39KYIRciC8">Adhesive Scaling</a></td>
+</tr>
+<tr>
+<td>10:30am - 10:40am</td>
+<td><a href="http://www.eecs.berkeley.edu/~bajcsy/"> Ruzena Bajcsy </a></td>
+<td>UC Berkeley</td>
+<td><a href="https://www.youtube.com/watch?v=BI8AQQNSGcs">Cyberphysical Systems with Humans in the Loop</a></td>
+</tr>
+<tr>
+<td>10:40am - 10:50am</td>
+<td><a href="http://cvgl.stanford.edu/silvio/"> Silvio Savarese </a></td>
+<td>Stanford University</td>
+<td><a href="https://www.youtube.com/watch?v=us05kIQ3cIE"> What makes an environment smart?</a></td>
+</tr>
+<tr>
+<td>10:50am - 11:00am</td>
+<td><a href="http://goldberg.berkeley.edu/"> Ken Goldberg </a></td>
+<td>UC Berkeley</td>
+<td><a href="https://www.youtube.com/watch?v=PEehZjNPLRk">Learning by Observation for Surgical Subtasks</a></td>
+</tr>
+<tr>
+<td>11:00am - 11:05am</td>
+<td>Henry Bradlow</td>
+<td><a href="http://www.getlily.com/"> Lily Robotics </a></td>
+<td>Adventures in Flight and Sight</td>
+</tr>
+<tr>
+<td>11:05am - 11:10am</td>
+<td>Morgan Quigley</td>
+<td><a href="http://www.osrfoundation.org/"> OSRF </a></td>
+<td><a href="https://www.youtube.com/watch?v=6gtQQZ7fh2s">Free! Fun! New and improved! ROS 2 and Gazebo 4</a></td>
+</tr>
+<tr>
+<td>11:10am - 11:15am</td>
+<td>Lorenzo Riano</td>
+<td><a href="http://www.bosch.us/content/language1/html/rtc.htm"> Bosch Research Institute </a></td>
+<td><a href="https://www.youtube.com/watch?v=Y49xKg5ksIs">Semantic Point Clouds Interpretation</a> </td></tr><tr><td>11:15am - 11:45am</td><td colspan="3"><a href = "schedule/#PosterHighlights"> Student Poster Highlights </a></td>
+</tr>
+</tbody></table>
+
+</div>
+
+<h4> Afternoon Program </h4>
+<table><tbody>
+<tr>
+<td>11:45am - 12:30pm</td>
+<td>Poster Session</td>
+</tr>
+<tr>
+<td>12:30pm - 1:30pm</td>
+<td>Lunch Break</td>
+</tr>
+<tr>
+<td>1:30pm - 2:15pm</td>
+<td> <a href="http://stanford.edu/~boyd/"> Stephen Boyd:</a> <a href="https://www.youtube.com/watch?v=l1GOw47D-M4">120 Years of Lyapunov's Methods</a> </td>
+</tr>
+<tr>
+<td>2:15pm - 2:30pm</td>
+<td>Coffee Break</td>
+</tr>
+<tr>
+</tbody></table>
+
+<div class="table100">
+<a id = "Session2"> </a>
+<h4 id="presentation-session-2">Presentation Session 2</h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+<th>Talk Title</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>02:30pm - 02:40pm</td>
+<td><a href="https://profiles.stanford.edu/stephen-rock"> Steve Rock </a></td>
+<td>Stanford University</td>
+<td><a href="https://www.youtube.com/watch?v=GsNtrpp7IEo">Terrain-Relative Navigation for Return-to-Site AUV Missions in the Deep Ocean</a></td>
+</tr>
+<tr>
+<td>02:40pm - 02:50pm</td>
+<td><a href="http://charm.stanford.edu/Main/AllisonOkamura/"> Allison Okamura </a></td>
+<td>Stanford University</td>
+<td><a href="https://www.youtube.com/watch?v=W0Oklk1dbKM">At Your Fingertips: Tactile Displays for Robotic Teleoperation and Augmented Reality</a></td>
+</tr>
+<tr>
+<td>03:00pm - 03:10pm</td>
+<td><a href="http://www.eecs.berkeley.edu/~tomlin/"> Claire Tomlin </a></td>
+<td>UC Berkeley</td>
+<td><a href="https://www.youtube.com/watch?v=1AGDm5KlKWE">Safe Learning in Robotics</a></td>
+</tr>
+<tr>
+<td>03:10pm - 03:20pm</td>
+<td><a href="http://robotics.eecs.berkeley.edu/~ronf/"> Ron Fearing </a></td>
+<td>UC Berkeley</td>
+<td><a href="https://www.youtube.com/watch?v=fm3tPU0tVc0">Dynamic Locomotion with Millibots</a></td>
+</tr>
+<tr>
+<td>03:20pm - 03:30pm</td>
+<td><a href="http://www.me.berkeley.edu/~congwang/"> Cong Wang </a></td>
+<td>UC Berkeley</td>
+<td><a href="https://www.youtube.com/watch?v=w9GlZFjbq0I">Data-Driven Approaches for Better Motion Control</a></td>
+</tr>
+</tbody></table>
+
+</div>
+
+<h4> Coffee Break (3:30pm - 4:00pm)</h4>
+
+<div class="table100">
+<a id = "Session3"> </a>
+<h4 id="presentation-session-3">Presentation Session 3</h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+<th>Talk Title</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>04:00pm - 04:10pm</td>
+<td><a href="http://web.stanford.edu/~pavone/"> Marco Pavone </a></td>
+<td>Stanford University</td>
+<td><a href="https://www.youtube.com/watch?v=AscdWFY0YjI">Planning and Control for Spacecraft and Space Robots</a></td>
+</tr>
+<tr>
+<td>04:10pm - 04:20pm</td>
+<td><a href="http://cs.stanford.edu/groups/manips/people/oussama-khatib/"> Oussama Khatib </a></td>
+<td>Stanford University</td>
+<td><a href="https://www.youtube.com/watch?v=fkz5qXnmB1o">Working with Robots</a></td>
+</tr>
+<tr>
+<td>04:20pm - 04:30pm</td>
+<td><a href="http://www.cs.berkeley.edu/~pabbeel/"> Pieter Abbeel </a></td>
+<td>UC Berkeley</td>
+<td><a href="https://www.youtube.com/watch?v=Ak9eVZuvOF0">Machine Learning and Optimization for Robotics</a></td>
+</tr>
+<tr>
+<td>04:30pm - 04:40pm</td>
+<td><a href="http://mykel.kochenderfer.com/"> Mykel Kochenderfer </a></td>
+<td>Stanford University</td>
+<td>Decision Theoretic Planning for Unmanned Aircraft Collision Avoidance</td>
+</tr>
+<tr>
+<td>04:40pm - 04:50pm</td>
+<td><a href="http://www.cs.stanford.edu/people/asaxena/"> Ashutosh Saxena</td>
+<td>Cornell University</td>
+<td><a href="https://www.youtube.com/watch?v=5HmPv6CwGtY">The Robo Brain Project</a></td>
+</tr>
+</tbody></table>
+
+</div>
+
+<h4> Closing Address (4:50pm - 5:00pm)</h4>
+
+<hr>
+
+<a id = "PosterHighlights"> </a>
+<h4 id="student-poster-highlights"><a href="https://www.youtube.com/watch?v=xk4KrR1WAC0">Student Poster Highlights</a></h4>
+
+<table><thead>
+<tr>
+<th>Time</th>
+<th>Name</th>
+<th>Affiliation</th>
+<th>Talk Title</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>11:15am</td>
+<td>Sergey Levine</td>
+<td>UC Berkeley</td>
+<td>Learning Contact-Rich Manipulation Skills with Guided Policy Search</td>
+</tr>
+<tr>
+<td>11:16am</td>
+<td>Aaron Matthew Bestick</td>
+<td>UC Berkeley</td>
+<td>Personalized Kinematics for Human-Robot Collaborative Manipulation</td>
+</tr>
+<tr>
+<td>11:17am</td>
+<td>Ashwin Carvalho</td>
+<td>UC Berkeley</td>
+<td>Stochastic Predictive Control of Autonomous Vehicles in Dynamic Environments</td>
+</tr>
+<tr>
+<td>11:18am</td>
+<td>Eric Eason</td>
+<td>Stanford</td>
+<td>Adhesive Stress Distribution Measurement on a Gecko</td>
+</tr>
+<tr>
+<td>11:19am</td>
+<td>Duncan Haldane</td>
+<td>UC Berkeley</td>
+<td>Biomimetic Millisystems Lab: Overview</td>
+</tr>
+<tr>
+<td>11:20am</td>
+<td>Jung-Hwa Bae</td>
+<td>Stanford</td>
+<td>Detection of Membrane Puncture with Haptic Feedback using a Tip-Force Sensing Needle</td>
+</tr>
+<tr>
+<td>11:21am</td>
+<td>Jeff Mahler</td>
+<td>UC Berkeley</td>
+<td>GP-GPIS-OPT: Grasp Planning Under Shape Uncertainty Using Gaussian Process Implicit Surfaces and Sequential Convex Programming</td>
+</tr>
+<tr>
+<td>11:22am</td>
+<td>Lizmarie Comenencia</td>
+<td>Stanford</td>
+<td>Toward Magnetic Guidance of Microcatheters in the Brain using a Single Permanent Magnet</td>
+</tr>
+<tr>
+<td>11:23am</td>
+<td>Andrew Stanley</td>
+<td>Stanford</td>
+<td>Integration of a Particle Jamming Tactile Display with a Cable-Driven Parallel Robot</td>
+</tr>
+<tr>
+<td>11:24am</td>
+<td>Sarah Houts</td>
+<td>Stanford</td>
+<td>Trajectory Planning for Motion-constrained AUVs in Uncertain Environments</td>
+</tr>
+<tr>
+<td>11:25am</td>
+<td>David Held</td>
+<td>Stanford</td>
+<td>Combining 3D Shape, Color, and Motion for Robust Anytime Tracking</td>
+</tr>
+<tr>
+<td>11:26am</td>
+<td>Kevin Haninger</td>
+<td>UC Berkeley</td>
+<td>Exoskeleton Design and Control</td>
+</tr>
+<tr>
+<td>11:27am</td>
+<td>Jose Padial</td>
+<td>Stanford</td>
+<td>Underwater Terrain-Relative Localization using Acoustic Shadows in Sonar Imagery</td>
+</tr>
+<tr>
+<td>11:28am</td>
+<td>Samir Menon</td>
+<td>Stanford</td>
+<td>Mapping Human Motor Models in the Brain with Haptics and fMRI</td>
+</tr>
+<tr>
+<td>11:29am</td>
+<td>Te Tang</td>
+<td>UC Berkeley</td>
+<td>Teaching Industrial Robot by Demonstration</td>
+</tr>
+<tr>
+<td>11:30am</td>
+<td>Kene Akametalu and Jamie Fisac</td>
+<td>UC Berkeley</td>
+<td>Improving Guarantees for Safe Reinforcement Learning using Model Validation</td>
+</tr>
+<tr>
+<td>11:31am</td>
+<td>Edward Schmerling</td>
+<td>Stanford</td>
+<td>Optimal Sampling-Based Motion Planning under Differential Constraints</td>
+</tr>
+<tr>
+<td>11:32am</td>
+<td>Sachin Patil</td>
+<td>UC Berkeley</td>
+<td>Scaling up Gaussian Belief Space Planning through Covariance-Free Trajectory Optimization</td>
+</tr>
+<tr>
+<td>11:33am</td>
+<td>Dylan Hadfield-Menell</td>
+<td>UC Berkeley</td>
+<td>Beyond Lowest-Warping Cost Action Selection in Trajectory Transfer</td>
+</tr>
+<tr>
+<td>11:34am</td>
+<td>Animesh Garg</td>
+<td>UC Berkeley</td>
+<td>Custom 3D Printed Implants for High-Dose Rate Brachytherapy</td>
+</tr>
+<tr>
+<td>11:35am</td>
+<td>Dipendra K Misra</td>
+<td>Cornell</td>
+<td>Context-Sensitive Grounding of Natural Language to Manipulation Instructions</td>
+</tr>
+<tr>
+<td>11:36am</td>
+<td>Yu Xiang</td>
+<td>Stanford</td>
+<td>Monocular Multiview Object Tracking with 3D Aspect Parts</td>
+</tr>
+<tr>
+<td>11:37am</td>
+<td>Hema Koppula</td>
+<td>Cornell</td>
+<td>Physically Grounded Spatio-temporal Object Affordances</td>
+</tr>
+<tr>
+<td>11:38am</td>
+<td>Rick Zhang</td>
+<td>Stanford</td>
+<td>Control of Robotic Mobility-on-Demand Systems: A Queueing-Theoretical Perspective</td>
+</tr>
+<tr>
+<td>11:39am</td>
+<td>Xiyang Yeh</td>
+<td>Stanford</td>
+<td>O2 : The Ocean Explorer - Design and Control Architecture</td>
+</tr>
+</tbody></table>
+
+</div>
+
+</article>
+</main>
+
+
+
+      
+      
+    </body>
+  </html>

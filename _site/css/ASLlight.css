@@ -1,0 +1,17 @@
+body {
+	font-family: 'Open Sans',arial,sans-serif;
+	max-width: 1020px;
+	margin: auto;
+	padding: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #3d3d3d;
+	font-family: 'Open Sans',arial,sans-serif;
+}
+
+a {
+	color: #494949;
+}
+
+/* Made with (L) by Federico, April 22, 2016 */
