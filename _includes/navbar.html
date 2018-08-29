@@ -3,45 +3,56 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="row">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{site.url}}{{site.baseurl}}">
-                    <img src="{{site.url}}{{site.baseurl}}/img/ASL_Logo.svg" alt="">
-                </a>
+            <div class="col-md-3">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{site.url}}{{site.baseurl}}">
+                        <img src="{{site.url}}{{site.baseurl}}/img/ASL_Logo.svg" alt="">
+                    </a>
+                </div>
             </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{{site.url}}{{site.baseurl}}">Home</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{{site.url}}{{site.baseurl}}/projects">Projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{{site.url}}{{site.baseurl}}/publications">Publications</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{{site.url}}{{site.baseurl}}/people">People</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{{site.url}}{{site.baseurl}}/press">In the Press</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{{site.url}}{{site.baseurl}}/gallery">Gallery</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="{{site.url}}{{site.baseurl}}/contact">Contact</a>
-                    </li>
-                </ul>
+            <div class="col-md-9">
+                <div class="row">
+                    <h1 id='title'>Stanford Autonomous Systems Lab</h1>
+                </div>
+                <div class="row">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            {% if "/" == page.url %}
+                            <li class="page-scroll active">
+                                <a href="{{site.url}}">Home</a>
+                            </li>
+                            {% else %}
+                            <li class="page-scroll">
+                                <a href="{{site.url}}">Home</a>
+                            </li>
+                            {% endif %}
+                            {% assign sorted_pages = site.pages | sort:"order" %}
+                            {% for node in sorted_pages %}
+                                {% if "navigation" == node.group %}
+                                    {% if page.url == node.url %}
+                                    <li class="page-scroll active">
+                                        <a href="{{node.url}}">{{node.title}}</a>
+                                    </li>
+                                    {% else %}
+                                    <li class="page-scroll">
+                                        <a href="{{node.url}}">{{node.title}}</a>
+                                    </li>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- /.navbar-collapse -->

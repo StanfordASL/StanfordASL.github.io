@@ -32,16 +32,24 @@
 }
 
 /*Title typography and colors */
+#title {
+  font-size: 20px;
+  text-align: right;
+  margin: 0 20px 0 0;
+}
+
 .navbar-brand, a .navbar-brand  {
 	font-weight: 500;
  	font-size: 2em;
 }
 .navbar-brand {
-  padding-top:5px !important; 
-  padding-bottom:0 !important; 
+  margin-left: 0px !important;
+  padding-top: 6px !important; 
+  padding-bottom: 0px !important;
+  height: 63px; 
 } 
 .navbar {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Montserrat", sans-serif;
   min-height: 30px !important;
   margin-bottom: 0px;
 
@@ -56,24 +64,44 @@
   color: #222;
 }
 .nav > li > a {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 16px;
+  background: none !important;
+  margin-top: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: lowercase;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
+.nav > li.active > a {
+  color: rgb(40, 100, 183) !important;
+  font-weight: 600;
+  border-left-color: rgb(40, 100, 183);
+  border-right-color: rgb(40, 100, 183);
+}
+.nav > li.active > a:hover {
+  color: rgb(40, 100, 183) !important;
+}
+
 .navbar-brand > img {
   max-width: 100%;
   max-height: 100%; 
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   color: #222222;
 }
 /*Navbar colors*/
 .navbar-default {
   background-color: #ffffff;
   border-bottom-color: rgb(40, 100, 183);
-  border-bottom-width: 2px;
+  border-bottom-width: 5px;
   padding-bottom: 6px;
+  padding-top: 20px;
 }
 /*Link colors*/
 a, a:hover {
@@ -89,8 +117,9 @@ li > span >a:link, a:active, a:focus, .entry-title {
 }
 /*Overall typography: change font, less bold and more sharp*/
 body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;  
+  font-family: "Raleway", sans-serif;  
   font-size: 18px;
+  font-weight: 400;
   text-align: justify;
 }
 
@@ -128,7 +157,7 @@ header .img-head { /* Default is extra-small*/
 
 /* Inspired by freelancer.css, distributed under a MIT license*/
 header .container {
-  padding-top: 75px;
+  padding-top: 105px;
   padding-bottom: 10px;
   /*display: flex;*/
   align-items: center;
@@ -152,11 +181,15 @@ header .intro-text .skills {
 
 /* **** PUBLICATIONS STYLES ***** */
 .entry, .infolinks{
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .abstract, .bibtex {
   max-width: 100%;
+}
+
+.bibliography li {
+  padding-left: 10px;
 }
 
 /*.section-even {background: #fafafa;} */
@@ -258,7 +291,7 @@ header .intro-text .skills {
 
 /* Front Page Carousel */
 #myCarousel {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 #myCarousel #carouselDots {
@@ -271,6 +304,8 @@ header .intro-text .skills {
   bottom: -11px;
   right: 0%;
   left: 0%;
+  font-size: 18pt;
+  font-weight: 400;
 }
 
 .carousel-inner > .item > img {

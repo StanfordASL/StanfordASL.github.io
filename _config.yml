@@ -74,6 +74,7 @@ defaults:
 
 scholar:
   style: ieee-asl
+  source: ./_bibliography
   bibliography: ASL_Bib.bib
   sort_by: year
   order: descending
