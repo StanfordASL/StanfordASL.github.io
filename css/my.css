@@ -191,6 +191,7 @@ header .intro-text .skills {
 
 .bibliography li {
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 /*.section-even {background: #fafafa;} */
@@ -212,7 +213,6 @@ header .intro-text .skills {
     }
     .navbar-fixed-top {
     top: 0;
-    border-width: 0 0 1px;
   }
     .navbar-collapse.collapse {
         display: none!important;
