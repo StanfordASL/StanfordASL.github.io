@@ -198,45 +198,49 @@ header .intro-text .skills {
 
 /* Edit this to get a different collapse behavior */
 @media (max-width: 992px) {
-    .navbar-brand {
-      height: 50px;
-    }
-    .navbar-default {
-      padding-top: 6px;
-    }
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
+  #carousel #carouselText {
+    font-size: 14pt !important;
+    font-weight: 300 !important;
+  }
+  .navbar-brand {
+    height: 50px;
+  }
+  .navbar-default {
+    padding-top: 6px;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
     top: 0;
   }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
     margin-top: 7.5px;
   }
   .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-      display:block !important;
-      margin-top: 5px;
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+    margin-top: 5px;
   }
   .collapsing{
     margin-top: 5px;
@@ -297,15 +301,15 @@ header .intro-text .skills {
 }
 
 /* Front Page Carousel */
-#myCarousel {
+#carousel {
   margin-bottom: 15px;
 }
 
-#myCarousel #carouselDots {
+#carousel #carouselDots {
   bottom: -10px;
 }
 
-#myCarousel #carouselText {
+#carousel #carouselText {
   padding: 10px 0px 35px 0px;
   background-color: rgba(0, 0, 0, 0.5);
   bottom: -11px;
