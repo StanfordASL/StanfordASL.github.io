@@ -39,6 +39,7 @@
 }
 
 .navbar-brand, a .navbar-brand  {
+  padding: 0;
 	font-weight: 500;
  	font-size: 2em;
 }
