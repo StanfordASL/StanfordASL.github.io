@@ -198,6 +198,12 @@ header .intro-text .skills {
 
 /* Edit this to get a different collapse behavior */
 @media (max-width: 992px) {
+    .navbar-brand {
+      height: 50px;
+    }
+    .navbar-default {
+      padding-top: 6px;
+    }
     .navbar-header {
         float: none;
     }
