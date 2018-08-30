@@ -158,7 +158,7 @@ header .img-head { /* Default is extra-small*/
 
 /* Inspired by freelancer.css, distributed under a MIT license*/
 header .container {
-  padding-top: 95px;
+  padding-top: 90px;
   padding-bottom: 10px;
   /*display: flex;*/
   align-items: center;
@@ -198,6 +198,10 @@ header .intro-text .skills {
 
 /* Edit this to get a different collapse behavior */
 @media (max-width: 992px) {
+  header .container {
+    padding-top: 75px;
+  }
+
   #carousel #carouselText {
     font-size: 14pt !important;
     font-weight: 300 !important;
