@@ -3,11 +3,12 @@ layout: person
 title:  "Federico Rossi"
 last:   "Rossi"
 date:   2017-03-01 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Autonomous mobility-on-demand and distributed decision-making"
 img: FedericoRossi.jpg
 email: frossi2@stanford.edu
 web: http://federico.io
+current: "NASA Jet Propulsion Laboratory"
 ---
 
 Federico Rossi is a Ph.D. candidate in Aeronautics and Astronautics. He received a B.Sc. in Aerospace Engineering from Politecnico di Milano and a M.Sc. in Space Engineering from Politecnico di Milano and Politecnico di Torino. He is an alumn of the Alta Scuola Politecnica.

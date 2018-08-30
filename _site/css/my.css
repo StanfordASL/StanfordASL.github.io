@@ -222,6 +222,8 @@ header .intro-text .skills {
   }
   .navbar-toggle {
     display: block;
+    margin-top: 6px;
+    margin-bottom: 10px;
   }
   .navbar-collapse {
     border-top: 1px solid transparent;

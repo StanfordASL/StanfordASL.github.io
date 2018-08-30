@@ -3,10 +3,11 @@ layout: person
 title:  "Ben Hockman"
 last:   "Hockman"
 date:   2017-09-01 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Hopping on asteroids"
 img: BenHockman.jpg
 email: bhockman@stanford.edu
+current: "NASA Jet Propulsion Laboratory"
 ---
 Benjamin Hockman is a Ph.D. candidate in Mechanical Engineering. He received his B.Eng. in Mechanical Engineering with a concentration in Aerospace from the University of Delaware, and a M.Sc. in Mechanical Engineering from Stanford University in 2015. In the Cooperative Robotics Lab at the University of Delaware, he worked on mobile robotic sensor networks for improved detection of radioactive materials.
 

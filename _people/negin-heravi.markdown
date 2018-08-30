@@ -3,7 +3,7 @@ layout: person
 title:  "Negin Heravi"
 last:   "Heravi"
 date:   2017-06-01 00:00:00 -0700
-position: phd
+position: 
 excerpt: "Gecko-inspired grippers for space grasping and manipulation"
 img: NeginHeravi.jpg
 email: nheravi@stanford.edu

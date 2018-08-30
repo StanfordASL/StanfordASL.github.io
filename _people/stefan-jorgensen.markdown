@@ -3,10 +3,11 @@ layout: person
 title:  "Stefan Jorgensen"
 last:   "Jorgensen"
 date:   2017-03-01 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "UAV swarms that learn"
 img: StefanJorgensen.jpg
 email: stefantj@stanford.edu
+current: "Area17"
 ---
 
 Stefan Jorgensen is a Ph.D. Candidate in Electrical Engineering (expected graduation early 2018). He received a B.S. in Electrical Engineering at the University of California, Los Angeles in 2013, and M.S. from Stanford University in 2015. Prior to joining Stanford, he spent three summers working on the swarms vs. swarms project with the Advanced Robotic Systems Engineering Laboratory at the Naval Postgraduate School. 

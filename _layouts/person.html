@@ -17,6 +17,10 @@
 		  </div>
 		  <div class="col-md-7">
 		    {{ page.content }}
+        <br>
+        {% if page.current %}
+          <i>Currently at {{page.current}}</i>
+        {% endif %}
 		  </div>
 		</div>
 	  </div>

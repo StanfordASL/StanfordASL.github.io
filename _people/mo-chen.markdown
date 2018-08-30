@@ -3,11 +3,12 @@ layout: person
 title:  "Mo Chen"
 last:   " Chen"
 date:   2017-09-01 00:00:00 -0700
-position: postdoc
+position: alumni
 excerpt: "Robotic safety"
 img: MoChen.png
 email: mochen72@stanford.edu
 website: https://www.mochen-research.com/
+current: "Simon Fraser University"
 ---
 
 Mo Chen is a postdoctoral researcher at the Autonomous Systems Lab. He completed his Ph.D. in the Electrical Engineering and Computer Sciences department at the University of California, Berkeley with Claire Tomlin in 2017, and received his BASc in Engineering Physics from the University of British Columbia in Vancouver, BC, Canada in 2011. Mo will be joining Simon Fraser University in Burnaby, BC, Canada as an Assistant Professor in the School of Computing Science in Fall 2018.
