@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <base href="">
+    <base href="/BARS2016/">
     <title>
-    BARS 2018 | Bay Area Robotics Symposium | BARS 2018
+    BARS 2016| Bay Area Robotics Symposium | BARS 2016
     </title>
     <meta name="viewport" content="width=device-width">
     
@@ -83,41 +83,36 @@
 <br>
 
 <div class = "event-content">
-<h3> BARS 2018 </h3>
+<h3> BARS 2016 </h3>
 <div class = "event-info">
-<h4> Hauck Auditorium, David and Joan Traitel Building, Hoover Institution, Stanford, CA, 94305 </h4> 
-<h4> Friday November 9, 2018</h4>
-<h4> 9:00AM - 5:00PM</h4>
+<h4> Paul Brest Hall, 555 Salvatierra Walk, Stanford, CA. 94305 </h4> 
+<h4> Friday November 18, 2016</h4>
+<h4> 9:00AM - 6:00PM</h4>
 </div>
 </div>
 
 <hr>
 
 <div style="font-size:.9em" class="content">
-The 2018 Bay Area Robotics Symposium aims to bring together roboticists from the Bay Area. The program will consist of a mix of faculty, student and industry presentations. For more details see the event <a href="schedule/">schedule</a>.
+The 2016 Bay Area Robotics Symposium aims to bring together roboticists from the Bay Area. The program will consist of a mix of faculty, student and industry presentations. For more details see the event <a href="schedule/">schedule</a>.
 
 <hr>
 
-Registration will be opened soon. 
-
+<b> Registration is free for students and $20 for non-students. Early registration prices expire October 9. Registration is capped at 475 so be sure to get your ticket ASAP at <a href="https://www.eventbrite.com/e/sbrs-2014-registration-12814760293">BARS 2016 Eventbrite</a></b>.
 <br>
-The program will feature:
+The <a href="schedule/">program</a> will feature:
 <ul>
 <li> Presentations from Stanford and Berkeley faculty </li>
 <li> Talks from bay area industry representatives </li>
-<li> Keynote talk (Speaker TBA)
+<li> Keynote talks (TBD)
 <li> Student poster session
 </ul>
 
 <hr>
-Organizers: <a href="http://web.stanford.edu/~pavone/">Marco Pavone</a> (Chair), <a href="https://people.eecs.berkeley.edu/~anca/">Anca Dragan</a> (Co-Chair), <a href="http://dorsa.fyi">Dorsa Sadigh</a>, <a href="https://www.me.berkeley.edu/people/faculty/mark-mueller">Mark Mueller</a>
+Organizers: <a href="http://web.stanford.edu/~pavone/">Marco Pavone</a> (Stanford) and <a href="https://people.eecs.berkeley.edu/~anca/">Anca Dragan</a> (UC Berkeley)
 <br>
-Local arrangements: <a href="https://stanfordasl.github.io/people/joseph-lorenzetti/">Joseph Lorenzetti</a> and <a href="http://stanford.edu/~ebiyik">Erdem Biyik</a>
+Local arrangements: <a href="http://web.stanford.edu/~pavone/">Marco Pavone</a> and <a href="http://asl.stanford.edu/people/ben-hockman/">Ben Hockman</a> (Stanford)
 </div>
-
-
-If you are interested in sponsoring this event, please contact the Symposium Co-organizer, <a href="http://web.stanford.edu/~pavone/">Marco Pavone</a>.
-
 
 <br>
 
