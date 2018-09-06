@@ -85,7 +85,7 @@ table,td
 
 .site-title {
     color: #fff;
-    background: #2c3e50;
+    background: #2c3e50 url('BARS_Banner.jpg') no-repeat;
     background-size: 100% 100%;
     padding: .5em .5em 4.5em .5em;
     margin-bottom: 0;
