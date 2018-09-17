@@ -926,7 +926,7 @@
   title        = {Deterministic Sampling-Based Motion Planning: Optimality, Complexity, and Performance},
   booktitle    = proc_ISRR,
   year         = {2015},
-  abstract = {Probabilistic sampling-based algorithms, such as the probabilistic roadmap (PRM) and the rapidly-exploring random tree (RRT) algorithms, represent one of the most successful approaches to robotic motion planning, due to their strong theoretical properties (in terms of probabilistic completeness or even asymptotic optimality) and remarkable practical performance. Such algorithms are probabilistic in that they compute a path by connecting independently and identically distributed (i.i.d.) random points in the configuration space. Their randomization aspect, however, makes several tasks challenging, including certification for safety-critical applications and use of offline computation to improve real-time execution. Hence, an important open question is whether similar (or better) theoretical guarantees and practical performance could be obtained by considering deterministic, as opposed to random sampling sequences. The objective of this paper is to provide a rigorous answer to this question. The focus is on the PRM algorithm---our results, however, generalize to other batch-processing algorithms such as FMT*. Specifically, we first show that PRM, for a certain selection of tuning parameters and deterministic low-dispersion sampling sequences, is deterministically asymptotically optimal,i.e., it returns a path whose cost converges deterministically to the optimal one as the number of points goes to infinity. Second, we characterize the convergence rate, and we find that the factor of sub-optimality can be very explicitly upper-bounded in terms of the `2-dispersion of the sampling sequence and the connection radius of PRM. Third, we show that an asymptotically optimal version of PRM exists with computational and space complexity arbitrarily close to O(n) (the theoretical lower bound), where n is the number of points in the sequence. This is in stark contrast to the O(n logn) complexity results for existing asymptotically-optimal probabilistic planners. Finally, through numerical experiments, we show that planning with deterministic low-dispersion sampling generally provides superior performance in terms of path cost and success rate},
+  abstract = {Probabilistic sampling-based algorithms, such as the probabilistic roadmap (PRM) and the rapidly-exploring random tree (RRT) algorithms, represent one of the most successful approaches to robotic motion planning, due to their strong theoretical properties (in terms of probabilistic completeness or even asymptotic optimality) and remarkable practical performance. Such algorithms are probabilistic in that they compute a path by connecting independently and identically distributed (i.i.d.) random points in the configuration space. Their randomization aspect, however, makes several tasks challenging, including certification for safety-critical applications and use of offline computation to improve real-time execution. Hence, an important open question is whether similar (or better) theoretical guarantees and practical performance could be obtained by considering deterministic, as opposed to random sampling sequences. The objective of this paper is to provide a rigorous answer to this question. The focus is on the PRM algorithm---our results, however, generalize to other batch-processing algorithms such as FMT∗. Specifically, we first show that PRM, for a certain selection of tuning parameters and deterministic low-dispersion sampling sequences, is deterministically asymptotically optimal,i.e., it returns a path whose cost converges deterministically to the optimal one as the number of points goes to infinity. Second, we characterize the convergence rate, and we find that the factor of sub-optimality can be very explicitly upper-bounded in terms of the `2-dispersion of the sampling sequence and the connection radius of PRM. Third, we show that an asymptotically optimal version of PRM exists with computational and space complexity arbitrarily close to O(n) (the theoretical lower bound), where n is the number of points in the sequence. This is in stark contrast to the O(n logn) complexity results for existing asymptotically-optimal probabilistic planners. Finally, through numerical experiments, we show that planning with deterministic low-dispersion sampling generally provides superior performance in terms of path cost and success rate},
   address  = {Sestri Levante, Italy},
   month    = sep,
   url      = {http://arxiv.org/pdf/1505.00023.pdf},
@@ -2391,7 +2391,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   booktitle    = proc_NIPS,
   year         = {2018},
   note         = {Submitted},
-  abstract = {Planning under model uncertainty is a fundamental problem across many applications of decision making and learning. In this paper, we propose the Robust Adaptive Monte Carlo Planning (RAMCP) algorithm, which allows computation of risk-sensitive Bayes-adaptive policies that optimally trade off exploration, exploitation, and robustness. RAMCP formulates the risk-sensitive planning problem as a two-player zero-sum game, in which an adversary perturbs the agent's belief over the models. Importantly, RAMCP converges to an optimal risk-sensitive policy without having to rebuild the search tree as the underlying belief over models is perturbed, so computation of these risk-sensitive policies is only marginally more expensive that computation of risk-neutral policies. We prove that RAMCP asymptotically converges to an optimal risk-sensitive Bayes-adaptive policy. RAMCP is demonstrated on an n-pull multi-armed bandit problem, as well as a patient treatment scenario.},
+  abstract = {Planning under model uncertainty is a fundamental problem across many applications of decision making and learning. In this paper, we propose the Robust Adaptive Monte Carlo Planning (RAMCP) algorithm, which allows computation of risk-sensitive Bayes-adaptive policies that optimally trade off exploration, exploitation, and robustness. RAMCP formulates the risk-sensitive planning problem as a two-player zero-sum game, in which an adversary perturbs the agent�s belief over the models. Importantly, RAMCP converges to an optimal risk-sensitive policy without having to rebuild the search tree as the underlying belief over models is perturbed, so computation of these risk-sensitive policies is only marginally more expensive that computation of risk-neutral policies. We prove that RAMCP asymptotically converges to an optimal risk-sensitive Bayes-adaptive policy. RAMCP is demonstrated on an n-pull multi-armed bandit problem, as well as a patient treatment scenario.},
   address  = {Montreal, Canada},
   month    = dec,
   keywords     = {sub},
@@ -2411,7 +2411,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   url      = {https://arxiv.org/pdf/1803.02015.pdf},
   keywords     = {press},
   owner        = {borisi},
-  timestamp    = {2018-03-06},
+  timestamp    = {2018-09-05},
 }
 
 @Inproceedings{LandryChenEtAl2018,
@@ -2595,16 +2595,16 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 @Inproceedings{IvanovicHarrisonEtAl2018,
   author       = {Ivanovic, B. and Harrison, J. and Sharma, A. and Chen, M. and Pavone, M.},
   title        = {{BaRC:} Backward Reachability Curriculum for Robotic Reinforcement Learning},
-  booktitle    = proc_CoRL,
+  booktitle    = proc_IEEE_ICRA,
   year         = {2018},
   note         = {Submitted},
   abstract = {Model-free Reinforcement Learning (RL) offers an attractive approach to learn control policies for high-dimensional systems, but its relatively poor sample complexity often forces training in simulated environments. Even in simulation, goal-directed tasks whose natural reward function is sparse remain intractable for state-of-the-art model-free algorithms for continuous control. The bottleneck in these tasks is the prohibitive amount of exploration required to obtain a learning signal from the initial state of the system. In this work, we leverage physical priors in the form of an approximate system dynamics model to design a curriculum scheme for a model-free policy optimization algorithm. Our Backward Reachability Curriculum (BaRC) begins policy training from states that require a small number of actions to accomplish the task, and expands the initial state distribution backwards in a dynamically-consistent manner once the policy optimization algorithm demonstrates sufficient performance. BaRC is general, in that it can accelerate training of any model-free RL algorithm on a broad class of goal-directed continuous control MDPs. Its curriculum strategy is physically intuitive, easy-to-tune, and allows incorporating physical priors to accelerate training without hindering the performance, flexibility, and applicability of the model-free RL algorithm. We evaluate our approach on two representative dynamic robotic learning problems and find substantial performance improvement relative to previous curriculum generation techniques and na{\"i}ve exploration strategies},
-  address  = {Zurich, Switzerland},
-  month    = oct,
+  address  = {Montreal, Canada},
+  month    = may,
   url      = {https://arxiv.org/pdf/1806.06161.pdf},
   keywords     = {sub},
   owner        = {apoorva},
-  timestamp    = {2018-06-15},
+  timestamp    = {2018-09-05},
 }
 
 @Article{ChinchaliLivingstonEtAl2018,
@@ -2625,7 +2625,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Meta-Learning Priors for Efficient Online Bayesian Regression},
   booktitle    = proc_WAFR,
   year         = {2018},
-  note         = {Submitted},
   abstract = {Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. In particular, the predominant implementation of GP regression is kernel-based, as it enables fitting of arbitrary nonlinear functions by leveraging kernel functions as infinite-dimensional features. While incorporating prior information has the potential to drastically improve data efficiency of kernel-based GP regression, expressing complex priors through the choice of kernel function and associated hyperparameters is often challenging and unintuitive. Furthermore, the computational complexity of kernel-based GP regression scales poorly with the number of samples, limiting its application in regimes where a large amount of data is available. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior density. These features are neural networks, which are trained via a meta-learning approach. ALPaCA extracts all prior information from the dataset, rather than relying on the choice of arbitrary, restrictive kernel hyperparameters. Furthermore, it substantially reduces sample complexity, and allows scaling to large systems. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.},
   address  = {Merida, Mexico},
   month    = oct,
@@ -2693,8 +2692,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-08-01},
 }
 
-||||||| .r25545
-=======
 @Inproceedings{SinghChenEtAl2018,
   author       = {Singh, S. and Chen, M. and Herbert, S. L. and Tomlin, C. J. and Pavone, M.},
   title        = {Robust Tracking with Model Mismatch for Fast and Safe Planning: an {SOS} Optimization Approach},
@@ -2749,8 +2746,63 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-06-30},
 }
 
+@Inproceedings{BonalliCauligiEtAl2019,
+  author      = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
+  title       = {Sequential Convex Programming: Generalized Method and Theoretical Convergence Guarantees for Trajectory Optimization},
+  booktitle   = proc_IEEE_ICRA,
+  year        = {2019},
+  note        = {{Extended Version, Available at }\url{http://asl.stanford.edu/wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf}},
+  address = {Montreal, Canada},
+  month   = may,
+  url     = {../wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf},
+  keywords    = {sub},
+  owner       = {bylard},
+  timestamp   = {2018-09-15},
+}
+
+@Inproceedings{TsaoMilojevicEtAl2019,
+  author       = {Tsao, M. and Milojevic, D. and Ruch, C. and Salazar, M. and Frazzoli, E. and Pavone, M.},
+  title        = {Model Predictive Control of Ride-sharing Autonomous Mobility on Demand Systems},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2019},
+  note         = {Submitted.},
+  abstract = {This paper presents a model predictive control (MPC) approach to optimize routes for Ride-sharing Autonomous Mobility-on-Demand (RAMoD) systems, whereby self-driving vehicles provide coordinated on-demand mobility, possibly allowing multiple customers to share a ride. Specifically, we first devise a time-expanded network flow model for RAMoD. Second, leveraging this model, we design a real-time MPC algorithm to optimize the routes of both empty and customer-carrying vehicles, with the goal of optimizing social welfare, namely, a weighted combination of customers' travel time and vehicles' mileage. Finally, we present a real-world case study for the city of San Francisco, CA, by using the microscopic traffic simulator MATSim. The simulation results show that a RAMoD system can significantly improve social welfare with respect to a single-occupancy AMoD system, and that the predictive structure of the proposed MPC controller allows it to outperform existing reactive ride-sharing coordination algorithms for RAMoD.},
+  address  = {Montreal, Canada},
+  month    = may,
+  keywords     = {sub},
+  owner        = {samauro},
+  timestamp    = {2018-09-16},
+}
+
+@Inproceedings{HarrisonSharmaEtAl2019,
+  author       = {Harrison, J. and Sharma, A. and Calandra, R. and Pavone, M.},
+  title        = {Control Adaptation via Meta-Learning Dynamics},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2019},
+  note         = {Submitted.},
+  abstract = {Model-based control relies on having an accurate dynamics model. In situations where the dynamics of the robot is not static (e.g., after a delivery quadcopter pick or drop a package), it is paramount to accurately estimate how the dynamics is influenced -- and thus account for these changes at the control level. One way of doing so is to condition the dynamics model on some latent variable which represents the context. In this paper, we present CAMeLiD, a data-driven approach to learn controllers that can quickly adapt to previously unseen dynamics. This is done through a high-capacity neural network trained in a meta-learning manner to infer the context of the dynamics, and a subsequent model-based control framework based on iLQG. We demonstrate CAMeLiD on a quadrotor delivery experiment, and show it results in substantial performance improvement over baselines.},
+  address  = {Montreal, Canada},
+  month    = may,
+  keywords     = {sub},
+  owner        = {jh2},
+  timestamp    = {2018-09-16},
+}
+
+@Inproceedings{IvanovicPavone2019,
+  author       = {Ivanovic, B. and Pavone, M.},
+  title        = {Modeling Multimodal Dynamic Spatiotemporal Graphs},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2019},
+  note         = {Submitted.},
+  abstract = {Spatiotemporal graphs (STGs) are a powerful tool for modeling multi-agent interaction scenarios, used commonly in human trajectory prediction and proactive planning and decision making for safe human-robot interaction. However, many current STG-backed methods rely on a static graph assumption, i.e. that the underlying graphical structure maintains the same nodes and edges throughout the scenario. This assumption is frequently broken in real-world applications, especially in highly-dynamic problems such as human trajectory prediction in crowds. To remove the reliance on this assumption, we present a methodology for modeling and predicting agent behavior in both highly dynamic and multimodal scenarios (i.e. where the scene's graphical structure is time-varying and there are many possible highly-distinct futures for each agent). Our approach to model dynamic STGs augments prior multimodal, multi-agent modeling methods with a gating function on edge models that smoothly adds and removes edge influence from a node. We demonstrate the performance of our approach on the ETH multi-human trajectory dataset and on NBA basketball player trajectories. Both are highly-dynamic, multimodal, and multi-agent interaction scenarios which serve as proxies for many robotic applications.},
+  address  = {Montreal, Canada},
+  month    = may,
+  keywords     = {sub},
+  owner        = {borisi},
+  timestamp    = {2018-09-16},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year;note] opt[]}
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
 
->>>>>>> .r25614
