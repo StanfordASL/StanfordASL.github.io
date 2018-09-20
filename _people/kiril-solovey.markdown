@@ -4,7 +4,7 @@ title:  "Kiril Solovey"
 last:   " Solovey"
 date:   2018-09-19 00:00:00 -0700
 position: postdoc
-excerpt: "Algorithm analysis for motion planning, multi-robot systems, and autonomous mobility on demand"
+excerpt: "Algorithms for motion planning, multi-robot systems, and autonomous mobility on demand"
 img: KirilSolovey.jpg
 email: kirilsol@stanford.edu
 website: kirilsol.github.io
