@@ -10,8 +10,10 @@ email: borisi@stanford.edu
 website: www.borisivanovic.com
 ---
 
-Boris Ivanovic is currently a Master’s student in the department of Computer Science at Stanford University, where he is also a prospective Aeronautics and Astronautics Ph.D. student. Prior to joining Stanford, he obtained his Bachelor’s of Applied Science with high honors in 2016 from the University of Toronto's rigorous Engineering Science program, majoring in Electrical and Computer Engineering with a Robotics/Mechatronics minor. His previous research work spans computer vision, machine learning, data science, and robotics. He has also conducted numerous internships, from Amazon’s Prime Air drone delivery team to a summer at ETH Zurich in Professor Raffaello d’Andrea’s Flying Machine Arena.
+Boris Ivanovic is a Ph.D. student in the Aeronautics and Astronautics Department. He obtained a Master's in Computer Science from Stanford in 2018, specializing in Artificial Intelligence (AI). Prior to joining Stanford, he obtained his Bachelor’s of Applied Science with high honors in 2016 from the University of Toronto's rigorous Engineering Science program, majoring in Electrical and Computer Engineering with a Robotics/Mechatronics minor.
+
+His previous research work spans computer vision, machine learning, data science, and robotics. He has also conducted numerous internships, from Amazon’s Prime Air drone delivery team to a summer at ETH Zurich in Professor Raffaello d’Andrea’s Flying Machine Arena.
 
 Boris’ research interests are to combine deep learning with principled methods from robotics, optimization, and control theory to create safe and reliable learning algorithms that can be deployed in the real world.
 
-In his spare time, Boris enjoys travelling, hiking, watching movies, and thinking about cooking.
+In his spare time, Boris enjoys traveling, hiking, watching movies, and thinking about cooking.
