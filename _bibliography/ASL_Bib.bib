@@ -2385,20 +2385,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-02-01},
 }
 
-@Inproceedings{SharmaHarrisonEtAl2018,
-  author       = {Sharma, A. and Harrison, J. and Pavone, M.},
-  title        = {Robust {Bayes}-Adaptive Planning under Model Uncertainty},
-  booktitle    = proc_NIPS,
-  year         = {2018},
-  note         = {Submitted},
-  abstract = {Planning under model uncertainty is a fundamental problem across many applications of decision making and learning. In this paper, we propose the Robust Adaptive Monte Carlo Planning (RAMCP) algorithm, which allows computation of risk-sensitive Bayes-adaptive policies that optimally trade off exploration, exploitation, and robustness. RAMCP formulates the risk-sensitive planning problem as a two-player zero-sum game, in which an adversary perturbs the agent�s belief over the models. Importantly, RAMCP converges to an optimal risk-sensitive policy without having to rebuild the search tree as the underlying belief over models is perturbed, so computation of these risk-sensitive policies is only marginally more expensive that computation of risk-neutral policies. We prove that RAMCP asymptotically converges to an optimal risk-sensitive Bayes-adaptive policy. RAMCP is demonstrated on an n-pull multi-armed bandit problem, as well as a patient treatment scenario.},
-  address  = {Montreal, Canada},
-  month    = dec,
-  keywords     = {sub},
-  owner        = {apoorva},
-  timestamp    = {2018-06-18},
-}
-
 @Inproceedings{IvanovicSchmerlingEtAl2018,
   author       = {Ivanovic, B. and Schmerling, E. and Leung, K. and Pavone, M.},
   title        = {Generative Modeling of Multimodal Multi-Human Behavior},
@@ -2625,13 +2611,14 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Meta-Learning Priors for Efficient Online Bayesian Regression},
   booktitle    = proc_WAFR,
   year         = {2018},
+  note         = {In press},
   abstract = {Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. In particular, the predominant implementation of GP regression is kernel-based, as it enables fitting of arbitrary nonlinear functions by leveraging kernel functions as infinite-dimensional features. While incorporating prior information has the potential to drastically improve data efficiency of kernel-based GP regression, expressing complex priors through the choice of kernel function and associated hyperparameters is often challenging and unintuitive. Furthermore, the computational complexity of kernel-based GP regression scales poorly with the number of samples, limiting its application in regimes where a large amount of data is available. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior density. These features are neural networks, which are trained via a meta-learning approach. ALPaCA extracts all prior information from the dataset, rather than relying on the choice of arbitrary, restrictive kernel hyperparameters. Furthermore, it substantially reduces sample complexity, and allows scaling to large systems. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.},
   address  = {Merida, Mexico},
   month    = oct,
   url      = {https://arxiv.org/pdf/1807.08912.pdf},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {apoorva},
-  timestamp    = {2018-07-23},
+  timestamp    = {2018-10-07},
 }
 
 @Inproceedings{ChenTamEtAl2018,
@@ -2803,6 +2790,15 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   keywords     = {sub},
   owner        = {borisi},
   timestamp    = {2018-09-16},
+}
+
+@Inproceedings{LeungSchmerlingEtAl2018,
+  author    = {Leung, K. and Schmerling, E. F.and Chen, M. and Talbot, J. and Gerdes, J. C. and Pavone, M.},
+  title     = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
+  booktitle = proc_ISER,
+  year      = {2018},
+  owner     = {mochen72},
+  timestamp = {2018-10-13},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
