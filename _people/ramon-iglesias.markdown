@@ -7,7 +7,7 @@ position: phd
 excerpt: "The intersection of computer science and real-world infrastructure"
 img: RamonIglesias.jpg
 email: rdit@stanford.edu
-website: http://ramondario.com
+website: ramondario.com
 ---
 
 Ramon is a Ph.D. student in Civil and Environmental Engineering at Stanford University. Prior to resuming his Ph.D, Ramon was a software engineer at SunPower. He has a M.S and a B.S. in Civil Engineering from Stanford and UT Austin, respectively.

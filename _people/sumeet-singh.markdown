@@ -7,7 +7,7 @@ position: phd
 excerpt: "Guaranteed safe planning"
 img: SumeetSingh.jpg
 email: ssingh19@stanford.edu
-website: https://web.stanford.edu/~ssingh19/
+website: web.stanford.edu/~ssingh19/
 ---
 
 Sumeet Singh is a Ph.D. candidate in Aeronautics and Astronautics. He received a B.Eng. in Mechanical Engineering and a Diploma of Music (Performance) from University of Melbourne in 2012, and a M.Sc. in Aeronautics and Astronautics from Stanford University in 2015. Prior to joining Stanford, Sumeet worked in the Berkeley Micromechanical Analysis and Design lab at University of California Berkeley in 2011 and the Aeromechanics Branch at NASA Ames in 2013.

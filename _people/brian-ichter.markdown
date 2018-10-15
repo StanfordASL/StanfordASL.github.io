@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Parallel planner and uncertain, kinodynamic sampler"
 img: BrianIchter.jpg
 email: ichter@stanford.edu
-website: http://stanford.edu/~ichter/
+website: stanford.edu/~ichter/
 current: "Google Brain Robotics"
 ---
 
