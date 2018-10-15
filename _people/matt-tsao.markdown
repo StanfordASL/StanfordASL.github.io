@@ -7,7 +7,6 @@ position: phd
 excerpt: "Statistics, probability theory, and learning theory"
 img: MattTsao.jpg
 email: mwtsao@stanford.edu
-website: 
 ---
 
 Matt is a Ph.D student in the department of Electrical Engineering at Stanford University, also affiliated with the Stanford Autonomous Systems Laboratory. Prior to Stanford, he obtained a BS in Electrical Engineering with highest honors from the University of Illinois at Urbana Champaign with a focus in Learning Theory and Information Theory. 

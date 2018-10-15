@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Autonomous mobility-on-demand and distributed decision-making"
 img: FedericoRossi.jpg
 email: frossi2@stanford.edu
-web: http://federico.io
+website: http://federico.io
 current: "NASA Jet Propulsion Laboratory"
 ---
 

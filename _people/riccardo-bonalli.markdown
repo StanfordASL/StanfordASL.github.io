@@ -7,7 +7,6 @@ position: postdoc
 excerpt: "Theoretical and numerical control for aerospace systems"
 img: RiccardoBonalli.jpg
 email: rbonalli@stanford.edu
-website: 
 ---
 
 Riccardo is a postdoctoral researcher at Stanford’s Department of Aeronautics and Astronautics. He obtained his Ph.D. in Applied Mathematics at Sorbonne Université, Paris in 2018 under a collaboration with ONERA - The French Aerospace Lab, Palaiseau, and received both his B.Sc. in Physical Engineering in 2011 and his M.Sc. in Mathematical Engineering in 2014 from Politecnico di Milano, Milan.

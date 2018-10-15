@@ -6,7 +6,6 @@ date:   2017-03-01 00:00:00 -0700
 position: alumni
 excerpt: "Autonomous mobility-on-demand"
 img: RickZhang.jpg
-web: https://www.linkedin.com/in/yinlamchow
 current: "Zoox, Inc."
 ---
 

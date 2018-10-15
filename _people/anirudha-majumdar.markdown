@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Probably safe motion planning under uncertainty"
 img: AnirudhaMajumdar.jpg
 email: ani.majumdar@princeton.edu
-web: https://irom-lab.princeton.edu/majumdar/
+website: https://irom-lab.princeton.edu/majumdar/
 current: "Princeton University"
 ---
 

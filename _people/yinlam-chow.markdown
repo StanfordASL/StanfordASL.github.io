@@ -6,7 +6,7 @@ date:   2017-03-01 00:00:00 -0700
 position: alumni
 excerpt: "Risk-sensitive and data-driven sequential decision making"
 img: YinlamChow.jpg
-web: https://www.linkedin.com/in/yinlamchow
+website: https://www.linkedin.com/in/yinlamchow
 current: "Google DeepMind"
 ---
 
