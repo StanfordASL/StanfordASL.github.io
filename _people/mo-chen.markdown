@@ -7,13 +7,13 @@ position: alumni
 excerpt: "Robotic safety"
 img: MoChen.png
 email: mochen72@stanford.edu
-website: www.mochen-research.com/
+website: www.sfu.ca/computing/people/faculty/mochen1111.html
 current: "Simon Fraser University"
 ---
 
-Mo Chen is a postdoctoral researcher at the Autonomous Systems Lab. He completed his Ph.D. in the Electrical Engineering and Computer Sciences department at the University of California, Berkeley with Claire Tomlin in 2017, and received his BASc in Engineering Physics from the University of British Columbia in Vancouver, BC, Canada in 2011. Mo will be joining Simon Fraser University in Burnaby, BC, Canada as an Assistant Professor in the School of Computing Science in Fall 2018.
+Mo Chen was a postdoctoral researcher at the Autonomous Systems Lab. He completed his Ph.D. in the Electrical Engineering and Computer Sciences department at the University of California, Berkeley with Claire Tomlin in 2017, and received his BASc in Engineering Physics from the University of British Columbia in Vancouver, BC, Canada in 2011. Mo joined Simon Fraser University in Burnaby, BC, Canada as an Assistant Professor in the School of Computing Science in Fall 2018.
 
-Mo’s research interests include robotics, multi-agent systems, safety-critical systems, motion planning, control theory, and computational methods. Currently, he is actively investigating theory and application of differential games, guaranteed safe robust planning, and proactive decision making in human-robot interactions.
+Mo’s research interests include robotics, multi-agent systems, safety-critical systems, motion planning, control theory, and computational methods. Currently, he is actively investigating theory and application of reachability analysis, applying control theoretic principles to machine learning, and human-robot interactions.
 
 In his free time, Mo likes to play the piano, play chess, and learn about the universe.
 
