@@ -1,5 +1,5 @@
 ---
-layout: press
+layout: 
 title:  'Science Channel: “Space’s Deepest Secrets”, featuring Hedgehog'
 img: "Sci_Hedgehog.png"
 date:   2016-04-26 00:00:00 -0700

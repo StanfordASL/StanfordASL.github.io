@@ -1,5 +1,5 @@
 ---
-layout: press
+layout: 
 title:  'The Economist: “Drones Club”'
 img: "20160423_STP002_0.jpg"
 date:   2016-04-23 00:00:00 -0700

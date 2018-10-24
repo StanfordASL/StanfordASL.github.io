@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: 
 title:  "Autonomous Mobility-on-Demand"
 img: "NYSim-slider.jpg"
 date:   2017-09-01 00:00:00 -0700

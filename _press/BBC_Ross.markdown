@@ -1,5 +1,5 @@
 ---
-layout: press
+layout: 
 title:  'BBC: “Why fencing with a drone could make it smarter”'
 img: "90364565_drone_fencing2.jpg"
 date:   2016-07-18 00:00:00 -0700

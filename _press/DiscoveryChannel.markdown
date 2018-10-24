@@ -1,5 +1,5 @@
 ---
-layout: press
+layout: 
 title:  'Discovery Channel: “Daily Planet”, featuring Hedgehog'
 img: "DailyPlanet_Ben.png"
 date:   2017-03-13 00:00:00 -0700

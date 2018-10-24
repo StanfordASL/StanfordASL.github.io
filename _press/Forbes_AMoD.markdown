@@ -1,5 +1,5 @@
 ---
-layout: press
+layout: 
 title:  'Forbes: “The Virtuous Cycle Between Driverless Cars, Electric Vehicles And Car-Sharing Services”'
 img: "Virtuous-Cycle-Med-960x540.png"
 date:   2016-02-08 00:00:00 -0700

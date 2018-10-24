@@ -194,6 +194,12 @@ header .intro-text .skills {
   padding-bottom: 10px;
 }
 
+b.keyword-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #222222;
+}
+
 /*.section-even {background: #fafafa;} */
 
 /* Edit this to get a different collapse behavior */

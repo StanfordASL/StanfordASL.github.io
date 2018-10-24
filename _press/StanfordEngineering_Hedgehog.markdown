@@ -1,9 +1,9 @@
 ---
-layout: press
-title:  'Stanford Engineering: ” Hedgehog, a guide to asteroids and things that whirl around the solar system”'
+layout: 
+title:  'Stanford Engineering: “Hedgehog, a guide to asteroids and things that whirl around the solar system”'
 img: "HHonPhobosShort-960x540.png"
 date:   2016-02-03 00:00:00 -0700
-alt_text: 'Stanford Engineering: ” Hedgehog, a guide to asteroids and things that whirl around the solar system”'
+alt_text: 'Stanford Engineering: “Hedgehog, a guide to asteroids and things that whirl around the solar system”'
 source_url: https://engineering.stanford.edu/magazine/article/hedgehog-guide-asteroids-and-things-whirl-around-solar-system
 ---
 
