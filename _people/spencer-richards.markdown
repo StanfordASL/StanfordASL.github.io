@@ -7,7 +7,7 @@ position: phd
 excerpt: "Safe learning-based control, in theory and practice"
 img: SpencerRichards.jpg
 email: spenrich@stanford.edu
-website: 
+website: scholar.google.com/citations?user=f8dn0kgAAAAJ&hl=en
 ---
 
 Spencer is a Ph.D. student in the Aeronautics and Astronautics Department. Currently, he focuses on learning-based control for robotic systems. He works to create agents that learn safely and efficiently in the real world by leveraging tools from both control theory and machine learning. In general, he is interested in determining theoretic safety guarantees for dynamical systems, and how they translate into practice.
