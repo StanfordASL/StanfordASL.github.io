@@ -8,6 +8,7 @@ group: "navigation"
 {% include relBase.html %}
 <body id="page-top" class="index">
   {% include navbar.html %}
+  {% assign sorted_slides = site.slides | sort:"date" | reverse %}
   <header>
     <div class="container">
       <div class="row">
@@ -17,7 +18,7 @@ group: "navigation"
             <!-- Indicators -->
             <ol id="carouselDots" class="carousel-indicators">
               {% assign slide_count = 0 %}
-              {% for slide in site.slides %}
+              {% for slide in sorted_slides %}
               {% if slide_count == 0 %}
               <li data-target="#carousel" data-slide-to="{{slide_count}}" class="active"></li>
               {% else %}
@@ -30,7 +31,7 @@ group: "navigation"
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               {% assign slide_count = 0 %}
-              {% for slide in site.slides %}
+              {% for slide in sorted_slides %}
               {% if slide_count == 0 %}
               <div class="item active">
               {% else %}
