@@ -11,7 +11,6 @@ keywords: "Space Systems, Motion Planning, Control Systems"
 people: "Andrew Bylard"
 ---
 
-<h4 class="bibliography">Related Work</h4>
 <div class="project_bib">
 {% bibliography -f unconvspacerobotics %}
 </div>

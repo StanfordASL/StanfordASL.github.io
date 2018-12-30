@@ -1,0 +1,35 @@
+.aa274_name h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#aa274-banner-image {
+  display: inline-block;
+}
+
+.aa274_people {
+  width: 100%;
+  margin: 0px;
+}
+
+.aa274_people th {
+  padding: 0em;
+}
+
+.aa274_headshot {
+  width: 150px;
+  height: 150px;
+}
+
+.aa274-homework-title {
+  margin-top: 0px;
+}
+
+.aa274-homework-posted-date {
+  color: grey;
+}
+
+.aa274-homework-due-date {
+  color: red;
+}

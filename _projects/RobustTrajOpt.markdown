@@ -11,7 +11,6 @@ keywords: "Motion Planning, Robust Control, Optimization"
 people: "Sumeet Singh, Brian Ichter, Edward Schmerling"
 ---
 
-<h4 class="bibliography">Related Work</h4>
 <div class="project_bib">
 {% bibliography -f robusttrajopt %}
 </div>

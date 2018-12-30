@@ -11,7 +11,6 @@ keywords: "Reinforcement Learning, Risk-Sensitive Learning, Deep Learning"
 people: "Jonathan Lacotte, James Harrison, Apoorva Sharma, Sumeet Singh, Spencer M. Richards"
 ---
 
-<h4 class="bibliography">Related Work</h4>
 <div class="project_bib">
 {% bibliography -f safeuncert %}
 </div>

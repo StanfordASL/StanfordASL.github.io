@@ -10,3 +10,7 @@ blurb: "Real-world autonomous systems often have dynamics that are best describe
 keywords: "Model Predictive Control, Dimensionality Reduction, Reduced Order Modeling"
 people: "Joe Lorenzetti, Benoit Landry"
 ---
+
+<div class="project_bib">
+Coming soon!
+</div>

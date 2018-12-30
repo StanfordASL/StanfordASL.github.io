@@ -11,7 +11,6 @@ keywords: "Human-Robot Interaction, Deep Learning, Motion Planning"
 people: "Edward Schmerling, Karen Leung, Boris Ivanovic, Sandeep Chinchali"
 ---
 
-<h4 class="bibliography">Related Work</h4>
 <div class="project_bib">
 {% bibliography -f trustinteract %}
 </div>

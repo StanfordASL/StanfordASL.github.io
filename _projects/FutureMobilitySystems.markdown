@@ -11,7 +11,6 @@ keywords: "Autonomous Mobility on Demand, Optimization, Routing"
 people: "Ramon Iglesias, Matt Tsao"
 ---
 
-<h4 class="bibliography">Related Work</h4>
 <div class="project_bib">
 {% bibliography -f amod %}
 </div>
