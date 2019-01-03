@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>James Harrison</title>
+    <title>AA 274: Principles of Robotic Autonomy</title>
 
-    <meta name="description" content="Safe robotic learning">
+    <meta name="description" content="This course will cover basic principles for endowing mobile autonomous robots with perception, planning, and decision-making capabilities. We will dive into algorithmic approaches for robot perception, localization, and simultaneous localization and mapping; control of non-linear systems, learning-based control, and robot motion planning; introduction to methodologies for reasoning under uncertainty, e.g., (partially observable) Markov decision processes. Throughout the course, we will make extensive use of the Robot Operating System (ROS) for demonstrations and hands-on activities. Prerequisite: CS 106A or equivalent.">
     <!-- Bootstrap Core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
@@ -21,7 +21,7 @@
 	<!-- JabRef CSS -->
 	<link rel="stylesheet" href="https://stanfordasl.github.io/css/JabRef.css">
 	 
-    <link rel="canonical" href="http://asl.stanford.edu/people/james-harrison/"> 
+    <link rel="canonical" href="http://asl.stanford.edu/aa274/announcements.html"> 
     <!-- Not required -->
     <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="https://stanfordasl.github.io /feed.xml "> -->
     <!-- Custom Fonts -->
@@ -30,6 +30,9 @@
     
     <!-- My CSS -->
     <link rel="stylesheet" href="https://stanfordasl.github.io/css/my.css"> 
+
+    <!-- AA 274 CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/aa274.css"> 
 
     <!-- Analytics -->
     
@@ -55,12 +58,8 @@
 
 </head>
 
-
-
-
-
-  <body id="page-top" class="index">
-    <!-- Navigation -->
+<body id="page-top" class="index">
+  <!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -78,7 +77,12 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-6 text-center center-block">
+                <div class="collapse navbar-collapse">
+                    <a class="aa274_name" href="/aa274/"><h4>AA274: Principles of Robotic Autonomy</h4></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center center-block">
                 <div class="row">
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -87,15 +91,6 @@
                                 <a href="#page-top"></a>
                             </li>
                             
-                            <li class="page-scroll">
-                                <a href="/">Home</a>
-                            </li>
-                            
-                            
-                            
-                                
-                            
-                                
                             
                                 
                             
@@ -118,7 +113,7 @@
                                 
                                     
                                     <li class="page-scroll">
-                                        <a href="/projects/">Projects</a>
+                                        <a href="/aa274/">Home</a>
                                     </li>
                                     
                                 
@@ -126,9 +121,11 @@
                                 
                                     
                                     <li class="page-scroll">
-                                        <a href="/publications/">Publications</a>
+                                        <a href="/aa274/assignments.html">Homework</a>
                                     </li>
                                     
+                                
+                            
                                 
                             
                                 
@@ -136,7 +133,7 @@
                                 
                                     
                                     <li class="page-scroll">
-                                        <a href="/people/">People</a>
+                                        <a href="/aa274/project.html">Project</a>
                                     </li>
                                     
                                 
@@ -145,26 +142,16 @@
                             
                                 
                                     
-                                    <li class="page-scroll">
-                                        <a href="/press/">In the Press</a>
+                                    <li class="page-scroll active">
+                                        <a href="/aa274/announcements.html">Announcements</a>
                                     </li>
                                     
                                 
                             
                                 
-                                    
-                                    <li class="page-scroll">
-                                        <a href="/gallery/">Gallery</a>
-                                    </li>
-                                    
-                                
                             
                                 
-                                    
-                                    <li class="page-scroll">
-                                        <a href="/contact/">Contact</a>
-                                    </li>
-                                    
+                            
                                 
                             
                         </ul>
@@ -177,35 +164,23 @@
     <!-- /.container-fluid -->
 </nav>
 
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>James Harrison</h2>
-          </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Announcements</h1>
+          <p>Announcements related to the course, homeworks, projects, logistics, etc will be posted here. Please check this page regularly for the latest announcements.</p>
         </div>
-        <div class="row">
-	      <div class="col-md-5">
-	          <img src="../../img/people/JamesHarrison.jpg" alt="James Harrison" class="img-responsive">
-          <br>
-          <a href="//web.stanford.edu/~jh2" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Personal Webpage</a>
-		  </div>
-		  <div class="col-md-7">
-		    <p>James is a graduate student in the department of Mechanical Engineering. He received a B.Eng. in Mechanical Engineering from McGill University in 2015, and an M.S. in Mechanical Engineering from Stanford University in 2017. James’ research interests include control theory, robotics, and machine learning. In particular, his current work focuses on verifiably safe and robust methods for reinforcement learning, as well as unsupervised learning and representation learning in robotic task and motion planning.</p>
-
-<h3 id="awards">Awards:</h3>
-<ul>
-  <li>Office of Technology Licensing Stanford Graduate Fellowship</li>
-  <li>National Sciences and Engineering Research Council (NSERC) Doctoral Scholarship</li>
-</ul>
-
-        <br>
-        
-		  </div>
-		</div>
-	  </div>
-    </header>
-    <!--
+      </div>
+<!--       <div class="row">
+        <div class="col-md-12">
+          <h5>01/03/19</h5>
+          <p>The first lecture will be Monday January 7, 1:30 PM to 2:50 PM, in <a href="http://campus-map.stanford.edu/?srch=420-041">Building 420, Room 041</a></p>
+        </div>
+      </div>
+ -->    </div>
+  </header>
+  <!--
 The website should work without any of the JS below. -F
 -->
 
@@ -223,7 +198,7 @@ The website should work without any of the JS below. -F
 <!-- JabRef (Toggling info on Publications Page) -->
 <script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
 
-    <!-- Footer -->
+  <!-- Footer -->
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
@@ -265,5 +240,5 @@ $( window ).resize(function() {
 <footer class="copyright-text footer">
 © 2018 - 2019 Autonomous Systems Lab
 </footer>
-  </body>
+</body>
 </html>
