@@ -33,3 +33,8 @@
 .aa274-homework-due-date {
   color: red;
 }
+
+#aa274-navbar-text {
+    margin-top: -13px;
+    margin-bottom: -20px;
+}
