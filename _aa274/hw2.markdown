@@ -3,7 +3,7 @@ title:  "Homework 2"
 seq_number: 2
 posted_date:   2019-01-19 00:00:00
 due_date:   2019-01-26 17:00:00
-pdf_link: "/aa274/pdfs/hw2.pdf"
+pdf_link: "/aa274/pdfs/homework/hw2.pdf"
 code_link: "https://github.com/StanfordASL/BaRC"
 ---
 
