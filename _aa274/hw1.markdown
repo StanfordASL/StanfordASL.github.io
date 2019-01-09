@@ -8,5 +8,5 @@ code_link: "https://github.com/StanfordASL/AA274_HW1"
 md_group: "assignments"
 ---
 
-The goal of this homework is to familiarize you with some of the techniques for controlling nonholonomic wheeled robots, and familiarize yourself with the ROS environment.
+The goal of this homework is to familiarize you with some of the techniques for controlling nonholonomic wheeled robots, and with the ROS environment. Please read the homework carefully.
  -->
