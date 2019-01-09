@@ -26,10 +26,10 @@ order: 2
               <h2 class="aa274-homework-title">Homework #{{ hwk.seq_number }}</h2>
             </div>
             <div class="col-md-3">
-              <h4 class="aa274-homework-posted-date">Posted on {{ hwk.posted_date | date: "%B %d" }}</h4>
+              <h4 class="aa274-homework-posted-date">Posted on {{ hwk.posted_date | date: "%B %e" }}</h4>
             </div>
             <div class="col-md-4">
-              <h4 class="aa274-homework-due-date">Due at {{ hwk.due_date | date: "%l%P on %B %d" }}</h4>
+              <h4 class="aa274-homework-due-date">Due at {{ hwk.due_date | date: "%l:%M%P on %B %e" }}</h4>
             </div>
           </div>
           <p>{{ hwk.content }}</p>
