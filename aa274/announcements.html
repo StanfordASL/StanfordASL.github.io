@@ -17,23 +17,20 @@ order: 4
           <p>Announcements related to the course, homeworks, projects, logistics, etc will be posted here. Please check this page regularly for the latest announcements.</p>
         </div>
       </div>
+      {% assign sorted_anncmts = (site.aa274 | where:'md_group', "announcements" | sort: 'date') | reverse %}
+      {% for anncmt in sorted_anncmts %}
+      <hr />
       <div class="row">
         <div class="col-md-12">
-          <h5>01/07/19</h5>
-          <p>The pre-knowledge quiz is now available <a href="/aa274/pdfs/Assumed_Knowledge_Test_2019.pdf">here.</a> The solutions will be posted shortly.</p>
-          <p>Office hours will be held in Durand 023, Tuesday/Friday 2pm - 4pm. The syllabus has been updated accordingly. Office hours will begin on Friday 1/11/19.</p>
+          <h5>{{anncmt.date | date: "%m/%d/%Y" }}</h5>
+          <p>{{ anncmt.content }}</p>
         </div>
       </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h5>01/08/19</h5>
-        <p>The Python recitation will be held in Durand 450 from 1-3 PM on 1/11. The session will be recorded for those that cannot make it.</p>
-      </div>
+      {% endfor %}
     </div>
-  </div>
-  </header>
-  {% include javascript.html %}
-  {% include footer.html %}
+    </header>
+    {% include javascript.html %}
+    {% include footer.html %}
 </body>
 </html>
  

@@ -35,6 +35,30 @@
 }
 
 #aa274-navbar-text {
-    margin-top: -13px;
-    margin-bottom: -20px;
+  margin-top: -13px;
+  margin-bottom: -20px;
+  text-align: center;
+  width: 54%;
+}
+
+a:link, a:active, a:focus {
+  color: #2864B7 !important;
+
+}
+a, a:hover {
+  color: #2864B7 !important;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #222 !important;
+}
+.nav > li.active > a {
+  color: rgb(40, 100, 183) !important;
+}
+.nav > li.active > a:hover {
+  color: rgb(40, 100, 183) !important;
+}
+li > span >a:link, a:active, a:focus, .entry-title {
+  color: #337ab7 !important;
 }

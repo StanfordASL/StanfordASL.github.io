@@ -16,7 +16,7 @@ order: 2
           <h1>Homework</h1>
         </div>
       </div>
-      {% assign sorted_hwks = site.aa274 | reverse %}
+      {% assign sorted_hwks = site.aa274 | reverse | where:'md_group', "assignments" %}
       {% for hwk in sorted_hwks %}
       <hr />
       <div class="row">
