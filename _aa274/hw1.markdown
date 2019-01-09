@@ -1,4 +1,4 @@
-<!-- ---
+---
 title:  "Homework 1"
 seq_number: 1
 posted_date:   2019-01-9 00:00:00
@@ -9,4 +9,3 @@ md_group: "assignments"
 ---
 
 The goal of this homework is to familiarize you with some of the techniques for controlling nonholonomic wheeled robots, and with the ROS environment. Please read the homework carefully.
- -->
