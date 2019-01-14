@@ -2,7 +2,7 @@
 date:   2019-01-14 00:00:00
 md_group: "announcements"
 ---
-This Wednesday's lecture 1/16/19 will be canceled. A make-up lecture will be scheduled on Tuesday 1/15/19 (tomorrow) 1:30-2:50PM, location TBA. The make-up lecture will be recorded and the video will be made available. 
+This Wednesday's lecture 1/16/19 will be canceled. A make-up lecture will be scheduled on Tuesday 1/15/19 (tomorrow) 1:30-2:50PM, Gates B01. The make-up lecture will be recorded and the video will be made available. 
 
 There has been minor changes to Homework 1. The pdf has been updated accordingly. Specifically:
 - Please include your plots in your write up.
