@@ -1062,116 +1062,30 @@
  
 
 
-<span class="entry" id="BonalliCauligiEtAl2019">R. Bonalli, A. Cauligi, A. Bylard, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf">“GuSTO: Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_BonalliCauligiEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Sequential Convex Programming (SCP) has recently seen a surge of interest as a tool for trajectory optimization. Yet, most available methods lack rigorous performance guarantees and are often tailored to specific optimal control setups. In this paper, we present GuSTO (Guaranteed Sequential Trajectory Optimization), an algorithmic framework to solve trajectory optimization problems for control-affine systems with drift. GuSTO generalizes earlier SCP-based methods for trajectory optimization (by addressing, for example, goal region constraints and problems with either fixed or free final time), and enjoys theoretical convergence guarantees in terms of convergence to, at least, a stationary point. The theoretical analysis is further leveraged to devise an accelerated implementation of GuSTO, which originally infuses ideas from indirect optimal control into an SCP context. Numerical experiments on a variety of trajectory optimization setups show that GuSTO generally outperforms current state-of-the-art approaches in terms of success rates, solution quality, and computation times.</p>
+<span class="entry" id="ZahroofBylardEtAl2019">T. Zahroof, A. Bylard, H. Shageer, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Zahroof.Bylard.Shageer.Pavone.AeroConf19.pdf">“Perception-Constrained Robot Manipulator Planning for Satellite Servicing,”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2019. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ZahroofBylardEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ZahroofBylardEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_ZahroofBylardEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Satellite servicing is a rapidly developing industry which requires a number advances in semi- and fully-automated space robotics to unlock many key servicing capabilities. One upcoming mission example is the NASA Restore-L Robotic Servicing spacecraft, which is equipped with two 7-joint robotic manipulators used to capture a satellite and perform a complex series of refueling tasks, including swapping between various end-effector tools stored on board. In this scenario, planning of the manipulator motions must account for a number of constraints, such as collision avoidance and the potential need for uninterrupted visual tracking of objects or of the end-effector. Such complex constraints in a cluttered environment, such as the interface between two spacecraft, are time-consuming to incorporate into hand-designed trajectories. Thus, in this work we present a software tool which uses robot motion planning and path refinement algorithms for automated, real-time computation of near-optimal, collision-free trajectories which satisfy the aforementioned perception constraints. The tool is built on the ROS MoveIt! framework, which can simulate and visualize trajectories as well as seamlessly switch between motion planning and refinement algorithms depending on task requirements. Additionally, we performed experimental campaigns to benchmark a number of available algorithms for performance in handling such perception constraints. Although the framework is applied to a mock-up of Restore-L satellite servicer in this paper, the tool can be applied to any fixed-base manipulator planning scenario with a similar class of constraints.</p>
 </span>
-<span id="bib_BonalliCauligiEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{BonalliCauligiEtAl2019,
-  author = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
-  title = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+<span id="bib_ZahroofBylardEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{ZahroofBylardEtAl2019,
+  author = {Zahroof, T. and Bylard, A. and Shageer, H. and Pavone, M.},
+  title = {Perception-Constrained Robot Manipulator Planning for Satellite Servicing},
+  booktitle = {{IEEE Aerospace Conference}},
   year = {2019},
-  note = {Submitted},
-  address = {Montreal, Canada},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf},
-  keywords = {sub},
+  note = {In Press},
+  address = {Big Sky, Montana},
+  month = mar,
+  url = {../wp-content/papercite-data/pdf/Zahroof.Bylard.Shageer.Pavone.AeroConf19.pdf},
+  keywords = {press},
   owner = {bylard},
-  timestamp = {2018-10-04}
+  timestamp = {2019-01-14}
 }
 </pre>
 </span>
-<!-- <span id="key_BonalliCauligiEtAl2019" >
+<!-- <span id="key_ZahroofBylardEtAl2019" >
 	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="LorenzettiLandryEtAl2019">J. Lorenzetti, B. Landry, S. Singh, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1811.06590.pdf">“Reduced Order Model Predictive Control For Setpoint Tracking,”</a> in <i>European Control Conference</i>, Naples, Italy, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_LorenzettiLandryEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.</p>
-</span>
-<span id="bib_LorenzettiLandryEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{LorenzettiLandryEtAl2019,
-  author = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
-  title = {Reduced Order Model Predictive Control For Setpoint Tracking},
-  booktitle = {{European Control Conference}},
-  year = {2019},
-  note = {Submitted},
-  address = {Naples, Italy},
-  month = jun,
-  url = {https://arxiv.org/pdf/1811.06590.pdf},
-  keywords = {sub},
-  owner = {jlorenze},
-  timestamp = {2018-11-15}
-}
-</pre>
-</span>
-<!-- <span id="key_LorenzettiLandryEtAl2019" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SalazarTsaoEtAl2019">M. Salazar, M. Tsao, I. Aguiar, M. Schiffer, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf">“A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems,”</a> in <i>European Control Conference</i>, Naples, Italy, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SalazarTsaoEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalazarTsaoEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_SalazarTsaoEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We study route-planning for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing scheme (CARS) that captures road-utilization-dependent travel times at a mesoscopic level via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. This approximation largely retains the key features of the BPR model, while allowing the design of a real-time, convex quadratic optimization algorithm to determine congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARS to existing routing approaches, namely a congestion-unaware and a threshold congestion model. Numerical results show that CARS significantly outperforms the other two approaches, with improvements in terms of travel time and global cost in the order of 20%.</p>
-</span>
-<span id="bib_SalazarTsaoEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{SalazarTsaoEtAl2019,
-  author = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
-  title = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
-  booktitle = {{European Control Conference}},
-  year = {2019},
-  note = {Submitted},
-  address = {Naples, Italy},
-  month = nov,
-  url = {../wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf},
-  keywords = {sub},
-  owner = {samauro},
-  timestamp = {2018-11-17}
-}
-</pre>
-</span>
-<!-- <span id="key_SalazarTsaoEtAl2019" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="LeungArechigaEtAl2019">K. Leung, N. Arechiga, and M. Pavone, <a class="entry-title" href="">“Backpropagation for Signal Temporal Logic,”</a> in <i>Hybrid Systems: Computation and Control</i>, Montreal, Canada, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LeungArechigaEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungArechigaEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_LeungArechigaEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Signal Temporal Logic (STL) is an expressive language used to describe logical and temporal properties of signals, both continuous and discrete. Inferring STL formulas from behavior traces can provide powerful insights into complex systems. These insights can help system designers better understand and improve the systems they develop (e.g., long-term behaviors of time series data), yet this is a very challenging and often intractable problem. This work presents a method for evaluating STL formulas using computation graphs, hence bridging a connection between STL and many modern machine learning frameworks that depend on computation graphs, such as deep learning. We show that this approach is particularly effective for solving parameteric STL (pSTL) problems, the problem of parameter fitting for a given signal. We provide a relaxation technique that makes this method more tractable when solving general pSTL formulas. By using computation graphs, we can leverage the benefits and the computational prowess of modern day machine learning tools. Motivated by the problem of learning explanatory factors and safety assurance for complex cyber-physical systems, we demonstrate our proposed method on an autonomous driving case study.</p>
-</span>
-<span id="bib_LeungArechigaEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{LeungArechigaEtAl2019,
-  author = {Leung, K. and Arechiga, N. and Pavone, M.},
-  title = {Backpropagation for Signal Temporal Logic},
-  booktitle = {{Hybrid Systems: Computation and Control}},
-  year = {2019},
-  note = {Submitted},
-  address = {Montreal, Canada},
-  month = apr,
-  keywords = {sub},
-  owner = {karenl7},
-  timestamp = {2018-10-24}
-}
-</pre>
-</span>
-<!-- <span id="key_LeungArechigaEtAl2019" >
-	<b>Keywords</b>:
-	sub
+	press
 </span> --></li>
 <li>
  
@@ -1199,64 +1113,6 @@
 </pre>
 </span>
 <!-- <span id="key_IvanovicPavone2019" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="IvanovicHarrisonEtAl2019">B. Ivanovic, J. Harrison, A. Sharma, M. Chen, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1806.06161.pdf">“BaRC: Backward Reachability Curriculum for Robotic Reinforcement Learning,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicHarrisonEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicHarrisonEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_IvanovicHarrisonEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Model-free Reinforcement Learning (RL) offers an attractive approach to learn control policies for high-dimensional systems, but its relatively poor sample complexity often forces training in simulated environments. Even in simulation, goal-directed tasks whose natural reward function is sparse remain intractable for state-of-the-art model-free algorithms for continuous control. The bottleneck in these tasks is the prohibitive amount of exploration required to obtain a learning signal from the initial state of the system. In this work, we leverage physical priors in the form of an approximate system dynamics model to design a curriculum scheme for a model-free policy optimization algorithm. Our Backward Reachability Curriculum (BaRC) begins policy training from states that require a small number of actions to accomplish the task, and expands the initial state distribution backwards in a dynamically-consistent manner once the policy optimization algorithm demonstrates sufficient performance. BaRC is general, in that it can accelerate training of any model-free RL algorithm on a broad class of goal-directed continuous control MDPs. Its curriculum strategy is physically intuitive, easy-to-tune, and allows incorporating physical priors to accelerate training without hindering the performance, flexibility, and applicability of the model-free RL algorithm. We evaluate our approach on two representative dynamic robotic learning problems and find substantial performance improvement relative to previous curriculum generation techniques and naïve exploration strategies</p>
-</span>
-<span id="bib_IvanovicHarrisonEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{IvanovicHarrisonEtAl2019,
-  author = {Ivanovic, B. and Harrison, J. and Sharma, A. and Chen, M. and Pavone, M.},
-  title = {{BaRC:} Backward Reachability Curriculum for Robotic Reinforcement Learning},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2019},
-  note = {Submitted},
-  address = {Montreal, Canada},
-  month = may,
-  url = {https://arxiv.org/pdf/1806.06161.pdf},
-  keywords = {sub},
-  owner = {apoorva},
-  timestamp = {2018-09-05}
-}
-</pre>
-</span>
-<!-- <span id="key_IvanovicHarrisonEtAl2019" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="IchterPavone2019">B. Ichter and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1807.10366">“Robot Motion Planning in Learned Latent Spaces,”</a> in <i>IEEE Robotics and Automation Letters</i>, Merida, Mexico, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IchterPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterPavone2019','abstract')">Abstract</a>]</p>
-<span id="abs_IchterPavone2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This paper presents Latent Sampling-based Motion Planning (L-SBMP), a methodology towards computing motion plans for complex robotic systems by learning a plannable latent representation. Recent works in control of robotic systems have effectively leveraged local, low-dimensional embeddings of high-dimensional dynamics. In this paper we combine these recent advances with techniques from sampling-based motion planning (SBMP) in order to design a methodology capable of planning for high-dimensional robotic systems beyond the reach of traditional approaches (e.g., humanoids, or even systems where planning occurs in the visual space). Specifically, the learned latent space is constructed through an autoencoding network, a dynamics network, and a collision checking network, which mirror the three main algorithmic primitives of SBMP, namely state sampling, local steering, and collision checking. Notably, these networks can be trained through only raw data of the system’s states and actions along with a supervising collision checker. Building upon these networks, an RRT-based algorithm is used to plan motions directly in the latent space - we refer to this exploration algorithm as Learned Latent RRT (L2RRT). This algorithm globally explores the latent space and is capable of generalizing to new environments. The overall methodology is demonstrated on two planning problems, namely a visual planning problem, whereby planning happens in the visual (pixel) space, and a humanoid robot planning problem.</p>
-</span>
-<span id="bib_IchterPavone2019" class="bibtex noshow">
-	<pre>@inproceedings{IchterPavone2019,
-  author = {Ichter, B. and Pavone, M.},
-  title = {Robot Motion Planning in Learned Latent Spaces},
-  booktitle = {{IEEE Robotics and Automation Letters}},
-  year = {2019},
-  note = {Submitted},
-  address = {Merida, Mexico},
-  month = oct,
-  url = {https://arxiv.org/abs/1807.10366},
-  keywords = {sub},
-  owner = {ichter},
-  timestamp = {2018-11-06}
-}
-</pre>
-</span>
-<!-- <span id="key_IchterPavone2019" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -1321,6 +1177,35 @@
  
 
 
+<span class="entry" id="BonalliCauligiEtAl2019">R. Bonalli, A. Cauligi, A. Bylard, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf">“GuSTO: Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_BonalliCauligiEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Sequential Convex Programming (SCP) has recently seen a surge of interest as a tool for trajectory optimization. Yet, most available methods lack rigorous performance guarantees and are often tailored to specific optimal control setups. In this paper, we present GuSTO (Guaranteed Sequential Trajectory Optimization), an algorithmic framework to solve trajectory optimization problems for control-affine systems with drift. GuSTO generalizes earlier SCP-based methods for trajectory optimization (by addressing, for example, goal region constraints and problems with either fixed or free final time), and enjoys theoretical convergence guarantees in terms of convergence to, at least, a stationary point. The theoretical analysis is further leveraged to devise an accelerated implementation of GuSTO, which originally infuses ideas from indirect optimal control into an SCP context. Numerical experiments on a variety of trajectory optimization setups show that GuSTO generally outperforms current state-of-the-art approaches in terms of success rates, solution quality, and computation times.</p>
+</span>
+<span id="bib_BonalliCauligiEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{BonalliCauligiEtAl2019,
+  author = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
+  title = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2019},
+  note = {Submitted},
+  address = {Montreal, Canada},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf},
+  keywords = {sub},
+  owner = {bylard},
+  timestamp = {2018-10-04}
+}
+</pre>
+</span>
+<!-- <span id="key_BonalliCauligiEtAl2019" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="Salazar2019">M. Salazar, M. Tsao, I. Aguiar, M. Schiffer, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Salazar.Tsao.ea.TRB19.pdf">“CARA: A Congestion-Aware Routing Algorithm for Autonomous Mobility-on-Demand Systems,”</a> in <i>Annual Meeting of the Transportation Research Board</i>, Washington, D.C., 2019. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('Salazar2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('Salazar2019','abstract')">Abstract</a>]</p>
 <span id="abs_Salazar2019" class="abstract noshow">
@@ -1350,53 +1235,145 @@
  
 
 
-<span class="entry" id="ChiodiniReidEtAl2018">S. Chiodini, R. G. Reid, B. Hockman, I. A. D. Nesnas, S. Debei, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Chiodini.Reid.Hockman.ea.ICRA18.pdf">“Robust Visual Localization for Hopping Rovers on Small Bodies,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ChiodiniReidEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChiodiniReidEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_ChiodiniReidEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We present a collaborative visual localization method for rovers designed to hop and tumble over the surface of small Solar System bodies, such as comets and asteroids. In a two-phase approach, an orbiting primary spacecraft first maps the surface of a body by capturing images from various poses and illumination angles; these images are processed to create a prior map of 3D landmarks. In the second phase, a hopping rover is deployed to the surface where it uses the prior map and a camera to perform on-board visual simultaneous localization and mapping (SLAM). Small bodies present new challenges to existing visual SLAM algorithms. Rotation periods as short as 1-12 hours, in the absence of atmospheric scattering, create high-contrast shadows that move over the surface. The constantly changing illumination angles cause landmark outliers and increase pose uncertainty. Furthermore, in this collaborative visual SLAM problem, the scene scale between spacecraft and hopping rover varies by several orders of magnitude (kilometers to centimeters). In this work, we describe how to augment ORB-SLAM2 - a state of the art visual SLAM implementation - so that it combines prior images with multiple illumination angles to handle large illumination variations. We also demonstrate how a wide field of view (FOV) camera (e.g. on a hopping rover) can relocalize to prior maps captured by a narrow FOV camera (e.g. a spacecraft navcam) to handle large scale variations. To reduce pose and scale errors accumulated while exploring the surface, we show how the rover can perform large hops to capture views of the surface that it can match to the prior map. After relocalizing, the rover’s on-board estimates are updated with a pose graph optimization and bundle adjustment. We evaluate the proposed method with sequences of images captured around a mock asteroid; illumination angles are varied while narrow and wide FOV cameras are steered along trajectories representative of orbital and hopping motions. Trajectory estimates are compared and found to be consistent with ground truth data. Evaluations suggest this method is robust to large illumination variations, scene scale changes and off-nadir camera pointing angles.</p>
+<span class="entry" id="LeungArechigaEtAl2019">K. Leung, N. Arechiga, and M. Pavone, <a class="entry-title" href="">“Backpropagation for Signal Temporal Logic,”</a> in <i>Hybrid Systems: Computation and Control</i>, Montreal, Canada, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LeungArechigaEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungArechigaEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_LeungArechigaEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Signal Temporal Logic (STL) is an expressive language used to describe logical and temporal properties of signals, both continuous and discrete. Inferring STL formulas from behavior traces can provide powerful insights into complex systems. These insights can help system designers better understand and improve the systems they develop (e.g., long-term behaviors of time series data), yet this is a very challenging and often intractable problem. This work presents a method for evaluating STL formulas using computation graphs, hence bridging a connection between STL and many modern machine learning frameworks that depend on computation graphs, such as deep learning. We show that this approach is particularly effective for solving parameteric STL (pSTL) problems, the problem of parameter fitting for a given signal. We provide a relaxation technique that makes this method more tractable when solving general pSTL formulas. By using computation graphs, we can leverage the benefits and the computational prowess of modern day machine learning tools. Motivated by the problem of learning explanatory factors and safety assurance for complex cyber-physical systems, we demonstrate our proposed method on an autonomous driving case study.</p>
 </span>
-<span id="bib_ChiodiniReidEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{ChiodiniReidEtAl2018,
-  author = {Chiodini, S. and Reid, R. G. and Hockman, B. and Nesnas, I. A. D. and Debei, S. and Pavone, M.},
-  title = {Robust Visual Localization for Hopping Rovers on Small Bodies},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2018},
-  address = {Brisbane, Australia},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Chiodini.Reid.Hockman.ea.ICRA18.pdf},
-  owner = {bhockman},
-  timestamp = {2018-01-16}
+<span id="bib_LeungArechigaEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{LeungArechigaEtAl2019,
+  author = {Leung, K. and Arechiga, N. and Pavone, M.},
+  title = {Backpropagation for Signal Temporal Logic},
+  booktitle = {{Hybrid Systems: Computation and Control}},
+  year = {2019},
+  note = {Submitted},
+  address = {Montreal, Canada},
+  month = apr,
+  keywords = {sub},
+  owner = {karenl7},
+  timestamp = {2018-10-24}
 }
 </pre>
 </span>
-<!-- <span id="key_ChiodiniReidEtAl2018" >
+<!-- <span id="key_LeungArechigaEtAl2019" >
 	<b>Keywords</b>:
-	
+	sub
 </span> --></li>
 <li>
  
 
 
-<span class="entry" id="LeungSchmerlingEtAl2018">K. Leung, E. Schmerling, M. Chen, J. Talbot, J. C. Gerdes, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Leung.Schmerling.Chen.ea.ISER18.pdf">“On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions,”</a> in <i>Int. Symp. on Experimental Robotics</i>, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LeungSchmerlingEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungSchmerlingEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_LeungSchmerlingEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
+<span class="entry" id="IchterPavone2019">B. Ichter and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1807.10366">“Robot Motion Planning in Learned Latent Spaces,”</a> in <i>IEEE Robotics and Automation Letters</i>, Merida, Mexico, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterPavone2019','abstract')">Abstract</a>]</p>
+<span id="abs_IchterPavone2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper presents Latent Sampling-based Motion Planning (L-SBMP), a methodology towards computing motion plans for complex robotic systems by learning a plannable latent representation. Recent works in control of robotic systems have effectively leveraged local, low-dimensional embeddings of high-dimensional dynamics. In this paper we combine these recent advances with techniques from sampling-based motion planning (SBMP) in order to design a methodology capable of planning for high-dimensional robotic systems beyond the reach of traditional approaches (e.g., humanoids, or even systems where planning occurs in the visual space). Specifically, the learned latent space is constructed through an autoencoding network, a dynamics network, and a collision checking network, which mirror the three main algorithmic primitives of SBMP, namely state sampling, local steering, and collision checking. Notably, these networks can be trained through only raw data of the system’s states and actions along with a supervising collision checker. Building upon these networks, an RRT-based algorithm is used to plan motions directly in the latent space - we refer to this exploration algorithm as Learned Latent RRT (L2RRT). This algorithm globally explores the latent space and is capable of generalizing to new environments. The overall methodology is demonstrated on two planning problems, namely a visual planning problem, whereby planning happens in the visual (pixel) space, and a humanoid robot planning problem.</p>
 </span>
-<span id="bib_LeungSchmerlingEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{LeungSchmerlingEtAl2018,
-  author = {Leung, K. and Schmerling, E. and Chen, M. and Talbot, J. and Gerdes, J. C. and Pavone, M.},
-  title = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
-  booktitle = {{Int. Symp. on Experimental Robotics}},
-  year = {2018},
-  url = {../wp-content/papercite-data/pdf/Leung.Schmerling.Chen.ea.ISER18.pdf},
-  owner = {mochen72},
-  timestamp = {2018-10-13}
+<span id="bib_IchterPavone2019" class="bibtex noshow">
+	<pre>@inproceedings{IchterPavone2019,
+  author = {Ichter, B. and Pavone, M.},
+  title = {Robot Motion Planning in Learned Latent Spaces},
+  booktitle = {{IEEE Robotics and Automation Letters}},
+  year = {2019},
+  note = {Submitted},
+  address = {Merida, Mexico},
+  month = oct,
+  url = {https://arxiv.org/abs/1807.10366},
+  keywords = {sub},
+  owner = {ichter},
+  timestamp = {2018-11-06}
 }
 </pre>
 </span>
-<!-- <span id="key_LeungSchmerlingEtAl2018" >
+<!-- <span id="key_IchterPavone2019" >
 	<b>Keywords</b>:
-	
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IvanovicHarrisonEtAl2019">B. Ivanovic, J. Harrison, A. Sharma, M. Chen, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1806.06161.pdf">“BaRC: Backward Reachability Curriculum for Robotic Reinforcement Learning,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicHarrisonEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicHarrisonEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_IvanovicHarrisonEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Model-free Reinforcement Learning (RL) offers an attractive approach to learn control policies for high-dimensional systems, but its relatively poor sample complexity often forces training in simulated environments. Even in simulation, goal-directed tasks whose natural reward function is sparse remain intractable for state-of-the-art model-free algorithms for continuous control. The bottleneck in these tasks is the prohibitive amount of exploration required to obtain a learning signal from the initial state of the system. In this work, we leverage physical priors in the form of an approximate system dynamics model to design a curriculum scheme for a model-free policy optimization algorithm. Our Backward Reachability Curriculum (BaRC) begins policy training from states that require a small number of actions to accomplish the task, and expands the initial state distribution backwards in a dynamically-consistent manner once the policy optimization algorithm demonstrates sufficient performance. BaRC is general, in that it can accelerate training of any model-free RL algorithm on a broad class of goal-directed continuous control MDPs. Its curriculum strategy is physically intuitive, easy-to-tune, and allows incorporating physical priors to accelerate training without hindering the performance, flexibility, and applicability of the model-free RL algorithm. We evaluate our approach on two representative dynamic robotic learning problems and find substantial performance improvement relative to previous curriculum generation techniques and naïve exploration strategies</p>
+</span>
+<span id="bib_IvanovicHarrisonEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{IvanovicHarrisonEtAl2019,
+  author = {Ivanovic, B. and Harrison, J. and Sharma, A. and Chen, M. and Pavone, M.},
+  title = {{BaRC:} Backward Reachability Curriculum for Robotic Reinforcement Learning},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2019},
+  note = {Submitted},
+  address = {Montreal, Canada},
+  month = may,
+  url = {https://arxiv.org/pdf/1806.06161.pdf},
+  keywords = {sub},
+  owner = {apoorva},
+  timestamp = {2018-09-05}
+}
+</pre>
+</span>
+<!-- <span id="key_IvanovicHarrisonEtAl2019" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SalazarTsaoEtAl2019">M. Salazar, M. Tsao, I. Aguiar, M. Schiffer, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf">“A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems,”</a> in <i>European Control Conference</i>, Naples, Italy, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SalazarTsaoEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalazarTsaoEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_SalazarTsaoEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We study route-planning for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing scheme (CARS) that captures road-utilization-dependent travel times at a mesoscopic level via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. This approximation largely retains the key features of the BPR model, while allowing the design of a real-time, convex quadratic optimization algorithm to determine congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARS to existing routing approaches, namely a congestion-unaware and a threshold congestion model. Numerical results show that CARS significantly outperforms the other two approaches, with improvements in terms of travel time and global cost in the order of 20%.</p>
+</span>
+<span id="bib_SalazarTsaoEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{SalazarTsaoEtAl2019,
+  author = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
+  title = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
+  booktitle = {{European Control Conference}},
+  year = {2019},
+  note = {Submitted},
+  address = {Naples, Italy},
+  month = nov,
+  url = {../wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf},
+  keywords = {sub},
+  owner = {samauro},
+  timestamp = {2018-11-17}
+}
+</pre>
+</span>
+<!-- <span id="key_SalazarTsaoEtAl2019" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LorenzettiLandryEtAl2019">J. Lorenzetti, B. Landry, S. Singh, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1811.06590.pdf">“Reduced Order Model Predictive Control For Setpoint Tracking,”</a> in <i>European Control Conference</i>, Naples, Italy, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_LorenzettiLandryEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.</p>
+</span>
+<span id="bib_LorenzettiLandryEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{LorenzettiLandryEtAl2019,
+  author = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
+  title = {Reduced Order Model Predictive Control For Setpoint Tracking},
+  booktitle = {{European Control Conference}},
+  year = {2019},
+  note = {Submitted},
+  address = {Naples, Italy},
+  month = jun,
+  url = {https://arxiv.org/pdf/1811.06590.pdf},
+  keywords = {sub},
+  owner = {jlorenze},
+  timestamp = {2018-11-15}
+}
+</pre>
+</span>
+<!-- <span id="key_LorenzettiLandryEtAl2019" >
+	<b>Keywords</b>:
+	sub
 </span> --></li>
 <li>
  
@@ -1424,6 +1401,173 @@
 </pre>
 </span>
 <!-- <span id="key_SinghChenEtAl2018" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SchmerlingLeungEtAl2018">E. Schmerling, K. Leung, W. Vollprecht, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Schmerling.Leung.Vollprecht.Pavone.ICRA18.pdf">“Multimodal Probabilistic Model-Based Planning for Human-Robot Interaction,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SchmerlingLeungEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchmerlingLeungEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_SchmerlingLeungEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper presents a method for constructing human-robot interaction policies in settings where multimodality, i.e., the possibility of multiple highly distinct futures, plays a critical role in decision making. We are motivated in this work by the example of traffic weaving, e.g., at highway onramps/offramps, where entering and exiting cars must swap lanes in a short distance — a challenging negotiation even for experienced drivers due to the inherent multimodal uncertainty of who will pass whom. Our approach is to learn multimodal probability distributions over future human actions from a dataset of human-human exemplars and perform real-time robot policy construction in the resulting environment model through massively parallel sampling of human responses to candidate robot action sequences. Direct learning of these distributions is made possible by recent advances in the theory of conditional variational autoencoders (CVAEs), whereby we learn action distributions simultaneously conditioned on the present interaction history, as well as candidate future robot actions in order to take into account response dynamics. We demonstrate the efficacy of this approach with a human-in-the-loop simulation of a traffic weaving scenario.</p>
+</span>
+<span id="bib_SchmerlingLeungEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{SchmerlingLeungEtAl2018,
+  author = {Schmerling, E. and Leung, K. and Vollprecht, W. and Pavone, M.},
+  title = {Multimodal Probabilistic Model-Based Planning for Human-Robot Interaction},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2018},
+  address = {Brisbane, Australia},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Schmerling.Leung.Vollprecht.Pavone.ICRA18.pdf},
+  owner = {schmrlng},
+  timestamp = {2017-09-18}
+}
+</pre>
+</span>
+<!-- <span id="key_SchmerlingLeungEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IglesiasRossiEtAl2018">R. Iglesias, F. Rossi, K. Wang, D. Hallac, J. Leskovec, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf">“Data-Driven Model Predictive Control of Autonomous Mobility-on-Demand Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IglesiasRossiEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IglesiasRossiEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_IglesiasRossiEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> The goal of this paper is to present an end-to-end, data-driven framework to control Autonomous Mobility-on-Demand systems (AMoD, i.e. fleets of self-driving vehicles). We first model the AMoD system using a time-expanded network, and present a formulation that computes the optimal rebalancing strategy (i.e., preemptive repositioning) and the minimum feasible fleet size for a given travel demand. Then, we adapt this formulation to devise a Model Predictive Control (MPC) algorithm that leverages short-term demand forecasts based on historical data to compute rebalancing strategies. We test the end-to-end performance of this controller with a state-of-the-art LSTM neural network to predict customer demand and real customer data from DiDi Chuxing: we show that this approach scales very well for large systems (indeed, the computational complexity of the MPC algorithm does not depend on the number of customers and of vehicles in the system) and outperforms state-of-the-art rebalancing strategies by reducing the mean customer wait time by up to to 89.6%.</p>
+</span>
+<span id="bib_IglesiasRossiEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{IglesiasRossiEtAl2018,
+  author = {Iglesias, R. and Rossi, F. and Wang, K. and Hallac, D. and Leskovec, J. and Pavone, M.},
+  title = {Data-Driven Model Predictive Control of Autonomous Mobility-on-Demand Systems},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2018},
+  address = {Brisbane, Australia},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf},
+  owner = {frossi2},
+  timestamp = {2018-01-14}
+}
+</pre>
+</span>
+<!-- <span id="key_IglesiasRossiEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="WangSinghEtAl2018">Z. Wang, S. Singh, M. Pavone, and M. Schwager, <a class="entry-title" href="../wp-content/papercite-data/pdf/Wang.Singh.Pavone.ea.ICRA18.pdf">“Cooperative Object Transport in 3D with Multiple Quadrotors using No Peer Communication,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('WangSinghEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WangSinghEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_WangSinghEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We present a framework to enable a fleet of rigidly attached quadrotor aerial robots to transport heavy objects along a known reference trajectory without inter-robot communication or centralized coordination. Leveraging a distributed wrench controller, we provide exponential stability guarantees for the entire assembly, under a mild geometric condition. This is achieved by each quadrotor independently solving a local optimization problem to counteract the biased torque effects from each robot in the assembly. We rigorously analyze the controllability of the object, design a distributed compensation scheme to address these challenges, and show that the resulting strategy collectively guarantees full group control authority. To ensure feasibility for online implementation, we derive bounds on the net desired control wrench, characterize the output wrench space of each quadrotor, and perform subsequent trajectory optimization under these input constraints. We thoroughly validate our method in simulation with eight quadrotors transporting a heavy object in a cluttered environment subject to various sources of uncertainty, and demonstrate the algorithm’s resilience.</p>
+</span>
+<span id="bib_WangSinghEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{WangSinghEtAl2018,
+  author = {Wang, Z. and Singh, S. and Pavone, M. and Schwager, M.},
+  title = {Cooperative Object Transport in {3D} with Multiple Quadrotors using No Peer Communication},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2018},
+  address = {Brisbane, Australia},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Wang.Singh.Pavone.ea.ICRA18.pdf},
+  owner = {ssingh19},
+  timestamp = {2018-01-16}
+}
+</pre>
+</span>
+<!-- <span id="key_WangSinghEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ChinchaliAnemogiannisEtAl2018">S. P. Chinchali, A. Anemogiannis, T. Chu, R. Misra, M. Pavone, and S. Katti, <a class="entry-title" href="">“Decoupling Prediction and Control Across Data Boundaries,”</a> in <i>Proc. ACM Workshop on Hot Topics in Networks</i>, Seattle, Washington, 2018. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChinchaliAnemogiannisEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChinchaliAnemogiannisEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_ChinchaliAnemogiannisEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Today’s networks have access to a wealth of real-time connectivity information that can be used to provide accurate forecasts of bandwidth or city-wide cell congestion. Network operators have an incentive to deliver such rich forecasts to external control application developers, who can leverage them to improve mobile video streaming or ride-sharing services. The two entities of a network operator and downstream control application developer must decide a concise forecast representation to share across a data boundary that is mutually beneficial. A key challenge is that an application’s control decisions, which could be proprietary, affect future network state, requiring some form of feedback across the data boundary. We propose how to decouple network prediction and control units for key benefits of modularity, increased interpretability, and re-usability across applications.</p>
+</span>
+<span id="bib_ChinchaliAnemogiannisEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{ChinchaliAnemogiannisEtAl2018,
+  author = {Chinchali, S. P. and Anemogiannis, A. and Chu, T. and Misra, R. and Pavone, M. and Katti, S.},
+  title = {Decoupling Prediction and Control Across Data Boundaries},
+  booktitle = {{Proc. ACM Workshop on Hot Topics in Networks}},
+  year = {2018},
+  note = {Submitted},
+  address = {Seattle, Washington},
+  month = oct,
+  keywords = {sub},
+  owner = {chinchali},
+  timestamp = {2018-07-25}
+}
+</pre>
+</span>
+<!-- <span id="key_ChinchaliAnemogiannisEtAl2018" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ChenTamEtAl2018">M. Chen, Q. Tam, S. C. Livingston, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf">“Signal Temporal Logic meets Hamilton-Jacobi Reachability: Connections and Applications,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChenTamEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChenTamEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_ChenTamEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.</p>
+</span>
+<span id="bib_ChenTamEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{ChenTamEtAl2018,
+  author = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
+  title = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
+  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
+  year = {2018},
+  note = {Submitted},
+  address = {Merida, Mexico},
+  month = oct,
+  url = {../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
+  keywords = {sub},
+  owner = {bylard},
+  timestamp = {2018-07-24}
+}
+</pre>
+</span>
+<!-- <span id="key_ChenTamEtAl2018" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="HarrisonSharmaEtAl2018">J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.08912.pdf">“Meta-Learning Priors for Efficient Online Bayesian Regression,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_HarrisonSharmaEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. In particular, the predominant implementation of GP regression is kernel-based, as it enables fitting of arbitrary nonlinear functions by leveraging kernel functions as infinite-dimensional features. While incorporating prior information has the potential to drastically improve data efficiency of kernel-based GP regression, expressing complex priors through the choice of kernel function and associated hyperparameters is often challenging and unintuitive. Furthermore, the computational complexity of kernel-based GP regression scales poorly with the number of samples, limiting its application in regimes where a large amount of data is available. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior density. These features are neural networks, which are trained via a meta-learning approach. ALPaCA extracts all prior information from the dataset, rather than relying on the choice of arbitrary, restrictive kernel hyperparameters. Furthermore, it substantially reduces sample complexity, and allows scaling to large systems. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.</p>
+</span>
+<span id="bib_HarrisonSharmaEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{HarrisonSharmaEtAl2018,
+  author = {Harrison, J. and Sharma, A. and Pavone, M.},
+  title = {Meta-Learning Priors for Efficient Online Bayesian Regression},
+  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
+  year = {2018},
+  note = {In press},
+  address = {Merida, Mexico},
+  month = oct,
+  url = {https://arxiv.org/pdf/1807.08912.pdf},
+  keywords = {press},
+  owner = {apoorva},
+  timestamp = {2018-10-07}
+}
+</pre>
+</span>
+<!-- <span id="key_HarrisonSharmaEtAl2018" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -1460,35 +1604,6 @@
  
 
 
-<span class="entry" id="HarrisonSharmaEtAl2018">J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.08912.pdf">“Meta-Learning Priors for Efficient Online Bayesian Regression,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_HarrisonSharmaEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. In particular, the predominant implementation of GP regression is kernel-based, as it enables fitting of arbitrary nonlinear functions by leveraging kernel functions as infinite-dimensional features. While incorporating prior information has the potential to drastically improve data efficiency of kernel-based GP regression, expressing complex priors through the choice of kernel function and associated hyperparameters is often challenging and unintuitive. Furthermore, the computational complexity of kernel-based GP regression scales poorly with the number of samples, limiting its application in regimes where a large amount of data is available. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior density. These features are neural networks, which are trained via a meta-learning approach. ALPaCA extracts all prior information from the dataset, rather than relying on the choice of arbitrary, restrictive kernel hyperparameters. Furthermore, it substantially reduces sample complexity, and allows scaling to large systems. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.</p>
-</span>
-<span id="bib_HarrisonSharmaEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{HarrisonSharmaEtAl2018,
-  author = {Harrison, J. and Sharma, A. and Pavone, M.},
-  title = {Meta-Learning Priors for Efficient Online Bayesian Regression},
-  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
-  year = {2018},
-  note = {In press},
-  address = {Merida, Mexico},
-  month = oct,
-  url = {https://arxiv.org/pdf/1807.08912.pdf},
-  keywords = {press},
-  owner = {apoorva},
-  timestamp = {2018-10-07}
-}
-</pre>
-</span>
-<!-- <span id="key_HarrisonSharmaEtAl2018" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="Hockman2018">B. Hockman and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Hockman.Pavone.ISAIRAS18.pdf">“Traversability of Hopping Rovers on Small Solar System Bodies,”</a> in <i>Int. Symp. on Artificial Intelligence, Robotics and Automation in Space</i>, Madrid, Spain, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('Hockman2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('Hockman2018','abstract')">Abstract</a>]</p>
 <span id="abs_Hockman2018" class="abstract noshow">
@@ -1509,6 +1624,31 @@
 </pre>
 </span>
 <!-- <span id="key_Hockman2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LeungSchmerlingEtAl2018">K. Leung, E. Schmerling, M. Chen, J. Talbot, J. C. Gerdes, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Leung.Schmerling.Chen.ea.ISER18.pdf">“On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions,”</a> in <i>Int. Symp. on Experimental Robotics</i>, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LeungSchmerlingEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungSchmerlingEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_LeungSchmerlingEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
+</span>
+<span id="bib_LeungSchmerlingEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{LeungSchmerlingEtAl2018,
+  author = {Leung, K. and Schmerling, E. and Chen, M. and Talbot, J. and Gerdes, J. C. and Pavone, M.},
+  title = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
+  booktitle = {{Int. Symp. on Experimental Robotics}},
+  year = {2018},
+  url = {../wp-content/papercite-data/pdf/Leung.Schmerling.Chen.ea.ISER18.pdf},
+  owner = {mochen72},
+  timestamp = {2018-10-13}
+}
+</pre>
+</span>
+<!-- <span id="key_LeungSchmerlingEtAl2018" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -1825,6 +1965,33 @@
  
 
 
+<span class="entry" id="ChiodiniReidEtAl2018">S. Chiodini, R. G. Reid, B. Hockman, I. A. D. Nesnas, S. Debei, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Chiodini.Reid.Hockman.ea.ICRA18.pdf">“Robust Visual Localization for Hopping Rovers on Small Bodies,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChiodiniReidEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChiodiniReidEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_ChiodiniReidEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We present a collaborative visual localization method for rovers designed to hop and tumble over the surface of small Solar System bodies, such as comets and asteroids. In a two-phase approach, an orbiting primary spacecraft first maps the surface of a body by capturing images from various poses and illumination angles; these images are processed to create a prior map of 3D landmarks. In the second phase, a hopping rover is deployed to the surface where it uses the prior map and a camera to perform on-board visual simultaneous localization and mapping (SLAM). Small bodies present new challenges to existing visual SLAM algorithms. Rotation periods as short as 1-12 hours, in the absence of atmospheric scattering, create high-contrast shadows that move over the surface. The constantly changing illumination angles cause landmark outliers and increase pose uncertainty. Furthermore, in this collaborative visual SLAM problem, the scene scale between spacecraft and hopping rover varies by several orders of magnitude (kilometers to centimeters). In this work, we describe how to augment ORB-SLAM2 - a state of the art visual SLAM implementation - so that it combines prior images with multiple illumination angles to handle large illumination variations. We also demonstrate how a wide field of view (FOV) camera (e.g. on a hopping rover) can relocalize to prior maps captured by a narrow FOV camera (e.g. a spacecraft navcam) to handle large scale variations. To reduce pose and scale errors accumulated while exploring the surface, we show how the rover can perform large hops to capture views of the surface that it can match to the prior map. After relocalizing, the rover’s on-board estimates are updated with a pose graph optimization and bundle adjustment. We evaluate the proposed method with sequences of images captured around a mock asteroid; illumination angles are varied while narrow and wide FOV cameras are steered along trajectories representative of orbital and hopping motions. Trajectory estimates are compared and found to be consistent with ground truth data. Evaluations suggest this method is robust to large illumination variations, scene scale changes and off-nadir camera pointing angles.</p>
+</span>
+<span id="bib_ChiodiniReidEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{ChiodiniReidEtAl2018,
+  author = {Chiodini, S. and Reid, R. G. and Hockman, B. and Nesnas, I. A. D. and Debei, S. and Pavone, M.},
+  title = {Robust Visual Localization for Hopping Rovers on Small Bodies},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2018},
+  address = {Brisbane, Australia},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Chiodini.Reid.Hockman.ea.ICRA18.pdf},
+  owner = {bhockman},
+  timestamp = {2018-01-16}
+}
+</pre>
+</span>
+<!-- <span id="key_ChiodiniReidEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="IchterHarrisonEtAl2018">B. Ichter, J. Harrison, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1709.05448.pdf">“Learning Sampling Distributions for Robot Motion Planning,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('IchterHarrisonEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterHarrisonEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_IchterHarrisonEtAl2018" class="abstract noshow">
@@ -1845,307 +2012,6 @@
 </pre>
 </span>
 <!-- <span id="key_IchterHarrisonEtAl2018" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SchmerlingLeungEtAl2018">E. Schmerling, K. Leung, W. Vollprecht, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Schmerling.Leung.Vollprecht.Pavone.ICRA18.pdf">“Multimodal Probabilistic Model-Based Planning for Human-Robot Interaction,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SchmerlingLeungEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchmerlingLeungEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_SchmerlingLeungEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This paper presents a method for constructing human-robot interaction policies in settings where multimodality, i.e., the possibility of multiple highly distinct futures, plays a critical role in decision making. We are motivated in this work by the example of traffic weaving, e.g., at highway onramps/offramps, where entering and exiting cars must swap lanes in a short distance — a challenging negotiation even for experienced drivers due to the inherent multimodal uncertainty of who will pass whom. Our approach is to learn multimodal probability distributions over future human actions from a dataset of human-human exemplars and perform real-time robot policy construction in the resulting environment model through massively parallel sampling of human responses to candidate robot action sequences. Direct learning of these distributions is made possible by recent advances in the theory of conditional variational autoencoders (CVAEs), whereby we learn action distributions simultaneously conditioned on the present interaction history, as well as candidate future robot actions in order to take into account response dynamics. We demonstrate the efficacy of this approach with a human-in-the-loop simulation of a traffic weaving scenario.</p>
-</span>
-<span id="bib_SchmerlingLeungEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{SchmerlingLeungEtAl2018,
-  author = {Schmerling, E. and Leung, K. and Vollprecht, W. and Pavone, M.},
-  title = {Multimodal Probabilistic Model-Based Planning for Human-Robot Interaction},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2018},
-  address = {Brisbane, Australia},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Schmerling.Leung.Vollprecht.Pavone.ICRA18.pdf},
-  owner = {schmrlng},
-  timestamp = {2017-09-18}
-}
-</pre>
-</span>
-<!-- <span id="key_SchmerlingLeungEtAl2018" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="IglesiasRossiEtAl2018">R. Iglesias, F. Rossi, K. Wang, D. Hallac, J. Leskovec, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf">“Data-Driven Model Predictive Control of Autonomous Mobility-on-Demand Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IglesiasRossiEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IglesiasRossiEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_IglesiasRossiEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> The goal of this paper is to present an end-to-end, data-driven framework to control Autonomous Mobility-on-Demand systems (AMoD, i.e. fleets of self-driving vehicles). We first model the AMoD system using a time-expanded network, and present a formulation that computes the optimal rebalancing strategy (i.e., preemptive repositioning) and the minimum feasible fleet size for a given travel demand. Then, we adapt this formulation to devise a Model Predictive Control (MPC) algorithm that leverages short-term demand forecasts based on historical data to compute rebalancing strategies. We test the end-to-end performance of this controller with a state-of-the-art LSTM neural network to predict customer demand and real customer data from DiDi Chuxing: we show that this approach scales very well for large systems (indeed, the computational complexity of the MPC algorithm does not depend on the number of customers and of vehicles in the system) and outperforms state-of-the-art rebalancing strategies by reducing the mean customer wait time by up to to 89.6%.</p>
-</span>
-<span id="bib_IglesiasRossiEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{IglesiasRossiEtAl2018,
-  author = {Iglesias, R. and Rossi, F. and Wang, K. and Hallac, D. and Leskovec, J. and Pavone, M.},
-  title = {Data-Driven Model Predictive Control of Autonomous Mobility-on-Demand Systems},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2018},
-  address = {Brisbane, Australia},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf},
-  owner = {frossi2},
-  timestamp = {2018-01-14}
-}
-</pre>
-</span>
-<!-- <span id="key_IglesiasRossiEtAl2018" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="WangSinghEtAl2018">Z. Wang, S. Singh, M. Pavone, and M. Schwager, <a class="entry-title" href="../wp-content/papercite-data/pdf/Wang.Singh.Pavone.ea.ICRA18.pdf">“Cooperative Object Transport in 3D with Multiple Quadrotors using No Peer Communication,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('WangSinghEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WangSinghEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_WangSinghEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We present a framework to enable a fleet of rigidly attached quadrotor aerial robots to transport heavy objects along a known reference trajectory without inter-robot communication or centralized coordination. Leveraging a distributed wrench controller, we provide exponential stability guarantees for the entire assembly, under a mild geometric condition. This is achieved by each quadrotor independently solving a local optimization problem to counteract the biased torque effects from each robot in the assembly. We rigorously analyze the controllability of the object, design a distributed compensation scheme to address these challenges, and show that the resulting strategy collectively guarantees full group control authority. To ensure feasibility for online implementation, we derive bounds on the net desired control wrench, characterize the output wrench space of each quadrotor, and perform subsequent trajectory optimization under these input constraints. We thoroughly validate our method in simulation with eight quadrotors transporting a heavy object in a cluttered environment subject to various sources of uncertainty, and demonstrate the algorithm’s resilience.</p>
-</span>
-<span id="bib_WangSinghEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{WangSinghEtAl2018,
-  author = {Wang, Z. and Singh, S. and Pavone, M. and Schwager, M.},
-  title = {Cooperative Object Transport in {3D} with Multiple Quadrotors using No Peer Communication},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2018},
-  address = {Brisbane, Australia},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Wang.Singh.Pavone.ea.ICRA18.pdf},
-  owner = {ssingh19},
-  timestamp = {2018-01-16}
-}
-</pre>
-</span>
-<!-- <span id="key_WangSinghEtAl2018" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="ChinchaliAnemogiannisEtAl2018">S. P. Chinchali, A. Anemogiannis, T. Chu, R. Misra, M. Pavone, and S. Katti, <a class="entry-title" href="">“Decoupling Prediction and Control Across Data Boundaries,”</a> in <i>Proc. ACM Workshop on Hot Topics in Networks</i>, Seattle, Washington, 2018. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ChinchaliAnemogiannisEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChinchaliAnemogiannisEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_ChinchaliAnemogiannisEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Today’s networks have access to a wealth of real-time connectivity information that can be used to provide accurate forecasts of bandwidth or city-wide cell congestion. Network operators have an incentive to deliver such rich forecasts to external control application developers, who can leverage them to improve mobile video streaming or ride-sharing services. The two entities of a network operator and downstream control application developer must decide a concise forecast representation to share across a data boundary that is mutually beneficial. A key challenge is that an application’s control decisions, which could be proprietary, affect future network state, requiring some form of feedback across the data boundary. We propose how to decouple network prediction and control units for key benefits of modularity, increased interpretability, and re-usability across applications.</p>
-</span>
-<span id="bib_ChinchaliAnemogiannisEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{ChinchaliAnemogiannisEtAl2018,
-  author = {Chinchali, S. P. and Anemogiannis, A. and Chu, T. and Misra, R. and Pavone, M. and Katti, S.},
-  title = {Decoupling Prediction and Control Across Data Boundaries},
-  booktitle = {{Proc. ACM Workshop on Hot Topics in Networks}},
-  year = {2018},
-  note = {Submitted},
-  address = {Seattle, Washington},
-  month = oct,
-  keywords = {sub},
-  owner = {chinchali},
-  timestamp = {2018-07-25}
-}
-</pre>
-</span>
-<!-- <span id="key_ChinchaliAnemogiannisEtAl2018" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="ChenTamEtAl2018">M. Chen, Q. Tam, S. C. Livingston, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf">“Signal Temporal Logic meets Hamilton-Jacobi Reachability: Connections and Applications,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ChenTamEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChenTamEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_ChenTamEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.</p>
-</span>
-<span id="bib_ChenTamEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{ChenTamEtAl2018,
-  author = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
-  title = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
-  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
-  year = {2018},
-  note = {Submitted},
-  address = {Merida, Mexico},
-  month = oct,
-  url = {../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
-  keywords = {sub},
-  owner = {bylard},
-  timestamp = {2018-07-24}
-}
-</pre>
-</span>
-<!-- <span id="key_ChenTamEtAl2018" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="MacPhersonHockmanEtAl2017">R. MacPherson, B. Hockman, A. Bylard, M. A. Estrada, M. R. Cutkosky, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/MacPherson.Hockman.Bylard.ea.FSR17.pdf">“Trajectory Optimization for Dynamic Grasping in Space using Adhesive Grippers,”</a> in <i>Field and Service Robotics</i>, Zurich, Switzerland, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('MacPhersonHockmanEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MacPhersonHockmanEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_MacPhersonHockmanEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Spacecraft equipped with gecko-inspired dry adhesive grippers can dynamically grasp objects having a wide variety of featureless surfaces. In this paper we propose an optimization-based control strategy to exploit the dynamic robustness of such grippers for the task of grasping a free-floating, spinning object. First, we extend previous work characterizing the dynamic grasping capabilities of these grippers to the case where both object and spacecraft are free-floating and comparably sized. We then formulate the acquisition problem as a two-phase optimal control problem, which is amenable to real time implementation and can handle constraints on velocity, control, as well as integer timing constraints for grasping a specific target location on the surface of a spinning object. Conservative analytical bounds on the set of initial states that guarantee persistent feasibility are derived.</p>
-</span>
-<span id="bib_MacPhersonHockmanEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{MacPhersonHockmanEtAl2017,
-  author = {MacPherson, R. and Hockman, B. and Bylard, A. and Estrada, M. A. and Cutkosky, M. R. and Pavone, M.},
-  title = {Trajectory Optimization for Dynamic Grasping in Space using Adhesive Grippers},
-  booktitle = {{Field and Service Robotics}},
-  year = {2017},
-  address = {Zurich, Switzerland},
-  month = sep,
-  url = {../wp-content/papercite-data/pdf/MacPherson.Hockman.Bylard.ea.FSR17.pdf},
-  owner = {bylard},
-  timestamp = {2018-01-16}
-}
-</pre>
-</span>
-<!-- <span id="key_MacPhersonHockmanEtAl2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="BylardMacPhersonEtAl2017">A. Bylard, R. MacPherson, B. Hockman, M. R. Cutkosky, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Bylard.MacPherson.Hockman.ea.AeroConf17.pdf">“Robust Capture and Deorbit of Rocket Body Debris Using Controllable Dry Adhesion,”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BylardMacPhersonEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BylardMacPhersonEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_BylardMacPhersonEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Removing large orbital debris in a safe, robust, and cost-effective manner is a long-standing challenge, having serious implications for LEO satellite safety and access to space. Many studies have focused on the deorbit of spent rocket bodies (R/Bs) as an achievable and high-priority first step. However, major difficulties arise from the R/Bs’ residual tumble and lack of traditional docking/grasping fixtures. Previously investigated docking strategies often require complex and risky approach maneuvers or have a high chance of producing additional debris. To address this challenge, this paper investigates the use of controllable dry adhesives (CDAs), also known as gecko-inspired adhesives, as an alternative approach to R/B docking and deorbiting. CDAs are gathering interest for in-space grasping and manipulation due to their ability to controllably attach to and detach from any smooth, clean surface, including flat and curved surfaces. Such capability significantly expands the number and types of potential docking locations on a target. CDAs are also inexpensive, are space-qualified (performing well in a vacuum, in extreme temperatures, and under radiation), and can attach and detach while applying minimal force to a target surface, all important considerations for space deployment. In this paper, we investigate a notional strategy for initial capture and stabilization of a R/B having multi-axis tumble, exploiting the unique properties of CDA grippers to reduce maneuver complexity, and we propose alternatives for rigidly attaching deorbiting kits to a R/B. Simulations based on experimentally verified models of CDA grippers show that these approaches show promise as robust alternatives to previously explored methods.</p>
-</span>
-<span id="bib_BylardMacPhersonEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{BylardMacPhersonEtAl2017,
-  author = {Bylard, A. and MacPherson, R. and Hockman, B. and Cutkosky, M. R. and Pavone, M.},
-  title = {Robust Capture and Deorbit of Rocket Body Debris Using Controllable Dry Adhesion},
-  booktitle = {{IEEE Aerospace Conference}},
-  year = {2017},
-  address = {Big Sky, Montana},
-  month = mar,
-  url = {../wp-content/papercite-data/pdf/Bylard.MacPherson.Hockman.ea.AeroConf17.pdf},
-  owner = {bylard},
-  timestamp = {2017-03-07}
-}
-</pre>
-</span>
-<!-- <span id="key_BylardMacPhersonEtAl2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SushkoTedjaratiEtAl2017">A. Sushko, A. Tedjarati, J. Creus-Costa, S. Maldonado, K. Marshland, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Suskho.Tedjarati.ea.AERO2017.pdf">“Low cost, high endurance, altitude-controlled latex balloon for near-space research (ValBal),”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SushkoTedjaratiEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SushkoTedjaratiEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_SushkoTedjaratiEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> High-altitude balloons in near space offer the possibility of affordable scientific experimentation and hardware testing for outer space missions. In this paper we present a novel, low cost high-altitude balloon system that achieves multi-day flight using inexpensive latex balloons by automatically venting lifting gas and dispensing ballast to maintain altitude. Traditionally, superpressure balloons have been used for high-altitude scientific missions; however, despite their long endurance and payload capacity in the tens of kilograms, their cost is in excess of tens of thousands of dollars. Latex balloons are significantly less expensive, typically costing little more than a hundred dollars, but in normal use fly for only a couple hours, rising until reduced atmospheric pressure causes the balloon to stretch beyond its limits. Precision-weighted latex balloons have demonstrated multi-day flights, but such systems cannot change altitude while aloft and offer minimal payload capacity (measuring in tens of grams). Our system, known as ValBal, offers altitude control capabilities exceeding those of a superpressure balloon at a two order of magnitude reduction in cost. ValBal can stabilize anywhere in its operational range of 10-25 km altitude, and can execute scheduled or remotely commanded altitude transitions during flight. In its current iteration, ValBal can be configured to accommodate payloads on the order of 10000 cubic centimeters and 2 kilograms. In June 2016, a ValBal demonstration mission flew for over 70 hours continuously, surpassing the previous world record of 57 hours, for the longest duration of a latex balloon flight. ValBal has flown twice more since then, including a flight of almost 80 hours. Planned developments will seek to improve the endurance to a week and increase the payload interface capabilities for scientific missions.</p>
-</span>
-<span id="bib_SushkoTedjaratiEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{SushkoTedjaratiEtAl2017,
-  author = {Sushko, A. and Tedjarati, A. and Creus-Costa, J. and Maldonado, S. and Marshland, K. and Pavone, M.},
-  title = {Low cost, high endurance, altitude-controlled latex balloon for near-space research ({ValBal})},
-  booktitle = {{IEEE Aerospace Conference}},
-  year = {2017},
-  address = {Big Sky, Montana},
-  month = mar,
-  url = {../wp-content/papercite-data/pdf/Suskho.Tedjarati.ea.AERO2017.pdf},
-  owner = {frossi2},
-  timestamp = {2017-10-05}
-}
-</pre>
-</span>
-<!-- <span id="key_SushkoTedjaratiEtAl2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="JorgensenChenEtAl2017d">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.CDC17.pdf">“The Risk-Sensitive Coverage Problem: Multi-Robot Routing Under Uncertainty with Service Level and Survival Constraints,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Melbourne, Australia, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017d','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017d','abstract')">Abstract</a>]</p>
-<span id="abs_JorgensenChenEtAl2017d" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Consider a scenario where robots traverse a graph, but crossing each edge bears a risk of failure. A team operator seeks a set of paths for the smallest team which guarantee the probabilities that at least one robot visits each node satisfies specified per-node visit thresholds, and the probabilities each robot reaches its destination satisfy a per-robot survival threshold. We present the Risk-Sensitive Coverage (RSC) problem formally as an instance of the submodular set cover problem and propose an efficient cost-benefit greedy algorithm for finding a feasible set of paths. We prove that the number of robots deployed by our algorithm is no more than (lambda/p_s)(1+log( lambda Delta_K/p_s)) times the smallest team, where Delta_K quantifies the relative benefit of the first and last paths, p_s is the per-robot survival probability threshold and 1/lambda < 1 is the approximation factor of an oracle routine for the well-known orienteering problem. We demonstrate the quality of our solutions by comparing to optimal solutions computed for special cases of the RSC and the efficiency of our approach by applying it to a search and rescue scenario where 225 sites must be visited, each with probability at least 0.95.</p>
-</span>
-<span id="bib_JorgensenChenEtAl2017d" class="bibtex noshow">
-	<pre>@inproceedings{JorgensenChenEtAl2017d,
-  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
-  title = {The Risk-Sensitive Coverage Problem: Multi-Robot Routing Under Uncertainty with Service Level and Survival Constraints},
-  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
-  year = {2017},
-  address = {Melbourne, Australia},
-  month = dec,
-  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.CDC17.pdf},
-  owner = {stefantj},
-  timestamp = {2018-04-10}
-}
-</pre>
-</span>
-<!-- <span id="key_JorgensenChenEtAl2017d" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SinghMajumdarEtAl2017">S. Singh, A. Majumdar, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf">“Robust Online Motion Planning via Contraction Theory and Convex Optimization,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinghMajumdarEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghMajumdarEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_SinghMajumdarEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We present a framework for online generation of robust motion plans for robotic systems with nonlinear dynamics subject to bounded disturbances, control constraints, and online state constraints such as obstacles. In an offline phase, one computes the structure of a feedback controller that can be efficiently implemented online to track any feasible nominal trajectory. The offline phase leverages contraction theory and convex optimization to characterize a fixed-size “tube” that the state is guaranteed to remain within while tracking a nominal trajectory (representing the center of the tube). In the online phase, when the robot is faced with obstacles, a motion planner uses such a tube as a robustness margin for collision checking, yielding nominal trajectories that can be safely executed (i.e., tracked without collisions under disturbances). In contrast to recent work on robust online planning using funnel libraries, our approach is not restricted to a fixed library of maneuvers computed offline and is thus particularly well-suited to applications such as UAV flight in densely cluttered environments where complex maneuvers may be required to reach a goal. We demonstrate our approach through simulations of a 6-state planar quadrotor navigating cluttered environments in the presence of a cross-wind. We also discuss applications of our approach to Tube Model Predictive Control (TMPC) and compare the merits of our method with state-of-the-art nonlinear TMPC techniques.</p>
-</span>
-<span id="bib_SinghMajumdarEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{SinghMajumdarEtAl2017,
-  author = {Singh, S. and Majumdar, A. and Slotine, J.-J. E. and Pavone, M.},
-  title = {Robust Online Motion Planning via Contraction Theory and Convex Optimization},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2017},
-  note = {{Extended Version, Available at }\url{http://asl.stanford.edu/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf}},
-  address = {Singapore},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf},
-  owner = {bylard},
-  timestamp = {2018-06-30}
-}
-</pre>
-</span>
-<!-- <span id="key_SinghMajumdarEtAl2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="JorgensenChenEtAl2017c">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.IROS2017.pdf">“The Matroid Team Surviving Orienteers Problem: Constrained Routing of Heterogeneous Teams with Risky Traversal,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Vancouver, Canada, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017c','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017c','abstract')">Abstract</a>]</p>
-<span id="abs_JorgensenChenEtAl2017c" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Consider a setting where robots must visit nodes in a graph, but each robot may fail when traversing an edge. The goal is to find a set of paths for a team of robots which maximizes the expected number of nodes collectively visited, while guaranteeing that the paths satisfy a notion of "independence" formalized by a matroid (e.g. limits on team size, number of visits to regions), and that the probabilities that each robot survives to its destination are above a given threshold. We call this problem the Matroid Team Surviving Orienteers (MTSO) problem, which has broad applications such as environmental monitoring in risky regions and search and rescue in dangerous conditions. We present the MTSO formally and detail numerous examples of matroids in a path planning context. We then propose an approximate greedy algorithm for selecting a feasible set of paths and prove that the value of the output is within a factor p_s/(p_s+lambda) of the optimum, where p_s is the per-robot survival probability threshold and 1/lambda < 1 is the approximation factor of an oracle routine for the well known orienteering problem. We demonstrate the efficiency of our approach by applying it to a scenario where a team of robots must gather information while avoiding pirates in the Coral Triangle.</p>
-</span>
-<span id="bib_JorgensenChenEtAl2017c" class="bibtex noshow">
-	<pre>@inproceedings{JorgensenChenEtAl2017c,
-  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
-  title = {The Matroid Team Surviving Orienteers Problem: Constrained Routing of Heterogeneous Teams with Risky Traversal},
-  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
-  year = {2017},
-  address = {Vancouver, Canada},
-  month = sep,
-  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.IROS2017.pdf},
-  owner = {stefantj},
-  timestamp = {2018-04-10}
-}
-</pre>
-</span>
-<!-- <span id="key_JorgensenChenEtAl2017c" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -2180,26 +2046,107 @@
  
 
 
-<span class="entry" id="JorgensenChenEtAl2017">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.ICRC2017.pdf">“The Team Surviving Orienteers Problem: Routing Robots in Uncertain Environments with Survival Constraints,”</a> in <i>IEEE Int. Conf. on Robotic Computing</i>, Taichung, Taiwan, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_JorgensenChenEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we study the following multi-robot coordination problem: given a graph, where each edge is weighted by the probability of surviving while traversing it, find a set of paths for K robots that maximizes the expected number of nodes collectively visited, subject to constraints on the probability that each robot survives to its destination. We call this problem the Team Surviving Orienteers (TSO) problem. The TSO problem is motivated by scenarios where a team of robots must traverse a dangerous, uncertain environment, such as aid delivery in disaster or war zones. We present the TSO problem formally along with several variants, which represent "survivability-aware" counterparts for a wide range of multi-robot coordination problems such as vehicle routing, patrolling, and informative path planning. We propose an approximate greedy approach for selecting paths, and prove that the value of its output is bounded within a factor 1 - exp(-p_s/lambda) of the optimum where p_s is the per-robot survival probability threshold, and 1/lambda < 1 is the approximation factor of an oracle routine for the well-known orienteering problem. Our approach has linear time complexity in the team size and polynomial complexity in the graph size. Using numerical simulations, we verify that our approach is close to the optimum in practice and that it scales to problems with hundreds of nodes and tens of robots.</p>
+<span class="entry" id="MacPhersonHockmanEtAl2017">R. MacPherson, B. Hockman, A. Bylard, M. A. Estrada, M. R. Cutkosky, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/MacPherson.Hockman.Bylard.ea.FSR17.pdf">“Trajectory Optimization for Dynamic Grasping in Space using Adhesive Grippers,”</a> in <i>Field and Service Robotics</i>, Zurich, Switzerland, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('MacPhersonHockmanEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MacPhersonHockmanEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_MacPhersonHockmanEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Spacecraft equipped with gecko-inspired dry adhesive grippers can dynamically grasp objects having a wide variety of featureless surfaces. In this paper we propose an optimization-based control strategy to exploit the dynamic robustness of such grippers for the task of grasping a free-floating, spinning object. First, we extend previous work characterizing the dynamic grasping capabilities of these grippers to the case where both object and spacecraft are free-floating and comparably sized. We then formulate the acquisition problem as a two-phase optimal control problem, which is amenable to real time implementation and can handle constraints on velocity, control, as well as integer timing constraints for grasping a specific target location on the surface of a spinning object. Conservative analytical bounds on the set of initial states that guarantee persistent feasibility are derived.</p>
 </span>
-<span id="bib_JorgensenChenEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{JorgensenChenEtAl2017,
-  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
-  title = {The Team Surviving Orienteers Problem: Routing Robots in Uncertain Environments with Survival Constraints},
-  booktitle = {{IEEE Int. Conf. on Robotic Computing}},
+<span id="bib_MacPhersonHockmanEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{MacPhersonHockmanEtAl2017,
+  author = {MacPherson, R. and Hockman, B. and Bylard, A. and Estrada, M. A. and Cutkosky, M. R. and Pavone, M.},
+  title = {Trajectory Optimization for Dynamic Grasping in Space using Adhesive Grippers},
+  booktitle = {{Field and Service Robotics}},
   year = {2017},
-  address = {Taichung, Taiwan},
-  month = apr,
-  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.ICRC2017.pdf},
+  address = {Zurich, Switzerland},
+  month = sep,
+  url = {../wp-content/papercite-data/pdf/MacPherson.Hockman.Bylard.ea.FSR17.pdf},
   owner = {bylard},
+  timestamp = {2018-01-16}
+}
+</pre>
+</span>
+<!-- <span id="key_MacPhersonHockmanEtAl2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="JorgensenChenEtAl2017d">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.CDC17.pdf">“The Risk-Sensitive Coverage Problem: Multi-Robot Routing Under Uncertainty with Service Level and Survival Constraints,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Melbourne, Australia, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017d','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017d','abstract')">Abstract</a>]</p>
+<span id="abs_JorgensenChenEtAl2017d" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Consider a scenario where robots traverse a graph, but crossing each edge bears a risk of failure. A team operator seeks a set of paths for the smallest team which guarantee the probabilities that at least one robot visits each node satisfies specified per-node visit thresholds, and the probabilities each robot reaches its destination satisfy a per-robot survival threshold. We present the Risk-Sensitive Coverage (RSC) problem formally as an instance of the submodular set cover problem and propose an efficient cost-benefit greedy algorithm for finding a feasible set of paths. We prove that the number of robots deployed by our algorithm is no more than (lambda/p_s)(1+log( lambda Delta_K/p_s)) times the smallest team, where Delta_K quantifies the relative benefit of the first and last paths, p_s is the per-robot survival probability threshold and 1/lambda < 1 is the approximation factor of an oracle routine for the well-known orienteering problem. We demonstrate the quality of our solutions by comparing to optimal solutions computed for special cases of the RSC and the efficiency of our approach by applying it to a search and rescue scenario where 225 sites must be visited, each with probability at least 0.95.</p>
+</span>
+<span id="bib_JorgensenChenEtAl2017d" class="bibtex noshow">
+	<pre>@inproceedings{JorgensenChenEtAl2017d,
+  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
+  title = {The Risk-Sensitive Coverage Problem: Multi-Robot Routing Under Uncertainty with Service Level and Survival Constraints},
+  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
+  year = {2017},
+  address = {Melbourne, Australia},
+  month = dec,
+  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.CDC17.pdf},
+  owner = {stefantj},
   timestamp = {2018-04-10}
 }
 </pre>
 </span>
-<!-- <span id="key_JorgensenChenEtAl2017" >
+<!-- <span id="key_JorgensenChenEtAl2017d" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="JorgensenChenEtAl2017c">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.IROS2017.pdf">“The Matroid Team Surviving Orienteers Problem: Constrained Routing of Heterogeneous Teams with Risky Traversal,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Vancouver, Canada, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017c','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017c','abstract')">Abstract</a>]</p>
+<span id="abs_JorgensenChenEtAl2017c" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Consider a setting where robots must visit nodes in a graph, but each robot may fail when traversing an edge. The goal is to find a set of paths for a team of robots which maximizes the expected number of nodes collectively visited, while guaranteeing that the paths satisfy a notion of "independence" formalized by a matroid (e.g. limits on team size, number of visits to regions), and that the probabilities that each robot survives to its destination are above a given threshold. We call this problem the Matroid Team Surviving Orienteers (MTSO) problem, which has broad applications such as environmental monitoring in risky regions and search and rescue in dangerous conditions. We present the MTSO formally and detail numerous examples of matroids in a path planning context. We then propose an approximate greedy algorithm for selecting a feasible set of paths and prove that the value of the output is within a factor p_s/(p_s+lambda) of the optimum, where p_s is the per-robot survival probability threshold and 1/lambda < 1 is the approximation factor of an oracle routine for the well known orienteering problem. We demonstrate the efficiency of our approach by applying it to a scenario where a team of robots must gather information while avoiding pirates in the Coral Triangle.</p>
+</span>
+<span id="bib_JorgensenChenEtAl2017c" class="bibtex noshow">
+	<pre>@inproceedings{JorgensenChenEtAl2017c,
+  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
+  title = {The Matroid Team Surviving Orienteers Problem: Constrained Routing of Heterogeneous Teams with Risky Traversal},
+  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
+  year = {2017},
+  address = {Vancouver, Canada},
+  month = sep,
+  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.IROS2017.pdf},
+  owner = {stefantj},
+  timestamp = {2018-04-10}
+}
+</pre>
+</span>
+<!-- <span id="key_JorgensenChenEtAl2017c" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SushkoTedjaratiEtAl2017">A. Sushko, A. Tedjarati, J. Creus-Costa, S. Maldonado, K. Marshland, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Suskho.Tedjarati.ea.AERO2017.pdf">“Low cost, high endurance, altitude-controlled latex balloon for near-space research (ValBal),”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SushkoTedjaratiEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SushkoTedjaratiEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_SushkoTedjaratiEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> High-altitude balloons in near space offer the possibility of affordable scientific experimentation and hardware testing for outer space missions. In this paper we present a novel, low cost high-altitude balloon system that achieves multi-day flight using inexpensive latex balloons by automatically venting lifting gas and dispensing ballast to maintain altitude. Traditionally, superpressure balloons have been used for high-altitude scientific missions; however, despite their long endurance and payload capacity in the tens of kilograms, their cost is in excess of tens of thousands of dollars. Latex balloons are significantly less expensive, typically costing little more than a hundred dollars, but in normal use fly for only a couple hours, rising until reduced atmospheric pressure causes the balloon to stretch beyond its limits. Precision-weighted latex balloons have demonstrated multi-day flights, but such systems cannot change altitude while aloft and offer minimal payload capacity (measuring in tens of grams). Our system, known as ValBal, offers altitude control capabilities exceeding those of a superpressure balloon at a two order of magnitude reduction in cost. ValBal can stabilize anywhere in its operational range of 10-25 km altitude, and can execute scheduled or remotely commanded altitude transitions during flight. In its current iteration, ValBal can be configured to accommodate payloads on the order of 10000 cubic centimeters and 2 kilograms. In June 2016, a ValBal demonstration mission flew for over 70 hours continuously, surpassing the previous world record of 57 hours, for the longest duration of a latex balloon flight. ValBal has flown twice more since then, including a flight of almost 80 hours. Planned developments will seek to improve the endurance to a week and increase the payload interface capabilities for scientific missions.</p>
+</span>
+<span id="bib_SushkoTedjaratiEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{SushkoTedjaratiEtAl2017,
+  author = {Sushko, A. and Tedjarati, A. and Creus-Costa, J. and Maldonado, S. and Marshland, K. and Pavone, M.},
+  title = {Low cost, high endurance, altitude-controlled latex balloon for near-space research ({ValBal})},
+  booktitle = {{IEEE Aerospace Conference}},
+  year = {2017},
+  address = {Big Sky, Montana},
+  month = mar,
+  url = {../wp-content/papercite-data/pdf/Suskho.Tedjarati.ea.AERO2017.pdf},
+  owner = {frossi2},
+  timestamp = {2017-10-05}
+}
+</pre>
+</span>
+<!-- <span id="key_SushkoTedjaratiEtAl2017" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -2288,6 +2235,115 @@
  
 
 
+<span class="entry" id="JorgensenChenEtAl2017">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.ICRC2017.pdf">“The Team Surviving Orienteers Problem: Routing Robots in Uncertain Environments with Survival Constraints,”</a> in <i>IEEE Int. Conf. on Robotic Computing</i>, Taichung, Taiwan, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_JorgensenChenEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we study the following multi-robot coordination problem: given a graph, where each edge is weighted by the probability of surviving while traversing it, find a set of paths for K robots that maximizes the expected number of nodes collectively visited, subject to constraints on the probability that each robot survives to its destination. We call this problem the Team Surviving Orienteers (TSO) problem. The TSO problem is motivated by scenarios where a team of robots must traverse a dangerous, uncertain environment, such as aid delivery in disaster or war zones. We present the TSO problem formally along with several variants, which represent "survivability-aware" counterparts for a wide range of multi-robot coordination problems such as vehicle routing, patrolling, and informative path planning. We propose an approximate greedy approach for selecting paths, and prove that the value of its output is bounded within a factor 1 - exp(-p_s/lambda) of the optimum where p_s is the per-robot survival probability threshold, and 1/lambda < 1 is the approximation factor of an oracle routine for the well-known orienteering problem. Our approach has linear time complexity in the team size and polynomial complexity in the graph size. Using numerical simulations, we verify that our approach is close to the optimum in practice and that it scales to problems with hundreds of nodes and tens of robots.</p>
+</span>
+<span id="bib_JorgensenChenEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{JorgensenChenEtAl2017,
+  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
+  title = {The Team Surviving Orienteers Problem: Routing Robots in Uncertain Environments with Survival Constraints},
+  booktitle = {{IEEE Int. Conf. on Robotic Computing}},
+  year = {2017},
+  address = {Taichung, Taiwan},
+  month = apr,
+  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.ICRC2017.pdf},
+  owner = {bylard},
+  timestamp = {2018-04-10}
+}
+</pre>
+</span>
+<!-- <span id="key_JorgensenChenEtAl2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="EstradaJiangEtAl2017">M. A. Estrada, H. Jiang, B. Noll, E. W. Hawkes, M. Pavone, and M. R. Cutkosky, <a class="entry-title" href="../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf">“Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('EstradaJiangEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('EstradaJiangEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_EstradaJiangEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Free-flying robots have the potential to autonomously fulfill a wide range of tasks involving manipulation of objects in space. In this paper we study the design of a wrist mechanism for free-flying robots that are equipped with an adhesive gripper for attaching to objects and surfaces. The wrist and gripper allow the robots to apply moments in addition to forces, which increases their versatility for object manipulation. We apply grasp optimization to establish limitations on the forces/moments that the wrist can impart, subject to adhesion capabilities. Building on these results, we present an approach for tuning a passive wrist mechanism, or controlling an active wrist, to broaden the range of forces and moments that the robot can exert. Our theoretical insights and wrist designs are validated in simulations and on a planar micro-gravity test bed.</p>
+</span>
+<span id="bib_EstradaJiangEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{EstradaJiangEtAl2017,
+  author = {Estrada, M. A. and Jiang, H. and Noll, B. and Hawkes, E. W. and Pavone, M. and Cutkosky, M. R.},
+  title = {Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2017},
+  address = {Singapore},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf},
+  owner = {bylard},
+  timestamp = {2017-03-07}
+}
+</pre>
+</span>
+<!-- <span id="key_EstradaJiangEtAl2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="BylardMacPhersonEtAl2017">A. Bylard, R. MacPherson, B. Hockman, M. R. Cutkosky, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Bylard.MacPherson.Hockman.ea.AeroConf17.pdf">“Robust Capture and Deorbit of Rocket Body Debris Using Controllable Dry Adhesion,”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BylardMacPhersonEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BylardMacPhersonEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_BylardMacPhersonEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Removing large orbital debris in a safe, robust, and cost-effective manner is a long-standing challenge, having serious implications for LEO satellite safety and access to space. Many studies have focused on the deorbit of spent rocket bodies (R/Bs) as an achievable and high-priority first step. However, major difficulties arise from the R/Bs’ residual tumble and lack of traditional docking/grasping fixtures. Previously investigated docking strategies often require complex and risky approach maneuvers or have a high chance of producing additional debris. To address this challenge, this paper investigates the use of controllable dry adhesives (CDAs), also known as gecko-inspired adhesives, as an alternative approach to R/B docking and deorbiting. CDAs are gathering interest for in-space grasping and manipulation due to their ability to controllably attach to and detach from any smooth, clean surface, including flat and curved surfaces. Such capability significantly expands the number and types of potential docking locations on a target. CDAs are also inexpensive, are space-qualified (performing well in a vacuum, in extreme temperatures, and under radiation), and can attach and detach while applying minimal force to a target surface, all important considerations for space deployment. In this paper, we investigate a notional strategy for initial capture and stabilization of a R/B having multi-axis tumble, exploiting the unique properties of CDA grippers to reduce maneuver complexity, and we propose alternatives for rigidly attaching deorbiting kits to a R/B. Simulations based on experimentally verified models of CDA grippers show that these approaches show promise as robust alternatives to previously explored methods.</p>
+</span>
+<span id="bib_BylardMacPhersonEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{BylardMacPhersonEtAl2017,
+  author = {Bylard, A. and MacPherson, R. and Hockman, B. and Cutkosky, M. R. and Pavone, M.},
+  title = {Robust Capture and Deorbit of Rocket Body Debris Using Controllable Dry Adhesion},
+  booktitle = {{IEEE Aerospace Conference}},
+  year = {2017},
+  address = {Big Sky, Montana},
+  month = mar,
+  url = {../wp-content/papercite-data/pdf/Bylard.MacPherson.Hockman.ea.AeroConf17.pdf},
+  owner = {bylard},
+  timestamp = {2017-03-07}
+}
+</pre>
+</span>
+<!-- <span id="key_BylardMacPhersonEtAl2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SinghMajumdarEtAl2017">S. Singh, A. Majumdar, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf">“Robust Online Motion Planning via Contraction Theory and Convex Optimization,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinghMajumdarEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghMajumdarEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_SinghMajumdarEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We present a framework for online generation of robust motion plans for robotic systems with nonlinear dynamics subject to bounded disturbances, control constraints, and online state constraints such as obstacles. In an offline phase, one computes the structure of a feedback controller that can be efficiently implemented online to track any feasible nominal trajectory. The offline phase leverages contraction theory and convex optimization to characterize a fixed-size “tube” that the state is guaranteed to remain within while tracking a nominal trajectory (representing the center of the tube). In the online phase, when the robot is faced with obstacles, a motion planner uses such a tube as a robustness margin for collision checking, yielding nominal trajectories that can be safely executed (i.e., tracked without collisions under disturbances). In contrast to recent work on robust online planning using funnel libraries, our approach is not restricted to a fixed library of maneuvers computed offline and is thus particularly well-suited to applications such as UAV flight in densely cluttered environments where complex maneuvers may be required to reach a goal. We demonstrate our approach through simulations of a 6-state planar quadrotor navigating cluttered environments in the presence of a cross-wind. We also discuss applications of our approach to Tube Model Predictive Control (TMPC) and compare the merits of our method with state-of-the-art nonlinear TMPC techniques.</p>
+</span>
+<span id="bib_SinghMajumdarEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{SinghMajumdarEtAl2017,
+  author = {Singh, S. and Majumdar, A. and Slotine, J.-J. E. and Pavone, M.},
+  title = {Robust Online Motion Planning via Contraction Theory and Convex Optimization},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2017},
+  note = {{Extended Version, Available at }\url{http://asl.stanford.edu/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf}},
+  address = {Singapore},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf},
+  owner = {bylard},
+  timestamp = {2018-06-30}
+}
+</pre>
+</span>
+<!-- <span id="key_SinghMajumdarEtAl2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="HockmanPavone2017">B. Hockman and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Hockman.Pavone.ISRR17.pdf">“Stochastic Motion Planning for Hopping Rovers on Small Solar System Bodies,”</a> in <i>Int. Symp. on Robotics Research</i>, Puerto Varas, Chile, 2017.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('HockmanPavone2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HockmanPavone2017','abstract')">Abstract</a>]</p>
 <span id="abs_HockmanPavone2017" class="abstract noshow">
@@ -2308,6 +2364,33 @@
 </pre>
 </span>
 <!-- <span id="key_HockmanPavone2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IchterSchmerlingEtAl2017">B. Ichter, E. Schmerling, A. Agha-mohammadi, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1607.06886.pdf">“Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on GPUs,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_IchterSchmerlingEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we present the PUMP (Parallel Uncertainty-aware Multiobjective Planning) algorithm for addressing the stochastic kinodynamic motion planning problem, whereby we seek a low-cost, dynamically-feasible motion plan subject to a constraint on collision probability (CP). As a departure from previous methods for chance-constrained motion planning, PUMP directly considers both CP and the optimization objective at equal priority when planning through the free configuration space, achieving an unprecedented combination of cost performance, certified safety, and speed. Planning is conducted through a massively parallel multiobjective search, here implemented with a particular application focus on GPU hardware. PUMP explores the configuration space while maintaining a Pareto optimal front of motion plans, considering cost and approximate collision probability. We introduce a novel particle-based CP approximation scheme, designed for efficient GPU implementation, which accounts for dependencies over the history of a trajectory execution. Upon termination of the exploration phase, PUMP performs a search over the Pareto optimal set of solution motion plans to identify the lowest cost motion plan that is certified to satisfy the CP constraint (according to an asymptotically exact estimator). We present numerical experiments for quadrotor planning wherein PUMP identifies solutions in  100 ms, evaluating over one hundred thousand partial plans through the course of its exploration phase. The results show that this multiobjective search achieves a lower motion plan cost, for the same collision probability constraint, compared to a safety buffer-based search heuristic and repeated RRT trials.</p>
+</span>
+<span id="bib_IchterSchmerlingEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{IchterSchmerlingEtAl2017,
+  author = {Ichter, B. and Schmerling, E. and Agha-mohammadi, A. and Pavone, M.},
+  title = {Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on {GPUs}},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2017},
+  address = {Singapore},
+  month = may,
+  url = {http://arxiv.org/pdf/1607.06886.pdf},
+  owner = {bylard},
+  timestamp = {2017-03-07}
+}
+</pre>
+</span>
+<!-- <span id="key_IchterSchmerlingEtAl2017" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -2389,60 +2472,6 @@
 </pre>
 </span>
 <!-- <span id="key_SchmerlingPavone2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="EstradaJiangEtAl2017">M. A. Estrada, H. Jiang, B. Noll, E. W. Hawkes, M. Pavone, and M. R. Cutkosky, <a class="entry-title" href="../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf">“Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('EstradaJiangEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('EstradaJiangEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_EstradaJiangEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Free-flying robots have the potential to autonomously fulfill a wide range of tasks involving manipulation of objects in space. In this paper we study the design of a wrist mechanism for free-flying robots that are equipped with an adhesive gripper for attaching to objects and surfaces. The wrist and gripper allow the robots to apply moments in addition to forces, which increases their versatility for object manipulation. We apply grasp optimization to establish limitations on the forces/moments that the wrist can impart, subject to adhesion capabilities. Building on these results, we present an approach for tuning a passive wrist mechanism, or controlling an active wrist, to broaden the range of forces and moments that the robot can exert. Our theoretical insights and wrist designs are validated in simulations and on a planar micro-gravity test bed.</p>
-</span>
-<span id="bib_EstradaJiangEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{EstradaJiangEtAl2017,
-  author = {Estrada, M. A. and Jiang, H. and Noll, B. and Hawkes, E. W. and Pavone, M. and Cutkosky, M. R.},
-  title = {Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2017},
-  address = {Singapore},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf},
-  owner = {bylard},
-  timestamp = {2017-03-07}
-}
-</pre>
-</span>
-<!-- <span id="key_EstradaJiangEtAl2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="IchterSchmerlingEtAl2017">B. Ichter, E. Schmerling, A. Agha-mohammadi, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1607.06886.pdf">“Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on GPUs,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_IchterSchmerlingEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we present the PUMP (Parallel Uncertainty-aware Multiobjective Planning) algorithm for addressing the stochastic kinodynamic motion planning problem, whereby we seek a low-cost, dynamically-feasible motion plan subject to a constraint on collision probability (CP). As a departure from previous methods for chance-constrained motion planning, PUMP directly considers both CP and the optimization objective at equal priority when planning through the free configuration space, achieving an unprecedented combination of cost performance, certified safety, and speed. Planning is conducted through a massively parallel multiobjective search, here implemented with a particular application focus on GPU hardware. PUMP explores the configuration space while maintaining a Pareto optimal front of motion plans, considering cost and approximate collision probability. We introduce a novel particle-based CP approximation scheme, designed for efficient GPU implementation, which accounts for dependencies over the history of a trajectory execution. Upon termination of the exploration phase, PUMP performs a search over the Pareto optimal set of solution motion plans to identify the lowest cost motion plan that is certified to satisfy the CP constraint (according to an asymptotically exact estimator). We present numerical experiments for quadrotor planning wherein PUMP identifies solutions in  100 ms, evaluating over one hundred thousand partial plans through the course of its exploration phase. The results show that this multiobjective search achieves a lower motion plan cost, for the same collision probability constraint, compared to a safety buffer-based search heuristic and repeated RRT trials.</p>
-</span>
-<span id="bib_IchterSchmerlingEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{IchterSchmerlingEtAl2017,
-  author = {Ichter, B. and Schmerling, E. and Agha-mohammadi, A. and Pavone, M.},
-  title = {Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on {GPUs}},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2017},
-  address = {Singapore},
-  month = may,
-  url = {http://arxiv.org/pdf/1607.06886.pdf},
-  owner = {bylard},
-  timestamp = {2017-03-07}
-}
-</pre>
-</span>
-<!-- <span id="key_IchterSchmerlingEtAl2017" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3364,27 +3393,27 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
-<span class="entry" id="PavoneCastilloEtAl2013">M. Pavone, J. Castillo, I. Nesnas, J. A. Hoffman, and N. Strange, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Castillo.ea.Aero13.pdf">“Spacecraft/Rover Hybrids for the Exploration of Small Solar System Bodies,”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2013.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('PavoneCastilloEtAl2013','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneCastilloEtAl2013','abstract')">Abstract</a>]</p>
-<span id="abs_PavoneCastilloEtAl2013" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we present a mission architecture for the systematic and affordable in-situ exploration of small Solar System bodies (such as asteroids, comets, and Martian moons). At a general level, a mother spacecraft would deploy on the surface of a small body one, or several, spacecraft/rover hybrids, which are small (<= 5 kg,  15 Watts), multi-faceted robots enclosing three mutually orthogonal flywheels and surrounded by external spikes (in particular, there is no external propulsion). By accelerating/decelerating the flywheels and by exploiting the low gravity environment, the hybrids would be capable of performing both long excursions (by hopping) and short traverses to specific locations (through a sequence of controlled "tumbles"). Their control would rely on synergistic operations with the mother spacecraft (where most of hybrids perception and localization functionalities would be hosted), which would make the platforms minimalistic and in turn the entire mission architecture affordable. Specifically, in the first part of the paper we present preliminary models and laboratory experiments for the hybrids, first-order estimates for critical subsystems, and a preliminary study for synergistic mission operations. In the second part, we tailor our mission architecture to the exploration of Mars’ moon Phobos. The mission aims at exploring Phobos’ Stickney crater, whose spectral similarities with C-type asteroids and variety of terrain properties make it a particularly interesting exploration target to address both high-priority science for the Martian system and strategic knowledge gaps for the future human exploration of Mars.</p>
+<span class="entry" id="AllenPavoneEtAl2013">R. Allen <i>et al.</i>, <a class="entry-title" href="../wp-content/papercite-data/pdf/Allen.Pavone.ea.ICRA13.pdf">“Internally-Actuated Rovers for All-Access Surface Mobility: Theory and Experimentation,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Karlsruhe, Germany, 2013.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('AllenPavoneEtAl2013','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('AllenPavoneEtAl2013','abstract')">Abstract</a>]</p>
+<span id="abs_AllenPavoneEtAl2013" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> The future exploration of small Solar System bodies will, in part, depend on the availability of mobility platforms capable of performing both large surface coverage and short traverses to specific locations. Weak gravitational fields, however, make the adoption of traditional mobility systems difficult. In this paper we present a planetary mobility platform (called "spacecraft/rover hybrid") that relies on internal actuation. A hybrid is a small ( 5 kg), multifaceted robot enclosing three mutually orthogonal flywheels and surrounded by external spikes or contact surfaces. By accelerating/decelerating the flywheels and by exploiting the low-gravity environment, such a platform can perform both long excursions (by hopping) and short, precise traverses (through controlled "tumbles"). This concept has the potential to lead to small, quasi-expendable, yet maneuverable rovers that are robust as they have no external moving parts. In the first part of the paper we characterize the dynamics of such platforms (including fundamental limitations of performance) and we discuss control and planning algorithms. In the second part, we discuss the development of a prototype and present experimental results both in simulations and on physical test stands emulating low-gravity environments. Collectively, our results lay the foundations for the design of internally-actuated rovers with controlled mobility (as opposed to random hopping motion).</p>
 </span>
-<span id="bib_PavoneCastilloEtAl2013" class="bibtex noshow">
-	<pre>@inproceedings{PavoneCastilloEtAl2013,
-  author = {Pavone, M. and Castillo, J. and Nesnas, I. and Hoffman, J. A. and Strange, N.},
-  title = {Spacecraft/Rover Hybrids for the Exploration of Small {Solar} {System} Bodies},
-  booktitle = {{IEEE Aerospace Conference}},
+<span id="bib_AllenPavoneEtAl2013" class="bibtex noshow">
+	<pre>@inproceedings{AllenPavoneEtAl2013,
+  author = {Allen, R. and Pavone, M. and McQuin, C. and Nesnas, Issa and {Castillo-Rogez}, Julie C. and Nguyen, {Tam-Nguyen} and Hoffman, Jeffrey A.},
+  title = {Internally-Actuated Rovers for All-Access Surface Mobility: Theory and Experimentation},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2013},
-  address = {Big Sky, Montana},
-  doi = {10.1109/AERO.2013.6497160},
-  month = mar,
+  address = {Karlsruhe, Germany},
+  doi = {10.1109/ICRA.2013.6631363},
+  month = may,
   owner = {bylard},
   timestamp = {2017-01-28},
-  url = {../wp-content/papercite-data/pdf/Pavone.Castillo.ea.Aero13.pdf}
+  url = {../wp-content/papercite-data/pdf/Allen.Pavone.ea.ICRA13.pdf}
 }
 </pre>
 </span>
-<!-- <span id="key_PavoneCastilloEtAl2013" >
+<!-- <span id="key_AllenPavoneEtAl2013" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3448,27 +3477,27 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
-<span class="entry" id="AllenPavoneEtAl2013">R. Allen <i>et al.</i>, <a class="entry-title" href="../wp-content/papercite-data/pdf/Allen.Pavone.ea.ICRA13.pdf">“Internally-Actuated Rovers for All-Access Surface Mobility: Theory and Experimentation,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Karlsruhe, Germany, 2013.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('AllenPavoneEtAl2013','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('AllenPavoneEtAl2013','abstract')">Abstract</a>]</p>
-<span id="abs_AllenPavoneEtAl2013" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> The future exploration of small Solar System bodies will, in part, depend on the availability of mobility platforms capable of performing both large surface coverage and short traverses to specific locations. Weak gravitational fields, however, make the adoption of traditional mobility systems difficult. In this paper we present a planetary mobility platform (called "spacecraft/rover hybrid") that relies on internal actuation. A hybrid is a small ( 5 kg), multifaceted robot enclosing three mutually orthogonal flywheels and surrounded by external spikes or contact surfaces. By accelerating/decelerating the flywheels and by exploiting the low-gravity environment, such a platform can perform both long excursions (by hopping) and short, precise traverses (through controlled "tumbles"). This concept has the potential to lead to small, quasi-expendable, yet maneuverable rovers that are robust as they have no external moving parts. In the first part of the paper we characterize the dynamics of such platforms (including fundamental limitations of performance) and we discuss control and planning algorithms. In the second part, we discuss the development of a prototype and present experimental results both in simulations and on physical test stands emulating low-gravity environments. Collectively, our results lay the foundations for the design of internally-actuated rovers with controlled mobility (as opposed to random hopping motion).</p>
+<span class="entry" id="PavoneCastilloEtAl2013">M. Pavone, J. Castillo, I. Nesnas, J. A. Hoffman, and N. Strange, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Castillo.ea.Aero13.pdf">“Spacecraft/Rover Hybrids for the Exploration of Small Solar System Bodies,”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2013.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('PavoneCastilloEtAl2013','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneCastilloEtAl2013','abstract')">Abstract</a>]</p>
+<span id="abs_PavoneCastilloEtAl2013" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we present a mission architecture for the systematic and affordable in-situ exploration of small Solar System bodies (such as asteroids, comets, and Martian moons). At a general level, a mother spacecraft would deploy on the surface of a small body one, or several, spacecraft/rover hybrids, which are small (<= 5 kg,  15 Watts), multi-faceted robots enclosing three mutually orthogonal flywheels and surrounded by external spikes (in particular, there is no external propulsion). By accelerating/decelerating the flywheels and by exploiting the low gravity environment, the hybrids would be capable of performing both long excursions (by hopping) and short traverses to specific locations (through a sequence of controlled "tumbles"). Their control would rely on synergistic operations with the mother spacecraft (where most of hybrids perception and localization functionalities would be hosted), which would make the platforms minimalistic and in turn the entire mission architecture affordable. Specifically, in the first part of the paper we present preliminary models and laboratory experiments for the hybrids, first-order estimates for critical subsystems, and a preliminary study for synergistic mission operations. In the second part, we tailor our mission architecture to the exploration of Mars’ moon Phobos. The mission aims at exploring Phobos’ Stickney crater, whose spectral similarities with C-type asteroids and variety of terrain properties make it a particularly interesting exploration target to address both high-priority science for the Martian system and strategic knowledge gaps for the future human exploration of Mars.</p>
 </span>
-<span id="bib_AllenPavoneEtAl2013" class="bibtex noshow">
-	<pre>@inproceedings{AllenPavoneEtAl2013,
-  author = {Allen, R. and Pavone, M. and McQuin, C. and Nesnas, Issa and {Castillo-Rogez}, Julie C. and Nguyen, {Tam-Nguyen} and Hoffman, Jeffrey A.},
-  title = {Internally-Actuated Rovers for All-Access Surface Mobility: Theory and Experimentation},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+<span id="bib_PavoneCastilloEtAl2013" class="bibtex noshow">
+	<pre>@inproceedings{PavoneCastilloEtAl2013,
+  author = {Pavone, M. and Castillo, J. and Nesnas, I. and Hoffman, J. A. and Strange, N.},
+  title = {Spacecraft/Rover Hybrids for the Exploration of Small {Solar} {System} Bodies},
+  booktitle = {{IEEE Aerospace Conference}},
   year = {2013},
-  address = {Karlsruhe, Germany},
-  doi = {10.1109/ICRA.2013.6631363},
-  month = may,
+  address = {Big Sky, Montana},
+  doi = {10.1109/AERO.2013.6497160},
+  month = mar,
   owner = {bylard},
   timestamp = {2017-01-28},
-  url = {../wp-content/papercite-data/pdf/Allen.Pavone.ea.ICRA13.pdf}
+  url = {../wp-content/papercite-data/pdf/Pavone.Castillo.ea.Aero13.pdf}
 }
 </pre>
 </span>
-<!-- <span id="key_AllenPavoneEtAl2013" >
+<!-- <span id="key_PavoneCastilloEtAl2013" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3559,27 +3588,27 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
-<span class="entry" id="StoicaAssadEtAl2012">A. Stoica <i>et al.</i>, <a class="entry-title" href="../wp-content/papercite-data/pdf/Stoica.Assad.ea.SPIE12.pdf">“Using Arm and Hand Gestures to Command Robots during Stealth Operations,”</a> in <i>Proc. of SPIE</i>, Baltimore, Maryland, 2012.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('StoicaAssadEtAl2012','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('StoicaAssadEtAl2012','abstract')">Abstract</a>]</p>
-<span id="abs_StoicaAssadEtAl2012" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Command of support robots by the warfighter requires intuitive interfaces to quickly communicate high degree-of-freedom (DOF) information while leaving the hands unencumbered. Stealth operations rule out voice commands and vision-based gesture interpretation techniques, as they often entail silent operations at night or in other low visibility conditions. Targeted at using bio-signal inputs to set navigation and manipulation goals for the robot (say, simply by pointing), we developed a system based on an electromyography (EMG) "BioSleeve", a high density sensor array for robust, practical signal collection from forearm muscles. The EMG sensor array data is fused with inertial measurement unit (IMU) data. This paper describes the BioSleeve system and presents initial results of decoding robot commands from the EMG and IMU data using a BioSleeve prototype with up to sixteen bipolar surface EMG sensors. The BioSleeve is demonstrated on the recognition of static hand positions (e.g. palm facing front, fingers upwards) and on dynamic gestures (e.g. hand wave). In preliminary experiments, over 90% correct recognition was achieved on five static and nine dynamic gestures. We use the BioSleeve to control a team of five LANdroid robots in individual and group/squad behaviors. We define a gesture composition mechanism that allows the specification of complex robot behaviors with only a small vocabulary of gestures/commands, and we illustrate it with a set of complex orders.</p>
+<span class="entry" id="TreleavenPavoneEtAl2012b">K. Treleaven, M. Pavone, and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Treleaven.Pavone.ea.CDC12.pdf">“Models and Efficient Algorithms for Pickup and Delivery Problems on Roadmaps,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Maui, Hawaii, 2012.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('TreleavenPavoneEtAl2012b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TreleavenPavoneEtAl2012b','abstract')">Abstract</a>]</p>
+<span id="abs_TreleavenPavoneEtAl2012b" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> One of the most common combinatorial problems in logistics and transportation-after the Traveling Salesman Problem-is the Stacker Crane Problem (SCP), where commodities or customers are associated each with a pickup location and a delivery location, and the objective is to find a minimum-length tour ’picking up’ and ’delivering’ all items, while ensuring the number of items on-board never exceeds a given capacity. While vastly many SCPs encountered in practice are embedded in road or road-like networks, very few studies explicitly consider such environments. In this paper, first, we formulate an environment model capturing the essential features of a "small-neighborhood" road network, along with models for omni-directional vehicles and directed vehicles. Then, we formulate a stochastic version of the unit-capacity SCP, on our road network model, where pickup/delivery sites are random points along segments of the network. Our main contribution is a polynomial-time algorithm for the problem that is asymptotically constant-factor; i.e., it produces a solution no worse than κ+o(1) times the length of the optimal one, where o(1) goes to zero as the number of items grows large, almost surely. The constant κis at most 3, and for omni-directional vehicles it is provably 1, i.e., optimal. Simulations show that with a number of pickup/delivery pairs as low as 50, the proposed algorithm delivers a solution whose cost is consistently within 10% of that of an optimal solution.</p>
 </span>
-<span id="bib_StoicaAssadEtAl2012" class="bibtex noshow">
-	<pre>@inproceedings{StoicaAssadEtAl2012,
-  author = {Stoica, A. and Assad, C. and Wolf, M. and You, K. S. and Pavone, M. and Huntsberger, T. and Iwashita, Y.},
-  title = {Using Arm and Hand Gestures to Command Robots during Stealth Operations},
-  booktitle = {{Proc. of SPIE}},
+<span id="bib_TreleavenPavoneEtAl2012b" class="bibtex noshow">
+	<pre>@inproceedings{TreleavenPavoneEtAl2012b,
+  author = {Treleaven, K. and Pavone, M. and Frazzoli, E.},
+  title = {Models and Efficient Algorithms for Pickup and Delivery Problems on Roadmaps},
+  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
   year = {2012},
-  address = {Baltimore, Maryland},
-  doi = {10.1117/12.923690},
-  month = jun,
-  url = {../wp-content/papercite-data/pdf/Stoica.Assad.ea.SPIE12.pdf},
+  address = {Maui, Hawaii},
+  doi = {10.1109/CDC.2012.6426164},
+  month = dec,
   owner = {bylard},
-  timestamp = {2017-01-28}
+  timestamp = {2017-01-28},
+  url = {../wp-content/papercite-data/pdf/Treleaven.Pavone.ea.CDC12.pdf}
 }
 </pre>
 </span>
-<!-- <span id="key_StoicaAssadEtAl2012" >
+<!-- <span id="key_TreleavenPavoneEtAl2012b" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3643,34 +3672,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
-<span class="entry" id="TreleavenPavoneEtAl2012b">K. Treleaven, M. Pavone, and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Treleaven.Pavone.ea.CDC12.pdf">“Models and Efficient Algorithms for Pickup and Delivery Problems on Roadmaps,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Maui, Hawaii, 2012.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('TreleavenPavoneEtAl2012b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TreleavenPavoneEtAl2012b','abstract')">Abstract</a>]</p>
-<span id="abs_TreleavenPavoneEtAl2012b" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> One of the most common combinatorial problems in logistics and transportation-after the Traveling Salesman Problem-is the Stacker Crane Problem (SCP), where commodities or customers are associated each with a pickup location and a delivery location, and the objective is to find a minimum-length tour ’picking up’ and ’delivering’ all items, while ensuring the number of items on-board never exceeds a given capacity. While vastly many SCPs encountered in practice are embedded in road or road-like networks, very few studies explicitly consider such environments. In this paper, first, we formulate an environment model capturing the essential features of a "small-neighborhood" road network, along with models for omni-directional vehicles and directed vehicles. Then, we formulate a stochastic version of the unit-capacity SCP, on our road network model, where pickup/delivery sites are random points along segments of the network. Our main contribution is a polynomial-time algorithm for the problem that is asymptotically constant-factor; i.e., it produces a solution no worse than κ+o(1) times the length of the optimal one, where o(1) goes to zero as the number of items grows large, almost surely. The constant κis at most 3, and for omni-directional vehicles it is provably 1, i.e., optimal. Simulations show that with a number of pickup/delivery pairs as low as 50, the proposed algorithm delivers a solution whose cost is consistently within 10% of that of an optimal solution.</p>
-</span>
-<span id="bib_TreleavenPavoneEtAl2012b" class="bibtex noshow">
-	<pre>@inproceedings{TreleavenPavoneEtAl2012b,
-  author = {Treleaven, K. and Pavone, M. and Frazzoli, E.},
-  title = {Models and Efficient Algorithms for Pickup and Delivery Problems on Roadmaps},
-  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
-  year = {2012},
-  address = {Maui, Hawaii},
-  doi = {10.1109/CDC.2012.6426164},
-  month = dec,
-  owner = {bylard},
-  timestamp = {2017-01-28},
-  url = {../wp-content/papercite-data/pdf/Treleaven.Pavone.ea.CDC12.pdf}
-}
-</pre>
-</span>
-<!-- <span id="key_TreleavenPavoneEtAl2012b" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="CastilloPavoneEtAl2012">J. Castillo, M. Pavone, I. Nesnas, and J. A. Hoffman, <a class="entry-title" href="../wp-content/papercite-data/pdf/Castillo.Pavone.ea.Aero12.pdf">“Expected Science Return of Spatially-Extended In-Situ Exploration at Small Solar System Bodies,”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2012.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('CastilloPavoneEtAl2012','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('CastilloPavoneEtAl2012','abstract')">Abstract</a>]</p>
 <span id="abs_CastilloPavoneEtAl2012" class="abstract noshow">
@@ -3692,6 +3693,34 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 </pre>
 </span>
 <!-- <span id="key_CastilloPavoneEtAl2012" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="StoicaAssadEtAl2012">A. Stoica <i>et al.</i>, <a class="entry-title" href="../wp-content/papercite-data/pdf/Stoica.Assad.ea.SPIE12.pdf">“Using Arm and Hand Gestures to Command Robots during Stealth Operations,”</a> in <i>Proc. of SPIE</i>, Baltimore, Maryland, 2012.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('StoicaAssadEtAl2012','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('StoicaAssadEtAl2012','abstract')">Abstract</a>]</p>
+<span id="abs_StoicaAssadEtAl2012" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Command of support robots by the warfighter requires intuitive interfaces to quickly communicate high degree-of-freedom (DOF) information while leaving the hands unencumbered. Stealth operations rule out voice commands and vision-based gesture interpretation techniques, as they often entail silent operations at night or in other low visibility conditions. Targeted at using bio-signal inputs to set navigation and manipulation goals for the robot (say, simply by pointing), we developed a system based on an electromyography (EMG) "BioSleeve", a high density sensor array for robust, practical signal collection from forearm muscles. The EMG sensor array data is fused with inertial measurement unit (IMU) data. This paper describes the BioSleeve system and presents initial results of decoding robot commands from the EMG and IMU data using a BioSleeve prototype with up to sixteen bipolar surface EMG sensors. The BioSleeve is demonstrated on the recognition of static hand positions (e.g. palm facing front, fingers upwards) and on dynamic gestures (e.g. hand wave). In preliminary experiments, over 90% correct recognition was achieved on five static and nine dynamic gestures. We use the BioSleeve to control a team of five LANdroid robots in individual and group/squad behaviors. We define a gesture composition mechanism that allows the specification of complex robot behaviors with only a small vocabulary of gestures/commands, and we illustrate it with a set of complex orders.</p>
+</span>
+<span id="bib_StoicaAssadEtAl2012" class="bibtex noshow">
+	<pre>@inproceedings{StoicaAssadEtAl2012,
+  author = {Stoica, A. and Assad, C. and Wolf, M. and You, K. S. and Pavone, M. and Huntsberger, T. and Iwashita, Y.},
+  title = {Using Arm and Hand Gestures to Command Robots during Stealth Operations},
+  booktitle = {{Proc. of SPIE}},
+  year = {2012},
+  address = {Baltimore, Maryland},
+  doi = {10.1117/12.923690},
+  month = jun,
+  url = {../wp-content/papercite-data/pdf/Stoica.Assad.ea.SPIE12.pdf},
+  owner = {bylard},
+  timestamp = {2017-01-28}
+}
+</pre>
+</span>
+<!-- <span id="key_StoicaAssadEtAl2012" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3755,34 +3784,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
-<span class="entry" id="PavoneFrazzoli2010">M. Pavone and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Frazzoli.ICRA10.pdf">“Dynamic Vehicle Routing with Stochastic Time Constraints,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Anchorage, Alaska, 2010.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('PavoneFrazzoli2010','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneFrazzoli2010','abstract')">Abstract</a>]</p>
-<span id="abs_PavoneFrazzoli2010" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we study a dynamic vehicle routing problem where demands have stochastic deadlines on their waiting times. Specifically, a network of robotic vehicles must service demands whose time of arrival, location and on-site service are stochastic; moreover, once a demand arrives, it remains active for a stochastic amount of time, and then expires. An active demand is successfully serviced when one of the vehicles visits its location before its deadline and provide the required on-site service. The aim is to find the minimum number of vehicles needed to ensure that the steady-state probability that a demand is successfully serviced is larger than a desired value, and to determine the policy the vehicles should execute to ensure that such objective is attained. First, we carefully formulate the problem, and we show its well-posedness by providing some novel ergodic results. Second, we provide a lower bound on the optimal number of vehicles; finally, we analyze two service policies, and we show that one of them is optimal in light load. Simulation results are presented and discussed.</p>
-</span>
-<span id="bib_PavoneFrazzoli2010" class="bibtex noshow">
-	<pre>@inproceedings{PavoneFrazzoli2010,
-  author = {Pavone, M. and Frazzoli, E.},
-  title = {Dynamic Vehicle Routing with Stochastic Time Constraints},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2010},
-  address = {Anchorage, Alaska},
-  doi = {10.1109/ROBOT.2010.5509222},
-  month = may,
-  owner = {bylard},
-  timestamp = {2017-01-28},
-  url = {../wp-content/papercite-data/pdf/Pavone.Frazzoli.ICRA10.pdf}
-}
-</pre>
-</span>
-<!-- <span id="key_PavoneFrazzoli2010" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="PavoneTreleavenEtAl2010">M. Pavone, K. Treleaven, and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Treleaven.ea.CDC10.pdf">“Fundamental Performance Limits and Efficient Policies for Transportation-On-Demand Systems,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Atlanta, Georgia, 2010.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('PavoneTreleavenEtAl2010','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneTreleavenEtAl2010','abstract')">Abstract</a>]</p>
 <span id="abs_PavoneTreleavenEtAl2010" class="abstract noshow">
@@ -3804,6 +3805,34 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 </pre>
 </span>
 <!-- <span id="key_PavoneTreleavenEtAl2010" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="PavoneFrazzoli2010">M. Pavone and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Frazzoli.ICRA10.pdf">“Dynamic Vehicle Routing with Stochastic Time Constraints,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Anchorage, Alaska, 2010.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('PavoneFrazzoli2010','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneFrazzoli2010','abstract')">Abstract</a>]</p>
+<span id="abs_PavoneFrazzoli2010" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we study a dynamic vehicle routing problem where demands have stochastic deadlines on their waiting times. Specifically, a network of robotic vehicles must service demands whose time of arrival, location and on-site service are stochastic; moreover, once a demand arrives, it remains active for a stochastic amount of time, and then expires. An active demand is successfully serviced when one of the vehicles visits its location before its deadline and provide the required on-site service. The aim is to find the minimum number of vehicles needed to ensure that the steady-state probability that a demand is successfully serviced is larger than a desired value, and to determine the policy the vehicles should execute to ensure that such objective is attained. First, we carefully formulate the problem, and we show its well-posedness by providing some novel ergodic results. Second, we provide a lower bound on the optimal number of vehicles; finally, we analyze two service policies, and we show that one of them is optimal in light load. Simulation results are presented and discussed.</p>
+</span>
+<span id="bib_PavoneFrazzoli2010" class="bibtex noshow">
+	<pre>@inproceedings{PavoneFrazzoli2010,
+  author = {Pavone, M. and Frazzoli, E.},
+  title = {Dynamic Vehicle Routing with Stochastic Time Constraints},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2010},
+  address = {Anchorage, Alaska},
+  doi = {10.1109/ROBOT.2010.5509222},
+  month = may,
+  owner = {bylard},
+  timestamp = {2017-01-28},
+  url = {../wp-content/papercite-data/pdf/Pavone.Frazzoli.ICRA10.pdf}
+}
+</pre>
+</span>
+<!-- <span id="key_PavoneFrazzoli2010" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3839,34 +3868,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
-<span class="entry" id="PavoneSmithEtAl2009">M. Pavone, S. L. Smith, F. Bullo, and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Smith.ea.ACC09.pdf">“Dynamic Multi-Vehicle Routing with Multiple Classes of Demands,”</a> in <i>American Control Conference</i>, St. Louis, Missouri, 2009.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('PavoneSmithEtAl2009','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneSmithEtAl2009','abstract')">Abstract</a>]</p>
-<span id="abs_PavoneSmithEtAl2009" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we study a dynamic vehicle routing problem in which there are multiple vehicles and multiple classes of demands. Demands of each class arrive in the environment randomly over time and require a random amount of on-site service that is characteristic of the class. To service a demand, one of the vehicles must travel to the demand location and remain there for the required on-site service time. The quality of service provided to each class is given by the expected delay between the arrival of a demand in the class, and that demand’s service completion. The goal is to design a routing policy for the service vehicles which minimizes a convex combination of the delays for each class. First, we provide a lower bound on the achievable values of the convex combination of delays. Then, we propose a novel routing policy and analyze its performance under heavy load conditions (i.e., when the fraction of time the service vehicles spend performing on-site service approaches one). The policy performs within a constant factor of the lower bound (and thus the optimal), where the constant depends only on the number of classes, and is independent of the number of vehicles, the arrival rates of demands, the on-site service times, and the convex combination coefficients.</p>
-</span>
-<span id="bib_PavoneSmithEtAl2009" class="bibtex noshow">
-	<pre>@inproceedings{PavoneSmithEtAl2009,
-  author = {Pavone, M. and Smith, S. L. and Bullo, F. and Frazzoli, E.},
-  title = {Dynamic Multi-Vehicle Routing with Multiple Classes of Demands},
-  booktitle = {{American Control Conference}},
-  year = {2009},
-  address = {St. Louis, Missouri},
-  doi = {10.1109/ACC.2009.5160557},
-  month = jun,
-  url = {../wp-content/papercite-data/pdf/Pavone.Smith.ea.ACC09.pdf},
-  owner = {bylard},
-  timestamp = {2017-02-20}
-}
-</pre>
-</span>
-<!-- <span id="key_PavoneSmithEtAl2009" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="PavoneArsieEtAl2009">M. Pavone, A. Arsie, E. Frazzoli, and F. Bullo, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Arsie.ea.ICRA09.pdf">“Equitable Partitioning Policies for Robotic Networks,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Kobe, Japan, 2009.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('PavoneArsieEtAl2009','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneArsieEtAl2009','abstract')">Abstract</a>]</p>
 <span id="abs_PavoneArsieEtAl2009" class="abstract noshow">
@@ -3895,27 +3896,27 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
-<span class="entry" id="SmithPavoneEtAl2008">S. L. Smith, M. Pavone, F. Bullo, and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf">“Dynamic Vehicle Routing with Heterogeneous Demands,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Cancun, Mexico, 2008.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SmithPavoneEtAl2008','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SmithPavoneEtAl2008','abstract')">Abstract</a>]</p>
-<span id="abs_SmithPavoneEtAl2008" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we study a variation of the Dynamic Traveling Repairperson Problem (DTRP) in which there are two classes of demands; high priority, and low priority. In the problem, demands arrive in the environment randomly over time and assume a random location and on-site service requirement. A service vehicle must travel to each demand location and provide the required on-site service. The quality of service provided to each class of demands is measured by the expected delay between a demand’s arrival and its service completion. The goal is to design policies for the service vehicle which minimize a convex combination of the delays for each class. We provide a lower bound on the achievable delay for this problem, and propose a policy which performs within a known constant factor of the optimal in heavy load (i.e., when the fraction of time the service vehicle spends performing on-site service approaches one). The problem studied in this paper is analogous to the multi-class queuing problem in classical queuing theory.</p>
+<span class="entry" id="PavoneSmithEtAl2009">M. Pavone, S. L. Smith, F. Bullo, and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Smith.ea.ACC09.pdf">“Dynamic Multi-Vehicle Routing with Multiple Classes of Demands,”</a> in <i>American Control Conference</i>, St. Louis, Missouri, 2009.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('PavoneSmithEtAl2009','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneSmithEtAl2009','abstract')">Abstract</a>]</p>
+<span id="abs_PavoneSmithEtAl2009" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we study a dynamic vehicle routing problem in which there are multiple vehicles and multiple classes of demands. Demands of each class arrive in the environment randomly over time and require a random amount of on-site service that is characteristic of the class. To service a demand, one of the vehicles must travel to the demand location and remain there for the required on-site service time. The quality of service provided to each class is given by the expected delay between the arrival of a demand in the class, and that demand’s service completion. The goal is to design a routing policy for the service vehicles which minimizes a convex combination of the delays for each class. First, we provide a lower bound on the achievable values of the convex combination of delays. Then, we propose a novel routing policy and analyze its performance under heavy load conditions (i.e., when the fraction of time the service vehicles spend performing on-site service approaches one). The policy performs within a constant factor of the lower bound (and thus the optimal), where the constant depends only on the number of classes, and is independent of the number of vehicles, the arrival rates of demands, the on-site service times, and the convex combination coefficients.</p>
 </span>
-<span id="bib_SmithPavoneEtAl2008" class="bibtex noshow">
-	<pre>@inproceedings{SmithPavoneEtAl2008,
-  author = {Smith, S. L. and Pavone, M. and Bullo, F. and Frazzoli, E.},
-  title = {Dynamic Vehicle Routing with Heterogeneous Demands},
-  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
-  year = {2008},
-  address = {Cancun, Mexico},
-  doi = {10.1109/CDC.2008.4739284},
-  month = dec,
+<span id="bib_PavoneSmithEtAl2009" class="bibtex noshow">
+	<pre>@inproceedings{PavoneSmithEtAl2009,
+  author = {Pavone, M. and Smith, S. L. and Bullo, F. and Frazzoli, E.},
+  title = {Dynamic Multi-Vehicle Routing with Multiple Classes of Demands},
+  booktitle = {{American Control Conference}},
+  year = {2009},
+  address = {St. Louis, Missouri},
+  doi = {10.1109/ACC.2009.5160557},
+  month = jun,
+  url = {../wp-content/papercite-data/pdf/Pavone.Smith.ea.ACC09.pdf},
   owner = {bylard},
-  timestamp = {2017-01-28},
-  url = {../wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf}
+  timestamp = {2017-02-20}
 }
 </pre>
 </span>
-<!-- <span id="key_SmithPavoneEtAl2008" >
+<!-- <span id="key_PavoneSmithEtAl2009" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3951,6 +3952,34 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
+<span class="entry" id="SmithPavoneEtAl2008">S. L. Smith, M. Pavone, F. Bullo, and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf">“Dynamic Vehicle Routing with Heterogeneous Demands,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Cancun, Mexico, 2008.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SmithPavoneEtAl2008','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SmithPavoneEtAl2008','abstract')">Abstract</a>]</p>
+<span id="abs_SmithPavoneEtAl2008" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we study a variation of the Dynamic Traveling Repairperson Problem (DTRP) in which there are two classes of demands; high priority, and low priority. In the problem, demands arrive in the environment randomly over time and assume a random location and on-site service requirement. A service vehicle must travel to each demand location and provide the required on-site service. The quality of service provided to each class of demands is measured by the expected delay between a demand’s arrival and its service completion. The goal is to design policies for the service vehicle which minimize a convex combination of the delays for each class. We provide a lower bound on the achievable delay for this problem, and propose a policy which performs within a known constant factor of the optimal in heavy load (i.e., when the fraction of time the service vehicle spends performing on-site service approaches one). The problem studied in this paper is analogous to the multi-class queuing problem in classical queuing theory.</p>
+</span>
+<span id="bib_SmithPavoneEtAl2008" class="bibtex noshow">
+	<pre>@inproceedings{SmithPavoneEtAl2008,
+  author = {Smith, S. L. and Pavone, M. and Bullo, F. and Frazzoli, E.},
+  title = {Dynamic Vehicle Routing with Heterogeneous Demands},
+  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
+  year = {2008},
+  address = {Cancun, Mexico},
+  doi = {10.1109/CDC.2008.4739284},
+  month = dec,
+  owner = {bylard},
+  timestamp = {2017-01-28},
+  url = {../wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf}
+}
+</pre>
+</span>
+<!-- <span id="key_SmithPavoneEtAl2008" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="PavoneBisnikEtAl2007">M. Pavone, N. Bisnik, E. Frazzoli, and V. Isler, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Bisnik.ea.Robocomm07.pdf">“Decentralized Vehicle Routing in a Stochastic and Dynamic Environment with Customer Impatience,”</a> in <i>Int. Conf. on Robot Communication and Coordination</i>, Athens, Greece, 2007.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('PavoneBisnikEtAl2007','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneBisnikEtAl2007','abstract')">Abstract</a>]</p>
 <span id="abs_PavoneBisnikEtAl2007" class="abstract noshow">
@@ -3972,34 +4001,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 </pre>
 </span>
 <!-- <span id="key_PavoneBisnikEtAl2007" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="PavoneFrazzoli2007b">M. Pavone and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Frazzoli.ACC07.pdf">“Decentralized Policies for Geometric Pattern Formation,”</a> in <i>American Control Conference</i>, New York, New York, 2007.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('PavoneFrazzoli2007b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneFrazzoli2007b','abstract')">Abstract</a>]</p>
-<span id="abs_PavoneFrazzoli2007b" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This paper presents a decentralized control policy for symmetric formations in multi-agent systems. It is shown that n agents, each one pursuing its leading neighbor along the line of sight rotated by a common offset angle α, eventually converge to a single point, a circle or a logarithmic spiral pattern, depending on the value of α. Simulation results are presented and discussed.</p>
-</span>
-<span id="bib_PavoneFrazzoli2007b" class="bibtex noshow">
-	<pre>@inproceedings{PavoneFrazzoli2007b,
-  author = {Pavone, M. and Frazzoli, E.},
-  title = {Decentralized Policies for Geometric Pattern Formation},
-  booktitle = {{American Control Conference}},
-  year = {2007},
-  address = {New York, New York},
-  doi = {10.1109/ACC.2007.4283108},
-  month = jul,
-  owner = {bylard},
-  timestamp = {2017-01-28},
-  url = {../wp-content/papercite-data/pdf/Pavone.Frazzoli.ACC07.pdf}
-}
-</pre>
-</span>
-<!-- <span id="key_PavoneFrazzoli2007b" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -4035,27 +4036,27 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
-<span class="entry" id="ArenaFortunaEtAl2006b">P. Arena, L. Fortuna, M. Frasca, L. Patanè, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Arena.Fortuna.ea.ISCAS06b.pdf">“Realization of a CNN-Driven Cockroach-Inspired Robot,”</a> in <i>Int. Symp. on Circuits and Systems</i>, Kos, Greece, 2006.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ArenaFortunaEtAl2006b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ArenaFortunaEtAl2006b','abstract')">Abstract</a>]</p>
-<span id="abs_ArenaFortunaEtAl2006b" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This paper describes the implementation of a bio-inspired six legged robot: Gregor I. Both structure and locomotion control are inspired by biological observations in cockroaches. Robot mechanics attempts to emulate main structural features in cockroaches, like self-stabilizing posture and specializing legged function; in turn, locomotion control is based on the theory of the central pattern generator implemented on a VLSI chip. The final aim is to artificially replicate the fundamental principles that guarantee cockroach’s extraordinary agility. Our major concern was on the implementation of rear legs, that seem to play a crucial role in obstacle overcoming and payload capability, and on the locomotion control, performed in this work by a cellular neural network playing the role of an artificial central pattern generator. Experimental tests showed that Gregor I is able to walk at the travel speed of 0.1 body length per second and to successfully negotiate obstacles more than 170% of the height of its mass center.</p>
+<span class="entry" id="PavoneFrazzoli2007b">M. Pavone and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Frazzoli.ACC07.pdf">“Decentralized Policies for Geometric Pattern Formation,”</a> in <i>American Control Conference</i>, New York, New York, 2007.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('PavoneFrazzoli2007b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneFrazzoli2007b','abstract')">Abstract</a>]</p>
+<span id="abs_PavoneFrazzoli2007b" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper presents a decentralized control policy for symmetric formations in multi-agent systems. It is shown that n agents, each one pursuing its leading neighbor along the line of sight rotated by a common offset angle α, eventually converge to a single point, a circle or a logarithmic spiral pattern, depending on the value of α. Simulation results are presented and discussed.</p>
 </span>
-<span id="bib_ArenaFortunaEtAl2006b" class="bibtex noshow">
-	<pre>@inproceedings{ArenaFortunaEtAl2006b,
-  author = {Arena, P. and Fortuna, L. and Frasca, M. and Patan\`e, L. and Pavone, M},
-  title = {Realization of a {CNN}-Driven Cockroach-Inspired Robot},
-  booktitle = {{Int. Symp. on Circuits and Systems}},
-  year = {2006},
-  address = {Kos, Greece},
-  doi = {10.1109/ISCAS.2006.1693168},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Arena.Fortuna.ea.ISCAS06b.pdf},
+<span id="bib_PavoneFrazzoli2007b" class="bibtex noshow">
+	<pre>@inproceedings{PavoneFrazzoli2007b,
+  author = {Pavone, M. and Frazzoli, E.},
+  title = {Decentralized Policies for Geometric Pattern Formation},
+  booktitle = {{American Control Conference}},
+  year = {2007},
+  address = {New York, New York},
+  doi = {10.1109/ACC.2007.4283108},
+  month = jul,
   owner = {bylard},
-  timestamp = {2017-01-28}
+  timestamp = {2017-01-28},
+  url = {../wp-content/papercite-data/pdf/Pavone.Frazzoli.ACC07.pdf}
 }
 </pre>
 </span>
-<!-- <span id="key_ArenaFortunaEtAl2006b" >
+<!-- <span id="key_PavoneFrazzoli2007b" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -4084,6 +4085,34 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 </pre>
 </span>
 <!-- <span id="key_ArenaFortunaEtAl2006" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ArenaFortunaEtAl2006b">P. Arena, L. Fortuna, M. Frasca, L. Patanè, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Arena.Fortuna.ea.ISCAS06b.pdf">“Realization of a CNN-Driven Cockroach-Inspired Robot,”</a> in <i>Int. Symp. on Circuits and Systems</i>, Kos, Greece, 2006.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ArenaFortunaEtAl2006b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ArenaFortunaEtAl2006b','abstract')">Abstract</a>]</p>
+<span id="abs_ArenaFortunaEtAl2006b" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper describes the implementation of a bio-inspired six legged robot: Gregor I. Both structure and locomotion control are inspired by biological observations in cockroaches. Robot mechanics attempts to emulate main structural features in cockroaches, like self-stabilizing posture and specializing legged function; in turn, locomotion control is based on the theory of the central pattern generator implemented on a VLSI chip. The final aim is to artificially replicate the fundamental principles that guarantee cockroach’s extraordinary agility. Our major concern was on the implementation of rear legs, that seem to play a crucial role in obstacle overcoming and payload capability, and on the locomotion control, performed in this work by a cellular neural network playing the role of an artificial central pattern generator. Experimental tests showed that Gregor I is able to walk at the travel speed of 0.1 body length per second and to successfully negotiate obstacles more than 170% of the height of its mass center.</p>
+</span>
+<span id="bib_ArenaFortunaEtAl2006b" class="bibtex noshow">
+	<pre>@inproceedings{ArenaFortunaEtAl2006b,
+  author = {Arena, P. and Fortuna, L. and Frasca, M. and Patan\`e, L. and Pavone, M},
+  title = {Realization of a {CNN}-Driven Cockroach-Inspired Robot},
+  booktitle = {{Int. Symp. on Circuits and Systems}},
+  year = {2006},
+  address = {Kos, Greece},
+  doi = {10.1109/ISCAS.2006.1693168},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Arena.Fortuna.ea.ISCAS06b.pdf},
+  owner = {bylard},
+  timestamp = {2017-01-28}
+}
+</pre>
+</span>
+<!-- <span id="key_ArenaFortunaEtAl2006b" >
 	<b>Keywords</b>:
 	
 </span> --></li>
