@@ -14,7 +14,7 @@ The goal of this homework is to familiarize you with some tools used for percept
 
 *Problems 1 and 2 are due Feb 6th 11:59PM.*
 
-*Problems 3, 4, 5 are due Feb 13th 11:59PM.*
+*Problems 0, 3, 4, 5 are due Feb 13th 11:59PM.*
 
 Part of this homework (Problem 0) is to implement your ROS question from homework 1 on a TurtleBot during the ROS hours (Wed/Thurs 5-7PM in Skilling). At least one member from your group must attend to get this checked off. Details on this to be posted soon. To ensure that the TAs can guide each group properly, please sign your group up to one of the following time slots [here](https://docs.google.com/spreadsheets/d/16myCTR37SAwdj1FlQM7_xWYsjICLRKRtml5VSlIqhBA/edit?usp=sharing). Please try to limit ~4 groups per session. 
 
