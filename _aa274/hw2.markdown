@@ -7,9 +7,6 @@ pdf_link: "/aa274/pdfs/homework/hw2.pdf"
 code_link: "https://github.com/StanfordASL/AA274_HW2"
 md_group: "assignments"
 ---
-
-NOTE: Problems 0 and 5 to be posted in the next few days.
-
 The goal of this homework is to familiarize you with some tools used for perception and object detection, and integrate controls and perception nodes in ROS. Please read the homework carefully, it's wordy!
 
 *Problems 1 and 2 are due Feb 6th 11:59PM.*
