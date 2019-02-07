@@ -4,6 +4,7 @@
 "\newcommand{\printfirst}[2]{#1} " #
 "\newcommand{\singleletter}[1]{#1} " #
 "\newcommand{\switchargs}[2]{#2#1} "}
+
 @String{ios_AAA                   = {{American Automobile Association}}}
 @String{ios_BNEF                       = {{Bloomberg New Energy Finance}}}
 @String { ios_ConsumerReports       = {{ConsumerReports.org}} }
@@ -21,7 +22,7 @@
 @String { ios_JPL                   = {{JPL}} }
 @String { ios_KMS                   = {{Kharkov Mathematics Society}} }
 @String{ios_LEI                        = {{London Economics International}}}
-@String{ios_Mathworks                  = {{The Mathworks, Inc.}}}
+@String { ios_Mathworks             = {{The Mathworks, Inc.}} }
 @String{ios_McKinsey                   = {{McKinsey \& Company}}}
 @String { ios_MMA                   = {{Martin Marietta Aerospace}} }
 @String { ios_NASA                  = {{NASA}} }
@@ -273,7 +274,7 @@
 @String { jrn_IEEE_JSEE             = {{Journal of Systems Engineering and Electronics}} }
 @String { jrn_IEEE_P                = {{Proc. of the IEEE}} }
 @String { jrn_IEEE_PC               = {{IEEE Pervasive Computing}} }
-@String{jrn_IEEE_RAL              = {{IEEE Robotics and Automation Letters}}}
+@String{jrn_IEEE_RAL                   = {{IEEE Robotics and Automation Letters}}}
 @String { jrn_IEEE_RAM              = {{IEEE Robotics and Automation Magazine}} }
 @String { jrn_IEEE_SensJ            = {{IEEE Sensors Journal}} }
 @String { jrn_IEEE_SPM              = {{IEEE Signal Processing Magazine}} }
@@ -483,6 +484,7 @@
 @String { proc_ACM_IPSN_symp        = {{Int. Symp. on Information Processing in Sensor Networks}} }
 @String{proc_ACM_KDDM                  = {{ACM Int. Conf. on Knowledge Discovery and Data Mining}}}
 @String { proc_ACM_MobiHoc          = {{ACM Int. Symp. on Mobile Ad-Hoc Networking \& Computing}} }
+@String{proc_ACM_SIGCHI                = {{ACM CHI Conf. on Human Factors in Computing Systems}}}
 @String { proc_ACM_SIGGRAPH         = {{Proc. of SIGGRAPH}} }
 @String { proc_ACM_SIGPLAN          = {{ACM SIGPLAN Notices}} }
 @String { proc_ACM_SIGSPATIAL       = {{ACM SIGSPATIAL}} }
@@ -691,7 +693,6 @@
 @String { pub_WHFC                  = {{W. H. Freeman \& Company}} }
 @String { pub_Wiley                 = {{John Wiley \& Sons}} }
 @String { pub_WSP                   = {{World Scientific Publishing}} }
-
 
 @Inproceedings{AllenClarkEtAl2014,
   author    = {Allen, R. and Clark, A. and Starek, J. A. and Pavone, M.},
@@ -1750,10 +1751,10 @@
   author       = {Zhang, R. and Pavone, M.},
   title        = {Control of Robotic {Mobility-on-Demand} Systems: A Queueing-Theoretical Perspective},
   journal      = jrn_SAGE_IJRR,
+  year         = {2016},
   volume       = {35},
   number       = {1--3},
   pages        = {186--203},
-  year         = {2016},
   abstract = {In this paper we present and analyze a queueing-theoretical model for autonomous mobility-on-demand (MOD) systems where robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure acceptable quality of service throughout the entire network. We cast an autonomous MOD system within a closed Jackson network model with passenger loss. It is shown that an optimal rebalancing algorithm minimizing the number of (autonomously) rebalancing vehicles and keeping vehicles availabilities balanced throughout the network can be found by solving a linear program. The theoretical insights are used to design a robust, real-time rebalancing algorithm, which is applied to a case study of New York City. The case study shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles (roughly 60\% of the size of the current taxi fleet). Finally, we extend our queueing-theoretical setup to include congestion effects, and we study the impact of autonomously rebalancing vehicles on overall congestion. Collectively, this paper provides a rigorous approach to the problem of system-wide coordination of autonomously driving vehicles, and provides one of the first characterizations of the sustainability benefits of robotic transportation networks.},
   doi      = {10.1177/0278364915581863},
   url      = {../wp-content/papercite-data/pdf/Zhang.Pavone.IJRR15.pdf},
@@ -2426,7 +2427,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-02-01},
 }
 
-@Inproceedings{IvanovicSchmerlingEtAl2018,
+@InProceedings{IvanovicSchmerlingEtAl2018,
   author       = {Ivanovic, B. and Schmerling, E. and Leung, K. and Pavone, M.},
   title        = {Generative Modeling of Multimodal Multi-Human Behavior},
   booktitle    = proc_IEEE_IROS,
@@ -2479,7 +2480,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-03-19},
 }
 
-@Inproceedings{LorenzettiChenEtAl2018,
+@InProceedings{LorenzettiChenEtAl2018,
   author       = {Lorenzetti, J. and Chen, M. and Landry, B. and Pavone, M.},
   title        = {Reach-Avoid Games Via Mixed-Integer Second-Order Cone Programming},
   booktitle    = proc_IEEE_CDC,
@@ -2616,21 +2617,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-05-25},
 }
 
-@Inproceedings{IvanovicHarrisonEtAl2019,
-  author       = {Ivanovic, B. and Harrison, J. and Sharma, A. and Chen, M. and Pavone, M.},
-  title        = {{BaRC:} Backward Reachability Curriculum for Robotic Reinforcement Learning},
-  booktitle    = proc_IEEE_ICRA,
-  year         = {2019},
-  note         = {In Press},
-  abstract = {Model-free Reinforcement Learning (RL) offers an attractive approach to learn control policies for high-dimensional systems, but its relatively poor sample complexity often forces training in simulated environments. Even in simulation, goal-directed tasks whose natural reward function is sparse remain intractable for state-of-the-art model-free algorithms for continuous control. The bottleneck in these tasks is the prohibitive amount of exploration required to obtain a learning signal from the initial state of the system. In this work, we leverage physical priors in the form of an approximate system dynamics model to design a curriculum scheme for a model-free policy optimization algorithm. Our Backward Reachability Curriculum (BaRC) begins policy training from states that require a small number of actions to accomplish the task, and expands the initial state distribution backwards in a dynamically-consistent manner once the policy optimization algorithm demonstrates sufficient performance. BaRC is general, in that it can accelerate training of any model-free RL algorithm on a broad class of goal-directed continuous control MDPs. Its curriculum strategy is physically intuitive, easy-to-tune, and allows incorporating physical priors to accelerate training without hindering the performance, flexibility, and applicability of the model-free RL algorithm. We evaluate our approach on two representative dynamic robotic learning problems and find substantial performance improvement relative to previous curriculum generation techniques and na{\"i}ve exploration strategies},
-  address  = {Montreal, Canada},
-  month    = may,
-  url      = {https://arxiv.org/pdf/1806.06161.pdf},
-  keywords     = {press},
-  owner        = {borisi},
-  timestamp    = {2018-09-05},
-}
-
 @Article{ChinchaliLivingstonEtAl2018,
   author       = {Chinchali, S. P. and Livingston, S. C. and Chen, M. and Pavone, M.},
   title        = {Multi-objective optimal control for proactive decision-making with temporal logic models},
@@ -2644,12 +2630,12 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-06-26},
 }
 
-@Inproceedings{HarrisonSharmaEtAl2018,
+@InProceedings{HarrisonSharmaEtAl2018,
   author       = {Harrison, J. and Sharma, A. and Pavone, M.},
   title        = {Meta-Learning Priors for Efficient Online Bayesian Regression},
   booktitle    = proc_WAFR,
   year         = {2018},
-  note         = {In press},
+  note         = {In Press},
   abstract = {Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. In particular, the predominant implementation of GP regression is kernel-based, as it enables fitting of arbitrary nonlinear functions by leveraging kernel functions as infinite-dimensional features. While incorporating prior information has the potential to drastically improve data efficiency of kernel-based GP regression, expressing complex priors through the choice of kernel function and associated hyperparameters is often challenging and unintuitive. Furthermore, the computational complexity of kernel-based GP regression scales poorly with the number of samples, limiting its application in regimes where a large amount of data is available. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior density. These features are neural networks, which are trained via a meta-learning approach. ALPaCA extracts all prior information from the dataset, rather than relying on the choice of arbitrary, restrictive kernel hyperparameters. Furthermore, it substantially reduces sample complexity, and allows scaling to large systems. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.},
   address  = {Merida, Mexico},
   month    = oct,
@@ -2657,21 +2643,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   keywords     = {press},
   owner        = {apoorva},
   timestamp    = {2018-10-07},
-}
-
-@Inproceedings{ChenTamEtAl2018,
-  author       = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
-  title        = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
-  booktitle    = proc_WAFR,
-  year         = {2018},
-  note         = {Submitted},
-  abstract = {Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.},
-  address  = {Merida, Mexico},
-  month    = oct,
-  url      = {../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
-  keywords     = {sub},
-  owner        = {bylard},
-  timestamp    = {2018-07-24},
 }
 
 @Inproceedings{ChinchaliAnemogiannisEtAl2018,
@@ -2688,22 +2659,22 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-07-25},
 }
 
-@Inproceedings{IchterPavone2019,
-  author       = {Ichter, B. and Pavone, M.},
-  title        = {Robot Motion Planning in Learned Latent Spaces},
-  booktitle    = jrn_IEEE_RAL,
-  year         = {2019},
+@InProceedings{ChenTamEtAl2018,
+  author       = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
+  title        = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
+  booktitle    = proc_WAFR,
+  year         = {2018},
   note         = {Submitted},
-  abstract = {This paper presents Latent Sampling-based Motion Planning (L-SBMP), a methodology towards computing motion plans for complex robotic systems by learning a plannable latent representation. Recent works in control of robotic systems have effectively leveraged local, low-dimensional embeddings of high-dimensional dynamics. In this paper we combine these recent advances with techniques from sampling-based motion planning (SBMP) in order to design a methodology capable of planning for high-dimensional robotic systems beyond the reach of traditional approaches (e.g., humanoids, or even systems where planning occurs in the visual space). Specifically, the learned latent space is constructed through an autoencoding network, a dynamics network, and a collision checking network, which mirror the three main algorithmic primitives of SBMP, namely state sampling, local steering, and collision checking. Notably, these networks can be trained through only raw data of the system's states and actions along with a supervising collision checker. Building upon these networks, an RRT-based algorithm is used to plan motions directly in the latent space - we refer to this exploration algorithm as Learned Latent RRT (L2RRT). This algorithm globally explores the latent space and is capable of generalizing to new environments. The overall methodology is demonstrated on two planning problems, namely a visual planning problem, whereby planning happens in the visual (pixel) space, and a humanoid robot planning problem.},
+  abstract = {Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.},
   address  = {Merida, Mexico},
   month    = oct,
-  url      = {https://arxiv.org/abs/1807.10366},
+  url      = {../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
   keywords     = {sub},
-  owner        = {ichter},
-  timestamp    = {2018-11-06},
+  owner        = {bylard},
+  timestamp    = {2018-07-24},
 }
 
-@Inproceedings{SinghSindhwaniEtAl2018,
+@InProceedings{SinghSindhwaniEtAl2018,
   author       = {Singh, S. and Sindhwani, V. and Slotine, J.-J. E., and Pavone, M.},
   title        = {Learning Stabilizable Dynamical Systems via Control Contraction Metrics},
   booktitle    = proc_WAFR,
@@ -2718,7 +2689,10 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-09-21},
 }
 
-@Inproceedings{SinghChenEtAl2018,
+||||||| .r25545
+=======
+
+@InProceedings{SinghChenEtAl2018,
   author       = {Singh, S. and Chen, M. and Herbert, S. L. and Tomlin, C. J. and Pavone, M.},
   title        = {Robust Tracking with Model Mismatch for Fast and Safe Planning: an {SOS} Optimization Approach},
   booktitle    = proc_WAFR,
@@ -2773,120 +2747,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-06-30},
 }
 
-@Inproceedings{BonalliCauligiEtAl2019,
-  author       = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
-  title        = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
-  booktitle    = proc_IEEE_ICRA,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {Sequential Convex Programming (SCP) has recently seen a surge of interest as a tool for trajectory optimization. Yet, most available methods lack rigorous performance guarantees and are often tailored to specific optimal control setups. In this paper, we present GuSTO (Guaranteed Sequential Trajectory Optimization), an algorithmic framework to solve trajectory optimization problems for control-affine systems with drift. GuSTO generalizes earlier SCP-based methods for trajectory optimization (by addressing, for example, goal region constraints and problems with either fixed or free final time), and enjoys theoretical convergence guarantees in terms of convergence to, at least, a stationary point. The theoretical analysis is further leveraged to devise an accelerated implementation of GuSTO, which originally infuses ideas from indirect optimal control into an SCP context. Numerical experiments on a variety of trajectory optimization setups show that GuSTO generally outperforms current state-of-the-art approaches in terms of success rates, solution quality, and computation times.},
-  address  = {Montreal, Canada},
-  month    = may,
-  url      = {../wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf},
-  keywords     = {sub},
-  owner        = {bylard},
-  timestamp    = {2018-10-04},
-}
-
-@Inproceedings{TsaoMilojevicEtAl2019,
-  author       = {Tsao, M. and Milojevic, D. and Ruch, C. and Salazar, M. and Frazzoli, E. and Pavone, M.},
-  title        = {Model Predictive Control of Ride-sharing Autonomous Mobility on Demand Systems},
-  booktitle    = proc_IEEE_ICRA,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {This paper presents a model predictive control (MPC) approach to optimize routes for Ride-sharing Autonomous Mobility-on-Demand (RAMoD) systems, whereby self-driving vehicles provide coordinated on-demand mobility, possibly allowing multiple customers to share a ride. Specifically, we first devise a time-expanded network flow model for RAMoD. Second, leveraging this model, we design a real-time MPC algorithm to optimize the routes of both empty and customer-carrying vehicles, with the goal of optimizing social welfare, namely, a weighted combination of customers' travel time and vehicles' mileage. Finally, we present a real-world case study for the city of San Francisco, CA, by using the microscopic traffic simulator MATSim. The simulation results show that a RAMoD system can significantly improve social welfare with respect to a single-occupancy AMoD system, and that the predictive structure of the proposed MPC controller allows it to outperform existing reactive ride-sharing coordination algorithms for RAMoD.},
-  address  = {Montreal, Canada},
-  month    = may,
-  url      = {../wp-content/papercite-data/pdf/Tsao.ea.ICRA19.pdf},
-  keywords     = {sub},
-  owner        = {samauro},
-  timestamp    = {2018-09-16},
-}
-
-@Inproceedings{HarrisonSharmaEtAl2019,
-  author       = {Harrison, J. and Sharma, A. and Calandra, R. and Pavone, M.},
-  title        = {Control Adaptation via Meta-Learning Dynamics},
-  booktitle    = proc_IEEE_ICRA,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {Model-based control relies on having an accurate dynamics model. In situations where the dynamics of the robot is not static (e.g., after a delivery quadcopter pick or drop a package), it is paramount to accurately estimate how the dynamics is influenced -- and thus account for these changes at the control level. One way of doing so is to condition the dynamics model on some latent variable which represents the context. In this paper, we present CAMeLiD, a data-driven approach to learn controllers that can quickly adapt to previously unseen dynamics. This is done through a high-capacity neural network trained in a meta-learning manner to infer the context of the dynamics, and a subsequent model-based control framework based on iLQG. We demonstrate CAMeLiD on a quadrotor delivery experiment, and show it results in substantial performance improvement over baselines.},
-  address  = {Montreal, Canada},
-  month    = may,
-  keywords     = {sub},
-  owner        = {jh2},
-  timestamp    = {2018-09-16},
-}
-
-@Inproceedings{IvanovicPavone2019,
-  author       = {Ivanovic, B. and Pavone, M.},
-  title        = {Modeling Multimodal Dynamic Spatiotemporal Graphs},
-  booktitle    = proc_IEEE_ICRA,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {Spatiotemporal graphs (STGs) are a powerful tool for modeling multi-agent interaction scenarios, used commonly in human trajectory prediction and proactive planning and decision making for safe human-robot interaction. However, many current STG-backed methods rely on a static graph assumption, i.e. that the underlying graphical structure maintains the same nodes and edges throughout the scenario. This assumption is frequently broken in real-world applications, especially in highly-dynamic problems such as human trajectory prediction in crowds. To remove the reliance on this assumption, we present a methodology for modeling and predicting agent behavior in both highly dynamic and multimodal scenarios (i.e. where the scene's graphical structure is time-varying and there are many possible highly-distinct futures for each agent). Our approach to model dynamic STGs augments prior multimodal, multi-agent modeling methods with a gating function on edge models that smoothly adds and removes edge influence from a node. We demonstrate the performance of our approach on the ETH multi-human trajectory dataset and on NBA basketball player trajectories. Both are highly-dynamic, multimodal, and multi-agent interaction scenarios which serve as proxies for many robotic applications.},
-  address  = {Montreal, Canada},
-  month    = may,
-  url      = {https://arxiv.org/pdf/1810.05993.pdf},
-  keywords     = {sub},
-  owner        = {borisi},
-  timestamp    = {2018-09-16},
-}
-
-@Inproceedings{LeungSchmerlingEtAl2018,
-  author    = {Leung, K. and Schmerling, E. and Chen, M. and Talbot, J. and Gerdes, J. C. and Pavone, M.},
-  title     = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
-  booktitle = proc_ISER,
-  year      = {2018},
-  url   = {../wp-content/papercite-data/pdf/Leung.Schmerling.Chen.ea.ISER18.pdf},
-  owner     = {mochen72},
-  timestamp = {2018-10-13},
-}
-
-@Inproceedings{LeungArechigaEtAl2019,
-  author       = {Leung, K. and Arechiga, N. and Pavone, M.},
-  title        = {Backpropagation for Signal Temporal Logic},
-  booktitle    = proc_ACM_HSCC,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {Signal Temporal Logic (STL) is an expressive language used to describe logical and temporal properties of signals, both continuous and discrete. Inferring STL formulas from behavior traces can provide powerful insights into complex systems. These insights can help system designers better understand and improve the systems they develop (e.g., long-term behaviors of time series data), yet this is a very challenging and often intractable problem. This work presents a method for evaluating STL formulas using computation graphs, hence bridging a connection between STL and many modern machine learning frameworks that depend on computation graphs, such as deep learning. We show that this approach is particularly effective for solving parameteric STL (pSTL) problems, the problem of parameter fitting for a given signal. We provide a relaxation technique that makes this method more tractable when solving general pSTL formulas. By using computation graphs, we can leverage the benefits and the computational prowess of modern day machine learning tools. Motivated by the problem of learning explanatory factors and safety assurance for complex cyber-physical systems, we demonstrate our proposed method on an autonomous driving case study.},
-  address  = {Montreal, Canada},
-  month    = april,
-  keywords     = {sub},
-  owner        = {karenl7},
-  timestamp    = {2018-10-24},
-}
-
-@Inproceedings{LorenzettiLandryEtAl2019,
-  author       = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
-  title        = {Reduced Order Model Predictive Control For Setpoint Tracking},
-  booktitle    = proc_EUCA_ECC,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.},
-  address  = {Naples, Italy},
-  month    = jun,
-  url      = {https://arxiv.org/pdf/1811.06590.pdf},
-  keywords     = {sub},
-  owner        = {jlorenze},
-  timestamp    = {2018-11-15},
-}
-
-@Inproceedings{SalazarTsaoEtAl2019,
-  author       = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
-  title        = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
-  booktitle    = proc_EUCA_ECC,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {We study route-planning for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing scheme (CARS) that captures road-utilization-dependent travel times at a mesoscopic level via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. This approximation largely retains the key features of the BPR model, while allowing the design of a real-time, convex quadratic optimization algorithm to determine congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARS to existing routing approaches, namely a congestion-unaware and a threshold congestion model. Numerical results show that CARS significantly outperforms the other two approaches, with improvements in terms of travel time and global cost in the order of 20%.},
-  address  = {Naples, Italy},
-  month    = nov,
-  url      = {../wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf},
-  keywords     = {sub},
-  owner        = {samauro},
-  timestamp    = {2018-11-17},
-}
-
-@Inproceedings{ZahroofBylardEtAl2019,
+@InProceedings{ZahroofBylardEtAl2019,
   author       = {Zahroof, T. and Bylard, A. and Shageer, H. and Pavone, M.},
   title        = {Perception-Constrained Robot Manipulator Planning for Satellite Servicing},
   booktitle    = proc_IEEE_AC,
@@ -2901,6 +2762,192 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-01-14},
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
+@InProceedings{TsaoMilojevicEtAl2019,
+  author       = {Tsao, M. and Milojevic, D. and Ruch, C. and Salazar, M. and Frazzoli, E. and Pavone, M.},
+  title        = {Model Predictive Control of Ride-sharing Autonomous Mobility on Demand Systems},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2019},
+  note         = {In Press},
+  abstract = {This paper presents a model predictive control (MPC) approach to optimize routes for Ride-sharing Autonomous Mobility-on-Demand (RAMoD) systems, whereby self-driving vehicles provide coordinated on-demand mobility, possibly allowing multiple customers to share a ride. Specifically, we first devise a time-expanded network flow model for RAMoD. Second, leveraging this model, we design a real-time MPC algorithm to optimize the routes of both empty and customer-carrying vehicles, with the goal of optimizing social welfare, namely, a weighted combination of customers' travel time and vehicles' mileage. Finally, we present a real-world case study for the city of San Francisco, CA, by using the microscopic traffic simulator MATSim. The simulation results show that a RAMoD system can significantly improve social welfare with respect to a single-occupancy AMoD system, and that the predictive structure of the proposed MPC controller allows it to outperform existing reactive ride-sharing coordination algorithms for RAMoD.},
+  address  = {Montreal, Canada},
+  month    = may,
+  url      = {../wp-content/papercite-data/pdf/Tsao.ea.ICRA19.pdf},
+  keywords     = {press},
+  owner        = {samauro},
+  timestamp    = {2018-09-16},
+}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
+@InProceedings{SoloveySalazarEtAl2019,
+  author       = {Solovey, K. and Salazar, M. and Pavone, M.},
+  title        = {Scalable and Congestion-aware Routing for Autonomous Mobility-on-Demand via Frank-Wolfe Optimization},
+  booktitle    = proc_RSS,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {We consider the problem of vehicle routing for Autonomous Mobility-on-Demand (AMoD) systems, wherein a fleet of self-driving vehicles provides on-demand mobility in a given environment. Specifically, the task it to compute routes for the vehicles (both customer-carrying and empty travelling) so that travel demand is fulfilled and operational cost is minimized. The routing process must account for congestion effects affecting travel times, as modeled via a volume-delay function (VDF). Route planning with VDF constraints is notoriously challenging, as such constraints compound the combinatorial complexity of the routing optimization process. Thus, current solutions for AMoD routing resort to relaxations of the congestion constraints, thereby trading optimality with computational efficiency. In this paper, we present the first computationally-efficient approach for AMoD routing where VDF constraints are explicitly accounted for. We demonstrate that our approach is faster by at least one order of magnitude with respect to the state of the art, while providing higher quality solutions. From a methodological standpoint, the key technical insight is to establish a mathematical reduction of the AMoD routing problem to the classical traffic assignment problem (a related vehicle-routing problem where empty traveling vehicles are not present). Such a reduction allows us to extend powerful algorithmic tools for traffic assignment, which combine the classic Frank-Wolfe algorithm with modern techniques for pathfinding, to the AMoD routing problem. We provide strong theoretical guarantees for our approach in terms of near-optimality of the returned solution.},
+  address  = {Freiburg in Breisgau, Germany},
+  month    = jun,
+  url      = {../wp-content/papercite-data/pdf/Solovey.Salazar.Pavone.RSS19.pdf},
+  owner        = {samauro},
+  timestamp    = {2019-02-02},
+}
+
+@InProceedings{SharmaHarrisonEtAl2019,
+  author       = {Sharma A. and Harrison J. and Tsao, M. and Pavone, M.},
+  title        = {Robust and Adaptive Planning under Model Uncertainty},
+  booktitle    = proc_ICAPS,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Planning under model uncertainty is a fundamental problem across many applications of decision making and learning. In this paper, we propose the Robust Adaptive Monte Carlo Planning (RAMCP) algorithm, which allows computation of risk-sensitive Bayes-adaptive policies that optimally trade off exploration, exploitation, and robustness. RAMCP formulates the risk-sensitive planning problem as a two-player zero-sum game, in which an adversary perturbs the agent's belief over the models. We introduce two versions of the RAMCP algorithm. The first, RAMCP-F, converges to an optimal risk-sensitive policy without having to rebuild the search tree as the underlying belief over models is perturbed. The second version, RAMCP-I, improves computational efficiency at the cost of losing theoretical guarantees, but is shown to yield empirical results comparable to RAMCP-F. RAMCP is demonstrated on an n-pull multi-armed bandit problem, as well as a patient treatment scenario.},
+  address  = {Berkeley, California},
+  month    = jul,
+  url      = {https://arxiv.org/pdf/1901.02577.pdf},
+  keywords     = {sub},
+  owner        = {apoorva},
+  timestamp    = {2019-01-27},
+}
+
+@InProceedings{SalazarTsaoEtAl2019,
+  author       = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
+  title        = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
+  booktitle    = proc_EUCA_ECC,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {We study route-planning for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing scheme (CARS) that captures road-utilization-dependent travel times at a mesoscopic level via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. This approximation largely retains the key features of the BPR model, while allowing the design of a real-time, convex quadratic optimization algorithm to determine congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARS to existing routing approaches, namely a congestion-unaware and a threshold congestion model. Numerical results show that CARS significantly outperforms the other two approaches, with improvements in terms of travel time and global cost in the order of 20%.},
+  address  = {Naples, Italy},
+  month    = nov,
+  url      = {../wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf},
+  keywords     = {sub},
+  owner        = {samauro},
+  timestamp    = {2018-11-17},
+}
+
+@InProceedings{LorenzettiLandryEtAl2019,
+  author       = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
+  title        = {Reduced Order Model Predictive Control For Setpoint Tracking},
+  booktitle    = proc_EUCA_ECC,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.},
+  address  = {Naples, Italy},
+  month    = jun,
+  url      = {https://arxiv.org/pdf/1811.06590.pdf},
+  keywords     = {sub},
+  owner        = {jlorenze},
+  timestamp    = {2018-11-15},
+}
+
+@InProceedings{LeungArechigaEtAl2019,
+  author       = {Leung, K. and Arechiga, N. and Pavone, M.},
+  title        = {Backpropagation for Signal Temporal Logic},
+  booktitle    = proc_ACM_HSCC,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Signal Temporal Logic (STL) is an expressive language used to describe logical and temporal properties of signals, both continuous and discrete. Inferring STL formulas from behavior traces can provide powerful insights into complex systems. These insights can help system designers better understand and improve the systems they develop (e.g., long-term behaviors of time series data), yet this is a very challenging and often intractable problem. This work presents a method for evaluating STL formulas using computation graphs, hence bridging a connection between STL and many modern machine learning frameworks that depend on computation graphs, such as deep learning. We show that this approach is particularly effective for solving parameteric STL (pSTL) problems, the problem of parameter fitting for a given signal. We provide a relaxation technique that makes this method more tractable when solving general pSTL formulas. By using computation graphs, we can leverage the benefits and the computational prowess of modern day machine learning tools. Motivated by the problem of learning explanatory factors and safety assurance for complex cyber-physical systems, we demonstrate our proposed method on an autonomous driving case study.},
+  address  = {Montreal, Canada},
+  month    = april,
+  keywords     = {sub},
+  owner        = {karenl7},
+  timestamp    = {2018-10-24},
+}
+
+@InProceedings{IvanovicPavone2019,
+  author       = {Ivanovic, B. and Pavone, M.},
+  title        = {Modeling Multimodal Dynamic Spatiotemporal Graphs},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Spatiotemporal graphs (STGs) are a powerful tool for modeling multi-agent interaction scenarios, used commonly in human trajectory prediction and proactive planning and decision making for safe human-robot interaction. However, many current STG-backed methods rely on a static graph assumption, i.e. that the underlying graphical structure maintains the same nodes and edges throughout the scenario. This assumption is frequently broken in real-world applications, especially in highly-dynamic problems such as human trajectory prediction in crowds. To remove the reliance on this assumption, we present a methodology for modeling and predicting agent behavior in both highly dynamic and multimodal scenarios (i.e. where the scene's graphical structure is time-varying and there are many possible highly-distinct futures for each agent). Our approach to model dynamic STGs augments prior multimodal, multi-agent modeling methods with a gating function on edge models that smoothly adds and removes edge influence from a node. We demonstrate the performance of our approach on the ETH multi-human trajectory dataset and on NBA basketball player trajectories. Both are highly-dynamic, multimodal, and multi-agent interaction scenarios which serve as proxies for many robotic applications.},
+  address  = {Montreal, Canada},
+  month    = may,
+  url      = {https://arxiv.org/pdf/1810.05993.pdf},
+  keywords     = {sub},
+  owner        = {borisi},
+  timestamp    = {2018-09-16},
+}
+
+@InProceedings{IvanovicHarrisonEtAl2019,
+  author       = {Ivanovic, B. and Harrison, J. and Sharma, A. and Chen, M. and Pavone, M.},
+  title        = {{BaRC:} Backward Reachability Curriculum for Robotic Reinforcement Learning},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2019},
+  note         = {In Press},
+  abstract = {Model-free Reinforcement Learning (RL) offers an attractive approach to learn control policies for high-dimensional systems, but its relatively poor sample complexity often forces training in simulated environments. Even in simulation, goal-directed tasks whose natural reward function is sparse remain intractable for state-of-the-art model-free algorithms for continuous control. The bottleneck in these tasks is the prohibitive amount of exploration required to obtain a learning signal from the initial state of the system. In this work, we leverage physical priors in the form of an approximate system dynamics model to design a curriculum scheme for a model-free policy optimization algorithm. Our Backward Reachability Curriculum (BaRC) begins policy training from states that require a small number of actions to accomplish the task, and expands the initial state distribution backwards in a dynamically-consistent manner once the policy optimization algorithm demonstrates sufficient performance. BaRC is general, in that it can accelerate training of any model-free RL algorithm on a broad class of goal-directed continuous control MDPs. Its curriculum strategy is physically intuitive, easy-to-tune, and allows incorporating physical priors to accelerate training without hindering the performance, flexibility, and applicability of the model-free RL algorithm. We evaluate our approach on two representative dynamic robotic learning problems and find substantial performance improvement relative to previous curriculum generation techniques and na{\"i}ve exploration strategies},
+  address  = {Montreal, Canada},
+  month    = may,
+  url      = {https://arxiv.org/pdf/1806.06161.pdf},
+  keywords     = {press},
+  owner        = {borisi},
+  timestamp    = {2018-09-05},
+}
+
+@Article{IchterPavone2019,
+  author       = {Ichter, B. and Pavone, M.},
+  title        = {Robot Motion Planning in Learned Latent Spaces},
+  journal      = jrn_IEEE_RAL,
+  year         = {2019},
+  note         = {In Press},
+  abstract = {This paper presents Latent Sampling-based Motion Planning (L-SBMP), a methodology towards computing motion plans for complex robotic systems by learning a plannable latent representation. Recent works in control of robotic systems have effectively leveraged local, low-dimensional embeddings of high-dimensional dynamics. In this paper we combine these recent advances with techniques from sampling-based motion planning (SBMP) in order to design a methodology capable of planning for high-dimensional robotic systems beyond the reach of traditional approaches (e.g., humanoids, or even systems where planning occurs in the visual space). Specifically, the learned latent space is constructed through an autoencoding network, a dynamics network, and a collision checking network, which mirror the three main algorithmic primitives of SBMP, namely state sampling, local steering, and collision checking. Notably, these networks can be trained through only raw data of the system's states and actions along with a supervising collision checker. Building upon these networks, an RRT-based algorithm is used to plan motions directly in the latent space - we refer to this exploration algorithm as Learned Latent RRT (L2RRT). This algorithm globally explores the latent space and is capable of generalizing to new environments. The overall methodology is demonstrated on two planning problems, namely a visual planning problem, whereby planning happens in the visual (pixel) space, and a humanoid robot planning problem.},
+  month    = jan,
+  url      = {https://arxiv.org/abs/1807.10366},
+  booktitle    = jrn_IEEE_RAL,
+  keywords     = {press},
+  owner        = {ichter},
+  timestamp    = {2019-02-01},
+}
+
+@InProceedings{HarrisonSharmaEtAl2019,
+  author       = {Harrison, J. and Sharma, A. and Calandra, R. and Pavone, M.},
+  title        = {Control Adaptation via Meta-Learning Dynamics},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Model-based control relies on having an accurate dynamics model. In situations where the dynamics of the robot is not static (e.g., after a delivery quadcopter pick or drop a package), it is paramount to accurately estimate how the dynamics is influenced -- and thus account for these changes at the control level. One way of doing so is to condition the dynamics model on some latent variable which represents the context. In this paper, we present CAMeLiD, a data-driven approach to learn controllers that can quickly adapt to previously unseen dynamics. This is done through a high-capacity neural network trained in a meta-learning manner to infer the context of the dynamics, and a subsequent model-based control framework based on iLQG. We demonstrate CAMeLiD on a quadrotor delivery experiment, and show it results in substantial performance improvement over baselines.},
+  address  = {Montreal, Canada},
+  month    = may,
+  keywords     = {sub},
+  owner        = {jh2},
+  timestamp    = {2018-09-16},
+}
+
+@InProceedings{BonalliCauligiEtAl2019,
+  author       = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
+  title        = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2019},
+  note         = {In Press},
+  abstract = {Sequential Convex Programming (SCP) has recently seen a surge of interest as a tool for trajectory optimization. Yet, most available methods lack rigorous performance guarantees and are often tailored to specific optimal control setups. In this paper, we present GuSTO (Guaranteed Sequential Trajectory Optimization), an algorithmic framework to solve trajectory optimization problems for control-affine systems with drift. GuSTO generalizes earlier SCP-based methods for trajectory optimization (by addressing, for example, goal region constraints and problems with either fixed or free final time), and enjoys theoretical convergence guarantees in terms of convergence to, at least, a stationary point. The theoretical analysis is further leveraged to devise an accelerated implementation of GuSTO, which originally infuses ideas from indirect optimal control into an SCP context. Numerical experiments on a variety of trajectory optimization setups show that GuSTO generally outperforms current state-of-the-art approaches in terms of success rates, solution quality, and computation times.},
+  address  = {Montreal, Canada},
+  month    = may,
+  url      = {../wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf},
+  keywords     = {press},
+  owner        = {bylard},
+  timestamp    = {2018-10-04},
+}
+
+@InProceedings{LeungSchmerlingEtAl2018,
+  author    = {Leung, K. and Schmerling, E. and Chen, M. and Talbot, J. and Gerdes, J. C. and Pavone, M.},
+  title     = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
+  booktitle = proc_ISER,
+  year      = {2018},
+  url   = {../wp-content/papercite-data/pdf/Leung.Schmerling.Chen.ea.ISER18.pdf},
+  owner     = {mochen72},
+  timestamp = {2018-10-13},
+}
+
+@InProceedings{AbtahiLandryEtAl2019,
+  author       = {Abtahi, P. and Landry, B. and Yang, J. J. and Pavone, M. and Follmer, S. and Landay, J. A.},
+  title        = {Beyond The Force: Using Quadcopters to Appropriate Objects and the Environment for Haptics in Virtual Reality},
+  booktitle    = proc_ACM_SIGCHI,
+  year         = {2019},
+  note         = {In Press},
+  abstract = {Quadcopters have been used as hovering encountered-type haptic devices in virtual reality. We suggest that quadcopters can facilitate rich haptic interactions beyond force feedback by appropriating physical objects and the environment. We present HoverHaptics, an autonomous safe-to-touch quadcopter and its integration with a virtual shopping experience. HoverHaptics highlights three affordances of quadcopters that enable these rich haptic interactions: (1) dynamic positioning of passive haptics, (2) texture mapping, and (3) animating passive props. We identify inherent challenges of hovering encountered-type haptic devices, such as their limited speed, inadequate control accuracy, and safety concerns. We then detail our approach for tackling these challenges, including the use of display techniques, visuo-haptic illusions, and collision avoidance. We conclude by describing a preliminary study (n = 9) to better understand the subjective user experience when interacting with a quadcopter in virtual reality using these techniques.},
+  address  = {Glasgow, UK},
+  month    = may,
+  keywords     = {press},
+  owner        = {blandry},
+  timestamp    = {2019-02-04},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
+
+>>>>>>> .r25614
