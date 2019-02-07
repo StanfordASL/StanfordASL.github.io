@@ -2793,16 +2793,16 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 }
 
 @InProceedings{SharmaHarrisonEtAl2019,
-  author       = {Sharma A. and Harrison J. and Tsao, M. and Pavone, M.},
+  author       = {Sharma, A. and Harrison, J. and Tsao, M. and Pavone, M.},
   title        = {Robust and Adaptive Planning under Model Uncertainty},
   booktitle    = proc_ICAPS,
   year         = {2019},
-  note         = {Submitted},
+  note         = {In Press},
   abstract = {Planning under model uncertainty is a fundamental problem across many applications of decision making and learning. In this paper, we propose the Robust Adaptive Monte Carlo Planning (RAMCP) algorithm, which allows computation of risk-sensitive Bayes-adaptive policies that optimally trade off exploration, exploitation, and robustness. RAMCP formulates the risk-sensitive planning problem as a two-player zero-sum game, in which an adversary perturbs the agent's belief over the models. We introduce two versions of the RAMCP algorithm. The first, RAMCP-F, converges to an optimal risk-sensitive policy without having to rebuild the search tree as the underlying belief over models is perturbed. The second version, RAMCP-I, improves computational efficiency at the cost of losing theoretical guarantees, but is shown to yield empirical results comparable to RAMCP-F. RAMCP is demonstrated on an n-pull multi-armed bandit problem, as well as a patient treatment scenario.},
   address  = {Berkeley, California},
   month    = jul,
   url      = {https://arxiv.org/pdf/1901.02577.pdf},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {apoorva},
   timestamp    = {2019-01-27},
 }
@@ -2896,20 +2896,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-02-01},
 }
 
-@InProceedings{HarrisonSharmaEtAl2019,
-  author       = {Harrison, J. and Sharma, A. and Calandra, R. and Pavone, M.},
-  title        = {Control Adaptation via Meta-Learning Dynamics},
-  booktitle    = proc_IEEE_ICRA,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {Model-based control relies on having an accurate dynamics model. In situations where the dynamics of the robot is not static (e.g., after a delivery quadcopter pick or drop a package), it is paramount to accurately estimate how the dynamics is influenced -- and thus account for these changes at the control level. One way of doing so is to condition the dynamics model on some latent variable which represents the context. In this paper, we present CAMeLiD, a data-driven approach to learn controllers that can quickly adapt to previously unseen dynamics. This is done through a high-capacity neural network trained in a meta-learning manner to infer the context of the dynamics, and a subsequent model-based control framework based on iLQG. We demonstrate CAMeLiD on a quadrotor delivery experiment, and show it results in substantial performance improvement over baselines.},
-  address  = {Montreal, Canada},
-  month    = may,
-  keywords     = {sub},
-  owner        = {jh2},
-  timestamp    = {2018-09-16},
-}
-
 @InProceedings{BonalliCauligiEtAl2019,
   author       = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
   title        = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
@@ -2947,6 +2933,20 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   keywords     = {press},
   owner        = {blandry},
   timestamp    = {2019-02-04},
+}
+
+@InProceedings{ChinchaliSharmaEtAl2019,
+  author       = {Chinchali, S. and Sharma, A. and Harrison, J. and Elhafsi, A. and Kang, D. and Pergament, E. and Cidon, E. and Katti, S. and Pavone, M.},
+  title        = {Network Offloading Policies for Cloud Robotics: a Learning-based Approach},
+  booktitle    = proc_RSS,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Today's robotic systems are increasingly turning to computationally expensive models such as deep neural networks (DNNs) for tasks like localization, perception, planning, and object detection. However, resource-constrained robots, like low-power drones, often have insufficient on-board compute resources or power reserves to scalably run the most accurate, state-of-the art neural network compute models. Cloud robotics allows mobile robots the benefit of offloading compute to centralized servers if they are uncertain locally or want to run more accurate, compute-intensive models. However, cloud robotics comes with a key, often understated cost: communicating with the cloud over congested wireless networks may result in latency or loss of data. In fact, sending high data-rate video or LIDAR from multiple robots over congested networks can lead to prohibitive delay for real-time applications, which we measure experimentally. In this paper, we formulate a novel Robot Offloading Problem - how and when should robots offload sensing tasks, especially if they are uncertain, to improve accuracy while minimizing the cost of cloud communication? We formulate offloading as a sequential decision making problem for robots, and propose a solution using deep reinforcement learning. In both simulations and hardware experiments using state-of-the art vision DNNs, our offloading strategy improves vision task performance by between 1.3-2.6x of benchmark offloading strategies, allowing robots the potential to significantly transcend their on-board sensing accuracy but with limited cost of cloud communication.},
+  address  = {Freiburg in Breisgau, Germany},
+  month    = jun,
+  keywords     = {sub},
+  owner        = {apoorva},
+  timestamp    = {2019-02-07},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

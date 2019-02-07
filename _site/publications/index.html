@@ -1091,29 +1091,29 @@
  
 
 
-<span class="entry" id="AbtahiLandryEtAl2019">P. Abtahi, B. Landry, J. J. Yang, M. Pavone, S. Follmer, and J. A. Landay, <a class="entry-title" href="">“Beyond The Force: Using Quadcopters to Appropriate Objects and the Environment for Haptics in Virtual Reality,”</a> in <i>ACM CHI Conf. on Human Factors in Computing Systems</i>, Glasgow, UK, 2019. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('AbtahiLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('AbtahiLandryEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_AbtahiLandryEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Quadcopters have been used as hovering encountered-type haptic devices in virtual reality. We suggest that quadcopters can facilitate rich haptic interactions beyond force feedback by appropriating physical objects and the environment. We present HoverHaptics, an autonomous safe-to-touch quadcopter and its integration with a virtual shopping experience. HoverHaptics highlights three affordances of quadcopters that enable these rich haptic interactions: (1) dynamic positioning of passive haptics, (2) texture mapping, and (3) animating passive props. We identify inherent challenges of hovering encountered-type haptic devices, such as their limited speed, inadequate control accuracy, and safety concerns. We then detail our approach for tackling these challenges, including the use of display techniques, visuo-haptic illusions, and collision avoidance. We conclude by describing a preliminary study (n = 9) to better understand the subjective user experience when interacting with a quadcopter in virtual reality using these techniques.</p>
+<span class="entry" id="ChinchaliSharmaEtAl2019">S. Chinchali <i>et al.</i>, <a class="entry-title" href="">“Network Offloading Policies for Cloud Robotics: a Learning-based Approach,”</a> in <i>Robotics: Science and Systems</i>, Freiburg in Breisgau, Germany, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChinchaliSharmaEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChinchaliSharmaEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_ChinchaliSharmaEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Today’s robotic systems are increasingly turning to computationally expensive models such as deep neural networks (DNNs) for tasks like localization, perception, planning, and object detection. However, resource-constrained robots, like low-power drones, often have insufficient on-board compute resources or power reserves to scalably run the most accurate, state-of-the art neural network compute models. Cloud robotics allows mobile robots the benefit of offloading compute to centralized servers if they are uncertain locally or want to run more accurate, compute-intensive models. However, cloud robotics comes with a key, often understated cost: communicating with the cloud over congested wireless networks may result in latency or loss of data. In fact, sending high data-rate video or LIDAR from multiple robots over congested networks can lead to prohibitive delay for real-time applications, which we measure experimentally. In this paper, we formulate a novel Robot Offloading Problem - how and when should robots offload sensing tasks, especially if they are uncertain, to improve accuracy while minimizing the cost of cloud communication? We formulate offloading as a sequential decision making problem for robots, and propose a solution using deep reinforcement learning. In both simulations and hardware experiments using state-of-the art vision DNNs, our offloading strategy improves vision task performance by between 1.3-2.6x of benchmark offloading strategies, allowing robots the potential to significantly transcend their on-board sensing accuracy but with limited cost of cloud communication.</p>
 </span>
-<span id="bib_AbtahiLandryEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{AbtahiLandryEtAl2019,
-  author = {Abtahi, P. and Landry, B. and Yang, J. J. and Pavone, M. and Follmer, S. and Landay, J. A.},
-  title = {Beyond The Force: Using Quadcopters to Appropriate Objects and the Environment for Haptics in Virtual Reality},
-  booktitle = {{ACM CHI Conf. on Human Factors in Computing Systems}},
+<span id="bib_ChinchaliSharmaEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{ChinchaliSharmaEtAl2019,
+  author = {Chinchali, S. and Sharma, A. and Harrison, J. and Elhafsi, A. and Kang, D. and Pergament, E. and Cidon, E. and Katti, S. and Pavone, M.},
+  title = {Network Offloading Policies for Cloud Robotics: a Learning-based Approach},
+  booktitle = {{Robotics: Science and Systems}},
   year = {2019},
-  note = {In Press},
-  address = {Glasgow, UK},
-  month = may,
-  keywords = {press},
-  owner = {blandry},
-  timestamp = {2019-02-04}
+  note = {Submitted},
+  address = {Freiburg in Breisgau, Germany},
+  month = jun,
+  keywords = {sub},
+  owner = {apoorva},
+  timestamp = {2019-02-07}
 }
 </pre>
 </span>
-<!-- <span id="key_AbtahiLandryEtAl2019" >
+<!-- <span id="key_ChinchaliSharmaEtAl2019" >
 	<b>Keywords</b>:
-	press
+	sub
 </span> --></li>
 <li>
  
@@ -1177,34 +1177,6 @@
  
 
 
-<span class="entry" id="HarrisonSharmaEtAl2019">J. Harrison, A. Sharma, R. Calandra, and M. Pavone, <a class="entry-title" href="">“Control Adaptation via Meta-Learning Dynamics,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_HarrisonSharmaEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Model-based control relies on having an accurate dynamics model. In situations where the dynamics of the robot is not static (e.g., after a delivery quadcopter pick or drop a package), it is paramount to accurately estimate how the dynamics is influenced – and thus account for these changes at the control level. One way of doing so is to condition the dynamics model on some latent variable which represents the context. In this paper, we present CAMeLiD, a data-driven approach to learn controllers that can quickly adapt to previously unseen dynamics. This is done through a high-capacity neural network trained in a meta-learning manner to infer the context of the dynamics, and a subsequent model-based control framework based on iLQG. We demonstrate CAMeLiD on a quadrotor delivery experiment, and show it results in substantial performance improvement over baselines.</p>
-</span>
-<span id="bib_HarrisonSharmaEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{HarrisonSharmaEtAl2019,
-  author = {Harrison, J. and Sharma, A. and Calandra, R. and Pavone, M.},
-  title = {Control Adaptation via Meta-Learning Dynamics},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2019},
-  note = {Submitted},
-  address = {Montreal, Canada},
-  month = may,
-  keywords = {sub},
-  owner = {jh2},
-  timestamp = {2018-09-16}
-}
-</pre>
-</span>
-<!-- <span id="key_HarrisonSharmaEtAl2019" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="BonalliCauligiEtAl2019">R. Bonalli, A. Cauligi, A. Bylard, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf">“GuSTO: Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_BonalliCauligiEtAl2019" class="abstract noshow">
@@ -1227,6 +1199,34 @@
 </pre>
 </span>
 <!-- <span id="key_BonalliCauligiEtAl2019" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="AbtahiLandryEtAl2019">P. Abtahi, B. Landry, J. J. Yang, M. Pavone, S. Follmer, and J. A. Landay, <a class="entry-title" href="">“Beyond The Force: Using Quadcopters to Appropriate Objects and the Environment for Haptics in Virtual Reality,”</a> in <i>ACM CHI Conf. on Human Factors in Computing Systems</i>, Glasgow, UK, 2019. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('AbtahiLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('AbtahiLandryEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_AbtahiLandryEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Quadcopters have been used as hovering encountered-type haptic devices in virtual reality. We suggest that quadcopters can facilitate rich haptic interactions beyond force feedback by appropriating physical objects and the environment. We present HoverHaptics, an autonomous safe-to-touch quadcopter and its integration with a virtual shopping experience. HoverHaptics highlights three affordances of quadcopters that enable these rich haptic interactions: (1) dynamic positioning of passive haptics, (2) texture mapping, and (3) animating passive props. We identify inherent challenges of hovering encountered-type haptic devices, such as their limited speed, inadequate control accuracy, and safety concerns. We then detail our approach for tackling these challenges, including the use of display techniques, visuo-haptic illusions, and collision avoidance. We conclude by describing a preliminary study (n = 9) to better understand the subjective user experience when interacting with a quadcopter in virtual reality using these techniques.</p>
+</span>
+<span id="bib_AbtahiLandryEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{AbtahiLandryEtAl2019,
+  author = {Abtahi, P. and Landry, B. and Yang, J. J. and Pavone, M. and Follmer, S. and Landay, J. A.},
+  title = {Beyond The Force: Using Quadcopters to Appropriate Objects and the Environment for Haptics in Virtual Reality},
+  booktitle = {{ACM CHI Conf. on Human Factors in Computing Systems}},
+  year = {2019},
+  note = {In Press},
+  address = {Glasgow, UK},
+  month = may,
+  keywords = {press},
+  owner = {blandry},
+  timestamp = {2019-02-04}
+}
+</pre>
+</span>
+<!-- <span id="key_AbtahiLandryEtAl2019" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -1407,22 +1407,22 @@
  
 
 
-<span class="entry" id="SharmaHarrisonEtAl2019">S. A., H. J., M. Tsao, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1901.02577.pdf">“Robust and Adaptive Planning under Model Uncertainty,”</a> in <i>Int. Conf. on Automated Planning and Scheduling</i>, Berkeley, California, 2019. (Submitted)</span> 
+<span class="entry" id="SharmaHarrisonEtAl2019">A. Sharma, J. Harrison, M. Tsao, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1901.02577.pdf">“Robust and Adaptive Planning under Model Uncertainty,”</a> in <i>Int. Conf. on Automated Planning and Scheduling</i>, Berkeley, California, 2019. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SharmaHarrisonEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SharmaHarrisonEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_SharmaHarrisonEtAl2019" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Planning under model uncertainty is a fundamental problem across many applications of decision making and learning. In this paper, we propose the Robust Adaptive Monte Carlo Planning (RAMCP) algorithm, which allows computation of risk-sensitive Bayes-adaptive policies that optimally trade off exploration, exploitation, and robustness. RAMCP formulates the risk-sensitive planning problem as a two-player zero-sum game, in which an adversary perturbs the agent’s belief over the models. We introduce two versions of the RAMCP algorithm. The first, RAMCP-F, converges to an optimal risk-sensitive policy without having to rebuild the search tree as the underlying belief over models is perturbed. The second version, RAMCP-I, improves computational efficiency at the cost of losing theoretical guarantees, but is shown to yield empirical results comparable to RAMCP-F. RAMCP is demonstrated on an n-pull multi-armed bandit problem, as well as a patient treatment scenario.</p>
 </span>
 <span id="bib_SharmaHarrisonEtAl2019" class="bibtex noshow">
 	<pre>@inproceedings{SharmaHarrisonEtAl2019,
-  author = {A., Sharma and J., Harrison and Tsao, M. and Pavone, M.},
+  author = {Sharma, A. and Harrison, J. and Tsao, M. and Pavone, M.},
   title = {Robust and Adaptive Planning under Model Uncertainty},
   booktitle = {{Int. Conf. on Automated Planning and Scheduling}},
   year = {2019},
-  note = {Submitted},
+  note = {In Press},
   address = {Berkeley, California},
   month = jul,
   url = {https://arxiv.org/pdf/1901.02577.pdf},
-  keywords = {sub},
+  keywords = {press},
   owner = {apoorva},
   timestamp = {2019-01-27}
 }
@@ -1430,7 +1430,7 @@
 </span>
 <!-- <span id="key_SharmaHarrisonEtAl2019" >
 	<b>Keywords</b>:
-	sub
+	press
 </span> --></li>
 <li>
  
@@ -2105,26 +2105,26 @@
  
 
 
-<span class="entry" id="EstradaJiangEtAl2017">M. A. Estrada, H. Jiang, B. Noll, E. W. Hawkes, M. Pavone, and M. R. Cutkosky, <a class="entry-title" href="../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf">“Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('EstradaJiangEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('EstradaJiangEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_EstradaJiangEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Free-flying robots have the potential to autonomously fulfill a wide range of tasks involving manipulation of objects in space. In this paper we study the design of a wrist mechanism for free-flying robots that are equipped with an adhesive gripper for attaching to objects and surfaces. The wrist and gripper allow the robots to apply moments in addition to forces, which increases their versatility for object manipulation. We apply grasp optimization to establish limitations on the forces/moments that the wrist can impart, subject to adhesion capabilities. Building on these results, we present an approach for tuning a passive wrist mechanism, or controlling an active wrist, to broaden the range of forces and moments that the robot can exert. Our theoretical insights and wrist designs are validated in simulations and on a planar micro-gravity test bed.</p>
+<span class="entry" id="JorgensenChenEtAl2017d">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.CDC17.pdf">“The Risk-Sensitive Coverage Problem: Multi-Robot Routing Under Uncertainty with Service Level and Survival Constraints,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Melbourne, Australia, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017d','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017d','abstract')">Abstract</a>]</p>
+<span id="abs_JorgensenChenEtAl2017d" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Consider a scenario where robots traverse a graph, but crossing each edge bears a risk of failure. A team operator seeks a set of paths for the smallest team which guarantee the probabilities that at least one robot visits each node satisfies specified per-node visit thresholds, and the probabilities each robot reaches its destination satisfy a per-robot survival threshold. We present the Risk-Sensitive Coverage (RSC) problem formally as an instance of the submodular set cover problem and propose an efficient cost-benefit greedy algorithm for finding a feasible set of paths. We prove that the number of robots deployed by our algorithm is no more than (lambda/p_s)(1+log( lambda Delta_K/p_s)) times the smallest team, where Delta_K quantifies the relative benefit of the first and last paths, p_s is the per-robot survival probability threshold and 1/lambda < 1 is the approximation factor of an oracle routine for the well-known orienteering problem. We demonstrate the quality of our solutions by comparing to optimal solutions computed for special cases of the RSC and the efficiency of our approach by applying it to a search and rescue scenario where 225 sites must be visited, each with probability at least 0.95.</p>
 </span>
-<span id="bib_EstradaJiangEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{EstradaJiangEtAl2017,
-  author = {Estrada, M. A. and Jiang, H. and Noll, B. and Hawkes, E. W. and Pavone, M. and Cutkosky, M. R.},
-  title = {Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+<span id="bib_JorgensenChenEtAl2017d" class="bibtex noshow">
+	<pre>@inproceedings{JorgensenChenEtAl2017d,
+  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
+  title = {The Risk-Sensitive Coverage Problem: Multi-Robot Routing Under Uncertainty with Service Level and Survival Constraints},
+  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
   year = {2017},
-  address = {Singapore},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf},
-  owner = {bylard},
-  timestamp = {2017-03-07}
+  address = {Melbourne, Australia},
+  month = dec,
+  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.CDC17.pdf},
+  owner = {stefantj},
+  timestamp = {2018-04-10}
 }
 </pre>
 </span>
-<!-- <span id="key_EstradaJiangEtAl2017" >
+<!-- <span id="key_JorgensenChenEtAl2017d" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -2484,26 +2484,26 @@
  
 
 
-<span class="entry" id="JorgensenChenEtAl2017d">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.CDC17.pdf">“The Risk-Sensitive Coverage Problem: Multi-Robot Routing Under Uncertainty with Service Level and Survival Constraints,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Melbourne, Australia, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017d','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017d','abstract')">Abstract</a>]</p>
-<span id="abs_JorgensenChenEtAl2017d" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Consider a scenario where robots traverse a graph, but crossing each edge bears a risk of failure. A team operator seeks a set of paths for the smallest team which guarantee the probabilities that at least one robot visits each node satisfies specified per-node visit thresholds, and the probabilities each robot reaches its destination satisfy a per-robot survival threshold. We present the Risk-Sensitive Coverage (RSC) problem formally as an instance of the submodular set cover problem and propose an efficient cost-benefit greedy algorithm for finding a feasible set of paths. We prove that the number of robots deployed by our algorithm is no more than (lambda/p_s)(1+log( lambda Delta_K/p_s)) times the smallest team, where Delta_K quantifies the relative benefit of the first and last paths, p_s is the per-robot survival probability threshold and 1/lambda < 1 is the approximation factor of an oracle routine for the well-known orienteering problem. We demonstrate the quality of our solutions by comparing to optimal solutions computed for special cases of the RSC and the efficiency of our approach by applying it to a search and rescue scenario where 225 sites must be visited, each with probability at least 0.95.</p>
+<span class="entry" id="EstradaJiangEtAl2017">M. A. Estrada, H. Jiang, B. Noll, E. W. Hawkes, M. Pavone, and M. R. Cutkosky, <a class="entry-title" href="../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf">“Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('EstradaJiangEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('EstradaJiangEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_EstradaJiangEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Free-flying robots have the potential to autonomously fulfill a wide range of tasks involving manipulation of objects in space. In this paper we study the design of a wrist mechanism for free-flying robots that are equipped with an adhesive gripper for attaching to objects and surfaces. The wrist and gripper allow the robots to apply moments in addition to forces, which increases their versatility for object manipulation. We apply grasp optimization to establish limitations on the forces/moments that the wrist can impart, subject to adhesion capabilities. Building on these results, we present an approach for tuning a passive wrist mechanism, or controlling an active wrist, to broaden the range of forces and moments that the robot can exert. Our theoretical insights and wrist designs are validated in simulations and on a planar micro-gravity test bed.</p>
 </span>
-<span id="bib_JorgensenChenEtAl2017d" class="bibtex noshow">
-	<pre>@inproceedings{JorgensenChenEtAl2017d,
-  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
-  title = {The Risk-Sensitive Coverage Problem: Multi-Robot Routing Under Uncertainty with Service Level and Survival Constraints},
-  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
+<span id="bib_EstradaJiangEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{EstradaJiangEtAl2017,
+  author = {Estrada, M. A. and Jiang, H. and Noll, B. and Hawkes, E. W. and Pavone, M. and Cutkosky, M. R.},
+  title = {Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2017},
-  address = {Melbourne, Australia},
-  month = dec,
-  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.CDC17.pdf},
-  owner = {stefantj},
-  timestamp = {2018-04-10}
+  address = {Singapore},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf},
+  owner = {bylard},
+  timestamp = {2017-03-07}
 }
 </pre>
 </span>
-<!-- <span id="key_JorgensenChenEtAl2017d" >
+<!-- <span id="key_EstradaJiangEtAl2017" >
 	<b>Keywords</b>:
 	
 </span> --></li>
