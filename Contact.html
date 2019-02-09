@@ -38,16 +38,35 @@ order: 7
               <hr />
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <h1>Directions</h1>
-            </div>
-          </div>
         </div>
         <div class="col-md-7">
           <div class="map-responsive">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.4220903314895!2d-122.17454608469227!3d37.42713237982424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a83be32f1%3A0x48efc5aee5c8f3e9!2s496+Lomita+Mall%2C+Stanford%2C+CA+94305!5e0!3m2!1sen!2sus!4v1489536877239" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Frequently Asked Questions (FAQs)</h1>
+          <p>I get a large amount of email, and I try my best to respond to them all. However, before sending me a message, please check whether your inquiry may be addressed by one of the frequently-asked questions below.</p>
+          <h3>Admitted Students</h3>
+          {% assign sorted = (site.faqs | sort: 'order') %}
+          {% for faq in sorted %}{% if faq.type == "admitted" %}
+          <h4 class="faq-question">{{faq.question}}</h4>
+          <p>{{faq.content}}</p>
+          {% endif %}{% endfor %}
+          <h3>Prospective Students</h3>
+          {% assign sorted = (site.faqs | sort: 'order') %}
+          {% for faq in sorted %}{% if faq.type == "prospective" %}
+          <h4 class="faq-question">{{faq.question}}</h4>
+          <p>{{faq.content}}</p>
+          {% endif %}{% endfor %}
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Directions</h1>
         </div>
       </div>
       <div class="row">

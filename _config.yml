@@ -43,6 +43,9 @@ include: ['aa274']
 collections:
   slides:
   press:
+  faqs:
+    output: true
+    permalink: /:collection/:title/
   projects:
     output: true
     permalink: /:collection/:title/

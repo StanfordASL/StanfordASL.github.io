@@ -1,0 +1,8 @@
+---
+layout: 
+order: 4
+type: "admitted"
+question: "I'm an undergrad/MS student interested in gaining some research experience from your lab, but not looking to stay for the PhD. Can I still do a research rotation?"
+---
+
+Yes! Please take a look at our research areas and our recent publications to see which areas you are most interested in. 

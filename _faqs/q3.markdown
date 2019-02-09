@@ -1,0 +1,8 @@
+---
+layout: 
+order: 2
+type: "admitted"
+question: "Are rotations funded?"
+---
+
+Please note that rotations are not funded positions.

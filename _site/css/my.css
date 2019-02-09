@@ -346,6 +346,16 @@ hr {
   margin: 15px 0 15px 0;
 }
 
+/* FAQs Styles */
+
+.faq-question {
+  margin-top: 30px;
+}
+
+.faq-link {
+  color: #2864B7 !important;
+}
+
 /*.footer-line {
   border-top: 1px solid rgb(40, 100, 183);
   margin: 15px 0 5px 0;
