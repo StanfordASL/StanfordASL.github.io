@@ -501,7 +501,7 @@
 @String { proc_AIAA_SFMM            = {{AIAA/AAS Space Flight Mechanics Meeting}} }
 @String { proc_AIAA_SPACE           = {{AIAA SPACE Conferences \& Exposition}} }
 @String { proc_AIAA_SSC             = {{AIAA/UTU Small Satellite Conference}} }
-@String { proc_AISTATS              = {{AI \& Statistics}} }
+@String{proc_AISTATS                   = {{Int. Conf. on Artificial Intelligence and Statistics}}}
 @String{proc_ASME_DSCC                 = {{Proc. ASME Dynamic Systems and Control Conference}}}
 @String { proc_CCC                  = {{Chinese Control Conference}} }
 @String { proc_CCCG                 = {{Canadian Conf. on Computational Geometry}} }
@@ -2915,6 +2915,20 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   keywords     = {sub},
   owner        = {apoorva},
   timestamp    = {2019-02-07},
+}
+
+@Inproceedings{Lacotte2019,
+  author       = {Lacotte, J. and Ghavamzadeh, M. and Chow, Y. and Pavone, M.},
+  title        = {Risk-Sensitive Generative Adversarial Imitation Learning},
+  booktitle    = proc_AISTATS,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {We study risk-sensitive imitation learning where the agent's goal is to perform at least as well as the expert in terms of a risk profile. We first formulate our risk-sensitive imitation learning setting. We consider the generative adversarial approach to imitation learning (GAIL) and derive an optimization problem for our formulation, which we call it risk-sensitive GAIL (RS-GAIL). We then derive two different versions of our RS-GAIL optimization problem that aim at matching the risk profiles of the agent and the expert w.r.t. Jensen-Shannon (JS) divergence and Wasserstein distance, and develop risk-sensitive generative adversarial imitation learning algorithms based on these optimization problems. We evaluate the performance of our algorithms and compare them with GAIL and the risk-averse imitation learning (RAIL) algorithms in two MuJoCo and two OpenAI classical control tasks.},
+  address  = {Okinawa, Japan},
+  month    = apr,
+  url      = {https://arxiv.org/abs/1808.04468},
+  owner        = {lacotte},
+  timestamp    = {2019-02-11},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
