@@ -7,6 +7,8 @@ The Final Project is scheduled for Thursday March 14th. Groups will sign up for 
 
 This Wednesday's lecture (Feb 13th) will be moved to Thursday 1:30 - 2:50PM in 420-041 (same room).
 
+For homework 2 part 2 submission, when zipping up your files, do not include the datasets files and retrain_logs, otherwise the file becomes too large to submit on Gradescope.
+
 The CMakeList.txt has been updated on the asl_turtlebot repo.
 Please use the updated version for your homework. This resolves the “import asl_turtlebot.msg” error.
 To avoid git issues, just copy and paste the CMakeList.txt in the <a href="https://raw.githubusercontent.com/StanfordASL/asl_turtlebot/master/CMakeLists.txt">raw format</a>. 
