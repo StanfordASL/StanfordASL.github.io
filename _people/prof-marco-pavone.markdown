@@ -4,7 +4,7 @@ title:  "Prof. Marco Pavone"
 last:   "Pavone"
 date:   2012-02-01 00:00:00 -0700
 position: faculty
-excerpt: "Assistant Professor, Department of Aeronautics and Astronautics 
+excerpt: "Associate Professor, Department of Aeronautics and Astronautics 
 <br />
 <br />
 Director, Autonomous Systems Laboratory"
@@ -13,7 +13,7 @@ img: Pavone.jpg
 
 
 
-Assistant Professor
+Associate Professor
 
 Stanford University
 
