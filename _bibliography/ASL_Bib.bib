@@ -501,7 +501,7 @@
 @String { proc_AIAA_SFMM            = {{AIAA/AAS Space Flight Mechanics Meeting}} }
 @String { proc_AIAA_SPACE           = {{AIAA SPACE Conferences \& Exposition}} }
 @String { proc_AIAA_SSC             = {{AIAA/UTU Small Satellite Conference}} }
-@String{proc_AISTATS                   = {{Int. Conf. on Artificial Intelligence and Statistics}}}
+@String { proc_AISTATS              = {{AI \& Statistics}} }
 @String{proc_ASME_DSCC                 = {{Proc. ASME Dynamic Systems and Control Conference}}}
 @String { proc_CCC                  = {{Chinese Control Conference}} }
 @String { proc_CCCG                 = {{Canadian Conf. on Computational Geometry}} }
@@ -2176,13 +2176,16 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   author       = {Iglesias, R. and Rossi, F. and Zhang, R. and Pavone, M.},
   title        = {A {BCMP} Network Approach to Modeling and Controlling Autonomous Mobility-on-Demand Systems},
   journal      = jrn_SAGE_IJRR,
-  year         = {2018},
-  note         = {In Press},
+  year         = {2019},
+  volume       = {38},
+  number       = {2-3},
+  pages        = {357--374},
   abstract = {In this paper we present a queuing network approach to the problem of routing and rebalancing a fleet of self-driving vehicles providing on- demand mobility within a capacitated road network. We refer to such systems as autonomous mobility-on-demand systems, or AMoD. We first cast an AMoD system into a closed, multi-class BCMP queuing network model capable of capturing the passenger arrival process, traffic, the state- of-charge of electric vehicles, and the availability of vehicles at the stations. Second, we propose a scalable method for the synthesis of routing and charging policies, with performance guarantees in the limit of large fleet sizes. Third, we validate the theoretical results on a case study of New York City. Collectively, this paper provides a unifying framework for the analysis and control of AMoD systems, which provides a large set of modeling options (e.g., the inclusion of road capacities and charging constraints), and subsumes earlier Jackson and network flow models.},
+  doi      = {10.1177/0278364918780335},
   url      = {../wp-content/papercite-data/pdf/Iglesias.Rossi.Zhang.Pavone.IJRR18.pdf},
   keywords     = {press},
   owner        = {rdit},
-  timestamp    = {2018-05-06},
+  timestamp    = {2019-03-03},
 }
 
 @Inproceedings{IchterLandryEtAl2017,
@@ -2418,9 +2421,11 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Review of Multi-Agent Algorithms for Collective Behavior: a Structural Taxonomy},
   booktitle    = proc_IFAC_NAASS,
   year         = {2018},
+  note         = {In Press},
   abstract = {In this paper, we review multi-agent collective behavior algorithms in the literature and classify them according to their underlying mathematical structure. For each mathematical technique, we identify the multi-agent coordination tasks it can be applied to, and we analyze its scalability, bandwidth use, and demonstrated maturity. We highlight how versatile techniques such as artificial potential functions can be used for applications ranging from low-level position control to high-level coordination and task allocation, we discuss possible reasons for the slow adoption of complex distributed coordination algorithms in the field, and we highlight areas for further research and development.},
   address  = {Santa Fe, New Mexico},
   month    = jun,
+  keywords     = {press},
   owner        = {frossi2},
   timestamp    = {2018-02-01},
 }
@@ -2443,6 +2448,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Reach-Avoid Problems via Sum-of-Squares Optimization and Dynamic Programming},
   booktitle    = proc_IEEE_IROS,
   year         = {2018},
+  note         = {Submitted},
   abstract = {Reach-avoid problems involve driving a system to a set of desirable configurations while keeping it away from undesirable ones. Providing mathematical guarantees for such scenarios is challenging but have numerous potential practical applications. Due to the challenges, analysis of reach-avoid problems involves making trade-offs between generality of system dynamics, generality of problem setups, optimality of solutions, and computational complexity. In this paper, we combine sum-of-squares optimization and dynamic programming to address the reach-avoid problem, and provide a conservative solution that maintains reaching and avoidance guarantees. Our method is applicable to polynomial system dynamics and to general problem setups, and is more computationally scalable than previous related methods. Through a numerical example involving two single integrators, we validate our proposed theory and compare our method to Hamilton-Jacobi reachability. Having validated our theory, we demonstrate the computational scalability of our method by computing the reach-avoid set of a system with two kinematic cars.},
   address  = {Madrid, Spain},
   month    = oct,
@@ -2477,15 +2483,17 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-03-19},
 }
 
-@Inproceedings{LorenzettiChenEtAl2018,
+@InProceedings{LorenzettiChenEtAl2018,
   author       = {Lorenzetti, J. and Chen, M. and Landry, B. and Pavone, M.},
   title        = {Reach-Avoid Games Via Mixed-Integer Second-Order Cone Programming},
   booktitle    = proc_IEEE_CDC,
   year         = {2018},
+  note         = {In Press},
   abstract = {Reach-avoid games are excellent proxies for studying many problems in robotics and related fields, with applications including multi-robot systems, human-robot interactions, and safety-critical systems. Solving reach-avoid games is however difficult due to the conflicting and asymmetric goals of agents, and trade-offs between optimality, computational complexity, and solution generality are commonly required. This paper seeks to find attacker strategies in reach-avoid games that reduce computational complexity while retaining solution quality by using a receding horizon strategy. To solve for the open-loop strategy fast enough to enable an receding horizon approach, the problem is formulated as a mixed-integer second-order cone program. This formulation leverages the use of sums-of-squares optimization to provide guarantees that the strategy is robust to all possible defender policies. The method is demonstrated through numerical and hardware experiments.},
   address  = {Miami Beach, Florida},
   month    = dec,
   url      = {../wp-content/papercite-data/pdf/Lorenzetti.Chen.Landry.Pavone.CDC18.pdf},
+  keywords     = {press},
   owner        = {mochen72},
   timestamp    = {2018-11-15},
 }
@@ -2516,17 +2524,18 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-04-08},
 }
 
-@Inproceedings{SalazarRossiEtAl2018,
+@InProceedings{SalazarRossiEtAl2018,
   author       = {Salazar, M. and Rossi, F. and Schiffer, M. and Onder, C. H. and Pavone, M.},
   title        = {On the Interaction between Autonomous Mobility-on-Demand and the Public Transportation Systems},
   booktitle    = proc_IEEE_ITSC,
   year         = {2018},
-  note         = {{Extended Version, Available} at \url{https://arxiv.org/abs/1804.11278}},
+  note         = {In Press. {Extended Version, Available} at \url{https://arxiv.org/abs/1804.11278}},
   abstract     = {In this paper we study models and coordination policies for intermodal Autonomous Mobility-on-Demand (AMoD), wherein a fleet of self-driving vehicles provides on-demand mobility jointly with public transit. Specifically, we first present a network flow model for intermodal AMoD, where we capture the coupling between AMoD and public transit and the goal is to maximize social welfare. Second, leveraging such a model, we design a pricing and tolling scheme that allows to achieve the social optimum under the assumption of a perfect market with selfish agents. Finally, we present a real-world case study for New York City. Our results show that the coordination between AMoD fleets and public transit can yield significant benefits compared to an AMoD system operating in isolation.},
   abstract = {In this paper we study models and coordination policies for intermodal Autonomous Mobility-on-Demand (AMoD), wherein a fleet of self-driving vehicles provides on-demand mobility jointly with public transit. Specifically, we first present a network flow model for intermodal AMoD, where we capture the coupling between AMoD and public transit and the goal is to maximize social welfare. Second, leveraging such a model, we design a pricing and tolling scheme that allows to achieve the social optimum under the assumption of a perfect market with selfish agents. Finally, we present a real-world case study for New York City. Our results show that the coordination between AMoD fleets and public transit can yield significant benefits compared to an AMoD system operating in isolation.},
   address  = {Maui, Hawaii},
-  month    = nov,
+  month    = {#nov#},
   url      = {https://arxiv.org/pdf/1804.11278.pdf},
+  keywords     = {press},
   owner        = {frossi2},
   timestamp    = {2018-07-12},
 }
@@ -2563,10 +2572,12 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Safe Motion Planning in Unknown Environments: Optimality Benchmarks and Tractable Policies},
   booktitle    = proc_RSS,
   year         = {2018},
+  note         = {In Press},
   abstract = {This paper addresses the problem of planning a safe (i.e., collisionfree) trajectory from an initial state to a goal region when the obstacle space is apriori unknown and is incrementally revealed online, e.g., through lineofsight perception. Despite its ubiquitous nature, this formulation of motion planning has received relatively little theoretical investigation, as opposed to the setup where the environment is assumed known. A fundamental challenge is that, unlike motion planning with known obstacles, it is not even clear what an optimal policy to strive for is. Our contribution is threefold. First, we present a notion of optimality for safe planning in unknown environments in the spirit of comparative (as opposed to competitive) analysis, with the goal of obtaining a benchmark that is, at least conceptually, attainable. Second, by leveraging this theoretical benchmark, we derive a pseudooptimal class of policies that can seamlessly incorporate any amount of prior or learned information while still guaranteeing the robot never collides. Finally, we demonstrate the practicality of our algorithmic approach in numerical experiments using a range of environment types and dynamics, including a comparison with a state of the art method. A key aspect of our framework is that it automatically and implicitly weighs exploration versus exploitation in a way that is optimal with respect to the information available.},
   address  = {Pittsburgh, Pennsylvania},
   month    = jun,
   url      = {https://arxiv.org/pdf/1804.05804.pdf},
+  keywords     = {press},
   owner        = {bylard},
   timestamp    = {20180412},
 }
@@ -2586,11 +2597,12 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Stochastic Model Predictive Control for Autonomous Mobility on Demand},
   booktitle    = proc_IEEE_ITSC,
   year         = {2018},
-  note         = {{Extended Version, Available} at \url{https://arxiv.org/pdf/1804.11074}},
+  note         = {In Press. {Extended Version, Available} at \url{https://arxiv.org/pdf/1804.11074}},
   abstract = {This paper presents a stochastic, model predictive control (MPC) algorithm that leverages short-term proba- bilistic forecasts for dispatching and rebalancing Autonomous Mobility-on-Demand systems (AMoD), i.e. fleets of self-driving vehicles. We first present the core stochastic optimization problem in terms of a time-expanded network flow model. Then, to ameliorate its tractability, we present two key relaxations. First, we replace the original stochastic problem with a Sample Average Approximation, and provide its performance guaran- tees. Second, we divide the controller into two submodules. The first submodule assigns vehicles to existing customers and the second redistributes vacant vehicles throughout the city. This enables the problem to be solved as two totally unimodular linear programs, allowing the controller to scale to large problem sizes. Finally, we test the proposed algorithm in two scenarios based on real data and show that it outperforms prior state-of-the-art algorithms. In particular, in a simulation using customer data from the ridesharing company DiDi Chuxing, the algorithm presented here exhibits a 62.3 percent reduction in customer waiting time compared to state of the art non- stochastic algorithms.},
   address  = {Maui, Hawaii},
   month    = nov,
   url      = {https://arxiv.org/pdf/1804.11074.pdf},
+  keywords     = {press},
   owner        = {rdit},
   timestamp    = {2018-07-12},
 }
@@ -2621,15 +2633,17 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-06-26},
 }
 
-@Inproceedings{HarrisonSharmaEtAl2018,
+@InProceedings{HarrisonSharmaEtAl2018,
   author       = {Harrison, J. and Sharma, A. and Pavone, M.},
   title        = {Meta-Learning Priors for Efficient Online Bayesian Regression},
   booktitle    = proc_WAFR,
   year         = {2018},
+  note         = {In Press},
   abstract = {Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. In particular, the predominant implementation of GP regression is kernel-based, as it enables fitting of arbitrary nonlinear functions by leveraging kernel functions as infinite-dimensional features. While incorporating prior information has the potential to drastically improve data efficiency of kernel-based GP regression, expressing complex priors through the choice of kernel function and associated hyperparameters is often challenging and unintuitive. Furthermore, the computational complexity of kernel-based GP regression scales poorly with the number of samples, limiting its application in regimes where a large amount of data is available. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior density. These features are neural networks, which are trained via a meta-learning approach. ALPaCA extracts all prior information from the dataset, rather than relying on the choice of arbitrary, restrictive kernel hyperparameters. Furthermore, it substantially reduces sample complexity, and allows scaling to large systems. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.},
   address  = {Merida, Mexico},
   month    = oct,
   url      = {https://arxiv.org/pdf/1807.08912.pdf},
+  keywords     = {press},
   owner        = {apoorva},
   timestamp    = {2018-10-07},
 }
@@ -2648,28 +2662,32 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-07-25},
 }
 
-@Inproceedings{ChenTamEtAl2018,
+@InProceedings{ChenTamEtAl2018,
   author       = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
   title        = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
   booktitle    = proc_WAFR,
   year         = {2018},
-  abstract = {Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods -- expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.},
+  note         = {Submitted},
+  abstract = {Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.},
   address  = {Merida, Mexico},
   month    = oct,
   url      = {../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
+  keywords     = {sub},
   owner        = {bylard},
   timestamp    = {2018-07-24},
 }
 
-@Inproceedings{SinghSindhwaniEtAl2018,
+@InProceedings{SinghSindhwaniEtAl2018,
   author       = {Singh, S. and Sindhwani, V. and Slotine, J.-J. E., and Pavone, M.},
   title        = {Learning Stabilizable Dynamical Systems via Control Contraction Metrics},
   booktitle    = proc_WAFR,
   year         = {2018},
+  note         = {In Press},
   abstract = {We propose a novel framework for learning stabilizable nonlinear dynamical systems for continuous control tasks in robotics. The key idea is to develop a new control-theoretic regularizer for dynamics fitting rooted in the notion of stabilizability, which guarantees that the learnt system can be accompanied by a robust controller capable of stabilizing any trajectory that the system can generate. By leveraging tools from contraction theory, statistical learning, and convex optimization, we provide a general and tractable algorithm to learn stabilizable dynamics, which can be applied to complex underactuated systems. We validate the proposed algorithm on a simulated planar quadrotor system and observe that the control-theoretic regularized dynamics model is able to consistently generate and accurately track reference trajectories whereas the model learnt using standard regression techniques, e.g., ridge-regression (RR) does extremely poorly on both tasks. Furthermore, in aggressive flight regimes with high velocity and bank angle, the tracking controller fails to stabilize the trajectory generated by the ridge-regularized model whereas no instabilities were observed using the control-theoretic learned model, even with a small number of demonstration examples. The results presented illustrate the need to infuse standard model-based reinforcement learning algorithms with concepts drawn from nonlinear control theory for improved reliability.},
   address  = {Merida, Mexico},
   month    = oct,
   url      = {https://arxiv.org/abs/1808.00113},
+  keywords     = {press},
   owner        = {ssingh19},
   timestamp    = {2018-09-21},
 }
@@ -2677,15 +2695,17 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 ||||||| .r25545
 =======
 
-@Inproceedings{SinghChenEtAl2018,
+@InProceedings{SinghChenEtAl2018,
   author       = {Singh, S. and Chen, M. and Herbert, S. L. and Tomlin, C. J. and Pavone, M.},
   title        = {Robust Tracking with Model Mismatch for Fast and Safe Planning: an {SOS} Optimization Approach},
   booktitle    = proc_WAFR,
   year         = {2018},
+  note         = {In Press},
   abstract = {In the pursuit of real-time motion planning, a commonly adopted practice is to compute a trajectory by running a planning algorithm on a simplified, low-dimensional dynamical model, and then employ a feedback tracking controller that tracks such a trajectory by accounting for the full, high-dimensional system dynamics. While this strategy of planning with model mismatch generally yields fast computation times, there are no guarantees of dynamic feasibility, which hampers application to safety-critical systems. Building upon recent work that addressed this problem through the lens of Hamilton-Jacobi (HJ) reachability, we devise an algorithmic framework whereby one computes, offline, for a pair of "planner" (i.e., low-dimensional) and "tracking" (i.e., high-dimensional) models, a feedback tracking controller and associated tracking bound. This bound is then used as a safety margin when generating motion plans via the low-dimensional model. Specifically, we harness the computational tool of sum-of-squares (SOS) programming to design a bilinear optimization algorithm for the computation of the feedback tracking controller and associated tracking bound. The algorithm is demonstrated via numerical experiments, with an emphasis on investigating the trade-off between the increased computational scalability afforded by SOS and its intrinsic conservativeness. Collectively, our results enable scaling the appealing strategy of planning with model mismatch to systems that are beyond the reach of HJ analysis, while maintaining safety guarantees.},
   address  = {Merida, Mexico},
   month    = oct,
   url      = {https://arxiv.org/abs/1808.00649},
+  keywords     = {press},
   owner        = {ssingh19},
   timestamp    = {2018-09-21},
 }
@@ -2768,11 +2788,11 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   note         = {Submitted},
   abstract = {We consider the problem of vehicle routing for Autonomous Mobility-on-Demand (AMoD) systems, wherein a fleet of self-driving vehicles provides on-demand mobility in a given environment. Specifically, the task it to compute routes for the vehicles (both customer-carrying and empty travelling) so that travel demand is fulfilled and operational cost is minimized. The routing process must account for congestion effects affecting travel times, as modeled via a volume-delay function (VDF). Route planning with VDF constraints is notoriously challenging, as such constraints compound the combinatorial complexity of the routing optimization process. Thus, current solutions for AMoD routing resort to relaxations of the congestion constraints, thereby trading optimality with computational efficiency. In this paper, we present the first computationally-efficient approach for AMoD routing where VDF constraints are explicitly accounted for. We demonstrate that our approach is faster by at least one order of magnitude with respect to the state of the art, while providing higher quality solutions. From a methodological standpoint, the key technical insight is to establish a mathematical reduction of the AMoD routing problem to the classical traffic assignment problem (a related vehicle-routing problem where empty traveling vehicles are not present). Such a reduction allows us to extend powerful algorithmic tools for traffic assignment, which combine the classic Frank-Wolfe algorithm with modern techniques for pathfinding, to the AMoD routing problem. We provide strong theoretical guarantees for our approach in terms of near-optimality of the returned solution.},
   address  = {Freiburg in Breisgau, Germany},
-  month    = {#jun#},
+  month    = jun,
   url      = {../wp-content/papercite-data/pdf/Solovey.Salazar.Pavone.RSS19.pdf},
-  keywords     = {sub},
   owner        = {samauro},
   timestamp    = {2019-02-02},
+  keywords     = {sub},
 }
 
 @InProceedings{SharmaHarrisonEtAl2019,
@@ -2780,12 +2800,12 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Robust and Adaptive Planning under Model Uncertainty},
   booktitle    = proc_ICAPS,
   year         = {2019},
-  note         = {In Press},
+  note         = {Submitted},
   abstract = {Planning under model uncertainty is a fundamental problem across many applications of decision making and learning. In this paper, we propose the Robust Adaptive Monte Carlo Planning (RAMCP) algorithm, which allows computation of risk-sensitive Bayes-adaptive policies that optimally trade off exploration, exploitation, and robustness. RAMCP formulates the risk-sensitive planning problem as a two-player zero-sum game, in which an adversary perturbs the agent's belief over the models. We introduce two versions of the RAMCP algorithm. The first, RAMCP-F, converges to an optimal risk-sensitive policy without having to rebuild the search tree as the underlying belief over models is perturbed. The second version, RAMCP-I, improves computational efficiency at the cost of losing theoretical guarantees, but is shown to yield empirical results comparable to RAMCP-F. RAMCP is demonstrated on an n-pull multi-armed bandit problem, as well as a patient treatment scenario.},
   address  = {Berkeley, California},
   month    = jul,
   url      = {https://arxiv.org/pdf/1901.02577.pdf},
-  keywords     = {press},
+  keywords     = {sub},
   owner        = {apoorva},
   timestamp    = {2019-01-27},
 }
@@ -2795,14 +2815,12 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
   booktitle    = proc_EUCA_ECC,
   year         = {2019},
-  note         = {Submitted},
   abstract = {We study route-planning for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing scheme (CARS) that captures road-utilization-dependent travel times at a mesoscopic level via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. This approximation largely retains the key features of the BPR model, while allowing the design of a real-time, convex quadratic optimization algorithm to determine congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARS to existing routing approaches, namely a congestion-unaware and a threshold congestion model. Numerical results show that CARS significantly outperforms the other two approaches, with improvements in terms of travel time and global cost in the order of 20%.},
   address  = {Naples, Italy},
   month    = nov,
   url      = {../wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf},
-  keywords     = {sub},
   owner        = {samauro},
-  timestamp    = {2018-11-17},
+  timestamp    = {2019-02-28},
 }
 
 @InProceedings{LorenzettiLandryEtAl2019,
@@ -2810,14 +2828,14 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Reduced Order Model Predictive Control For Setpoint Tracking},
   booktitle    = proc_EUCA_ECC,
   year         = {2019},
-  note         = {Submitted},
+  note         = {In press},
   abstract = {Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.},
   address  = {Naples, Italy},
   month    = jun,
   url      = {https://arxiv.org/pdf/1811.06590.pdf},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {jlorenze},
-  timestamp    = {2018-11-15},
+  timestamp    = {2019-02-28},
 }
 
 @InProceedings{LeungArechigaEtAl2019,
@@ -2832,6 +2850,21 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   keywords     = {sub},
   owner        = {karenl7},
   timestamp    = {2018-10-24},
+}
+
+@InProceedings{IvanovicPavone2019,
+  author       = {Ivanovic, B. and Pavone, M.},
+  title        = {Modeling Multimodal Dynamic Spatiotemporal Graphs},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Spatiotemporal graphs (STGs) are a powerful tool for modeling multi-agent interaction scenarios, used commonly in human trajectory prediction and proactive planning and decision making for safe human-robot interaction. However, many current STG-backed methods rely on a static graph assumption, i.e. that the underlying graphical structure maintains the same nodes and edges throughout the scenario. This assumption is frequently broken in real-world applications, especially in highly-dynamic problems such as human trajectory prediction in crowds. To remove the reliance on this assumption, we present a methodology for modeling and predicting agent behavior in both highly dynamic and multimodal scenarios (i.e. where the scene's graphical structure is time-varying and there are many possible highly-distinct futures for each agent). Our approach to model dynamic STGs augments prior multimodal, multi-agent modeling methods with a gating function on edge models that smoothly adds and removes edge influence from a node. We demonstrate the performance of our approach on the ETH multi-human trajectory dataset and on NBA basketball player trajectories. Both are highly-dynamic, multimodal, and multi-agent interaction scenarios which serve as proxies for many robotic applications.},
+  address  = {Montreal, Canada},
+  month    = may,
+  url      = {https://arxiv.org/pdf/1810.05993.pdf},
+  keywords     = {sub},
+  owner        = {borisi},
+  timestamp    = {2018-09-16},
 }
 
 @InProceedings{IvanovicHarrisonEtAl2019,
@@ -2864,6 +2897,8 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-02-01},
 }
 
+
+
 @InProceedings{BonalliCauligiEtAl2019,
   author       = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
   title        = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
@@ -2889,6 +2924,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp = {2018-10-13},
 }
 
+
 @InProceedings{AbtahiLandryEtAl2019,
   author       = {Abtahi, P. and Landry, B. and Yang, J. J. and Pavone, M. and Follmer, S. and Landay, J. A.},
   title        = {Beyond The Force: Using Quadcopters to Appropriate Objects and the Environment for Haptics in Virtual Reality},
@@ -2903,6 +2939,21 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-02-04},
 }
 
+@InProceedings{LandryManchesterEtAl2019,
+  author       = {Landry, B. and Manchester, Z. and Pavone, M.},
+  title        = {A Differentiable Augmented Lagrangian Method for Bilevel Nonlinear Optimization},
+  booktitle    = proc_RSS,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Many problems in modern robotics can be addressed by modeling them as bilevel optimization problems. In this work, we leverage augmented Lagrangian methods and recent advances in automatic differentiation to develop a general-purpose nonlinear optimization solver that is well suited to bilevel optimization. We then demonstrate the validity and scalability of our algorithm with two representative robotic problems, namely robust control and parameter estimation for a system involving contact. We stress the general nature of the algorithm and its potential relevance to many other problems in robotics.},
+  address  = {Freiburg im Breisgau, Germany},
+  month    = jun,
+  url      = {https://arxiv.org/pdf/1902.03319.pdf},
+  owner        = {blandry},
+  timestamp    = {2019-02-12},
+  keywords     = {sub},
+}
+
 @InProceedings{ChinchaliSharmaEtAl2019,
   author       = {Chinchali, S. and Sharma, A. and Harrison, J. and Elhafsi, A. and Kang, D. and Pergament, E. and Cidon, E. and Katti, S. and Pavone, M.},
   title        = {Network Offloading Policies for Cloud Robotics: a Learning-based Approach},
@@ -2912,28 +2963,10 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   abstract = {Today's robotic systems are increasingly turning to computationally expensive models such as deep neural networks (DNNs) for tasks like localization, perception, planning, and object detection. However, resource-constrained robots, like low-power drones, often have insufficient on-board compute resources or power reserves to scalably run the most accurate, state-of-the art neural network compute models. Cloud robotics allows mobile robots the benefit of offloading compute to centralized servers if they are uncertain locally or want to run more accurate, compute-intensive models. However, cloud robotics comes with a key, often understated cost: communicating with the cloud over congested wireless networks may result in latency or loss of data. In fact, sending high data-rate video or LIDAR from multiple robots over congested networks can lead to prohibitive delay for real-time applications, which we measure experimentally. In this paper, we formulate a novel Robot Offloading Problem - how and when should robots offload sensing tasks, especially if they are uncertain, to improve accuracy while minimizing the cost of cloud communication? We formulate offloading as a sequential decision making problem for robots, and propose a solution using deep reinforcement learning. In both simulations and hardware experiments using state-of-the art vision DNNs, our offloading strategy improves vision task performance by between 1.3-2.6x of benchmark offloading strategies, allowing robots the potential to significantly transcend their on-board sensing accuracy but with limited cost of cloud communication.},
   address  = {Freiburg in Breisgau, Germany},
   month    = jun,
+  url      = {https://arxiv.org/pdf/1902.05703.pdf},
   keywords     = {sub},
   owner        = {apoorva},
   timestamp    = {2019-02-07},
 }
 
-@Inproceedings{Lacotte2019,
-  author       = {Lacotte, J. and Ghavamzadeh, M. and Chow, Y. and Pavone, M.},
-  title        = {Risk-Sensitive Generative Adversarial Imitation Learning},
-  booktitle    = proc_AISTATS,
-  year         = {2019},
-  note         = {In Press},
-  abstract = {We study risk-sensitive imitation learning where the agent's goal is to perform at least as well as the expert in terms of a risk profile. We first formulate our risk-sensitive imitation learning setting. We consider the generative adversarial approach to imitation learning (GAIL) and derive an optimization problem for our formulation, which we call it risk-sensitive GAIL (RS-GAIL). We then derive two different versions of our RS-GAIL optimization problem that aim at matching the risk profiles of the agent and the expert w.r.t. Jensen-Shannon (JS) divergence and Wasserstein distance, and develop risk-sensitive generative adversarial imitation learning algorithms based on these optimization problems. We evaluate the performance of our algorithms and compare them with GAIL and the risk-averse imitation learning (RAIL) algorithms in two MuJoCo and two OpenAI classical control tasks.},
-  address  = {Okinawa, Japan},
-  month    = apr,
-  url      = {https://arxiv.org/abs/1808.04468},
-  keywords     = {press},
-  owner        = {lacotte},
-  timestamp    = {2019-02-11},
-}
-
-@Comment{jabref-meta: databaseType:bibtex;}
-
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
-
->>>>>>> .r25614
+@Comment{jabref-meta: databaseType:biblatex;}
