@@ -2179,7 +2179,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   year         = {2019},
   volume       = {38},
   number       = {2-3},
-  pages        = {357--374},
+  pages        = {357?374},
   abstract = {In this paper we present a queuing network approach to the problem of routing and rebalancing a fleet of self-driving vehicles providing on- demand mobility within a capacitated road network. We refer to such systems as autonomous mobility-on-demand systems, or AMoD. We first cast an AMoD system into a closed, multi-class BCMP queuing network model capable of capturing the passenger arrival process, traffic, the state- of-charge of electric vehicles, and the availability of vehicles at the stations. Second, we propose a scalable method for the synthesis of routing and charging policies, with performance guarantees in the limit of large fleet sizes. Third, we validate the theoretical results on a case study of New York City. Collectively, this paper provides a unifying framework for the analysis and control of AMoD systems, which provides a large set of modeling options (e.g., the inclusion of road capacities and charging constraints), and subsumes earlier Jackson and network flow models.},
   doi      = {10.1177/0278364918780335},
   url      = {../wp-content/papercite-data/pdf/Iglesias.Rossi.Zhang.Pavone.IJRR18.pdf},
@@ -2710,21 +2710,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-09-21},
 }
 
-@Inproceedings{Salazar2019,
-  author       = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
-  title        = {{CARA:} A Congestion-Aware Routing Algorithm for Autonomous Mobility-on-Demand Systems},
-  booktitle    = proc_TRB,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {We present a congestion-aware routing policy for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing algorithm (CARA) that captures road utilization dependent travel times via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. Such an approximation largely retains the key features of the BPR model, while enabling the design of a real-time, convex quadratic optimization algorithm to compute congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARA to existing routing approaches, the first one congestion-unaware and the second one based on a threshold congestion model. Numerical results show that CARA significantly outperforms the state of the art, with improvements in terms of travel time and global cost in the order of 20\%, and computation times compatible with a real-time implementation.},
-  address  = {Washington, D.C.},
-  month    = jan,
-  url      = {../wp-content/papercite-data/pdf/Salazar.Tsao.ea.TRB19.pdf},
-  keywords     = {sub},
-  owner        = {mwtsao},
-  timestamp    = {2018-08-01},
-}
-
 @Article{SchifferBoysenEtAl2018,
   author       = {Schiffer, M. and Boysen, N. and Laporte, G. and Pavone, M.},
   title        = {Optimal picking policies in e-commerce warehouses},
@@ -2810,6 +2795,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-01-27},
 }
 
+<<<<<<< .mine
 @InProceedings{SalazarTsaoEtAl2019,
   author       = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
   title        = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
@@ -2838,18 +2824,32 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-02-28},
 }
 
-@InProceedings{LeungArechigaEtAl2019,
-  author       = {Leung, K. and Arechiga, N. and Pavone, M.},
-  title        = {Backpropagation for Signal Temporal Logic},
-  booktitle    = proc_ACM_HSCC,
+@InProceedings{SalazarTsaoEtAl2019,
+  author       = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
+  title        = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
+  booktitle    = proc_EUCA_ECC,
   year         = {2019},
-  note         = {Submitted},
-  abstract = {Signal Temporal Logic (STL) is an expressive language used to describe logical and temporal properties of signals, both continuous and discrete. Inferring STL formulas from behavior traces can provide powerful insights into complex systems. These insights can help system designers better understand and improve the systems they develop (e.g., long-term behaviors of time series data), yet this is a very challenging and often intractable problem. This work presents a method for evaluating STL formulas using computation graphs, hence bridging a connection between STL and many modern machine learning frameworks that depend on computation graphs, such as deep learning. We show that this approach is particularly effective for solving parameteric STL (pSTL) problems, the problem of parameter fitting for a given signal. We provide a relaxation technique that makes this method more tractable when solving general pSTL formulas. By using computation graphs, we can leverage the benefits and the computational prowess of modern day machine learning tools. Motivated by the problem of learning explanatory factors and safety assurance for complex cyber-physical systems, we demonstrate our proposed method on an autonomous driving case study.},
-  address  = {Montreal, Canada},
-  month    = april,
-  keywords     = {sub},
-  owner        = {karenl7},
-  timestamp    = {2018-10-24},
+  abstract = {We study route-planning for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing scheme (CARS) that captures road-utilization-dependent travel times at a mesoscopic level via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. This approximation largely retains the key features of the BPR model, while allowing the design of a real-time, convex quadratic optimization algorithm to determine congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARS to existing routing approaches, namely a congestion-unaware and a threshold congestion model. Numerical results show that CARS significantly outperforms the other two approaches, with improvements in terms of travel time and global cost in the order of 20%.},
+  address  = {Naples, Italy},
+  month    = nov,
+  url      = {../wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf},
+  owner        = {samauro},
+  timestamp    = {2019-02-28},
+}
+
+@InProceedings{LorenzettiLandryEtAl2019,
+  author       = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
+  title        = {Reduced Order Model Predictive Control For Setpoint Tracking},
+  booktitle    = proc_EUCA_ECC,
+  year         = {2019},
+  note         = {In press},
+  abstract = {Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.},
+  address  = {Naples, Italy},
+  month    = jun,
+  url      = {https://arxiv.org/pdf/1811.06590.pdf},
+  keywords     = {press},
+  owner        = {jlorenze},
+  timestamp    = {2019-02-28},
 }
 
 @InProceedings{IvanovicPavone2019,
