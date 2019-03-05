@@ -9,7 +9,5 @@ md_group: "assignments"
 ---
 The goal of this homework is to familiarize you with EKF and EKF SLAM for localization and mapping. You will also take a deeper dive into ROS and use some of the off-the-shelf tools. You will also be required to write your own nodes from scratch and start preparing code that will be useful for your final project.
 
-Problems 0 and 4 to come.
-
 Feel free to use this [Latex template](/aa274/pdfs/homework/hw.tex).
 
