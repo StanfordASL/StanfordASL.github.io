@@ -175,6 +175,37 @@
       <hr />
       <div class="row">
         <div class="col-md-12">
+          <h5>03/09/2019</h5>
+          <p><p>Office hours for week 10 will be held in Skilling.</p>
+
+<h4 id="demo-day-logistics"><strong>Demo day logistics</strong></h4>
+<p>You should plan for a 3 min presentation followed by a 10 min demo. Please sign up for a slot for your demo <a href="https://docs.google.com/spreadsheets/d/12u7L8p8qwx-4xPYzLP_0Vpln-qsofhjlY53ex-cESmI/edit?usp=sharing"><strong>here</strong></a></p>
+
+<p>Try to find a time slot that works for as many people on your team as possible.</p>
+
+<h4 id="delivery-logistics"><strong>Delivery Logistics</strong></h4>
+
+<p>As you drive around the environment, you should log locations of objects that the detector detects (i.e., different objects that are in the COCO dataset that the detector was trained on).</p>
+
+<p>After the explore phase, we will ask you which objects you were able to log, and then request some of those items. The form of the request will come as a ROS string message to the topic “/delivery_request” which will contain a string of object labels delimited by commas.</p>
+
+<p>For example, a message might be: “banana,apple”. You can parse this string using string_name.split(‘,’)</p>
+
+<p>We have uploaded a script request_publisher.py to the asl_turtlebot github repo that asks for input and publishes the message in this form, feel free to use it for testing.</p>
+
+<h4 id="detector-changes"><strong>Detector changes</strong></h4>
+
+<p>We have fixed a bug in the distance estimation in the detector (see estimate_distance in the new files to see what changes were made). Additionally, we have added a more powerful CNN model to the jetsons (a 50-layer ResNet model), which performs better than the mobilenet model that we were using previously. We have updated the project branch to reflect these changes. Please read the README again.</p>
+
+<p>For more details on how to incorporate these updates into your code and Turtlebot, please refer to the email with subject “AA274 Announcement: (Important) Demo day logistics, delivery logistics, detector changes, remarks” for more details.</p>
+
+</p>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
           <h5>02/27/2019</h5>
           <p><p>We made a minor edit to supervisor.py in the project branch.
 Specifically it is in <a href="https://github.com/StanfordASL/asl_turtlebot/blob/project/scripts/supervisor.py#L217">this line</a>.</p>
