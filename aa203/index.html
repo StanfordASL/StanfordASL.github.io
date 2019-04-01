@@ -1,0 +1,220 @@
+---
+title: Home
+permalink: /aa203/
+group: "aa203_navigation"
+order: 1
+---
+<!DOCTYPE html>
+<html>
+{% include aa203_head.html %}
+<body id="page-top" class="index">
+  {% include aa203_navbar.html %}
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>   </h4>
+          <h1>AA 203: Optimal and Learning-based Control</h1>
+          <h4>Spring 2019</h4>
+        </div>
+      </div>
+      <!-- <div class="row text-center">
+        <img id="aa203-banner-image" src="/img/aa203/banner-small.png">
+      </div> -->
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Course Description</h3>
+          <p>Optimal control solution techniques for systems with known and unknown dynamics. Dynamic programming, Hamilton-Jacobi reachability, and direct and indirect methods for trajectory optimization. Introduction to model predictive control. Model-based reinforcement learning, and connections between modern reinforcement learning in continuous spaces and fundamental optimal control ideas.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Instructor</h3>
+          <table class="aa203_people">
+            <tr>
+              <th>
+                <a href="http://web.stanford.edu/~pavone/"><img class="aa203_headshot" src="/img/aa203/people/Pavone.jpg"></a>
+                <a href="http://web.stanford.edu/~pavone/">Prof. Marco Pavone</a>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-9">
+          <h3>Course Assistants</h3>
+          <table class="aa203_people">
+            <tr>
+              <th>
+                <a href="https://stanford.edu/~jh2/"><img class="aa203_headshot" src="/img/aa203/people/JamesHarrison.jpg"></a>
+                <a href="https://stanford.edu/~jh2/">James Harrison</a>
+              </th>
+              <th>
+                <a href="/people/jonathan-lacotte/"><img class="aa203_headshot" src="/img/aa203/people/JonathanLacotte.jpg"></a>
+                <a href="/people/jonathan-lacotte/">Jonathan Lacotte</a>
+              </th>
+            </tr>
+          </table>
+          <h3>Collaborators</h3>
+          <table class="aa203_people">
+            <tr>
+              <th>
+                <a href="/people/riccardo-bonalli/><img class="aa203_headshot" src="/img/aa203/people/RiccardoBonalli.jpg"></a>
+                <a href="/people/riccardo-bonalli/">Riccardo Bonalli</a>
+              </th>
+              <th>
+                <a href="https://www.robertocalandra.com"><img class="aa203_headshot" src="/img/aa203/people/RobertoCalandra.jpg"></a>
+                <a href="https://www.robertocalandra.com">Roberto Calandra</a>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Meeting Times</h3>
+          <p>Lectures meet on Mondays and Wednesdays from 1:30 PM to 2:50 PM in <a href="https://campus-map.stanford.edu/?srch=Herrint175#">Herrin T175</a>.</p>
+          <p>Professor Pavone's office hours are Mondays 3-5pm in Durand 261.</p> 
+          <p>CA office hours are Tuesdays and Thursdays, 1:30-3pm in Durand 271/272</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Syllabus</h3>
+          <p>The class syllabus can be found <a href="/aa203/pdfs/AA203_Syllabus_2019.pdf">here</a>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Schedule</h3>
+          <p>Subject to change. Lecture notes are available <a href="https://github.com/StanfordASL/AA203-Notes">here</a>. We will try to have the lecture notes updated before the class.</p>
+          <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg .tg-vnl4{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-2g2i{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:center;vertical-align:top}
+          </style>
+          <table class="tg">
+            <tr>
+              <th class="tg-2g2i">Week</th>
+              <th class="tg-vnl4">Topic</th>
+              <th class="tg-vnl4">Lecture Slides</th>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">1</td>
+              <td class="tg-vnl4">
+              Course overview, unconstrained nonlinear optimization
+              <br>Constrained nonlinear optimization
+              <br> Recitation: Linear dynamical systems
+              <br> <span style="font-style:italic">HW1 out</span>
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa203/pdfs/lecture/lecture_1.pdf">Lecture 1</a>
+              <br><a href="/aa203/pdfs/lecture/lecture_2.pdf">Lecture 2</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">2</td>
+              <td class="tg-vnl4">
+              Dynamic programming, discrete LQR
+              <br>Iterative LQR, DDP, and LQG
+              <br> Recitation: Nonlinear dynamical systems and stability
+              <br> <span style="font-style:italic">HW2 out, HW1 due</span>
+
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">3</td>
+              <td class="tg-vnl4">
+              Hamilton-Jacobi-Bellman and Hamilton-Jacobi-Isaacs equations
+              <br>Reachability analysis
+              <br> <span style="font-style:italic">HW3 out, HW2 due</span>
+              </td>
+              <td class="tg-vnl4">
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">4</td>
+              <td class="tg-vnl4">
+              Calculus of variations
+              <br>Indirect methods for optimal control
+              <br> <span style="font-style:italic">HW4 out, HW3 due</span>
+              </td>
+              <td class="tg-vnl4">
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">5</td>
+              <td class="tg-vnl4">
+              Pontryagin's maximum principle
+              <br>Numerical aspects of indirect optimal control
+              <br>Midterm (May 2, evening)
+              <br> <span style="font-style:italic">HW5 out, HW4 due</span>
+              </td>
+              <td class="tg-vnl4">
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">6</td>
+              <td class="tg-vnl4">
+              Direct methods for optimal control
+              <br>Direct collocation and sequential quadratic programming
+              <br> Recitation: Linear, quadratic, convex, and mixed-integer linear programming
+              <br> <span style="font-style:italic">HW6 out, HW5 due</span>
+              </td>
+              <td class="tg-vnl4">
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">7</td>
+              <td class="tg-vnl4">
+              Introduction to model predictive control
+              <br>Feasibility and stability of MPC
+              <br> Recitation: Linear regression, Gaussian processes, and neural networks
+              <br> <span style="font-style:italic">HW7 out, HW6 due</span>
+              </td>
+              <td class="tg-vnl4">
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">8</td>
+              <td class="tg-vnl4">
+              Adaptive optimal control, dual control, adaptive LQR
+              <br>Model-based reinforcement learning: linear methods
+              <br> <span style="font-style:italic">HW8 out, HW7 due</span>
+              </td>
+              <td class="tg-vnl4">
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">9</td>
+              <td class="tg-vnl4">
+              Model-based reinforcement learning: nonlinear methods
+              <br> <span style="font-style:italic"></span>
+              </td>
+              <td class="tg-vnl4">
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">10</td>
+              <td class="tg-vnl4">
+              Intro to model-free RL, connections to model-based RL
+              <br>Exploration and safety in RL
+              <br> <span style="font-style:italic">HW8 due</span>
+              </td>
+              <td class="tg-vnl4">
+              </td>
+            </tr>
+
+          </table>
+
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+  {% include javascript.html %}
+  {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,64 @@
+.aa203_name h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#aa203-banner-image {
+  display: inline-block;
+}
+
+.aa203_people {
+  width: 100%;
+  margin: 0px;
+}
+
+.aa203_people th {
+  padding: 0em;
+}
+
+.aa203_headshot {
+  width: 150px;
+  height: 150px;
+}
+
+.aa203-homework-title {
+  margin-top: 0px;
+}
+
+.aa203-homework-posted-date {
+  color: grey;
+}
+
+.aa203-homework-due-date {
+  color: red;
+}
+
+#aa203-navbar-text {
+  margin-top: -13px;
+  margin-bottom: -20px;
+  text-align: center;
+  width: 54%;
+}
+
+a:link, a:active, a:focus {
+  color: #2864B7 !important;
+
+}
+a, a:hover {
+  color: #2864B7 !important;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #222 !important;
+}
+.nav > li.active > a {
+  color: rgb(40, 100, 183) !important;
+}
+.nav > li.active > a:hover {
+  color: rgb(40, 100, 183) !important;
+}
+li > span >a:link, a:active, a:focus, .entry-title {
+  color: #337ab7 !important;
+}
