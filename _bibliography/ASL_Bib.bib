@@ -2179,7 +2179,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   year         = {2019},
   volume       = {38},
   number       = {2-3},
-  pages        = {357?374},
+  pages        = {357--374},
   abstract = {In this paper we present a queuing network approach to the problem of routing and rebalancing a fleet of self-driving vehicles providing on- demand mobility within a capacitated road network. We refer to such systems as autonomous mobility-on-demand systems, or AMoD. We first cast an AMoD system into a closed, multi-class BCMP queuing network model capable of capturing the passenger arrival process, traffic, the state- of-charge of electric vehicles, and the availability of vehicles at the stations. Second, we propose a scalable method for the synthesis of routing and charging policies, with performance guarantees in the limit of large fleet sizes. Third, we validate the theoretical results on a case study of New York City. Collectively, this paper provides a unifying framework for the analysis and control of AMoD systems, which provides a large set of modeling options (e.g., the inclusion of road capacities and charging constraints), and subsumes earlier Jackson and network flow models.},
   doi      = {10.1177/0278364918780335},
   url      = {../wp-content/papercite-data/pdf/Iglesias.Rossi.Zhang.Pavone.IJRR18.pdf},
@@ -2451,7 +2451,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Reach-Avoid Problems via Sum-of-Squares Optimization and Dynamic Programming},
   booktitle    = proc_IEEE_IROS,
   year         = {2018},
-  note         = {Submitted},
   abstract = {Reach-avoid problems involve driving a system to a set of desirable configurations while keeping it away from undesirable ones. Providing mathematical guarantees for such scenarios is challenging but have numerous potential practical applications. Due to the challenges, analysis of reach-avoid problems involves making trade-offs between generality of system dynamics, generality of problem setups, optimality of solutions, and computational complexity. In this paper, we combine sum-of-squares optimization and dynamic programming to address the reach-avoid problem, and provide a conservative solution that maintains reaching and avoidance guarantees. Our method is applicable to polynomial system dynamics and to general problem setups, and is more computationally scalable than previous related methods. Through a numerical example involving two single integrators, we validate our proposed theory and compare our method to Hamilton-Jacobi reachability. Having validated our theory, we demonstrate the computational scalability of our method by computing the reach-avoid set of a system with two kinematic cars.},
   address  = {Madrid, Spain},
   month    = oct,
@@ -2653,31 +2652,19 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-10-07},
 }
 
-@Inproceedings{ChinchaliAnemogiannisEtAl2018,
-  author       = {Chinchali, S. P. and Anemogiannis, A. and Chu, T. and Misra, R. and Pavone, M. and Katti, S.},
-  title        = {Decoupling Prediction and Control Across Data Boundaries},
-  booktitle    = proc_ACM_HotNets,
-  year         = {2018},
-  note         = {Submitted},
-  abstract = {Today's networks have access to a wealth of real-time connectivity information that can be used to provide accurate forecasts of bandwidth or city-wide cell congestion. Network operators have an incentive to deliver such rich forecasts to external control application developers, who can leverage them to improve mobile video streaming or ride-sharing services. The two entities of a network operator and downstream control application developer must decide a concise forecast representation to share across a data boundary that is mutually beneficial. A key challenge is that an application's control decisions, which could be proprietary, affect future network state, requiring some form of feedback across the data boundary. We propose how to decouple network prediction and control units for key benefits of modularity, increased interpretability, and re-usability across applications.},
-  address  = {Seattle, Washington},
-  month    = oct,
-  keywords     = {sub},
-  owner        = {chinchali},
-  timestamp    = {2018-07-25},
-}
+
 
 @InProceedings{ChenTamEtAl2018,
   author       = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
   title        = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
   booktitle    = proc_WAFR,
   year         = {2018},
-  note         = {Submitted},
+  note         = {In Press},
   abstract = {Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.},
   address  = {Merida, Mexico},
   month    = oct,
   url      = {../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {bylard},
   timestamp    = {2018-07-24},
 }
@@ -2714,6 +2701,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   owner        = {ssingh19},
   timestamp    = {2018-09-21},
 }
+
 
 @Article{SchifferBoysenEtAl2018,
   author       = {Schiffer, M. and Boysen, N. and Laporte, G. and Pavone, M.},
@@ -2840,6 +2828,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   owner        = {borisi},
   timestamp    = {2018-09-16},
 }
+
 
 @InProceedings{IvanovicHarrisonEtAl2019,
   author       = {Ivanovic, B. and Harrison, J. and Sharma, A. and Chen, M. and Pavone, M.},
