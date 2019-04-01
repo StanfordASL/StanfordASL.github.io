@@ -28,7 +28,7 @@ task :deploy do
   status = system("git checkout -b master")
   puts status ? "Success" : "Failed"
   puts "\n## Forcing the _site subdirectory to be project root"
-  status = system("git filter-branch --subdirectory-filter _site/ -f")
+  status = system("git filter-branch --subdirectory-filter _site/ -f && git add -A")
   puts status ? "Success" : "Failed"
   puts "\n## Switching back to source branch"
   status = system("git checkout source")
