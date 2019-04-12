@@ -4,7 +4,7 @@ seq_number: 2
 posted_date:   2019-04-11 12:00:00
 due_date:   2019-04-17 13:30:00
 pdf_link: "/aa203/pdfs/homework/AA203_HW2.pdf"
-code_link: "/aa203/code/pset2/pset2_starter.zip"
+code_link: "https://github.com/StanfordASL/AA203-Homework/tree/master/HW2"
 md_group: "assignments"
 ---
 
