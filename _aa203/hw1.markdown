@@ -9,4 +9,4 @@ solution_link: "/aa203/pdfs/homework_solutions/pset1_solutions_all.pdf"
 md_group: "assignments"
 ---
 
-The goal of this homework is to build intuition for nonlinear optimization tools that will be critically important later in the course. Additionally, the last problem is a first, simple adaptive optimal control problem that will motivate approaches we develop in the rest of the class. 
+The goal of this homework is to build intuition for nonlinear optimization tools that will be critically important later in the course. Additionally, the last problem is a first, simple optimal control problem that will motivate approaches we develop in the rest of the class. 
