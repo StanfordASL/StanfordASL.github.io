@@ -5,7 +5,6 @@ posted_date:   2019-04-3 19:00:00
 due_date:   2019-04-10 13:30:00
 pdf_link: "/aa203/pdfs/homework/AA203_HW1.pdf"
 code_link: "https://github.com/StanfordASL/AA203_HW1"
-solution_link: "/aa203/pdfs/homework_solutions/pset1_solutions_all.pdf"
 md_group: "assignments"
 ---
 
