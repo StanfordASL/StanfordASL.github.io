@@ -563,6 +563,7 @@
 @String { proc_IEEE_ISRA            = {{Proc. of the Int. Symp. on Robotics and Applications}} }
 @String { proc_IEEE_ITSC            = {{Proc. IEEE Int. Conf. on Intelligent Transportation Systems}} }
 @String { proc_IEEE_IV              = {{IEEE Intelligent Vehicles Symposium}} }
+@String{proc_IEEE_IV_ULAD              = {{IEEE Intelligent Vehicles Symposium: Workshop on Unsupervised Learning for Automated Driving}}}
 @String { proc_IEEE_MED             = {{Mediterranean Conf. on Control and Automation}} }
 @String { proc_IEEE_PESGM           = {{IEEE Power Engineering Society General Meeting}} }
 @String{proc_IEEE_PICA                 = {{IEEE Int. Conf. on Power Industry Computer Applications}}}
@@ -2811,43 +2812,26 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Reduced Order Model Predictive Control For Setpoint Tracking},
   booktitle    = proc_EUCA_ECC,
   year         = {2019},
-  note         = {Submitted},
   abstract = {Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.},
   address  = {Naples, Italy},
   month    = jun,
   url      = {https://arxiv.org/pdf/1811.06590.pdf},
-  keywords     = {sub},
   owner        = {jlorenze},
-  timestamp    = {2018-11-15},
+  timestamp    = {2019-04-26},
 }
 
-@InProceedings{LeungArechigaEtAl2019,
+@Inproceedings{LeungArechigaEtAl2019,
   author       = {Leung, K. and Arechiga, N. and Pavone, M.},
   title        = {Backpropagation for Signal Temporal Logic},
-  booktitle    = proc_ACM_HSCC,
+  booktitle    = proc_IEEE_IV_ULAD,
   year         = {2019},
-  note         = {Submitted},
+  note         = {In Press},
   abstract = {Signal Temporal Logic (STL) is an expressive language used to describe logical and temporal properties of signals, both continuous and discrete. Inferring STL formulas from behavior traces can provide powerful insights into complex systems. These insights can help system designers better understand and improve the systems they develop (e.g., long-term behaviors of time series data), yet this is a very challenging and often intractable problem. This work presents a method for evaluating STL formulas using computation graphs, hence bridging a connection between STL and many modern machine learning frameworks that depend on computation graphs, such as deep learning. We show that this approach is particularly effective for solving parameteric STL (pSTL) problems, the problem of parameter fitting for a given signal. We provide a relaxation technique that makes this method more tractable when solving general pSTL formulas. By using computation graphs, we can leverage the benefits and the computational prowess of modern day machine learning tools. Motivated by the problem of learning explanatory factors and safety assurance for complex cyber-physical systems, we demonstrate our proposed method on an autonomous driving case study.},
-  address  = {Montreal, Canada},
-  month    = april,
-  keywords     = {sub},
+  address  = {Paris, France},
+  month    = june,
+  keywords     = {press},
   owner        = {karenl7},
-  timestamp    = {2018-10-24},
-}
-
-@InProceedings{IvanovicPavone2019,
-  author       = {Ivanovic, B. and Pavone, M.},
-  title        = {Modeling Multimodal Dynamic Spatiotemporal Graphs},
-  booktitle    = proc_IEEE_ICRA,
-  year         = {2019},
-  note         = {Submitted},
-  abstract = {Spatiotemporal graphs (STGs) are a powerful tool for modeling multi-agent interaction scenarios, used commonly in human trajectory prediction and proactive planning and decision making for safe human-robot interaction. However, many current STG-backed methods rely on a static graph assumption, i.e. that the underlying graphical structure maintains the same nodes and edges throughout the scenario. This assumption is frequently broken in real-world applications, especially in highly-dynamic problems such as human trajectory prediction in crowds. To remove the reliance on this assumption, we present a methodology for modeling and predicting agent behavior in both highly dynamic and multimodal scenarios (i.e. where the scene's graphical structure is time-varying and there are many possible highly-distinct futures for each agent). Our approach to model dynamic STGs augments prior multimodal, multi-agent modeling methods with a gating function on edge models that smoothly adds and removes edge influence from a node. We demonstrate the performance of our approach on the ETH multi-human trajectory dataset and on NBA basketball player trajectories. Both are highly-dynamic, multimodal, and multi-agent interaction scenarios which serve as proxies for many robotic applications.},
-  address  = {Montreal, Canada},
-  month    = may,
-  url      = {https://arxiv.org/pdf/1810.05993.pdf},
-  keywords     = {sub},
-  owner        = {borisi},
-  timestamp    = {2018-09-16},
+  timestamp    = {2019-04-29},
 }
 
 @InProceedings{IvanovicHarrisonEtAl2019,
@@ -2937,17 +2921,17 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   keywords     = {sub},
 }
 
-@InProceedings{ChinchaliSharmaEtAl2019,
+@Inproceedings{ChinchaliSharmaEtAl2019,
   author       = {Chinchali, S. and Sharma, A. and Harrison, J. and Elhafsi, A. and Kang, D. and Pergament, E. and Cidon, E. and Katti, S. and Pavone, M.},
   title        = {Network Offloading Policies for Cloud Robotics: a Learning-based Approach},
   booktitle    = proc_RSS,
   year         = {2019},
-  note         = {Submitted},
+  note         = {In Press},
   abstract = {Today's robotic systems are increasingly turning to computationally expensive models such as deep neural networks (DNNs) for tasks like localization, perception, planning, and object detection. However, resource-constrained robots, like low-power drones, often have insufficient on-board compute resources or power reserves to scalably run the most accurate, state-of-the art neural network compute models. Cloud robotics allows mobile robots the benefit of offloading compute to centralized servers if they are uncertain locally or want to run more accurate, compute-intensive models. However, cloud robotics comes with a key, often understated cost: communicating with the cloud over congested wireless networks may result in latency or loss of data. In fact, sending high data-rate video or LIDAR from multiple robots over congested networks can lead to prohibitive delay for real-time applications, which we measure experimentally. In this paper, we formulate a novel Robot Offloading Problem - how and when should robots offload sensing tasks, especially if they are uncertain, to improve accuracy while minimizing the cost of cloud communication? We formulate offloading as a sequential decision making problem for robots, and propose a solution using deep reinforcement learning. In both simulations and hardware experiments using state-of-the art vision DNNs, our offloading strategy improves vision task performance by between 1.3-2.6x of benchmark offloading strategies, allowing robots the potential to significantly transcend their on-board sensing accuracy but with limited cost of cloud communication.},
   address  = {Freiburg in Breisgau, Germany},
   month    = jun,
   url      = {https://arxiv.org/pdf/1902.05703.pdf},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {apoorva},
   timestamp    = {2019-02-07},
 }
@@ -2996,4 +2980,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-04-20},
 }
 
-@Comment{jabref-meta: databaseType:biblatex;}
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year] opt[;note]}
