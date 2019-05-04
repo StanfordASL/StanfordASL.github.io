@@ -5,7 +5,7 @@ last:   " Bonalli"
 date:   2018-08-30 00:00:00 -0700
 position: postdoc
 excerpt: "Theoretical and numerical control for aerospace systems"
-img: RiccardoBonalli.jpg
+img: RiccardoBonalli.png
 email: rbonalli@stanford.edu
 ---
 
