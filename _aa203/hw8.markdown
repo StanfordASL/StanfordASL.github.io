@@ -8,4 +8,4 @@ code_link: "https://github.com/StanfordASL/AA203-Homework/tree/master/HW8"
 md_group: "assignments"
 ---
 
-This homework will have you building experience with adaptive control techniques and the core concepts of linear regression. 
+This homework will have you building experience with adaptive control techniques and the core concepts of linear system identification. 
