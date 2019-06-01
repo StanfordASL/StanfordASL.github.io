@@ -1,0 +1,10 @@
+---
+title:  "Predictive routing and multi-objective fleet sizing for shared mobility-on-demand"
+speaker: "Javier Alonso-Mora"
+seq_number: 1
+start_date:   2019-10-27 13:00:00
+end_date:   2019-10-27 13:30:00
+md_group: "itsc19_talks"
+---
+
+We move towards an era of smart cities, where autonomous cars will provide on-demand transportation while making our roads safer. In this talk I will give an overview of our work in dynamic vehicle routing for large-scale ride-sharing. Firstly, for fleet management, I will describe an anytime optimal method that is capable of online assignment of large numbers of requests to vehicles and routing them accordingly. The proposed framework includes rebalancing of idle vehicles and has been extended towards predictive routing with a model of future demand. Secondly, I will discuss a multi-objective optimisation to trade-off quality of service vs operation cost.

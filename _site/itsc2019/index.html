@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ITSC 2019 Workshop: Autonomous and Connected Transportation Systems - Modeling, Control, and Deployment</title>
+
+    <meta name="description" content="This course will cover basic principles for endowing mobile autonomous robots with perception, planning, and decision-making capabilities. We will dive into algorithmic approaches for robot perception, localization, and simultaneous localization and mapping; control of non-linear systems, learning-based control, and robot motion planning; introduction to methodologies for reasoning under uncertainty, e.g., (partially observable) Markov decision processes. Throughout the course, we will make extensive use of the Robot Operating System (ROS) for demonstrations and hands-on activities. Prerequisite: CS 106A or equivalent.">
+    <!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+
+	<!-- JabRef CSS -->
+	<link rel="stylesheet" href="http://localhost:4000/css/JabRef.css">
+	 
+    <link rel="canonical" href="http://asl.stanford.edu/itsc2019/"> 
+    <!-- Not required -->
+    <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="http://localhost:4000 /feed.xml "> -->
+    <!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="http://localhost:4000/css/my.css"> 
+
+    <!-- AA 274 CSS -->
+    <link rel="stylesheet" href="http://localhost:4000/css/aa274.css"> 
+
+    <!-- Analytics -->
+    
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2864b7">
+    <meta name="msapplication-TileColor" content="#2864b7">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="page-top" class="index">
+  
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>   </h4>
+          <h1>Autonomous and Connected Transportation Systems: Modeling, Control, and Deployment</h1>
+          <h4>ITSC 2019 Workshop</h4>
+          <p><b>Date and time:</b> 09:00-17:00, Sunday, October 27, 2019</p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <img id="aa274-banner-image" src="/img/itsc2019/banner/matsim_viz.png">
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Overview</h3>
+          <p>Public debate about the future of mobility and transportation is increasingly informed by predictions about the impact of Autonomous Vehicles (AVs). As AVs are approaching market-readiness, it becomes more critical that we answer questions about them:
+            <ul>
+              <li/>How can we design profitable and sustainable mobility systems that leverage AVs?
+              <li/>What will these new forms of mobility and transportation mean for society?
+              <li/>How can we ensure that such technologies benefit all members of society, improving equity rather than undermining it?
+            </ul>
+          This workshop will gather experts from transportation, operations research, robotics, and urban planning in order to:
+          <ol>
+            <li/>identify challenges and opportunities for the future of transportation that are triggered by the advent of AVs,
+            <li/>identify modeling and control methodologies to address them,
+            <li/>share insights from early deployments and turn such insights into an actionable research roadmap.
+          </ol>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Schedule</h3>
+          <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg .tg-vnl4{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-2g2i{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:center;vertical-align:top}
+          </style>
+          <table class="tg">
+            <tr>
+              <th class="tg-2g2i">Speaker</th>
+              <th class="tg-vnl4">Title</th>
+              <th class="tg-vnl4">Time</th>
+              <th class="tg-vnl4">Abstract</th>
+            </tr>
+            
+              
+              <tr>
+                <td class="tg-vnl4">
+                    Marco Pavone
+                </td>
+                <td class="tg-vnl4">
+                    09:00 - 09:30
+                </td>
+                <td class="tg-vnl4">
+                    Autonomous Mobility-on-Demand Systems for Future Urban Mobility
+                </td>
+                <td class="tg-vnl4">
+                    <p>In this talk I will discuss the operational and societal aspects of autonomous mobility-on-demand (AMoD) systems, a rapidly developing mode of transportation wherein mobility is provided on demand by robotic, self-driving vehicles. Specifically, I will discuss AMoD systems along three dimensions: (1) modeling, namely mathematical frameworks capable of capturing the salient dynamic and stochastic features of customer demand, (2) control, that is coordination algorithms for the vehicles aimed at throughput maximization, and (3) societal, entailing system-level studies characterizing the interaction between AMoD and other infrastructures, such as the electric power and public transit networks. I will conclude the talk by presenting a number of directions for future research.</p>
+
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="tg-vnl4">
+                    Michael Levin
+                </td>
+                <td class="tg-vnl4">
+                    09:30 - 10:00
+                </td>
+                <td class="tg-vnl4">
+                    Maximum-stability dispatch policy for shared autonomous vehicles
+                </td>
+                <td class="tg-vnl4">
+                    <p>Shared autonomous vehicle (SAVs) are predicted to be a major usage model for automated vehicles. By providing driverless point-to-point service, SAV ridership costs could be similar to personal vehicle ownership. Consequently, recent studies have performed extensive simulations to investigate the effects on travel service, fleet size, and congestion. Unfortunately, a major limitation is in the dispatch strategy for matching vehicles to passengers. Vehicle routing problems are NP-hard, and the SAV problem is complicated by uncertainty in future demand. Consequently, studies have relied on heuristics but their level of optimality is unknown, which limits the generality of the simulation results. This paper investigates an analytical max-pressure policy which aims to maximize passenger throughput under stochastic demand. Although we make no claims about the optimality of waiting times, this policy is proven to maintain bounded queues of waiting passengers if at all possible. The stability region results can be used to determine the minimum fleet size needed for given average demand.</p>
+
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="tg-vnl4">
+                    Dan Work
+                </td>
+                <td class="tg-vnl4">
+                    10:00 - 10:30
+                </td>
+                <td class="tg-vnl4">
+                    Using vehicle automation to end phantom traffic jams
+                </td>
+                <td class="tg-vnl4">
+                    <p>The majority of the best selling cars in the US are now available with Society of Automotive Engineers International level-one automated driving features such as adaptive cruise control. As the penetration rate of these vehicles grows on the roadways, it is now possible to consider controlling the bulk human-piloted traffic flow by carefully designing these automation systems. This talk will introduce modeling, simulation, and field experiments that illustrate the potential to control automated vehicles to stabilize traffic flow. Even when deployed at low penetration rates, it is possible to use automated vehicles to eliminate human-generated phantom traffic jams that seemingly occur without cause. The talk will also highlight new findings about the traffic impacts of current, commercially available level-one automated vehicle systems already on the road, providing insights on the future of traffic when humans and automation mix.</p>
+
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="tg-vnl4">
+                    Michal Čáp
+                </td>
+                <td class="tg-vnl4">
+                    10:30 - 11:00
+                </td>
+                <td class="tg-vnl4">
+                    Understanding the fundamental trade-offs in large-scale mobility-on-demand systems
+                </td>
+                <td class="tg-vnl4">
+                    <p>Self-driving technology will enable realization of large-scale mobility-on-demand systems. These systems hold promise to significantly improve the efficiency of urban transportation through massive car sharing and ride sharing. We develop computational models that can be used to quantify the potential of car sharing and ride sharing in urban on-demand mobility. In particular, we will present a method that can compute system parameters that achieve Pareto-optimal trade-offs between the quality of service, fleet size, and operation cost in a particular mobility-on-demand system.</p>
+
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="tg-vnl4">
+                    Emilio Frazzoli
+                </td>
+                <td class="tg-vnl4">
+                    11:00 - 11:30
+                </td>
+                <td class="tg-vnl4">
+                    Autonomous Mobility-on-Demand: What is Known and What is Not Known
+                </td>
+                <td class="tg-vnl4">
+                    <p>In past years, many of the most urgent questions related to autonomous mobility-on-demand were purely technical and vehicle centered: how safe are these vehicles, how comfortable are they, what scenarios can they handle? As public deployments worldwide are becoming more common, capabilities and limitations are becoming clearer.  On the other hand, much less confirmed knowledge is available on the operation and impact of large-scale autonomous mobility-on-demand systems with thousands of vehicles. What are the key parameters and constraints on operation? How many seats should the robotic taxis have? What will the influence on congestion be? Answering these questions is an exercise that requires not only technical know-how but also the consideration of societal and economic aspects. While much is still in the dark, research of most recent years has answered some of the open questions. This talk will provide insights into these answers of what we already know about autonomous mobility-on-demand. Moreover, it will also highlight some of the aspects which until today remain unanswered.</p>
+
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="tg-vnl4">
+                    Krishna Selvam
+                </td>
+                <td class="tg-vnl4">
+                    11:30 - 12:00
+                </td>
+                <td class="tg-vnl4">
+                    TBD
+                </td>
+                <td class="tg-vnl4">
+                    <p>TBD</p>
+
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="tg-vnl4">
+                    Javier Alonso-Mora
+                </td>
+                <td class="tg-vnl4">
+                    13:00 - 13:30
+                </td>
+                <td class="tg-vnl4">
+                    Predictive routing and multi-objective fleet sizing for shared mobility-on-demand
+                </td>
+                <td class="tg-vnl4">
+                    <p>We move towards an era of smart cities, where autonomous cars will provide on-demand transportation while making our roads safer. In this talk I will give an overview of our work in dynamic vehicle routing for large-scale ride-sharing. Firstly, for fleet management, I will describe an anytime optimal method that is capable of online assignment of large numbers of requests to vehicles and routing them accordingly. The proposed framework includes rebalancing of idle vehicles and has been extended towards predictive routing with a model of future demand. Secondly, I will discuss a multi-objective optimisation to trade-off quality of service vs operation cost.</p>
+
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="tg-vnl4">
+                    Stephen Zoepf
+                </td>
+                <td class="tg-vnl4">
+                    13:30 - 14:00
+                </td>
+                <td class="tg-vnl4">
+                    Stepping Stones to Sustainable Transportation Systems
+                </td>
+                <td class="tg-vnl4">
+                    <p>The traditional automotive industry is rapidly evolving into a personal mobility industry as shared access begins to replace private sales, electric vehicles begin to replace gasoline, and automation begins to replace human driving ability. As these trends begin to shape the industry, the way that we use vehicles is also evolving, and traditional benchmarks and measures of success no longer apply. In this talk we will discuss specific ways in which the mobility environment is changing and specific questions which automakers, suppliers and regulators should consider in the next decade.</p>
+
+                </td>
+              </tr>
+              
+          </table>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Speakers</h3>
+          <table class="aa274_people">
+            
+            
+            <tr style="position: relative;min-width: 200px;">
+                <th class="col-md-3" style="top: 10%;position: absolute;">
+                  <a href="http://www.alonsomora.com/"><img class="aa274_headshot" src="/img/itsc2019/people/JavierAlonso.jpg"></a>
+                  <a href="http://www.alonsomora.com/">Javier Alonso-Mora</a>
+                </th>
+                <th class="col-md-9"
+                
+                >
+                  <p><p>Javier Alonso-Mora is an Assistant Professor at the Cognitive Robotics department of the Delft University of Technology. Previously he was a Postdoctoral Associate at the Computer Science and Artificial Intelligence Lab (CSAIL) of MIT. He received his Ph.D. degree in robotics from ETH Zurich, in partnership with Disney Research Zurich. His main research interest is in navigation, motion planning and control of autonomous mobile robots and vehicle fleets. He is the recipient of an VENI award from the Netherlands Organisation for Scientific Research (2017) and a Best paper award in multi-robot systems at the IEEE ICRA (2019).</p>
+</p>
+                </th>
+            </tr>
+            
+            <tr style="position: relative;min-width: 200px;">
+                <th class="col-md-3" style="top: 10%;position: absolute;">
+                  <a href="http://michalcap.net/"><img class="aa274_headshot" src="/img/itsc2019/people/MichalCap.jpg"></a>
+                  <a href="http://michalcap.net/">Michal Čáp</a>
+                </th>
+                <th class="col-md-9"
+                
+                >
+                  <p><p>Michal Čáp is a technology lead at ISEE AI and a research associate at Artificial Intelligence Center, Czech Technical University in Prague. He received Bc. degree in Information Technology from Brno University of Technology, the Czech Republic and MSc degree in Agent Technology from Utrecht University, the Netherlands. In 2017, he obtained a PhD degree in Artificial Intelligence from CTU in Prague, Czech Republic. Between years 2015 and 2016, Michal Čáp held the position of Fulbright-funded visiting researcher at Massachusetts Institute of Technology, USA. In 2018, Michal was a postdoctoral fellow at the Department of Cognitive Robotics, TU Delft, the Netherlands. His research focuses on multi-robot motion planning and autonomous transportation systems.</p>
+</p>
+                </th>
+            </tr>
+            
+            <tr style="position: relative;min-width: 200px;">
+                <th class="col-md-3" style="top: 10%;position: absolute;">
+                  <a href="http://www.idsc.ethz.ch/research-frazzoli.html"><img class="aa274_headshot" src="/img/itsc2019/people/EmilioFrazzoli.jpg"></a>
+                  <a href="http://www.idsc.ethz.ch/research-frazzoli.html">Emilio Frazzoli</a>
+                </th>
+                <th class="col-md-9"
+                
+                >
+                  <p><p>Emilio Frazzoli is a professor of Dynamic Systems and Control at ETH Zurich, and Chief Scientist of Aptiv’s Autonomous Mobility unit. His main research interest are in robotics, autonomous systems, and intelligent mobility. In acknowledgement of his seminal work in these fields, Emilio has received numerous  awards, including the the 2015 IEEE George S. Axelby Award and the 2017 IEEE Kiyo Tomiyasu Award, and has been named an IEEE Fellow in 2019. Emilio has published more than 200 papers in the fields of robotics, autonomous vehicles, and drones. A former full professor at MIT, he directed the research group that first demonstrated an autonomous mobility (“robotaxi”) service to the public, and performed the first analysis of the social and economic impact of such a service, based on real transportation data. In 2013 he founded nuTonomy with Karl Iagnemma, and served as its Chief Technology Officer until its acquisition by Aptiv in 2017.</p>
+</p>
+                </th>
+            </tr>
+            
+            <tr style="position: relative;min-width: 200px;">
+                <th class="col-md-3" style="top: 10%;position: absolute;">
+                  <a href="https://mwlevin.weebly.com/"><img class="aa274_headshot" src="/img/itsc2019/people/MichaelLevin.jpg"></a>
+                  <a href="https://mwlevin.weebly.com/">Michael Levin</a>
+                </th>
+                <th class="col-md-9"
+                
+                >
+                  <p><p>Michael W. Levin is an Assistant Professor in the Department of Civil, Environmental, and Geo- Engineering at the University of Minnesota. He received a B.S. degree in Computer Science and a Ph.D. degree in Civil Engineering from The University of Texas at Austin in 2013 and 2017, respectively. He is a recipient of the Dwight D. Eisenhower Fellowship from the Federal Highway Administration and the 2016 Milton Pikarsky Award from the Council of University Transportation Centers. Dr. Levin is a member of the Network Modeling Committee (ADB30) of the Transportation Research Board. His research focuses on traffic flow and network modeling of connected autonomous vehicles and intelligent transportation systems.</p>
+</p>
+                </th>
+            </tr>
+            
+            <tr style="position: relative;min-width: 200px;">
+                <th class="col-md-3" style="top: 10%;position: absolute;">
+                  <a href="http://web.stanford.edu/~pavone/"><img class="aa274_headshot" src="/img/itsc2019/people/MarcoPavone.jpg"></a>
+                  <a href="http://web.stanford.edu/~pavone/">Marco Pavone</a>
+                </th>
+                <th class="col-md-9"
+                
+                >
+                  <p><p>Dr. Marco Pavone is an Associate Professor of Aeronautics and Astronautics at Stanford University, where he is the Director of the Autonomous Systems Laboratory and Co-Director of the Center for Automotive Research at Stanford. Before joining Stanford, he was a Research Technologist within the Robotics Section at the NASA Jet Propulsion Laboratory. He received a Ph.D. degree in Aeronautics and Astronautics from the Massachusetts Institute of Technology in 2010. His main research interests are in the development of methodologies for the analysis, design, and control of autonomous systems, with an emphasis on self-driving cars, autonomous aerospace vehicles, and future mobility systems. He is a recipient of a number of awards, including a Presidential Early Career Award for Scientists and Engineers from President Barack Obama, an ONR YIP Award, an NSF CAREER Award, and a NASA Early Career Faculty Award. He was identified by the American Society for Engineering Education (ASEE) as one of America’s 20 most highly promising investigators under the age of 40. His work has been recognized with best paper nominations or awards at the IEEE International Conference on Intelligent Transportation Systems, at the Field and Service Robotics Conference, at the Robotics: Science and Systems Conference, at the ROBOCOMM Conference, and at NASA symposia. He is currently serving as an Associate Editor for the IEEE Control Systems Magazine.</p>
+</p>
+                </th>
+            </tr>
+            
+            <tr style="position: relative;min-width: 200px;">
+                <th class="col-md-3" style="top: 10%;position: absolute;">
+                  <a href=""><img class="aa274_headshot" src="/img/itsc2019/people/KrishnaSelvam.jpg"></a>
+                  <a href="">Krishna Selvam</a>
+                </th>
+                <th class="col-md-9"
+                
+                  style="height:200px;"
+                
+                >
+                  <p><p>TBA</p>
+</p>
+                </th>
+            </tr>
+            
+            <tr style="position: relative;min-width: 200px;">
+                <th class="col-md-3" style="top: 10%;position: absolute;">
+                  <a href="https://engineering.vanderbilt.edu/bio/daniel-work"><img class="aa274_headshot" src="/img/itsc2019/people/DanWork.jpg"></a>
+                  <a href="https://engineering.vanderbilt.edu/bio/daniel-work">Daniel Work</a>
+                </th>
+                <th class="col-md-9"
+                
+                >
+                  <p><p>Dan Work is an associate professor in the Department of Civil and Environmental Engineering, the Department of Electrical Engineering and Computer Science, and the Institute for Software Integrated Systems at Vanderbilt University. He has previously held appointments at the University of Illinois at Urbana-Champaign, the Institute for Pure and Applied Mathematics at the University of California Los Angeles, Nokia Research Center Palo Alto, and Microsoft Research Redmond. Prof. Work is a member of the IEEE Technical Committee on Cybernetics for Cyber-Physical Systems and the ASCE Connected and Autonomous Vehicle Impacts Committee. His research on autonomous vehicles has appeared in numerous media outlets including Good Morning America, Wired, and MIT Technology Review. Prof. Work was named a 2018 Gilbreth Lecturer by the National Academy of Engineering, a 2018 IoT Pioneer by Connected World, a CAREER Award recipient from the National Science Foundation in 2014.</p>
+</p>
+                </th>
+            </tr>
+            
+            <tr style="position: relative;min-width: 200px;">
+                <th class="col-md-3" style="top: 10%;position: absolute;">
+                  <a href="https://cars.stanford.edu/people/stephen-zoepf"><img class="aa274_headshot" src="/img/itsc2019/people/StephenZoepf.jpg"></a>
+                  <a href="https://cars.stanford.edu/people/stephen-zoepf">Stephen Zoepf</a>
+                </th>
+                <th class="col-md-9"
+                
+                >
+                  <p><p>Dr. Stephen Zoepf is the Executive Director of the Center for Automotive Research at Stanford.  He holds a Ph.D., M.Sc. and B.Sc. from MIT and has fifteen years of experience in transportation and mobility. Dr. Zoepf led U.S. Department of Transportation efforts to integrate confidential data into national vehicle energy policy modeling, and previously worked as an engineer and product manager at BMW and Ford.  He was an ENI Energy Initiative Fellow, a Martin Energy Fellow, and a recipient of the Barry McNutt award from the Transportation Research Board and the Infinite Mile award from MIT. His research has been covered in numerous popular press articles, initiated a Congressional probe, and has been lampooned in The Onion.</p>
+
+</p>
+                </th>
+            </tr>
+            
+          </table>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--
+The website should work without any of the JS below. -F
+-->
+
+<!-- jQuery -->
+<script src="http://localhost:4000/js/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="http://localhost:4000/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<!-- <script src="js/jquery.easing.min.js"></script> -->
+<!-- Contact Form JavaScript -->
+<!-- <script src="js/jqBootstrapValidation.js"></script> -->
+<!-- <script src="js/contact_me.js"></script> -->
+<!-- Custom Theme JavaScript -->
+<!-- <script src="js/freelancer.min.js"></script> -->
+<!-- JabRef (Toggling info on Publications Page) -->
+<script src="http://localhost:4000/js/JabRef_QuickSearch.js"></script>
+
+  <!-- Footer -->
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div> -->
+
+<!-- Made with (L) by Federico in October 2017
+CSS: Bootstrap (without the JS)
+http://getbootstrap.com/
+Bloated, but so convenient.
+Plus, it's probably already in your browser cache (hence the CDN).
+If you want the Jekyll project for your own website,
+feel free to drop me a line!
+-F
+-->
+
+<!-- <hr class="footer-line"/> -->
+<script type="text/javascript">
+function footerAlign() {
+  $('footer').css('display', 'block');
+  $('footer').css('height', 'auto');
+  var footerHeight = $('footer').outerHeight();
+  $('body').css('padding-bottom', footerHeight);
+  $('footer').css('height', footerHeight);
+}
+
+
+$(document).ready(function(){
+  footerAlign();
+});
+
+$( window ).resize(function() {
+  footerAlign();
+});
+</script>
+
+<footer class="copyright-text footer">
+© 2018 - 2019 Autonomous Systems Lab
+</footer>
+</body>
+</html>
