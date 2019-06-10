@@ -1,5 +1,5 @@
 ---
-title:  "Understanding the fundamental trade-offs in large-scale mobility-on-demand systems"
+title:  "Understanding the Fundamental Trade-offs in Large-scale Mobility-on-demand Systems"
 speaker: "Michal Čáp"
 seq_number: 1
 start_date:   2019-10-27 10:30:00

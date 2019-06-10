@@ -1,5 +1,5 @@
 ---
-title:  "Using vehicle automation to end phantom traffic jams"
+title:  "Using Vehicle Automation to End Phantom Traffic Jams"
 speaker: "Dan Work"
 seq_number: 1
 start_date:   2019-10-27 10:00:00

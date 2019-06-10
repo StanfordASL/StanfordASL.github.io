@@ -53,8 +53,8 @@ order: 1
           <table class="tg">
             <tr>
               <th class="tg-2g2i">Speaker</th>
-              <th class="tg-vnl4">Title</th>
               <th class="tg-vnl4">Time</th>
+              <th class="tg-vnl4">Title</th>
               <th class="tg-vnl4">Abstract</th>
             </tr>
             {% assign talks = (site.itsc2019 | where:'md_group', "itsc19_talks" | sort: 'start_date') %}

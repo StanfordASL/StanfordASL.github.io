@@ -1,5 +1,5 @@
 ---
-title:  "Predictive routing and multi-objective fleet sizing for shared mobility-on-demand"
+title:  "Predictive Routing and Multi-objective Fleet Sizing for Shared Mobility-on-demand"
 speaker: "Javier Alonso-Mora"
 seq_number: 1
 start_date:   2019-10-27 13:00:00

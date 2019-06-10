@@ -1,5 +1,5 @@
 ---
-title:  "Maximum-stability dispatch policy for shared autonomous vehicles"
+title:  "Maximum-stability Dispatch Policy for Shared Autonomous Vehicles"
 speaker: "Michael Levin"
 seq_number: 1
 start_date:   2019-10-27 09:30:00
