@@ -2,8 +2,8 @@
 title: "Planning Shared Automated Vehicle Fleets: Specific Modeling Requirements and Concepts to Address Them"
 speaker: "Francesco Ciari"
 seq_number: 1
-start_date:   2019-10-27 13:30:00
-end_date:   2019-10-27 14:00:00
+start_date:   2019-10-27 11:00:00
+end_date:   2019-10-27 11:30:00
 md_group: "itsc19_talks"
 ---
 
