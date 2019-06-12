@@ -2,8 +2,8 @@
 title:  "Stepping Stones to Sustainable Transportation Systems"
 speaker: "Stephen Zoepf"
 seq_number: 1
-start_date:   2019-10-27 14:00:00
-end_date:   2019-10-27 14:30:00
+start_date:   2019-10-27 14:30:00
+end_date:   2019-10-27 15:00:00
 md_group: "itsc19_talks"
 ---
 
