@@ -569,6 +569,7 @@
 @String{proc_IEEE_PICA                 = {{IEEE Int. Conf. on Power Industry Computer Applications}}}
 @String{proc_IEEE_PSCC                 = {{Power Systems Computation Conference}}}
 @String { proc_IEEE_SmartGridComm   = {{IEEE Int. Conf. on Smart Grid Communications (SmartGridComm)}} }
+@String{proc_IEEE_VPPC                 = {{IEEE Vehicle Power and Propulsion Conference}}}
 @String{proc_IEEE_WACV                 = {{IEEE Winter Conf. on Applications of Computer Vision}}}
 @String{proc_IEEE_WCPEC                = {{IEEE World Conf. on Photovoltaic Energy Conversion}}}
 @String { proc_IFAC_AAC             = {{Advances in Automotive Control}} }
@@ -2724,10 +2725,10 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {On the Interaction Between {Autonomous Mobility-on-Demand} Systems and the Power Network: Models and Coordination Algorithms},
   journal      = jrn_IEEE_TCNS,
   year         = {2018},
-  note         = {Submitted. {Extended version available at }\url{https://arxiv.org/abs/1709.04906}},
-  abstract = {We study the interaction between a fleet of electric, self-driving vehicles servicing on-demand transportation requests (referred to as Autonomous Mobility-on-Demand, or AMoD, system) and the electric power network. We propose a joint model that captures the coupling between the two systems stemming from the vehicles? charging requirements. The model captures time-varying customer demand and power generation costs, road congestion, battery depreciation, and power transmission and distribution constraints. We then leverage the model to jointly optimize the operation of both systems. We devise an algorithmic procedure to losslessly reduce the problem size by bundling customer requests, allowing it to be efficiently solved by off-the-shelf linear programming solvers. Next, we show that the socially optimal solution to the joint problem can be enforced as a general equilibrium, and we provide a dual decomposition algorithm that allows the transportation and power network operators to compute the market clearing prices without sharing private information. We assess the performance of the model and algorithms by studying a hypothetical electric-powered AMoD system in Dallas-Fort Worth and its impact on the Texas power network. Lack of coordination between the AMoD system and the power network would cause a 4.4% increase in the price of electricity in Dallas-Fort Worth; conversely, depending on the maturity of battery technology, coordination between the AMoD system and the power network would reduce the total electricity expenditure compared to the case where no cars are present (despite the increased demand for electricity) and yield savings of up to $147M/year for local power network customers. Agent-based simulations with receding-horizon versions of the algorithms further corroborate these findings. Collectively, the results of this paper provide a first-of-a-kind characterization of the interaction between electric-powered AMoD systems and the power network, and shed additional light on the economic and societal value of AMoD.},
-  url      = {../wp-content/papercite-data/pdf/Rossi.Iglesias.Alizadeh.Pavone.TCNS18.pdf},
-  keywords     = {sub},
+  note         = {In Press. {Extended version available at }\url{https://arxiv.org/abs/1709.04906}},
+  abstract = {We study the interaction between a fleet of electric self-driving vehicles servicing on-demand transportation requests (referred to as Autonomous Mobility-on-Demand, or AMoD, system) and the electric power network. We propose a joint model that captures the coupling between the two systems stemming from the vehicles' charging requirements, capturing time-varying customer demand, battery depreciation, and power transmission constraints. First, we show that the model is amenable to efficient optimization. Then, we prove that the socially optimal solution to the joint problem is a general equilibrium if locational marginal pricing is used for electricity. Finally, we show that the equilibrium can be computed by selfish transportation and generator operators (aided by a non-profit ISO) without sharing private information. We assess the performance of the approach and its robustness to stochastic fluctuations in demand through case studies and agent-based simulations. Collectively, these results provide a first-of-a-kind characterization of the interaction between AMoD systems and the power network, and shed additional light on the economic and societal value of AMoD.},
+  url      = {https://arxiv.org/abs/1709.04906},
+  keywords     = {press},
   owner        = {frossi2},
   timestamp    = {2018-06-30},
 }
@@ -2906,19 +2907,19 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-02-04},
 }
 
-@InProceedings{LandryManchesterEtAl2019,
+@Inproceedings{LandryManchesterEtAl2019,
   author       = {Landry, B. and Manchester, Z. and Pavone, M.},
   title        = {A Differentiable Augmented Lagrangian Method for Bilevel Nonlinear Optimization},
   booktitle    = proc_RSS,
   year         = {2019},
-  note         = {Submitted},
+  note         = {In Press},
   abstract = {Many problems in modern robotics can be addressed by modeling them as bilevel optimization problems. In this work, we leverage augmented Lagrangian methods and recent advances in automatic differentiation to develop a general-purpose nonlinear optimization solver that is well suited to bilevel optimization. We then demonstrate the validity and scalability of our algorithm with two representative robotic problems, namely robust control and parameter estimation for a system involving contact. We stress the general nature of the algorithm and its potential relevance to many other problems in robotics.},
   address  = {Freiburg im Breisgau, Germany},
   month    = jun,
   url      = {https://arxiv.org/pdf/1902.03319.pdf},
+  keywords     = {press},
   owner        = {blandry},
-  timestamp    = {2019-02-12},
-  keywords     = {sub},
+  timestamp    = {2019-05-18},
 }
 
 @Inproceedings{ChinchaliSharmaEtAl2019,
@@ -2950,7 +2951,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-04-14},
 }
 
-@InProceedings{SalazarHoushmandEtAl2019,
+@Inproceedings{SalazarHoushmandEtAl2019,
   author       = {Salazar, M. and Houshmand, A. and Cassandras, C. G. and Pavone, M.},
   title        = {Optimal Routing and Energy Management Strategies for Plug-in Hybrid Electric Vehicles},
   booktitle    = proc_IEEE_ITSC,
@@ -2960,12 +2961,13 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   abstract = {This paper presents eco-routing strategies for plug-in hybrid electric vehicles, whereby we jointly compute the routing and energy management strategy and the objective is a combination of travel time and energy consumption. Specifically, we first use Pontryagin's principle to compute the optimal Pareto front in terms of achievable fuel and battery consumption for different types of road links. Second, we leverage these Pareto fronts to formulate a network flow optimization problem to compute the optimal routing and energy management strategy minimizing a combination of travel time and energy consumption. Finally, we present a real-world case-study for the Eastern Massachusetts highway sub-network. The proposed approach allows one to compute the optimal solution for different objectives, ranging from minimum time to minimum energy, revealing that by sacrificing little travel time significant improvements in fuel consumption can be achieved.},
   address  = {Auckland, New Zealand},
   month    = nov,
+  url      = {../wp-content/papercite-data/pdf/Salazar.Houshmand.ea.ITSC19.pdf},
   keywords     = {sub},
   owner        = {samauro},
   timestamp    = {2019-04-20},
 }
 
-@InProceedings{ZgraggenTsaoEtAl2019,
+@Inproceedings{ZgraggenTsaoEtAl2019,
   author       = {Zgraggen, J. and Tsao, Matthew and Salazar, M. and Schiffer, M. and Pavone, M.},
   title        = {A Model Predictive Control Scheme for Intermodal Autonomous Mobility-on-Demand},
   booktitle    = proc_IEEE_ITSC,
@@ -2975,6 +2977,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   abstract = {This paper presents a routing algorithm for intermodal Autonomous Mobility on Demand (AMoD) systems, whereby a fleet of self-driving cars provides on-demand mobility in coordination with public transit. Specifically, we present a time-variant flow-based optimization approach that captures the operation of an AMoD system in coordination with public transit. We then leverage this model to devise a model predictive control (MPC) algorithm to route customers and vehicles through the network with the objective of minimizing customers' travel time. To validate our MPC scheme, we present a real-world case study for New York City. Our results show that servicing transportation demands jointly with public transit can significantly improve the service quality of AMoD systems. Additionally, we highlight the differences of our time-variant framework compared to existing mesoscopic, time-invariant models.},
   address  = {Auckland, New Zealand},
   month    = nov,
+  url      = {../wp-content/papercite-data/pdf/Zgraggen.Salazar.ea.ITSC19.pdf},
   keywords     = {sub},
   owner        = {samauro},
   timestamp    = {2019-04-20},
@@ -2995,6 +2998,50 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-05-01},
 }
 
+@Inproceedings{VerbruggenSalazarEtAl2019,
+  author       = {Verbruggen, F. J. R. and Salazar, M. and Pavone, M. and Hofman, T.},
+  title        = {Joint Design and Control of a Battery Electric Truck Using Convex Optimization},
+  booktitle    = proc_IEEE_VPPC,
+  year         = {2019},
+  note         = {Submitted},
+  abstract     = {In this paper we study models and coordination policies for intermodal Autonomous Mobility-on-Demand (AMoD), wherein a fleet of self-driving vehicles provides on-demand mobility jointly with public transit. Specifically, we first present a network flow model for intermodal AMoD, where we capture the coupling between AMoD and public transit and the goal is to maximize social welfare. Second, leveraging such a model, we design a pricing and tolling scheme that allows to achieve the social optimum under the assumption of a perfect market with selfish agents. Finally, we present a real-world case study for New York City. Our results show that the coordination between AMoD fleets and public transit can yield significant benefits compared to an AMoD system operating in isolation.},
+  abstract = {This paper presents a co-design method to jointly optimize the design and the operation of battery electric powertrains. Specifically, we first derive a convex model of the powertrain explicitly accounting for the impact of the components' size on the total mass of the vehicle. Second, we formulate the energy-optimal sizing and control problem for a given driving cycle as a second-order conic problem which can be solved with off-the-shelf optimization algorithms. Finally, we present a real-world case study where we compare our approach with a commonly used approach based on a derivative-free optimization algorithm for the case of a single gear transmission, double gear transmission, and a continuously variable transmission. Preliminary results show that albeit the higher weight, CVTs can improve the energy consumption of a battery electric truck by up to 3%.},
+  address  = {Hanoi, Vietnam},
+  month    = oct,
+  keywords     = {sub},
+  owner        = {samauro},
+  timestamp    = {2019-05-23},
+}
+
+@Inproceedings{HarrisonSharmaEtAl2019,
+  author       = {Harrison, J. and Sharma, A. and Wang, X. and Calandra, R. and Pavone, M},
+  title        = {Control Adaptation via Meta-Learning Dynamics},
+  booktitle    = proc_ISRR,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Deep neural networks are an increasingly popular approachto learning-based robotics planning and control. When these models are applied on systems that differ from those on which they were trained, model mismatch can lead to degraded performance, instability, and loss of control. These issues can be alleviated by performing online adaptation of the model as state transition data from the true system is observed during operation. However, standard neural network models are ill-suited to the data-efficient and computationally efficient adaption that is necessary for adaptive control. In this work, we present Control Adaptation via Meta-Learning Dynamics (CAMeLiD), an approach to nonlinear adaptive trajectory generation and control which leverages recent advances in meta-learning to enable the efficient adaptation of neural network models. We demonstrate that this framework, which extends the ALPaCA Bayesian meta-learning work for adaptive dynamics modeling and uses it within a model predictive controller, outperforms state-of-the-art in meta-learning-based adaptive control on two continuous control tasks. Moreover, we show the proposed framework outperforms state-of-the-art methods on prediction error and in terms of out-of-distribution meta-generalization.},
+  address  = {Hanoi, Vietnam},
+  month    = oct,
+  keywords     = {sub},
+  owner        = {apoorva},
+  timestamp    = {2019-06-05},
+}
+
+@Inproceedings{LandryLorenzettiEtAl2019,
+  author       = {Landry, B. and Lorenzetti J. and Manchester, Z. and Pavone, M.},
+  title        = {Bilevel Optimization for Planning through Contact: A Semidirect Method},
+  booktitle    = proc_ISRR,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Many robotics applications, from object manipulation to locomotion, require planning methods that are capable of handling the dynamics of contact. Trajectory optimization has been shown to be a viable approach that can be made to support contact dynamics. However, the current state-of-the art methods remain slow and are often difficult to get to converge. In this work, we leverage recent advances in bilevel optimization to design an algorithm capable of efficiently generating trajectories that involve making and breaking contact. We demonstrate our method's efficiency by outperforming an alternative state-of-the-art method on a benchmark problem. We moreover demonstrate the method's ability to design a simple periodic gait for a quadruped with 15 degrees of freedom and four contact points},
+  address  = {Hanoi, Vietnam},
+  month    = oct,
+  url      = {https://arxiv.org/pdf/1906.04292.pdf},
+  keywords     = {sub},
+  owner        = {blandry},
+  timestamp    = {2019-06-12},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year] opt[;note]}
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
