@@ -15,4 +15,5 @@ Sumeet Singh is a Ph.D. candidate in Aeronautics and Astronautics. He received a
 Sumeet’s current research interests are twofold: 1) Robust motion planning for constrained nonlinear systems, and 2) Risk-sensitive Model Predictive Control (MPC). Within the first topic, Sumeet is investigating the design of nonlinear control algorithms for online generation of robust motion plans with guaranteed margins of safety for constrained robotic systems in cluttered environments. The second topic focuses on the development and analysis of stochastic MPC algorithms for robust and risk-sensitive decision making problems.
 
 ### Awards:
+- Qualcomm Innovation Fellowship (2018)
 - Stanford Graduate Fellowship - Office of Technology Licensing Fellow

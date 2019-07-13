@@ -17,5 +17,6 @@ Currently, she is a co-president for Stanford Women in Aeronautics and Astronaut
 
 
 ### Awards:
+- Qualcomm Innovation Fellowship (2018)
 - Eleanor Sophia Wood Postgraduate Research Traveling Scholarship (2016-2017)
 - Arcus Travelling Scholarship (2015-2016)
