@@ -2522,20 +2522,20 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-04-08},
 }
 
-@InProceedings{SalazarRossiEtAl2018,
+@Inproceedings{SalazarRossiEtAl2018,
   author       = {Salazar, M. and Rossi, F. and Schiffer, M. and Onder, C. H. and Pavone, M.},
   title        = {On the Interaction between Autonomous Mobility-on-Demand and the Public Transportation Systems},
   booktitle    = proc_IEEE_ITSC,
   year         = {2018},
-  note         = {In Press. {Extended Version, Available} at \url{https://arxiv.org/abs/1804.11278}},
+  note         = {{Extended Version, Available} at \url{https://arxiv.org/abs/1804.11278}},
   abstract     = {In this paper we study models and coordination policies for intermodal Autonomous Mobility-on-Demand (AMoD), wherein a fleet of self-driving vehicles provides on-demand mobility jointly with public transit. Specifically, we first present a network flow model for intermodal AMoD, where we capture the coupling between AMoD and public transit and the goal is to maximize social welfare. Second, leveraging such a model, we design a pricing and tolling scheme that allows to achieve the social optimum under the assumption of a perfect market with selfish agents. Finally, we present a real-world case study for New York City. Our results show that the coordination between AMoD fleets and public transit can yield significant benefits compared to an AMoD system operating in isolation.},
   abstract = {In this paper we study models and coordination policies for intermodal Autonomous Mobility-on-Demand (AMoD), wherein a fleet of self-driving vehicles provides on-demand mobility jointly with public transit. Specifically, we first present a network flow model for intermodal AMoD, where we capture the coupling between AMoD and public transit and the goal is to maximize social welfare. Second, leveraging such a model, we design a pricing and tolling scheme that allows to achieve the social optimum under the assumption of a perfect market with selfish agents. Finally, we present a real-world case study for New York City. Our results show that the coordination between AMoD fleets and public transit can yield significant benefits compared to an AMoD system operating in isolation.},
   address  = {Maui, Hawaii},
-  month    = {#nov#},
+  month    = nov,
   url      = {https://arxiv.org/pdf/1804.11278.pdf},
   keywords     = {press},
   owner        = {frossi2},
-  timestamp    = {2018-07-12},
+  timestamp    = {2019-07-02},
 }
 
 @Article{SinghChowEtAl2018b,
@@ -2676,7 +2676,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 }
 
 @InProceedings{SinghSindhwaniEtAl2018,
-  author       = {Singh, S. and Sindhwani, V. and Slotine, J.-J. E., and Pavone, M.},
+  author       = {Singh, S. and Sindhwani, V. and Slotine, J.-J. E. and Pavone, M.},
   title        = {Learning Stabilizable Dynamical Systems via Control Contraction Metrics},
   booktitle    = proc_WAFR,
   year         = {2018},
@@ -2689,9 +2689,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   owner        = {ssingh19},
   timestamp    = {2018-09-21},
 }
-
-||||||| .r25545
-=======
 
 @InProceedings{SinghChenEtAl2018,
   author       = {Singh, S. and Chen, M. and Herbert, S. L. and Tomlin, C. J. and Pavone, M.},
@@ -2733,17 +2730,15 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-06-30},
 }
 
-@InProceedings{ZahroofBylardEtAl2019,
+@Inproceedings{ZahroofBylardEtAl2019,
   author       = {Zahroof, T. and Bylard, A. and Shageer, H. and Pavone, M.},
   title        = {Perception-Constrained Robot Manipulator Planning for Satellite Servicing},
   booktitle    = proc_IEEE_AC,
   year         = {2019},
-  note         = {In Press},
   abstract = {Satellite servicing is a rapidly developing industry which requires a number advances in semi- and fully-automated space robotics to unlock many key servicing capabilities. One upcoming mission example is the NASA Restore-L Robotic Servicing spacecraft, which is equipped with two 7-joint robotic manipulators used to capture a satellite and perform a complex series of refueling tasks, including swapping between various end-effector tools stored on board. In this scenario, planning of the manipulator motions must account for a number of constraints, such as collision avoidance and the potential need for uninterrupted visual tracking of objects or of the end-effector. Such complex constraints in a cluttered environment, such as the interface between two spacecraft, are time-consuming to incorporate into hand-designed trajectories. Thus, in this work we present a software tool which uses robot motion planning and path refinement algorithms for automated, real-time computation of near-optimal, collision-free trajectories which satisfy the aforementioned perception constraints. The tool is built on the ROS MoveIt! framework, which can simulate and visualize trajectories as well as seamlessly switch between motion planning and refinement algorithms depending on task requirements. Additionally, we performed experimental campaigns to benchmark a number of available algorithms for performance in handling such perception constraints. Although the framework is applied to a mock-up of Restore-L satellite servicer in this paper, the tool can be applied to any fixed-base manipulator planning scenario with a similar class of constraints.},
   address  = {Big Sky, Montana},
   month    = mar,
   url      = {../wp-content/papercite-data/pdf/Zahroof.Bylard.Shageer.Pavone.AeroConf19.pdf},
-  keywords     = {press},
   owner        = {bylard},
   timestamp    = {2019-01-14},
 }
@@ -2763,19 +2758,17 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-09-16},
 }
 
-@InProceedings{SoloveySalazarEtAl2019,
+@Inproceedings{SoloveySalazarEtAl2019,
   author       = {Solovey, K. and Salazar, M. and Pavone, M.},
   title        = {Scalable and Congestion-aware Routing for Autonomous Mobility-on-Demand via Frank-Wolfe Optimization},
   booktitle    = proc_RSS,
   year         = {2019},
-  note         = {Submitted},
   abstract = {We consider the problem of vehicle routing for Autonomous Mobility-on-Demand (AMoD) systems, wherein a fleet of self-driving vehicles provides on-demand mobility in a given environment. Specifically, the task it to compute routes for the vehicles (both customer-carrying and empty travelling) so that travel demand is fulfilled and operational cost is minimized. The routing process must account for congestion effects affecting travel times, as modeled via a volume-delay function (VDF). Route planning with VDF constraints is notoriously challenging, as such constraints compound the combinatorial complexity of the routing optimization process. Thus, current solutions for AMoD routing resort to relaxations of the congestion constraints, thereby trading optimality with computational efficiency. In this paper, we present the first computationally-efficient approach for AMoD routing where VDF constraints are explicitly accounted for. We demonstrate that our approach is faster by at least one order of magnitude with respect to the state of the art, while providing higher quality solutions. From a methodological standpoint, the key technical insight is to establish a mathematical reduction of the AMoD routing problem to the classical traffic assignment problem (a related vehicle-routing problem where empty traveling vehicles are not present). Such a reduction allows us to extend powerful algorithmic tools for traffic assignment, which combine the classic Frank-Wolfe algorithm with modern techniques for pathfinding, to the AMoD routing problem. We provide strong theoretical guarantees for our approach in terms of near-optimality of the returned solution.},
-  address  = {Freiburg in Breisgau, Germany},
+  address  = {Freiburg im Breisgau, Germany},
   month    = jun,
   url      = {../wp-content/papercite-data/pdf/Solovey.Salazar.Pavone.RSS19.pdf},
   owner        = {samauro},
   timestamp    = {2019-02-02},
-  keywords     = {sub},
 }
 
 @InProceedings{SharmaHarrisonEtAl2019,
@@ -2793,19 +2786,18 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-04-10},
 }
 
-@InProceedings{SalazarTsaoEtAl2019,
+@Inproceedings{SalazarTsaoEtAl2019,
   author       = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
   title        = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
   booktitle    = proc_EUCA_ECC,
   year         = {2019},
-  note         = {Submitted},
+  note         = {In Press.},
   abstract = {We study route-planning for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing scheme (CARS) that captures road-utilization-dependent travel times at a mesoscopic level via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. This approximation largely retains the key features of the BPR model, while allowing the design of a real-time, convex quadratic optimization algorithm to determine congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARS to existing routing approaches, namely a congestion-unaware and a threshold congestion model. Numerical results show that CARS significantly outperforms the other two approaches, with improvements in terms of travel time and global cost in the order of 20%.},
   address  = {Naples, Italy},
   month    = nov,
   url      = {../wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf},
-  keywords     = {sub},
   owner        = {samauro},
-  timestamp    = {2018-11-17},
+  timestamp    = {2019-07-02},
 }
 
 @InProceedings{LorenzettiLandryEtAl2019,
@@ -2912,12 +2904,10 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {A Differentiable Augmented Lagrangian Method for Bilevel Nonlinear Optimization},
   booktitle    = proc_RSS,
   year         = {2019},
-  note         = {In Press},
   abstract = {Many problems in modern robotics can be addressed by modeling them as bilevel optimization problems. In this work, we leverage augmented Lagrangian methods and recent advances in automatic differentiation to develop a general-purpose nonlinear optimization solver that is well suited to bilevel optimization. We then demonstrate the validity and scalability of our algorithm with two representative robotic problems, namely robust control and parameter estimation for a system involving contact. We stress the general nature of the algorithm and its potential relevance to many other problems in robotics.},
   address  = {Freiburg im Breisgau, Germany},
   month    = jun,
   url      = {https://arxiv.org/pdf/1902.03319.pdf},
-  keywords     = {press},
   owner        = {blandry},
   timestamp    = {2019-05-18},
 }
@@ -2927,12 +2917,10 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Network Offloading Policies for Cloud Robotics: a Learning-based Approach},
   booktitle    = proc_RSS,
   year         = {2019},
-  note         = {In Press},
   abstract = {Today's robotic systems are increasingly turning to computationally expensive models such as deep neural networks (DNNs) for tasks like localization, perception, planning, and object detection. However, resource-constrained robots, like low-power drones, often have insufficient on-board compute resources or power reserves to scalably run the most accurate, state-of-the art neural network compute models. Cloud robotics allows mobile robots the benefit of offloading compute to centralized servers if they are uncertain locally or want to run more accurate, compute-intensive models. However, cloud robotics comes with a key, often understated cost: communicating with the cloud over congested wireless networks may result in latency or loss of data. In fact, sending high data-rate video or LIDAR from multiple robots over congested networks can lead to prohibitive delay for real-time applications, which we measure experimentally. In this paper, we formulate a novel Robot Offloading Problem - how and when should robots offload sensing tasks, especially if they are uncertain, to improve accuracy while minimizing the cost of cloud communication? We formulate offloading as a sequential decision making problem for robots, and propose a solution using deep reinforcement learning. In both simulations and hardware experiments using state-of-the art vision DNNs, our offloading strategy improves vision task performance by between 1.3-2.6x of benchmark offloading strategies, allowing robots the potential to significantly transcend their on-board sensing accuracy but with limited cost of cloud communication.},
-  address  = {Freiburg in Breisgau, Germany},
+  address  = {Freiburg im Breisgau, Germany},
   month    = jun,
   url      = {https://arxiv.org/pdf/1902.05703.pdf},
-  keywords     = {press},
   owner        = {apoorva},
   timestamp    = {2019-02-07},
 }
@@ -2941,11 +2929,11 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   author       = {Salazar, M. and Lanzetti, N. and Rossi, F. and Schiffer, M. and Pavone, M.},
   title        = {Intermodal Autonomous Mobility-on-Demand},
   journal      = jrn_IEEE_TITS,
-  journaltitle = {Special Issue 21st IEEE Intelligent Transportation Systems Conference (ITSC 2018)},
   year         = {2019},
-  date         = {2019-04-14},
   note         = {Submitted},
-  url          = {../wp-content/papercite-data/pdf/Salazar.ea.T-ITS19.pdf},
+  url      = {../wp-content/papercite-data/pdf/Salazar.ea.T-ITS19.pdf},
+  date         = {2019-04-14},
+  journaltitle = {Special Issue 21st IEEE Intelligent Transportation Systems Conference (ITSC 2018)},
   keywords     = {sub},
   owner        = {samauro},
   timestamp    = {2019-04-14},
@@ -2956,31 +2944,27 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Optimal Routing and Energy Management Strategies for Plug-in Hybrid Electric Vehicles},
   booktitle    = proc_IEEE_ITSC,
   year         = {2019},
-  note         = {Submitted},
   abstract     = {In this paper we study models and coordination policies for intermodal Autonomous Mobility-on-Demand (AMoD), wherein a fleet of self-driving vehicles provides on-demand mobility jointly with public transit. Specifically, we first present a network flow model for intermodal AMoD, where we capture the coupling between AMoD and public transit and the goal is to maximize social welfare. Second, leveraging such a model, we design a pricing and tolling scheme that allows to achieve the social optimum under the assumption of a perfect market with selfish agents. Finally, we present a real-world case study for New York City. Our results show that the coordination between AMoD fleets and public transit can yield significant benefits compared to an AMoD system operating in isolation.},
   abstract = {This paper presents eco-routing strategies for plug-in hybrid electric vehicles, whereby we jointly compute the routing and energy management strategy and the objective is a combination of travel time and energy consumption. Specifically, we first use Pontryagin's principle to compute the optimal Pareto front in terms of achievable fuel and battery consumption for different types of road links. Second, we leverage these Pareto fronts to formulate a network flow optimization problem to compute the optimal routing and energy management strategy minimizing a combination of travel time and energy consumption. Finally, we present a real-world case-study for the Eastern Massachusetts highway sub-network. The proposed approach allows one to compute the optimal solution for different objectives, ranging from minimum time to minimum energy, revealing that by sacrificing little travel time significant improvements in fuel consumption can be achieved.},
   address  = {Auckland, New Zealand},
   month    = nov,
   url      = {../wp-content/papercite-data/pdf/Salazar.Houshmand.ea.ITSC19.pdf},
-  keywords     = {sub},
   owner        = {samauro},
-  timestamp    = {2019-04-20},
+  timestamp    = {2019-06-24},
 }
 
 @Inproceedings{ZgraggenTsaoEtAl2019,
-  author       = {Zgraggen, J. and Tsao, Matthew and Salazar, M. and Schiffer, M. and Pavone, M.},
+  author       = {Zgraggen, J. and Salazar, M. and Schiffer, M. and Pavone, M.},
   title        = {A Model Predictive Control Scheme for Intermodal Autonomous Mobility-on-Demand},
   booktitle    = proc_IEEE_ITSC,
   year         = {2019},
-  note         = {Submitted},
   abstract     = {In this paper we study models and coordination policies for intermodal Autonomous Mobility-on-Demand (AMoD), wherein a fleet of self-driving vehicles provides on-demand mobility jointly with public transit. Specifically, we first present a network flow model for intermodal AMoD, where we capture the coupling between AMoD and public transit and the goal is to maximize social welfare. Second, leveraging such a model, we design a pricing and tolling scheme that allows to achieve the social optimum under the assumption of a perfect market with selfish agents. Finally, we present a real-world case study for New York City. Our results show that the coordination between AMoD fleets and public transit can yield significant benefits compared to an AMoD system operating in isolation.},
   abstract = {This paper presents a routing algorithm for intermodal Autonomous Mobility on Demand (AMoD) systems, whereby a fleet of self-driving cars provides on-demand mobility in coordination with public transit. Specifically, we present a time-variant flow-based optimization approach that captures the operation of an AMoD system in coordination with public transit. We then leverage this model to devise a model predictive control (MPC) algorithm to route customers and vehicles through the network with the objective of minimizing customers' travel time. To validate our MPC scheme, we present a real-world case study for New York City. Our results show that servicing transportation demands jointly with public transit can significantly improve the service quality of AMoD systems. Additionally, we highlight the differences of our time-variant framework compared to existing mesoscopic, time-invariant models.},
   address  = {Auckland, New Zealand},
   month    = nov,
   url      = {../wp-content/papercite-data/pdf/Zgraggen.Salazar.ea.ITSC19.pdf},
-  keywords     = {sub},
   owner        = {samauro},
-  timestamp    = {2019-04-20},
+  timestamp    = {2019-07-13},
 }
 
 @Inproceedings{BonalliBylardEtAl2019,
@@ -2988,12 +2972,10 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Trajectory Optimization on Manifolds: {A} Theoretically-Guaranteed Embedded Sequential Convex Programming Approach},
   booktitle    = proc_RSS,
   year         = {2019},
-  note         = {In Press},
   abstract = {Sequential Convex Programming (SCP) has recently gain popularity as a tool for trajectory optimization, due to its sound theoretical properties and practical performance. Yet, most SCP-based methods for trajectory optimization are restricted to Euclidean settings, which precludes their application to problem instances where one needs to reason about manifold-type constraints (that is, constraints, such as loop closure, which restrict the motion of a system to a subset of the ambient space). The aim of this paper is to fill this gap by extending SCP-based trajectory optimization methods to a manifold setting. The key insight is to leverage geometric embeddings to lift a manifold-constrained trajectory optimization problem into an equivalent problem defined over a space enjoying Euclidean structure. This insight allows one to extend existing SCP methods to a manifold setting in a fairly natural way. In particular, we present an SCP algorithm for manifold problems with theoretical guarantees that resemble those derived for the Euclidean setting, and demonstrate its practical performance via numerical experiments.},
-  address  = {Messe Freiburg, Germany},
+  address  = {Freiburg im Breisgau, Germany},
   month    = jun,
   url      = {../wp-content/papercite-data/pdf/Bonalli.Bylard.Cauligi.Lew.Pavone.RSS19.pdf},
-  keywords     = {press},
   owner        = {bylard},
   timestamp    = {2019-05-01},
 }
@@ -3042,6 +3024,15 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-06-12},
 }
 
+@Online{IvanovicPavone2019,
+  author    = {Ivanovic, B. and Pavone, M.},
+  title     = {The {Trajectron}: Probabilistic Multi-Agent Trajectory Modeling with Dynamic Spatiotemporal Graphs},
+  note      = {Available at \url{https://arxiv.org/abs/1810.05993}},
+  owner     = {borisi},
+  timestamp = {2019-06-17},
+  year      = {2019},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year] opt[;note]}
