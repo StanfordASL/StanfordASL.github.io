@@ -2857,19 +2857,15 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-02-01},
 }
 
-
-
-@InProceedings{BonalliCauligiEtAl2019,
+@Inproceedings{BonalliCauligiEtAl2019,
   author       = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
   title        = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
   booktitle    = proc_IEEE_ICRA,
   year         = {2019},
-  note         = {In Press},
   abstract = {Sequential Convex Programming (SCP) has recently seen a surge of interest as a tool for trajectory optimization. Yet, most available methods lack rigorous performance guarantees and are often tailored to specific optimal control setups. In this paper, we present GuSTO (Guaranteed Sequential Trajectory Optimization), an algorithmic framework to solve trajectory optimization problems for control-affine systems with drift. GuSTO generalizes earlier SCP-based methods for trajectory optimization (by addressing, for example, goal region constraints and problems with either fixed or free final time), and enjoys theoretical convergence guarantees in terms of convergence to, at least, a stationary point. The theoretical analysis is further leveraged to devise an accelerated implementation of GuSTO, which originally infuses ideas from indirect optimal control into an SCP context. Numerical experiments on a variety of trajectory optimization setups show that GuSTO generally outperforms current state-of-the-art approaches in terms of success rates, solution quality, and computation times.},
   address  = {Montreal, Canada},
   month    = may,
   url      = {../wp-content/papercite-data/pdf/Bonalli.Cauligi.Bylard.Pavone.ICRA19.pdf},
-  keywords     = {press},
   owner        = {bylard},
   timestamp    = {2018-10-04},
 }
@@ -3031,6 +3027,19 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   owner     = {borisi},
   timestamp = {2019-06-17},
   year      = {2019},
+}
+
+@Article{LeungSchmerlingEtAl2019,
+  author       = {Leung, K., and Schmerling, E., and Zhang, M., and Chen, M., and Talbot, J., and Gerdes, J.C.},
+  title        = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
+  journal      = jrn_SAGE_IJRR,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Action anticipation, intent prediction, and proactive behavior are all desirable characteristics for autonomous driving policies in interactive scenarios. Paramount, however, is ensuring safety on the road---a key challenge in doing so is accounting for uncertainty in human driver actions without unduly impacting planner performance. This paper introduces a minimally-interventional safety controller operating within an autonomous vehicle control stack with the role of ensuring collision-free interaction with an externally controlled (e.g., human-driven) counterpart while respecting static obstacles such as a road boundary wall. We leverage reachability analysis to construct a real-time (100Hz) controller that serves the dual role of (1) tracking an input trajectory from a higher-level planning algorithm using model predictive control, and (2) assuring safety through maintaining the availability of a collision-free escape maneuver as a persistent constraint regardless of whatever future actions the other car takes. A full-scale steer-by-wire platform is used to conduct traffic weaving experiments wherein two cars, initially side-by-side, must swap lanes in a limited amount of time and distance, emulating cars merging onto/off of a highway. We demonstrate that, with our control stack, the autonomous vehicle is able to avoid collision even when the other car defies the planner's expectations and takes dangerous actions, either carelessly or with the intent to collide, and otherwise deviates minimally from the planned trajectory to the extent required to maintain safety.},
+  url      = {../wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf},
+  keywords     = {sub},
+  owner        = {karenl7},
+  timestamp    = {2019-07-16},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
