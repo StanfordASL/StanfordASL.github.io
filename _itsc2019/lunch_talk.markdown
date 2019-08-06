@@ -7,4 +7,4 @@ end_date:   2019-10-27 13:30:00
 md_group: "itsc19_talks"
 ---
 
-Lunch break.
+Lunch Break

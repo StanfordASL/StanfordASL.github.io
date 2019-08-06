@@ -2,8 +2,8 @@
 title:  "Using Vehicle Automation to End Phantom Traffic Jams"
 speaker: "Dan Work"
 seq_number: 1
-start_date:   2019-10-27 10:00:00
-end_date:   2019-10-27 10:30:00
+start_date:   2019-10-27 11:00:00
+end_date:   2019-10-27 11:30:00
 md_group: "itsc19_talks"
 ---
 

@@ -2,8 +2,8 @@
 title:  "Understanding the Fundamental Trade-offs in Large-scale Mobility-on-demand Systems"
 speaker: "Michal Čáp"
 seq_number: 1
-start_date:   2019-10-27 10:30:00
-end_date:   2019-10-27 11:00:00
+start_date:   2019-10-27 14:00:00
+end_date:   2019-10-27 14:30:00
 md_group: "itsc19_talks"
 ---
 

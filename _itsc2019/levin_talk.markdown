@@ -2,8 +2,8 @@
 title:  "Maximum-stability Dispatch Policy for Shared Autonomous Vehicles"
 speaker: "Michael Levin"
 seq_number: 1
-start_date:   2019-10-27 09:30:00
-end_date:   2019-10-27 10:00:00
+start_date:   2019-10-27 13:30:00
+end_date:   2019-10-27 14:00:00
 md_group: "itsc19_talks"
 ---
 
