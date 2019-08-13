@@ -67,3 +67,16 @@ a, a:hover {
 li > span >a:link, a:active, a:focus, .entry-title {
   color: #337ab7 !important;
 }
+
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
