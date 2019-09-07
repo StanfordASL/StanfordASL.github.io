@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AA 274: Principles of Robotic Autonomy</title>
+
+    <meta name="description" content="This course will cover basic principles for endowing mobile autonomous robots with perception, planning, and decision-making capabilities. Algorithmic approaches for robot perception, localization, and simultaneous localization and mapping; control of non-linear systems, learning-based control, and robot motion planning; introduction to methodologies for reasoning under uncertainty, e.g., (partially observable) Markov decision processes. Extensive use of the Robot Operating System (ROS) for demonstrations and hands-on activities. Prerequisites: CS 106A or equivalent, CME 100 or equivalent (for linear algebra), and CME 106 or equivalent (for probability theory).">
+    <!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+
+	<!-- JabRef CSS -->
+	<link rel="stylesheet" href="https://stanfordasl.github.io/css/JabRef.css">
+	 
+    <link rel="canonical" href="http://asl.stanford.edu/aa274_win1819/"> 
+    <!-- Not required -->
+    <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="https://stanfordasl.github.io /feed.xml "> -->
+    <!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/my.css"> 
+
+    <!-- AA 274 CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/aa274.css"> 
+
+    <!-- Analytics -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124680200-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124680200-1');
+    </script>
+    
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2864b7">
+    <meta name="msapplication-TileColor" content="#2864b7">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="page-top" class="index">
+  <!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="https://stanfordasl.github.io/img/ASL_Logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="aa274-navbar-text" class="col-md-6 text-center center-block collapse navbar-collapse">
+                <a class="aa274_name" href="/aa274_win1819/"><h4>AA 274: Principles of Robotic Autonomy</h4></a>
+            </div>
+            <div class="col-md-6 text-center center-block">
+                <div class="row">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll active">
+                                        <a href="/aa274_win1819/">Home</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa274_win1819/assignments.html">Homework</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa274_win1819/project.html">Project</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa274_win1819/announcements.html">Announcements</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>   </h4>
+          <h1>AA 274: Principles of Robotic Autonomy</h1>
+          <h4>Winter 2019</h4>
+        </div>
+      </div>
+      <div class="row text-center">
+        <img id="aa274-banner-image" src="/img/aa274_win1819/banner-small.png">
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Course Description</h3>
+          <p>This course will cover basic principles for endowing mobile autonomous robots with perception, planning, and decision-making capabilities. We will dive into algorithmic approaches for robot perception, localization, and simultaneous localization and mapping; control of non-linear systems, learning-based control, and robot motion planning; introduction to methodologies for reasoning under uncertainty, e.g., (partially observable) Markov decision processes. Throughout the course, we will make extensive use of the Robot Operating System (ROS) for demonstrations and hands-on activities. Prerequisite: CS 106A or equivalent.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Instructor</h3>
+          <table class="aa274_people">
+            <tr>
+              <th>
+                <a href="http://web.stanford.edu/~pavone/"><img class="aa274_headshot" src="/img/aa274_win1819/people/Pavone.jpg"></a>
+                <a href="http://web.stanford.edu/~pavone/">Prof. Marco Pavone</a>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-9">
+          <h3>Course Assistants</h3>
+          <table class="aa274_people">
+            <tr>
+              <th>
+                <a href="https://stanford.edu/~karenl7/"><img class="aa274_headshot" src="/img/aa274_win1819/people/KarenLeung.jpg"></a>
+                <a href="https://stanford.edu/~karenl7/">Karen Leung</a>
+              </th>
+              <th>
+                <a href="/people/apoorva-sharma/"><img class="aa274_headshot" src="/img/aa274_win1819/people/ApoorvaSharma.jpg"></a>
+                <a href="/people/apoorva-sharma/">Apoorva Sharma</a>
+              </th>
+              <th>
+                <img class="aa274_headshot" src="/img/aa274_win1819/people/AmineElhafsi.jpg">
+                <p>Amine Elhafsi</p>
+              </th>
+              <th>
+                <a href="https://www.chriswcovert.com/"><img class="aa274_headshot" src="/img/aa274_win1819/people/ChrisCovert.jpg"></a>
+                <a href="https://www.chriswcovert.com/">Christopher Covert</a>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Meeting Times</h3>
+          <p>Lectures meet on Mondays and Wednesdays from 1:30 PM to 2:50 PM in <a href="http://campus-map.stanford.edu/?srch=420-041">Building 420, Room 041</a>.</p>
+          <p>Office hours are on Tuesdays and Fridays 2-4PM in Durand 023.</p>
+          <p>ROS hours are on Wednesdays and Thursday 5-7PM in the Skilling Lab.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Syllabus</h3>
+          <p>The class syllabus can be found <a href="/aa274_win1819/pdfs/Syllabus_AA274_win2019.pdf">here</a>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Course Scribes</h3>
+          <p>We have randomly assigned scribes for the remaining lectures for this course. You can find the assignments <a href="https://docs.google.com/spreadsheets/d/1KXiFhWOsIqARN6mceu2pIzaD0zGoA38wzAJ0taPIthw/edit?usp=sharing">here</a>. </p>
+          <p>As a reminder, when it is your turn to be a scribe, you will work with your fellow scribes to improve last year's lecture notes for the lecture, compile your improvements, and submit your improvements by one week from the lecture date. After the lecture, you'll get an email with detailed lecture specific guidelines and submission instructions. As scribes, you will get a link to the video recording of the lecture soon after the lecture to refer to if needed.</p>
+          <p>
+          If you are enrolled in the class, please check the sheet to make sure that your Stanford email appears on the list. Please reach out to the teaching staff if it isn't there!</p>
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Schedule</h3>
+          <p>Subject to change. Lecture notes and scribe notes are updated below. We will try to have the lecture notes updated before the class. Lecture videos will be posted with a week delay.</p>
+          <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg .tg-vnl4{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-2g2i{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:center;vertical-align:top}
+          </style>
+          <table class="tg">
+            <tr>
+              <th class="tg-2g2i">Week</th>
+              <th class="tg-vnl4">Topic</th>
+              <th class="tg-vnl4">Lecture Slides</th>
+              <th class="tg-vnl4">Scribe Notes</th>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">1</td>
+              <td class="tg-vnl4">
+              Course overview, mobile robot kinematics,introduction to motion control
+              <br>The Robot Operating System (ROS)
+              <br> Recitation: Python
+              <br> <span style="font-style:italic">HW1 out</span>
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_1.pdf">Lecture 1</a>
+              <br><a href="/aa274/pdfs/lecture/lecture_2.pdf">Lecture 2</a>
+              <br><a href="/aa274/pdfs/recitation/python_review.pdf">Recitation 1</a>
+              <br><a href="/aa274/pdfs/Assumed_Knowledge_Test_2019.pdf">Pre-knowledge quiz</a> (<a href="/aa274/pdfs/Assumed_Knowledge_Test_2019_solutions.pdf">solutions</a>)
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">2</td>
+              <td class="tg-vnl4">
+              Open-loop and closed-loop motion control
+              <br>Robotic sensors and introduction to computer vision
+              <br> Recitation: dynamical systems
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_3.pdf">Lecture 3</a> (<a href="/aa274/pdfs/lecture/lecture_3_code/ex_1.py">ex1</a>, <a href="/aa274/pdfs/lecture/lecture_3_code/ex_2.py">ex2</a>)
+              <br><a href="/aa274/pdfs/lecture/lecture_4.pdf">Lecture 4</a>
+              <br><a href="http://ee263.stanford.edu/lectures.html">Recitation 2</a>
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">3</td>
+              <td class="tg-vnl4">
+              Camera models and camera calibration
+              <br>Recitation: advanced Python
+              <br> <span style="font-style:italic">HW2 out, HW1 due</span>
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_5.pdf">Lecture 5</a>
+              <br><a href="/aa274/pdfs/recitation/Tut3_NumPy.pdf">Recitation 3</a> (<a href="https://github.com/StanfordASL/AA274_HW2/blob/master/Problem_3/TensorFlow_Examples.ipynb">notebook</a>)
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">4</td>
+              <td class="tg-vnl4">
+              Stereo vision and image processing
+              <br>Feature detection and description, information extraction, and "classic" visual recognition
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_6.pdf">Lecture 6</a>
+              <br><a href="/aa274/pdfs/lecture/lecture_7.pdf">Lecture 7</a>
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">5</td>
+              <td class="tg-vnl4">
+              Machine learning for robot autonomy
+              <br>Deep learning for visual recognition
+              <br>HW2 due (part 1)
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_8.pdf">Lecture 8</a>
+              <br><a href="/aa274/pdfs/lecture/lecture_9.pdf">Lecture 9</a>
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">6</td>
+              <td class="tg-vnl4">
+              Localization I
+              <br>Localization II
+              <br><span style="font-style:italic">HW3 out, HW2 due (part 2)</span>
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_10.pdf">Lecture 10</a>
+              <br><a href="/aa274/pdfs/lecture/lecture_11.pdf">Lecture 11</a>(<a href="/aa274/pdfs/lecture/algos.pdf">Algorithms</a>)
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">7</td>
+              <td class="tg-vnl4">
+              Localization III
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_12.pdf">Lecture 12</a>
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">8</td>
+              <td class="tg-vnl4">
+              SLAM I
+              <br>SLAM II
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_13.pdf">Lecture 13</a>
+              <br><a href="/aa274/pdfs/lecture/lecture_14.pdf">Lecture 14</a>
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">9</td>
+              <td class="tg-vnl4">
+              Motion planning I: combinatorial motion planning
+              <br>Motion planning II: sampling-based motion planning
+              <br><span style="font-style:italic">HW4 out, HW3 due</span>
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_15.pdf">Lecture 15</a>
+              <br><a href="/aa274/pdfs/lecture/lecture_16.pdf">Lecture 16</a>
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">10</td>
+              <td class="tg-vnl4">
+              Decision making and reinforcement learning
+              <br>State machines and "architecting" the autonomy stack
+              <br><span style="font-style:italic">HW4 due</span>
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa274/pdfs/lecture/lecture_17.pdf">Lecture 17</a>
+              <!-- <br><a href="/aa274/pdfs/lecture/lecture_18.pdf">Lecture 18</a> -->
+              </td>
+              <td class="tg-vnl4"></td>
+            </tr>
+
+          </table>
+
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+  <!--
+The website should work without any of the JS below. -F
+-->
+
+<!-- jQuery -->
+<script src="https://stanfordasl.github.io/js/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://stanfordasl.github.io/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<!-- <script src="js/jquery.easing.min.js"></script> -->
+<!-- Contact Form JavaScript -->
+<!-- <script src="js/jqBootstrapValidation.js"></script> -->
+<!-- <script src="js/contact_me.js"></script> -->
+<!-- Custom Theme JavaScript -->
+<!-- <script src="js/freelancer.min.js"></script> -->
+<!-- JabRef (Toggling info on Publications Page) -->
+<script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
+
+  <!-- Footer -->
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div> -->
+
+<!-- Made with (L) by Federico in October 2017
+CSS: Bootstrap (without the JS)
+http://getbootstrap.com/
+Bloated, but so convenient.
+Plus, it's probably already in your browser cache (hence the CDN).
+If you want the Jekyll project for your own website,
+feel free to drop me a line!
+-F
+-->
+
+<!-- <hr class="footer-line"/> -->
+<script type="text/javascript">
+function footerAlign() {
+  $('footer').css('display', 'block');
+  $('footer').css('height', 'auto');
+  var footerHeight = $('footer').outerHeight();
+  $('body').css('padding-bottom', footerHeight);
+  $('footer').css('height', footerHeight);
+}
+
+
+$(document).ready(function(){
+  footerAlign();
+});
+
+$( window ).resize(function() {
+  footerAlign();
+});
+</script>
+
+<footer class="copyright-text footer">
+© 2018 - 2019 Autonomous Systems Lab
+</footer>
+</body>
+</html>

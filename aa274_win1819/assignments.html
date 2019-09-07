@@ -1,0 +1,45 @@
+---
+title: Homework
+permalink: /aa274_win1819/assignments.html
+group: "aa274_win1819_navigation"
+order: 2
+---
+<!DOCTYPE html>
+<html>
+{% include aa274_win1819_head.html %}
+<body id="page-top" class="index">
+  {% include aa274_win1819_navbar.html %}
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Homework</h1>
+        </div>
+      </div>
+      {% assign sorted_hwks = (site.aa274_win1819 | where:'md_group', "assignments" | sort: 'due_date') | reverse %}
+      {% for hwk in sorted_hwks %}
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="aa274-homework-title">Homework #{{ hwk.seq_number }}</h2>
+            </div>
+            <div class="col-md-3">
+              <h4 class="aa274-homework-posted-date">Posted on {{ hwk.posted_date | date: "%B %e" }}</h4>
+            </div>
+            <div class="col-md-4">
+              <h4 class="aa274-homework-due-date">Due at {{ hwk.due_date | date: "%l:%M%P on %B %e" }}</h4>
+            </div>
+          </div>
+          <p>{{ hwk.content }}</p>
+          <a href="{{ hwk.pdf_link }}">[pdf]</a> <a href="{{ hwk.code_link }}">[code]</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </header>
+  {% include javascript.html %}
+  {% include footer.html %}
+</body>
+</html>

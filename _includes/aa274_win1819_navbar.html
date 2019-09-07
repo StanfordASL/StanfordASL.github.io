@@ -1,0 +1,52 @@
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="{{site.url}}{{site.baseurl}}/img/ASL_Logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="aa274-navbar-text" class="col-md-6 text-center center-block collapse navbar-collapse">
+                <a class="aa274_name" href="/aa274_win1819/"><h4>AA 274: Principles of Robotic Autonomy</h4></a>
+            </div>
+            <div class="col-md-6 text-center center-block">
+                <div class="row">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            {% assign sorted_pages = site.pages | sort:"order" %}
+                            {% for node in sorted_pages %}
+                                {% if "aa274_win1819_navigation" == node.group %}
+                                    {% if page.url == node.url %}
+                                    <li class="page-scroll active">
+                                        <a href="{{node.url}}">{{node.title}}</a>
+                                    </li>
+                                    {% else %}
+                                    <li class="page-scroll">
+                                        <a href="{{node.url}}">{{node.title}}</a>
+                                    </li>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
