@@ -2502,7 +2502,9 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   author       = {Allen, R. and Pavone, M.},
   title        = {A Real-Time Framework for Kinodynamic Planning in Dynamic Environments with Application to Quadrotor Obstacle Avoidance},
   journal      = jrn_Elsevier_RAS,
-  year         = {2018},
+    volume       = {115},
+  pages        = {174--193},
+  year         = {2019},
   abstract = {The objective of this paper is to present a full-stack, real-time motion planning framework for kinodynamic robots and then show how it is applied and demonstrated on a physical quadrotor system operating in a laboratory environment. The proposed framework utilizes an offline-online computation paradigm, neighborhood classification through machine learning, sampling-based motion planning with an optimal cost distance metric, and trajectory smoothing to achieve real-time planning for aerial vehicles. This framework accounts for dynamic obstacles with an event-based replanning structure and a locally reactive control layer that minimizes replanning events. The approach is demonstrated on a quadrotor navigating moving obstacles in an indoor space and stands as, arguably, one of the first demonstrations of full-online kinodynamic motion planning, with execution cycles of 3 Hz to 5 Hz. For the quadrotor, a simplified dynamics model is used during the planning phase to accelerate online computation. A trajectory smoothing phase, which leverages the differentially flat nature of quadrotor dynamics, is then implemented to guarantee a dynamically feasible trajectory.},
   doi      = {10.1016/j.robot.2018.11.017},
   url      = {../wp-content/papercite-data/pdf/Allen.Pavone.RAS18.pdf},
@@ -2575,7 +2577,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Safe Motion Planning in Unknown Environments: Optimality Benchmarks and Tractable Policies},
   booktitle    = proc_RSS,
   year         = {2018},
-  note         = {In Press},
   abstract = {This paper addresses the problem of planning a safe (i.e., collisionfree) trajectory from an initial state to a goal region when the obstacle space is apriori unknown and is incrementally revealed online, e.g., through lineofsight perception. Despite its ubiquitous nature, this formulation of motion planning has received relatively little theoretical investigation, as opposed to the setup where the environment is assumed known. A fundamental challenge is that, unlike motion planning with known obstacles, it is not even clear what an optimal policy to strive for is. Our contribution is threefold. First, we present a notion of optimality for safe planning in unknown environments in the spirit of comparative (as opposed to competitive) analysis, with the goal of obtaining a benchmark that is, at least conceptually, attainable. Second, by leveraging this theoretical benchmark, we derive a pseudooptimal class of policies that can seamlessly incorporate any amount of prior or learned information while still guaranteeing the robot never collides. Finally, we demonstrate the practicality of our algorithmic approach in numerical experiments using a range of environment types and dynamics, including a comparison with a state of the art method. A key aspect of our framework is that it automatically and implicitly weighs exploration versus exploitation in a way that is optimal with respect to the information available.},
   address  = {Pittsburgh, Pennsylvania},
   month    = jun,
@@ -2957,7 +2958,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 }
 
 @Inproceedings{ZgraggenTsaoEtAl2019,
-  author       = {Zgraggen, J. and Salazar, M. and Schiffer, M. and Pavone, M.},
+  author       = {Zgraggen, J. and Tsao, M. and Salazar, M. and Schiffer, M. and Pavone, M.},
   title        = {A Model Predictive Control Scheme for Intermodal Autonomous Mobility-on-Demand},
   booktitle    = proc_IEEE_ITSC,
   year         = {2019},
@@ -2969,7 +2970,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   url      = {../wp-content/papercite-data/pdf/Zgraggen.Salazar.ea.ITSC19.pdf},
   keywords     = {press},
   owner        = {samauro},
-  timestamp    = {2019-08-01},
+  timestamp    = {2019-09-09},
 }
 
 @Inproceedings{BonalliBylardEtAl2019,
@@ -3071,13 +3072,14 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 
 @Article{SinghLandryEtAl2019,
   author    = {Singh, S. and Landry, B. and Majumdar, A. and Slotine, J-J. E. and Pavone, M.},
-  title     = {Robust Online Motion Planning via Contraction Theory and Convex Optimization},
+  title     = {Robust Feedback Motion Planning via Contraction Theory},
   journal   = jrn_SAGE_IJRR,
   year      = {2019},
   note      = {Submitted},
   keywords  = {sub},
   owner     = {ssingh19},
-  timestamp = {2019-07-27},
+  timestamp = {2019-09-11},
+  url   = {../wp-content/papercite-data/pdf/Singh.Landry.ea.IJRR19.pdf},
 }
 
 @Inproceedings{ZardiniLanzettiEtAl2020,
@@ -3087,7 +3089,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   year         = {2020},
   note         = {Submitted},
   abstract     = {In this paper we study models and coordination policies for intermodal Autonomous Mobility-on-Demand (AMoD), wherein a fleet of self-driving vehicles provides on-demand mobility jointly with public transit. Specifically, we first present a network flow model for intermodal AMoD, where we capture the coupling between AMoD and public transit and the goal is to maximize social welfare. Second, leveraging such a model, we design a pricing and tolling scheme that allows to achieve the social optimum under the assumption of a perfect market with selfish agents. Finally, we present a real-world case study for New York City. Our results show that the coordination between AMoD fleets and public transit can yield significant benefits compared to an AMoD system operating in isolation.},
-  abstract = {?The design of Autonomous Vehicles (AVs) and the design of AVs-enabled mobility systems are closely coupled. Indeed, knowledge about the intended service of AVs would impact their design and deployment process, whilst insights about their technological development could significantly affect transportation management decisions. This calls for tools to study such a coupling and co-design AVs and AVs-enabled mobility systems in terms of different objectives. In this paper, we instantiate a framework to address such co-design problems. In particular, we leverage the recently developed theory of co-design to frame and solve the problem of designing and deploying an intermodal Autonomous Mobility-on-Demand system, whereby AVs service travel demands jointly with public transit, in terms of fleet sizing, vehicle autonomy, and public transit service frequency. Our framework is modular and compositional, allowing to describe the design problem as the interconnection of its individual components and to tackle it from a system-level perspective. Moreover, it only requires very general monotonicity assumptions and it naturally handles multiple objectives, delivering the rational solutions on the Pareto front and thus enabling policy makers to select a solution through ``political'' criteria. To showcase our methodology, we present a real-world case study for Washington D.C., USA. Our work suggests that it is possible to create user-friendly optimization tools to systematically assess the costs and benefits of interventions, and that such analytical techniques might gain a momentous role in policy-making in the future.},
+  abstract = {The design of Autonomous Vehicles (AVs) and the design of AVs-enabled mobility systems are closely coupled. Indeed, knowledge about the intended service of AVs would impact their design and deployment process, whilst insights about their technological development could significantly affect transportation management decisions. This calls for tools to study such a coupling and co-design AVs and AVs-enabled mobility systems in terms of different objectives. In this paper, we instantiate a framework to address such co-design problems. In particular, we leverage the recently developed theory of co-design to frame and solve the problem of designing and deploying an intermodal Autonomous Mobility-on-Demand system, whereby AVs service travel demands jointly with public transit, in terms of fleet sizing, vehicle autonomy, and public transit service frequency. Our framework is modular and compositional, allowing to describe the design problem as the interconnection of its individual components and to tackle it from a system-level perspective. Moreover, it only requires very general monotonicity assumptions and it naturally handles multiple objectives, delivering the rational solutions on the Pareto front and thus enabling policy makers to select a solution through ``political'' criteria. To showcase our methodology, we present a real-world case study for Washington D.C., USA. Our work suggests that it is possible to create user-friendly optimization tools to systematically assess the costs and benefits of interventions, and that such analytical techniques might gain a momentous role in policy-making in the future.},
   address  = {Washington D.C., United States},
   month    = jan,
   url      = {../wp-content/papercite-data/pdf/Zardini.ea.TRB20.pdf},
