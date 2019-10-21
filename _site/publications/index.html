@@ -1307,6 +1307,35 @@
  
 
 
+<span class="entry" id="BrownRossiEtAl20">R. A. Brown, F. Rossi, K. Solovey, M. T. Wolf, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Brown.Rossi.ea.ECC20.pdf">“Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BrownRossiEtAl20','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownRossiEtAl20','abstract')">Abstract</a>]</p>
+<span id="abs_BrownRossiEtAl20" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> A number of prototypical optimization problems in multi-agent systems (e.g. task allocation and network load-sharing) exhibit a highly local structure: that is, each agent’s decision variables are only directly coupled to few other agent’s variables through the objective function or the constraints. Nevertheless, existing algorithms for distributed optimization generally do not exploit the locality structure of the problem, requiring all agents to compute or exchange the full set of decision variables. In this paper, we develop a rigorous notion of  "locality" that relates the structural properties of a linearly-constrained convex optimization problem (in particular, the sparsity structure of the constraint matrix and the objective function) to the amount of information that agents should exchange to compute an arbitrarily high-quality approximation to the problem from a cold-start. We leverage the notion of locality to develop a locality-aware distributed optimization algorithm, and we show that, for problems where individual agents only require to know a small portion of the optimal solution, the algorithm requires very limited inter-agent communication. Numerical results show that the convergence rate of our algorithm is directly explained by the locality parameter proposed, and that the proposed theoretical bounds are remarkably tight.</p>
+</span>
+<span id="bib_BrownRossiEtAl20" class="bibtex noshow">
+	<pre>@inproceedings{BrownRossiEtAl20,
+  author = {Brown, R. A. and Rossi, F. and Solovey, K. and Wolf, M. T. and Pavone, M.},
+  title = {Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems},
+  booktitle = {{European Control Conference}},
+  year = {2020},
+  note = {Submitted},
+  address = {St. Petersburg, Russia},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Brown.Rossi.ea.ECC20.pdf},
+  keywords = {sub},
+  owner = {rabrown1},
+  timestamp = {2019-10-20}
+}
+</pre>
+</span>
+<!-- <span id="key_BrownRossiEtAl20" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="ChoudhurySoloveyETAL2020">S. Choudhury, K. Solovey, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1909.11840.pdf">“Efficient Large-Scale Multi-Drone Delivery Using Transit Networks,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('ChoudhurySoloveyETAL2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChoudhurySoloveyETAL2020','abstract')">Abstract</a>]</p>
 <span id="abs_ChoudhurySoloveyETAL2020" class="abstract noshow">
@@ -1388,28 +1417,28 @@
  
 
 
-<span class="entry" id="BrownRossiEtAl20">R. A. Brown, F. Rossi, K. Solovey, M. T. Wolf, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Brown.Rossi.ea.ECC20.pdf">“Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BrownRossiEtAl20','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownRossiEtAl20','abstract')">Abstract</a>]</p>
-<span id="abs_BrownRossiEtAl20" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> A number of prototypical optimization problems in multi-agent systems (e.g. task allocation and network load-sharing) exhibit a highly local structure: that is, each agent’s decision variables are only directly coupled to few other agent’s variables through the objective function or the constraints. Nevertheless, existing algorithms for distributed optimization generally do not exploit the locality structure of the problem, requiring all agents to compute or exchange the full set of decision variables. In this paper, we develop a rigorous notion of  "locality" that relates the structural properties of a linearly-constrained convex optimization problem (in particular, the sparsity structure of the constraint matrix and the objective function) to the amount of information that agents should exchange to compute an arbitrarily high-quality approximation to the problem from a cold-start. We leverage the notion of locality to develop a locality-aware distributed optimization algorithm, and we show that, for problems where individual agents only require to know a small portion of the optimal solution, the algorithm requires very limited inter-agent communication. Numerical results show that the convergence rate of our algorithm is directly explained by the locality parameter proposed, and that the proposed theoretical bounds are remarkably tight.</p>
+<span class="entry" id="ElhafsiIvanovicEtAl2020">A. Elhafsi, B. Ivanovic, L. Janson, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1910.08184">“Map-Predictive Motion Planning in Unknown Environments,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ElhafsiIvanovicEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ElhafsiIvanovicEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_ElhafsiIvanovicEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Algorithms for motion planning in unknown environments are generally limited in their ability to reason about the structure of the unobserved environment. As such, current methods generally navigate unknown environments by relying on heuristic methods to choose intermediate objectives along frontiers. We present a unified method that combines map prediction and motion planning for safe, time-efficient autonomous navigation of unknown environments by dynamically-constrained robots. We propose a data-driven method for predicting the map of the unobserved environment, using the robot’s observations of its surroundings as context. These map predictions are then used to plan trajectories from the robot’s position to the goal without requiring frontier selection. We demonstrate that our map-predictive motion planning strategy yields a substantial improvement in trajectory time over a naive frontier pursuit method and demonstrates similar performance to methods using more sophisticated frontier selection heuristics with significantly shorter computation time.</p>
 </span>
-<span id="bib_BrownRossiEtAl20" class="bibtex noshow">
-	<pre>@inproceedings{BrownRossiEtAl20,
-  author = {Brown, R. A. and Rossi, F. and Solovey, K. and Wolf, M. T. and Pavone, M.},
-  title = {Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems},
-  booktitle = {{European Control Conference}},
+<span id="bib_ElhafsiIvanovicEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{ElhafsiIvanovicEtAl2020,
+  author = {Elhafsi, A. and Ivanovic, B. and Janson, L. and Pavone, M.},
+  title = {Map-Predictive Motion Planning in Unknown Environments},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2020},
   note = {Submitted},
-  address = {St. Petersburg, Russia},
+  address = {Paris, France},
   month = may,
-  url = {../wp-content/papercite-data/pdf/Brown.Rossi.ea.ECC20.pdf},
+  url = {https://arxiv.org/abs/1910.08184},
   keywords = {sub},
-  owner = {rabrown1},
-  timestamp = {2019-10-20}
+  owner = {borisi},
+  timestamp = {2019-10-21}
 }
 </pre>
 </span>
-<!-- <span id="key_BrownRossiEtAl20" >
+<!-- <span id="key_ElhafsiIvanovicEtAl2020" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -2887,33 +2916,6 @@
  
 
 
-<span class="entry" id="SchmerlingPavone2017">E. Schmerling and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1609.05399.pdf">“Evaluating Trajectory Collision Probability through Adaptive Importance Sampling for Safe Motion Planning,”</a> in <i>Robotics: Science and Systems</i>, Cambridge, Massachusetts, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SchmerlingPavone2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchmerlingPavone2017','abstract')">Abstract</a>]</p>
-<span id="abs_SchmerlingPavone2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This paper presents a tool for addressing a key component in many algorithms for planning robot trajectories under uncertainty: evaluation of the safety of a robot whose actions are governed by a closed-loop feedback policy near a nominal planned trajectory. We describe an adaptive importance sampling Monte Carlo framework that enables the evaluation of a given control policy for satisfaction of a probabilistic collision avoidance constraint which also provides an associated certificate of accuracy (in the form of a confidence interval). In particular this adaptive technique is well-suited to addressing the complexities of rigid-body collision checking applied to non-linear robot dynamics. As a Monte Carlo method it is amenable to parallelization for computational tractability, and is generally applicable to a wide gamut of simulatable systems, including alternative noise models. Numerical experiments demonstrating the effectiveness of the adaptive importance sampling procedure are presented and discussed.</p>
-</span>
-<span id="bib_SchmerlingPavone2017" class="bibtex noshow">
-	<pre>@inproceedings{SchmerlingPavone2017,
-  author = {Schmerling, E. and Pavone, M.},
-  title = {Evaluating Trajectory Collision Probability through Adaptive Importance Sampling for Safe Motion Planning},
-  booktitle = {{Robotics: Science and Systems}},
-  year = {2017},
-  address = {Cambridge, Massachusetts},
-  month = jul,
-  url = {https://arxiv.org/pdf/1609.05399.pdf},
-  owner = {schmrlng},
-  timestamp = {2018-01-16}
-}
-</pre>
-</span>
-<!-- <span id="key_SchmerlingPavone2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="MajumdarSinghEtAl2017">A. Majumdar, S. Singh, A. Mandlekar, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Majumdar.Singh.Mandlekar.Pavone.RSS17.pdf">“Risk-sensitive Inverse Reinforcement Learning via Coherent Risk Models,”</a> in <i>Robotics: Science and Systems</i>, Cambridge, Massachusetts, 2017.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('MajumdarSinghEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MajumdarSinghEtAl2017','abstract')">Abstract</a>]</p>
 <span id="abs_MajumdarSinghEtAl2017" class="abstract noshow">
@@ -2941,53 +2943,26 @@
  
 
 
-<span class="entry" id="EstradaJiangEtAl2017">M. A. Estrada, H. Jiang, B. Noll, E. W. Hawkes, M. Pavone, and M. R. Cutkosky, <a class="entry-title" href="../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf">“Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('EstradaJiangEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('EstradaJiangEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_EstradaJiangEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Free-flying robots have the potential to autonomously fulfill a wide range of tasks involving manipulation of objects in space. In this paper we study the design of a wrist mechanism for free-flying robots that are equipped with an adhesive gripper for attaching to objects and surfaces. The wrist and gripper allow the robots to apply moments in addition to forces, which increases their versatility for object manipulation. We apply grasp optimization to establish limitations on the forces/moments that the wrist can impart, subject to adhesion capabilities. Building on these results, we present an approach for tuning a passive wrist mechanism, or controlling an active wrist, to broaden the range of forces and moments that the robot can exert. Our theoretical insights and wrist designs are validated in simulations and on a planar micro-gravity test bed.</p>
+<span class="entry" id="SchmerlingPavone2017">E. Schmerling and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1609.05399.pdf">“Evaluating Trajectory Collision Probability through Adaptive Importance Sampling for Safe Motion Planning,”</a> in <i>Robotics: Science and Systems</i>, Cambridge, Massachusetts, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SchmerlingPavone2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchmerlingPavone2017','abstract')">Abstract</a>]</p>
+<span id="abs_SchmerlingPavone2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper presents a tool for addressing a key component in many algorithms for planning robot trajectories under uncertainty: evaluation of the safety of a robot whose actions are governed by a closed-loop feedback policy near a nominal planned trajectory. We describe an adaptive importance sampling Monte Carlo framework that enables the evaluation of a given control policy for satisfaction of a probabilistic collision avoidance constraint which also provides an associated certificate of accuracy (in the form of a confidence interval). In particular this adaptive technique is well-suited to addressing the complexities of rigid-body collision checking applied to non-linear robot dynamics. As a Monte Carlo method it is amenable to parallelization for computational tractability, and is generally applicable to a wide gamut of simulatable systems, including alternative noise models. Numerical experiments demonstrating the effectiveness of the adaptive importance sampling procedure are presented and discussed.</p>
 </span>
-<span id="bib_EstradaJiangEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{EstradaJiangEtAl2017,
-  author = {Estrada, M. A. and Jiang, H. and Noll, B. and Hawkes, E. W. and Pavone, M. and Cutkosky, M. R.},
-  title = {Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+<span id="bib_SchmerlingPavone2017" class="bibtex noshow">
+	<pre>@inproceedings{SchmerlingPavone2017,
+  author = {Schmerling, E. and Pavone, M.},
+  title = {Evaluating Trajectory Collision Probability through Adaptive Importance Sampling for Safe Motion Planning},
+  booktitle = {{Robotics: Science and Systems}},
   year = {2017},
-  address = {Singapore},
-  month = may,
-  url = {../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf},
-  owner = {bylard},
-  timestamp = {2017-03-07}
+  address = {Cambridge, Massachusetts},
+  month = jul,
+  url = {https://arxiv.org/pdf/1609.05399.pdf},
+  owner = {schmrlng},
+  timestamp = {2018-01-16}
 }
 </pre>
 </span>
-<!-- <span id="key_EstradaJiangEtAl2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="IchterSchmerlingEtAl2017">B. Ichter, E. Schmerling, A. Agha-mohammadi, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1607.06886.pdf">“Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on GPUs,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_IchterSchmerlingEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we present the PUMP (Parallel Uncertainty-aware Multiobjective Planning) algorithm for addressing the stochastic kinodynamic motion planning problem, whereby we seek a low-cost, dynamically-feasible motion plan subject to a constraint on collision probability (CP). As a departure from previous methods for chance-constrained motion planning, PUMP directly considers both CP and the optimization objective at equal priority when planning through the free configuration space, achieving an unprecedented combination of cost performance, certified safety, and speed. Planning is conducted through a massively parallel multiobjective search, here implemented with a particular application focus on GPU hardware. PUMP explores the configuration space while maintaining a Pareto optimal front of motion plans, considering cost and approximate collision probability. We introduce a novel particle-based CP approximation scheme, designed for efficient GPU implementation, which accounts for dependencies over the history of a trajectory execution. Upon termination of the exploration phase, PUMP performs a search over the Pareto optimal set of solution motion plans to identify the lowest cost motion plan that is certified to satisfy the CP constraint (according to an asymptotically exact estimator). We present numerical experiments for quadrotor planning wherein PUMP identifies solutions in  100 ms, evaluating over one hundred thousand partial plans through the course of its exploration phase. The results show that this multiobjective search achieves a lower motion plan cost, for the same collision probability constraint, compared to a safety buffer-based search heuristic and repeated RRT trials.</p>
-</span>
-<span id="bib_IchterSchmerlingEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{IchterSchmerlingEtAl2017,
-  author = {Ichter, B. and Schmerling, E. and Agha-mohammadi, A. and Pavone, M.},
-  title = {Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on {GPUs}},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2017},
-  address = {Singapore},
-  month = may,
-  url = {http://arxiv.org/pdf/1607.06886.pdf},
-  owner = {bylard},
-  timestamp = {2017-03-07}
-}
-</pre>
-</span>
-<!-- <span id="key_IchterSchmerlingEtAl2017" >
+<!-- <span id="key_SchmerlingPavone2017" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3023,26 +2998,53 @@
  
 
 
-<span class="entry" id="JorgensenChenEtAl2017">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.ICRC2017.pdf">“The Team Surviving Orienteers Problem: Routing Robots in Uncertain Environments with Survival Constraints,”</a> in <i>IEEE Int. Conf. on Robotic Computing</i>, Taichung, Taiwan, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_JorgensenChenEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we study the following multi-robot coordination problem: given a graph, where each edge is weighted by the probability of surviving while traversing it, find a set of paths for K robots that maximizes the expected number of nodes collectively visited, subject to constraints on the probability that each robot survives to its destination. We call this problem the Team Surviving Orienteers (TSO) problem. The TSO problem is motivated by scenarios where a team of robots must traverse a dangerous, uncertain environment, such as aid delivery in disaster or war zones. We present the TSO problem formally along with several variants, which represent "survivability-aware" counterparts for a wide range of multi-robot coordination problems such as vehicle routing, patrolling, and informative path planning. We propose an approximate greedy approach for selecting paths, and prove that the value of its output is bounded within a factor 1 - exp(-p_s/lambda) of the optimum where p_s is the per-robot survival probability threshold, and 1/lambda < 1 is the approximation factor of an oracle routine for the well-known orienteering problem. Our approach has linear time complexity in the team size and polynomial complexity in the graph size. Using numerical simulations, we verify that our approach is close to the optimum in practice and that it scales to problems with hundreds of nodes and tens of robots.</p>
+<span class="entry" id="IchterSchmerlingEtAl2017">B. Ichter, E. Schmerling, A. Agha-mohammadi, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1607.06886.pdf">“Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on GPUs,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_IchterSchmerlingEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we present the PUMP (Parallel Uncertainty-aware Multiobjective Planning) algorithm for addressing the stochastic kinodynamic motion planning problem, whereby we seek a low-cost, dynamically-feasible motion plan subject to a constraint on collision probability (CP). As a departure from previous methods for chance-constrained motion planning, PUMP directly considers both CP and the optimization objective at equal priority when planning through the free configuration space, achieving an unprecedented combination of cost performance, certified safety, and speed. Planning is conducted through a massively parallel multiobjective search, here implemented with a particular application focus on GPU hardware. PUMP explores the configuration space while maintaining a Pareto optimal front of motion plans, considering cost and approximate collision probability. We introduce a novel particle-based CP approximation scheme, designed for efficient GPU implementation, which accounts for dependencies over the history of a trajectory execution. Upon termination of the exploration phase, PUMP performs a search over the Pareto optimal set of solution motion plans to identify the lowest cost motion plan that is certified to satisfy the CP constraint (according to an asymptotically exact estimator). We present numerical experiments for quadrotor planning wherein PUMP identifies solutions in  100 ms, evaluating over one hundred thousand partial plans through the course of its exploration phase. The results show that this multiobjective search achieves a lower motion plan cost, for the same collision probability constraint, compared to a safety buffer-based search heuristic and repeated RRT trials.</p>
 </span>
-<span id="bib_JorgensenChenEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{JorgensenChenEtAl2017,
-  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
-  title = {The Team Surviving Orienteers Problem: Routing Robots in Uncertain Environments with Survival Constraints},
-  booktitle = {{IEEE Int. Conf. on Robotic Computing}},
+<span id="bib_IchterSchmerlingEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{IchterSchmerlingEtAl2017,
+  author = {Ichter, B. and Schmerling, E. and Agha-mohammadi, A. and Pavone, M.},
+  title = {Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on {GPUs}},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2017},
-  address = {Taichung, Taiwan},
-  month = apr,
-  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.ICRC2017.pdf},
+  address = {Singapore},
+  month = may,
+  url = {http://arxiv.org/pdf/1607.06886.pdf},
   owner = {bylard},
-  timestamp = {2018-04-10}
+  timestamp = {2017-03-07}
 }
 </pre>
 </span>
-<!-- <span id="key_JorgensenChenEtAl2017" >
+<!-- <span id="key_IchterSchmerlingEtAl2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="EstradaJiangEtAl2017">M. A. Estrada, H. Jiang, B. Noll, E. W. Hawkes, M. Pavone, and M. R. Cutkosky, <a class="entry-title" href="../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf">“Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('EstradaJiangEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('EstradaJiangEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_EstradaJiangEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Free-flying robots have the potential to autonomously fulfill a wide range of tasks involving manipulation of objects in space. In this paper we study the design of a wrist mechanism for free-flying robots that are equipped with an adhesive gripper for attaching to objects and surfaces. The wrist and gripper allow the robots to apply moments in addition to forces, which increases their versatility for object manipulation. We apply grasp optimization to establish limitations on the forces/moments that the wrist can impart, subject to adhesion capabilities. Building on these results, we present an approach for tuning a passive wrist mechanism, or controlling an active wrist, to broaden the range of forces and moments that the robot can exert. Our theoretical insights and wrist designs are validated in simulations and on a planar micro-gravity test bed.</p>
+</span>
+<span id="bib_EstradaJiangEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{EstradaJiangEtAl2017,
+  author = {Estrada, M. A. and Jiang, H. and Noll, B. and Hawkes, E. W. and Pavone, M. and Cutkosky, M. R.},
+  title = {Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2017},
+  address = {Singapore},
+  month = may,
+  url = {../wp-content/papercite-data/pdf/Estrada.Jiang.Noll.ea.ICRA17.pdf},
+  owner = {bylard},
+  timestamp = {2017-03-07}
+}
+</pre>
+</span>
+<!-- <span id="key_EstradaJiangEtAl2017" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3070,6 +3072,33 @@
 </pre>
 </span>
 <!-- <span id="key_IchterSchmerlingEtAl2017b" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="JorgensenChenEtAl2017">S. Jorgensen, R. H. Chen, M. B. Milam, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.ICRC2017.pdf">“The Team Surviving Orienteers Problem: Routing Robots in Uncertain Environments with Survival Constraints,”</a> in <i>IEEE Int. Conf. on Robotic Computing</i>, Taichung, Taiwan, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenChenEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenChenEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_JorgensenChenEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we study the following multi-robot coordination problem: given a graph, where each edge is weighted by the probability of surviving while traversing it, find a set of paths for K robots that maximizes the expected number of nodes collectively visited, subject to constraints on the probability that each robot survives to its destination. We call this problem the Team Surviving Orienteers (TSO) problem. The TSO problem is motivated by scenarios where a team of robots must traverse a dangerous, uncertain environment, such as aid delivery in disaster or war zones. We present the TSO problem formally along with several variants, which represent "survivability-aware" counterparts for a wide range of multi-robot coordination problems such as vehicle routing, patrolling, and informative path planning. We propose an approximate greedy approach for selecting paths, and prove that the value of its output is bounded within a factor 1 - exp(-p_s/lambda) of the optimum where p_s is the per-robot survival probability threshold, and 1/lambda < 1 is the approximation factor of an oracle routine for the well-known orienteering problem. Our approach has linear time complexity in the team size and polynomial complexity in the graph size. Using numerical simulations, we verify that our approach is close to the optimum in practice and that it scales to problems with hundreds of nodes and tens of robots.</p>
+</span>
+<span id="bib_JorgensenChenEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{JorgensenChenEtAl2017,
+  author = {Jorgensen, S. and Chen, R.H. and Milam, M.B. and Pavone, M.},
+  title = {The Team Surviving Orienteers Problem: Routing Robots in Uncertain Environments with Survival Constraints},
+  booktitle = {{IEEE Int. Conf. on Robotic Computing}},
+  year = {2017},
+  address = {Taichung, Taiwan},
+  month = apr,
+  url = {../wp-content/papercite-data/pdf/Jorgensen.Chen.Milam.Pavone.ICRC2017.pdf},
+  owner = {bylard},
+  timestamp = {2018-04-10}
+}
+</pre>
+</span>
+<!-- <span id="key_JorgensenChenEtAl2017" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3657,6 +3686,34 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
+<span class="entry" id="AllenPavone2015">R. Allen and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Allen.Pavone.ICRA15.pdf">“Toward A Real-Time Framework for Solving the Kinodynamic Motion Planning Problem,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Seattle, Washington, 2015.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('AllenPavone2015','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('AllenPavone2015','abstract')">Abstract</a>]</p>
+<span id="abs_AllenPavone2015" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> n this paper we propose a framework combining techniques from sampling-based motion planning, machine learning, and trajectory optimization to address the kinody- namic motion planning problem in real-time environments. This framework relies on a look-up table that stores precomputed optimal solutions to boundary value problems (assuming no obstacles), which form the directed edges of a precomputed motion planning roadmap. A sampling-based motion planning algorithm then leverages such a precomputed roadmap to compute online an obstacle-free trajectory. Machine learning techniques are employed to minimize the number of online solutions to boundary value problems required to compute the neighborhoods of the start state and goal regions. This approach is demonstrated to reduce online planning times up to six orders of magnitude. Simulation results are presented and discussed. Problem-specific framework modifications are then discussed that would allow further computation time reductions.</p>
+</span>
+<span id="bib_AllenPavone2015" class="bibtex noshow">
+	<pre>@inproceedings{AllenPavone2015,
+  author = {Allen, R. and Pavone, M.},
+  title = {Toward A Real-Time Framework for Solving the Kinodynamic Motion Planning Problem},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2015},
+  address = {Seattle, Washington},
+  doi = {10.1109/ICRA.2015.7139288},
+  month = may,
+  owner = {bylard},
+  timestamp = {2017-01-28},
+  url = {../wp-content/papercite-data/pdf/Allen.Pavone.ICRA15.pdf}
+}
+</pre>
+</span>
+<!-- <span id="key_AllenPavone2015" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="SchmerlingJansonEtAl2015">E. Schmerling, L. Janson, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1403.2483.pdf">“Optimal Sampling-Based Motion Planning under Differential Constraints: the Driftless Case,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Seattle, Washington, 2015.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SchmerlingJansonEtAl2015','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchmerlingJansonEtAl2015','abstract')">Abstract</a>]</p>
 <span id="abs_SchmerlingJansonEtAl2015" class="abstract noshow">
@@ -3707,34 +3764,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 </pre>
 </span>
 <!-- <span id="key_SinghSchmerlingEtAl2015" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="AllenPavone2015">R. Allen and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Allen.Pavone.ICRA15.pdf">“Toward A Real-Time Framework for Solving the Kinodynamic Motion Planning Problem,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Seattle, Washington, 2015.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('AllenPavone2015','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('AllenPavone2015','abstract')">Abstract</a>]</p>
-<span id="abs_AllenPavone2015" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> n this paper we propose a framework combining techniques from sampling-based motion planning, machine learning, and trajectory optimization to address the kinody- namic motion planning problem in real-time environments. This framework relies on a look-up table that stores precomputed optimal solutions to boundary value problems (assuming no obstacles), which form the directed edges of a precomputed motion planning roadmap. A sampling-based motion planning algorithm then leverages such a precomputed roadmap to compute online an obstacle-free trajectory. Machine learning techniques are employed to minimize the number of online solutions to boundary value problems required to compute the neighborhoods of the start state and goal regions. This approach is demonstrated to reduce online planning times up to six orders of magnitude. Simulation results are presented and discussed. Problem-specific framework modifications are then discussed that would allow further computation time reductions.</p>
-</span>
-<span id="bib_AllenPavone2015" class="bibtex noshow">
-	<pre>@inproceedings{AllenPavone2015,
-  author = {Allen, R. and Pavone, M.},
-  title = {Toward A Real-Time Framework for Solving the Kinodynamic Motion Planning Problem},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2015},
-  address = {Seattle, Washington},
-  doi = {10.1109/ICRA.2015.7139288},
-  month = may,
-  owner = {bylard},
-  timestamp = {2017-01-28},
-  url = {../wp-content/papercite-data/pdf/Allen.Pavone.ICRA15.pdf}
-}
-</pre>
-</span>
-<!-- <span id="key_AllenPavone2015" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -4576,34 +4605,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
-<span class="entry" id="SmithPavoneEtAl2008">S. L. Smith, M. Pavone, F. Bullo, and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf">“Dynamic Vehicle Routing with Heterogeneous Demands,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Cancun, Mexico, 2008.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SmithPavoneEtAl2008','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SmithPavoneEtAl2008','abstract')">Abstract</a>]</p>
-<span id="abs_SmithPavoneEtAl2008" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we study a variation of the Dynamic Traveling Repairperson Problem (DTRP) in which there are two classes of demands; high priority, and low priority. In the problem, demands arrive in the environment randomly over time and assume a random location and on-site service requirement. A service vehicle must travel to each demand location and provide the required on-site service. The quality of service provided to each class of demands is measured by the expected delay between a demand’s arrival and its service completion. The goal is to design policies for the service vehicle which minimize a convex combination of the delays for each class. We provide a lower bound on the achievable delay for this problem, and propose a policy which performs within a known constant factor of the optimal in heavy load (i.e., when the fraction of time the service vehicle spends performing on-site service approaches one). The problem studied in this paper is analogous to the multi-class queuing problem in classical queuing theory.</p>
-</span>
-<span id="bib_SmithPavoneEtAl2008" class="bibtex noshow">
-	<pre>@inproceedings{SmithPavoneEtAl2008,
-  author = {Smith, S. L. and Pavone, M. and Bullo, F. and Frazzoli, E.},
-  title = {Dynamic Vehicle Routing with Heterogeneous Demands},
-  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
-  year = {2008},
-  address = {Cancun, Mexico},
-  doi = {10.1109/CDC.2008.4739284},
-  month = dec,
-  owner = {bylard},
-  timestamp = {2017-01-28},
-  url = {../wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf}
-}
-</pre>
-</span>
-<!-- <span id="key_SmithPavoneEtAl2008" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="PavoneFrazzoliEtAl2008">M. Pavone, E. Frazzoli, and F. Bullo, <a class="entry-title" href="../wp-content/papercite-data/pdf/Pavone.Frazzoli.ea.CDC08.pdf">“Distributed Policies for Equitable Partitioning: Theory and Applications,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Cancun, Mexico, 2008.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('PavoneFrazzoliEtAl2008','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('PavoneFrazzoliEtAl2008','abstract')">Abstract</a>]</p>
 <span id="abs_PavoneFrazzoliEtAl2008" class="abstract noshow">
@@ -4625,6 +4626,34 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 </pre>
 </span>
 <!-- <span id="key_PavoneFrazzoliEtAl2008" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SmithPavoneEtAl2008">S. L. Smith, M. Pavone, F. Bullo, and E. Frazzoli, <a class="entry-title" href="../wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf">“Dynamic Vehicle Routing with Heterogeneous Demands,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Cancun, Mexico, 2008.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SmithPavoneEtAl2008','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SmithPavoneEtAl2008','abstract')">Abstract</a>]</p>
+<span id="abs_SmithPavoneEtAl2008" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we study a variation of the Dynamic Traveling Repairperson Problem (DTRP) in which there are two classes of demands; high priority, and low priority. In the problem, demands arrive in the environment randomly over time and assume a random location and on-site service requirement. A service vehicle must travel to each demand location and provide the required on-site service. The quality of service provided to each class of demands is measured by the expected delay between a demand’s arrival and its service completion. The goal is to design policies for the service vehicle which minimize a convex combination of the delays for each class. We provide a lower bound on the achievable delay for this problem, and propose a policy which performs within a known constant factor of the optimal in heavy load (i.e., when the fraction of time the service vehicle spends performing on-site service approaches one). The problem studied in this paper is analogous to the multi-class queuing problem in classical queuing theory.</p>
+</span>
+<span id="bib_SmithPavoneEtAl2008" class="bibtex noshow">
+	<pre>@inproceedings{SmithPavoneEtAl2008,
+  author = {Smith, S. L. and Pavone, M. and Bullo, F. and Frazzoli, E.},
+  title = {Dynamic Vehicle Routing with Heterogeneous Demands},
+  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
+  year = {2008},
+  address = {Cancun, Mexico},
+  doi = {10.1109/CDC.2008.4739284},
+  month = dec,
+  owner = {bylard},
+  timestamp = {2017-01-28},
+  url = {../wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf}
+}
+</pre>
+</span>
+<!-- <span id="key_SmithPavoneEtAl2008" >
 	<b>Keywords</b>:
 	
 </span> --></li>
