@@ -101,8 +101,8 @@ scholar:
   style: ieee-asl
   source: ./_bibliography
   bibliography: ASL_Bib.bib
-  sort_by: year
-  order: descending
+  sort_by: year, month
+  order: descending, descending
   group_by: type
   type_order: [article,inproceedings,techreport,thesis]
   type_aliases: {Incollection: techreport}
