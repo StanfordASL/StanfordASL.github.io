@@ -1,6 +1,6 @@
 ---
 title:  "Autonomous Mobility-on-Demand Systems for Future Urban Mobility"
-speaker: "Marco Pavone"
+speaker: "Mauro Salazar"
 seq_number: 1
 start_date:   2019-10-27 09:00:00
 end_date:   2019-10-27 09:30:00
