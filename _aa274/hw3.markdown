@@ -2,7 +2,7 @@
 title:  "Homework 3"
 seq_number: 3
 posted_date:   2019-10-18 00:00:00
-due_date:   2019-10-29 23:59:59
+due_date:   2019-11-05 23:59:59
 pdf_link: "/aa274/pdfs/homework/hw3.pdf"
 code_link: "https://github.com/PrinciplesofRobotAutonomy/Course1_Fall19_HW3"
 md_group: "assignments"
