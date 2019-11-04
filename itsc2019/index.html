@@ -73,7 +73,11 @@ order: 1
                     {{talk.start_date | date: "%R"}} - {{talk.end_date | date: "%R"}}
                 </td>
                 <td class="tg-vnl4">
-                    {{talk.title}}
+                    {% if talk.pdf_url %}
+                      <a href="{{talk.pdf_url}}">{{talk.title}}</a>
+                    {% else %}
+                      {{talk.title}}
+                    {% endif %}
                 </td>
                 <td class="tg-vnl4">
                     {{talk.content}}
@@ -81,7 +85,7 @@ order: 1
               </tr>
               {% endfor %}
           </table>
-
+          <p><b>Update:</b> Michal Čáp and Salomon Wollenstein-Betech had to cancel last-minute due to unforeseen circumstances.</p>
         </div>
       </div>
       <div class="row">
