@@ -1,5 +1,5 @@
 ---
-title:  "Homework 3"
+title:  "Homework #3"
 seq_number: 3
 posted_date:   2019-10-18 00:00:00
 due_date:   2019-11-05 23:59:59
