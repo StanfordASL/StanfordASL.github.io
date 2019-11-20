@@ -4,7 +4,7 @@ seq_number: 5
 posted_date:   2019-11-18 00:00:00
 due_date:   2019-11-22 23:59:59
 pdf_link: "/aa274/pdfs/homework/project_check_in.pdf"
-code_link: "https://github.com/StanfordASL/asl_turtlebot/tree/project"
+code_link: "https://github.com/StanfordASL/asl_turtlebot"
 md_group: "assignments"
 ---
 
