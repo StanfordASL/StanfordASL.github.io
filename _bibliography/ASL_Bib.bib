@@ -2491,13 +2491,11 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {{UAV} Aircraft Carrier Landing Using {CFD}-Based Model Predictive Control},
   booktitle    = proc_AIAA_Scitech,
   year         = {2020},
-  note         = {In Press},
   abstract = {The control problem associated with autonomous aircraft carrier landings for UAVs is challenging due to requirements on safety, high-performance operation, and uncertain and highly dynamic environments. This work proposes a control scheme for such problems that enables safe operation of the UAV at the limits of its performance by utilizing a model predictive control (MPC) approach. While real-time computation requirements typically limit the fidelity of the models used in optimization-based control, in this work it is demonstrated that high-fidelity computational fluid dynamics (CFD) models can be used within an MPC framework via the construction of a projection-based reduced order model (ROM). An application of a CFD-based MPC scheme to the glideslope tracking problem is then developed to demonstrate the effectiveness of the proposed approach.},
   address  = {Orlando, Florida},
   month    = jan,
-  keywords     = {press},
   owner        = {jlorenze},
-  timestamp    = {2019-10-21},
+  timestamp    = {2019-12-02},
 }
 
 @Article{AllenPavone2018,
@@ -2668,19 +2666,19 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-07-25},
 }
 
-@InProceedings{ChenTamEtAl2018,
+@Inproceedings{ChenTamEtAl2018,
   author       = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
   title        = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
   booktitle    = proc_WAFR,
   year         = {2018},
-  note         = {Submitted},
+  note         = {In Press},
   abstract = {Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.},
   address  = {Merida, Mexico},
   month    = oct,
   url      = {../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {bylard},
-  timestamp    = {2018-07-24},
+  timestamp    = {2019-12-21},
 }
 
 @Inproceedings{SinghSindhwaniEtAl2018,
@@ -3290,6 +3288,30 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   owner     = {jlorenze},
   timestamp = {2019-11-27},
   year      = {2019},
+}
+
+@Inproceedings{McClellanLorenzettiEtAl2020,
+  author      = {McClellan, A. and Lorenzetti, J. and Pavone, M. and Farhat, C.},
+  title       = {Projection-based Model Order Reduction for Flight Dynamics and Model Predictive Control},
+  booktitle   = proc_AIAA_Scitech,
+  year        = {2020},
+  address = {Orlando, Florida},
+  month   = jan,
+  owner       = {jlorenze},
+  timestamp   = {2019-12-02},
+}
+
+@Inproceedings{BanerjeeEtAl2020,
+  author    = {Banerjee, S. and Lew, T. and Bonalli, R. and Alfaadhel, A. and Alomar, I. A. and Shageer, H. M. and Pavone, M.},
+  title     = {Learning-based Warm-Starting for Fast Sequential Convex Programming and Trajectory Optimization},
+  booktitle = proc_IEEE_AC,
+  year      = {2020},
+  abstract  = {Sequential convex programming (SCP) has recently emerged as an effective tool to quickly compute locally optimal trajectories for robotic and aerospace systems alike, even when initialized with an unfeasible trajectory. In this paper, by focusing on the Guaranteed Sequential Trajectory Optimization (GuSTO) algorithm, we propose a methodology to accelerate SCP-based algorithms through warm-starting. Specifically, leveraging a dataset of expert trajectories from GuSTO, we devise a neural-network-based approach to predict a locally optimal state and control trajectory, which is used to warm-start the SCP algorithm. This approach allows one to retain all the theoretical guarantees of GuSTO while simultaneously taking advantage of the fast execution of the neural network and reducing the time and number of iterations required for GuSTO to converge. The result is a faster and theoretically guaranteed trajectory optimization algorithm.},
+  address   = {Big Sky, Montana},
+  month = mar,
+  url   = {../wp-content/papercite-data/pdf/Banerjee.Lew.Bonalli.ea.AeroConf20.pdf},
+  owner     = {lew},
+  timestamp = {2020-01-09},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
