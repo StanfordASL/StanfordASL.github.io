@@ -1,6 +1,6 @@
 <!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-    <div class="container">
+<nav id="mainNav" class="navbar navbar-default navbar-custom"> <!-- navbar-fixed-top -->
+    <div class="container navbar-items">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="row">
             <div class="col-md-3">
@@ -12,7 +12,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="/">
-                        <img src="{{site.url}}{{site.baseurl}}/img/ASL_Logo.svg" alt="">
+                        <img src="{{site.url}}{{site.baseurl}}/img/ASL_Logo_White.png" alt="">
                     </a>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                             <li class="hidden">
                                 <a href="#page-top"></a>
                             </li>
-                            {% if "/" == page.url %}
+                            <!-- {% if "/" == page.url %}
                             <li class="page-scroll active">
                                 <a href="/">Home</a>
                             </li>
@@ -32,7 +32,7 @@
                             <li class="page-scroll">
                                 <a href="/">Home</a>
                             </li>
-                            {% endif %}
+                            {% endif %} -->
                             {% assign sorted_pages = site.pages | sort:"order" %}
                             {% for node in sorted_pages %}
                                 {% if "navigation" == node.group %}

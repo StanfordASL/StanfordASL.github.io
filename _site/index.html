@@ -14,35 +14,25 @@
     <meta name="description" content="The Autonomous Systems Lab (ASL) develops methodologies for the analysis, design, and control of autonomous systems, with a particular emphasis on large-scale robotic networks and autonomous aerospace vehicles. The lab combines expertise from control theory, robotics, optimization, and operations research to develop the theoretical foundations for networked autonomous systems operating in uncertain, rapidly-changing, and potentially adversarial environments.
 ">
     <!-- Bootstrap Core CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
 
 	<!-- JabRef CSS -->
-	<link rel="stylesheet" href="https://stanfordasl.github.io/css/JabRef.css">
+	<link rel="stylesheet" href="http://localhost:4000/css/JabRef.css">
 	 
     <link rel="canonical" href="http://asl.stanford.edu/"> 
     <!-- Not required -->
-    <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="https://stanfordasl.github.io /feed.xml "> -->
+    <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="http://localhost:4000 /feed.xml "> -->
     <!-- Custom Fonts -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     
     <!-- My CSS -->
-    <link rel="stylesheet" href="https://stanfordasl.github.io/css/my.css"> 
+    <link rel="stylesheet" href="http://localhost:4000/css/my.css"> 
 
     <!-- Analytics -->
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124680200-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-124680200-1');
-    </script>
     
 
     <!-- Favicons -->
@@ -62,8 +52,8 @@
 
 <body id="page-top" class="index">
   <!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-    <div class="container">
+<nav id="mainNav" class="navbar navbar-default navbar-custom"> <!-- navbar-fixed-top -->
+    <div class="container navbar-items">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="row">
             <div class="col-md-3">
@@ -75,7 +65,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="/">
-                        <img src="https://stanfordasl.github.io/img/ASL_Logo.svg" alt="">
+                        <img src="http://localhost:4000/img/ASL_Logo_White.png" alt="">
                     </a>
                 </div>
             </div>
@@ -87,11 +77,11 @@
                             <li class="hidden">
                                 <a href="#page-top"></a>
                             </li>
-                            
+                            <!-- 
                             <li class="page-scroll active">
                                 <a href="/">Home</a>
                             </li>
-                            
+                             -->
                             
                             
                                 
@@ -135,15 +125,15 @@
                                 
                             
                                 
+                            
+                                
+                            
+                                
                                     
                                     <li class="page-scroll">
                                         <a href="/publications/">Publications</a>
                                     </li>
                                     
-                                
-                            
-                                
-                            
                                 
                             
                                 
@@ -165,23 +155,7 @@
                                 
                                     
                                     <li class="page-scroll">
-                                        <a href="/press/">In the Press</a>
-                                    </li>
-                                    
-                                
-                            
-                                
-                                    
-                                    <li class="page-scroll">
-                                        <a href="/gallery/">Gallery</a>
-                                    </li>
-                                    
-                                
-                            
-                                
-                                    
-                                    <li class="page-scroll">
-                                        <a href="/contact/">Contact</a>
+                                        <a href="/contact/">FAQ</a>
                                     </li>
                                     
                                 
@@ -200,11 +174,10 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <!--<img src=https://stanfordasl.github.io/img/GreatLeaderC.svg alt="Chairman Marco">-->
+        <div class="col-md-12">
           <div id="carousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ol id="carouselDots" class="carousel-indicators">
+            <!-- <ol id="carouselDots" class="carousel-indicators">
               
               
               
@@ -222,17 +195,7 @@
               
               
               
-              
-              <li data-target="#carousel" data-slide-to="3"></li>
-              
-              
-              
-              
-              <li data-target="#carousel" data-slide-to="4"></li>
-              
-              
-              
-            </ol>
+            </ol> -->
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
@@ -241,83 +204,118 @@
               
               <div class="item active">
               
-                <img src=".//img/slides/lab_photo.jpg" alt="Lab Members">
-                <div id="carouselText" class="carousel-caption">
-                  Lab Members
-                </div>
-              </div>
-                
-                
-              
-              <div class="item">
-              
-                <img src=".//img/slides/NYSim-slider.jpg" alt="Autonomous Mobility-on-Demand">
-                <div id="carouselText" class="carousel-caption">
+                <img src=".//img/slides/IMG_TRANSP_CITY_1000x500px.jpg" alt="Autonomous Mobility-on-Demand">
+                <!-- <div id="carouselText" class="carousel-caption">
                   Autonomous Mobility-on-Demand
-                </div>
+                </div> -->
               </div>
-                
-                
+              
+              
               
               <div class="item">
               
-                <img src=".//img/slides/Kino_fencing_slider.jpg" alt="Kinodynamic Motion Planning">
-                <div id="carouselText" class="carousel-caption">
-                  Kinodynamic Motion Planning
-                </div>
-              </div>
-                
-                
-              
-              <div class="item">
-              
-                <img src=".//img/slides/Freeflyers-slider_s.jpg" alt="Space Robotics">
-                <div id="carouselText" class="carousel-caption">
+                <img src=".//img/slides/IMG_LAB_WORKING_1000x500px.jpg" alt="Space Robotics">
+                <!-- <div id="carouselText" class="carousel-caption">
                   Space Robotics
-                </div>
+                </div> -->
               </div>
-                
-                
+              
+              
               
               <div class="item">
               
-                <img src=".//img/slides/HHonPhobosShort-1.jpg" alt="Surface Mobility on Small Bodies">
-                <div id="carouselText" class="carousel-caption">
+                <img src=".//img/slides/IMG_SPACE_ROBOT_1000x500px.jpg" alt="Surface Mobility on Small Bodies">
+                <!-- <div id="carouselText" class="carousel-caption">
                   Surface Mobility on Small Bodies
-                </div>
+                </div> -->
               </div>
-                
-                
+              
+              
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+              </div>
             </div>
+            <div id="carousel-text">We design methodologies for the analysis and control of future autonomous systems.</div>
           </div>
-          <h1 id='title'>Welcome to the Stanford Autonomous Systems Lab!</h1>
+        </div>
+      
+      <div class="row">
+        <div class="col-md-6" style="margin-top: 40px;">
+          <h1 id='title'>About Us</h1>
           <p>The Autonomous Systems Lab (ASL) develops methodologies for the analysis, design, and control of autonomous systems, with a particular emphasis on large-scale robotic networks and autonomous aerospace vehicles. The lab combines expertise from control theory, robotics, optimization, and operations research to develop the theoretical foundations for networked autonomous systems operating in uncertain, rapidly-changing, and potentially adversarial environments.</p>
-        </div>
 
-            <div class="col-md-4 twitter-feed">
-              <a class="twitter-timeline" data-height="600" data-dnt="true" href="https://twitter.com/StanfordASL?ref_src=twsrc%5Etfw">Tweets by StanfordASL</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+              <!-- <div class="col-md-4 twitter-feed">
+                <a class="twitter-timeline" data-height="600" data-dnt="true" href="https://twitter.com/StanfordASL?ref_src=twsrc%5Etfw">Tweets by StanfordASL</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+              </div> -->
+        </div>
+        <div class="col-md-6">
+          <img src="http://localhost:4000/img/LAB_2020_Def.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="blue-stripe">
+      <div class="container">
+        <div class="stripe-content">
+          <h1 id='title' class="white-text">Latest Results</h1>
+          <p class="white-text">The lab</p>
+          <p class="white-text">The lab</p>
+        </div>
+      </div>
+    </div>
+    <div class="white-stripe">
+      <div class="container">
+        <div class="stripe-content">
+          <h1 id='title'>Selected Press Coverage</h1>
+          <div id='press-row'>
+            <!-- This weird tag closing is to avoid whitespaces between the links. -->
+            <a href="https://www.youtube.com/watch?v=PrtK3rNoe4w" target="_blank" style="background-image: url(http://localhost:4000/img/ASL_twitter.png);"></a
+            ><a href="https://www.bbc.com/news/av/technology-36774315/why-fencing-with-a-drone-could-make-it-smarter" target="_blank" style="background-image: url(http://localhost:4000/img/ASL_twitter.png);"></a
+            ><a href="https://www.sciencechannel.com/tv-shows/spaces-deepest-secrets-2/" target="_blank" style="background-image: url(http://localhost:4000/img/ASL_twitter.png);"></a
+            ><a href="https://www.economist.com/science-and-technology/2016/04/23/drones-club" target="_blank" style="background-image: url(http://localhost:4000/img/ASL_twitter.png);"></a
+            ><a href="https://www.forbes.com/sites/chunkamui/2016/02/08/the-virtuous-cycle-between-driverless-cars-electric-vehicles-and-car-sharing-services/#3cb9dd767143" target="_blank" style="background-image: url(http://localhost:4000/img/ASL_twitter.png);"></a
+            ><a href="6) https://engineering.stanford.edu/magazine/article/hedgehog-guide-asteroids-and-things-whirl-around-solar-system" target="_blank" style="background-image: url(http://localhost:4000/img/ASL_twitter.png);"></a>
             </div>
           </div>
         </div>
-      </header>
-      <!--
+      </div>
+    </div>
+    <div class="blue-stripe">
+      <div class="container">
+        <div class="row" style="margin-top: 24px;">
+          <div class="col-md-6 white-text" style="margin-top: 35px;">
+            <h1 id='title' class="white-text">Contact Us</h1>
+            <p>Autonomous Systems Laboratory<br>
+            Stanford University<br>
+            Department of Aeronautics & Astronautics<br>
+            William F. Durand Building, Rm. 009<br>
+            496 Lomita Mall<br>
+            Stanford, CA 94305-4035</p>
+          </div>
+          <div class="col-md-6 hide-on-med-width">
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.4220903314895!2d-122.17454608469227!3d37.42713237982424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a83be32f1%3A0x48efc5aee5c8f3e9!2s496+Lomita+Mall%2C+Stanford%2C+CA+94305!5e0!3m2!1sen!2sus!4v1489536877239" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--
 The website should work without any of the JS below. -F
 -->
 
 <!-- jQuery -->
-<script src="https://stanfordasl.github.io/js/jquery.min.js"></script>
+<script src="http://localhost:4000/js/jquery.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="https://stanfordasl.github.io/js/bootstrap.min.js"></script>
+<script src="http://localhost:4000/js/bootstrap.min.js"></script>
 <!-- Plugin JavaScript -->
 <!-- <script src="js/jquery.easing.min.js"></script> -->
 <!-- Contact Form JavaScript -->
@@ -326,9 +324,9 @@ The website should work without any of the JS below. -F
 <!-- Custom Theme JavaScript -->
 <!-- <script src="js/freelancer.min.js"></script> -->
 <!-- JabRef (Toggling info on Publications Page) -->
-<script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
+<script src="http://localhost:4000/js/JabRef_QuickSearch.js"></script>
 
-      <!-- Footer -->
+  <!-- Footer -->
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
@@ -367,8 +365,15 @@ $( window ).resize(function() {
 });
 </script>
 
-<footer class="copyright-text footer">
-© 2018 - 2019 Autonomous Systems Lab
+<footer class="footer">
+<div id="social-icons">
+  <a href="https://twitter.com/stanfordasl" target="_blank"><img src="http://localhost:4000/img/ASL_twitter.png" alt=""></a>
+  <a href="https://www.instagram.com/stanfordasl" target="_blank"><img src="http://localhost:4000/img/ASL_instagram.png" alt=""></a>
+  <a href="https://github.com/StanfordASL" target="_blank"><img src="http://localhost:4000/img/ASL_github.png" alt=""></a>
+</div>
+<div class="copyright-text">
+  © Autonomous Systems Lab 2020. All rights reserved.
+</div>
 </footer>
-    </body>
-    </html>
+</body>
+</html>

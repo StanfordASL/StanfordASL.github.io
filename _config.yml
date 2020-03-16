@@ -42,7 +42,7 @@ include: ['aa274', 'aa274_win1819', 'aa203', 'ITSC2019']
 
 collections:
   slides:
-  press:
+  # press:
   faqs:
     output: true
     permalink: /:collection/:title/
@@ -52,12 +52,12 @@ collections:
   people:
     output: true
     permalink: /:collection/:title/
-  press:
-    output: true
-    permalink: /:collection/:title/
-  gallery:
-    output: true
-    permalink: /:collection/:title/
+  # press:
+  #   output: true
+  #   permalink: /:collection/:title/
+  # gallery:
+  #   output: true
+  #   permalink: /:collection/:title/
   # AA 274 file locations.
   aa274:
     output: false
@@ -87,15 +87,15 @@ defaults:
       imgurl: /img/projects/
   - scope:
       path: ""
-      type: press
-    values:
-      imgurl: /img/press/
-  - scope:
-      path: ""
       type: slides
     values:
       imgurl: /img/slides/
-
+  # - scope:
+  #     path: ""
+  #     type: press
+  #   values:
+  #     imgurl: /img/press/
+  
 
 scholar:
   style: ieee-asl
