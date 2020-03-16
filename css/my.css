@@ -251,9 +251,18 @@ b.keyword-title {
 
 /*.section-even {background: #fafafa;} */
 
+@media (max-width: 525px) {
+  .carousel-overtext {
+    display: none !important;
+  }
+}
+
 @media (max-width: 992px) {
   .hide-on-med-width {
     display: none;
+  }
+  .carousel-overtext {
+    margin-right: 15% !important;
   }
 }
 
@@ -277,7 +286,9 @@ b.keyword-title {
     font-size: 14pt !important;
     font-weight: 300 !important;
   }
-  #carousel-text {
+  .carousel-overtext {
+    left: 10% !important;
+    bottom: 10% !important;
     font-size: 14pt !important;
   }
 
@@ -406,7 +417,8 @@ b.keyword-title {
 
 .carousel-inner > .item > img {
     margin: 0 auto;
-    height: 500px;
+    max-height: 500px;
+    /*height: 500px;*/
 }
 
 .carousel-control.right {
@@ -416,11 +428,14 @@ b.keyword-title {
   background-image: none;
 }
 
-#carousel-text {
+.carousel-overtext {
   position: absolute;
-  margin-right: 15px;
-  bottom: 100px;
-  font-size: 30pt;
+  margin-right: 32%;
+  left: 15%;
+  padding-left: 4px;
+  padding-right: 4px;
+  bottom: 20%;
+  font-size: 18pt;
   font-weight: 600;
   color: #4D4F53;
   background: rgba(255, 255, 255); /*For compatibility with older browsers.*/
