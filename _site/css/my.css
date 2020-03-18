@@ -34,15 +34,19 @@
 }
 
 .blue-stripe {
-  width: 100%;
+  width: 1280px;
   height: 320px;
   background-color: #3265AC;
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 .white-stripe {
-  width: 100%;
+  width: 1280px;
   height: 320px;
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .stripe-content {
@@ -255,6 +259,12 @@ b.keyword-title {
   .carousel-overtext {
     display: none !important;
   }
+
+  #press-row a {
+    width: 125px !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -263,6 +273,19 @@ b.keyword-title {
   }
   .carousel-overtext {
     margin-right: 15% !important;
+  }
+
+  #twitter-widget-0 {
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .blue-stripe {
+    width: 100%;
+  }
+  .white-stripe {
+    width: 100%;
   }
 }
 
@@ -343,9 +366,9 @@ b.keyword-title {
   }
 
   /* Twitter */
-  .twitter-feed {
+  /*.twitter-feed {
     display: none;
-  }
+  }*/
 
   .hide-on-mobile {
     display: none;
@@ -451,7 +474,7 @@ b.keyword-title {
   /*margin-right: 10px;*/
   margin-bottom: 10px;
   background-size: contain;
-  background-position: left center;
+  background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
 }
