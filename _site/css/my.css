@@ -157,6 +157,10 @@
   background-color: transparent;
 }
 
+.twitter-feed {
+  text-align: center;
+}
+
 /*Link colors*/
 a, a:hover {
   color: #494949; 
@@ -164,6 +168,11 @@ a, a:hover {
 
 a:link, a:active, a:focus {
   color: #222222;
+}
+
+a.white-link, a.white-link:active, a.white-link:focus {
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 li > span >a:link, a:active, a:focus, .entry-title {
@@ -455,14 +464,25 @@ b.keyword-title {
   position: absolute;
   margin-right: 32%;
   left: 15%;
-  padding-left: 4px;
-  padding-right: 4px;
   bottom: 20%;
   font-size: 18pt;
   font-weight: 600;
+}
+
+.carousel-overtext span {
+  display: inline;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 2.625px;
+  padding-top: 2.625px;
+
+  background-color: rgb(255, 255, 255); /*For compatibility with older browsers.*/
+  background-color: rgba(255, 255, 255, 0.85);
   color: #4D4F53;
-  background: rgba(255, 255, 255); /*For compatibility with older browsers.*/
-  background: rgba(255, 255, 255, 0.85);
+
+  /* Needs prefixing */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 #press-row {
