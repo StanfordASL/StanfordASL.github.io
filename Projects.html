@@ -14,15 +14,17 @@ order: 2
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Projects</h1>
+          <img src="{{site.url}}{{site.baseurl}}/img/projects/Strip_1_1000x500.jpg" alt="">
+          <p class="carousel-overtext"><span>We use theoretical insights to devise practical, computationally-efficient, and provably-correct algorithms for field deployment.</span></p>
         </div>
       </div>
-      <div class="row">
+      <div class="row" style="margin-top: 40px; margin-bottom: 40px;">
         <div class="col-md-12">
           <!-- Introduction -->
           {% for project in site.projects %}
           {% if project.class == "Intro" %}
-          {{ project.content}}
+          <h1 id='title'>{{ project.title }}</h1>
+          {{ project.content }}
           {% endif %}
           {% endfor %}
         </div>
@@ -30,7 +32,6 @@ order: 2
       <!-- Main Projects -->
       {% for project in site.projects %}
       {% if project.class == "core" %}
-      <hr />
       <div class="row">
         <div class="col-md-12">
           <h1><center><a href={{project.url}}>{{project.title}}</a></center></h1>
