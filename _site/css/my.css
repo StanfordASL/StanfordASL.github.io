@@ -251,6 +251,10 @@ header .intro-text .skills {
   max-width: 100%;
 }
 
+h3.bibliography {
+  display: none;
+}
+
 .bibliography li {
   padding-left: 10px;
   padding-bottom: 10px;

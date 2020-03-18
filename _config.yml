@@ -103,8 +103,8 @@ scholar:
   bibliography: ASL_Bib.bib
   sort_by: year, month
   order: descending, descending
-  group_by: type
-  type_order: [article,inproceedings,techreport,thesis]
+  group_by: none
+  #type_order: [article,inproceedings,techreport,thesis]
   type_aliases: {Incollection: techreport}
   bibliography_template: bib
   reference_tagname: span class="entry"

@@ -10,61 +10,53 @@ order: 7
 <body id="page-top" class="index">
   {% include navbar.html %}
   <header>
+    <div class="blue-stripe" style="height: 80px; margin-bottom: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="white-text"><b>Frequently Asked Questions (FAQs)</b></h1>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Contact</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col-md-12">
-              <p><b>Autonomous Systems Laboratory</b></p>
-              <p>Stanford University</p>
-              <p>Department of Aeronautics & Astronautics</p>
-              <p>William F. Durand Building, Rm. 009</p>
-              <p>496 Lomita Mall</p>
-              <p>Stanford, CA 94305-4035</p>
-              <hr />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <h1>Follow Us</h1>
-              <p>Twitter: <a href="https://twitter.com/stanfordasl" target="_blank"><i style="color: #1da1f3" class="fa fa-twitter fa-lg"></i> StanfordASL</a></p>
-              <p>Instagram: <a href="https://www.instagram.com/stanfordasl" target="_blank"><i style="color: #d93175" class="fa fa-instagram fa-lg"></i> StanfordASL</a></p>
-              <p>GitHub: <a href="https://github.com/StanfordASL" target="_blank"><i style="color: #171515" class="fa fa-github fa-lg"></i> StanfordASL</a></p>
-              <hr />
-            </div>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.4220903314895!2d-122.17454608469227!3d37.42713237982424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a83be32f1%3A0x48efc5aee5c8f3e9!2s496+Lomita+Mall%2C+Stanford%2C+CA+94305!5e0!3m2!1sen!2sus!4v1489536877239" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-          <h3>Parking</h3>
-          We recommend parking at <a class="faq-link" href="https://www.google.com/maps/place/Parking+Structure+2,+285+Panama+St,+Stanford,+CA+94305/@37.4280721,-122.1789871,17z/data=!3m1!4b1!4m5!3m4!1s0x808fa4d4fd1a1d8d:0x2dc8449e9a74aaf7!8m2!3d37.4280721!4d-122.1767984" target="_blank">Parking Structure 2</a> or <a class="faq-link" href="https://www.google.com/maps/place/Roble+Field+Garage/@37.4266783,-122.1786658,17z/data=!3m1!4b1!4m5!3m4!1s0x808fa4d55ce2854d:0x5879e664848e7fc1!8m2!3d37.4266783!4d-122.1764771" target="_blank">Roble Field Garage</a> if you are visiting with your own vehicle.
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Frequently Asked Questions (FAQs)</h1>
           <p>I get a large amount of email, and I try my best to respond to them all. However, before sending me a message, please check whether your inquiry may be addressed by one of the frequently-asked questions below.</p>
-          <h3>Admitted Students</h3>
-          {% assign sorted = (site.faqs | sort: 'order') %}
-          {% for faq in sorted %}{% if faq.type == "admitted" %}
-          <h4 class="faq-question">{{faq.question}}</h4>
-          <p>{{faq.content}}</p>
-          {% endif %}{% endfor %}
-          <h3>Prospective Students</h3>
-          {% assign sorted = (site.faqs | sort: 'order') %}
-          {% for faq in sorted %}{% if faq.type == "prospective" %}
-          <h4 class="faq-question">{{faq.question}}</h4>
-          <p>{{faq.content}}</p>
-          {% endif %}{% endfor %}
         </div>
       </div>
+    </div>
+    <div class="blue-stripe" style="height: 80px; margin-top: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="white-text"><b>Admitted Students</b></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      {% assign sorted = (site.faqs | sort: 'order') %}
+      {% for faq in sorted %}{% if faq.type == "admitted" %}
+      <h4 class="faq-question">{{faq.question}}</h4>
+      <p>{{faq.content}}</p>
+      {% endif %}{% endfor %}
+    </div>
+    <div class="blue-stripe" style="height: 80px; margin-top: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="white-text"><b>Prospective Students</b></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      {% assign sorted = (site.faqs | sort: 'order') %}
+      {% for faq in sorted %}{% if faq.type == "prospective" %}
+      <h4 class="faq-question">{{faq.question}}</h4>
+      <p>{{faq.content}}</p>
+      {% endif %}{% endfor %}
     </div>
   </header>
   {% include javascript.html %}
