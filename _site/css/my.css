@@ -499,6 +499,52 @@ b.keyword-title {
   display: inline-block;
 }
 
+/* People Page */
+.person-excerpt {
+  text-align: left;
+  font-size: 12pt;
+  line-height: 1.1;
+}
+.visiting-excerpt {
+  display: inline;
+  text-align: left;
+  font-size: 12pt;
+}
+
+.person-name {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  font-size: 13pt;
+}
+.visiting-name {
+  display: inline;
+  font-size: 13pt;
+}
+
+.person-position {
+  text-align: left;
+  font-size: 12pt;
+  margin-bottom: 0px;
+}
+
+.visiting-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.person-sep {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.person-row {
+  margin-bottom: 20px;
+}
+
+.alumni-img {
+  filter: brightness(110%) grayscale(100%) contrast(70%);
+}
+
 /* Project Page */
 hr {
   display: block;
@@ -525,8 +571,8 @@ hr {
 
 /* Image Resizing */
 .img-resize {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 /* Copyright */

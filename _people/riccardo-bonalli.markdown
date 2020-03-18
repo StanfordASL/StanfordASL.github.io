@@ -1,7 +1,7 @@
 ---
 layout: person
 title:  "Riccardo Bonalli"
-last:   " Bonalli"
+last:   "Bonalli"
 date:   2018-08-30 00:00:00 -0700
 position: postdoc
 excerpt: "Theoretical and numerical control for aerospace systems"

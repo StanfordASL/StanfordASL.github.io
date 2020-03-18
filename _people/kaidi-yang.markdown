@@ -1,7 +1,7 @@
 ---
 layout: person
 title:  "Kaidi Yang"
-last:   " Yang"
+last:   "Yang"
 date:   2019-04-25 00:00:00 -0700
 position: postdoc
 excerpt: "Emerging technologies and shared mobility"

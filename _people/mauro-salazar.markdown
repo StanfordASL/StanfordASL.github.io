@@ -1,7 +1,7 @@
 ---
 layout: person
 title:  "Mauro Salazar"
-last:   " Salazar"
+last:   "Salazar"
 date:   2019-04-14 00:00:00 -0700
 position: postdoc
 excerpt: "Future mobility systems"
