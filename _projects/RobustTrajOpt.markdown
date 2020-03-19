@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Robust Trajectory Optimization"
-date:   2017-09-01 00:00:00 -0700
+date:   2017-09-04 00:00:00 -0700
 class: "core"
 excerpt: "Robust Trajectory Optimization"
 img: MotionPlanning.png

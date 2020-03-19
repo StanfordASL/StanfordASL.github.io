@@ -38,8 +38,12 @@ order: 7
     <div class="container">
       {% assign sorted = (site.faqs | sort: 'order') %}
       {% for faq in sorted %}{% if faq.type == "admitted" %}
-      <h4 class="faq-question">{{faq.question}}</h4>
-      <p>{{faq.content}}</p>
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 class="faq-question">{{faq.question}}</h4>
+          <p>{{faq.content}}</p>
+        </div>
+      </div>
       {% endif %}{% endfor %}
     </div>
     <div class="blue-stripe" style="height: 80px; margin-top: 20px;">
@@ -54,8 +58,12 @@ order: 7
     <div class="container">
       {% assign sorted = (site.faqs | sort: 'order') %}
       {% for faq in sorted %}{% if faq.type == "prospective" %}
-      <h4 class="faq-question">{{faq.question}}</h4>
-      <p>{{faq.content}}</p>
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 class="faq-question">{{faq.question}}</h4>
+          <p>{{faq.content}}</p>
+        </div>
+      </div>
       {% endif %}{% endfor %}
     </div>
   </header>

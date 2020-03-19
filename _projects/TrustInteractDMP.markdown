@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Trustworthy Interaction-Aware Decision Making and Planning"
-date:   2017-09-01 00:00:00 -0700
+date:   2017-09-06 00:00:00 -0700
 class: "core"
 excerpt: "Trustworthy Interaction-Aware Decision Making and Planning"
 img: Trustworthy.jpg

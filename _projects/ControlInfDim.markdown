@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Control of Infinite Dimensional Systems"
-date:   2017-09-01 00:00:00 -0700
+date:   2017-09-05 00:00:00 -0700
 class: "core"
 excerpt: "Control of Infinite Dimensional Systems"
 img: InfDim.png

@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Safe and Uncertainty-Aware Learning"
-date:   2017-09-01 00:00:00 -0700
+date:   2017-09-07 00:00:00 -0700
 class: "core"
 excerpt: "Safe and Uncertainty-Aware Learning"
 img: SafeUncertLearning.jpg

@@ -37,7 +37,8 @@ order: 2
     <!-- Main Projects -->
     {% assign loopindex = 0 %}
     {% assign colorindex = 0 %}
-    {% for project in site.projects %}
+    {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
+    {% for project in sortedProjects %}
     {% if project.class == "core" %}
       {% assign loopindex = loopindex | plus: 1 %}
       {% assign rowfinder = loopindex | modulo: 2 %}

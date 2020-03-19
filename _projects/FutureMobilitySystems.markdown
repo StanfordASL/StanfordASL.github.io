@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Future Mobility Systems"
-date:   2017-09-01 00:00:00 -0700
+date:   2017-09-09 00:00:00 -0700
 class: "core"
 excerpt: "Future Mobility Systems"
 img: AMoD.jpg

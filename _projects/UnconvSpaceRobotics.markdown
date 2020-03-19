@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Unconventional Space Robotics"
-date:   2017-09-01 00:00:00 -0700
+date:   2017-09-10 00:00:00 -0700
 class: "core"
 excerpt: "Unconventional Space Robotics"
 img: UnconvSpaceRobotics.jpg

@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Spacecraft Motion Planning"
-date:   2017-09-01 00:00:00 -0700
+date:   2017-09-08 00:00:00 -0700
 class: "core"
 excerpt: "Spacecraft Motion Planning"
 img: Aerospace.jpg
