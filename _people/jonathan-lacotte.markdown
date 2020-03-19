@@ -3,7 +3,6 @@ layout: person
 title:  "Jonathan Lacotte"
 last:   "Lacotte"
 date:   2017-09-01 00:00:00 -0700
-position: phd
 excerpt: "Control theory, optimization and statistics for stochastic decision-making problems"
 img: JonathanLacotte.jpg
 email: lacotte@stanford.edu
@@ -15,4 +14,3 @@ Jonathan’s research interests span control theory, optimization and statistics
 
 ### Awards:
 - Dean and Bessie Watkins Graduate Fellowship (2016-2017)
-
