@@ -9,55 +9,59 @@ title: {{site.title}}
   {% include navbar.html %}
   {% assign sorted_slides = site.slides | sort:"date" | reverse %}
   <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="carousel" class="carousel slide" data-ride="carousel"> <!-- data-interval="5000" -->
-            <!-- Indicators -->
-            <!-- <ol id="carouselDots" class="carousel-indicators">
-              {% assign slide_count = 0 %}
-              {% for slide in sorted_slides %}
-              {% if slide_count == 0 %}
-              <li data-target="#carousel" data-slide-to="{{slide_count}}" class="active"></li>
-              {% else %}
-              <li data-target="#carousel" data-slide-to="{{slide_count}}"></li>
-              {% endif %}
-              {% assign slide_count = slide_count | plus: 1 %}
-              {% endfor %}
-            </ol> -->
+    <div class="blue-stripe" style="height: 500px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="carousel" class="carousel slide" data-ride="carousel"> <!-- data-interval="5000" -->
+              <!-- Indicators -->
+              <!-- <ol id="carouselDots" class="carousel-indicators">
+                {% assign slide_count = 0 %}
+                {% for slide in sorted_slides %}
+                {% if slide_count == 0 %}
+                <li data-target="#carousel" data-slide-to="{{slide_count}}" class="active"></li>
+                {% else %}
+                <li data-target="#carousel" data-slide-to="{{slide_count}}"></li>
+                {% endif %}
+                {% assign slide_count = slide_count | plus: 1 %}
+                {% endfor %}
+              </ol> -->
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              {% assign slide_count = 0 %}
-              {% for slide in sorted_slides %}
-              {% if slide_count == 0 %}
-              <div class="item active">
-              {% else %}
-              <div class="item">
-              {% endif %}
-                <img src="{{ relBase }}{{slide.imgurl}}{{slide.img}}" alt="{{slide.alt_text}}">
-                <!-- <div id="carouselText" class="carousel-caption">
-                  {{slide.alt_text}}
-                </div> -->
-              </div>
-              {% assign slide_count = slide_count | plus: 1 %}
-              {% endfor %}
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                {% assign slide_count = 0 %}
+                {% for slide in sorted_slides %}
+                {% if slide_count == 0 %}
+                <div class="item active">
+                {% else %}
+                <div class="item">
+                {% endif %}
+                  <img src="{{ relBase }}{{slide.imgurl}}{{slide.img}}" alt="{{slide.alt_text}}">
+                  <!-- <div id="carouselText" class="carousel-caption">
+                    {{slide.alt_text}}
+                  </div> -->
+                </div>
+                {% assign slide_count = slide_count | plus: 1 %}
+                {% endfor %}
 
-              <!-- Left and right controls -->
-              <!-- <a class="left carousel-control" href="#carousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a> -->
+                <!-- Left and right controls -->
+                <!-- <a class="left carousel-control" href="#carousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+                </div>
               </div>
+              <p class="carousel-overtext"><span>We design methodologies for the analysis and control of future autonomous systems.</span></p>
             </div>
-            <p class="carousel-overtext"><span>We design methodologies for the analysis and control of future autonomous systems.</span></p>
           </div>
         </div>
-      
+      </div>
+    </div>
+    <div class="container">
       <div class="row">
         <div class="col-md-6" style="margin-top: 40px;">
           <h1 id='title'>About Us</h1>

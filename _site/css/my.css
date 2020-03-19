@@ -466,11 +466,11 @@ b.keyword-title {
 
 .carousel-overtext {
   position: absolute;
-  margin-right: 32%;
-  left: 15%;
+  margin-right: 50%;
   bottom: 20%;
   font-size: 18pt;
   font-weight: 600;
+  text-align: left;
 }
 
 .carousel-overtext span {
@@ -556,6 +556,42 @@ hr {
   border: 0;
   border-top: 1px solid grey;
   margin: 15px 0 15px 0;
+}
+
+.project-title {
+  text-align: left;
+  position: absolute;
+  margin-right: 20%;
+  left: 5%;
+  top: 10%;
+  font-size: 18pt;
+  font-weight: 600;
+}
+
+.project-title span {
+  display: inline;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 2.625px;
+  padding-top: 2.625px;
+
+  background-color: rgb(255, 255, 255); /*For compatibility with older browsers.*/
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #4D4F53;
+
+  /* Needs prefixing */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.project-img {
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+}
+
+#projectItem {
+  margin-top: 20px;
 }
 
 /* FAQs Styles */

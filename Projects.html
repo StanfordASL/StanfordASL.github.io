@@ -11,54 +11,71 @@ order: 2
 <body id="page-top" class="index">
   {% include navbar.html %}
   <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <img src="{{site.url}}{{site.baseurl}}/img/projects/Strip_1_1000x500.jpg" alt="">
-          <p class="carousel-overtext"><span>We use theoretical insights to devise practical, computationally-efficient, and provably-correct algorithms for field deployment.</span></p>
+    <div class="blue-stripe" style="height: 500px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="{{site.url}}{{site.baseurl}}/img/projects/Strip_1_1000x500.jpg" alt="">
+            <p class="carousel-overtext"><span>We use theoretical insights to devise practical, computationally-efficient, and provably-correct algorithms for field deployment.</span></p>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="row" style="margin-top: 40px; margin-bottom: 40px;">
         <div class="col-md-12">
           <!-- Introduction -->
           {% for project in site.projects %}
-          {% if project.class == "Intro" %}
-          <h1 id='title'>{{ project.title }}</h1>
-          {{ project.content }}
-          {% endif %}
+            {% if project.class == "Intro" %}
+              <h1 id='title'>{{ project.title }}</h1>
+              {{ project.content }}
+            {% endif %}
           {% endfor %}
         </div>
       </div>
-      <!-- Main Projects -->
-      {% for project in site.projects %}
-      {% if project.class == "core" %}
-      <div class="row">
-        <div class="col-md-12">
-          <h1><center><a href={{project.url}}>{{project.title}}</a></center></h1>
+    </div>
+    <!-- Main Projects -->
+    {% assign loopindex = 0 %}
+    {% assign colorindex = 0 %}
+    {% for project in site.projects %}
+    {% if project.class == "core" %}
+      {% assign loopindex = loopindex | plus: 1 %}
+      {% assign rowfinder = loopindex | modulo: 2 %}
+        {% if rowfinder == 1 %}
+          {% assign blue_stripe = colorindex | modulo: 2 %}
+          {% if blue_stripe == 0%}
+          <div class="blue-stripe" style="height: 450px;">
+          {% else %}
+          <div class="white-stripe" style="height: 450px;">
+          {% endif %}
+          <div class="container">
+          <div class="row">
+        {% endif %}
+        {% if rowfinder == 1 %}
+        <div class="col-6 col-sm-6 col-md-6" style="padding-right: 0px;">
+        {% else %}
+        <div class="col-6 col-sm-6 col-md-6" style="padding-left: 0px;">
+        {% endif %}
+          <a href={{project.url}}><img class="img-responsive project-img" src="{{ relBase }}{{project.imgurl}}{{project.img}}" alt="{{ project.excerpt }}"></a>
+          <p class="project-title"><span>{{ project.title }}</span></p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-xs-12 col-vertical-center">
-          <a href={{project.url}}><img class="img-responsive center-block" src="{{ relBase }}{{project.imgurl}}{{project.img}}" alt="{{ project.excerpt }}"></a>
-        </div><!--
-     --><div class="col-md-8 col-xs-12 col-vertical-center">
-          {{ project.blurb }}
-          <br/>
-          <br/>
-          <b class="keyword-title">Keywords</b>: {{ project.keywords }}
+        {% if rowfinder == 0 %}
+        {% assign colorindex = colorindex | plus: 1 %}
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h4 class="bibliography">Representative Works</h4>
-          {{ project.content }}
         </div>
-      </div>
+        </div>
+        {% endif %}
       {% endif %}
       {% endfor %}
-
+      {% if rowfinder != 0 %}
+      <!-- In case the last row has < 2 projects. -->
+      </div>
+      </div>
+      </div>
+      {% endif %}
+    
+    <div class="container">
       <!-- Conclusion -->
-      <hr />
       <div id="projectItem" class="row">
         {% for project in site.projects %}
         {% if project.class == "End" %}
@@ -69,8 +86,6 @@ order: 2
         {% endfor %}
       </div>
     </div>
-  </div>
-</div>
 </header>
 {% include javascript.html %}
 <script>
