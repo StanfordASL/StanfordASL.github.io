@@ -108,9 +108,9 @@ order: 4
         {% endif %}
       </div>
 
-      <div class="blue-stripe" style="height: 80px; margin-bottom: 25px;">
+      <div class="blue-stripe" style="margin-bottom: 25px;">
         <div class="container">
-          <div class="row">
+          <div class="row" style="padding-bottom: 10.4px;">
             <div class="col-sm-12">
               <h1 class="white-text"><b>Visiting Faculty, Scholars, and Students</b></h1>
             </div>
@@ -118,9 +118,13 @@ order: 4
         </div>
       </div>
       <div class="container">
-      {% for person in sortedPeople %}{% if person.position == "visiting" %}
-        {{ person.content }}
-      {% endif %}{% endfor %}
+        <div class="row">
+          <div class="col-sm-12">
+            {% for person in sortedPeople %}{% if person.position == "visiting" %}
+              {{ person.content }}
+            {% endif %}{% endfor %}
+          </div>
+        </div>
       </div>
     </header>
     {% include javascript.html %}

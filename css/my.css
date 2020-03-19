@@ -59,6 +59,7 @@
 
 .white-text {
   color: white;
+  text-align: left;
 }
 
 /*Title typography and colors */
@@ -293,6 +294,11 @@ b.keyword-title {
   #twitter-widget-0 {
     height: 200px !important;
   }
+
+  .project-img {
+    width: 375px !important;
+    height: 375px !important;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -325,8 +331,8 @@ b.keyword-title {
     font-weight: 300 !important;
   }
   .carousel-overtext {
-    left: 10% !important;
-    bottom: 10% !important;
+    /*left: 10% !important;
+    bottom: 10% !important;*/
     font-size: 14pt !important;
   }
 
@@ -387,6 +393,13 @@ b.keyword-title {
 
   .hide-on-mobile {
     display: none;
+  }
+
+  .project-col-l {
+  padding-right: 15px !important;
+  }
+  .project-col-r {
+    padding-left: 15px !important;
   }
 }
 
@@ -590,6 +603,15 @@ hr {
   width: 500px;
   height: 450px;
   object-fit: cover;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.project-col-l {
+  padding-right: 0px;
+}
+.project-col-r {
+  padding-left: 0px;
 }
 
 #projectItem {

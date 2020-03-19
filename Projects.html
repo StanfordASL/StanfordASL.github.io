@@ -22,7 +22,7 @@ order: 2
       </div>
     </div>
     <div class="container">
-      <div class="row" style="margin-top: 40px; margin-bottom: 40px;">
+      <div class="row" style="margin-top: 40px; margin-bottom: 30px;">
         <div class="col-md-12">
           <!-- Introduction -->
           {% for project in site.projects %}
@@ -53,9 +53,9 @@ order: 2
           <div class="row">
         {% endif %}
         {% if rowfinder == 1 %}
-        <div class="col-6 col-sm-6 col-xs-12 project-col-r" style="padding-right: 0px;">
+        <div class="col-6 col-sm-6 col-xs-12 project-col-l">
         {% else %}
-        <div class="col-6 col-sm-6 col-xs-12 project-col-l" style="padding-left: 0px;">
+        <div class="col-6 col-sm-6 col-xs-12 project-col-r">
         {% endif %}
           <a href={{project.url}}><img class="img-responsive project-img" src="{{ relBase }}{{project.imgurl}}{{project.img}}" alt="{{ project.excerpt }}"></a>
           <p class="project-title"><span>{{ project.title }}</span></p>
