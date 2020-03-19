@@ -6,19 +6,16 @@
     {% include navbar.html %}
     <header>
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>{{ page.title }}</h2>
-          </div>
-        </div>
-        <div class="row">
+        <div class="row" style="margin-top: 40px;">
 	      <div class="col-md-5">
 	        {% if page.img %}  <img src="{{ relBase }}img/people/{{ page.img }}" alt="{{ page.title }}" class="img-responsive">{% endif %}
-          <br>
-          {% if page.website %}<a href="//{{page.website}}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Personal Webpage</a>{% endif %}
+            {% if page.website %}<h3>Contacts:</h3>{% endif %}
+            {% if page.website %}<a href="//{{page.website}}" target="_blank">Personal Webpage</a>{% endif %}
 		  </div>
 		  <div class="col-md-7">
-		    {{ page.content }}
+            <h2 style="margin-top: 0px;">{{ page.title }}</h2>
+		    <hr>
+            {{ page.content }}
         <br>
         {% if page.current %}
           <i>Currently at {{page.current}}</i>
