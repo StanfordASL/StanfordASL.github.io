@@ -11,7 +11,7 @@ order: 2
 <body id="page-top" class="index">
   {% include navbar.html %}
   <header>
-    <div class="blue-stripe" style="height: 500px;">
+    <div class="blue-stripe">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -45,17 +45,17 @@ order: 2
         {% if rowfinder == 1 %}
           {% assign blue_stripe = colorindex | modulo: 2 %}
           {% if blue_stripe == 0%}
-          <div class="blue-stripe" style="height: 450px;">
+          <div class="blue-stripe">
           {% else %}
-          <div class="white-stripe" style="height: 450px;">
+          <div class="white-stripe">
           {% endif %}
           <div class="container">
           <div class="row">
         {% endif %}
         {% if rowfinder == 1 %}
-        <div class="col-6 col-sm-6 col-md-6" style="padding-right: 0px;">
+        <div class="col-6 col-sm-6 col-xs-12 project-col-r" style="padding-right: 0px;">
         {% else %}
-        <div class="col-6 col-sm-6 col-md-6" style="padding-left: 0px;">
+        <div class="col-6 col-sm-6 col-xs-12 project-col-l" style="padding-left: 0px;">
         {% endif %}
           <a href={{project.url}}><img class="img-responsive project-img" src="{{ relBase }}{{project.imgurl}}{{project.img}}" alt="{{ project.excerpt }}"></a>
           <p class="project-title"><span>{{ project.title }}</span></p>

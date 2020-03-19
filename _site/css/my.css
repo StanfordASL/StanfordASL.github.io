@@ -34,16 +34,18 @@
 }
 
 .blue-stripe {
-  width: 1280px;
-  height: 320px;
+  width: 100%;
+  max-width: 1280px;
+  display: block;
   background-color: #3265AC;
   position: relative;
   margin-right: auto;
   margin-left: auto;
 }
 .white-stripe {
-  width: 1280px;
-  height: 320px;
+  width: 100%;
+  max-width: 1280px;
+  display: block;
   position: relative;
   margin-right: auto;
   margin-left: auto;
