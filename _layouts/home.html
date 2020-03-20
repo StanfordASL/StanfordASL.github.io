@@ -63,9 +63,12 @@ title: {{site.title}}
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-6" style="margin-top: 40px;">
+        <div class="col-md-6" style="margin-top: 30px;">
           <h1 id='title'>About Us</h1>
-          <p>The Autonomous Systems Lab (ASL) develops methodologies for the analysis, design, and control of autonomous systems, with a particular emphasis on large-scale robotic networks and autonomous aerospace vehicles. The lab combines expertise from control theory, robotics, optimization, and operations research to develop the theoretical foundations for networked autonomous systems operating in uncertain, rapidly-changing, and potentially adversarial environments.</p>
+          {% assign num_phds = site.people | where: "position","phd" | size %}
+          {% assign num_postdocs = site.people | where: "position","postdoc" | size %}
+          {% assign num_researchers = num_phds | plus: num_postdocs %}
+          <p>The Autonomous Systems Lab (ASL) develops methodologies for the analysis, design, and control of autonomous systems, with a particular emphasis on large-scale robotic networks and autonomous aerospace vehicles. The lab, comprised of {{ num_researchers }} researchers, combines expertise from control theory, robotics, optimization, and operations research to develop the theoretical foundations for networked autonomous systems operating in uncertain, rapidly-changing, and potentially adversarial environments. Our work has been recognized with several awards, including a Presidential Early Career Award for Scientists and Engineers.</p>
         </div>
         <div class="col-md-6">
           <img src="{{site.url}}{{site.baseurl}}/img/LAB_2020_Def.jpg" alt="">

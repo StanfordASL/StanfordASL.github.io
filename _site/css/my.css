@@ -401,6 +401,20 @@ b.keyword-title {
   .project-col-r {
     padding-left: 15px !important;
   }
+
+  .project-overtext {
+    font-size: 17pt !important;
+  }
+  .project-question {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+  }
+  .large-title {
+    font-size: 25pt !important;
+  }
+  .project-question-text {
+    font-size: 15pt !important;
+  }
 }
 
 .map-responsive{
@@ -487,7 +501,6 @@ b.keyword-title {
   font-weight: 600;
   text-align: left;
 }
-
 .carousel-overtext span {
   display: inline;
   padding-left: 4px;
@@ -616,6 +629,49 @@ hr {
 
 #projectItem {
   margin-top: 20px;
+}
+
+.project-overtext {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 50%;
+  font-size: 28pt;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+.project-overtext span {
+  display: inline;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 2.625px;
+  padding-top: 2.625px;
+
+  background-color: rgb(255, 255, 255); /*For compatibility with older browsers.*/
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #4D4F53;
+
+  /* Needs prefixing */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.project-question {
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+
+.large-title {
+  font-size: 40pt;
+  text-align: center;
+}
+
+.project-question-text {
+  font-size: 23pt;
+  text-align: center;
 }
 
 /* FAQs Styles */

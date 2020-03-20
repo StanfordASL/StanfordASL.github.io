@@ -5,34 +5,70 @@
   <body id="page-top" class="index">
     {% include navbar.html %}
     <header>
+      <div class="blue-stripe">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="{{site.url}}{{site.baseurl}}/img/projects/{{page.imgfolder}}/{{page.imgtop}}" alt="">
+              <p class="project-overtext"><span>{{ page.title }}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>{{ page.title }}</h2>
+            <div class="project-question">
+              <h1 class="large-title">Research Question</h1>
+              <br>
+              <p class="project-question-text">{{ page.question }}</p>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="blue-stripe">
+        <div class="container">
+          <div class="row" style="margin-top: 30px; margin-bottom: 60px;">
+            <div class="col-md-12 white-text" style="text-align: justify;">
+              <h2 class="white-text">Summary</h2>
+              {{ page.blurb }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
         <div class="row">
-  	      <div class="col-md-4 col-xs-12 col-vertical-center">
-  	        {% if page.img %}  <img src="{{ relBase }}{{page.imgurl}}{{page.img}}" alt="{{ page.title }}" class="img-responsive center-block">{% endif %}
-  		    </div><!--
-       --><div class="col-md-8 col-xs-12 col-vertical-center">
-    		    {{ page.blurb }}
-            <br/>
-            <br/>
-            <b class="keyword-title">Keywords</b>: {{ page.keywords }}
-            <br/>
-            <br/>
-            <b class="keyword-title">Students</b>: {{ page.people }}
-            <br/>
-    		  </div>
-    		</div>
-        <div class="row">
+          <div class="col-md-12">
+            <img src="{{site.url}}{{site.baseurl}}/img/projects/{{page.imgfolder}}/{{page.img1}}" alt="" style="margin: auto;">
+          </div>
+        </div>
+      </div>
+      <div class="blue-stripe">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12 white-text" style="margin-top: 40px;">
+              <h1 id='title' class="white-text">Research Team</h1>
+              {{ page.people | replace: ", ","<br/>" }}
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <img src="{{site.url}}{{site.baseurl}}/img/projects/{{page.imgfolder}}/{{page.img2}}" alt="" style="margin: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="margin-top: 40px;">
           <div class="col-md-12">
             <h4 class="bibliography">Related Works</h4>
             {{ page.content }}
           </div>
         </div>
-	  </div>
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-md-12">
+            <a href="/projects/">< Back to Projects</a>
+          </div>
+        </div>
+	    </div>
     </header>
     {% include javascript.html %}
     <script>
