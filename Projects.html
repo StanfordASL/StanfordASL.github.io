@@ -74,19 +74,6 @@ order: 2
       </div>
       </div>
       {% endif %}
-    
-    <div class="container">
-      <!-- Conclusion -->
-      <div id="projectItem" class="row">
-        {% for project in site.projects %}
-        {% if project.class == "End" %}
-        <div class="col-md-12">
-          {{ project.content}}
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
-    </div>
 </header>
 {% include javascript.html %}
 <script>
