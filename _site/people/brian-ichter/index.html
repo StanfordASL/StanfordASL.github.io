@@ -173,14 +173,14 @@
     <header>
       <div class="container">
         <div class="row" style="margin-top: 40px;">
-	      <div class="col-md-5">
-	          <img src="../../img/people/BrianIchter.jpg" alt="Brian Ichter" class="img-responsive">
+  	      <div class="col-md-5" style="margin-bottom: 20px;">
+  	          <img src="../../img/people/BrianIchter.jpg" alt="Brian Ichter" class="img-responsive">
             <h3>Contacts:</h3>
             <a href="//stanford.edu/~ichter/" target="_blank">Personal Webpage</a>
-		  </div>
-		  <div class="col-md-7">
+  		    </div>
+    		  <div class="col-md-7">
             <h2 style="margin-top: 0px;">Brian Ichter</h2>
-		    <hr>
+    		    <hr>
             <p>Brian Ichter is a PhD candidate in Aeronautics and Astronautics at Stanford University (expected graduation early 2018). He received a BS in Aerospace Engineering and BA in Physics from the University of Virginia in 2012 and an MS in Aeronautics and Astronautics from Stanford University in 2015.</p>
 
 <p>Brian’s research focuses on sampling-based algorithms for robotic motion planning. In particular, he works on developing massively parallel algorithms (that leverage GPUs) towards real-time kinodynamic, uncertainty-aware, and perception-aware motion planning. He further works on sampling strategies for planning algorithms by showing theoretical and practical benefits of low-dispersion, deterministic sampling as well as developing methods for learning optimal sample distributions.</p>
@@ -192,12 +192,214 @@
   <li>NASA Space Technology Research Fellowship</li>
 </ul>
 
-        <br>
+            <br>
+            
+              <i>Currently at Google Brain Robotics</i>
+            
+    		  </div>
+  		</div>
+      <div class="row">
+        <div class="col-md-12">
         
-          <i>Currently at Google Brain Robotics</i>
+          <h2 style="margin-top: 0px;">ASL Publications</h2>
+          
+          
+          <ol class="bibliography"><li>
+ 
+
+
+<span class="entry" id="IchterPavone2019">B. Ichter and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1807.10366">“Robot Motion Planning in Learned Latent Spaces,”</a> <i>IEEE Robotics and Automation Letters</i>, Jan. 2019. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterPavone2019','abstract')">Abstract</a>]</p>
+<span id="abs_IchterPavone2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper presents Latent Sampling-based Motion Planning (L-SBMP), a methodology towards computing motion plans for complex robotic systems by learning a plannable latent representation. Recent works in control of robotic systems have effectively leveraged local, low-dimensional embeddings of high-dimensional dynamics. In this paper we combine these recent advances with techniques from sampling-based motion planning (SBMP) in order to design a methodology capable of planning for high-dimensional robotic systems beyond the reach of traditional approaches (e.g., humanoids, or even systems where planning occurs in the visual space). Specifically, the learned latent space is constructed through an autoencoding network, a dynamics network, and a collision checking network, which mirror the three main algorithmic primitives of SBMP, namely state sampling, local steering, and collision checking. Notably, these networks can be trained through only raw data of the system’s states and actions along with a supervising collision checker. Building upon these networks, an RRT-based algorithm is used to plan motions directly in the latent space - we refer to this exploration algorithm as Learned Latent RRT (L2RRT). This algorithm globally explores the latent space and is capable of generalizing to new environments. The overall methodology is demonstrated on two planning problems, namely a visual planning problem, whereby planning happens in the visual (pixel) space, and a humanoid robot planning problem.</p>
+</span>
+<span id="bib_IchterPavone2019" class="bibtex noshow">
+	<pre>@article{IchterPavone2019,
+  author = {Ichter, B. and Pavone, M.},
+  title = {Robot Motion Planning in Learned Latent Spaces},
+  journal = {{IEEE Robotics and Automation Letters}},
+  year = {2019},
+  note = {In Press},
+  month = jan,
+  url = {https://arxiv.org/abs/1807.10366},
+  booktitle = {{IEEE Robotics and Automation Letters}},
+  keywords = {press},
+  owner = {ichter},
+  timestamp = {2019-02-01}
+}
+</pre>
+</span>
+<!-- <span id="key_IchterPavone2019" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IchterHarrisonEtAl2018">B. Ichter, J. Harrison, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1709.05448.pdf">“Learning Sampling Distributions for Robot Motion Planning,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterHarrisonEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterHarrisonEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_IchterHarrisonEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> A defining feature of sampling-based motion planning is the reliance on an implicit representation of the state space, which is enabled by a set of probing samples.Traditionally, these samples are drawn either probabilistically or deterministically to uniformly cover the state space. Yet, the motion of many robotic systems is often restricted to "small" regions of the state space, due to e.g. differential constraints or collision-avoidance constraints. To accelerate the planning process, it is thus desirable to devise non-uniform sampling strategies that favor sampling in those regions where an optimal solution might lie. This paper proposes a methodology for non-uniform sampling, whereby a sampling distribution is learnt from demonstrations, and then used to bias sampling. The sampling distribution is computed through a conditional variational autoencoder, allowing sample generation from the latent space conditioned on the specific planning problem. This methodology is general, can be used in combination with any sampling-based planner, and can effectively exploit the underlying structure of a planning problem while maintaining the theoretical guarantees of sampling-based approaches. Specifically, on several planning problems, the proposed methodology is shown to effectively learn representations for the relevant regions of the state space, resulting in an order of magnitude improvement in terms of success rate and convergence to the optimal cost</p>
+</span>
+<span id="bib_IchterHarrisonEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{IchterHarrisonEtAl2018,
+  author = {Ichter, B. and Harrison, J. and Pavone, M.},
+  title = {Learning Sampling Distributions for Robot Motion Planning},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2018},
+  address = {Brisbane, Australia},
+  month = may,
+  url = {https://arxiv.org/pdf/1709.05448.pdf},
+  owner = {frossi2},
+  timestamp = {2018-01-16}
+}
+</pre>
+</span>
+<!-- <span id="key_IchterHarrisonEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="JansonIchterEtAl2015">L. Janson, B. Ichter, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Janson.Ichter.Pavone.IJRR18.pdf">“Deterministic Sampling-Based Motion Planning: Optimality, Complexity, and Performance,”</a> <i>Int. Journal of Robotics Research</i>, vol. 37, no. 1, pp. 46–61, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JansonIchterEtAl2015','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JansonIchterEtAl2015','abstract')">Abstract</a>]</p>
+<span id="abs_JansonIchterEtAl2015" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Probabilistic sampling-based algorithms, such as the probabilistic roadmap (PRM) and the rapidly-exploring random tree (RRT) algorithms, represent one of the most successful approaches to robotic motion planning, due to their strong theoretical properties (in terms of probabilistic completeness or even asymptotic optimality) and remarkable practical performance. Such algorithms are probabilistic in that they compute a path by connecting independently and identically distributed (i.i.d.) random points in the configuration space. Their randomization aspect, however, makes several tasks challenging, including certification for safety-critical applications and use of offline computation to improve real-time execution. Hence, an important open question is whether similar (or better) theoretical guarantees and practical performance could be obtained by considering deterministic, as opposed to random sampling sequences. The objective of this paper is to provide a rigorous answer to this question. Specifically, we first show that PRM, for a certain selection of tuning parameters and deterministic low-dispersion sampling sequences, is deterministically asymptotically optimal, i.e., it returns a path whose cost converges deterministically to the optimal one as the number of points goes to infinity. Second, we characterize the convergence rate, and we find that the factor of sub-optimality can be very explicitly upper-bounded in terms of the l2-dispersion of the sampling sequence and the connection radius of PRM. Third, we show that an asymptotically optimal version of PRM exists with computational and space complexity arbitrarily close to O(n) (the theoretical lower bound), where n is the number of points in the sequence. This is in stark contrast to the O(n log n) complexity results for existing asymptotically- optimal probabilistic planners. Fourth, we show that our theoretical results and insights extend to other batch-processing algorithms such as FMT*, to non-uniform sampling strategies, to k-nearest-neighbor implementations, and to differentially- constrained problems. Finally, through numerical experiments, we show that planning with deterministic low-dispersion sampling generally provides superior performance in terms of path cost and success rate.</p>
+</span>
+<span id="bib_JansonIchterEtAl2015" class="bibtex noshow">
+	<pre>@article{JansonIchterEtAl2015,
+  author = {Janson, L. and Ichter, B. and Pavone, M.},
+  title = {Deterministic Sampling-Based Motion Planning: Optimality, Complexity, and Performance},
+  journal = {{Int. Journal of Robotics Research}},
+  volume = {37},
+  number = {1},
+  pages = {46--61},
+  year = {2018},
+  doi = {10.1177/0278364917714338},
+  url = {../wp-content/papercite-data/pdf/Janson.Ichter.Pavone.IJRR18.pdf},
+  owner = {bylard},
+  timestamp = {2017-03-07}
+}
+</pre>
+</span>
+<!-- <span id="key_JansonIchterEtAl2015" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IchterLandryEtAl2017">B. Ichter, B. Landry, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1705.02408.pdf">“Perception-Aware Motion Planning via Multiobjective Search on GPUs,”</a> in <i>Int. Symp. on Robotics Research</i>, Puerto Varas, Chile, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterLandryEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterLandryEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_IchterLandryEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we approach the robust motion planning problem through the lens of perception-aware planning, whereby we seek a low-cost motion plan subject to a separate constraint on perception localization quality. To solve this problem we introduce the Multiobjective Perception-Aware Planning (MPAP) algorithm which explores the state space via a multiobjective search, considering both cost and a perception heuristic. This perception-heuristic formulation allows us to both capture the history dependence of localization drift and represent complex modern perception methods. The solution trajectory from this heuristic-based search is then certified via Monte Carlo methods to be robust. The additional computational burden of perception-aware planning is offset through massive parallelization on a GPU. Through numerical experiments the algorithm is shown to find robust solutions in about a second. Finally, we demonstrate MPAP on a quadrotor flying perception-aware and perception-agnostic plans using Google Tango for localization, finding the quadrotor safely executes the perception-aware plan every time, while crashing over 20% of the time on the perception-agnostic due to loss of localization.</p>
+</span>
+<span id="bib_IchterLandryEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{IchterLandryEtAl2017,
+  author = {Ichter, B. and Landry, B. and Schmerling, E. and Pavone, M.},
+  title = {Perception-Aware Motion Planning via Multiobjective Search on {GPUs}},
+  booktitle = {{Int. Symp. on Robotics Research}},
+  year = {2017},
+  address = {Puerto Varas, Chile},
+  month = dec,
+  url = {https://arxiv.org/pdf/1705.02408.pdf},
+  owner = {ichter},
+  timestamp = {2018-01-16}
+}
+</pre>
+</span>
+<!-- <span id="key_IchterLandryEtAl2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IchterSchmerlingEtAl2017">B. Ichter, E. Schmerling, A. Agha-mohammadi, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1607.06886.pdf">“Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on GPUs,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_IchterSchmerlingEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we present the PUMP (Parallel Uncertainty-aware Multiobjective Planning) algorithm for addressing the stochastic kinodynamic motion planning problem, whereby we seek a low-cost, dynamically-feasible motion plan subject to a constraint on collision probability (CP). As a departure from previous methods for chance-constrained motion planning, PUMP directly considers both CP and the optimization objective at equal priority when planning through the free configuration space, achieving an unprecedented combination of cost performance, certified safety, and speed. Planning is conducted through a massively parallel multiobjective search, here implemented with a particular application focus on GPU hardware. PUMP explores the configuration space while maintaining a Pareto optimal front of motion plans, considering cost and approximate collision probability. We introduce a novel particle-based CP approximation scheme, designed for efficient GPU implementation, which accounts for dependencies over the history of a trajectory execution. Upon termination of the exploration phase, PUMP performs a search over the Pareto optimal set of solution motion plans to identify the lowest cost motion plan that is certified to satisfy the CP constraint (according to an asymptotically exact estimator). We present numerical experiments for quadrotor planning wherein PUMP identifies solutions in  100 ms, evaluating over one hundred thousand partial plans through the course of its exploration phase. The results show that this multiobjective search achieves a lower motion plan cost, for the same collision probability constraint, compared to a safety buffer-based search heuristic and repeated RRT trials.</p>
+</span>
+<span id="bib_IchterSchmerlingEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{IchterSchmerlingEtAl2017,
+  author = {Ichter, B. and Schmerling, E. and Agha-mohammadi, A. and Pavone, M.},
+  title = {Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on {GPUs}},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2017},
+  address = {Singapore},
+  month = may,
+  url = {http://arxiv.org/pdf/1607.06886.pdf},
+  owner = {bylard},
+  timestamp = {2017-03-07}
+}
+</pre>
+</span>
+<!-- <span id="key_IchterSchmerlingEtAl2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IchterSchmerlingEtAl2017b">B. Ichter, E. Schmerling, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Ichter.Schmerling.Pavone.ICRC17.pdf">“Group Marching Tree: Sampling-Based Approximately Optimal Motion Planning on GPUs,”</a> in <i>IEEE Int. Conf. on Robotic Computing</i>, Taichung, Taiwan, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017b','abstract')">Abstract</a>]</p>
+<span id="abs_IchterSchmerlingEtAl2017b" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper presents a novel approach, named the Group Marching Tree (GMT*) algorithm, to planning on GPUs at rates amenable to application within control loops, allowing planning in real-world settings via repeated computation of near-optimal plans. GMT*, like the Fast Marching Tree (FMT*) algorithm, explores the state space with a “lazy” dynamic programming recursion on a set of samples to grow a tree of near-optimal paths. GMT*, however, alters the approach of FMT* with approximate dynamic programming by expanding, in parallel, the group of all active samples with cost below an increasing threshold, rather than only the minimum cost sample. This group approximation enables low-level parallelism over the sample set and removes the need for sequential data structures, while the “lazy” collision checking limits thread divergence—all contributing to a very efficient GPU implementation. While this approach incurs some suboptimality, we prove that GMT* remains asymptotically optimal up to a constant multiplicative factor. We show solutions for complex planning problems under differential constraints can be found in  10 ms on a desktop GPU and  30 ms on an embedded GPU, representing a significant speed up over the state of the art, with only small losses in performance. Finally, we present a scenario demonstrating the efficacy of planning within the control loop ( 100 Hz) towards operating in dynamic, uncertain settings.</p>
+</span>
+<span id="bib_IchterSchmerlingEtAl2017b" class="bibtex noshow">
+	<pre>@inproceedings{IchterSchmerlingEtAl2017b,
+  author = {Ichter, B. and Schmerling, E. and Pavone, M.},
+  title = {Group Marching Tree: Sampling-Based Approximately Optimal Motion Planning on {GPUs}},
+  booktitle = {{IEEE Int. Conf. on Robotic Computing}},
+  year = {2017},
+  address = {Taichung, Taiwan},
+  month = apr,
+  url = {../wp-content/papercite-data/pdf/Ichter.Schmerling.Pavone.ICRC17.pdf},
+  owner = {bylard},
+  timestamp = {2017-03-07}
+}
+</pre>
+</span>
+<!-- <span id="key_IchterSchmerlingEtAl2017b" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="JansonIchterEtAl2015b">L. Janson, B. Ichter, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1505.00023.pdf">“Deterministic Sampling-Based Motion Planning: Optimality, Complexity, and Performance,”</a> in <i>Int. Symp. on Robotics Research</i>, Sestri Levante, Italy, 2015.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JansonIchterEtAl2015b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JansonIchterEtAl2015b','abstract')">Abstract</a>]</p>
+<span id="abs_JansonIchterEtAl2015b" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Probabilistic sampling-based algorithms, such as the probabilistic roadmap (PRM) and the rapidly-exploring random tree (RRT) algorithms, represent one of the most successful approaches to robotic motion planning, due to their strong theoretical properties (in terms of probabilistic completeness or even asymptotic optimality) and remarkable practical performance. Such algorithms are probabilistic in that they compute a path by connecting independently and identically distributed (i.i.d.) random points in the configuration space. Their randomization aspect, however, makes several tasks challenging, including certification for safety-critical applications and use of offline computation to improve real-time execution. Hence, an important open question is whether similar (or better) theoretical guarantees and practical performance could be obtained by considering deterministic, as opposed to random sampling sequences. The objective of this paper is to provide a rigorous answer to this question. The focus is on the PRM algorithm—our results, however, generalize to other batch-processing algorithms such as FMT∗. Specifically, we first show that PRM, for a certain selection of tuning parameters and deterministic low-dispersion sampling sequences, is deterministically asymptotically optimal,i.e., it returns a path whose cost converges deterministically to the optimal one as the number of points goes to infinity. Second, we characterize the convergence rate, and we find that the factor of sub-optimality can be very explicitly upper-bounded in terms of the ‘2-dispersion of the sampling sequence and the connection radius of PRM. Third, we show that an asymptotically optimal version of PRM exists with computational and space complexity arbitrarily close to O(n) (the theoretical lower bound), where n is the number of points in the sequence. This is in stark contrast to the O(n logn) complexity results for existing asymptotically-optimal probabilistic planners. Finally, through numerical experiments, we show that planning with deterministic low-dispersion sampling generally provides superior performance in terms of path cost and success rate</p>
+</span>
+<span id="bib_JansonIchterEtAl2015b" class="bibtex noshow">
+	<pre>@inproceedings{JansonIchterEtAl2015b,
+  author = {Janson, L. and Ichter, B. and Pavone, M.},
+  title = {Deterministic Sampling-Based Motion Planning: Optimality, Complexity, and Performance},
+  booktitle = {{Int. Symp. on Robotics Research}},
+  year = {2015},
+  address = {Sestri Levante, Italy},
+  month = sep,
+  url = {http://arxiv.org/pdf/1505.00023.pdf},
+  owner = {bylard},
+  timestamp = {2017-01-28}
+}
+</pre>
+</span>
+<!-- <span id="key_JansonIchterEtAl2015b" >
+	<b>Keywords</b>:
+	
+</span> --></li></ol>
         
-		  </div>
-		</div>
+        </div>
+      </div>
 	  </div>
     </header>
     <!--

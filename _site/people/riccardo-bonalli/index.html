@@ -173,14 +173,14 @@
     <header>
       <div class="container">
         <div class="row" style="margin-top: 40px;">
-	      <div class="col-md-5">
-	          <img src="../../img/people/RiccardoBonalli.png" alt="Riccardo Bonalli" class="img-responsive">
+  	      <div class="col-md-5" style="margin-bottom: 20px;">
+  	          <img src="../../img/people/RiccardoBonalli.png" alt="Riccardo Bonalli" class="img-responsive">
             
             
-		  </div>
-		  <div class="col-md-7">
+  		    </div>
+    		  <div class="col-md-7">
             <h2 style="margin-top: 0px;">Riccardo Bonalli</h2>
-		    <hr>
+    		    <hr>
             <p>Riccardo is a postdoctoral researcher at Stanford’s Department of Aeronautics and Astronautics. He obtained his Ph.D. in Applied Mathematics at Sorbonne Université, Paris in 2018 under a collaboration with ONERA - The French Aerospace Lab, Palaiseau, and received both his B.Sc. in Physical Engineering in 2011 and his M.Sc. in Mathematical Engineering in 2014 from Politecnico di Milano, Milan.</p>
 
 <p>Riccardo’s research interests include differential geometry and Lie groups theory applied to nonlinear control systems, theoretical and numerical optimal control and optimization, homotopy and shooting algorithms, aerospace rendezvous problems, motion planning and trajectory optimization. Under a NASA grant, he is currently focusing on developing fast and robust algorithms for the optimal control of robots operating in microgravity environments.</p>
@@ -192,10 +192,100 @@
   <li>2018 Best Ph.D. thesis at ONERA, TIS Department</li>
 </ul>
 
-        <br>
+            <br>
+            
+    		  </div>
+  		</div>
+      <div class="row">
+        <div class="col-md-12">
         
-		  </div>
-		</div>
+          <h2 style="margin-top: 0px;">ASL Publications</h2>
+          
+          
+          <ol class="bibliography"><li>
+ 
+
+
+<span class="entry" id="BanerjeeEtAl2020">S. Banerjee, T. Lew, R. Bonalli, A. Alfaadhel, I. A. Alomar, H. M. Shageer, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Banerjee.Lew.Bonalli.ea.AeroConf20.pdf">“Learning-based Warm-Starting for Fast Sequential Convex Programming and Trajectory Optimization,”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BanerjeeEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BanerjeeEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_BanerjeeEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Sequential convex programming (SCP) has recently emerged as an effective tool to quickly compute locally optimal trajectories for robotic and aerospace systems alike, even when initialized with an unfeasible trajectory. In this paper, by focusing on the Guaranteed Sequential Trajectory Optimization (GuSTO) algorithm, we propose a methodology to accelerate SCP-based algorithms through warm-starting. Specifically, leveraging a dataset of expert trajectories from GuSTO, we devise a neural-network-based approach to predict a locally optimal state and control trajectory, which is used to warm-start the SCP algorithm. This approach allows one to retain all the theoretical guarantees of GuSTO while simultaneously taking advantage of the fast execution of the neural network and reducing the time and number of iterations required for GuSTO to converge. The result is a faster and theoretically guaranteed trajectory optimization algorithm.</p>
+</span>
+<span id="bib_BanerjeeEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{BanerjeeEtAl2020,
+  author = {Banerjee, S. and Lew, T. and Bonalli, R. and Alfaadhel, A. and Alomar, I. A. and Shageer, H. M. and Pavone, M.},
+  title = {Learning-based Warm-Starting for Fast Sequential Convex Programming and Trajectory Optimization},
+  booktitle = {{IEEE Aerospace Conference}},
+  year = {2020},
+  address = {Big Sky, Montana},
+  month = mar,
+  url = {../wp-content/papercite-data/pdf/Banerjee.Lew.Bonalli.ea.AeroConf20.pdf},
+  owner = {lew},
+  timestamp = {2020-01-09}
+}
+</pre>
+</span>
+<!-- <span id="key_BanerjeeEtAl2020" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="BonalliBylardEtAl2019">R. Bonalli, A. Bylard, A. Cauligi, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1905.07654.pdf">“Trajectory Optimization on Manifolds: A Theoretically-Guaranteed Embedded Sequential Convex Programming Approach,”</a> in <i>Robotics: Science and Systems</i>, Freiburg im Breisgau, Germany, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BonalliBylardEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliBylardEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_BonalliBylardEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Sequential Convex Programming (SCP) has recently gain popularity as a tool for trajectory optimization, due to its sound theoretical properties and practical performance. Yet, most SCP-based methods for trajectory optimization are restricted to Euclidean settings, which precludes their application to problem instances where one needs to reason about manifold-type constraints (that is, constraints, such as loop closure, which restrict the motion of a system to a subset of the ambient space). The aim of this paper is to fill this gap by extending SCP-based trajectory optimization methods to a manifold setting. The key insight is to leverage geometric embeddings to lift a manifold-constrained trajectory optimization problem into an equivalent problem defined over a space enjoying Euclidean structure. This insight allows one to extend existing SCP methods to a manifold setting in a fairly natural way. In particular, we present an SCP algorithm for manifold problems with theoretical guarantees that resemble those derived for the Euclidean setting, and demonstrate its practical performance via numerical experiments.</p>
+</span>
+<span id="bib_BonalliBylardEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{BonalliBylardEtAl2019,
+  author = {Bonalli, R. and Bylard, A. and Cauligi, A. and Lew, T. and Pavone, M.},
+  title = {Trajectory Optimization on Manifolds: {A} Theoretically-Guaranteed Embedded Sequential Convex Programming Approach},
+  booktitle = {{Robotics: Science and Systems}},
+  year = {2019},
+  address = {Freiburg im Breisgau, Germany},
+  month = jun,
+  url = {https://arxiv.org/pdf/1905.07654.pdf},
+  owner = {bylard},
+  timestamp = {2019-05-01}
+}
+</pre>
+</span>
+<!-- <span id="key_BonalliBylardEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="BonalliCauligiEtAl2019">R. Bonalli, A. Cauligi, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1903.00155.pdf">“GuSTO: Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_BonalliCauligiEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Sequential Convex Programming (SCP) has recently seen a surge of interest as a tool for trajectory optimization. Yet, most available methods lack rigorous performance guarantees and are often tailored to specific optimal control setups. In this paper, we present GuSTO (Guaranteed Sequential Trajectory Optimization), an algorithmic framework to solve trajectory optimization problems for control-affine systems with drift. GuSTO generalizes earlier SCP-based methods for trajectory optimization (by addressing, for example, goal region constraints and problems with either fixed or free final time), and enjoys theoretical convergence guarantees in terms of convergence to, at least, a stationary point. The theoretical analysis is further leveraged to devise an accelerated implementation of GuSTO, which originally infuses ideas from indirect optimal control into an SCP context. Numerical experiments on a variety of trajectory optimization setups show that GuSTO generally outperforms current state-of-the-art approaches in terms of success rates, solution quality, and computation times.</p>
+</span>
+<span id="bib_BonalliCauligiEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{BonalliCauligiEtAl2019,
+  author = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
+  title = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2019},
+  address = {Montreal, Canada},
+  month = may,
+  url = {https://arxiv.org/pdf/1903.00155.pdf},
+  owner = {bylard},
+  timestamp = {2018-10-04}
+}
+</pre>
+</span>
+<!-- <span id="key_BonalliCauligiEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li></ol>
+        
+        </div>
+      </div>
 	  </div>
     </header>
     <!--

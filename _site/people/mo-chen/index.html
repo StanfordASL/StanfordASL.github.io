@@ -173,14 +173,14 @@
     <header>
       <div class="container">
         <div class="row" style="margin-top: 40px;">
-	      <div class="col-md-5">
-	          <img src="../../img/people/MoChen.png" alt="Mo Chen" class="img-responsive">
+  	      <div class="col-md-5" style="margin-bottom: 20px;">
+  	          <img src="../../img/people/MoChen.png" alt="Mo Chen" class="img-responsive">
             <h3>Contacts:</h3>
             <a href="//www.sfu.ca/computing/people/faculty/mochen1111.html" target="_blank">Personal Webpage</a>
-		  </div>
-		  <div class="col-md-7">
+  		    </div>
+    		  <div class="col-md-7">
             <h2 style="margin-top: 0px;">Mo Chen</h2>
-		    <hr>
+    		    <hr>
             <p>Mo Chen was a postdoctoral researcher at the Autonomous Systems Lab. He completed his Ph.D. in the Electrical Engineering and Computer Sciences department at the University of California, Berkeley with Claire Tomlin in 2017, and received his BASc in Engineering Physics from the University of British Columbia in Vancouver, BC, Canada in 2011. Mo joined Simon Fraser University in Burnaby, BC, Canada as an Assistant Professor in the School of Computing Science in Fall 2018.</p>
 
 <p>Mo’s research interests include robotics, multi-agent systems, safety-critical systems, motion planning, control theory, and computational methods. Currently, he is actively investigating theory and application of reachability analysis, applying control theoretic principles to machine learning, and human-robot interactions.</p>
@@ -194,12 +194,241 @@
   <li>2011, 2013 – 2015 Natural Sciences and Engineering Council of Canada (NSERC) Graduate Scholarship</li>
 </ul>
 
-        <br>
+            <br>
+            
+              <i>Currently at Simon Fraser University</i>
+            
+    		  </div>
+  		</div>
+      <div class="row">
+        <div class="col-md-12">
         
-          <i>Currently at Simon Fraser University</i>
+          <h2 style="margin-top: 0px;">ASL Publications</h2>
+          
+          
+          <ol class="bibliography"><li>
+ 
+
+
+<span class="entry" id="IvanovicHarrisonEtAl2019">B. Ivanovic, J. Harrison, A. Sharma, M. Chen, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1806.06161.pdf">“BaRC: Backward Reachability Curriculum for Robotic Reinforcement Learning,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicHarrisonEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicHarrisonEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_IvanovicHarrisonEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Model-free Reinforcement Learning (RL) offers an attractive approach to learn control policies for high-dimensional systems, but its relatively poor sample complexity often forces training in simulated environments. Even in simulation, goal-directed tasks whose natural reward function is sparse remain intractable for state-of-the-art model-free algorithms for continuous control. The bottleneck in these tasks is the prohibitive amount of exploration required to obtain a learning signal from the initial state of the system. In this work, we leverage physical priors in the form of an approximate system dynamics model to design a curriculum scheme for a model-free policy optimization algorithm. Our Backward Reachability Curriculum (BaRC) begins policy training from states that require a small number of actions to accomplish the task, and expands the initial state distribution backwards in a dynamically-consistent manner once the policy optimization algorithm demonstrates sufficient performance. BaRC is general, in that it can accelerate training of any model-free RL algorithm on a broad class of goal-directed continuous control MDPs. Its curriculum strategy is physically intuitive, easy-to-tune, and allows incorporating physical priors to accelerate training without hindering the performance, flexibility, and applicability of the model-free RL algorithm. We evaluate our approach on two representative dynamic robotic learning problems and find substantial performance improvement relative to previous curriculum generation techniques and naïve exploration strategies</p>
+</span>
+<span id="bib_IvanovicHarrisonEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{IvanovicHarrisonEtAl2019,
+  author = {Ivanovic, B. and Harrison, J. and Sharma, A. and Chen, M. and Pavone, M.},
+  title = {{BaRC:} Backward Reachability Curriculum for Robotic Reinforcement Learning},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2019},
+  note = {In Press},
+  address = {Montreal, Canada},
+  month = may,
+  url = {https://arxiv.org/pdf/1806.06161.pdf},
+  keywords = {press},
+  owner = {borisi},
+  timestamp = {2018-09-05}
+}
+</pre>
+</span>
+<!-- <span id="key_IvanovicHarrisonEtAl2019" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LeungSchmerlingEtAl2019">K. Leung, E. Schmerling, M. Zhang, M. Chen, J. Talbot, J. C. Gerdes, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf">“On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_LeungSchmerlingEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Action anticipation, intent prediction, and proactive behavior are all desirable characteristics for autonomous driving policies in interactive scenarios. Paramount, however, is ensuring safety on the road—a key challenge in doing so is accounting for uncertainty in human driver actions without unduly impacting planner performance. This paper introduces a minimally-interventional safety controller operating within an autonomous vehicle control stack with the role of ensuring collision-free interaction with an externally controlled (e.g., human-driven) counterpart while respecting static obstacles such as a road boundary wall. We leverage reachability analysis to construct a real-time (100Hz) controller that serves the dual role of (1) tracking an input trajectory from a higher-level planning algorithm using model predictive control, and (2) assuring safety through maintaining the availability of a collision-free escape maneuver as a persistent constraint regardless of whatever future actions the other car takes. A full-scale steer-by-wire platform is used to conduct traffic weaving experiments wherein two cars, initially side-by-side, must swap lanes in a limited amount of time and distance, emulating cars merging onto/off of a highway. We demonstrate that, with our control stack, the autonomous vehicle is able to avoid collision even when the other car defies the planner’s expectations and takes dangerous actions, either carelessly or with the intent to collide, and otherwise deviates minimally from the planned trajectory to the extent required to maintain safety.</p>
+</span>
+<span id="bib_LeungSchmerlingEtAl2019" class="bibtex noshow">
+	<pre>@article{LeungSchmerlingEtAl2019,
+  author = {Leung, K. and Schmerling, E. and Zhang, M. and Chen, M. and Talbot, J. and Gerdes, J. C. and Pavone, M.},
+  title = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
+  journal = {{Int. Journal of Robotics Research}},
+  year = {2019},
+  note = {Submitted},
+  url = {../wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf},
+  keywords = {sub},
+  timestamp = {2020-03-09}
+}
+</pre>
+</span>
+<!-- <span id="key_LeungSchmerlingEtAl2019" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LorenzettiChenEtAl2018">J. Lorenzetti, M. Chen, B. Landry, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Lorenzetti.Chen.Landry.Pavone.CDC18.pdf">“Reach-Avoid Games Via Mixed-Integer Second-Order Cone Programming,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Miami Beach, Florida, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiChenEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_LorenzettiChenEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Reach-avoid games are excellent proxies for studying many problems in robotics and related fields, with applications including multi-robot systems, human-robot interactions, and safety-critical systems. Solving reach-avoid games is however difficult due to the conflicting and asymmetric goals of agents, and trade-offs between optimality, computational complexity, and solution generality are commonly required. This paper seeks to find attacker strategies in reach-avoid games that reduce computational complexity while retaining solution quality by using a receding horizon strategy. To solve for the open-loop strategy fast enough to enable an receding horizon approach, the problem is formulated as a mixed-integer second-order cone program. This formulation leverages the use of sums-of-squares optimization to provide guarantees that the strategy is robust to all possible defender policies. The method is demonstrated through numerical and hardware experiments.</p>
+</span>
+<span id="bib_LorenzettiChenEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{LorenzettiChenEtAl2018,
+  author = {Lorenzetti, J. and Chen, M. and Landry, B. and Pavone, M.},
+  title = {Reach-Avoid Games Via Mixed-Integer Second-Order Cone Programming},
+  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
+  year = {2018},
+  address = {Miami Beach, Florida},
+  month = dec,
+  url = {../wp-content/papercite-data/pdf/Lorenzetti.Chen.Landry.Pavone.CDC18.pdf},
+  owner = {jlorenze},
+  timestamp = {2019-09-25}
+}
+</pre>
+</span>
+<!-- <span id="key_LorenzettiChenEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SinghChenEtAl2018">S. Singh, M. Chen, S. L. Herbert, C. J. Tomlin, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1808.00649">“Robust Tracking with Model Mismatch for Fast and Safe Planning: an SOS Optimization Approach,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinghChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghChenEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_SinghChenEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In the pursuit of real-time motion planning, a commonly adopted practice is to compute a trajectory by running a planning algorithm on a simplified, low-dimensional dynamical model, and then employ a feedback tracking controller that tracks such a trajectory by accounting for the full, high-dimensional system dynamics. While this strategy of planning with model mismatch generally yields fast computation times, there are no guarantees of dynamic feasibility, which hampers application to safety-critical systems. Building upon recent work that addressed this problem through the lens of Hamilton-Jacobi (HJ) reachability, we devise an algorithmic framework whereby one computes, offline, for a pair of "planner" (i.e., low-dimensional) and "tracking" (i.e., high-dimensional) models, a feedback tracking controller and associated tracking bound. This bound is then used as a safety margin when generating motion plans via the low-dimensional model. Specifically, we harness the computational tool of sum-of-squares (SOS) programming to design a bilinear optimization algorithm for the computation of the feedback tracking controller and associated tracking bound. The algorithm is demonstrated via numerical experiments, with an emphasis on investigating the trade-off between the increased computational scalability afforded by SOS and its intrinsic conservativeness. Collectively, our results enable scaling the appealing strategy of planning with model mismatch to systems that are beyond the reach of HJ analysis, while maintaining safety guarantees.</p>
+</span>
+<span id="bib_SinghChenEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{SinghChenEtAl2018,
+  author = {Singh, S. and Chen, M. and Herbert, S. L. and Tomlin, C. J. and Pavone, M.},
+  title = {Robust Tracking with Model Mismatch for Fast and Safe Planning: an {SOS} Optimization Approach},
+  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
+  year = {2018},
+  address = {Merida, Mexico},
+  month = oct,
+  url = {https://arxiv.org/abs/1808.00649},
+  keywords = {press},
+  owner = {ssingh19},
+  timestamp = {2019-07-27}
+}
+</pre>
+</span>
+<!-- <span id="key_SinghChenEtAl2018" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ChenTamEtAl2018">M. Chen, Q. Tam, S. C. Livingston, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf">“Signal Temporal Logic meets Hamilton-Jacobi Reachability: Connections and Applications,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChenTamEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChenTamEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_ChenTamEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.</p>
+</span>
+<span id="bib_ChenTamEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{ChenTamEtAl2018,
+  author = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
+  title = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
+  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
+  year = {2018},
+  note = {In Press},
+  address = {Merida, Mexico},
+  month = oct,
+  url = {../wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
+  keywords = {press},
+  owner = {bylard},
+  timestamp = {2019-12-21}
+}
+</pre>
+</span>
+<!-- <span id="key_ChenTamEtAl2018" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LandryChenEtAl2018">B. Landry, M. Chen, S. Hemley, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.11553.pdf">“Reach-Avoid Problems via Sum-of-Squares Optimization and Dynamic Programming,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Madrid, Spain, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LandryChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LandryChenEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_LandryChenEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Reach-avoid problems involve driving a system to a set of desirable configurations while keeping it away from undesirable ones. Providing mathematical guarantees for such scenarios is challenging but have numerous potential practical applications. Due to the challenges, analysis of reach-avoid problems involves making trade-offs between generality of system dynamics, generality of problem setups, optimality of solutions, and computational complexity. In this paper, we combine sum-of-squares optimization and dynamic programming to address the reach-avoid problem, and provide a conservative solution that maintains reaching and avoidance guarantees. Our method is applicable to polynomial system dynamics and to general problem setups, and is more computationally scalable than previous related methods. Through a numerical example involving two single integrators, we validate our proposed theory and compare our method to Hamilton-Jacobi reachability. Having validated our theory, we demonstrate the computational scalability of our method by computing the reach-avoid set of a system with two kinematic cars.</p>
+</span>
+<span id="bib_LandryChenEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{LandryChenEtAl2018,
+  author = {Landry, B. and Chen, M. and Hemley, S. and Pavone, M.},
+  title = {Reach-Avoid Problems via Sum-of-Squares Optimization and Dynamic Programming},
+  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
+  year = {2018},
+  note = {Submitted},
+  address = {Madrid, Spain},
+  month = oct,
+  url = {https://arxiv.org/pdf/1807.11553.pdf},
+  owner = {blandry},
+  timestamp = {2018-03-03}
+}
+</pre>
+</span>
+<!-- <span id="key_LandryChenEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LeungSchmerlingEtAl2018">K. Leung, E. Schmerling, M. Chen, J. Talbot, J. C. Gerdes, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Leung.Schmerling.Chen.ea.ISER18.pdf">“On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions,”</a> in <i>Int. Symp. on Experimental Robotics</i>, Buenos Aires, Argentina, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LeungSchmerlingEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungSchmerlingEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_LeungSchmerlingEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
+</span>
+<span id="bib_LeungSchmerlingEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{LeungSchmerlingEtAl2018,
+  author = {Leung, K. and Schmerling, E. and Chen, M. and Talbot, J. and Gerdes, J. C. and Pavone, M.},
+  title = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
+  booktitle = {{Int. Symp. on Experimental Robotics}},
+  year = {2018},
+  address = {Buenos Aires, Argentina},
+  url = {../wp-content/papercite-data/pdf/Leung.Schmerling.Chen.ea.ISER18.pdf},
+  owner = {mochen72},
+  timestamp = {2018-10-13}
+}
+</pre>
+</span>
+<!-- <span id="key_LeungSchmerlingEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ChinchaliLivingstonEtAl2018">S. P. Chinchali, S. C. Livingston, M. Chen, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Chinchali.Livingston.Chen.Pavone.IJRR18.pdf">“Multi-objective optimal control for proactive decision-making with temporal logic models,”</a> <i>Int. Journal of Robotics Research</i>, 2018. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChinchaliLivingstonEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChinchaliLivingstonEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_ChinchaliLivingstonEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> The operation of today’s robots entails interactions with humans, e.g., in autonomous driving amidst human-driven vehicles. To effectively do so, robots must proactively decode the intent of humans and concurrently leverage this knowledge for safe, cooperative task satisfaction—a problem we refer to as proactive decision making. However, simultaneous intent decoding and robotic control requires reasoning over several possible human behavioral models, resulting in high-dimensional state trajectories. In this paper, we address the proactive decision making problem using a novel combination of formal methods, control, and data mining techniques. First, we distill high-dimensional state trajectories of human-robot interaction into concise, symbolic behavioral summaries that can be learned from data. Second, we leverage formal methods to model high-level agent goals, safe interaction, and information-seeking behavior with temporal logic formulae. Finally, we design a novel decision-making scheme that maintains a belief distribution over models of human behavior, and proactively plans informative actions. After showing several desirable theoretical properties, we apply our framework to a dataset of humans driving in crowded merging scenarios. For it, temporal logic models are generated and used to synthesize control strategies using tree-based value iteration and deep reinforcement learning (RL). Additionally, we illustrate how data-driven models of human responses to informative robot probes, such as from generative models like Conditional Variational Autoencoders (CVAEs), can be clustered with formal specifications. Results from simulated self-driving car scenarios demonstrate that data-driven strategies enable safe interaction, correct model identification, and significant dimensionality reduction.</p>
+</span>
+<span id="bib_ChinchaliLivingstonEtAl2018" class="bibtex noshow">
+	<pre>@article{ChinchaliLivingstonEtAl2018,
+  author = {Chinchali, S. P. and Livingston, S. C. and Chen, M. and Pavone, M.},
+  title = {Multi-objective optimal control for proactive decision-making with temporal logic models},
+  journal = {{Int. Journal of Robotics Research}},
+  year = {2018},
+  note = {Submitted},
+  url = {../wp-content/papercite-data/pdf/Chinchali.Livingston.Chen.Pavone.IJRR18.pdf},
+  keywords = {sub},
+  owner = {SCL},
+  timestamp = {2018-06-26}
+}
+</pre>
+</span>
+<!-- <span id="key_ChinchaliLivingstonEtAl2018" >
+	<b>Keywords</b>:
+	sub
+</span> --></li></ol>
         
-		  </div>
-		</div>
+        </div>
+      </div>
 	  </div>
     </header>
     <!--

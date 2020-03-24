@@ -173,22 +173,201 @@
     <header>
       <div class="container">
         <div class="row" style="margin-top: 40px;">
-	      <div class="col-md-5">
-	          <img src="../../img/people/ApoorvaSharma.jpg" alt="Apoorva Sharma" class="img-responsive">
+  	      <div class="col-md-5" style="margin-bottom: 20px;">
+  	          <img src="../../img/people/ApoorvaSharma.jpg" alt="Apoorva Sharma" class="img-responsive">
             
             
-		  </div>
-		  <div class="col-md-7">
+  		    </div>
+    		  <div class="col-md-7">
             <h2 style="margin-top: 0px;">Apoorva Sharma</h2>
-		    <hr>
+    		    <hr>
             <p>Apoorva Sharma is a graduate student in the Aeronautics and Astronautics department. Prior to studying at Stanford, he received a BS in Engineering at Harvey Mudd College in 2016. At Harvey Mudd College, he worked on trajectory planning for autonomous underwater vehicles under supervision of Professor Chris Clark in the Lab for Autonomous and Intelligent Robotics.</p>
 
 <p>Apoorva’s research interests are in the intersection of machine learning, control theory, and planning. His current work focuses on robust and adaptive methods for planning under uncertainty.</p>
 
-        <br>
+            <br>
+            
+    		  </div>
+  		</div>
+      <div class="row">
+        <div class="col-md-12">
         
-		  </div>
-		</div>
+          <h2 style="margin-top: 0px;">ASL Publications</h2>
+          
+          
+          <ol class="bibliography"><li>
+ 
+
+
+<span class="entry" id="HarrisonSharmaEtAl2019">J. Harrison, A. Sharma, R. Dyro, X. Wang, R. Calandra, and M. Pavone, <a class="entry-title" href="">“Control Adaptation via Meta-Learning Dynamics,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_HarrisonSharmaEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Deep neural networks are an increasingly popular approach to learning-based robotics planning and control. When these models are applied on systems that differ from those on which they were trained, model mismatch can lead to degraded performance, instability, and loss of control. These issues can be alleviated by performing online adaptation of the model as state transition data from the true system is observed during operation. However, standard neural network models are ill-suited to the data-efficient and computationally efficient adaption that is necessary for adaptive control. In this work, we present Control Adaptation via Meta-Learning Dynamics (CAMeLiD), an approach to nonlinear adaptive trajectory generation and control which leverages recent advances in meta-learning to enable the efficient adaptation of neural network models. Our approach extends the ALPaCA meta-learning model, and enables flexible and adaptive learning-based dynamics models. We pair this dynamics model with a model predictive controller that is designed for efficient operation with neural network dynamics models, and show that CAMeLiD outperforms state-of-the-art meta-learning-based adaptive control models on two continuous control tasks.</p>
+</span>
+<span id="bib_HarrisonSharmaEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{HarrisonSharmaEtAl2019,
+  author = {Harrison, J. and Sharma, A. and Dyro, R. and Wang, X. and Calandra, R. and Pavone, M},
+  title = {Control Adaptation via Meta-Learning Dynamics},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2020},
+  note = {Submitted},
+  address = {Paris, France},
+  month = may,
+  keywords = {sub},
+  owner = {apoorva},
+  timestamp = {2019-09-25}
+}
+</pre>
+</span>
+<!-- <span id="key_HarrisonSharmaEtAl2019" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="HarrisonSharmaEtAl2020">J. Harrison, A. Sharma, C. Finn, and M. Pavone, <a class="entry-title" href="">“Continuous Meta-Learning without Tasks,”</a> in <i>Int. Conf. on Learning Representations</i>, Addis Ababa, Ethiopia, 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_HarrisonSharmaEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Meta-learning is a promising strategy for learning to efficiently learn within new tasks, using data gathered from a distribution of tasks. However, the meta-learning literature thus far has focused on the task segmented setting, where at train-time, offline data is assumed to be split according to the underlying task, and at test-time, the algorithms are optimized to learn in a single task. In this work, we enable the application of generic meta-learning algorithms to settings where this task segmentation is unavailable, such as continual online learning with a time-varying task. We present meta-learning via online changepoint analysis (MOCA), an approach which augments a meta-learning algorithm with a differentiable Bayesian changepoint detection scheme. The framework allows both training and testing directly on time series data without segmenting it into discrete tasks. We demonstrate the utility of this approach on a nonlinear meta-regression benchmark as well as two meta-image-classification benchmarks.</p>
+</span>
+<span id="bib_HarrisonSharmaEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{HarrisonSharmaEtAl2020,
+  author = {Harrison, J. and Sharma, A. and Finn, C. and Pavone, M.},
+  title = {Continuous Meta-Learning without Tasks},
+  booktitle = {{Int. Conf. on Learning Representations}},
+  year = {2020},
+  note = {Submitted},
+  address = {Addis Ababa, Ethiopia},
+  month = apr,
+  keywords = {sub},
+  owner = {jh2},
+  timestamp = {2019-09-25}
+}
+</pre>
+</span>
+<!-- <span id="key_HarrisonSharmaEtAl2020" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SharmaHarrisonEtAl2019">A. Sharma, J. Harrison, M. Tsao, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1901.02577.pdf">“Robust and Adaptive Planning under Model Uncertainty,”</a> in <i>Int. Conf. on Automated Planning and Scheduling</i>, Berkeley, California, 2019. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SharmaHarrisonEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SharmaHarrisonEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_SharmaHarrisonEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Planning under model uncertainty is a fundamental problem across many applications of decision making and learning. In this paper, we propose the Robust Adaptive Monte Carlo Planning (RAMCP) algorithm, which allows computation of risk-sensitive Bayes-adaptive policies that optimally trade off exploration, exploitation, and robustness. RAMCP formulates the risk-sensitive planning problem as a two-player zero-sum game, in which an adversary perturbs the agent’s belief over the models. We introduce two versions of the RAMCP algorithm. The first, RAMCP-F, converges to an optimal risk-sensitive policy without having to rebuild the search tree as the underlying belief over models is perturbed. The second version, RAMCP-I, improves computational efficiency at the cost of losing theoretical guarantees, but is shown to yield empirical results comparable to RAMCP-F. RAMCP is demonstrated on an n-pull multi-armed bandit problem, as well as a patient treatment scenario.</p>
+</span>
+<span id="bib_SharmaHarrisonEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{SharmaHarrisonEtAl2019,
+  author = {Sharma, A. and Harrison, J. and Tsao, M. and Pavone, M.},
+  title = {Robust and Adaptive Planning under Model Uncertainty},
+  booktitle = {{Int. Conf. on Automated Planning and Scheduling}},
+  year = {2019},
+  note = {In Press},
+  address = {Berkeley, California},
+  month = jul,
+  url = {https://arxiv.org/pdf/1901.02577.pdf},
+  keywords = {press},
+  owner = {apoorva},
+  timestamp = {2019-04-10}
+}
+</pre>
+</span>
+<!-- <span id="key_SharmaHarrisonEtAl2019" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ChinchaliSharmaEtAl2019">S. Chinchali, A. Sharma, J. Harrison, A. Elhafsi, D. Kang, E. Pergament, E. Cidon, S. Katti, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1902.05703.pdf">“Network Offloading Policies for Cloud Robotics: a Learning-based Approach,”</a> in <i>Robotics: Science and Systems</i>, Freiburg im Breisgau, Germany, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChinchaliSharmaEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChinchaliSharmaEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_ChinchaliSharmaEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Today’s robotic systems are increasingly turning to computationally expensive models such as deep neural networks (DNNs) for tasks like localization, perception, planning, and object detection. However, resource-constrained robots, like low-power drones, often have insufficient on-board compute resources or power reserves to scalably run the most accurate, state-of-the art neural network compute models. Cloud robotics allows mobile robots the benefit of offloading compute to centralized servers if they are uncertain locally or want to run more accurate, compute-intensive models. However, cloud robotics comes with a key, often understated cost: communicating with the cloud over congested wireless networks may result in latency or loss of data. In fact, sending high data-rate video or LIDAR from multiple robots over congested networks can lead to prohibitive delay for real-time applications, which we measure experimentally. In this paper, we formulate a novel Robot Offloading Problem - how and when should robots offload sensing tasks, especially if they are uncertain, to improve accuracy while minimizing the cost of cloud communication? We formulate offloading as a sequential decision making problem for robots, and propose a solution using deep reinforcement learning. In both simulations and hardware experiments using state-of-the art vision DNNs, our offloading strategy improves vision task performance by between 1.3-2.6x of benchmark offloading strategies, allowing robots the potential to significantly transcend their on-board sensing accuracy but with limited cost of cloud communication.</p>
+</span>
+<span id="bib_ChinchaliSharmaEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{ChinchaliSharmaEtAl2019,
+  author = {Chinchali, S. and Sharma, A. and Harrison, J. and Elhafsi, A. and Kang, D. and Pergament, E. and Cidon, E. and Katti, S. and Pavone, M.},
+  title = {Network Offloading Policies for Cloud Robotics: a Learning-based Approach},
+  booktitle = {{Robotics: Science and Systems}},
+  year = {2019},
+  address = {Freiburg im Breisgau, Germany},
+  month = jun,
+  url = {https://arxiv.org/pdf/1902.05703.pdf},
+  owner = {apoorva},
+  timestamp = {2019-02-07}
+}
+</pre>
+</span>
+<!-- <span id="key_ChinchaliSharmaEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IvanovicHarrisonEtAl2019">B. Ivanovic, J. Harrison, A. Sharma, M. Chen, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1806.06161.pdf">“BaRC: Backward Reachability Curriculum for Robotic Reinforcement Learning,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicHarrisonEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicHarrisonEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_IvanovicHarrisonEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Model-free Reinforcement Learning (RL) offers an attractive approach to learn control policies for high-dimensional systems, but its relatively poor sample complexity often forces training in simulated environments. Even in simulation, goal-directed tasks whose natural reward function is sparse remain intractable for state-of-the-art model-free algorithms for continuous control. The bottleneck in these tasks is the prohibitive amount of exploration required to obtain a learning signal from the initial state of the system. In this work, we leverage physical priors in the form of an approximate system dynamics model to design a curriculum scheme for a model-free policy optimization algorithm. Our Backward Reachability Curriculum (BaRC) begins policy training from states that require a small number of actions to accomplish the task, and expands the initial state distribution backwards in a dynamically-consistent manner once the policy optimization algorithm demonstrates sufficient performance. BaRC is general, in that it can accelerate training of any model-free RL algorithm on a broad class of goal-directed continuous control MDPs. Its curriculum strategy is physically intuitive, easy-to-tune, and allows incorporating physical priors to accelerate training without hindering the performance, flexibility, and applicability of the model-free RL algorithm. We evaluate our approach on two representative dynamic robotic learning problems and find substantial performance improvement relative to previous curriculum generation techniques and naïve exploration strategies</p>
+</span>
+<span id="bib_IvanovicHarrisonEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{IvanovicHarrisonEtAl2019,
+  author = {Ivanovic, B. and Harrison, J. and Sharma, A. and Chen, M. and Pavone, M.},
+  title = {{BaRC:} Backward Reachability Curriculum for Robotic Reinforcement Learning},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2019},
+  note = {In Press},
+  address = {Montreal, Canada},
+  month = may,
+  url = {https://arxiv.org/pdf/1806.06161.pdf},
+  keywords = {press},
+  owner = {borisi},
+  timestamp = {2018-09-05}
+}
+</pre>
+</span>
+<!-- <span id="key_IvanovicHarrisonEtAl2019" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="HarrisonSharmaEtAl2018">J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.08912.pdf">“Meta-Learning Priors for Efficient Online Bayesian Regression,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_HarrisonSharmaEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. In particular, the predominant implementation of GP regression is kernel-based, as it enables fitting of arbitrary nonlinear functions by leveraging kernel functions as infinite-dimensional features. While incorporating prior information has the potential to drastically improve data efficiency of kernel-based GP regression, expressing complex priors through the choice of kernel function and associated hyperparameters is often challenging and unintuitive. Furthermore, the computational complexity of kernel-based GP regression scales poorly with the number of samples, limiting its application in regimes where a large amount of data is available. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior density. These features are neural networks, which are trained via a meta-learning approach. ALPaCA extracts all prior information from the dataset, rather than relying on the choice of arbitrary, restrictive kernel hyperparameters. Furthermore, it substantially reduces sample complexity, and allows scaling to large systems. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.</p>
+</span>
+<span id="bib_HarrisonSharmaEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{HarrisonSharmaEtAl2018,
+  author = {Harrison, J. and Sharma, A. and Pavone, M.},
+  title = {Meta-Learning Priors for Efficient Online Bayesian Regression},
+  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
+  year = {2018},
+  note = {In Press},
+  address = {Merida, Mexico},
+  month = oct,
+  url = {https://arxiv.org/pdf/1807.08912.pdf},
+  keywords = {press},
+  owner = {apoorva},
+  timestamp = {2018-10-07}
+}
+</pre>
+</span>
+<!-- <span id="key_HarrisonSharmaEtAl2018" >
+	<b>Keywords</b>:
+	press
+</span> --></li></ol>
+        
+        </div>
+      </div>
 	  </div>
     </header>
     <!--

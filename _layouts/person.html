@@ -7,21 +7,31 @@
     <header>
       <div class="container">
         <div class="row" style="margin-top: 40px;">
-	      <div class="col-md-5">
-	        {% if page.img %}  <img src="{{ relBase }}img/people/{{ page.img }}" alt="{{ page.title }}" class="img-responsive">{% endif %}
+  	      <div class="col-md-5" style="margin-bottom: 20px;">
+  	        {% if page.img %}  <img src="{{ relBase }}img/people/{{ page.img }}" alt="{{ page.title }}" class="img-responsive">{% endif %}
             {% if page.website %}<h3>Contacts:</h3>{% endif %}
             {% if page.website %}<a href="//{{page.website}}" target="_blank">Personal Webpage</a>{% endif %}
-		  </div>
-		  <div class="col-md-7">
+  		    </div>
+    		  <div class="col-md-7">
             <h2 style="margin-top: 0px;">{{ page.title }}</h2>
-		    <hr>
+    		    <hr>
             {{ page.content }}
-        <br>
-        {% if page.current %}
-          <i>Currently at {{page.current}}</i>
+            <br>
+            {% if page.current %}
+              <i>Currently at {{page.current}}</i>
+            {% endif %}
+    		  </div>
+  		</div>
+      <div class="row">
+        <div class="col-md-12">
+        {% if page.position != "faculty" %}
+          <h2 style="margin-top: 0px;">ASL Publications</h2>
+          {% assign first_initial = page.title | slice: 0 %}
+          {% assign person_name = page.last | append: ". " | append: first_initial %}
+          {% bibliography -q @*[author ~= {{ person_name }}] %}
         {% endif %}
-		  </div>
-		</div>
+        </div>
+      </div>
 	  </div>
     </header>
     {% include javascript.html %}
