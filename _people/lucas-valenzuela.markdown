@@ -8,8 +8,3 @@ excerpt: "Optimal management of societal infrastructure"
 img: LucasValenzuela.png
 email: lucasfv@stanford.edu
 ---
-
-Placeholder
-
-### Awards:
-- Placeholder

@@ -9,5 +9,3 @@ img: MatteoZallio.jpg
 email: matteo.zallio@stanford.edu
 website: www.matteozallio.com
 ---
-
-Matteo Zallio is ...
