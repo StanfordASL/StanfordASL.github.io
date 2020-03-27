@@ -4,7 +4,7 @@ title:  "Karen Leung"
 last:   "Leung"
 date:   2017-03-01 00:00:00 -0700
 position: phd
-excerpt: "Thunder from down under"
+excerpt: "Formal methods for safe robot learning"
 img: KarenLeung.jpg
 email: karenl7@stanford.edu
 ---
