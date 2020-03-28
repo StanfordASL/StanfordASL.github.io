@@ -10,14 +10,15 @@ email: kirilsol@stanford.edu
 website: kirilsol.github.io
 ---
 
-Kiril Solovey is a Postdoctoral Scholar in the Autonomous Systems Lab. His research focuses on algorithmic aspects of robotics. He is particularly interested in the design and analysis of algorithms for robot motion planning, multi-robot systems, and autonomous mobility on demand (AMoD). 
+Kiril Solovey is a Postdoctoral Scholar at the Department of Aeronautics and Astronautics, Stanford University, hosted by Prof. Marco Pavone. Prior to Stanford, he completed with honors his B.Sc., M.Sc., and Ph.D. studies in the School of Computer Science at Tel Aviv University, Israel, where he was advised by Prof. Dan Halperin.
 
-Kiril completed his Ph.D. studies in Computer Science at Tel Aviv University, where he worked with Prof. Dan Halperin at the Computational Geometry Lab. 
+His research interests lie at the interface of computer science and robotics. His work pursues deeper mathematical insights into the structural properties of common robotic tasks, aiming to leverage those insights in effective algorithmic approaches. Kiril's research pertains to the following three research streams, which span the full spectrum of robotics; from enhancing the autonomy of individual robots, to controlling robotic teams, to operating large-scale autonomous transportation systems.
 
-In addition to his academic interests, he takes pleasure in being outdoors (mountain biking and hiking), travelling around the world, and enjoys food, music and books.
+In addition to his academic interests, he takes pleasure in being outdoors (mountain biking and hiking), traveling around the world, and enjoys food, cooking, music, books, and meditation.
 
 ### Awards:
-- Fulbright Scholar Award
-- Clore Scholars Program
-- Best paper in International Symposium on Multi-Robot and Multi-Agent Systems, 2017
-- Best student paper in Robotics: Science and Systems, 2015
+- Fulbright Post-doctoral Scholar Award (2018)
+- Clore Scholars Programme (2015-2018)
+- Best paper, International Symposium on Multi-Robot and Multi-Agent Systems (2017)
+- Best student paper, Robotics: Science and Systems (2015)
+- Excellence in teaching awards, Tel Aviv University (2015, 2016)

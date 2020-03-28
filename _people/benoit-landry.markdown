@@ -7,9 +7,11 @@ position: phd
 excerpt: "UAV planning and control"
 img: BenoitLandry.jpg
 email: ben.acc.landry@gmail.com
+website: http://www.blandry.xyz/
 ---
 
-Benoit is currently pursuing a Ph.D. in Aeronautics and Astronautics from Stanford University. He received a Bachelor of Science and a Master of Engineering in Electrical Engineering and Computer Science from the Massachusetts Institute of Technology (along with a minor in Science, Technology and Society). At MIT, Benoit conducted research on planning and control for small aerial vehicles under the supervision of Professor Russ Tedrake in the Robot Locomotion Group. He was also responsible for control systems development at 3D Robotics, a drone company based of Berkeley, California. In 2014, Benoit became a Siebel Scholar as a recognition of his research and academic accomplishments. Benoit’s current research interests span the problems of task and motion planning as well as control for robotic systems in complex environments, especially in the context of aerial robotics. 
+Benoit is currently pursuing a Ph.D. in the department of Aeronautics and Astronautics. He received a Bachelor of Science and a Master of Engineering in Electrical Engineering and Computer Science from the Massachusetts Institute of Technology (minoring in Science, Technology and Society). At MIT, Benoit conducted research on planning and control for small aerial vehicles under the supervision of Professor Russ Tedrake. He was later responsible for control systems development at 3D Robotics. Generally speaking, Benoit’s research attempts to leverage computational breakthroughs (e.g. autodiff, modern solvers, GPU’s) to address the problems of planning and control for complex robotic systems. He is particularly interested in aerial robotics and systems that make and break contact with their environments.
 
 ### Awards:
-- 2014 Siebel Scholar
+- Siebel Foundation Scholarship, 2014
+- Stanford Robotics Center Fellowship

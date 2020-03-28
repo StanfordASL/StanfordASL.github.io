@@ -4,7 +4,7 @@ title:  "Robert Dyro"
 last:   "Dyro"
 date:   2020-03-19 00:00:00 -0700
 position: phd
-excerpt: "Robotic Optimal Control"
+excerpt: "Robotic optimal control"
 img: RobertDyro.jpg
 email: rdyro@stanford.edu
 ---

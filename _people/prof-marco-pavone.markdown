@@ -12,6 +12,8 @@ Associate Professor, Department of Aeronautics and Astronautics
 
 Director, Autonomous Systems Laboratory
 
+Director, Center for Automotive Research at Stanford (CARS)
+
 Associate Professor (by courtesy), Information Systems Laboratory
 
 Associate Professor (by courtesy), Computer Science
@@ -23,4 +25,3 @@ Ph.D. Massachusetts Institute of Technology, 2010
 Email: [last name]@stanford.edu
 
 Phone: +1 (650) 723 4432
-
