@@ -224,7 +224,7 @@
           <div class="row">
             <div class="col-md-6 col-xs-12 white-text" style="margin-top: 40px;">
               <h1 id='title' class="white-text">Research Team</h1>
-              Stephanie Schneider<br/>Andrew Bylard
+              <a class='white-link' href=/people/stephanie-schneider>Stephanie Schneider</a><br/><a class='white-link' href=/people/andrew-bylard>Andrew Bylard</a>
             </div>
             <div class="col-md-6 col-xs-12">
               <img src="https://stanfordasl.github.io/img/projects/space/UnconvSpaceRobotics.JPG" alt="" style="margin: auto;">
@@ -322,15 +322,6 @@ The website should work without any of the JS below. -F
 <!-- JabRef (Toggling info on Publications Page) -->
 <script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
 
-    <script>
-    $(".bibliography").remove("h3");
-    $("ol.bibliography > li").unwrap();
-
-    var $set = $('div.project_bib > li');    
-    for(var i=0, len = $set.length; i < len; i+=2){
-        $set.slice(i, i+2).wrapAll("<ol class='bibliography'></ol>");
-    }
-    </script> 
     <!-- Footer -->
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->

@@ -197,7 +197,7 @@
             <div class="project-question">
               <h1 class="large-title">Research Question</h1>
               <br>
-              <p class="project-question-text">How can we control infinite-dimensional systems with real-world dynamics?</p>
+              <p class="project-question-text">Can optimal control techniques be efficiently and effectively applied to infinite dimensional systems?</p>
             </div>
           </div>
         </div>
@@ -224,7 +224,7 @@
           <div class="row">
             <div class="col-md-6 col-xs-12 white-text" style="margin-top: 40px;">
               <h1 id='title' class="white-text">Research Team</h1>
-              Robin Brown<br/>Joe Lorenzetti
+              <a class='white-link' href=/people/robin-brown>Robin Brown</a><br/><a class='white-link' href=/people/joseph-lorenzetti>Joe Lorenzetti</a>
             </div>
             <div class="col-md-6 col-xs-12">
               <img src="https://stanfordasl.github.io/img/projects/infinite/NASA_1-01.png" alt="" style="margin: auto;">
@@ -237,7 +237,116 @@
           <div class="col-md-12">
             <h4 class="bibliography">Related Works</h4>
             <div class="project_bib">
-Coming soon!
+<ol class="bibliography"><li>
+ 
+
+
+<span class="entry" id="LorenzettiPavone2020b">J. Lorenzetti and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1911.12349.pdf">“Error Bounds for Reduced Order Model Predictive Control,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Jeju Island, Republic of Korea, 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiPavone2020b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiPavone2020b','abstract')">Abstract</a>]</p>
+<span id="abs_LorenzettiPavone2020b" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Model predictive control is a powerful framework for enabling optimal control of constrained systems. However, for systems that are described by high-dimensional state spaces this framework can be too computationally demanding for real-time control. Reduced order model predictive control (ROMPC) frameworks address this issue by leveraging model reduction techniques to compress the state space model used in the online optimal control problem. While this can enable real-time control by decreasing the online computational requirements, these model reductions introduce approximation errors that must be accounted for to guarantee constraint satisfaction and closed-loop stability for the controlled high-dimensional system. In this work we propose an offline methodology for efficiently computing error bounds arising from model reduction, and show how they can be used to guarantee constraint satisfaction in a previously proposed ROMPC framework. This work considers linear, discrete, time-invariant systems that are compressed by Petrov-Galerkin projections, and considers output-feedback settings where the system is also subject to bounded disturbances.</p>
+</span>
+<span id="bib_LorenzettiPavone2020b" class="bibtex noshow">
+	<pre>@inproceedings{LorenzettiPavone2020b,
+  author = {Lorenzetti, J. and Pavone, M.},
+  title = {Error Bounds for Reduced Order Model Predictive Control},
+  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
+  year = {2020},
+  note = {Submitted},
+  address = {Jeju Island, Republic of Korea},
+  month = dec,
+  url = {https://arxiv.org/pdf/1911.12349.pdf},
+  keywords = {sub},
+  owner = {jlorenze},
+  timestamp = {2020-02-07}
+}
+</pre>
+</span>
+<!-- <span id="key_LorenzettiPavone2020b" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LorenzettiMcClellanEtAl2020">J. Lorenzetti, A. McClellan, C. Farhat, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Lorenzetti.McClellan.Farhat.Pavone.AIAA20.pdf">“UAV Aircraft Carrier Landing Using CFD-Based Model Predictive Control,”</a> in <i>AIAA Scitech Forum</i>, Orlando, Florida, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiMcClellanEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiMcClellanEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_LorenzettiMcClellanEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> The control problem associated with autonomous aircraft carrier landings for UAVs is challenging due to requirements on safety, high-performance operation, and uncertain and highly dynamic environments. This work proposes a control scheme for such problems that enables safe operation of the UAV at the limits of its performance by utilizing a model predictive control (MPC) approach. While real-time computation requirements typically limit the fidelity of the models used in optimization-based control, in this work it is demonstrated that high-fidelity computational fluid dynamics (CFD) models can be used within an MPC framework via the construction of a projection-based reduced order model (ROM). An application of a CFD-based MPC scheme to the glideslope tracking problem is then developed to demonstrate the effectiveness of the proposed approach.</p>
+</span>
+<span id="bib_LorenzettiMcClellanEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{LorenzettiMcClellanEtAl2020,
+  author = {Lorenzetti, J. and McClellan, A. and Farhat, C. and Pavone, M.},
+  title = {{UAV} Aircraft Carrier Landing Using {CFD}-Based Model Predictive Control},
+  booktitle = {{AIAA Scitech Forum}},
+  year = {2020},
+  address = {Orlando, Florida},
+  month = jan,
+  url = {../wp-content/papercite-data/pdf/Lorenzetti.McClellan.Farhat.Pavone.AIAA20.pdf},
+  owner = {jlorenze},
+  timestamp = {2019-12-02}
+}
+</pre>
+</span>
+<!-- <span id="key_LorenzettiMcClellanEtAl2020" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="McClellanLorenzettiEtAl2020">A. McClellan, J. Lorenzetti, M. Pavone, and C. Farhat, <a class="entry-title" href="https://arc.aiaa.org/doi/abs/10.2514/6.2020-1190">“Projection-based Model Order Reduction for Flight Dynamics and Model Predictive Control,”</a> in <i>AIAA Scitech Forum</i>, Orlando, Florida, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('McClellanLorenzettiEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('McClellanLorenzettiEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_McClellanLorenzettiEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> A model predictive control algorithm seeks to produce a control law that optimizes the future behavior of a deployed system over a finite time horizon, by leveraging a real-time computational model of this system. For applications involving fluid-structure interaction (FSI), this leveraging is challenging because it implies the design of an accurate and yet real-time computational model for the prediction of the time-dependent flow-induced forces and moments acting on the system. The projection-based reduction of CFD-based computational models for FSI provides one approach for addressing this issue. In this context, linear model reduction is adequate as the controller can be expected to maintain the system of interest within small perturbations around a pre-designed optimal trajectory. For the automated landing of an aircraft application considered in this paper, this requires the construction of a CFD-based projection-based reduced-order model that is linearized around a time-dependent trajectory rather than a mere steady-state equilibrium position. To this end, a computational approach for the projection-based model order reduction of linearized CFD-based computational models for FSI is presented, with the goal of application to downstream control tasks such as automated aircraft landing. The approach addresses the issues of linearization around a trajectory and construction of stable reduced-order models to achieve real-time computation, while maintaining model accuracy, and thereby enabling model predictive control. It is verified using a simple model predictive control algorithm.</p>
+</span>
+<span id="bib_McClellanLorenzettiEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{McClellanLorenzettiEtAl2020,
+  author = {McClellan, A. and Lorenzetti, J. and Pavone, M. and Farhat, C.},
+  title = {Projection-based Model Order Reduction for Flight Dynamics and Model Predictive Control},
+  booktitle = {{AIAA Scitech Forum}},
+  year = {2020},
+  address = {Orlando, Florida},
+  month = jan,
+  url = {https://arc.aiaa.org/doi/abs/10.2514/6.2020-1190},
+  owner = {jlorenze},
+  timestamp = {2019-12-02}
+}
+</pre>
+</span>
+<!-- <span id="key_McClellanLorenzettiEtAl2020" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LorenzettiLandryEtAl2019">J. Lorenzetti, B. Landry, S. Singh, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1811.06590.pdf">“Reduced Order Model Predictive Control For Setpoint Tracking,”</a> in <i>European Control Conference</i>, Naples, Italy, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_LorenzettiLandryEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.</p>
+</span>
+<span id="bib_LorenzettiLandryEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{LorenzettiLandryEtAl2019,
+  author = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
+  title = {Reduced Order Model Predictive Control For Setpoint Tracking},
+  booktitle = {{European Control Conference}},
+  year = {2019},
+  address = {Naples, Italy},
+  month = jun,
+  url = {https://arxiv.org/pdf/1811.06590.pdf},
+  owner = {jlorenze},
+  timestamp = {2019-04-26}
+}
+</pre>
+</span>
+<!-- <span id="key_LorenzettiLandryEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li></ol>
 </div>
 
           </div>
@@ -267,15 +376,6 @@ The website should work without any of the JS below. -F
 <!-- JabRef (Toggling info on Publications Page) -->
 <script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
 
-    <script>
-    $(".bibliography").remove("h3");
-    $("ol.bibliography > li").unwrap();
-
-    var $set = $('div.project_bib > li');    
-    for(var i=0, len = $set.length; i < len; i+=2){
-        $set.slice(i, i+2).wrapAll("<ol class='bibliography'></ol>");
-    }
-    </script> 
     <!-- Footer -->
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->

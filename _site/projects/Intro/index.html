@@ -265,15 +265,6 @@ The website should work without any of the JS below. -F
 <!-- JabRef (Toggling info on Publications Page) -->
 <script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
 
-    <script>
-    $(".bibliography").remove("h3");
-    $("ol.bibliography > li").unwrap();
-
-    var $set = $('div.project_bib > li');    
-    for(var i=0, len = $set.length; i < len; i+=2){
-        $set.slice(i, i+2).wrapAll("<ol class='bibliography'></ol>");
-    }
-    </script> 
     <!-- Footer -->
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
