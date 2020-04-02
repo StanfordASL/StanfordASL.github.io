@@ -274,7 +274,7 @@
  
 
 
-<span class="entry" id="JansonIchterEtAl2015">L. Janson, B. Ichter, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Janson.Ichter.Pavone.IJRR18.pdf">“Deterministic Sampling-Based Motion Planning: Optimality, Complexity, and Performance,”</a> <i>Int. Journal of Robotics Research</i>, vol. 37, no. 1, pp. 46–61, 2018.</span> 
+<span class="entry" id="JansonIchterEtAl2015">L. Janson, B. Ichter, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Janson.Ichter.Pavone.IJRR18.pdf">“Deterministic Sampling-Based Motion Planning: Optimality, Complexity, and Performance,”</a> <i>Int. Journal of Robotics Research</i>, vol. 37, no. 1, pp. 46–61, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('JansonIchterEtAl2015','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JansonIchterEtAl2015','abstract')">Abstract</a>]</p>
 <span id="abs_JansonIchterEtAl2015" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Probabilistic sampling-based algorithms, such as the probabilistic roadmap (PRM) and the rapidly-exploring random tree (RRT) algorithms, represent one of the most successful approaches to robotic motion planning, due to their strong theoretical properties (in terms of probabilistic completeness or even asymptotic optimality) and remarkable practical performance. Such algorithms are probabilistic in that they compute a path by connecting independently and identically distributed (i.i.d.) random points in the configuration space. Their randomization aspect, however, makes several tasks challenging, including certification for safety-critical applications and use of offline computation to improve real-time execution. Hence, an important open question is whether similar (or better) theoretical guarantees and practical performance could be obtained by considering deterministic, as opposed to random sampling sequences. The objective of this paper is to provide a rigorous answer to this question. Specifically, we first show that PRM, for a certain selection of tuning parameters and deterministic low-dispersion sampling sequences, is deterministically asymptotically optimal, i.e., it returns a path whose cost converges deterministically to the optimal one as the number of points goes to infinity. Second, we characterize the convergence rate, and we find that the factor of sub-optimality can be very explicitly upper-bounded in terms of the l2-dispersion of the sampling sequence and the connection radius of PRM. Third, we show that an asymptotically optimal version of PRM exists with computational and space complexity arbitrarily close to O(n) (the theoretical lower bound), where n is the number of points in the sequence. This is in stark contrast to the O(n log n) complexity results for existing asymptotically- optimal probabilistic planners. Fourth, we show that our theoretical results and insights extend to other batch-processing algorithms such as FMT*, to non-uniform sampling strategies, to k-nearest-neighbor implementations, and to differentially- constrained problems. Finally, through numerical experiments, we show that planning with deterministic low-dispersion sampling generally provides superior performance in terms of path cost and success rate.</p>
@@ -289,7 +289,7 @@
   pages = {46--61},
   year = {2018},
   doi = {10.1177/0278364917714338},
-  url = {../wp-content/papercite-data/pdf/Janson.Ichter.Pavone.IJRR18.pdf},
+  url = {/wp-content/papercite-data/pdf/Janson.Ichter.Pavone.IJRR18.pdf},
   owner = {bylard},
   timestamp = {2017-03-07}
 }
@@ -357,7 +357,7 @@
  
 
 
-<span class="entry" id="IchterSchmerlingEtAl2017b">B. Ichter, E. Schmerling, and M. Pavone, <a class="entry-title" href="../wp-content/papercite-data/pdf/Ichter.Schmerling.Pavone.ICRC17.pdf">“Group Marching Tree: Sampling-Based Approximately Optimal Motion Planning on GPUs,”</a> in <i>IEEE Int. Conf. on Robotic Computing</i>, Taichung, Taiwan, 2017.</span> 
+<span class="entry" id="IchterSchmerlingEtAl2017b">B. Ichter, E. Schmerling, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Ichter.Schmerling.Pavone.ICRC17.pdf">“Group Marching Tree: Sampling-Based Approximately Optimal Motion Planning on GPUs,”</a> in <i>IEEE Int. Conf. on Robotic Computing</i>, Taichung, Taiwan, 2017.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017b','abstract')">Abstract</a>]</p>
 <span id="abs_IchterSchmerlingEtAl2017b" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> This paper presents a novel approach, named the Group Marching Tree (GMT*) algorithm, to planning on GPUs at rates amenable to application within control loops, allowing planning in real-world settings via repeated computation of near-optimal plans. GMT*, like the Fast Marching Tree (FMT*) algorithm, explores the state space with a “lazy” dynamic programming recursion on a set of samples to grow a tree of near-optimal paths. GMT*, however, alters the approach of FMT* with approximate dynamic programming by expanding, in parallel, the group of all active samples with cost below an increasing threshold, rather than only the minimum cost sample. This group approximation enables low-level parallelism over the sample set and removes the need for sequential data structures, while the “lazy” collision checking limits thread divergence—all contributing to a very efficient GPU implementation. While this approach incurs some suboptimality, we prove that GMT* remains asymptotically optimal up to a constant multiplicative factor. We show solutions for complex planning problems under differential constraints can be found in  10 ms on a desktop GPU and  30 ms on an embedded GPU, representing a significant speed up over the state of the art, with only small losses in performance. Finally, we present a scenario demonstrating the efficacy of planning within the control loop ( 100 Hz) towards operating in dynamic, uncertain settings.</p>
@@ -370,7 +370,7 @@
   year = {2017},
   address = {Taichung, Taiwan},
   month = apr,
-  url = {../wp-content/papercite-data/pdf/Ichter.Schmerling.Pavone.ICRC17.pdf},
+  url = {/wp-content/papercite-data/pdf/Ichter.Schmerling.Pavone.ICRC17.pdf},
   owner = {bylard},
   timestamp = {2017-03-07}
 }
