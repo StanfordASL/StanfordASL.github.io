@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AA 203: Optimal and Learning-based Control</title>
+
+    <meta name="description" content="Optimal control solution techniques for systems with known and unknown dynamics. Dynamic programming, Hamilton-Jacobi reachability, and direct and indirect methods for trajectory optimization. Introduction to model predictive control. Model-based reinforcement learning, and connections between modern reinforcement learning in continuous spaces and fundamental optimal control ideas.">
+    <!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+
+	<!-- JabRef CSS -->
+	<link rel="stylesheet" href="https://stanfordasl.github.io/css/JabRef.css">
+	 
+    <link rel="canonical" href="http://asl.stanford.edu/aa203_sp1819/assignments.html"> 
+    <!-- Not required -->
+    <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="https://stanfordasl.github.io /feed.xml "> -->
+    <!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/my.css"> 
+
+    <!-- AA 203 CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/aa203.css"> 
+
+    <!-- Analytics -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124680200-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124680200-1');
+    </script>
+    
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2864b7">
+    <meta name="msapplication-TileColor" content="#2864b7">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="page-top" class="index">
+  <!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom"> <!-- navbar-fixed-top -->
+    <div class="container navbar-items">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-3" style="z-index: 1;">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="https://stanfordasl.github.io/img/ASL_Logo_White.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <!-- 
+                            <li class="page-scroll">
+                                <a href="/">Home</a>
+                            </li>
+                             -->
+                            
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa203/">Home</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa203/assignments.html">Homework</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa203/project.html">Project</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa203/announcements.html">Announcements</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Homework</h1>
+        </div>
+      </div>
+      
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="aa203-homework-title">Homework #8</h2>
+            </div>
+            <div class="col-md-3">
+              <h4 class="aa203-homework-posted-date">Posted on May 22</h4>
+            </div>
+            <div class="col-md-4">
+              <h4 class="aa203-homework-due-date">Due at  9:00pm on June  5</h4>
+            </div>
+          </div>
+          <p><p>This homework will have you building experience with adaptive control techniques and the core concepts of linear system identification.</p>
+</p>
+          <a href="/aa203/pdfs/homework/AA203_HW8.pdf">[pdf]</a> <a href="https://github.com/StanfordASL/AA203-Homework/tree/master/HW8">[code]</a>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="aa203-homework-title">Homework #7</h2>
+            </div>
+            <div class="col-md-3">
+              <h4 class="aa203-homework-posted-date">Posted on May 15</h4>
+            </div>
+            <div class="col-md-4">
+              <h4 class="aa203-homework-due-date">Due at  9:00pm on May 22</h4>
+            </div>
+          </div>
+          <p><p>In this homework you will gain experience with the theory and practical aspects of model predictive control.</p>
+</p>
+          <a href="/aa203/pdfs/homework/AA203_HW7.pdf">[pdf]</a> <a href="https://github.com/StanfordASL/AA203-Homework/tree/master/HW7">[code]</a>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="aa203-homework-title">Homework #6</h2>
+            </div>
+            <div class="col-md-3">
+              <h4 class="aa203-homework-posted-date">Posted on May  8</h4>
+            </div>
+            <div class="col-md-4">
+              <h4 class="aa203-homework-due-date">Due at  9:00pm on May 15</h4>
+            </div>
+          </div>
+          <p><p>In this homework you will investigate numerical approaches to direct optimal control.</p>
+</p>
+          <a href="/aa203/pdfs/homework/AA203_HW6.pdf">[pdf]</a> <a href="https://github.com/StanfordASL/AA203-Homework/tree/master/HW6">[code]</a>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="aa203-homework-title">Homework #5</h2>
+            </div>
+            <div class="col-md-3">
+              <h4 class="aa203-homework-posted-date">Posted on May  1</h4>
+            </div>
+            <div class="col-md-4">
+              <h4 class="aa203-homework-due-date">Due at  9:00pm on May  9</h4>
+            </div>
+          </div>
+          <p><p>In this homework you will investigate usage of Pontryagin’s Minimum Principle for the control of a rocket launch. You will then investigate aspects of numerical indirect methods for the same problem.</p>
+</p>
+          <a href="/aa203/pdfs/homework/AA203_HW5.pdf">[pdf]</a> <a href="https://github.com/StanfordASL/AA203-Homework/tree/master/HW5">[code]</a>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="aa203-homework-title">Homework #4</h2>
+            </div>
+            <div class="col-md-3">
+              <h4 class="aa203-homework-posted-date">Posted on April 24</h4>
+            </div>
+            <div class="col-md-4">
+              <h4 class="aa203-homework-due-date">Due at  9:00pm on May  1</h4>
+            </div>
+          </div>
+          <p><p>In this homework, you will investigate applications of the calculus of variations. Additionally, you will become familiar with application of the Hamiltonian equations for optimal control.</p>
+</p>
+          <a href="/aa203/pdfs/homework/AA203_HW4.pdf">[pdf]</a> <a href="https://github.com/StanfordASL/AA203-Homework/tree/master/HW4">[code]</a>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="aa203-homework-title">Homework #3</h2>
+            </div>
+            <div class="col-md-3">
+              <h4 class="aa203-homework-posted-date">Posted on April 17</h4>
+            </div>
+            <div class="col-md-4">
+              <h4 class="aa203-homework-due-date">Due at  9:00pm on April 24</h4>
+            </div>
+          </div>
+          <p><p>This homework will build familiarity with practical application of dynamic programming for stochastic systems, as well as theoretical and practical application of HJB and HJI.</p>
+</p>
+          <a href="/aa203/pdfs/homework/AA203_HW3.pdf">[pdf]</a> <a href="https://github.com/StanfordASL/AA203-Homework/tree/master/HW3">[code]</a>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="aa203-homework-title">Homework #2</h2>
+            </div>
+            <div class="col-md-3">
+              <h4 class="aa203-homework-posted-date">Posted on April 11</h4>
+            </div>
+            <div class="col-md-4">
+              <h4 class="aa203-homework-due-date">Due at  9:00pm on April 18</h4>
+            </div>
+          </div>
+          <p><p>This homework will build understanding and familiarity with dynamic programming as a general purpose tool. In problems 4 and 5, you will use Matlab to implement LQR and iterative LQR to control an inverted pendulum system.</p>
+</p>
+          <a href="/aa203/pdfs/homework/AA203_HW2.pdf">[pdf]</a> <a href="https://github.com/StanfordASL/AA203-Homework/tree/master/HW2">[code]</a>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="aa203-homework-title">Homework #1</h2>
+            </div>
+            <div class="col-md-3">
+              <h4 class="aa203-homework-posted-date">Posted on April  3</h4>
+            </div>
+            <div class="col-md-4">
+              <h4 class="aa203-homework-due-date">Due at  1:30pm on April 10</h4>
+            </div>
+          </div>
+          <p><p>The goal of this homework is to build intuition for nonlinear optimization tools that will be critically important later in the course. Additionally, the last problem is a first, simple optimal control problem that will motivate approaches we develop in the rest of the class.</p>
+</p>
+          <a href="/aa203/pdfs/homework/AA203_HW1.pdf">[pdf]</a> <a href="https://github.com/StanfordASL/AA203_HW1">[code]</a>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+  <!--
+The website should work without any of the JS below. -F
+-->
+
+<!-- jQuery -->
+<script src="https://stanfordasl.github.io/js/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://stanfordasl.github.io/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<!-- <script src="js/jquery.easing.min.js"></script> -->
+<!-- Contact Form JavaScript -->
+<!-- <script src="js/jqBootstrapValidation.js"></script> -->
+<!-- <script src="js/contact_me.js"></script> -->
+<!-- Custom Theme JavaScript -->
+<!-- <script src="js/freelancer.min.js"></script> -->
+<!-- JabRef (Toggling info on Publications Page) -->
+<script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
+
+  <!-- Footer -->
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div> -->
+
+<!-- Made with (L) by Federico in October 2017
+CSS: Bootstrap (without the JS)
+http://getbootstrap.com/
+Bloated, but so convenient.
+Plus, it's probably already in your browser cache (hence the CDN).
+If you want the Jekyll project for your own website,
+feel free to drop me a line!
+-F
+-->
+
+<!-- <hr class="footer-line"/> -->
+<script type="text/javascript">
+function footerAlign() {
+  $('footer').css('display', 'block');
+  $('footer').css('height', 'auto');
+  var footerHeight = $('footer').outerHeight();
+  $('body').css('padding-bottom', footerHeight);
+  $('footer').css('height', footerHeight);
+}
+
+
+$(document).ready(function(){
+  footerAlign();
+});
+
+$( window ).resize(function() {
+  footerAlign();
+});
+</script>
+
+<footer class="footer">
+<div id="social-icons">
+  <a href="https://twitter.com/stanfordasl" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_twitter.png" alt=""></a>
+  <a href="https://www.instagram.com/stanfordasl" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_instagram.png" alt=""></a>
+  <a href="https://github.com/StanfordASL" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_github.png" alt=""></a>
+</div>
+<div class="copyright-text">
+  © Autonomous Systems Lab 2020. All rights reserved.
+</div>
+</footer>
+</body>
+</html>
