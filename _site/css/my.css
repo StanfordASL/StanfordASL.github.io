@@ -495,9 +495,9 @@ b.keyword-title {
 
 .carousel-overtext {
   position: absolute;
-  margin-right: 50%;
-  bottom: 20%;
-  font-size: 18pt;
+  margin-right: 27%;
+  bottom: 10%;
+  font-size: 24pt;
   font-weight: 600;
   text-align: left;
 }
@@ -505,8 +505,8 @@ b.keyword-title {
   display: inline;
   padding-left: 4px;
   padding-right: 4px;
-  padding-bottom: 2.625px;
-  padding-top: 2.625px;
+  padding-bottom: 3.85px;
+  padding-top: 3.85px;
 
   background-color: rgb(255, 255, 255); /*For compatibility with older browsers.*/
   background-color: rgba(255, 255, 255, 0.85);
@@ -592,7 +592,7 @@ hr {
   margin-right: 20%;
   left: 5%;
   top: 10%;
-  font-size: 18pt;
+  font-size: 24pt;
   font-weight: 600;
 }
 
@@ -600,8 +600,8 @@ hr {
   display: inline;
   padding-left: 4px;
   padding-right: 4px;
-  padding-bottom: 2.625px;
-  padding-top: 2.625px;
+  padding-bottom: 3.85px;
+  padding-top: 3.85px;
 
   background-color: rgb(255, 255, 255); /*For compatibility with older browsers.*/
   background-color: rgba(255, 255, 255, 0.85);
