@@ -4,7 +4,7 @@ title:  "Matt Tsao"
 last:   "Tsao"
 date:   2018-05-18 00:00:00 -0700
 position: phd
-excerpt: "Statistics, probability theory, and learning theory"
+excerpt: "Combinatorial optimization and transportation science"
 img: MattTsao.jpg
 email: mwtsao@stanford.edu
 ---
