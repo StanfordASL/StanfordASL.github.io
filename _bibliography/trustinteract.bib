@@ -662,17 +662,19 @@
   timestamp = {2018-10-13},
 }
 
-@Inproceedings{IvanovicSchmerlingEtAl2018,
-  author       = {Ivanovic, B. and Schmerling, E. and Leung, K. and Pavone, M.},
-  title        = {Generative Modeling of Multimodal Multi-Human Behavior},
-  booktitle    = proc_IEEE_IROS,
-  year         = {2018},
-  abstract = {This work presents a methodology for modeling and predicting human behavior in settings with N humans interacting in highly multimodal scenarios (i.e. where there are many possible highly-distinct futures). A motivating example includes robots interacting with humans in crowded environments, such as self-driving cars operating alongside human-driven vehicles or human-robot collaborative bin packing in a warehouse. Our approach to model human behavior in such uncertain environments is to model humans in the scene as nodes in a graphical model, with edges encoding relationships between them. For each human, we learn a multimodal probability distribution over future actions from a dataset of multi-human interactions. Learning such distributions is made possible by recent advances in the theory of conditional variational autoencoders and deep learning approximations of probabilistic graphical models. Specifically, we learn action distributions conditioned on interaction history, neighboring human behavior, and candidate future agent behavior in order to take into account response dynamics. We demonstrate the performance of such a modeling approach in modeling basketball player trajectories, a highly multimodal, multi-human scenario which serves as a proxy for many robotic applications.},
-  address  = {Madrid, Spain},
-  month    = oct,
-  url      = {https://arxiv.org/pdf/1803.02015.pdf},
+@Inproceedings{SalzmannIvanovicEtAl2020,
+  author       = {Salzmann, T. and Ivanovic, B. and Chakravarty, P. and Pavone, M.},
+  title        = {Trajectron++: Dynamically-Feasible Trajectory Forecasting With Heterogeneous Data},
+  booktitle    = {arXiv preprint arXiv:2001.03093},
+  year         = {2020},
+  note         = {Submitted},
+  abstract = {Reasoning about human motion is an important prerequisite to safe and socially-aware robotic navigation. As a result, multi-agent behavior prediction has become a core component of modern human-robot interactive systems, such as self-driving cars. While there exist many methods for trajectory forecasting, most do not enforce dynamic constraints and do not account for environmental information (e.g., maps). Towards this end, we present Trajectron++, a modular, graph-structured recurrent model that forecasts the trajectories of a general number of diverse agents while incorporating agent dynamics and heterogeneous data (e.g., semantic maps). Trajectron++ is designed to be tightly integrated with robotic planning and control frameworks; for example, it can produce predictions that are optionally conditioned on ego-agent motion plans. We demonstrate its performance on several challenging real-world trajectory forecasting datasets, outperforming a wide array of state-of-the-art deterministic and generative methods.},
+  address  = {},
+  month    = apr,
+  keywords     = {sub},
   owner        = {borisi},
-  timestamp    = {2018-10-14},
+  timestamp    = {2020-04-06},
+  url          = {https://arxiv.org/abs/2001.03093},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
