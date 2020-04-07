@@ -4,7 +4,6 @@ seq_number: 1
 posted_date:   2020-04-6 21:00:00
 due_date:   2020-04-15 23:59:00
 pdf_link: "/aa203/pdfs/homework/AA203_HW1.pdf"
-code_link: "https://github.com/StanfordASL/AA203_HW1"
 md_group: "assignments"
 ---
 
