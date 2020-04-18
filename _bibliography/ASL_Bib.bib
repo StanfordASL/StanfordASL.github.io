@@ -601,6 +601,7 @@
 @String { proc_NASA_FMS             = {{NASA GSFC Flight Mechanics Symposium}} }
 @String{proc_NIPS                      = {{Conf. on Neural Information Processing Systems}}}
 @String{proc_NIPS-AD                   = {{Conf. on Neural Information Processing Systems - Autodiff Workshop}}}
+@String{proc_NIPS-BDL                   = {{Conf. on Neural Information Processing Systems - Workshop on Bayesian Deep Learning}}}
 @String { proc_PAAMS-TAAPS          = {{Int. Conf. on Practical Applications of Agents and Multi-Agent Systems - Workshop on the application of agents to passenger transport (PAAMS-TAAPS)}} }
 @String { proc_RLDM                 = {{The Multi-disciplinary Conf. on Reinforcement Learning and Decision Making}} }
 @String { proc_RMAD                 = {{Randomization Methods in Algorithm Design}} }
@@ -1969,7 +1970,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Robust Online Motion Planning via Contraction Theory and Convex Optimization},
   booktitle    = proc_IEEE_ICRA,
   year         = {2017},
-  note         = {{Extended Version, Available at }\url{http://asl.stanford.e/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf}},
+  note         = {{Extended Version, Available at }\url{http://asl.stanford.edu/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf}},
   abstract = {We present a framework for online generation of robust motion plans for robotic systems with nonlinear dynamics subject to bounded disturbances, control constraints, and online state constraints such as obstacles. In an offline phase, one computes the structure of a feedback controller that can be efficiently implemented online to track any feasible nominal trajectory. The offline phase leverages contraction theory and convex optimization to characterize a fixed-size ``tube'' that the state is guaranteed to remain within while tracking a nominal trajectory (representing the center of the tube). In the online phase, when the robot is faced with obstacles, a motion planner uses such a tube as a robustness margin for collision checking, yielding nominal trajectories that can be safely executed (i.e., tracked without collisions under disturbances). In contrast to recent work on robust online planning using funnel libraries, our approach is not restricted to a fixed library of maneuvers computed offline and is thus particularly well-suited to applications such as UAV flight in densely cluttered environments where complex maneuvers may be required to reach a goal. We demonstrate our approach through simulations of a 6-state planar quadrotor navigating cluttered environments in the presence of a cross-wind. We also discuss applications of our approach to Tube Model Predictive Control (TMPC) and compare the merits of our method with state-of-the-art nonlinear TMPC techniques.},
   address  = {Singapore},
   month    = may,
@@ -2883,8 +2884,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp   = {2018-10-13},
 }
 
-
-@InProceedings{AbtahiLandryEtAl2019,
+@Inproceedings{AbtahiLandryEtAl2019,
   author       = {Abtahi, P. and Landry, B. and Yang, J. J. and Pavone, M. and Follmer, S. and Landay, J. A.},
   title        = {Beyond The Force: Using Quadcopters to Appropriate Objects and the Environment for Haptics in Virtual Reality},
   booktitle    = proc_ACM_SIGCHI,
@@ -2893,9 +2893,8 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   abstract = {Quadcopters have been used as hovering encountered-type haptic devices in virtual reality. We suggest that quadcopters can facilitate rich haptic interactions beyond force feedback by appropriating physical objects and the environment. We present HoverHaptics, an autonomous safe-to-touch quadcopter and its integration with a virtual shopping experience. HoverHaptics highlights three affordances of quadcopters that enable these rich haptic interactions: (1) dynamic positioning of passive haptics, (2) texture mapping, and (3) animating passive props. We identify inherent challenges of hovering encountered-type haptic devices, such as their limited speed, inadequate control accuracy, and safety concerns. We then detail our approach for tackling these challenges, including the use of display techniques, visuo-haptic illusions, and collision avoidance. We conclude by describing a preliminary study (n = 9) to better understand the subjective user experience when interacting with a quadcopter in virtual reality using these techniques.},
   address  = {Glasgow, UK},
   month    = may,
-  keywords     = {press},
   owner        = {blandry},
-  timestamp    = {2019-02-04},
+  timestamp    = {2020-04-13},
 }
 
 @Inproceedings{LandryManchesterEtAl2019,
@@ -3017,14 +3016,12 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   title        = {Bilevel Optimization for Planning through Contact: A Semidirect Method},
   booktitle    = proc_ISRR,
   year         = {2019},
-  note         = {Submitted},
   abstract = {Many robotics applications, from object manipulation to locomotion, require planning methods that are capable of handling the dynamics of contact. Trajectory optimization has been shown to be a viable approach that can be made to support contact dynamics. However, the current state-of-the art methods remain slow and are often difficult to get to converge. In this work, we leverage recent advances in bilevel optimization to design an algorithm capable of efficiently generating trajectories that involve making and breaking contact. We demonstrate our method's efficiency by outperforming an alternative state-of-the-art method on a benchmark problem. We moreover demonstrate the method's ability to design a simple periodic gait for a quadruped with 15 degrees of freedom and four contact points},
   address  = {Hanoi, Vietnam},
   month    = oct,
   url      = {https://arxiv.org/pdf/1906.04292.pdf},
-  keywords     = {sub},
   owner        = {blandry},
-  timestamp    = {2019-08-14},
+  timestamp    = {2020-04-13},
 }
 
 #  pages        = {2375--2384},
@@ -3152,6 +3149,19 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   owner        = {borisi},
   timestamp    = {2020-04-06},
   url          = {https://arxiv.org/abs/2001.03093},
+}
+
+@Inproceedings{ItkinaIvanovicEtAl2019,
+  author       = {Itkina, M. and Ivanovic, B. and Senanayake, R. and Kochenderfer, M. J. and Pavone, M.},
+  title        = {Evidential disambiguation of latent multimodality in conditional variational autoencoders},
+  booktitle    = proc_NIPS-BDL,
+  year         = {2019},
+  abstract = {},
+  address  = {Vancouver, Canada},
+  month    = dec,
+  owner        = {borisi},
+  timestamp    = {2020-04-15},
+  url          = {http://bayesiandeeplearning.org/2019/papers/34.pdf},
 }
 
 @Inproceedings{HarrisonSharmaEtAl2020,
@@ -3442,7 +3452,7 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   abstract = {Planning safe trajectories for nonlinear dynamical systems subject to model uncertainty and disturbances is challenging. In this work, we present a novel approach to tackle chance-constrained trajectory planning problems with nonconvex constraints, whereby obstacle avoidance chance constraints are reformulated using the signed distance function. We propose a novel sequential convex programming algorithm and prove that under a discrete time problem formulation, it is guaranteed to converge to a solution satisfying first-order optimality conditions. We demonstrate the approach on an uncertain 6 degrees of freedom spacecraft system and show that the solutions satisfy a given set of chance constraints.},
   address  = {St. Petersburg, Russia},
   month    = may,
-  url      = {http://asl.stanford.e/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf},
+  url      = {/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf},
   keywords     = {press},
   owner        = {lew},
   timestamp    = {2020-03-16},
