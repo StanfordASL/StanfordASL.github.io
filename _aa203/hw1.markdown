@@ -1,7 +1,7 @@
 ---
 title:  "Homework 1"
 seq_number: 1
-posted_date:   2020-04-6 21:00:00
+posted_date:   2020-04-06 21:00:00
 due_date:   2020-04-15 23:59:00
 pdf_link: "/aa203/pdfs/homework/AA203_HW1.pdf"
 md_group: "assignments"
