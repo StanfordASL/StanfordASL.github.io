@@ -290,6 +290,34 @@
  
 
 
+<span class="entry" id="ChoudhurySoloveyETAL2020j">S. Choudhury, K. Solovey, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1909.11840.pdf">“Efficient Large-Scale Multi-Drone Delivery Using Transit Networks,”</a> <i>Journal of Artificial Intelligence Research</i>, Jun. 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChoudhurySoloveyETAL2020j','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChoudhurySoloveyETAL2020j','abstract')">Abstract</a>]</p>
+<span id="abs_ChoudhurySoloveyETAL2020j" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We consider the problem of controlling a large fleet of drones to deliver packages simultaneously across broad urban areas. To conserve their limited flight range, drones can seamlessly hop between and ride on top of public transit vehicles (e.g., buses and trams). We design a novel comprehensive algorithmic framework that strives to minimize the maximum time to complete any delivery. We address the multifaceted complexity of the problem through a two-layer approach. First, the upper layer assigns drones to package delivery sequences with a provably near-optimal polynomial-time task allocation algorithm. Then, the lower layer executes the allocation by periodically routing the fleet over the transit network while employing efficient bounded-suboptimal multi-agent pathfinding techniques tailored to our setting. We present extensive experiments supporting the efficiency of our approach on settings with up to 200 drones, 5000 packages, and large transit networks of up to 8000 stops in San Francisco and the Washington DC area. Our results show that the framework can compute solutions within a few seconds (up to 2 minutes for the largest settings) on commodity hardware, and that drones travel up to 450% of their flight range by using public transit.</p>
+</span>
+<span id="bib_ChoudhurySoloveyETAL2020j" class="bibtex noshow">
+	<pre>@article{ChoudhurySoloveyETAL2020j,
+  author = {Choudhury, S. and Solovey, K. and Pavone, M.},
+  title = {Efficient Large-Scale Multi-Drone Delivery Using Transit Networks},
+  journal = {{Journal of Artificial Intelligence Research}},
+  year = {2020},
+  note = {Submitted},
+  month = jun,
+  url = {https://arxiv.org/pdf/1909.11840.pdf},
+  keywords = {sub},
+  owner = {kirilsol},
+  timestamp = {2020-06-12}
+}
+</pre>
+</span>
+<!-- <span id="key_ChoudhurySoloveyETAL2020j" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="SalzmannIvanovicEtAl2020">T. Salzmann, B. Ivanovic, P. Chakravarty, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2001.03093">“Trajectron++: Dynamically-Feasible Trajectory Forecasting With Heterogeneous Data,”</a> in <i>arXiv preprint arXiv:2001.03093</i>, 2020. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SalzmannIvanovicEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalzmannIvanovicEtAl2020','abstract')">Abstract</a>]</p>
 <span id="abs_SalzmannIvanovicEtAl2020" class="abstract noshow">
@@ -346,26 +374,26 @@
  
 
 
-<span class="entry" id="JalotaEtAl2020">D. Jalota, M. Pavone, and Y. Ye, <a class="entry-title" href="https://arxiv.org/abs/2005.10765">“Markets for Efficient Public Good Allocation,”</a> in <i>arXiv preprint arXiv:2005.10765</i>, 2020. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JalotaEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JalotaEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_JalotaEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Public goods are often either over-consumed in the absence of regulatory mechanisms, or remain completely unused, as in the case of the Covid-19 pandemic, where social distance constraints are enforced to limit the number of people who can share public spaces. In this work, we plug this gap through market based mechanisms designed to efficiently allocate capacity constrained public goods. To design these mechanisms, we leverage the theory of Fisher markets, wherein each agent in the economy is endowed with an artificial currency budget that they can spend to avail public goods. While Fisher markets provide a strong methodological backbone to model resource allocation problems, their applicability is limited to settings involving two types of constraints - budgets of individual buyers and capacities of goods. The presence of additional physical constraints that arise in public goods allocation problems motivates the need for modifications to the Fisher market framework to account for these more general set of constraints. In our market mechanism, we specifically modify the Fisher market social optimization problem through a perturbation of the budgets of agents. The budget perturbations are set based on the dual variables of the additional physical constraints such that the KKT conditions of the newly defined social and individual optimization problems are equivalent. This establishes that our mechanism sets market clearing prices such that each agent obtains their maximum possible utilities subject to their constraints. Finally, to compute the perturbation constants we present a fixed point scheme, establish the existence of a unique fixed point and present numerical experiments to illustrate convergence guarantees. Thus, our mechanism, both theoretically and computationally, overcomes a fundamental limitation of Fisher markets, which only consider capacity and budget constraints.</p>
+<span class="entry" id="BrownRossiEtAl2020">R. A. Brown, F. Rossi, K. Solovey, M. Tsao, M. T. Wolf, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Brown.Rossi.ea.TCNS20.pdf">“On local computation for optimization in multi-agent systems,”</a> <i>IEEE Transactions on Control of Network Systems</i>, 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BrownRossiEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownRossiEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_BrownRossiEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> A number of prototypical optimization problems in multi-agent systems (e.g., task allocation and network load-sharing) exhibit a highly local structure: that is, each agent’s decision variables are only directly coupled to few other agent’s variables through the objective function or the constraints. Nevertheless, existing algorithms for distributed optimization generally do not exploit the locality structure of the problem, requiring all agents to compute or exchange the full set of decision variables. In this paper, we develop a rigorous notion of "locality" that quantifies the degree to which agents can compute their portion of the global solution based solely on information in their local neighborhood. This notion provides a theoretical basis for a rather simple algorithm in which agents individually solve a truncated sub-problem of the global problem, where the size of the sub-problem used depends on the locality of the problem, and the desired accuracy. Numerical results show that the proposed theoretical bounds are remarkably tight for well-conditioned problems.</p>
 </span>
-<span id="bib_JalotaEtAl2020" class="bibtex noshow">
-	<pre>@inproceedings{JalotaEtAl2020,
-  author = {Jalota, D. and Pavone, M. and Ye, Y.},
-  title = {Markets for Efficient Public Good Allocation},
-  booktitle = {arXiv preprint arXiv:2005.10765},
+<span id="bib_BrownRossiEtAl2020" class="bibtex noshow">
+	<pre>@article{BrownRossiEtAl2020,
+  author = {Brown, R. A. and Rossi, F. and Solovey, K. and Tsao, M. and Wolf, M. T. and Pavone, M.},
+  title = {On local computation for optimization in multi-agent systems},
+  journal = {{IEEE Transactions on Control of Network Systems}},
   year = {2020},
   note = {Submitted},
+  url = {/wp-content/papercite-data/pdf/Brown.Rossi.ea.TCNS20.pdf},
   keywords = {sub},
-  owner = {devanshjalota},
-  timestamp = {2020-05-25},
-  url = {https://arxiv.org/abs/2005.10765}
+  owner = {rabrown1},
+  timestamp = {2020-03-15}
 }
 </pre>
 </span>
-<!-- <span id="key_JalotaEtAl2020" >
+<!-- <span id="key_BrownRossiEtAl2020" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -393,33 +421,6 @@
 </pre>
 </span>
 <!-- <span id="key_SchifferBoysenEtAl2019" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="BrownRossiEtAl2020">R. A. Brown, F. Rossi, K. Solovey, M. Tsao, M. T. Wolf, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Brown.Rossi.ea.TCNS20.pdf">“On local computation for optimization in multi-agent systems,”</a> <i>IEEE Transactions on Control of Network Systems</i>, 2020. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BrownRossiEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownRossiEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_BrownRossiEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> A number of prototypical optimization problems in multi-agent systems (e.g., task allocation and network load-sharing) exhibit a highly local structure: that is, each agent’s decision variables are only directly coupled to few other agent’s variables through the objective function or the constraints. Nevertheless, existing algorithms for distributed optimization generally do not exploit the locality structure of the problem, requiring all agents to compute or exchange the full set of decision variables. In this paper, we develop a rigorous notion of "locality" that quantifies the degree to which agents can compute their portion of the global solution based solely on information in their local neighborhood. This notion provides a theoretical basis for a rather simple algorithm in which agents individually solve a truncated sub-problem of the global problem, where the size of the sub-problem used depends on the locality of the problem, and the desired accuracy. Numerical results show that the proposed theoretical bounds are remarkably tight for well-conditioned problems.</p>
-</span>
-<span id="bib_BrownRossiEtAl2020" class="bibtex noshow">
-	<pre>@article{BrownRossiEtAl2020,
-  author = {Brown, R. A. and Rossi, F. and Solovey, K. and Tsao, M. and Wolf, M. T. and Pavone, M.},
-  title = {On local computation for optimization in multi-agent systems},
-  journal = {{IEEE Transactions on Control of Network Systems}},
-  year = {2020},
-  note = {Submitted},
-  url = {/wp-content/papercite-data/pdf/Brown.Rossi.ea.TCNS20.pdf},
-  keywords = {sub},
-  owner = {rabrown1},
-  timestamp = {2020-03-15}
-}
-</pre>
-</span>
-<!-- <span id="key_BrownRossiEtAl2020" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -455,6 +456,33 @@
  
 
 
+<span class="entry" id="JalotaEtAl2020">D. Jalota, M. Pavone, and Y. Ye, <a class="entry-title" href="https://arxiv.org/abs/2005.10765">“Markets for Efficient Public Good Allocation,”</a> in <i>arXiv preprint arXiv:2005.10765</i>, 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JalotaEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JalotaEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_JalotaEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Public goods are often either over-consumed in the absence of regulatory mechanisms, or remain completely unused, as in the case of the Covid-19 pandemic, where social distance constraints are enforced to limit the number of people who can share public spaces. In this work, we plug this gap through market based mechanisms designed to efficiently allocate capacity constrained public goods. To design these mechanisms, we leverage the theory of Fisher markets, wherein each agent in the economy is endowed with an artificial currency budget that they can spend to avail public goods. While Fisher markets provide a strong methodological backbone to model resource allocation problems, their applicability is limited to settings involving two types of constraints - budgets of individual buyers and capacities of goods. The presence of additional physical constraints that arise in public goods allocation problems motivates the need for modifications to the Fisher market framework to account for these more general set of constraints. In our market mechanism, we specifically modify the Fisher market social optimization problem through a perturbation of the budgets of agents. The budget perturbations are set based on the dual variables of the additional physical constraints such that the KKT conditions of the newly defined social and individual optimization problems are equivalent. This establishes that our mechanism sets market clearing prices such that each agent obtains their maximum possible utilities subject to their constraints. Finally, to compute the perturbation constants we present a fixed point scheme, establish the existence of a unique fixed point and present numerical experiments to illustrate convergence guarantees. Thus, our mechanism, both theoretically and computationally, overcomes a fundamental limitation of Fisher markets, which only consider capacity and budget constraints.</p>
+</span>
+<span id="bib_JalotaEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{JalotaEtAl2020,
+  author = {Jalota, D. and Pavone, M. and Ye, Y.},
+  title = {Markets for Efficient Public Good Allocation},
+  booktitle = {arXiv preprint arXiv:2005.10765},
+  year = {2020},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {devanshjalota},
+  timestamp = {2020-05-25},
+  url = {https://arxiv.org/abs/2005.10765}
+}
+</pre>
+</span>
+<!-- <span id="key_JalotaEtAl2020" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="SinghLandryEtAl2019">S. Singh, B. Landry, A. Majumdar, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Landry.ea.IJRR19.pdf">“Robust Feedback Motion Planning via Contraction Theory,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinghLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghLandryEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_SinghLandryEtAl2019" class="abstract noshow">
@@ -482,25 +510,26 @@
  
 
 
-<span class="entry" id="LeungSchmerlingEtAl2019">K. Leung, E. Schmerling, M. Zhang, M. Chen, J. Talbot, J. C. Gerdes, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf">“On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_LeungSchmerlingEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Action anticipation, intent prediction, and proactive behavior are all desirable characteristics for autonomous driving policies in interactive scenarios. Paramount, however, is ensuring safety on the road—a key challenge in doing so is accounting for uncertainty in human driver actions without unduly impacting planner performance. This paper introduces a minimally-interventional safety controller operating within an autonomous vehicle control stack with the role of ensuring collision-free interaction with an externally controlled (e.g., human-driven) counterpart while respecting static obstacles such as a road boundary wall. We leverage reachability analysis to construct a real-time (100Hz) controller that serves the dual role of (1) tracking an input trajectory from a higher-level planning algorithm using model predictive control, and (2) assuring safety through maintaining the availability of a collision-free escape maneuver as a persistent constraint regardless of whatever future actions the other car takes. A full-scale steer-by-wire platform is used to conduct traffic weaving experiments wherein two cars, initially side-by-side, must swap lanes in a limited amount of time and distance, emulating cars merging onto/off of a highway. We demonstrate that, with our control stack, the autonomous vehicle is able to avoid collision even when the other car defies the planner’s expectations and takes dangerous actions, either carelessly or with the intent to collide, and otherwise deviates minimally from the planned trajectory to the extent required to maintain safety.</p>
+<span class="entry" id="JorgensenPavone2019">S. Jorgensen and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf">“The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenPavone2019','abstract')">Abstract</a>]</p>
+<span id="abs_JorgensenPavone2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Consider deploying a team of robots in order to visit sites in a risky environment (i.e., where a robot might be lost during a traversal), subject to team-based operational constraints such as limits on team composition, traffic throughputs, and launch constraints. We formalize this problem using a graph to represent the environment, enforcing probabilistic survival constraints for each robot, and using a matroid (which generalizes linear independence to sets) to capture the team-based operational constraints. The resulting ?Matroid Team Surviving Orienteers? (MTSO) problem has broad applications for robotics such as informative path planning, resource delivery, and search and rescue. We demonstrate that the objective for the MTSO problem has submodular structure, which leads us to develop two polynomial time algorithms which are guaranteed to find a solution with value within a constant factor of the optimum. The second of our algorithms is an extension of the accelerated continuous greedy algorithm, and can be applied to much broader classes of constraints while maintaining bounds on suboptimality. In addition to in-depth analysis, we demonstrate the efficiency of our approaches by applying them to a scenario where a team of robots must gather information while avoiding dangers in the Coral Triangle and characterize scaling and parameter selection using a synthetic dataset.</p>
 </span>
-<span id="bib_LeungSchmerlingEtAl2019" class="bibtex noshow">
-	<pre>@article{LeungSchmerlingEtAl2019,
-  author = {Leung, K. and Schmerling, E. and Zhang, M. and Chen, M. and Talbot, J. and Gerdes, J. C. and Pavone, M.},
-  title = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
+<span id="bib_JorgensenPavone2019" class="bibtex noshow">
+	<pre>@article{JorgensenPavone2019,
+  author = {Jorgensen, S. and Pavone, M.},
+  title = {The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal},
   journal = {{Int. Journal of Robotics Research}},
   year = {2019},
   note = {Submitted},
-  url = {/wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf},
+  url = {/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf},
   keywords = {sub},
-  timestamp = {2020-03-09}
+  owner = {bylard},
+  timestamp = {2019-08-02}
 }
 </pre>
 </span>
-<!-- <span id="key_LeungSchmerlingEtAl2019" >
+<!-- <span id="key_JorgensenPavone2019" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -535,26 +564,25 @@
  
 
 
-<span class="entry" id="JorgensenPavone2019">S. Jorgensen and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf">“The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenPavone2019','abstract')">Abstract</a>]</p>
-<span id="abs_JorgensenPavone2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Consider deploying a team of robots in order to visit sites in a risky environment (i.e., where a robot might be lost during a traversal), subject to team-based operational constraints such as limits on team composition, traffic throughputs, and launch constraints. We formalize this problem using a graph to represent the environment, enforcing probabilistic survival constraints for each robot, and using a matroid (which generalizes linear independence to sets) to capture the team-based operational constraints. The resulting ?Matroid Team Surviving Orienteers? (MTSO) problem has broad applications for robotics such as informative path planning, resource delivery, and search and rescue. We demonstrate that the objective for the MTSO problem has submodular structure, which leads us to develop two polynomial time algorithms which are guaranteed to find a solution with value within a constant factor of the optimum. The second of our algorithms is an extension of the accelerated continuous greedy algorithm, and can be applied to much broader classes of constraints while maintaining bounds on suboptimality. In addition to in-depth analysis, we demonstrate the efficiency of our approaches by applying them to a scenario where a team of robots must gather information while avoiding dangers in the Coral Triangle and characterize scaling and parameter selection using a synthetic dataset.</p>
+<span class="entry" id="LeungSchmerlingEtAl2019">K. Leung, E. Schmerling, M. Zhang, M. Chen, J. Talbot, J. C. Gerdes, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf">“On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_LeungSchmerlingEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Action anticipation, intent prediction, and proactive behavior are all desirable characteristics for autonomous driving policies in interactive scenarios. Paramount, however, is ensuring safety on the road—a key challenge in doing so is accounting for uncertainty in human driver actions without unduly impacting planner performance. This paper introduces a minimally-interventional safety controller operating within an autonomous vehicle control stack with the role of ensuring collision-free interaction with an externally controlled (e.g., human-driven) counterpart while respecting static obstacles such as a road boundary wall. We leverage reachability analysis to construct a real-time (100Hz) controller that serves the dual role of (1) tracking an input trajectory from a higher-level planning algorithm using model predictive control, and (2) assuring safety through maintaining the availability of a collision-free escape maneuver as a persistent constraint regardless of whatever future actions the other car takes. A full-scale steer-by-wire platform is used to conduct traffic weaving experiments wherein two cars, initially side-by-side, must swap lanes in a limited amount of time and distance, emulating cars merging onto/off of a highway. We demonstrate that, with our control stack, the autonomous vehicle is able to avoid collision even when the other car defies the planner’s expectations and takes dangerous actions, either carelessly or with the intent to collide, and otherwise deviates minimally from the planned trajectory to the extent required to maintain safety.</p>
 </span>
-<span id="bib_JorgensenPavone2019" class="bibtex noshow">
-	<pre>@article{JorgensenPavone2019,
-  author = {Jorgensen, S. and Pavone, M.},
-  title = {The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal},
+<span id="bib_LeungSchmerlingEtAl2019" class="bibtex noshow">
+	<pre>@article{LeungSchmerlingEtAl2019,
+  author = {Leung, K. and Schmerling, E. and Zhang, M. and Chen, M. and Talbot, J. and Gerdes, J. C. and Pavone, M.},
+  title = {On Infusing Reachability-Based Safety Assurance within Probabilistic Planning Frameworks for Human-Robot Vehicle Interactions},
   journal = {{Int. Journal of Robotics Research}},
   year = {2019},
   note = {Submitted},
-  url = {/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf},
+  url = {/wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf},
   keywords = {sub},
-  owner = {bylard},
-  timestamp = {2019-08-02}
+  timestamp = {2020-03-09}
 }
 </pre>
 </span>
-<!-- <span id="key_JorgensenPavone2019" >
+<!-- <span id="key_LeungSchmerlingEtAl2019" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -590,6 +618,32 @@
  
 
 
+<span class="entry" id="SchifferBoysenEtAl2018">M. Schiffer, N. Boysen, G. Laporte, and M. Pavone, <a class="entry-title" href="">“Optimal picking policies in e-commerce warehouses,”</a> <i>Management Science</i>, 2018. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SchifferBoysenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchifferBoysenEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_SchifferBoysenEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In e-commerce warehouses, online retailers increase their efficiency by using a mixed-shelves (or scattered storage) concept, where unit loads are purposefully broken down into single items, which are individually stored in multiple locations. Irrespective of the stock keeping units a customer jointly orders, this storage strategy increases the likelihood that somewhere in the warehouse the items of the requested stock keeping units will be in close vicinity, which may significantly reduce an order picker’s unproductive walking time. This paper optimizes picker routing through such mixed-shelves warehouses. Specifically, we introduce a generic exact algorithm that covers a multitude of picking policies, independently of the underlying picking zone layout, and is suitable for real-time applications. Besides its generality, this algorithm provides a new state of the art in terms of solvable instance sizes and computational times, providing average reductions of 67% compared with the best known algorithm. Using this algorithm we compare three different real-world e-commerce warehouse settings that differ slightly in their application of scattered storage and in their picking policies. Our results reveal that the right combination of drop-off points, dynamic batching, the utilization of picking carts, and the picking zone layout can greatly improve the picking performance. In particular, some combinations of policies yield efficiency increases of more than 30%.</p>
+</span>
+<span id="bib_SchifferBoysenEtAl2018" class="bibtex noshow">
+	<pre>@article{SchifferBoysenEtAl2018,
+  author = {Schiffer, M. and Boysen, N. and Laporte, G. and Pavone, M.},
+  title = {Optimal picking policies in e-commerce warehouses},
+  journal = {{Management Science}},
+  year = {2018},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {schiffer},
+  timestamp = {2018-08-14}
+}
+</pre>
+</span>
+<!-- <span id="key_SchifferBoysenEtAl2018" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="ChinchaliLivingstonEtAl2018">S. P. Chinchali, S. C. Livingston, M. Chen, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Chinchali.Livingston.Chen.Pavone.IJRR18.pdf">“Multi-objective optimal control for proactive decision-making with temporal logic models,”</a> <i>Int. Journal of Robotics Research</i>, 2018. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('ChinchaliLivingstonEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChinchaliLivingstonEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_ChinchaliLivingstonEtAl2018" class="abstract noshow">
@@ -610,32 +664,6 @@
 </pre>
 </span>
 <!-- <span id="key_ChinchaliLivingstonEtAl2018" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SchifferBoysenEtAl2018">M. Schiffer, N. Boysen, G. Laporte, and M. Pavone, <a class="entry-title" href="">“Optimal picking policies in e-commerce warehouses,”</a> <i>Management Science</i>, 2018. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SchifferBoysenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchifferBoysenEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_SchifferBoysenEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In e-commerce warehouses, online retailers increase their efficiency by using a mixed-shelves (or scattered storage) concept, where unit loads are purposefully broken down into single items, which are individually stored in multiple locations. Irrespective of the stock keeping units a customer jointly orders, this storage strategy increases the likelihood that somewhere in the warehouse the items of the requested stock keeping units will be in close vicinity, which may significantly reduce an order picker’s unproductive walking time. This paper optimizes picker routing through such mixed-shelves warehouses. Specifically, we introduce a generic exact algorithm that covers a multitude of picking policies, independently of the underlying picking zone layout, and is suitable for real-time applications. Besides its generality, this algorithm provides a new state of the art in terms of solvable instance sizes and computational times, providing average reductions of 67% compared with the best known algorithm. Using this algorithm we compare three different real-world e-commerce warehouse settings that differ slightly in their application of scattered storage and in their picking policies. Our results reveal that the right combination of drop-off points, dynamic batching, the utilization of picking carts, and the picking zone layout can greatly improve the picking performance. In particular, some combinations of policies yield efficiency increases of more than 30%.</p>
-</span>
-<span id="bib_SchifferBoysenEtAl2018" class="bibtex noshow">
-	<pre>@article{SchifferBoysenEtAl2018,
-  author = {Schiffer, M. and Boysen, N. and Laporte, G. and Pavone, M.},
-  title = {Optimal picking policies in e-commerce warehouses},
-  journal = {{Management Science}},
-  year = {2018},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {schiffer},
-  timestamp = {2018-08-14}
-}
-</pre>
-</span>
-<!-- <span id="key_SchifferBoysenEtAl2018" >
 	<b>Keywords</b>:
 	sub
 </span> --></li></ol>
@@ -876,7 +904,8 @@
   month = may,
   url = {https://arxiv.org/pdf/1909.11840.pdf},
   keywords = {press},
-  timestamp = {2020-02-25}
+  owner = {kirilsol},
+  timestamp = {2020-06-12}
 }
 </pre>
 </span>
