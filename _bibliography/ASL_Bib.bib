@@ -2875,6 +2875,21 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-02-01},
 }
 
+@Article{IvanovicLeungEtAl2020,
+  author       = {Ivanovic, B. and Leung, K. and Schmerling, E. and Pavone, M.},
+  title        = {Multimodal Deep Generative Models for Trajectory Prediction: A Conditional Variational Autoencoder Approach},
+  journal      = jrn_IEEE_RAL,
+  year         = {2019},
+  note         = {Submitted},
+  abstract = {Human behavior prediction models enable robots to anticipate how humans may react to their actions, and hence are instrumental to devising safe and proactive robot planning algorithms. However, modeling complex interaction dynamics and capturing the possibility of many possible outcomes in such interactive settings is very challenging, which has recently prompted the study of several different approaches. In this work, we provide a self-contained tutorial on a conditional variational autoencoder (CVAE) approach to human behavior prediction which, at its core, can produce a multimodal probability distribution over future human trajectories conditioned on past interactions and candidate robot future actions. Specifically, the goals of this tutorial paper are to review and build a taxonomy of state-of-the-art methods in human behavior prediction, from physics-based to purely data-driven methods, provide a rigorous yet easily accessible description of a data-driven, CVAE-based approach, highlight important design characteristics that make this an attractive model to use in the context of model-based planning for human-robot interactions, and provide important design considerations when using this class of models.},
+  month    = aug,
+  url      = {},
+  booktitle    = jrn_IEEE_RAL,
+  keywords     = {sub},
+  owner        = {borisi},
+  timestamp    = {2020-08-08},
+}
+
 @Inproceedings{BonalliCauligiEtAl2019,
   author       = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
   title        = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
@@ -3150,6 +3165,19 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   owner        = {borisi},
   timestamp    = {2020-04-06},
   url      = {https://arxiv.org/abs/2001.03093},
+}
+
+@Inproceedings{IvanovicElhafsiEtAl2020,
+  author       = {Ivanovic, B. and Elhafsi, A. and Rosman, G. and Gaidon, A. and Pavone, M.},
+  title        = {MATS: An Interpretable Trajectory Forecasting Representation for Planning and Control},
+  year         = {2020},
+  note         = {Submitted},
+  abstract = {Reasoning about human motion is a core component of modern human-robot interactive systems. In particular, one of the main uses of behavior prediction in autonomous systems is to inform ego-robot motion planning and control. However, a majority of planning and control algorithms reason about system dynamics rather than the predicted agent tracklets that are commonly output by trajectory forecasting methods, which can hinder their integration. Towards this end, we propose Mixtures of Affine Time-varying Systems (MATS) as an output representation for trajectory forecasting that is more amenable to downstream planning and control use. Our approach leverages successful ideas from probabilistic trajectory forecasting works to learn dynamical system representations that are well-studied in the planning and control literature. We integrate our predictions with a proposed multimodal planning methodology and demonstrate significant computational efficiency improvements on a large-scale autonomous driving dataset.},
+  keywords     = {sub},
+  month    = aug,
+  owner        = {borisi},
+  timestamp    = {2020-08-08},
+  url      = {},
 }
 
 @Inproceedings{NishimuraIvanovicEtAl2020,
@@ -3474,11 +3502,13 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Learning Mixed-Integer Convex Optimization Strategies for Robot Planning and Control},
   booktitle    = proc_IEEE_CDC,
   year         = {2020},
+  note         = {In Press},
   abstract = {Mixed-integer convex programming (MICP) has seen significant algorithmic and hardware improvements with several orders of magnitude solve time speedups compared to 25 years ago. Despite these advances, MICP has been rarely applied to real-world robotic control because the solution times are still too slow for online applications. In this work, we extend the machine learning optimizer (MLOPT) framework to solve MICPs arising in robotics at very high speed. MLOPT encodes the combinatorial part of the optimal solution into a strategy. Using data collected from offline problem solutions, we train a multiclass classifier to predict the optimal strategy given problem-specific parameters such as states or obstacles. Compared to previous approaches, we use task-specific strategies and prune redundant ones to significantly reduce the number of classes the predictor has to select from, thereby greatly improving scalability. Given the predicted strategy, the control task becomes a small convex optimization problem that we can solve in milliseconds. Numerical experiments on a cart-pole system with walls, a free-flying space robot and task-oriented grasps show that our method provides not only 1 to 2 orders of magnitude speedups compared to state-of-the-art solvers but also performance close to the globally optimal MICP solution.},
   address  = {Jeju Island, Republic of Korea},
-  month    = mar,
+  month    = {#mar#},
   url      = {https://arxiv.org/pdf/2004.03736.pdf},
-  keywords     = {sub},
+  keywords     = {press},
+  owner        = {acauligi},
   timestamp    = {2020-04-05},
 }
 
