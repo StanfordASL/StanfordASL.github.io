@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Principles of Robot Autonomy I</title>
+
+    <meta name="description" content="This course will cover basic principles for endowing mobile autonomous robots with perception, planning, and decision-making capabilities. Algorithmic approaches for robot perception, localization, and simultaneous localization and mapping; control of non-linear systems, learning-based control, and robot motion planning; introduction to methodologies for reasoning under uncertainty, e.g., (partially observable) Markov decision processes. Extensive use of the Robot Operating System (ROS) for demonstrations and hands-on activities. Prerequisites: CS 106A or equivalent, CME 100 or equivalent (for linear algebra), and CME 106 or equivalent (for probability theory).">
+    <!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+
+	<!-- JabRef CSS -->
+	<link rel="stylesheet" href="https://stanfordasl.github.io/css/JabRef.css">
+	 
+    <link rel="canonical" href="http://asl.stanford.edu/aa274_aut1920/announcements.html"> 
+    <!-- Not required -->
+    <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="https://stanfordasl.github.io /feed.xml "> -->
+    <!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/my.css"> 
+
+    <!-- AA 274 CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/aa274.css"> 
+
+    <!-- Analytics -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124680200-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124680200-1');
+    </script>
+    
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2864b7">
+    <meta name="msapplication-TileColor" content="#2864b7">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="page-top" class="index">
+  <!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom"> <!-- navbar-fixed-top -->
+    <div class="container navbar-items">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-3" style="z-index: 1;">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="https://stanfordasl.github.io/img/ASL_Logo_White.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <!-- 
+                            <li class="page-scroll">
+                                <a href="/">Home</a>
+                            </li>
+                             -->
+                            
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa274_aut1920/">Home</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa274_aut1920/assignments.html">Homework</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa274_aut1920/project.html">Project</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll active">
+                                        <a href="/aa274_aut1920/announcements.html">Announcements</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Announcements</h1>
+          <p>Announcements related to the course, homeworks, projects, logistics, etc will be posted here. Please check this page regularly for the latest announcements.</p>
+        </div>
+      </div>
+      
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h5>10/22/2019</h5>
+          <p><p>Final project group signups can be found <a href="https://docs.google.com/spreadsheets/d/1uMGH0eu_QDAdPKcGRPm6IsInX5gMZAIycfdSB_T7YuE/edit?usp=sharing">here</a>. Please sign up as soon as you have a group, since a problem in HW3 will require you to submit as a group with your final project groupmates!</p>
+</p>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h5>09/26/2019</h5>
+          <p><p>Section signups can be found <a href="https://docs.google.com/spreadsheets/d/1Bd5BUSyGH-CZgRHpnkMG6rVTNQZOsuOLGVzyNKo_TII/edit?usp=sharing">here</a>. They start next week, so please sign up before the end of the weekend!</p>
+</p>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h5>09/20/2019</h5>
+          <p><p>Welcome to Principles of Robot Autonomy I!</p>
+
+<p>A few things to note before we head into the first week:</p>
+<ul>
+  <li>Sections and Office Hours will start the week of September 30th.</li>
+  <li>Section time sign-ups will go out next week, time to be determined (and announced, so you don’t have to constantly refresh the page).</li>
+  <li>If you cannot enroll in the Friday discussion section on Axess, don’t worry about it. It is not essential that you enroll in the Friday section on Axess. However, it is essential that you know that Friday lectures will happen, and if you are enrolled in a 200+ course code variant of Principles of Robot Autonomy I, the homework will involve material from the Friday lectures. This will be stated again on Tuesday by Prof. Pavone.</li>
+</ul>
+
+<p>If you are having difficulty accessing the course’s gradescope page via the link in the Syllabus, try the following:</p>
+<ol>
+  <li>Open up <a href="https://www.gradescope.com/">gradescope</a>.</li>
+  <li>Click on the “Enroll in Course” button on the bottom right.</li>
+  <li>Enter the course code: 9YB864</li>
+</ol>
+
+<p>See you next week!</p>
+</p>
+        </div>
+      </div>
+      
+    </div>
+    </header>
+    <!--
+The website should work without any of the JS below. -F
+-->
+
+<!-- jQuery -->
+<script src="https://stanfordasl.github.io/js/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://stanfordasl.github.io/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<!-- <script src="js/jquery.easing.min.js"></script> -->
+<!-- Contact Form JavaScript -->
+<!-- <script src="js/jqBootstrapValidation.js"></script> -->
+<!-- <script src="js/contact_me.js"></script> -->
+<!-- Custom Theme JavaScript -->
+<!-- <script src="js/freelancer.min.js"></script> -->
+<!-- JabRef (Toggling info on Publications Page) -->
+<script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
+
+    <!-- Footer -->
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div> -->
+
+<!-- Made with (L) by Federico in October 2017
+CSS: Bootstrap (without the JS)
+http://getbootstrap.com/
+Bloated, but so convenient.
+Plus, it's probably already in your browser cache (hence the CDN).
+If you want the Jekyll project for your own website,
+feel free to drop me a line!
+-F
+-->
+
+<!-- <hr class="footer-line"/> -->
+<script type="text/javascript">
+function footerAlign() {
+  $('footer').css('display', 'block');
+  $('footer').css('height', 'auto');
+  var footerHeight = $('footer').outerHeight();
+  $('body').css('padding-bottom', footerHeight);
+  $('footer').css('height', footerHeight);
+}
+
+
+$(document).ready(function(){
+  footerAlign();
+});
+
+$( window ).resize(function() {
+  footerAlign();
+});
+</script>
+
+<footer class="footer">
+<div id="social-icons">
+  <a href="https://twitter.com/stanfordasl" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_twitter.png" alt=""></a>
+  <a href="https://www.instagram.com/stanfordasl" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_instagram.png" alt=""></a>
+  <a href="https://github.com/StanfordASL" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_github.png" alt=""></a>
+</div>
+<div class="copyright-text">
+  © Autonomous Systems Lab 2020. All rights reserved.
+</div>
+</footer>
+</body>
+</html>
+ 
