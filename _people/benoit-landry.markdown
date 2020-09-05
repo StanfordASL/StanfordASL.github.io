@@ -4,7 +4,7 @@ title:  "Benoit Landry"
 last:   "Landry"
 date:   2017-03-01 00:00:00 -0700
 position: phd
-excerpt: "UAV planning and control"
+excerpt: "Optimal control, optimization and UAVs"
 img: BenoitLandry.jpg
 email: ben.acc.landry@gmail.com
 website: http://www.blandry.xyz/
