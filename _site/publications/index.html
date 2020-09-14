@@ -889,147 +889,6 @@
  
 
 
-<span class="entry" id="BrownRossiEtAl20">R. A. Brown, F. Rossi, K. Solovey, M. T. Wolf, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Brown.Rossi.ea.ECC20.pdf">“Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BrownRossiEtAl20','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownRossiEtAl20','abstract')">Abstract</a>]</p>
-<span id="abs_BrownRossiEtAl20" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> A number of prototypical optimization problems in multi-agent systems (e.g. task allocation and network load-sharing) exhibit a highly local structure: that is, each agent’s decision variables are only directly coupled to few other agent’s variables through the objective function or the constraints. Nevertheless, existing algorithms for distributed optimization generally do not exploit the locality structure of the problem, requiring all agents to compute or exchange the full set of decision variables. In this paper, we develop a rigorous notion of "locality" that relates the structural properties of a linearly-constrained convex optimization problem (in particular, the sparsity structure of the constraint matrix and the objective function) to the amount of information that agents should exchange to compute an arbitrarily high-quality approximation to the problem from a cold-start. We leverage the notion of locality to develop a locality-aware distributed optimization algorithm, and we show that, for problems where individual agents only require to know a small portion of the optimal solution, the algorithm requires very limited inter-agent communication. Numerical results show that the convergence rate of our algorithm is directly explained by the locality parameter proposed, and that the proposed theoretical bounds are remarkably tight.</p>
-</span>
-<span id="bib_BrownRossiEtAl20" class="bibtex noshow">
-	<pre>@inproceedings{BrownRossiEtAl20,
-  author = {Brown, R. A. and Rossi, F. and Solovey, K. and Wolf, M. T. and Pavone, M.},
-  title = {Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems},
-  booktitle = {{European Control Conference}},
-  year = {2020},
-  note = {In Press},
-  address = {St. Petersburg, Russia},
-  month = may,
-  url = {/wp-content/papercite-data/pdf/Brown.Rossi.ea.ECC20.pdf},
-  keywords = {press},
-  owner = {rabrown1},
-  timestamp = {2020-02-25}
-}
-</pre>
-</span>
-<!-- <span id="key_BrownRossiEtAl20" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SoloveyJansonETAL2020">K. Solovey, L. Janson, E. Schmerling, E. Frazzoli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1909.09688.pdf">“Revisiting the Asymptotic Optimality of RRT*,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SoloveyJansonETAL2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SoloveyJansonETAL2020','abstract')">Abstract</a>]</p>
-<span id="abs_SoloveyJansonETAL2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> RRT* is one of the most widely used sampling-based algorithms for asymptotically-optimal motion planning. This algorithm laid the foundations for optimality in motion planning as a whole, and inspired the development of numerous new algorithms in the field, many of which build upon RRT* itself. In this paper, we first identify a logical gap in the optimality proof of RRT*, which was developed in Karaman and Frazzoli (2011). Then, we present an alternative and mathematically-rigorous proof for asymptotic optimality. Our proof suggests that the connection radius used by RRT* should be increased from γ(\frac\log nn)^1/d to γ’ (\frac\log nn)^1/(d+1) in order to account for the additional dimension of time that dictates the samples’ ordering. Here gamma, γ’ are constants, and n, d are the number of samples and the dimension of the problem, respectively.</p>
-</span>
-<span id="bib_SoloveyJansonETAL2020" class="bibtex noshow">
-	<pre>@inproceedings{SoloveyJansonETAL2020,
-  author = {Solovey, K. and Janson, L. and Schmerling, E. and Frazzoli, E. and Pavone, M.},
-  title = {Revisiting the Asymptotic Optimality of RRT*},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2020},
-  note = {In Press},
-  address = {Paris, France},
-  month = may,
-  url = {https://arxiv.org/pdf/1909.09688.pdf},
-  keywords = {press},
-  timestamp = {2020-02-25}
-}
-</pre>
-</span>
-<!-- <span id="key_SoloveyJansonETAL2020" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="TsaoSoloveyETAL2020">M. Tsao, K. Solovey, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1909.06363.pdf">“Sample Complexity of Probabilistic Roadmaps via Epsilon-nets,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('TsaoSoloveyETAL2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TsaoSoloveyETAL2020','abstract')">Abstract</a>]</p>
-<span id="abs_TsaoSoloveyETAL2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We study fundamental theoretical aspects of probabilistic roadmaps (PRM) in the finite time (non-asymptotic) regime. In particular, we investigate how completeness and optimality guarantees of the approach are influenced by the underlying deterministic sampling distribution \mathcalX and connection radius r>0. We develop the notion of (δ,ε)-completeness of the parameters \mathcalX,r, which indicates that for every motion-planning problem of clearance at least δ>0, PRM using \mathcalX,r returns a solution no longer than 1+εtimes the shortest δ-clear path. Leveraging the concept of ε-nets, we characterize in terms of lower and upper bounds the number of samples needed to guarantee (δ,ε)-completeness. This is in contrast with previous work which mostly considered the asymptotic regime in which the number of samples tends to infinity. In practice, we propose a sampling distribution inspired by ε-nets that achieves nearly the same coverage as grids while using significantly fewer samples.</p>
-</span>
-<span id="bib_TsaoSoloveyETAL2020" class="bibtex noshow">
-	<pre>@inproceedings{TsaoSoloveyETAL2020,
-  author = {Tsao, M. and Solovey, K. and Pavone, M.},
-  title = {Sample Complexity of Probabilistic Roadmaps via Epsilon-nets},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2020},
-  note = {In Press},
-  address = {Paris, France},
-  month = may,
-  url = {https://arxiv.org/pdf/1909.06363.pdf},
-  keywords = {press},
-  timestamp = {2020-02-25}
-}
-</pre>
-</span>
-<!-- <span id="key_TsaoSoloveyETAL2020" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="LewBonalliECC2020">T. Lew, R. Bonalli, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf">“Chance-Constrained Sequential Convex Programming for Robust Trajectory Optimization,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LewBonalliECC2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewBonalliECC2020','abstract')">Abstract</a>]</p>
-<span id="abs_LewBonalliECC2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Planning safe trajectories for nonlinear dynamical systems subject to model uncertainty and disturbances is challenging. In this work, we present a novel approach to tackle chance-constrained trajectory planning problems with nonconvex constraints, whereby obstacle avoidance chance constraints are reformulated using the signed distance function. We propose a novel sequential convex programming algorithm and prove that under a discrete time problem formulation, it is guaranteed to converge to a solution satisfying first-order optimality conditions. We demonstrate the approach on an uncertain 6 degrees of freedom spacecraft system and show that the solutions satisfy a given set of chance constraints.</p>
-</span>
-<span id="bib_LewBonalliECC2020" class="bibtex noshow">
-	<pre>@inproceedings{LewBonalliECC2020,
-  author = {Lew, T. and Bonalli, R. and Pavone, M.},
-  title = {Chance-Constrained Sequential Convex Programming for Robust Trajectory Optimization},
-  booktitle = {{European Control Conference}},
-  year = {2020},
-  note = {In Press},
-  address = {St. Petersburg, Russia},
-  month = may,
-  url = {/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf},
-  keywords = {press},
-  owner = {lew},
-  timestamp = {2020-03-16}
-}
-</pre>
-</span>
-<!-- <span id="key_LewBonalliECC2020" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="LorenzettiPavone2020">J. Lorenzetti and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1911.07360.pdf">“A Simple and Efficient Tube-based Robust Output Feedback Model Predictive Control Scheme,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiPavone2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiPavone2020','abstract')">Abstract</a>]</p>
-<span id="abs_LorenzettiPavone2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> The control of constrained systems using model predictive control (MPC) becomes more challenging when full state information is not available and when the nominal system model and measurements are corrupted by noise. Since these conditions are often seen in practical scenarios, techniques such as robust output feedback MPC have been developed to address them. However, existing approaches to robust output feedback MPC are still challenged by increased complexity of the online optimization problem, increased computational requirements for controller synthesis, or both. In this work we present a simple and efficient methodology for synthesizing a tube-based robust output feedback MPC scheme for linear, discrete, time-invariant systems subject to bounded, additive disturbances. Specifically, we completely avoid the use of Minkowski addition during controller synthesis and the online optimization problem has the same complexity as in the nominal full state feedback MPC problem, enabling our approach to scale with system dimension more effectively than previously proposed schemes.</p>
-</span>
-<span id="bib_LorenzettiPavone2020" class="bibtex noshow">
-	<pre>@inproceedings{LorenzettiPavone2020,
-  author = {Lorenzetti, J. and Pavone, M.},
-  title = {A Simple and Efficient Tube-based Robust Output Feedback Model Predictive Control Scheme},
-  booktitle = {{European Control Conference}},
-  year = {2020},
-  address = {St. Petersburg, Russia},
-  month = may,
-  url = {https://arxiv.org/pdf/1911.07360.pdf},
-  owner = {jlorenze},
-  timestamp = {2020-08-03}
-}
-</pre>
-</span>
-<!-- <span id="key_LorenzettiPavone2020" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="VerbruggenSalazarEtAl2019">F. J. R. Verbruggen, M. Salazar, M. Pavone, and T. Hofman, <a class="entry-title" href="/wp-content/papercite-data/pdf/Verbruggen.Salazar.ea.ECC2020.pdf">“Joint Design and Control of Electric Vehicle Propulsion Systems,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('VerbruggenSalazarEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('VerbruggenSalazarEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_VerbruggenSalazarEtAl2019" class="abstract noshow">
@@ -1088,6 +947,147 @@
  
 
 
+<span class="entry" id="SoloveyJansonETAL2020">K. Solovey, L. Janson, E. Schmerling, E. Frazzoli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1909.09688.pdf">“Revisiting the Asymptotic Optimality of RRT*,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SoloveyJansonETAL2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SoloveyJansonETAL2020','abstract')">Abstract</a>]</p>
+<span id="abs_SoloveyJansonETAL2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> RRT* is one of the most widely used sampling-based algorithms for asymptotically-optimal motion planning. This algorithm laid the foundations for optimality in motion planning as a whole, and inspired the development of numerous new algorithms in the field, many of which build upon RRT* itself. In this paper, we first identify a logical gap in the optimality proof of RRT*, which was developed in Karaman and Frazzoli (2011). Then, we present an alternative and mathematically-rigorous proof for asymptotic optimality. Our proof suggests that the connection radius used by RRT* should be increased from γ(\frac\log nn)^1/d to γ’ (\frac\log nn)^1/(d+1) in order to account for the additional dimension of time that dictates the samples’ ordering. Here gamma, γ’ are constants, and n, d are the number of samples and the dimension of the problem, respectively.</p>
+</span>
+<span id="bib_SoloveyJansonETAL2020" class="bibtex noshow">
+	<pre>@inproceedings{SoloveyJansonETAL2020,
+  author = {Solovey, K. and Janson, L. and Schmerling, E. and Frazzoli, E. and Pavone, M.},
+  title = {Revisiting the Asymptotic Optimality of RRT*},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2020},
+  note = {In Press},
+  address = {Paris, France},
+  month = may,
+  url = {https://arxiv.org/pdf/1909.09688.pdf},
+  keywords = {press},
+  timestamp = {2020-02-25}
+}
+</pre>
+</span>
+<!-- <span id="key_SoloveyJansonETAL2020" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LewBonalliECC2020">T. Lew, R. Bonalli, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf">“Chance-Constrained Sequential Convex Programming for Robust Trajectory Optimization,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewBonalliECC2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewBonalliECC2020','abstract')">Abstract</a>]</p>
+<span id="abs_LewBonalliECC2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Planning safe trajectories for nonlinear dynamical systems subject to model uncertainty and disturbances is challenging. In this work, we present a novel approach to tackle chance-constrained trajectory planning problems with nonconvex constraints, whereby obstacle avoidance chance constraints are reformulated using the signed distance function. We propose a novel sequential convex programming algorithm and prove that under a discrete time problem formulation, it is guaranteed to converge to a solution satisfying first-order optimality conditions. We demonstrate the approach on an uncertain 6 degrees of freedom spacecraft system and show that the solutions satisfy a given set of chance constraints.</p>
+</span>
+<span id="bib_LewBonalliECC2020" class="bibtex noshow">
+	<pre>@inproceedings{LewBonalliECC2020,
+  author = {Lew, T. and Bonalli, R. and Pavone, M.},
+  title = {Chance-Constrained Sequential Convex Programming for Robust Trajectory Optimization},
+  booktitle = {{European Control Conference}},
+  year = {2020},
+  note = {In Press},
+  address = {St. Petersburg, Russia},
+  month = may,
+  url = {/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf},
+  keywords = {press},
+  owner = {lew},
+  timestamp = {2020-03-16}
+}
+</pre>
+</span>
+<!-- <span id="key_LewBonalliECC2020" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="BrownRossiEtAl20">R. A. Brown, F. Rossi, K. Solovey, M. T. Wolf, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Brown.Rossi.ea.ECC20.pdf">“Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BrownRossiEtAl20','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownRossiEtAl20','abstract')">Abstract</a>]</p>
+<span id="abs_BrownRossiEtAl20" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> A number of prototypical optimization problems in multi-agent systems (e.g. task allocation and network load-sharing) exhibit a highly local structure: that is, each agent’s decision variables are only directly coupled to few other agent’s variables through the objective function or the constraints. Nevertheless, existing algorithms for distributed optimization generally do not exploit the locality structure of the problem, requiring all agents to compute or exchange the full set of decision variables. In this paper, we develop a rigorous notion of "locality" that relates the structural properties of a linearly-constrained convex optimization problem (in particular, the sparsity structure of the constraint matrix and the objective function) to the amount of information that agents should exchange to compute an arbitrarily high-quality approximation to the problem from a cold-start. We leverage the notion of locality to develop a locality-aware distributed optimization algorithm, and we show that, for problems where individual agents only require to know a small portion of the optimal solution, the algorithm requires very limited inter-agent communication. Numerical results show that the convergence rate of our algorithm is directly explained by the locality parameter proposed, and that the proposed theoretical bounds are remarkably tight.</p>
+</span>
+<span id="bib_BrownRossiEtAl20" class="bibtex noshow">
+	<pre>@inproceedings{BrownRossiEtAl20,
+  author = {Brown, R. A. and Rossi, F. and Solovey, K. and Wolf, M. T. and Pavone, M.},
+  title = {Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems},
+  booktitle = {{European Control Conference}},
+  year = {2020},
+  note = {In Press},
+  address = {St. Petersburg, Russia},
+  month = may,
+  url = {/wp-content/papercite-data/pdf/Brown.Rossi.ea.ECC20.pdf},
+  keywords = {press},
+  owner = {rabrown1},
+  timestamp = {2020-02-25}
+}
+</pre>
+</span>
+<!-- <span id="key_BrownRossiEtAl20" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LorenzettiPavone2020">J. Lorenzetti and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1911.07360.pdf">“A Simple and Efficient Tube-based Robust Output Feedback Model Predictive Control Scheme,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiPavone2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiPavone2020','abstract')">Abstract</a>]</p>
+<span id="abs_LorenzettiPavone2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> The control of constrained systems using model predictive control (MPC) becomes more challenging when full state information is not available and when the nominal system model and measurements are corrupted by noise. Since these conditions are often seen in practical scenarios, techniques such as robust output feedback MPC have been developed to address them. However, existing approaches to robust output feedback MPC are still challenged by increased complexity of the online optimization problem, increased computational requirements for controller synthesis, or both. In this work we present a simple and efficient methodology for synthesizing a tube-based robust output feedback MPC scheme for linear, discrete, time-invariant systems subject to bounded, additive disturbances. Specifically, we completely avoid the use of Minkowski addition during controller synthesis and the online optimization problem has the same complexity as in the nominal full state feedback MPC problem, enabling our approach to scale with system dimension more effectively than previously proposed schemes.</p>
+</span>
+<span id="bib_LorenzettiPavone2020" class="bibtex noshow">
+	<pre>@inproceedings{LorenzettiPavone2020,
+  author = {Lorenzetti, J. and Pavone, M.},
+  title = {A Simple and Efficient Tube-based Robust Output Feedback Model Predictive Control Scheme},
+  booktitle = {{European Control Conference}},
+  year = {2020},
+  address = {St. Petersburg, Russia},
+  month = may,
+  url = {https://arxiv.org/pdf/1911.07360.pdf},
+  owner = {jlorenze},
+  timestamp = {2020-08-03}
+}
+</pre>
+</span>
+<!-- <span id="key_LorenzettiPavone2020" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="TsaoSoloveyETAL2020">M. Tsao, K. Solovey, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1909.06363.pdf">“Sample Complexity of Probabilistic Roadmaps via Epsilon-nets,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('TsaoSoloveyETAL2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TsaoSoloveyETAL2020','abstract')">Abstract</a>]</p>
+<span id="abs_TsaoSoloveyETAL2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We study fundamental theoretical aspects of probabilistic roadmaps (PRM) in the finite time (non-asymptotic) regime. In particular, we investigate how completeness and optimality guarantees of the approach are influenced by the underlying deterministic sampling distribution \mathcalX and connection radius r>0. We develop the notion of (δ,ε)-completeness of the parameters \mathcalX,r, which indicates that for every motion-planning problem of clearance at least δ>0, PRM using \mathcalX,r returns a solution no longer than 1+εtimes the shortest δ-clear path. Leveraging the concept of ε-nets, we characterize in terms of lower and upper bounds the number of samples needed to guarantee (δ,ε)-completeness. This is in contrast with previous work which mostly considered the asymptotic regime in which the number of samples tends to infinity. In practice, we propose a sampling distribution inspired by ε-nets that achieves nearly the same coverage as grids while using significantly fewer samples.</p>
+</span>
+<span id="bib_TsaoSoloveyETAL2020" class="bibtex noshow">
+	<pre>@inproceedings{TsaoSoloveyETAL2020,
+  author = {Tsao, M. and Solovey, K. and Pavone, M.},
+  title = {Sample Complexity of Probabilistic Roadmaps via Epsilon-nets},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2020},
+  note = {In Press},
+  address = {Paris, France},
+  month = may,
+  url = {https://arxiv.org/pdf/1909.06363.pdf},
+  keywords = {press},
+  timestamp = {2020-02-25}
+}
+</pre>
+</span>
+<!-- <span id="key_TsaoSoloveyETAL2020" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="BanerjeeEtAl2020">S. Banerjee, T. Lew, R. Bonalli, A. Alfaadhel, I. A. Alomar, H. M. Shageer, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Banerjee.Lew.Bonalli.ea.AeroConf20.pdf">“Learning-based Warm-Starting for Fast Sequential Convex Programming and Trajectory Optimization,”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2020.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('BanerjeeEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BanerjeeEtAl2020','abstract')">Abstract</a>]</p>
 <span id="abs_BanerjeeEtAl2020" class="abstract noshow">
@@ -1108,60 +1108,6 @@
 </pre>
 </span>
 <!-- <span id="key_BanerjeeEtAl2020" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="McClellanLorenzettiEtAl2020">A. McClellan, J. Lorenzetti, M. Pavone, and C. Farhat, <a class="entry-title" href="https://arc.aiaa.org/doi/abs/10.2514/6.2020-1190">“Projection-based Model Order Reduction for Flight Dynamics and Model Predictive Control,”</a> in <i>AIAA Scitech Forum</i>, Orlando, Florida, 2020.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('McClellanLorenzettiEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('McClellanLorenzettiEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_McClellanLorenzettiEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> A model predictive control algorithm seeks to produce a control law that optimizes the future behavior of a deployed system over a finite time horizon, by leveraging a real-time computational model of this system. For applications involving fluid-structure interaction (FSI), this leveraging is challenging because it implies the design of an accurate and yet real-time computational model for the prediction of the time-dependent flow-induced forces and moments acting on the system. The projection-based reduction of CFD-based computational models for FSI provides one approach for addressing this issue. In this context, linear model reduction is adequate as the controller can be expected to maintain the system of interest within small perturbations around a pre-designed optimal trajectory. For the automated landing of an aircraft application considered in this paper, this requires the construction of a CFD-based projection-based reduced-order model that is linearized around a time-dependent trajectory rather than a mere steady-state equilibrium position. To this end, a computational approach for the projection-based model order reduction of linearized CFD-based computational models for FSI is presented, with the goal of application to downstream control tasks such as automated aircraft landing. The approach addresses the issues of linearization around a trajectory and construction of stable reduced-order models to achieve real-time computation, while maintaining model accuracy, and thereby enabling model predictive control. It is verified using a simple model predictive control algorithm.</p>
-</span>
-<span id="bib_McClellanLorenzettiEtAl2020" class="bibtex noshow">
-	<pre>@inproceedings{McClellanLorenzettiEtAl2020,
-  author = {McClellan, A. and Lorenzetti, J. and Pavone, M. and Farhat, C.},
-  title = {Projection-based Model Order Reduction for Flight Dynamics and Model Predictive Control},
-  booktitle = {{AIAA Scitech Forum}},
-  year = {2020},
-  address = {Orlando, Florida},
-  month = jan,
-  url = {https://arc.aiaa.org/doi/abs/10.2514/6.2020-1190},
-  owner = {jlorenze},
-  timestamp = {2019-12-02}
-}
-</pre>
-</span>
-<!-- <span id="key_McClellanLorenzettiEtAl2020" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="LorenzettiMcClellanEtAl2020">J. Lorenzetti, A. McClellan, C. Farhat, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Lorenzetti.McClellan.Farhat.Pavone.AIAA20.pdf">“UAV Aircraft Carrier Landing Using CFD-Based Model Predictive Control,”</a> in <i>AIAA Scitech Forum</i>, Orlando, Florida, 2020.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiMcClellanEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiMcClellanEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_LorenzettiMcClellanEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> The control problem associated with autonomous aircraft carrier landings for UAVs is challenging due to requirements on safety, high-performance operation, and uncertain and highly dynamic environments. This work proposes a control scheme for such problems that enables safe operation of the UAV at the limits of its performance by utilizing a model predictive control (MPC) approach. While real-time computation requirements typically limit the fidelity of the models used in optimization-based control, in this work it is demonstrated that high-fidelity computational fluid dynamics (CFD) models can be used within an MPC framework via the construction of a projection-based reduced order model (ROM). An application of a CFD-based MPC scheme to the glideslope tracking problem is then developed to demonstrate the effectiveness of the proposed approach.</p>
-</span>
-<span id="bib_LorenzettiMcClellanEtAl2020" class="bibtex noshow">
-	<pre>@inproceedings{LorenzettiMcClellanEtAl2020,
-  author = {Lorenzetti, J. and McClellan, A. and Farhat, C. and Pavone, M.},
-  title = {{UAV} Aircraft Carrier Landing Using {CFD}-Based Model Predictive Control},
-  booktitle = {{AIAA Scitech Forum}},
-  year = {2020},
-  address = {Orlando, Florida},
-  month = jan,
-  url = {/wp-content/papercite-data/pdf/Lorenzetti.McClellan.Farhat.Pavone.AIAA20.pdf},
-  owner = {jlorenze},
-  timestamp = {2019-12-02}
-}
-</pre>
-</span>
-<!-- <span id="key_LorenzettiMcClellanEtAl2020" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -1196,6 +1142,142 @@
  
 
 
+<span class="entry" id="LorenzettiMcClellanEtAl2020">J. Lorenzetti, A. McClellan, C. Farhat, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Lorenzetti.McClellan.Farhat.Pavone.AIAA20.pdf">“UAV Aircraft Carrier Landing Using CFD-Based Model Predictive Control,”</a> in <i>AIAA Scitech Forum</i>, Orlando, Florida, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiMcClellanEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiMcClellanEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_LorenzettiMcClellanEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> The control problem associated with autonomous aircraft carrier landings for UAVs is challenging due to requirements on safety, high-performance operation, and uncertain and highly dynamic environments. This work proposes a control scheme for such problems that enables safe operation of the UAV at the limits of its performance by utilizing a model predictive control (MPC) approach. While real-time computation requirements typically limit the fidelity of the models used in optimization-based control, in this work it is demonstrated that high-fidelity computational fluid dynamics (CFD) models can be used within an MPC framework via the construction of a projection-based reduced order model (ROM). An application of a CFD-based MPC scheme to the glideslope tracking problem is then developed to demonstrate the effectiveness of the proposed approach.</p>
+</span>
+<span id="bib_LorenzettiMcClellanEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{LorenzettiMcClellanEtAl2020,
+  author = {Lorenzetti, J. and McClellan, A. and Farhat, C. and Pavone, M.},
+  title = {{UAV} Aircraft Carrier Landing Using {CFD}-Based Model Predictive Control},
+  booktitle = {{AIAA Scitech Forum}},
+  year = {2020},
+  address = {Orlando, Florida},
+  month = jan,
+  url = {/wp-content/papercite-data/pdf/Lorenzetti.McClellan.Farhat.Pavone.AIAA20.pdf},
+  owner = {jlorenze},
+  timestamp = {2019-12-02}
+}
+</pre>
+</span>
+<!-- <span id="key_LorenzettiMcClellanEtAl2020" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="McClellanLorenzettiEtAl2020">A. McClellan, J. Lorenzetti, M. Pavone, and C. Farhat, <a class="entry-title" href="https://arc.aiaa.org/doi/abs/10.2514/6.2020-1190">“Projection-based Model Order Reduction for Flight Dynamics and Model Predictive Control,”</a> in <i>AIAA Scitech Forum</i>, Orlando, Florida, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('McClellanLorenzettiEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('McClellanLorenzettiEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_McClellanLorenzettiEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> A model predictive control algorithm seeks to produce a control law that optimizes the future behavior of a deployed system over a finite time horizon, by leveraging a real-time computational model of this system. For applications involving fluid-structure interaction (FSI), this leveraging is challenging because it implies the design of an accurate and yet real-time computational model for the prediction of the time-dependent flow-induced forces and moments acting on the system. The projection-based reduction of CFD-based computational models for FSI provides one approach for addressing this issue. In this context, linear model reduction is adequate as the controller can be expected to maintain the system of interest within small perturbations around a pre-designed optimal trajectory. For the automated landing of an aircraft application considered in this paper, this requires the construction of a CFD-based projection-based reduced-order model that is linearized around a time-dependent trajectory rather than a mere steady-state equilibrium position. To this end, a computational approach for the projection-based model order reduction of linearized CFD-based computational models for FSI is presented, with the goal of application to downstream control tasks such as automated aircraft landing. The approach addresses the issues of linearization around a trajectory and construction of stable reduced-order models to achieve real-time computation, while maintaining model accuracy, and thereby enabling model predictive control. It is verified using a simple model predictive control algorithm.</p>
+</span>
+<span id="bib_McClellanLorenzettiEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{McClellanLorenzettiEtAl2020,
+  author = {McClellan, A. and Lorenzetti, J. and Pavone, M. and Farhat, C.},
+  title = {Projection-based Model Order Reduction for Flight Dynamics and Model Predictive Control},
+  booktitle = {{AIAA Scitech Forum}},
+  year = {2020},
+  address = {Orlando, Florida},
+  month = jan,
+  url = {https://arc.aiaa.org/doi/abs/10.2514/6.2020-1190},
+  owner = {jlorenze},
+  timestamp = {2019-12-02}
+}
+</pre>
+</span>
+<!-- <span id="key_McClellanLorenzettiEtAl2020" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="RossiIglesiasEtAl2018b">F. Rossi, R. Iglesias, M. Alizadeh, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1709.04906">“On the Interaction Between Autonomous Mobility-on-Demand Systems and the Power Network: Models and Coordination Algorithms,”</a> <i>IEEE Transactions on Control of Network Systems</i>, vol. 7, no. 1, pp. 384–397, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('RossiIglesiasEtAl2018b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('RossiIglesiasEtAl2018b','abstract')">Abstract</a>]</p>
+<span id="abs_RossiIglesiasEtAl2018b" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We study the interaction between a fleet of electric self-driving vehicles servicing on-demand transportation requests (referred to as autonomous mobility-on-demand, or AMoD, systems) and the electric power network. We propose a joint model that captures the coupling between the two systems stemming from the vehicles’ charging requirements, capturing time-varying customer demand, battery depreciation, and power transmission constraints. First, we show that the model is amenable to efficient optimization. Then, we prove that the socially optimal solution to the joint problem is a general equilibrium if locational marginal pricing is used for electricity. Finally, we show that the equilibrium can be computed by selfish transportation and generator operators (aided by a nonprofit independent system operator) without sharing private information. We assess the performance of the approach and its robustness to stochastic fluctuations in demand through case studies and agent-based simulations. Collectively, these results provide a first-of-a-kind characterization of the interaction between AMoD systems and the power network, and shed additional light on the economic and societal value of AMoD.</p>
+</span>
+<span id="bib_RossiIglesiasEtAl2018b" class="bibtex noshow">
+	<pre>@article{RossiIglesiasEtAl2018b,
+  author = {Rossi, F. and Iglesias, R. and Alizadeh, M. and Pavone, M.},
+  title = {On the Interaction Between {Autonomous Mobility-on-Demand} Systems and the Power Network: Models and Coordination Algorithms},
+  journal = {{IEEE Transactions on Control of Network Systems}},
+  year = {2020},
+  volume = {7},
+  number = {1},
+  pages = {384--397},
+  url = {https://arxiv.org/abs/1709.04906},
+  doi = {10.1109/TCNS.2019.2923384},
+  owner = {frossi2},
+  timestamp = {2020-03-20}
+}
+</pre>
+</span>
+<!-- <span id="key_RossiIglesiasEtAl2018b" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="WangLeungEtAl2020">X. Wang, K. Leung, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.00067.pdf">“Infusing Reachability-Based Safety into Planning and Control for Multi-agent Interactions,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Las Vegas, United States, 2020. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('WangLeungEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WangLeungEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_WangLeungEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Within a robot autonomy stack, the planner and controller are typically designed separately, and serve different purposes. As such, there is often a diffusion of responsibilities when it comes to ensuring safety for the robot. We propose that a planner and controller should share the same interpretation of safety but apply this knowledge in a different yet complementary way. To achieve this, we use Hamilton-Jacobi (HJ) reachability theory at the planning level to provide the robot planner with the foresight to avoid entering regions with possible inevitable collision. However, this alone does not guarantee safety. In conjunction with this HJ reachability-infused planner, we propose a minimally-interventional multi-agent safety-preserving controller also derived via HJ-reachability theory. The safety controller maintains safety for the robot without unduly impacting planner performance. We demonstrate the benefits of our proposed approach in a multi-agent highway scenario where a robot car is rewarded to navigate through traffic as fast as possible, and we show that our approach provides strong safety assurances yet achieves the highest performance compared to other safety controllers.</p>
+</span>
+<span id="bib_WangLeungEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{WangLeungEtAl2020,
+  author = {Wang, X. and Leung, K. and Pavone, M.},
+  title = {Infusing Reachability-Based Safety into Planning and Control for Multi-agent Interactions},
+  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
+  year = {2020},
+  note = {In press},
+  address = {Las Vegas, United States},
+  keywords = {press},
+  owner = {karenl7},
+  timestamp = {2020-03-09},
+  url = {https://arxiv.org/pdf/2008.00067.pdf}
+}
+</pre>
+</span>
+<!-- <span id="key_WangLeungEtAl2020" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="TsaoEtAl2020">M. Pavone, A. Saberi, M. Schiffer, and M. Tsao, <a class="entry-title" href="">“Online Hypergraph Matching with Delays,”</a> in <i>The Conference on Web and Internet Economics (WINE)</i>, Beijing, China, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('TsaoEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TsaoEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_TsaoEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We study an online hypergraph matching problem with delays, motivated by ridesharing applications. In this model, users enter a marketplace sequentially, and are willing to wait up to d timesteps to be matched, after which they will leave the system in favor of an outside option. A platform can match groups of up to k users together, indicating that they will share a ride. Each group of users yields a match value depending on how compatible they are with one another. As an example, in ridesharing, k is the capacity of the service vehicles, and d is the amount of time a user is willing to wait for a driver to be matched to them. We present results for both the utility maximization and cost minimization variants of the problem. In the utility maximization setting, the optimal competitive ratio is 1/d whenever k is at least 3, and is achievable in polynomial-time for any fixed k. In the cost minimization variation, when k = 2, the optimal competitive ratio for deterministic algorithms is 3/2 and is achieved by a polynomial-time thresholding algorithm. When k>2, we show that a polynomial-time randomized batching algorithm is (2 - 1/d) log k-competitive, and it is NP-hard to achieve a competitive ratio better than log k - O(log log k).</p>
+</span>
+<span id="bib_TsaoEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{TsaoEtAl2020,
+  author = {Pavone, Marco and Saberi, Amin and Schiffer, Maximilian and Tsao, Matthew},
+  title = {Online Hypergraph Matching with Delays},
+  booktitle = {The Conference on Web and Internet Economics (WINE)},
+  year = {2020},
+  address = {Beijing, China},
+  month = {#december#},
+  owner = {mwtsao}
+}
+</pre>
+</span>
+<!-- <span id="key_TsaoEtAl2020" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="MoteEgerstedtEtAl2020">M. Mote, M. Egerstedt, E. Feron, A. Bylard, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Mote.ea.JGCD.2020.preprint.pdf">“Collision-Inclusive Trajectory Optimization for Free-Flying Spacecraft,”</a> <i>AIAA Journal of Guidance, Control, and Dynamics</i>, 2020. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('MoteEgerstedtEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MoteEgerstedtEtAl2020','abstract')">Abstract</a>]</p>
 <span id="abs_MoteEgerstedtEtAl2020" class="abstract noshow">
@@ -1216,33 +1298,6 @@
 </pre>
 </span>
 <!-- <span id="key_MoteEgerstedtEtAl2020" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="DeCastroLeungEtAl2020">J. DeCastro, K. Leung, N. Aréchiga, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/DeCastro.Leung.ea.ITSC20.pdf">“Interpretable Policies from Formally-Specified Temporal Properties,”</a> in <i>Proc. IEEE Int. Conf. on Intelligent Transportation Systems</i>, Rhodes, Greece, 2020. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('DeCastroLeungEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DeCastroLeungEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_DeCastroLeungEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We present an approach for interpreting parameterized policies based on a formally-specified abstract description of the importance of certain behaviors or observed outcomes of a policy. The standard way to deploy data-driven policies usually involves sampling from the set of outcomes produced by the policy. Our approach leverages parametric signal temporal logic (pSTL) formulas to construct an interpretable view on the modeling parameters via a sequence of variational inference problems; one to solve for the pSTL parameters and another to construct a new parameterization satisfying the specification. We perform clustering using a finite set of examples, either real or simulated, and combine computational graph learning and normalizing flows to form a relationship between these parameters and pSTL formulas either derived by hand or inferred from data. We illustrate the utility of our approach to model selection for validation of the safety properties of an autonomous driving system, using a learned generative model of the surrounding agents.</p>
-</span>
-<span id="bib_DeCastroLeungEtAl2020" class="bibtex noshow">
-	<pre>@inproceedings{DeCastroLeungEtAl2020,
-  author = {DeCastro, J. and Leung, K. and Ar\'{e}chiga, N. and Pavone, M.},
-  title = {Interpretable Policies from Formally-Specified Temporal Properties},
-  booktitle = {{Proc. IEEE Int. Conf. on Intelligent Transportation Systems}},
-  year = {2020},
-  note = {In press},
-  address = {Rhodes, Greece},
-  keywords = {press},
-  timestamp = {2020-03-09},
-  url = {/wp-content/papercite-data/pdf/DeCastro.Leung.ea.ITSC20.pdf}
-}
-</pre>
-</span>
-<!-- <span id="key_DeCastroLeungEtAl2020" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -1276,27 +1331,53 @@
  
 
 
-<span class="entry" id="WangLeungEtAl2020">X. Wang, K. Leung, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.00067.pdf">“Infusing Reachability-Based Safety into Planning and Control for Multi-agent Interactions,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Las Vegas, United States, 2020. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('WangLeungEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WangLeungEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_WangLeungEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Within a robot autonomy stack, the planner and controller are typically designed separately, and serve different purposes. As such, there is often a diffusion of responsibilities when it comes to ensuring safety for the robot. We propose that a planner and controller should share the same interpretation of safety but apply this knowledge in a different yet complementary way. To achieve this, we use Hamilton-Jacobi (HJ) reachability theory at the planning level to provide the robot planner with the foresight to avoid entering regions with possible inevitable collision. However, this alone does not guarantee safety. In conjunction with this HJ reachability-infused planner, we propose a minimally-interventional multi-agent safety-preserving controller also derived via HJ-reachability theory. The safety controller maintains safety for the robot without unduly impacting planner performance. We demonstrate the benefits of our proposed approach in a multi-agent highway scenario where a robot car is rewarded to navigate through traffic as fast as possible, and we show that our approach provides strong safety assurances yet achieves the highest performance compared to other safety controllers.</p>
+<span class="entry" id="SinghRichardsEtAl2020">S. Singh, S. M. Richards, V. Sindhwani, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf">“Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization,”</a> <i>Int. Journal of Robotics Research</i>, 2020. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinghRichardsEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghRichardsEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_SinghRichardsEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We propose a novel framework for learning stabilizable nonlinear dynamical systems for continuous control tasks in robotics. The key contribution is a control-theoretic regularizer for dynamics fitting rooted in the notion of stabilizability, a constraint which guarantees the existence of robust tracking controllers for arbitrary open-loop trajectories generated with the learned system. Leveraging tools from contraction theory and statistical learning in reproducing kernel Hilbert spaces, we formulate stabilizable dynamics learning as a functional optimization with a convex objective and bi-convex functional constraints. Under a mild structural assumption and relaxation of the functional constraints to sampling-based constraints, we derive the optimal solution with a modified representer theorem. Finally, we utilize random matrix feature approximations to reduce the dimensionality of the search parameters and formulate an iterative convex optimization algorithm that jointly fits the dynamics functions and searches for a certificate of stabilizability. We validate the proposed algorithm in simulation for a planar quadrotor, and on a quadrotor hardware testbed emulating planar dynamics. We verify, both in simulation and on hardware, significantly improved trajectory generation and tracking performance with the control-theoretic regularized model over models learned using traditional regression techniques, especially when learning from small supervised datasets. The results support the conjecture that the use of stabilizability constraints as a form of regularization can help prune the hypothesis space in a manner that is tailored to the downstream task of trajectory generation and feedback control. This produces models that are not only dramatically better conditioned, but also data efficient.</p>
 </span>
-<span id="bib_WangLeungEtAl2020" class="bibtex noshow">
-	<pre>@inproceedings{WangLeungEtAl2020,
-  author = {Wang, X. and Leung, K. and Pavone, M.},
-  title = {Infusing Reachability-Based Safety into Planning and Control for Multi-agent Interactions},
-  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
+<span id="bib_SinghRichardsEtAl2020" class="bibtex noshow">
+	<pre>@article{SinghRichardsEtAl2020,
+  author = {Singh, S. and Richards, S. M. and Sindhwani, V. and Slotine, J-J. E. and Pavone, M.},
+  title = {Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization},
+  journal = {{Int. Journal of Robotics Research}},
   year = {2020},
-  note = {In press},
-  address = {Las Vegas, United States},
+  note = {In Press},
+  url = {/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf},
   keywords = {press},
-  owner = {karenl7},
-  timestamp = {2020-03-09},
-  url = {https://arxiv.org/pdf/2008.00067.pdf}
+  owner = {ssingh19},
+  timestamp = {2020-03-25}
 }
 </pre>
 </span>
-<!-- <span id="key_WangLeungEtAl2020" >
+<!-- <span id="key_SinghRichardsEtAl2020" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="DeCastroLeungEtAl2020">J. DeCastro, K. Leung, N. Aréchiga, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/DeCastro.Leung.ea.ITSC20.pdf">“Interpretable Policies from Formally-Specified Temporal Properties,”</a> in <i>Proc. IEEE Int. Conf. on Intelligent Transportation Systems</i>, Rhodes, Greece, 2020. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('DeCastroLeungEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DeCastroLeungEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_DeCastroLeungEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We present an approach for interpreting parameterized policies based on a formally-specified abstract description of the importance of certain behaviors or observed outcomes of a policy. The standard way to deploy data-driven policies usually involves sampling from the set of outcomes produced by the policy. Our approach leverages parametric signal temporal logic (pSTL) formulas to construct an interpretable view on the modeling parameters via a sequence of variational inference problems; one to solve for the pSTL parameters and another to construct a new parameterization satisfying the specification. We perform clustering using a finite set of examples, either real or simulated, and combine computational graph learning and normalizing flows to form a relationship between these parameters and pSTL formulas either derived by hand or inferred from data. We illustrate the utility of our approach to model selection for validation of the safety properties of an autonomous driving system, using a learned generative model of the surrounding agents.</p>
+</span>
+<span id="bib_DeCastroLeungEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{DeCastroLeungEtAl2020,
+  author = {DeCastro, J. and Leung, K. and Ar\'{e}chiga, N. and Pavone, M.},
+  title = {Interpretable Policies from Formally-Specified Temporal Properties},
+  booktitle = {{Proc. IEEE Int. Conf. on Intelligent Transportation Systems}},
+  year = {2020},
+  note = {In press},
+  address = {Rhodes, Greece},
+  keywords = {press},
+  timestamp = {2020-03-09},
+  url = {/wp-content/papercite-data/pdf/DeCastro.Leung.ea.ITSC20.pdf}
+}
+</pre>
+</span>
+<!-- <span id="key_DeCastroLeungEtAl2020" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -1333,35 +1414,6 @@
  
 
 
-<span class="entry" id="RossiIglesiasEtAl2018b">F. Rossi, R. Iglesias, M. Alizadeh, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1709.04906">“On the Interaction Between Autonomous Mobility-on-Demand Systems and the Power Network: Models and Coordination Algorithms,”</a> <i>IEEE Transactions on Control of Network Systems</i>, vol. 7, no. 1, pp. 384–397, 2020.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('RossiIglesiasEtAl2018b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('RossiIglesiasEtAl2018b','abstract')">Abstract</a>]</p>
-<span id="abs_RossiIglesiasEtAl2018b" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We study the interaction between a fleet of electric self-driving vehicles servicing on-demand transportation requests (referred to as autonomous mobility-on-demand, or AMoD, systems) and the electric power network. We propose a joint model that captures the coupling between the two systems stemming from the vehicles’ charging requirements, capturing time-varying customer demand, battery depreciation, and power transmission constraints. First, we show that the model is amenable to efficient optimization. Then, we prove that the socially optimal solution to the joint problem is a general equilibrium if locational marginal pricing is used for electricity. Finally, we show that the equilibrium can be computed by selfish transportation and generator operators (aided by a nonprofit independent system operator) without sharing private information. We assess the performance of the approach and its robustness to stochastic fluctuations in demand through case studies and agent-based simulations. Collectively, these results provide a first-of-a-kind characterization of the interaction between AMoD systems and the power network, and shed additional light on the economic and societal value of AMoD.</p>
-</span>
-<span id="bib_RossiIglesiasEtAl2018b" class="bibtex noshow">
-	<pre>@article{RossiIglesiasEtAl2018b,
-  author = {Rossi, F. and Iglesias, R. and Alizadeh, M. and Pavone, M.},
-  title = {On the Interaction Between {Autonomous Mobility-on-Demand} Systems and the Power Network: Models and Coordination Algorithms},
-  journal = {{IEEE Transactions on Control of Network Systems}},
-  year = {2020},
-  volume = {7},
-  number = {1},
-  pages = {384--397},
-  url = {https://arxiv.org/abs/1709.04906},
-  doi = {10.1109/TCNS.2019.2923384},
-  owner = {frossi2},
-  timestamp = {2020-03-20}
-}
-</pre>
-</span>
-<!-- <span id="key_RossiIglesiasEtAl2018b" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="ZardiniEtAlBis2020">G. Zardini, N. Lanzetti, A. Censi, E. Frazzoli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.08975.pdf">“Co-Design to Enable User-Friendly Tools to Assess the Impact of Future Mobility Solutions,”</a> <i>IEEE Transactions on Intelligent Transportation Systems</i>, Aug. 2020. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('ZardiniEtAlBis2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ZardiniEtAlBis2020','abstract')">Abstract</a>]</p>
 <span id="abs_ZardiniEtAlBis2020" class="abstract noshow">
@@ -1384,33 +1436,6 @@
 <!-- <span id="key_ZardiniEtAlBis2020" >
 	<b>Keywords</b>:
 	submitted
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SinghRichardsEtAl2020">S. Singh, S. M. Richards, V. Sindhwani, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf">“Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization,”</a> <i>Int. Journal of Robotics Research</i>, 2020. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinghRichardsEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghRichardsEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_SinghRichardsEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We propose a novel framework for learning stabilizable nonlinear dynamical systems for continuous control tasks in robotics. The key contribution is a control-theoretic regularizer for dynamics fitting rooted in the notion of stabilizability, a constraint which guarantees the existence of robust tracking controllers for arbitrary open-loop trajectories generated with the learned system. Leveraging tools from contraction theory and statistical learning in reproducing kernel Hilbert spaces, we formulate stabilizable dynamics learning as a functional optimization with a convex objective and bi-convex functional constraints. Under a mild structural assumption and relaxation of the functional constraints to sampling-based constraints, we derive the optimal solution with a modified representer theorem. Finally, we utilize random matrix feature approximations to reduce the dimensionality of the search parameters and formulate an iterative convex optimization algorithm that jointly fits the dynamics functions and searches for a certificate of stabilizability. We validate the proposed algorithm in simulation for a planar quadrotor, and on a quadrotor hardware testbed emulating planar dynamics. We verify, both in simulation and on hardware, significantly improved trajectory generation and tracking performance with the control-theoretic regularized model over models learned using traditional regression techniques, especially when learning from small supervised datasets. The results support the conjecture that the use of stabilizability constraints as a form of regularization can help prune the hypothesis space in a manner that is tailored to the downstream task of trajectory generation and feedback control. This produces models that are not only dramatically better conditioned, but also data efficient.</p>
-</span>
-<span id="bib_SinghRichardsEtAl2020" class="bibtex noshow">
-	<pre>@article{SinghRichardsEtAl2020,
-  author = {Singh, S. and Richards, S. M. and Sindhwani, V. and Slotine, J-J. E. and Pavone, M.},
-  title = {Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization},
-  journal = {{Int. Journal of Robotics Research}},
-  year = {2020},
-  note = {In Press},
-  url = {/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf},
-  keywords = {press},
-  owner = {ssingh19},
-  timestamp = {2020-03-25}
-}
-</pre>
-</span>
-<!-- <span id="key_SinghRichardsEtAl2020" >
-	<b>Keywords</b>:
-	press
 </span> --></li>
 <li>
  
@@ -1443,33 +1468,6 @@
  
 
 
-<span class="entry" id="ZgraggenTsaoEtAl2019">J. Zgraggen, M. Tsao, M. Salazar, M. Schiffer, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Zgraggen.Salazar.ea.ITSC19.pdf">“A Model Predictive Control Scheme for Intermodal Autonomous Mobility-on-Demand,”</a> in <i>Proc. IEEE Int. Conf. on Intelligent Transportation Systems</i>, Auckland, New Zealand, 2019.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ZgraggenTsaoEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ZgraggenTsaoEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_ZgraggenTsaoEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This paper presents a routing algorithm for intermodal Autonomous Mobility on Demand (AMoD) systems, whereby a fleet of self-driving cars provides on-demand mobility in coordination with public transit. Specifically, we present a time-variant flow-based optimization approach that captures the operation of an AMoD system in coordination with public transit. We then leverage this model to devise a model predictive control (MPC) algorithm to route customers and vehicles through the network with the objective of minimizing customers’ travel time. To validate our MPC scheme, we present a real-world case study for New York City. Our results show that servicing transportation demands jointly with public transit can significantly improve the service quality of AMoD systems. Additionally, we highlight the differences of our time-variant framework compared to existing mesoscopic, time-invariant models.</p>
-</span>
-<span id="bib_ZgraggenTsaoEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{ZgraggenTsaoEtAl2019,
-  author = {Zgraggen, J. and Tsao, M. and Salazar, M. and Schiffer, M. and Pavone, M.},
-  title = {A Model Predictive Control Scheme for Intermodal Autonomous Mobility-on-Demand},
-  booktitle = {{Proc. IEEE Int. Conf. on Intelligent Transportation Systems}},
-  year = {2019},
-  address = {Auckland, New Zealand},
-  month = nov,
-  url = {/wp-content/papercite-data/pdf/Zgraggen.Salazar.ea.ITSC19.pdf},
-  owner = {samauro},
-  timestamp = {2020-02-12}
-}
-</pre>
-</span>
-<!-- <span id="key_ZgraggenTsaoEtAl2019" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="SalazarHoushmandEtAl2019">M. Salazar, A. Houshmand, C. G. Cassandras, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Salazar.Houshmand.ea.ITSC19.pdf">“Optimal Routing and Energy Management Strategies for Plug-in Hybrid Electric Vehicles,”</a> in <i>Proc. IEEE Int. Conf. on Intelligent Transportation Systems</i>, Auckland, New Zealand, 2019.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SalazarHoushmandEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalazarHoushmandEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_SalazarHoushmandEtAl2019" class="abstract noshow">
@@ -1490,6 +1488,33 @@
 </pre>
 </span>
 <!-- <span id="key_SalazarHoushmandEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ZgraggenTsaoEtAl2019">J. Zgraggen, M. Tsao, M. Salazar, M. Schiffer, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Zgraggen.Salazar.ea.ITSC19.pdf">“A Model Predictive Control Scheme for Intermodal Autonomous Mobility-on-Demand,”</a> in <i>Proc. IEEE Int. Conf. on Intelligent Transportation Systems</i>, Auckland, New Zealand, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ZgraggenTsaoEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ZgraggenTsaoEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_ZgraggenTsaoEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper presents a routing algorithm for intermodal Autonomous Mobility on Demand (AMoD) systems, whereby a fleet of self-driving cars provides on-demand mobility in coordination with public transit. Specifically, we present a time-variant flow-based optimization approach that captures the operation of an AMoD system in coordination with public transit. We then leverage this model to devise a model predictive control (MPC) algorithm to route customers and vehicles through the network with the objective of minimizing customers’ travel time. To validate our MPC scheme, we present a real-world case study for New York City. Our results show that servicing transportation demands jointly with public transit can significantly improve the service quality of AMoD systems. Additionally, we highlight the differences of our time-variant framework compared to existing mesoscopic, time-invariant models.</p>
+</span>
+<span id="bib_ZgraggenTsaoEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{ZgraggenTsaoEtAl2019,
+  author = {Zgraggen, J. and Tsao, M. and Salazar, M. and Schiffer, M. and Pavone, M.},
+  title = {A Model Predictive Control Scheme for Intermodal Autonomous Mobility-on-Demand},
+  booktitle = {{Proc. IEEE Int. Conf. on Intelligent Transportation Systems}},
+  year = {2019},
+  address = {Auckland, New Zealand},
+  month = nov,
+  url = {/wp-content/papercite-data/pdf/Zgraggen.Salazar.ea.ITSC19.pdf},
+  owner = {samauro},
+  timestamp = {2020-02-12}
+}
+</pre>
+</span>
+<!-- <span id="key_ZgraggenTsaoEtAl2019" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -1607,87 +1632,6 @@
  
 
 
-<span class="entry" id="LeungArechigaEtAl2019">K. Leung, N. Arechiga, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Leung.Arechiga.ea.ULAD19.pdf">“Backpropagation for Parametric STL,”</a> in <i>IEEE Intelligent Vehicles Symposium: Workshop on Unsupervised Learning for Automated Driving</i>, Paris, France, 2019.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LeungArechigaEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungArechigaEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_LeungArechigaEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Signal Temporal Logic (STL) is an expressive language used to describe logical and temporal properties of signals, both continuous and discrete. Inferring STL formulas from behavior traces can provide powerful insights into complex systems. These insights can help system designers better understand and improve the systems they develop (e.g., long-term behaviors of time series data), yet this is a very challenging and often intractable problem. This work presents a method for evaluating STL formulas using computation graphs, hence bridging a connection between STL and many modern machine learning frameworks that depend on computation graphs, such as deep learning. We show that this approach is particularly effective for solving parameteric STL (pSTL) problems, the problem of parameter fitting for a given signal. We provide a relaxation technique that makes this method more tractable when solving general pSTL formulas. By using computation graphs, we can leverage the benefits and the computational prowess of modern day machine learning tools. Motivated by the problem of learning explanatory factors and safety assurance for complex cyber-physical systems, we demonstrate our proposed method on an autonomous driving case study.</p>
-</span>
-<span id="bib_LeungArechigaEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{LeungArechigaEtAl2019,
-  author = {Leung, K. and Arechiga, N. and Pavone, M.},
-  title = {Backpropagation for Parametric {STL}},
-  booktitle = {{IEEE Intelligent Vehicles Symposium: Workshop on Unsupervised Learning for Automated Driving}},
-  year = {2019},
-  address = {Paris, France},
-  month = jun,
-  url = {/wp-content/papercite-data/pdf/Leung.Arechiga.ea.ULAD19.pdf},
-  owner = {karenl7},
-  timestamp = {2020-04-09}
-}
-</pre>
-</span>
-<!-- <span id="key_LeungArechigaEtAl2019" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="LorenzettiLandryEtAl2019">J. Lorenzetti, B. Landry, S. Singh, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1811.06590.pdf">“Reduced Order Model Predictive Control For Setpoint Tracking,”</a> in <i>European Control Conference</i>, Naples, Italy, 2019.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_LorenzettiLandryEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.</p>
-</span>
-<span id="bib_LorenzettiLandryEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{LorenzettiLandryEtAl2019,
-  author = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
-  title = {Reduced Order Model Predictive Control For Setpoint Tracking},
-  booktitle = {{European Control Conference}},
-  year = {2019},
-  address = {Naples, Italy},
-  month = jun,
-  url = {https://arxiv.org/pdf/1811.06590.pdf},
-  owner = {jlorenze},
-  timestamp = {2019-04-26}
-}
-</pre>
-</span>
-<!-- <span id="key_LorenzettiLandryEtAl2019" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SoloveySalazarEtAl2019">K. Solovey, M. Salazar, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Solovey.Salazar.Pavone.RSS19.pdf">“Scalable and Congestion-aware Routing for Autonomous Mobility-on-Demand via Frank-Wolfe Optimization,”</a> in <i>Robotics: Science and Systems</i>, Freiburg im Breisgau, Germany, 2019.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SoloveySalazarEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SoloveySalazarEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_SoloveySalazarEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We consider the problem of vehicle routing for Autonomous Mobility-on-Demand (AMoD) systems, wherein a fleet of self-driving vehicles provides on-demand mobility in a given environment. Specifically, the task it to compute routes for the vehicles (both customer-carrying and empty travelling) so that travel demand is fulfilled and operational cost is minimized. The routing process must account for congestion effects affecting travel times, as modeled via a volume-delay function (VDF). Route planning with VDF constraints is notoriously challenging, as such constraints compound the combinatorial complexity of the routing optimization process. Thus, current solutions for AMoD routing resort to relaxations of the congestion constraints, thereby trading optimality with computational efficiency. In this paper, we present the first computationally-efficient approach for AMoD routing where VDF constraints are explicitly accounted for. We demonstrate that our approach is faster by at least one order of magnitude with respect to the state of the art, while providing higher quality solutions. From a methodological standpoint, the key technical insight is to establish a mathematical reduction of the AMoD routing problem to the classical traffic assignment problem (a related vehicle-routing problem where empty traveling vehicles are not present). Such a reduction allows us to extend powerful algorithmic tools for traffic assignment, which combine the classic Frank-Wolfe algorithm with modern techniques for pathfinding, to the AMoD routing problem. We provide strong theoretical guarantees for our approach in terms of near-optimality of the returned solution.</p>
-</span>
-<span id="bib_SoloveySalazarEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{SoloveySalazarEtAl2019,
-  author = {Solovey, K. and Salazar, M. and Pavone, M.},
-  title = {Scalable and Congestion-aware Routing for Autonomous Mobility-on-Demand via Frank-Wolfe Optimization},
-  booktitle = {{Robotics: Science and Systems}},
-  year = {2019},
-  address = {Freiburg im Breisgau, Germany},
-  month = jun,
-  url = {/wp-content/papercite-data/pdf/Solovey.Salazar.Pavone.RSS19.pdf},
-  owner = {samauro},
-  timestamp = {2019-02-02}
-}
-</pre>
-</span>
-<!-- <span id="key_SoloveySalazarEtAl2019" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="BonalliBylardEtAl2019">R. Bonalli, A. Bylard, A. Cauligi, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1905.07654.pdf">“Trajectory Optimization on Manifolds: A Theoretically-Guaranteed Embedded Sequential Convex Programming Approach,”</a> in <i>Robotics: Science and Systems</i>, Freiburg im Breisgau, Germany, 2019.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('BonalliBylardEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliBylardEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_BonalliBylardEtAl2019" class="abstract noshow">
@@ -1769,6 +1713,87 @@
  
 
 
+<span class="entry" id="LeungArechigaEtAl2019">K. Leung, N. Arechiga, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Leung.Arechiga.ea.ULAD19.pdf">“Backpropagation for Parametric STL,”</a> in <i>IEEE Intelligent Vehicles Symposium: Workshop on Unsupervised Learning for Automated Driving</i>, Paris, France, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LeungArechigaEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungArechigaEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_LeungArechigaEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Signal Temporal Logic (STL) is an expressive language used to describe logical and temporal properties of signals, both continuous and discrete. Inferring STL formulas from behavior traces can provide powerful insights into complex systems. These insights can help system designers better understand and improve the systems they develop (e.g., long-term behaviors of time series data), yet this is a very challenging and often intractable problem. This work presents a method for evaluating STL formulas using computation graphs, hence bridging a connection between STL and many modern machine learning frameworks that depend on computation graphs, such as deep learning. We show that this approach is particularly effective for solving parameteric STL (pSTL) problems, the problem of parameter fitting for a given signal. We provide a relaxation technique that makes this method more tractable when solving general pSTL formulas. By using computation graphs, we can leverage the benefits and the computational prowess of modern day machine learning tools. Motivated by the problem of learning explanatory factors and safety assurance for complex cyber-physical systems, we demonstrate our proposed method on an autonomous driving case study.</p>
+</span>
+<span id="bib_LeungArechigaEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{LeungArechigaEtAl2019,
+  author = {Leung, K. and Arechiga, N. and Pavone, M.},
+  title = {Backpropagation for Parametric {STL}},
+  booktitle = {{IEEE Intelligent Vehicles Symposium: Workshop on Unsupervised Learning for Automated Driving}},
+  year = {2019},
+  address = {Paris, France},
+  month = jun,
+  url = {/wp-content/papercite-data/pdf/Leung.Arechiga.ea.ULAD19.pdf},
+  owner = {karenl7},
+  timestamp = {2020-04-09}
+}
+</pre>
+</span>
+<!-- <span id="key_LeungArechigaEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LorenzettiLandryEtAl2019">J. Lorenzetti, B. Landry, S. Singh, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1811.06590.pdf">“Reduced Order Model Predictive Control For Setpoint Tracking,”</a> in <i>European Control Conference</i>, Naples, Italy, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_LorenzettiLandryEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.</p>
+</span>
+<span id="bib_LorenzettiLandryEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{LorenzettiLandryEtAl2019,
+  author = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
+  title = {Reduced Order Model Predictive Control For Setpoint Tracking},
+  booktitle = {{European Control Conference}},
+  year = {2019},
+  address = {Naples, Italy},
+  month = jun,
+  url = {https://arxiv.org/pdf/1811.06590.pdf},
+  owner = {jlorenze},
+  timestamp = {2019-04-26}
+}
+</pre>
+</span>
+<!-- <span id="key_LorenzettiLandryEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SoloveySalazarEtAl2019">K. Solovey, M. Salazar, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Solovey.Salazar.Pavone.RSS19.pdf">“Scalable and Congestion-aware Routing for Autonomous Mobility-on-Demand via Frank-Wolfe Optimization,”</a> in <i>Robotics: Science and Systems</i>, Freiburg im Breisgau, Germany, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SoloveySalazarEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SoloveySalazarEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_SoloveySalazarEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We consider the problem of vehicle routing for Autonomous Mobility-on-Demand (AMoD) systems, wherein a fleet of self-driving vehicles provides on-demand mobility in a given environment. Specifically, the task it to compute routes for the vehicles (both customer-carrying and empty travelling) so that travel demand is fulfilled and operational cost is minimized. The routing process must account for congestion effects affecting travel times, as modeled via a volume-delay function (VDF). Route planning with VDF constraints is notoriously challenging, as such constraints compound the combinatorial complexity of the routing optimization process. Thus, current solutions for AMoD routing resort to relaxations of the congestion constraints, thereby trading optimality with computational efficiency. In this paper, we present the first computationally-efficient approach for AMoD routing where VDF constraints are explicitly accounted for. We demonstrate that our approach is faster by at least one order of magnitude with respect to the state of the art, while providing higher quality solutions. From a methodological standpoint, the key technical insight is to establish a mathematical reduction of the AMoD routing problem to the classical traffic assignment problem (a related vehicle-routing problem where empty traveling vehicles are not present). Such a reduction allows us to extend powerful algorithmic tools for traffic assignment, which combine the classic Frank-Wolfe algorithm with modern techniques for pathfinding, to the AMoD routing problem. We provide strong theoretical guarantees for our approach in terms of near-optimality of the returned solution.</p>
+</span>
+<span id="bib_SoloveySalazarEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{SoloveySalazarEtAl2019,
+  author = {Solovey, K. and Salazar, M. and Pavone, M.},
+  title = {Scalable and Congestion-aware Routing for Autonomous Mobility-on-Demand via Frank-Wolfe Optimization},
+  booktitle = {{Robotics: Science and Systems}},
+  year = {2019},
+  address = {Freiburg im Breisgau, Germany},
+  month = jun,
+  url = {/wp-content/papercite-data/pdf/Solovey.Salazar.Pavone.RSS19.pdf},
+  owner = {samauro},
+  timestamp = {2019-02-02}
+}
+</pre>
+</span>
+<!-- <span id="key_SoloveySalazarEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="TsaoMilojevicEtAl2019">M. Tsao, D. Milojevic, C. Ruch, M. Salazar, E. Frazzoli, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Tsao.ea.ICRA19.pdf">“Model Predictive Control of Ride-sharing Autonomous Mobility on Demand Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('TsaoMilojevicEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TsaoMilojevicEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_TsaoMilojevicEtAl2019" class="abstract noshow">
@@ -1789,33 +1814,6 @@
 </pre>
 </span>
 <!-- <span id="key_TsaoMilojevicEtAl2019" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="BonalliCauligiEtAl2019">R. Bonalli, A. Cauligi, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1903.00155.pdf">“GuSTO: Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_BonalliCauligiEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Sequential Convex Programming (SCP) has recently seen a surge of interest as a tool for trajectory optimization. Yet, most available methods lack rigorous performance guarantees and are often tailored to specific optimal control setups. In this paper, we present GuSTO (Guaranteed Sequential Trajectory Optimization), an algorithmic framework to solve trajectory optimization problems for control-affine systems with drift. GuSTO generalizes earlier SCP-based methods for trajectory optimization (by addressing, for example, goal region constraints and problems with either fixed or free final time), and enjoys theoretical convergence guarantees in terms of convergence to, at least, a stationary point. The theoretical analysis is further leveraged to devise an accelerated implementation of GuSTO, which originally infuses ideas from indirect optimal control into an SCP context. Numerical experiments on a variety of trajectory optimization setups show that GuSTO generally outperforms current state-of-the-art approaches in terms of success rates, solution quality, and computation times.</p>
-</span>
-<span id="bib_BonalliCauligiEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{BonalliCauligiEtAl2019,
-  author = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
-  title = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2019},
-  address = {Montreal, Canada},
-  month = may,
-  url = {https://arxiv.org/pdf/1903.00155.pdf},
-  owner = {bylard},
-  timestamp = {2018-10-04}
-}
-</pre>
-</span>
-<!-- <span id="key_BonalliCauligiEtAl2019" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -1847,6 +1845,33 @@
 <!-- <span id="key_IvanovicHarrisonEtAl2019" >
 	<b>Keywords</b>:
 	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="BonalliCauligiEtAl2019">R. Bonalli, A. Cauligi, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1903.00155.pdf">“GuSTO: Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Montreal, Canada, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliCauligiEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_BonalliCauligiEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Sequential Convex Programming (SCP) has recently seen a surge of interest as a tool for trajectory optimization. Yet, most available methods lack rigorous performance guarantees and are often tailored to specific optimal control setups. In this paper, we present GuSTO (Guaranteed Sequential Trajectory Optimization), an algorithmic framework to solve trajectory optimization problems for control-affine systems with drift. GuSTO generalizes earlier SCP-based methods for trajectory optimization (by addressing, for example, goal region constraints and problems with either fixed or free final time), and enjoys theoretical convergence guarantees in terms of convergence to, at least, a stationary point. The theoretical analysis is further leveraged to devise an accelerated implementation of GuSTO, which originally infuses ideas from indirect optimal control into an SCP context. Numerical experiments on a variety of trajectory optimization setups show that GuSTO generally outperforms current state-of-the-art approaches in terms of success rates, solution quality, and computation times.</p>
+</span>
+<span id="bib_BonalliCauligiEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{BonalliCauligiEtAl2019,
+  author = {Bonalli, R. and Cauligi, A. and Bylard, A. and Pavone, M.},
+  title = {{GuSTO:} Guaranteed Sequential Trajectory Optimization via Sequential Convex Programming},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2019},
+  address = {Montreal, Canada},
+  month = may,
+  url = {https://arxiv.org/pdf/1903.00155.pdf},
+  owner = {bylard},
+  timestamp = {2018-10-04}
+}
+</pre>
+</span>
+<!-- <span id="key_BonalliCauligiEtAl2019" >
+	<b>Keywords</b>:
+	
 </span> --></li>
 <li>
  
@@ -1935,61 +1960,6 @@
  
 
 
-<span class="entry" id="SalazarLanzettiEtAl2019">M. Salazar, N. Lanzetti, F. Rossi, M. Schiffer, and M. Pavone, <a class="entry-title" href="https://ieeexplore.ieee.org/document/8894439">“Intermodal Autonomous Mobility-on-Demand,”</a> <i>IEEE Transactions on Intelligent Transportation Systems</i>, Apr. 2019. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SalazarLanzettiEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalazarLanzettiEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_SalazarLanzettiEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
-</span>
-<span id="bib_SalazarLanzettiEtAl2019" class="bibtex noshow">
-	<pre>@article{SalazarLanzettiEtAl2019,
-  author = {Salazar, M. and Lanzetti, N. and Rossi, F. and Schiffer, M. and Pavone, M.},
-  title = {Intermodal Autonomous Mobility-on-Demand},
-  journal = {{IEEE Transactions on Intelligent Transportation Systems}},
-  year = {2019},
-  url = {https://ieeexplore.ieee.org/document/8894439},
-  date = {2019-04-14},
-  journaltitle = {Special Issue 21st IEEE Intelligent Transportation Systems Conference (ITSC 2018)},
-  keywords = {press},
-  owner = {samauro},
-  timestamp = {2019-11-11}
-}
-</pre>
-</span>
-<!-- <span id="key_SalazarLanzettiEtAl2019" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SchmerlingPavone2019">E. Schmerling and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Schmerling.Pavone.EOR19.pdf">“Kinodynamic Planning,”</a> in <i>Encyclopedia of Robotics</i>, First., Springer, 2019.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SchmerlingPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchmerlingPavone2019','abstract')">Abstract</a>]</p>
-<span id="abs_SchmerlingPavone2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
-</span>
-<span id="bib_SchmerlingPavone2019" class="bibtex noshow">
-	<pre>@incollection{SchmerlingPavone2019,
-  author = {Schmerling, E. and Pavone, M.},
-  title = {Kinodynamic Planning},
-  booktitle = {Encyclopedia of Robotics},
-  publisher = {{Springer}},
-  edition = {First},
-  year = {2019},
-  url = {/wp-content/papercite-data/pdf/Schmerling.Pavone.EOR19.pdf},
-  owner = {bylard},
-  timestamp = {2019-10-07}
-}
-</pre>
-</span>
-<!-- <span id="key_SchmerlingPavone2019" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="LeungSchmerlingEtAl2019">K. Leung, E. Schmerling, M. Zhang, M. Chen, J. Talbot, J. C. Gerdes, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf">“On Infusing Reachability-Based Safety Assurance within Planning Frameworks for Human-Robot Vehicle Interactions,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_LeungSchmerlingEtAl2019" class="abstract noshow">
@@ -2067,6 +2037,61 @@
 <!-- <span id="key_IglesiasRossiEtAl2017" >
 	<b>Keywords</b>:
 	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SchmerlingPavone2019">E. Schmerling and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Schmerling.Pavone.EOR19.pdf">“Kinodynamic Planning,”</a> in <i>Encyclopedia of Robotics</i>, First., Springer, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SchmerlingPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchmerlingPavone2019','abstract')">Abstract</a>]</p>
+<span id="abs_SchmerlingPavone2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
+</span>
+<span id="bib_SchmerlingPavone2019" class="bibtex noshow">
+	<pre>@incollection{SchmerlingPavone2019,
+  author = {Schmerling, E. and Pavone, M.},
+  title = {Kinodynamic Planning},
+  booktitle = {Encyclopedia of Robotics},
+  publisher = {{Springer}},
+  edition = {First},
+  year = {2019},
+  url = {/wp-content/papercite-data/pdf/Schmerling.Pavone.EOR19.pdf},
+  owner = {bylard},
+  timestamp = {2019-10-07}
+}
+</pre>
+</span>
+<!-- <span id="key_SchmerlingPavone2019" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SalazarLanzettiEtAl2019">M. Salazar, N. Lanzetti, F. Rossi, M. Schiffer, and M. Pavone, <a class="entry-title" href="https://ieeexplore.ieee.org/document/8894439">“Intermodal Autonomous Mobility-on-Demand,”</a> <i>IEEE Transactions on Intelligent Transportation Systems</i>, Apr. 2019. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SalazarLanzettiEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalazarLanzettiEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_SalazarLanzettiEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
+</span>
+<span id="bib_SalazarLanzettiEtAl2019" class="bibtex noshow">
+	<pre>@article{SalazarLanzettiEtAl2019,
+  author = {Salazar, M. and Lanzetti, N. and Rossi, F. and Schiffer, M. and Pavone, M.},
+  title = {Intermodal Autonomous Mobility-on-Demand},
+  journal = {{IEEE Transactions on Intelligent Transportation Systems}},
+  year = {2019},
+  url = {https://ieeexplore.ieee.org/document/8894439},
+  date = {2019-04-14},
+  journaltitle = {Special Issue 21st IEEE Intelligent Transportation Systems Conference (ITSC 2018)},
+  keywords = {press},
+  owner = {samauro},
+  timestamp = {2019-11-11}
+}
+</pre>
+</span>
+<!-- <span id="key_SalazarLanzettiEtAl2019" >
+	<b>Keywords</b>:
+	press
 </span> --></li>
 <li>
  
@@ -2157,62 +2182,6 @@
  
 
 
-<span class="entry" id="ChenTamEtAl2018">M. Chen, Q. Tam, S. C. Livingston, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf">“Signal Temporal Logic meets Hamilton-Jacobi Reachability: Connections and Applications,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ChenTamEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChenTamEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_ChenTamEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.</p>
-</span>
-<span id="bib_ChenTamEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{ChenTamEtAl2018,
-  author = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
-  title = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
-  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
-  year = {2018},
-  note = {In Press},
-  address = {Merida, Mexico},
-  month = oct,
-  url = {/wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
-  keywords = {press},
-  owner = {bylard},
-  timestamp = {2019-12-21}
-}
-</pre>
-</span>
-<!-- <span id="key_ChenTamEtAl2018" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="IvanovicSchmerlingEtAl2018">B. Ivanovic, E. Schmerling, K. Leung, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1803.02015.pdf">“Generative Modeling of Multimodal Multi-Human Behavior,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Madrid, Spain, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicSchmerlingEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicSchmerlingEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_IvanovicSchmerlingEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This work presents a methodology for modeling and predicting human behavior in settings with N humans interacting in highly multimodal scenarios (i.e. where there are many possible highly-distinct futures). A motivating example includes robots interacting with humans in crowded environments, such as self-driving cars operating alongside human-driven vehicles or human-robot collaborative bin packing in a warehouse. Our approach to model human behavior in such uncertain environments is to model humans in the scene as nodes in a graphical model, with edges encoding relationships between them. For each human, we learn a multimodal probability distribution over future actions from a dataset of multi-human interactions. Learning such distributions is made possible by recent advances in the theory of conditional variational autoencoders and deep learning approximations of probabilistic graphical models. Specifically, we learn action distributions conditioned on interaction history, neighboring human behavior, and candidate future agent behavior in order to take into account response dynamics. We demonstrate the performance of such a modeling approach in modeling basketball player trajectories, a highly multimodal, multi-human scenario which serves as a proxy for many robotic applications.</p>
-</span>
-<span id="bib_IvanovicSchmerlingEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{IvanovicSchmerlingEtAl2018,
-  author = {Ivanovic, B. and Schmerling, E. and Leung, K. and Pavone, M.},
-  title = {Generative Modeling of Multimodal Multi-Human Behavior},
-  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
-  year = {2018},
-  address = {Madrid, Spain},
-  month = oct,
-  url = {https://arxiv.org/pdf/1803.02015.pdf},
-  owner = {borisi},
-  timestamp = {2018-10-14}
-}
-</pre>
-</span>
-<!-- <span id="key_IvanovicSchmerlingEtAl2018" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="HarrisonSharmaEtAl2018">J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.08912.pdf">“Meta-Learning Priors for Efficient Online Bayesian Regression,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_HarrisonSharmaEtAl2018" class="abstract noshow">
@@ -2298,6 +2267,35 @@
  
 
 
+<span class="entry" id="ChenTamEtAl2018">M. Chen, Q. Tam, S. C. Livingston, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf">“Signal Temporal Logic meets Hamilton-Jacobi Reachability: Connections and Applications,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChenTamEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChenTamEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_ChenTamEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.</p>
+</span>
+<span id="bib_ChenTamEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{ChenTamEtAl2018,
+  author = {Chen, M. and Tam, Q. and Livingston, S. C. and Pavone, M.},
+  title = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
+  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
+  year = {2018},
+  note = {In Press},
+  address = {Merida, Mexico},
+  month = oct,
+  url = {/wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
+  keywords = {press},
+  owner = {bylard},
+  timestamp = {2019-12-21}
+}
+</pre>
+</span>
+<!-- <span id="key_ChenTamEtAl2018" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="LandryChenEtAl2018">B. Landry, M. Chen, S. Hemley, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.11553.pdf">“Reach-Avoid Problems via Sum-of-Squares Optimization and Dynamic Programming,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Madrid, Spain, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LandryChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LandryChenEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_LandryChenEtAl2018" class="abstract noshow">
@@ -2318,6 +2316,33 @@
 </pre>
 </span>
 <!-- <span id="key_LandryChenEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IvanovicSchmerlingEtAl2018">B. Ivanovic, E. Schmerling, K. Leung, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1803.02015.pdf">“Generative Modeling of Multimodal Multi-Human Behavior,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Madrid, Spain, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicSchmerlingEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicSchmerlingEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_IvanovicSchmerlingEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This work presents a methodology for modeling and predicting human behavior in settings with N humans interacting in highly multimodal scenarios (i.e. where there are many possible highly-distinct futures). A motivating example includes robots interacting with humans in crowded environments, such as self-driving cars operating alongside human-driven vehicles or human-robot collaborative bin packing in a warehouse. Our approach to model human behavior in such uncertain environments is to model humans in the scene as nodes in a graphical model, with edges encoding relationships between them. For each human, we learn a multimodal probability distribution over future actions from a dataset of multi-human interactions. Learning such distributions is made possible by recent advances in the theory of conditional variational autoencoders and deep learning approximations of probabilistic graphical models. Specifically, we learn action distributions conditioned on interaction history, neighboring human behavior, and candidate future agent behavior in order to take into account response dynamics. We demonstrate the performance of such a modeling approach in modeling basketball player trajectories, a highly multimodal, multi-human scenario which serves as a proxy for many robotic applications.</p>
+</span>
+<span id="bib_IvanovicSchmerlingEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{IvanovicSchmerlingEtAl2018,
+  author = {Ivanovic, B. and Schmerling, E. and Leung, K. and Pavone, M.},
+  title = {Generative Modeling of Multimodal Multi-Human Behavior},
+  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
+  year = {2018},
+  address = {Madrid, Spain},
+  month = oct,
+  url = {https://arxiv.org/pdf/1803.02015.pdf},
+  owner = {borisi},
+  timestamp = {2018-10-14}
+}
+</pre>
+</span>
+<!-- <span id="key_IvanovicSchmerlingEtAl2018" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -2381,6 +2406,34 @@
  
 
 
+<span class="entry" id="RossiIglesiasEtAl2018">F. Rossi, R. Iglesias, M. Alizadeh, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Rossi.Iglesias.Alizadeh.Pavone.RSS18.pdf">“On the Interaction Between Autonomous Mobility-on-Demand Systems and the Power Network: Models and Coordination Algorithms,”</a> in <i>Robotics: Science and Systems</i>, Pittsburgh, Pennsylvania, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('RossiIglesiasEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('RossiIglesiasEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_RossiIglesiasEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We study the interaction between a fleet of electric, self-driving vehicles servicing on-demand transportation requests (referred to as Autonomous Mobility-on-Demand, or AMoD, system) and the electric power network. We propose a joint linear model that captures the coupling between the two systems stemming from the vehicles’ charging requirements. The model subsumes existing network flow models for AMoD systems and linear models for the power network, and it captures time-varying customer demand and power generation costs, road congestion, and power transmission and distribution constraints. We then leverage the linear model to jointly optimize the operation of both systems. We propose an algorithmic procedure to losslessly reduce the problem size by bundling customer requests, allowing it to be efficiently solved by state-of-the-art linear programming solvers. Finally, we study the implementation of a hypothetical electric-powered AMoD system in Dallas-Fort Worth, and its impact on the Texas power network. We show that coordination between the AMoD system and the power network can reduce the overall energy expenditure compared to the case where no cars are present (despite the increased demand for electricity) and yield savings of $78M per year compared to an uncoordinated scenario. Collectively, the results of this paper provide a first-of-a-kind characterization of the interaction between electric-powered AMoD systems and the electric power network, and shed additional light on the economic and societal value of AMoD.</p>
+</span>
+<span id="bib_RossiIglesiasEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{RossiIglesiasEtAl2018,
+  author = {Rossi, F. and Iglesias, R. and Alizadeh, M. and Pavone, M.},
+  title = {On the Interaction Between {Autonomous Mobility-on-Demand} Systems and the Power Network: Models and Coordination Algorithms},
+  booktitle = {{Robotics: Science and Systems}},
+  year = {2018},
+  note = {{Extended version available at }\url{https://arxiv.org/abs/1709.04906}},
+  address = {Pittsburgh, Pennsylvania},
+  month = jun,
+  url = {/wp-content/papercite-data/pdf/Rossi.Iglesias.Alizadeh.Pavone.RSS18.pdf},
+  owner = {frossi2},
+  timestamp = {2018-06-30}
+}
+</pre>
+</span>
+<!-- <span id="key_RossiIglesiasEtAl2018" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="JansonHuEtAl2018">L. Janson, T. Hu, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1804.05804.pdf">“Safe Motion Planning in Unknown Environments: Optimality Benchmarks and Tractable Policies,”</a> in <i>Robotics: Science and Systems</i>, Pittsburgh, Pennsylvania, 2018. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('JansonHuEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JansonHuEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_JansonHuEtAl2018" class="abstract noshow">
@@ -2409,27 +2462,26 @@
  
 
 
-<span class="entry" id="RossiIglesiasEtAl2018">F. Rossi, R. Iglesias, M. Alizadeh, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Rossi.Iglesias.Alizadeh.Pavone.RSS18.pdf">“On the Interaction Between Autonomous Mobility-on-Demand Systems and the Power Network: Models and Coordination Algorithms,”</a> in <i>Robotics: Science and Systems</i>, Pittsburgh, Pennsylvania, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('RossiIglesiasEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('RossiIglesiasEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_RossiIglesiasEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We study the interaction between a fleet of electric, self-driving vehicles servicing on-demand transportation requests (referred to as Autonomous Mobility-on-Demand, or AMoD, system) and the electric power network. We propose a joint linear model that captures the coupling between the two systems stemming from the vehicles’ charging requirements. The model subsumes existing network flow models for AMoD systems and linear models for the power network, and it captures time-varying customer demand and power generation costs, road congestion, and power transmission and distribution constraints. We then leverage the linear model to jointly optimize the operation of both systems. We propose an algorithmic procedure to losslessly reduce the problem size by bundling customer requests, allowing it to be efficiently solved by state-of-the-art linear programming solvers. Finally, we study the implementation of a hypothetical electric-powered AMoD system in Dallas-Fort Worth, and its impact on the Texas power network. We show that coordination between the AMoD system and the power network can reduce the overall energy expenditure compared to the case where no cars are present (despite the increased demand for electricity) and yield savings of $78M per year compared to an uncoordinated scenario. Collectively, the results of this paper provide a first-of-a-kind characterization of the interaction between electric-powered AMoD systems and the electric power network, and shed additional light on the economic and societal value of AMoD.</p>
+<span class="entry" id="WangSinghEtAl2018">Z. Wang, S. Singh, M. Pavone, and M. Schwager, <a class="entry-title" href="/wp-content/papercite-data/pdf/Wang.Singh.Pavone.ea.ICRA18.pdf">“Cooperative Object Transport in 3D with Multiple Quadrotors using No Peer Communication,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('WangSinghEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WangSinghEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_WangSinghEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We present a framework to enable a fleet of rigidly attached quadrotor aerial robots to transport heavy objects along a known reference trajectory without inter-robot communication or centralized coordination. Leveraging a distributed wrench controller, we provide exponential stability guarantees for the entire assembly, under a mild geometric condition. This is achieved by each quadrotor independently solving a local optimization problem to counteract the biased torque effects from each robot in the assembly. We rigorously analyze the controllability of the object, design a distributed compensation scheme to address these challenges, and show that the resulting strategy collectively guarantees full group control authority. To ensure feasibility for online implementation, we derive bounds on the net desired control wrench, characterize the output wrench space of each quadrotor, and perform subsequent trajectory optimization under these input constraints. We thoroughly validate our method in simulation with eight quadrotors transporting a heavy object in a cluttered environment subject to various sources of uncertainty, and demonstrate the algorithm’s resilience.</p>
 </span>
-<span id="bib_RossiIglesiasEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{RossiIglesiasEtAl2018,
-  author = {Rossi, F. and Iglesias, R. and Alizadeh, M. and Pavone, M.},
-  title = {On the Interaction Between {Autonomous Mobility-on-Demand} Systems and the Power Network: Models and Coordination Algorithms},
-  booktitle = {{Robotics: Science and Systems}},
+<span id="bib_WangSinghEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{WangSinghEtAl2018,
+  author = {Wang, Z. and Singh, S. and Pavone, M. and Schwager, M.},
+  title = {Cooperative Object Transport in {3D} with Multiple Quadrotors using No Peer Communication},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2018},
-  note = {{Extended version available at }\url{https://arxiv.org/abs/1709.04906}},
-  address = {Pittsburgh, Pennsylvania},
-  month = jun,
-  url = {/wp-content/papercite-data/pdf/Rossi.Iglesias.Alizadeh.Pavone.RSS18.pdf},
-  owner = {frossi2},
-  timestamp = {2018-06-30}
+  address = {Brisbane, Australia},
+  month = may,
+  url = {/wp-content/papercite-data/pdf/Wang.Singh.Pavone.ea.ICRA18.pdf},
+  owner = {ssingh19},
+  timestamp = {2018-01-16}
 }
 </pre>
 </span>
-<!-- <span id="key_RossiIglesiasEtAl2018" >
+<!-- <span id="key_WangSinghEtAl2018" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -2464,53 +2516,26 @@
  
 
 
-<span class="entry" id="WangSinghEtAl2018">Z. Wang, S. Singh, M. Pavone, and M. Schwager, <a class="entry-title" href="/wp-content/papercite-data/pdf/Wang.Singh.Pavone.ea.ICRA18.pdf">“Cooperative Object Transport in 3D with Multiple Quadrotors using No Peer Communication,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('WangSinghEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WangSinghEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_WangSinghEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We present a framework to enable a fleet of rigidly attached quadrotor aerial robots to transport heavy objects along a known reference trajectory without inter-robot communication or centralized coordination. Leveraging a distributed wrench controller, we provide exponential stability guarantees for the entire assembly, under a mild geometric condition. This is achieved by each quadrotor independently solving a local optimization problem to counteract the biased torque effects from each robot in the assembly. We rigorously analyze the controllability of the object, design a distributed compensation scheme to address these challenges, and show that the resulting strategy collectively guarantees full group control authority. To ensure feasibility for online implementation, we derive bounds on the net desired control wrench, characterize the output wrench space of each quadrotor, and perform subsequent trajectory optimization under these input constraints. We thoroughly validate our method in simulation with eight quadrotors transporting a heavy object in a cluttered environment subject to various sources of uncertainty, and demonstrate the algorithm’s resilience.</p>
+<span class="entry" id="IchterHarrisonEtAl2018">B. Ichter, J. Harrison, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1709.05448.pdf">“Learning Sampling Distributions for Robot Motion Planning,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterHarrisonEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterHarrisonEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_IchterHarrisonEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> A defining feature of sampling-based motion planning is the reliance on an implicit representation of the state space, which is enabled by a set of probing samples.Traditionally, these samples are drawn either probabilistically or deterministically to uniformly cover the state space. Yet, the motion of many robotic systems is often restricted to "small" regions of the state space, due to e.g. differential constraints or collision-avoidance constraints. To accelerate the planning process, it is thus desirable to devise non-uniform sampling strategies that favor sampling in those regions where an optimal solution might lie. This paper proposes a methodology for non-uniform sampling, whereby a sampling distribution is learnt from demonstrations, and then used to bias sampling. The sampling distribution is computed through a conditional variational autoencoder, allowing sample generation from the latent space conditioned on the specific planning problem. This methodology is general, can be used in combination with any sampling-based planner, and can effectively exploit the underlying structure of a planning problem while maintaining the theoretical guarantees of sampling-based approaches. Specifically, on several planning problems, the proposed methodology is shown to effectively learn representations for the relevant regions of the state space, resulting in an order of magnitude improvement in terms of success rate and convergence to the optimal cost</p>
 </span>
-<span id="bib_WangSinghEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{WangSinghEtAl2018,
-  author = {Wang, Z. and Singh, S. and Pavone, M. and Schwager, M.},
-  title = {Cooperative Object Transport in {3D} with Multiple Quadrotors using No Peer Communication},
+<span id="bib_IchterHarrisonEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{IchterHarrisonEtAl2018,
+  author = {Ichter, B. and Harrison, J. and Pavone, M.},
+  title = {Learning Sampling Distributions for Robot Motion Planning},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2018},
   address = {Brisbane, Australia},
   month = may,
-  url = {/wp-content/papercite-data/pdf/Wang.Singh.Pavone.ea.ICRA18.pdf},
-  owner = {ssingh19},
+  url = {https://arxiv.org/pdf/1709.05448.pdf},
+  owner = {frossi2},
   timestamp = {2018-01-16}
 }
 </pre>
 </span>
-<!-- <span id="key_WangSinghEtAl2018" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="IglesiasRossiEtAl2018">R. Iglesias, F. Rossi, K. Wang, D. Hallac, J. Leskovec, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf">“Data-Driven Model Predictive Control of Autonomous Mobility-on-Demand Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IglesiasRossiEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IglesiasRossiEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_IglesiasRossiEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> The goal of this paper is to present an end-to-end, data-driven framework to control Autonomous Mobility-on-Demand systems (AMoD, i.e. fleets of self-driving vehicles). We first model the AMoD system using a time-expanded network, and present a formulation that computes the optimal rebalancing strategy (i.e., preemptive repositioning) and the minimum feasible fleet size for a given travel demand. Then, we adapt this formulation to devise a Model Predictive Control (MPC) algorithm that leverages short-term demand forecasts based on historical data to compute rebalancing strategies. We test the end-to-end performance of this controller with a state-of-the-art LSTM neural network to predict customer demand and real customer data from DiDi Chuxing: we show that this approach scales very well for large systems (indeed, the computational complexity of the MPC algorithm does not depend on the number of customers and of vehicles in the system) and outperforms state-of-the-art rebalancing strategies by reducing the mean customer wait time by up to to 89.6%.</p>
-</span>
-<span id="bib_IglesiasRossiEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{IglesiasRossiEtAl2018,
-  author = {Iglesias, R. and Rossi, F. and Wang, K. and Hallac, D. and Leskovec, J. and Pavone, M.},
-  title = {Data-Driven Model Predictive Control of Autonomous Mobility-on-Demand Systems},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2018},
-  address = {Brisbane, Australia},
-  month = may,
-  url = {/wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf},
-  owner = {frossi2},
-  timestamp = {2018-01-14}
-}
-</pre>
-</span>
-<!-- <span id="key_IglesiasRossiEtAl2018" >
+<!-- <span id="key_IchterHarrisonEtAl2018" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -2545,26 +2570,26 @@
  
 
 
-<span class="entry" id="IchterHarrisonEtAl2018">B. Ichter, J. Harrison, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1709.05448.pdf">“Learning Sampling Distributions for Robot Motion Planning,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IchterHarrisonEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterHarrisonEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_IchterHarrisonEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> A defining feature of sampling-based motion planning is the reliance on an implicit representation of the state space, which is enabled by a set of probing samples.Traditionally, these samples are drawn either probabilistically or deterministically to uniformly cover the state space. Yet, the motion of many robotic systems is often restricted to "small" regions of the state space, due to e.g. differential constraints or collision-avoidance constraints. To accelerate the planning process, it is thus desirable to devise non-uniform sampling strategies that favor sampling in those regions where an optimal solution might lie. This paper proposes a methodology for non-uniform sampling, whereby a sampling distribution is learnt from demonstrations, and then used to bias sampling. The sampling distribution is computed through a conditional variational autoencoder, allowing sample generation from the latent space conditioned on the specific planning problem. This methodology is general, can be used in combination with any sampling-based planner, and can effectively exploit the underlying structure of a planning problem while maintaining the theoretical guarantees of sampling-based approaches. Specifically, on several planning problems, the proposed methodology is shown to effectively learn representations for the relevant regions of the state space, resulting in an order of magnitude improvement in terms of success rate and convergence to the optimal cost</p>
+<span class="entry" id="IglesiasRossiEtAl2018">R. Iglesias, F. Rossi, K. Wang, D. Hallac, J. Leskovec, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf">“Data-Driven Model Predictive Control of Autonomous Mobility-on-Demand Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Brisbane, Australia, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IglesiasRossiEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IglesiasRossiEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_IglesiasRossiEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> The goal of this paper is to present an end-to-end, data-driven framework to control Autonomous Mobility-on-Demand systems (AMoD, i.e. fleets of self-driving vehicles). We first model the AMoD system using a time-expanded network, and present a formulation that computes the optimal rebalancing strategy (i.e., preemptive repositioning) and the minimum feasible fleet size for a given travel demand. Then, we adapt this formulation to devise a Model Predictive Control (MPC) algorithm that leverages short-term demand forecasts based on historical data to compute rebalancing strategies. We test the end-to-end performance of this controller with a state-of-the-art LSTM neural network to predict customer demand and real customer data from DiDi Chuxing: we show that this approach scales very well for large systems (indeed, the computational complexity of the MPC algorithm does not depend on the number of customers and of vehicles in the system) and outperforms state-of-the-art rebalancing strategies by reducing the mean customer wait time by up to to 89.6%.</p>
 </span>
-<span id="bib_IchterHarrisonEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{IchterHarrisonEtAl2018,
-  author = {Ichter, B. and Harrison, J. and Pavone, M.},
-  title = {Learning Sampling Distributions for Robot Motion Planning},
+<span id="bib_IglesiasRossiEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{IglesiasRossiEtAl2018,
+  author = {Iglesias, R. and Rossi, F. and Wang, K. and Hallac, D. and Leskovec, J. and Pavone, M.},
+  title = {Data-Driven Model Predictive Control of Autonomous Mobility-on-Demand Systems},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2018},
   address = {Brisbane, Australia},
   month = may,
-  url = {https://arxiv.org/pdf/1709.05448.pdf},
+  url = {/wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf},
   owner = {frossi2},
-  timestamp = {2018-01-16}
+  timestamp = {2018-01-14}
 }
 </pre>
 </span>
-<!-- <span id="key_IchterHarrisonEtAl2018" >
+<!-- <span id="key_IglesiasRossiEtAl2018" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -2654,64 +2679,6 @@
  
 
 
-<span class="entry" id="RossiZhangEtAl2017">F. Rossi, R. Zhang, Y. Hindy, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Rossi.Zhang.Hindy.Pavone.AURO17.pdf">“Routing Autonomous Vehicles in Congested Transportation Networks: Structural Properties and Coordination Algorithms,”</a> <i>Autonomous Robots</i>, vol. 42, no. 7, pp. 1427–1442, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('RossiZhangEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('RossiZhangEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_RossiZhangEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This paper considers the problem of routing and rebalancing a shared fleet of autonomous (i.e., self-driving) vehicles providing on-demand mobility within a capacitated transportation network, where congestion might disrupt throughput. We model the problem within a network flow framework and show that under relatively mild assumptions the rebalancing vehicles, if properly coordinated, do not lead to an increase in congestion (in stark contrast to common belief). From an algorithmic standpoint, such theoretical insight suggests that the problem of routing customers and rebalancing vehicles can be decoupled, which leads to a computationally-efficient routing and rebalancing algorithm for the autonomous vehicles. Numerical experiments and case studies corroborate our theoretical insights and show that the proposed algorithm outperforms state-of-the-art point-to-point methods by avoiding excess congestion on the road. Collectively, this paper provides a rigorous approach to the problem of congestion-aware, system-wide coordination of autonomously driving vehicles, and to the characterization of the sustainability of such robotic systems.</p>
-</span>
-<span id="bib_RossiZhangEtAl2017" class="bibtex noshow">
-	<pre>@article{RossiZhangEtAl2017,
-  author = {Rossi, F. and Zhang, R. and Hindy, Y. and Pavone, M.},
-  title = {Routing Autonomous Vehicles in Congested Transportation Networks: Structural Properties and Coordination Algorithms},
-  journal = {{Autonomous Robots}},
-  volume = {42},
-  number = {7},
-  pages = {1427--1442},
-  year = {2018},
-  doi = {10.1007/s10514-018-9750-5},
-  url = {/wp-content/papercite-data/pdf/Rossi.Zhang.Hindy.Pavone.AURO17.pdf},
-  owner = {frossi2},
-  timestamp = {2018-08-07}
-}
-</pre>
-</span>
-<!-- <span id="key_RossiZhangEtAl2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SinghLacotteEtAl2018">S. Singh, J. Lacotte, A. Majumdar, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1711.10055.pdf">“Risk-sensitive Inverse Reinforcement Learning via Semi- and Non-Parametric Methods,”</a> <i>Int. Journal of Robotics Research</i>, vol. 37, no. 13, pp. 1713–1740, 2018. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinghLacotteEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghLacotteEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_SinghLacotteEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> The literature on Inverse Reinforcement Learning (IRL) typically assumes that humans take actions in order to minimize the expected value of a cost function, i.e., that humans are risk neutral. Yet, in practice, humans are often far from being risk neutral. To fill this gap, the objective of this paper is to devise a framework for risk-sensitive IRL in order to explicitly account for a human’s risk sensitivity. To this end, we propose a flexible class of models based on coherent risk measures, which allow us to capture an entire spectrum of risk preferences from risk-neutral to worst-case. We propose efficient non-parametric algorithms based on linear programming and semi-parametric algorithms based on maximum likelihood for inferring a human’s underlying risk measure and cost function for a rich class of static and dynamic decision-making settings. The resulting approach is demonstrated on a simulated driving game with ten human participants. Our method is able to infer and mimic a wide range of qualitatively different driving styles from highly risk-averse to risk-neutral in a data-efficient manner. Moreover, comparisons of the Risk-Sensitive (RS) IRL approach with a risk-neutral model show that the RS-IRL framework more accurately captures observed participant behavior both qualitatively and quantitatively, especially in scenarios where catastrophic outcomes such as collisions can occur.</p>
-</span>
-<span id="bib_SinghLacotteEtAl2018" class="bibtex noshow">
-	<pre>@article{SinghLacotteEtAl2018,
-  author = {Singh, S. and Lacotte, J. and Majumdar, A. and Pavone, M.},
-  title = {Risk-sensitive Inverse Reinforcement Learning via Semi- and Non-Parametric Methods},
-  journal = {{Int. Journal of Robotics Research}},
-  volume = {37},
-  number = {13},
-  pages = {1713--1740},
-  year = {2018},
-  url = {https://arxiv.org/pdf/1711.10055.pdf},
-  keywords = {press},
-  owner = {ssingh19},
-  timestamp = {2019-08-21}
-}
-</pre>
-</span>
-<!-- <span id="key_SinghLacotteEtAl2018" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="JansonIchterEtAl2015">L. Janson, B. Ichter, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Janson.Ichter.Pavone.IJRR18.pdf">“Deterministic Sampling-Based Motion Planning: Optimality, Complexity, and Performance,”</a> <i>Int. Journal of Robotics Research</i>, vol. 37, no. 1, pp. 46–61, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('JansonIchterEtAl2015','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JansonIchterEtAl2015','abstract')">Abstract</a>]</p>
 <span id="abs_JansonIchterEtAl2015" class="abstract noshow">
@@ -2766,6 +2733,92 @@
 <!-- <span id="key_SinghChowEtAl2018b" >
 	<b>Keywords</b>:
 	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SinghLacotteEtAl2018">S. Singh, J. Lacotte, A. Majumdar, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1711.10055.pdf">“Risk-sensitive Inverse Reinforcement Learning via Semi- and Non-Parametric Methods,”</a> <i>Int. Journal of Robotics Research</i>, vol. 37, no. 13, pp. 1713–1740, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinghLacotteEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghLacotteEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_SinghLacotteEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> The literature on Inverse Reinforcement Learning (IRL) typically assumes that humans take actions in order to minimize the expected value of a cost function, i.e., that humans are risk neutral. Yet, in practice, humans are often far from being risk neutral. To fill this gap, the objective of this paper is to devise a framework for risk-sensitive IRL in order to explicitly account for a human’s risk sensitivity. To this end, we propose a flexible class of models based on coherent risk measures, which allow us to capture an entire spectrum of risk preferences from risk-neutral to worst-case. We propose efficient non-parametric algorithms based on linear programming and semi-parametric algorithms based on maximum likelihood for inferring a human’s underlying risk measure and cost function for a rich class of static and dynamic decision-making settings. The resulting approach is demonstrated on a simulated driving game with ten human participants. Our method is able to infer and mimic a wide range of qualitatively different driving styles from highly risk-averse to risk-neutral in a data-efficient manner. Moreover, comparisons of the Risk-Sensitive (RS) IRL approach with a risk-neutral model show that the RS-IRL framework more accurately captures observed participant behavior both qualitatively and quantitatively, especially in scenarios where catastrophic outcomes such as collisions can occur.</p>
+</span>
+<span id="bib_SinghLacotteEtAl2018" class="bibtex noshow">
+	<pre>@article{SinghLacotteEtAl2018,
+  author = {Singh, S. and Lacotte, J. and Majumdar, A. and Pavone, M.},
+  title = {Risk-sensitive Inverse Reinforcement Learning via Semi- and Non-Parametric Methods},
+  journal = {{Int. Journal of Robotics Research}},
+  volume = {37},
+  number = {13},
+  pages = {1713--1740},
+  year = {2018},
+  url = {https://arxiv.org/pdf/1711.10055.pdf},
+  keywords = {press},
+  owner = {ssingh19},
+  timestamp = {2019-08-21}
+}
+</pre>
+</span>
+<!-- <span id="key_SinghLacotteEtAl2018" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ZhangPavone2018">R. Zhang, F. Rossi, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Zhang.Rossi.Pavone.TCNS18.pdf">“Analysis, Control, and Evaluation of Mobility-on-Demand Systems: a Queueing-Theoretical Approach,”</a> <i>IEEE Transactions on Control of Network Systems</i>, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ZhangPavone2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ZhangPavone2018','abstract')">Abstract</a>]</p>
+<span id="abs_ZhangPavone2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper presents a queueing-theoretical approach to the analysis, control, and evaluation of mobility-on-demand (MoD) systems for urban personal transportation. A MoD system consists of a fleet of vehicles providing one-way car sharing service and a team of drivers to rebalance such vehicles. The drivers then rebalance themselves by driving select customers similar to a taxi service. We model the MoD system as two coupled closed Jackson networks with passenger loss. We show that the system can be approximately balanced by solving two decoupled linear programs and exactly balanced through nonlinear optimization. The rebalancing techniques are applied to a system sizing example using taxi data in three neighborhoods of Manhattan. Lastly, we formulate a real-time closed-loop rebalancing policy for drivers and perform case studies of two hypothetical MoD systems in Manhattan and Hangzhou, China. We show that the taxi demand in Manhattan can be met with the same number of vehicles in a MoD system, but only require 1/3 to 1/4 the number of drivers; in Hangzhou, where customer demand is highly unbalanced, higher driver-to-vehicle ratios are required to achieve good quality of service.</p>
+</span>
+<span id="bib_ZhangPavone2018" class="bibtex noshow">
+	<pre>@article{ZhangPavone2018,
+  author = {Zhang, R. and Rossi, F. and Pavone, M.},
+  title = {Analysis, Control, and Evaluation of Mobility-on-Demand Systems: a Queueing-Theoretical Approach},
+  journal = {{IEEE Transactions on Control of Network Systems}},
+  year = {2018},
+  note = {In Press},
+  doi = {10.1109/TCNS.2018.2800403},
+  url = {/wp-content/papercite-data/pdf/Zhang.Rossi.Pavone.TCNS18.pdf},
+  keywords = {press},
+  owner = {frossi2},
+  timestamp = {2017-12-30}
+}
+</pre>
+</span>
+<!-- <span id="key_ZhangPavone2018" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="RossiZhangEtAl2017">F. Rossi, R. Zhang, Y. Hindy, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Rossi.Zhang.Hindy.Pavone.AURO17.pdf">“Routing Autonomous Vehicles in Congested Transportation Networks: Structural Properties and Coordination Algorithms,”</a> <i>Autonomous Robots</i>, vol. 42, no. 7, pp. 1427–1442, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('RossiZhangEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('RossiZhangEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_RossiZhangEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper considers the problem of routing and rebalancing a shared fleet of autonomous (i.e., self-driving) vehicles providing on-demand mobility within a capacitated transportation network, where congestion might disrupt throughput. We model the problem within a network flow framework and show that under relatively mild assumptions the rebalancing vehicles, if properly coordinated, do not lead to an increase in congestion (in stark contrast to common belief). From an algorithmic standpoint, such theoretical insight suggests that the problem of routing customers and rebalancing vehicles can be decoupled, which leads to a computationally-efficient routing and rebalancing algorithm for the autonomous vehicles. Numerical experiments and case studies corroborate our theoretical insights and show that the proposed algorithm outperforms state-of-the-art point-to-point methods by avoiding excess congestion on the road. Collectively, this paper provides a rigorous approach to the problem of congestion-aware, system-wide coordination of autonomously driving vehicles, and to the characterization of the sustainability of such robotic systems.</p>
+</span>
+<span id="bib_RossiZhangEtAl2017" class="bibtex noshow">
+	<pre>@article{RossiZhangEtAl2017,
+  author = {Rossi, F. and Zhang, R. and Hindy, Y. and Pavone, M.},
+  title = {Routing Autonomous Vehicles in Congested Transportation Networks: Structural Properties and Coordination Algorithms},
+  journal = {{Autonomous Robots}},
+  volume = {42},
+  number = {7},
+  pages = {1427--1442},
+  year = {2018},
+  doi = {10.1007/s10514-018-9750-5},
+  url = {/wp-content/papercite-data/pdf/Rossi.Zhang.Hindy.Pavone.AURO17.pdf},
+  owner = {frossi2},
+  timestamp = {2018-08-07}
+}
+</pre>
+</span>
+<!-- <span id="key_RossiZhangEtAl2017" >
+	<b>Keywords</b>:
+	
 </span> --></li>
 <li>
  
@@ -2845,34 +2898,6 @@
 <!-- <span id="key_LeungSchmerlingEtAl2018" >
 	<b>Keywords</b>:
 	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="ZhangPavone2018">R. Zhang, F. Rossi, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Zhang.Rossi.Pavone.TCNS18.pdf">“Analysis, Control, and Evaluation of Mobility-on-Demand Systems: a Queueing-Theoretical Approach,”</a> <i>IEEE Transactions on Control of Network Systems</i>, 2018. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ZhangPavone2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ZhangPavone2018','abstract')">Abstract</a>]</p>
-<span id="abs_ZhangPavone2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This paper presents a queueing-theoretical approach to the analysis, control, and evaluation of mobility-on-demand (MoD) systems for urban personal transportation. A MoD system consists of a fleet of vehicles providing one-way car sharing service and a team of drivers to rebalance such vehicles. The drivers then rebalance themselves by driving select customers similar to a taxi service. We model the MoD system as two coupled closed Jackson networks with passenger loss. We show that the system can be approximately balanced by solving two decoupled linear programs and exactly balanced through nonlinear optimization. The rebalancing techniques are applied to a system sizing example using taxi data in three neighborhoods of Manhattan. Lastly, we formulate a real-time closed-loop rebalancing policy for drivers and perform case studies of two hypothetical MoD systems in Manhattan and Hangzhou, China. We show that the taxi demand in Manhattan can be met with the same number of vehicles in a MoD system, but only require 1/3 to 1/4 the number of drivers; in Hangzhou, where customer demand is highly unbalanced, higher driver-to-vehicle ratios are required to achieve good quality of service.</p>
-</span>
-<span id="bib_ZhangPavone2018" class="bibtex noshow">
-	<pre>@article{ZhangPavone2018,
-  author = {Zhang, R. and Rossi, F. and Pavone, M.},
-  title = {Analysis, Control, and Evaluation of Mobility-on-Demand Systems: a Queueing-Theoretical Approach},
-  journal = {{IEEE Transactions on Control of Network Systems}},
-  year = {2018},
-  note = {In Press},
-  doi = {10.1109/TCNS.2018.2800403},
-  url = {/wp-content/papercite-data/pdf/Zhang.Rossi.Pavone.TCNS18.pdf},
-  keywords = {press},
-  owner = {frossi2},
-  timestamp = {2017-12-30}
-}
-</pre>
-</span>
-<!-- <span id="key_ZhangPavone2018" >
-	<b>Keywords</b>:
-	press
 </span> --></li>
 <li>
  
@@ -3094,33 +3119,6 @@
  
 
 
-<span class="entry" id="MajumdarSinghEtAl2017">A. Majumdar, S. Singh, A. Mandlekar, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Majumdar.Singh.Mandlekar.Pavone.RSS17.pdf">“Risk-sensitive Inverse Reinforcement Learning via Coherent Risk Models,”</a> in <i>Robotics: Science and Systems</i>, Cambridge, Massachusetts, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('MajumdarSinghEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MajumdarSinghEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_MajumdarSinghEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> The literature on Inverse Reinforcement Learning (IRL) typically assumes that humans take actions in order to minimize the expected value of a cost function, i.e., that humans are risk neutral. Yet, in practice, humans are often far from being risk neutral. To fill this gap, the objective of this paper is to devise a framework for risk-sensitive IRL in order to explicitly account for an expert’s risk sensitivity. To this end, we propose a flexible class of models based on coherent risk metrics, which allow us to capture an entire spectrum of risk preferences from risk-neutral to worst-case. We propose efficient algorithms based on Linear Programming for inferring an expert’s underlying risk metric and cost function for a rich class of static and dynamic decision-making settings. The resulting approach is demonstrated on a simulated driving game with ten human participants. Our method is able to infer and mimic a wide range of qualitatively different driving styles from highly risk-averse to risk-neutral in a data-efficient manner. Moreover, comparisons of the Risk-Sensitive (RS) IRL approach with a risk-neutral model show that the RS-IRL framework more accurately captures observed participant behavior both qualitatively and quantitatively.</p>
-</span>
-<span id="bib_MajumdarSinghEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{MajumdarSinghEtAl2017,
-  author = {Majumdar, A. and Singh, S. and Mandlekar, A. and Pavone, M.},
-  title = {Risk-sensitive Inverse Reinforcement Learning via Coherent Risk Models},
-  booktitle = {{Robotics: Science and Systems}},
-  year = {2017},
-  address = {Cambridge, Massachusetts},
-  month = jul,
-  url = {/wp-content/papercite-data/pdf/Majumdar.Singh.Mandlekar.Pavone.RSS17.pdf},
-  owner = {ssingh19},
-  timestamp = {2017-04-28}
-}
-</pre>
-</span>
-<!-- <span id="key_MajumdarSinghEtAl2017" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="SchmerlingPavone2017">E. Schmerling and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1609.05399.pdf">“Evaluating Trajectory Collision Probability through Adaptive Importance Sampling for Safe Motion Planning,”</a> in <i>Robotics: Science and Systems</i>, Cambridge, Massachusetts, 2017.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SchmerlingPavone2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchmerlingPavone2017','abstract')">Abstract</a>]</p>
 <span id="abs_SchmerlingPavone2017" class="abstract noshow">
@@ -3148,26 +3146,54 @@
  
 
 
-<span class="entry" id="IchterSchmerlingEtAl2017">B. Ichter, E. Schmerling, A. Agha-mohammadi, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1607.06886.pdf">“Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on GPUs,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_IchterSchmerlingEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we present the PUMP (Parallel Uncertainty-aware Multiobjective Planning) algorithm for addressing the stochastic kinodynamic motion planning problem, whereby we seek a low-cost, dynamically-feasible motion plan subject to a constraint on collision probability (CP). As a departure from previous methods for chance-constrained motion planning, PUMP directly considers both CP and the optimization objective at equal priority when planning through the free configuration space, achieving an unprecedented combination of cost performance, certified safety, and speed. Planning is conducted through a massively parallel multiobjective search, here implemented with a particular application focus on GPU hardware. PUMP explores the configuration space while maintaining a Pareto optimal front of motion plans, considering cost and approximate collision probability. We introduce a novel particle-based CP approximation scheme, designed for efficient GPU implementation, which accounts for dependencies over the history of a trajectory execution. Upon termination of the exploration phase, PUMP performs a search over the Pareto optimal set of solution motion plans to identify the lowest cost motion plan that is certified to satisfy the CP constraint (according to an asymptotically exact estimator). We present numerical experiments for quadrotor planning wherein PUMP identifies solutions in  100 ms, evaluating over one hundred thousand partial plans through the course of its exploration phase. The results show that this multiobjective search achieves a lower motion plan cost, for the same collision probability constraint, compared to a safety buffer-based search heuristic and repeated RRT trials.</p>
+<span class="entry" id="MajumdarSinghEtAl2017">A. Majumdar, S. Singh, A. Mandlekar, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Majumdar.Singh.Mandlekar.Pavone.RSS17.pdf">“Risk-sensitive Inverse Reinforcement Learning via Coherent Risk Models,”</a> in <i>Robotics: Science and Systems</i>, Cambridge, Massachusetts, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('MajumdarSinghEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MajumdarSinghEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_MajumdarSinghEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> The literature on Inverse Reinforcement Learning (IRL) typically assumes that humans take actions in order to minimize the expected value of a cost function, i.e., that humans are risk neutral. Yet, in practice, humans are often far from being risk neutral. To fill this gap, the objective of this paper is to devise a framework for risk-sensitive IRL in order to explicitly account for an expert’s risk sensitivity. To this end, we propose a flexible class of models based on coherent risk metrics, which allow us to capture an entire spectrum of risk preferences from risk-neutral to worst-case. We propose efficient algorithms based on Linear Programming for inferring an expert’s underlying risk metric and cost function for a rich class of static and dynamic decision-making settings. The resulting approach is demonstrated on a simulated driving game with ten human participants. Our method is able to infer and mimic a wide range of qualitatively different driving styles from highly risk-averse to risk-neutral in a data-efficient manner. Moreover, comparisons of the Risk-Sensitive (RS) IRL approach with a risk-neutral model show that the RS-IRL framework more accurately captures observed participant behavior both qualitatively and quantitatively.</p>
 </span>
-<span id="bib_IchterSchmerlingEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{IchterSchmerlingEtAl2017,
-  author = {Ichter, B. and Schmerling, E. and Agha-mohammadi, A. and Pavone, M.},
-  title = {Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on {GPUs}},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+<span id="bib_MajumdarSinghEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{MajumdarSinghEtAl2017,
+  author = {Majumdar, A. and Singh, S. and Mandlekar, A. and Pavone, M.},
+  title = {Risk-sensitive Inverse Reinforcement Learning via Coherent Risk Models},
+  booktitle = {{Robotics: Science and Systems}},
   year = {2017},
-  address = {Singapore},
-  month = may,
-  url = {http://arxiv.org/pdf/1607.06886.pdf},
-  owner = {bylard},
-  timestamp = {2017-03-07}
+  address = {Cambridge, Massachusetts},
+  month = jul,
+  url = {/wp-content/papercite-data/pdf/Majumdar.Singh.Mandlekar.Pavone.RSS17.pdf},
+  owner = {ssingh19},
+  timestamp = {2017-04-28}
 }
 </pre>
 </span>
-<!-- <span id="key_IchterSchmerlingEtAl2017" >
+<!-- <span id="key_MajumdarSinghEtAl2017" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SinghMajumdarEtAl2017">S. Singh, A. Majumdar, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf">“Robust Online Motion Planning via Contraction Theory and Convex Optimization,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinghMajumdarEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghMajumdarEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_SinghMajumdarEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We present a framework for online generation of robust motion plans for robotic systems with nonlinear dynamics subject to bounded disturbances, control constraints, and online state constraints such as obstacles. In an offline phase, one computes the structure of a feedback controller that can be efficiently implemented online to track any feasible nominal trajectory. The offline phase leverages contraction theory and convex optimization to characterize a fixed-size “tube” that the state is guaranteed to remain within while tracking a nominal trajectory (representing the center of the tube). In the online phase, when the robot is faced with obstacles, a motion planner uses such a tube as a robustness margin for collision checking, yielding nominal trajectories that can be safely executed (i.e., tracked without collisions under disturbances). In contrast to recent work on robust online planning using funnel libraries, our approach is not restricted to a fixed library of maneuvers computed offline and is thus particularly well-suited to applications such as UAV flight in densely cluttered environments where complex maneuvers may be required to reach a goal. We demonstrate our approach through simulations of a 6-state planar quadrotor navigating cluttered environments in the presence of a cross-wind. We also discuss applications of our approach to Tube Model Predictive Control (TMPC) and compare the merits of our method with state-of-the-art nonlinear TMPC techniques.</p>
+</span>
+<span id="bib_SinghMajumdarEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{SinghMajumdarEtAl2017,
+  author = {Singh, S. and Majumdar, A. and Slotine, J.-J. E. and Pavone, M.},
+  title = {Robust Online Motion Planning via Contraction Theory and Convex Optimization},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2017},
+  note = {{Extended Version, Available at }\url{http://asl.stanford.edu/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf}},
+  address = {Singapore},
+  month = may,
+  url = {/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf},
+  owner = {bylard},
+  timestamp = {2018-06-30}
+}
+</pre>
+</span>
+<!-- <span id="key_SinghMajumdarEtAl2017" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3202,27 +3228,26 @@
  
 
 
-<span class="entry" id="SinghMajumdarEtAl2017">S. Singh, A. Majumdar, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf">“Robust Online Motion Planning via Contraction Theory and Convex Optimization,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinghMajumdarEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghMajumdarEtAl2017','abstract')">Abstract</a>]</p>
-<span id="abs_SinghMajumdarEtAl2017" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We present a framework for online generation of robust motion plans for robotic systems with nonlinear dynamics subject to bounded disturbances, control constraints, and online state constraints such as obstacles. In an offline phase, one computes the structure of a feedback controller that can be efficiently implemented online to track any feasible nominal trajectory. The offline phase leverages contraction theory and convex optimization to characterize a fixed-size “tube” that the state is guaranteed to remain within while tracking a nominal trajectory (representing the center of the tube). In the online phase, when the robot is faced with obstacles, a motion planner uses such a tube as a robustness margin for collision checking, yielding nominal trajectories that can be safely executed (i.e., tracked without collisions under disturbances). In contrast to recent work on robust online planning using funnel libraries, our approach is not restricted to a fixed library of maneuvers computed offline and is thus particularly well-suited to applications such as UAV flight in densely cluttered environments where complex maneuvers may be required to reach a goal. We demonstrate our approach through simulations of a 6-state planar quadrotor navigating cluttered environments in the presence of a cross-wind. We also discuss applications of our approach to Tube Model Predictive Control (TMPC) and compare the merits of our method with state-of-the-art nonlinear TMPC techniques.</p>
+<span class="entry" id="IchterSchmerlingEtAl2017">B. Ichter, E. Schmerling, A. Agha-mohammadi, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1607.06886.pdf">“Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on GPUs,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Singapore, 2017.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterSchmerlingEtAl2017','abstract')">Abstract</a>]</p>
+<span id="abs_IchterSchmerlingEtAl2017" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we present the PUMP (Parallel Uncertainty-aware Multiobjective Planning) algorithm for addressing the stochastic kinodynamic motion planning problem, whereby we seek a low-cost, dynamically-feasible motion plan subject to a constraint on collision probability (CP). As a departure from previous methods for chance-constrained motion planning, PUMP directly considers both CP and the optimization objective at equal priority when planning through the free configuration space, achieving an unprecedented combination of cost performance, certified safety, and speed. Planning is conducted through a massively parallel multiobjective search, here implemented with a particular application focus on GPU hardware. PUMP explores the configuration space while maintaining a Pareto optimal front of motion plans, considering cost and approximate collision probability. We introduce a novel particle-based CP approximation scheme, designed for efficient GPU implementation, which accounts for dependencies over the history of a trajectory execution. Upon termination of the exploration phase, PUMP performs a search over the Pareto optimal set of solution motion plans to identify the lowest cost motion plan that is certified to satisfy the CP constraint (according to an asymptotically exact estimator). We present numerical experiments for quadrotor planning wherein PUMP identifies solutions in  100 ms, evaluating over one hundred thousand partial plans through the course of its exploration phase. The results show that this multiobjective search achieves a lower motion plan cost, for the same collision probability constraint, compared to a safety buffer-based search heuristic and repeated RRT trials.</p>
 </span>
-<span id="bib_SinghMajumdarEtAl2017" class="bibtex noshow">
-	<pre>@inproceedings{SinghMajumdarEtAl2017,
-  author = {Singh, S. and Majumdar, A. and Slotine, J.-J. E. and Pavone, M.},
-  title = {Robust Online Motion Planning via Contraction Theory and Convex Optimization},
+<span id="bib_IchterSchmerlingEtAl2017" class="bibtex noshow">
+	<pre>@inproceedings{IchterSchmerlingEtAl2017,
+  author = {Ichter, B. and Schmerling, E. and Agha-mohammadi, A. and Pavone, M.},
+  title = {Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on {GPUs}},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2017},
-  note = {{Extended Version, Available at }\url{http://asl.stanford.edu/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf}},
   address = {Singapore},
   month = may,
-  url = {/wp-content/papercite-data/pdf/Singh.Majumdar.Slotine.Pavone.ICRA17.pdf},
+  url = {http://arxiv.org/pdf/1607.06886.pdf},
   owner = {bylard},
-  timestamp = {2018-06-30}
+  timestamp = {2017-03-07}
 }
 </pre>
 </span>
-<!-- <span id="key_SinghMajumdarEtAl2017" >
+<!-- <span id="key_IchterSchmerlingEtAl2017" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3478,27 +3503,27 @@
  
 
 
-<span class="entry" id="CarpinChowEtAl2016">S. Carpin, Y. Chow, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Carpin.Chow.Pavone.ICRA16.pdf">“Risk Aversion in Finite Markov Decision Processes Using Total Cost Criteria and Average Value at Risk,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Stockholm, Sweden, 2016.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('CarpinChowEtAl2016','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('CarpinChowEtAl2016','abstract')">Abstract</a>]</p>
-<span id="abs_CarpinChowEtAl2016" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we present an algorithm to compute risk averse policies in Markov Decision Processes (MDP) when the total cost criterion is used together with the average value at risk (AVaR) metric. Risk averse policies are needed when large deviations from the expected behavior may have detrimental effects, and conventional MDP algorithms usually ignore this aspect. We provide conditions for the structure of the underlying MDP ensuring that approximations for the exact problem can be derived and solved efficiently. Our findings are novel inasmuch as average value at risk has not previously been considered in association with the total cost criterion. Our method is demonstrated in a rapid deployment scenario, whereby a robot is tasked with the objective of reaching a target location within a temporal deadline where increased speed is associated with increased probability of failure. We demonstrate that the proposed algorithm not only produces a risk averse policy reducing the probability of exceeding the expected temporal deadline, but also provides the statistical distribution of costs, thus offering a valuable analysis tool.</p>
+<span class="entry" id="SunbergKochenderferEtAl2016">Z. Sunberg, M. Kochenderfer, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Sunberg.Pavone.Kochenderfer.ICRA16.pdf">“Optimized and Trusted Collision Avoidance for Unmanned Aerial Vehicles using Approximate Dynamic Programming,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Stockholm, Sweden, 2016.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SunbergKochenderferEtAl2016','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SunbergKochenderferEtAl2016','abstract')">Abstract</a>]</p>
+<span id="abs_SunbergKochenderferEtAl2016" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Safely integrating unmanned aerial vehicles into civil airspace is contingent upon development of a trustworthy collision avoidance system. This paper proposes an approach whereby a parameterized resolution logic that is considered <i>trusted</i> for a given range of its parameters is adaptively tuned online. Specifically, to address the potential conservatism of the resolution logic with static parameters, we present a dynamic programming approach for adapting the parameters dynamically based on the encounter state. We compute the adaptation policy offline using simulation-based approximate dynamic programming which can handle the high dimensionality of the problem. Numerical experiments show that this approach improves safety and operational performance compared to the baseline resolution logic, while retaining trustworthiness.</p>
 </span>
-<span id="bib_CarpinChowEtAl2016" class="bibtex noshow">
-	<pre>@inproceedings{CarpinChowEtAl2016,
-  author = {Carpin, S. and Chow, Y. and Pavone, M.},
-  title = {Risk Aversion in Finite {Markov} {Decision} {Processes} Using Total Cost Criteria and Average Value at Risk},
+<span id="bib_SunbergKochenderferEtAl2016" class="bibtex noshow">
+	<pre>@inproceedings{SunbergKochenderferEtAl2016,
+  author = {Sunberg, Z. and Kochenderfer, M. and Pavone, M.},
+  title = {Optimized and Trusted Collision Avoidance for Unmanned Aerial Vehicles using Approximate Dynamic Programming},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2016},
   address = {Stockholm, Sweden},
-  doi = {10.1109/ICRA.2016.7487152},
+  doi = {10.1109/ICRA.2016.7487280},
   month = may,
-  url = {/wp-content/papercite-data/pdf/Carpin.Chow.Pavone.ICRA16.pdf},
+  url = {/wp-content/papercite-data/pdf/Sunberg.Pavone.Kochenderfer.ICRA16.pdf},
   owner = {bylard},
   timestamp = {2017-01-28}
 }
 </pre>
 </span>
-<!-- <span id="key_CarpinChowEtAl2016" >
+<!-- <span id="key_SunbergKochenderferEtAl2016" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3562,27 +3587,27 @@
  
 
 
-<span class="entry" id="SunbergKochenderferEtAl2016">Z. Sunberg, M. Kochenderfer, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Sunberg.Pavone.Kochenderfer.ICRA16.pdf">“Optimized and Trusted Collision Avoidance for Unmanned Aerial Vehicles using Approximate Dynamic Programming,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Stockholm, Sweden, 2016.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SunbergKochenderferEtAl2016','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SunbergKochenderferEtAl2016','abstract')">Abstract</a>]</p>
-<span id="abs_SunbergKochenderferEtAl2016" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Safely integrating unmanned aerial vehicles into civil airspace is contingent upon development of a trustworthy collision avoidance system. This paper proposes an approach whereby a parameterized resolution logic that is considered <i>trusted</i> for a given range of its parameters is adaptively tuned online. Specifically, to address the potential conservatism of the resolution logic with static parameters, we present a dynamic programming approach for adapting the parameters dynamically based on the encounter state. We compute the adaptation policy offline using simulation-based approximate dynamic programming which can handle the high dimensionality of the problem. Numerical experiments show that this approach improves safety and operational performance compared to the baseline resolution logic, while retaining trustworthiness.</p>
+<span class="entry" id="CarpinChowEtAl2016">S. Carpin, Y. Chow, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Carpin.Chow.Pavone.ICRA16.pdf">“Risk Aversion in Finite Markov Decision Processes Using Total Cost Criteria and Average Value at Risk,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Stockholm, Sweden, 2016.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('CarpinChowEtAl2016','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('CarpinChowEtAl2016','abstract')">Abstract</a>]</p>
+<span id="abs_CarpinChowEtAl2016" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we present an algorithm to compute risk averse policies in Markov Decision Processes (MDP) when the total cost criterion is used together with the average value at risk (AVaR) metric. Risk averse policies are needed when large deviations from the expected behavior may have detrimental effects, and conventional MDP algorithms usually ignore this aspect. We provide conditions for the structure of the underlying MDP ensuring that approximations for the exact problem can be derived and solved efficiently. Our findings are novel inasmuch as average value at risk has not previously been considered in association with the total cost criterion. Our method is demonstrated in a rapid deployment scenario, whereby a robot is tasked with the objective of reaching a target location within a temporal deadline where increased speed is associated with increased probability of failure. We demonstrate that the proposed algorithm not only produces a risk averse policy reducing the probability of exceeding the expected temporal deadline, but also provides the statistical distribution of costs, thus offering a valuable analysis tool.</p>
 </span>
-<span id="bib_SunbergKochenderferEtAl2016" class="bibtex noshow">
-	<pre>@inproceedings{SunbergKochenderferEtAl2016,
-  author = {Sunberg, Z. and Kochenderfer, M. and Pavone, M.},
-  title = {Optimized and Trusted Collision Avoidance for Unmanned Aerial Vehicles using Approximate Dynamic Programming},
+<span id="bib_CarpinChowEtAl2016" class="bibtex noshow">
+	<pre>@inproceedings{CarpinChowEtAl2016,
+  author = {Carpin, S. and Chow, Y. and Pavone, M.},
+  title = {Risk Aversion in Finite {Markov} {Decision} {Processes} Using Total Cost Criteria and Average Value at Risk},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2016},
   address = {Stockholm, Sweden},
-  doi = {10.1109/ICRA.2016.7487280},
+  doi = {10.1109/ICRA.2016.7487152},
   month = may,
-  url = {/wp-content/papercite-data/pdf/Sunberg.Pavone.Kochenderfer.ICRA16.pdf},
+  url = {/wp-content/papercite-data/pdf/Carpin.Chow.Pavone.ICRA16.pdf},
   owner = {bylard},
   timestamp = {2017-01-28}
 }
 </pre>
 </span>
-<!-- <span id="key_SunbergKochenderferEtAl2016" >
+<!-- <span id="key_CarpinChowEtAl2016" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -3700,35 +3725,6 @@
  
 
 
-<span class="entry" id="HockmanFrickEtAl2016">B. Hockman, A. Frick, I. A. D. Nesnas, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Hockman.Pavone.ea.JFR15.pdf">“Design, Control, and Experimentation of Internally-Actuated Rovers for the Exploration of Low-Gravity Planetary Bodies,”</a> <i>Journal of Field Robotics</i>, vol. 34, no. 1, pp. 5–24, 2016.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('HockmanFrickEtAl2016','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HockmanFrickEtAl2016','abstract')">Abstract</a>]</p>
-<span id="abs_HockmanFrickEtAl2016" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we discuss the design, control, and experimentation of internally-actuated rovers for the exploration of low-gravity (micro-g to milli-g) planetary bodies, such as asteroids, comets, or small moons. The actuation of the rover relies on spinning three internal flywheels, which allows all subsystems to be packaged in one sealed enclosure and enables the platform to be minimalistic, thereby reducing its cost. By controlling flywheels’ spin rate, the rover is capable of achieving large surface coverage by attitude-controlled hops, fine mobility by tumbling, and coarse instrument pointing by changing orientation relative to the ground. We discuss the dynamics of such rovers, their control, and key design features (e.g., flywheel design and orientation, geometry of external spikes, and system engineering aspects). We then discuss the design and control of a first-of-a-kind test bed, which allows the accurate emulation of a microgravity environment for mobility experiments and consists of a 3 DoF gimbal attached to an actively controlled gantry crane. Finally, we present experimental results on the test bed that provide key insights for control and validate the theoretical analysis.</p>
-</span>
-<span id="bib_HockmanFrickEtAl2016" class="bibtex noshow">
-	<pre>@article{HockmanFrickEtAl2016,
-  author = {Hockman, B. and Frick, A. and Nesnas, I. A. D. and Pavone, M.},
-  title = {Design, Control, and Experimentation of Internally-Actuated Rovers for the Exploration of Low-Gravity Planetary Bodies},
-  journal = {{Journal of Field Robotics}},
-  volume = {34},
-  number = {1},
-  pages = {5--24},
-  year = {2016},
-  doi = {10.1002/rob.21656},
-  url = {/wp-content/papercite-data/pdf/Hockman.Pavone.ea.JFR15.pdf},
-  owner = {bylard},
-  timestamp = {2017-08-11}
-}
-</pre>
-</span>
-<!-- <span id="key_HockmanFrickEtAl2016" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="LeungSchmerlingEtAl2016">K. Leung, E. Schmerling, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Leung.Schmerling.Pavone.2016.pdf">“Distributional Prediction of Human Driving Behaviours using Mixture Density Networks,”</a> Stanford University, 2016.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LeungSchmerlingEtAl2016','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungSchmerlingEtAl2016','abstract')">Abstract</a>]</p>
 <span id="abs_LeungSchmerlingEtAl2016" class="abstract noshow">
@@ -3805,6 +3801,35 @@
 </pre>
 </span>
 <!-- <span id="key_ZhangPavone2016" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="HockmanFrickEtAl2016">B. Hockman, A. Frick, I. A. D. Nesnas, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Hockman.Pavone.ea.JFR15.pdf">“Design, Control, and Experimentation of Internally-Actuated Rovers for the Exploration of Low-Gravity Planetary Bodies,”</a> <i>Journal of Field Robotics</i>, vol. 34, no. 1, pp. 5–24, 2016.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('HockmanFrickEtAl2016','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HockmanFrickEtAl2016','abstract')">Abstract</a>]</p>
+<span id="abs_HockmanFrickEtAl2016" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we discuss the design, control, and experimentation of internally-actuated rovers for the exploration of low-gravity (micro-g to milli-g) planetary bodies, such as asteroids, comets, or small moons. The actuation of the rover relies on spinning three internal flywheels, which allows all subsystems to be packaged in one sealed enclosure and enables the platform to be minimalistic, thereby reducing its cost. By controlling flywheels’ spin rate, the rover is capable of achieving large surface coverage by attitude-controlled hops, fine mobility by tumbling, and coarse instrument pointing by changing orientation relative to the ground. We discuss the dynamics of such rovers, their control, and key design features (e.g., flywheel design and orientation, geometry of external spikes, and system engineering aspects). We then discuss the design and control of a first-of-a-kind test bed, which allows the accurate emulation of a microgravity environment for mobility experiments and consists of a 3 DoF gimbal attached to an actively controlled gantry crane. Finally, we present experimental results on the test bed that provide key insights for control and validate the theoretical analysis.</p>
+</span>
+<span id="bib_HockmanFrickEtAl2016" class="bibtex noshow">
+	<pre>@article{HockmanFrickEtAl2016,
+  author = {Hockman, B. and Frick, A. and Nesnas, I. A. D. and Pavone, M.},
+  title = {Design, Control, and Experimentation of Internally-Actuated Rovers for the Exploration of Low-Gravity Planetary Bodies},
+  journal = {{Journal of Field Robotics}},
+  volume = {34},
+  number = {1},
+  pages = {5--24},
+  year = {2016},
+  doi = {10.1002/rob.21656},
+  url = {/wp-content/papercite-data/pdf/Hockman.Pavone.ea.JFR15.pdf},
+  owner = {bylard},
+  timestamp = {2017-08-11}
+}
+</pre>
+</span>
+<!-- <span id="key_HockmanFrickEtAl2016" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -4202,6 +4227,32 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
  
 
 
+<span class="entry" id="ChowTamarEtAl2015">Y. Chow, A. Tamar, S. Mannor, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Chow.Tamar.Mannor.Pavone.NIPS15.pdf">“Risk-Sensitive and Robust Decision-Making: a CVaR Optimization Approach,”</a> in <i>Conf. on Neural Information Processing Systems</i>, Montreal, Canada, 2015.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChowTamarEtAl2015','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChowTamarEtAl2015','abstract')">Abstract</a>]</p>
+<span id="abs_ChowTamarEtAl2015" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this paper we address the problem of decision making within a Markov decision process (MDP) framework where risk and modeling errors are taken into account. Our approach is to minimize a risk-sensitive conditional-value-at-risk (CVaR) objective, as opposed to a standard risk-neutral expectation. We refer to such problem as CVaR MDP. Our first contribution is to show that a CVaR objective, besides capturing risk sensitivity, has an alternative interpretation as expected cost under worst-case modeling errors, for a given error budget. This result, which is of independent interest, motivates CVaR MDPs as a unifying framework for risk-sensitive and robust decision making. Our second contribution is to present a value-iteration algorithm for CVaR MDPs, and analyze its convergence rate. To our knowledge, this is the first solution algorithm for CVaR MDPs that enjoys error guarantees. Finally, we present results from numerical experiments that corroborate our theoretical findings and show the practicality of our approach.</p>
+</span>
+<span id="bib_ChowTamarEtAl2015" class="bibtex noshow">
+	<pre>@inproceedings{ChowTamarEtAl2015,
+  author = {Chow, Y. and Tamar, A. and Mannor, S. and Pavone, M.},
+  title = {Risk-Sensitive and Robust Decision-Making: a {CVaR} Optimization Approach},
+  booktitle = {{Conf. on Neural Information Processing Systems}},
+  year = {2015},
+  address = {Montreal, Canada},
+  url = {/wp-content/papercite-data/pdf/Chow.Tamar.Mannor.Pavone.NIPS15.pdf},
+  owner = {bylard},
+  timestamp = {2017-01-28}
+}
+</pre>
+</span>
+<!-- <span id="key_ChowTamarEtAl2015" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="JansonSchmerlingEtAl2015">L. Janson, E. Schmerling, A. Clark, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1306.3532.pdf">“Fast Marching Tree: A Fast Marching Sampling-Based Method for Optimal Motion Planning in Many Dimensions,”</a> <i>Int. Journal of Robotics Research</i>, vol. 34, no. 7, pp. 883–921, 2015.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('JansonSchmerlingEtAl2015','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JansonSchmerlingEtAl2015','abstract')">Abstract</a>]</p>
 <span id="abs_JansonSchmerlingEtAl2015" class="abstract noshow">
@@ -4224,32 +4275,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
 </pre>
 </span>
 <!-- <span id="key_JansonSchmerlingEtAl2015" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="ChowTamarEtAl2015">Y. Chow, A. Tamar, S. Mannor, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Chow.Tamar.Mannor.Pavone.NIPS15.pdf">“Risk-Sensitive and Robust Decision-Making: a CVaR Optimization Approach,”</a> in <i>Conf. on Neural Information Processing Systems</i>, Montreal, Canada, 2015.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ChowTamarEtAl2015','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChowTamarEtAl2015','abstract')">Abstract</a>]</p>
-<span id="abs_ChowTamarEtAl2015" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this paper we address the problem of decision making within a Markov decision process (MDP) framework where risk and modeling errors are taken into account. Our approach is to minimize a risk-sensitive conditional-value-at-risk (CVaR) objective, as opposed to a standard risk-neutral expectation. We refer to such problem as CVaR MDP. Our first contribution is to show that a CVaR objective, besides capturing risk sensitivity, has an alternative interpretation as expected cost under worst-case modeling errors, for a given error budget. This result, which is of independent interest, motivates CVaR MDPs as a unifying framework for risk-sensitive and robust decision making. Our second contribution is to present a value-iteration algorithm for CVaR MDPs, and analyze its convergence rate. To our knowledge, this is the first solution algorithm for CVaR MDPs that enjoys error guarantees. Finally, we present results from numerical experiments that corroborate our theoretical findings and show the practicality of our approach.</p>
-</span>
-<span id="bib_ChowTamarEtAl2015" class="bibtex noshow">
-	<pre>@inproceedings{ChowTamarEtAl2015,
-  author = {Chow, Y. and Tamar, A. and Mannor, S. and Pavone, M.},
-  title = {Risk-Sensitive and Robust Decision-Making: a {CVaR} Optimization Approach},
-  booktitle = {{Conf. on Neural Information Processing Systems}},
-  year = {2015},
-  address = {Montreal, Canada},
-  url = {/wp-content/papercite-data/pdf/Chow.Tamar.Mannor.Pavone.NIPS15.pdf},
-  owner = {bylard},
-  timestamp = {2017-01-28}
-}
-</pre>
-</span>
-<!-- <span id="key_ChowTamarEtAl2015" >
 	<b>Keywords</b>:
 	
 </span> --></li>
