@@ -573,6 +573,11 @@ b.keyword-title {
   margin-bottom: 20px;
 }
 
+#inclusivity, #inclusivity:hover {
+  color: white;
+  text-decoration: none;
+}
+
 /*.alumni-img {
   filter: brightness(110%) grayscale(100%) contrast(70%);
 }*/
