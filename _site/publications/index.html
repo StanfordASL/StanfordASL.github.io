@@ -212,27 +212,55 @@
  
 
 
-<span class="entry" id="IvanovicLeungEtAl2020">B. Ivanovic, K. Leung, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2008.03880">“Multimodal Deep Generative Models for Trajectory Prediction: A Conditional Variational Autoencoder Approach,”</a> <i>IEEE Robotics and Automation Letters</i>, Aug. 2020. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicLeungEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicLeungEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_IvanovicLeungEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Human behavior prediction models enable robots to anticipate how humans may react to their actions, and hence are instrumental to devising safe and proactive robot planning algorithms. However, modeling complex interaction dynamics and capturing the possibility of many possible outcomes in such interactive settings is very challenging, which has recently prompted the study of several different approaches. In this work, we provide a self-contained tutorial on a conditional variational autoencoder (CVAE) approach to human behavior prediction which, at its core, can produce a multimodal probability distribution over future human trajectories conditioned on past interactions and candidate robot future actions. Specifically, the goals of this tutorial paper are to review and build a taxonomy of state-of-the-art methods in human behavior prediction, from physics-based to purely data-driven methods, provide a rigorous yet easily accessible description of a data-driven, CVAE-based approach, highlight important design characteristics that make this an attractive model to use in the context of model-based planning for human-robot interactions, and provide important design considerations when using this class of models.</p>
+<span class="entry" id="SchaeferLeungEtAl2021">S. Schaefer, K. Leung, B. Ivanovic, and M. Pavone, <a class="entry-title" href="">“Leveraging Neural Network Gradients within Trajectory Optimization for Proactive Human-Robot Interactions,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SchaeferLeungEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchaeferLeungEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_SchaeferLeungEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> To achieve seamless human-robot interactions, robots need to intimately reason about complex interaction dynamics and future human behaviors within their motion planning process. However, there is a disconnect between state-of-the-art neural network-based human behavior models and robot motion planners—either the behavior models are limited in their consideration of downstream planning or a simplified behavior model is used to ensure tractability of the planning problem. In this work, we present a framework that fuses together the interpretability and flexibility of trajectory optimization (TO) with the predictive power of state-of-the-art human trajectory prediction models. In particular, we leverage gradient information from data-driven prediction models to explicitly reason about human-robot interaction dynamics within a gradient-based TO problem. We demonstrate the efficacy of our approach in a multi-agent scenario whereby a robot is required to safely and efficiently navigate through a crowd of up to ten pedestrians. We compare against a variety of planning methods, and show that by explicitly accounting for interaction dynamics within the planner, our method offers safer and more efficient behaviors, even yielding proactive and nuanced behaviors such as waiting for a pedestrian to pass before moving.</p>
 </span>
-<span id="bib_IvanovicLeungEtAl2020" class="bibtex noshow">
-	<pre>@article{IvanovicLeungEtAl2020,
-  author = {Ivanovic, B. and Leung, K. and Schmerling, E. and Pavone, M.},
-  title = {Multimodal Deep Generative Models for Trajectory Prediction: A Conditional Variational Autoencoder Approach},
-  journal = {{IEEE Robotics and Automation Letters}},
-  year = {2020},
+<span id="bib_SchaeferLeungEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{SchaeferLeungEtAl2021,
+  author = {Schaefer, S. and Leung, K. and Ivanovic, B. and Pavone, M.},
+  title = {Leveraging Neural Network Gradients within Trajectory Optimization for Proactive Human-Robot Interactions},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2021},
   note = {Submitted},
-  month = aug,
-  url = {https://arxiv.org/abs/2008.03880},
+  address = {Xi'an, China},
+  month = may,
+  url = {},
   keywords = {sub},
   owner = {borisi},
-  timestamp = {2020-08-08}
+  timestamp = {2020-11-01}
 }
 </pre>
 </span>
-<!-- <span id="key_IvanovicLeungEtAl2020" >
+<!-- <span id="key_SchaeferLeungEtAl2021" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LewPavone2020">T. Lew and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.10180.pdf">“Sampling-based Reachability Analysis: A Random Set Theory Approach with Adversarial Sampling,”</a> 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewPavone2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewPavone2020','abstract')">Abstract</a>]</p>
+<span id="abs_LewPavone2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Reachability analysis is at the core of many applications, from neural network verification, to safe trajectory planning of uncertain systems. However, this problem is notoriously challenging, and current approaches tend to be either too restrictive, too slow, too conservative, or approximate and therefore lack guarantees. In this paper, we propose a simple yet effective sampling-based approach to perform reachability analysis for arbitrary dynamical systems. Our key novel idea consists of using random set theory to give a rigorous interpretation of our method, and prove that it returns sets which are guaranteed to converge to the convex hull of the true reachable sets. Additionally, we leverage recent work on robust deep learning and propose a new adversarial sampling approach to robustify our algorithm and accelerate its convergence. We show that our method is faster and less conservative than other approaches, present results for approximate reachability analysis of neural networks and robust trajectory optimization of high-dimensional uncertain nonlinear systems, and discuss future applications.</p>
+</span>
+<span id="bib_LewPavone2020" class="bibtex noshow">
+	<pre>@inproceedings{LewPavone2020,
+  title = {Sampling-based Reachability Analysis: A Random Set Theory Approach with Adversarial Sampling},
+  author = {Lew, T. and Pavone, M.},
+  year = {2020},
+  note = {Submitted},
+  month = aug,
+  url = {https://arxiv.org/pdf/2008.10180.pdf},
+  keywords = {sub},
+  owner = {lewt},
+  timestamp = {2020-08-26}
+}
+</pre>
+</span>
+<!-- <span id="key_LewPavone2020" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -293,54 +321,27 @@
  
 
 
-<span class="entry" id="LewPavone2020">T. Lew and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.10180.pdf">“Sampling-based Reachability Analysis: A Random Set Theory Approach with Adversarial Sampling,”</a> 2020. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LewPavone2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewPavone2020','abstract')">Abstract</a>]</p>
-<span id="abs_LewPavone2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Reachability analysis is at the core of many applications, from neural network verification, to safe trajectory planning of uncertain systems. However, this problem is notoriously challenging, and current approaches tend to be either too restrictive, too slow, too conservative, or approximate and therefore lack guarantees. In this paper, we propose a simple yet effective sampling-based approach to perform reachability analysis for arbitrary dynamical systems. Our key novel idea consists of using random set theory to give a rigorous interpretation of our method, and prove that it returns sets which are guaranteed to converge to the convex hull of the true reachable sets. Additionally, we leverage recent work on robust deep learning and propose a new adversarial sampling approach to robustify our algorithm and accelerate its convergence. We show that our method is faster and less conservative than other approaches, present results for approximate reachability analysis of neural networks and robust trajectory optimization of high-dimensional uncertain nonlinear systems, and discuss future applications.</p>
+<span class="entry" id="IvanovicLeungEtAl2020">B. Ivanovic, K. Leung, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2008.03880">“Multimodal Deep Generative Models for Trajectory Prediction: A Conditional Variational Autoencoder Approach,”</a> <i>IEEE Robotics and Automation Letters</i>, Aug. 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicLeungEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicLeungEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_IvanovicLeungEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Human behavior prediction models enable robots to anticipate how humans may react to their actions, and hence are instrumental to devising safe and proactive robot planning algorithms. However, modeling complex interaction dynamics and capturing the possibility of many possible outcomes in such interactive settings is very challenging, which has recently prompted the study of several different approaches. In this work, we provide a self-contained tutorial on a conditional variational autoencoder (CVAE) approach to human behavior prediction which, at its core, can produce a multimodal probability distribution over future human trajectories conditioned on past interactions and candidate robot future actions. Specifically, the goals of this tutorial paper are to review and build a taxonomy of state-of-the-art methods in human behavior prediction, from physics-based to purely data-driven methods, provide a rigorous yet easily accessible description of a data-driven, CVAE-based approach, highlight important design characteristics that make this an attractive model to use in the context of model-based planning for human-robot interactions, and provide important design considerations when using this class of models.</p>
 </span>
-<span id="bib_LewPavone2020" class="bibtex noshow">
-	<pre>@inproceedings{LewPavone2020,
-  title = {Sampling-based Reachability Analysis: A Random Set Theory Approach with Adversarial Sampling},
-  author = {Lew, T. and Pavone, M.},
+<span id="bib_IvanovicLeungEtAl2020" class="bibtex noshow">
+	<pre>@article{IvanovicLeungEtAl2020,
+  author = {Ivanovic, B. and Leung, K. and Schmerling, E. and Pavone, M.},
+  title = {Multimodal Deep Generative Models for Trajectory Prediction: A Conditional Variational Autoencoder Approach},
+  journal = {{IEEE Robotics and Automation Letters}},
   year = {2020},
   note = {Submitted},
   month = aug,
-  url = {https://arxiv.org/pdf/2008.10180.pdf},
+  url = {https://arxiv.org/abs/2008.03880},
   keywords = {sub},
-  owner = {lewt},
-  timestamp = {2020-08-26}
+  owner = {borisi},
+  timestamp = {2020-08-08}
 }
 </pre>
 </span>
-<!-- <span id="key_LewPavone2020" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="HarrisonSharmaEtAl2020">J. Harrison, A. Sharma, C. Finn, and M. Pavone, <a class="entry-title" href="">“Continuous Meta-Learning without Tasks,”</a> in <i>Int. Conf. on Machine Learning</i>, Vienna, Austria, 2020. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_HarrisonSharmaEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Meta-learning is a promising strategy for learning to efficiently learn within new tasks, using data gathered from a distribution of tasks. However, the meta-learning literature thus far has focused on the task segmented setting, where at train-time, offline data is assumed to be split according to the underlying task, and at test-time, the algorithms are optimized to learn in a single task. In this work, we enable the application of generic meta-learning algorithms to settings where this task segmentation is unavailable, such as continual online learning with a time-varying task. We present meta-learning via online changepoint analysis (MOCA), an approach which augments a meta-learning algorithm with a differentiable Bayesian changepoint detection scheme. The framework allows both training and testing directly on time series data without segmenting it into discrete tasks. We demonstrate the utility of this approach on a nonlinear meta-regression benchmark as well as two meta-image-classification benchmarks.</p>
-</span>
-<span id="bib_HarrisonSharmaEtAl2020" class="bibtex noshow">
-	<pre>@inproceedings{HarrisonSharmaEtAl2020,
-  author = {Harrison, J. and Sharma, A. and Finn, C. and Pavone, M.},
-  title = {Continuous Meta-Learning without Tasks},
-  booktitle = {{Int. Conf. on Machine Learning}},
-  year = {2020},
-  note = {Submitted},
-  address = {Vienna, Austria},
-  month = jul,
-  keywords = {sub},
-  owner = {apoorva},
-  timestamp = {2020-05-05}
-}
-</pre>
-</span>
-<!-- <span id="key_HarrisonSharmaEtAl2020" >
+<!-- <span id="key_IvanovicLeungEtAl2020" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -369,6 +370,34 @@
 </pre>
 </span>
 <!-- <span id="key_YangTsaoEtAl2020" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="HarrisonSharmaEtAl2020">J. Harrison, A. Sharma, C. Finn, and M. Pavone, <a class="entry-title" href="">“Continuous Meta-Learning without Tasks,”</a> in <i>Int. Conf. on Machine Learning</i>, Vienna, Austria, 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_HarrisonSharmaEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Meta-learning is a promising strategy for learning to efficiently learn within new tasks, using data gathered from a distribution of tasks. However, the meta-learning literature thus far has focused on the task segmented setting, where at train-time, offline data is assumed to be split according to the underlying task, and at test-time, the algorithms are optimized to learn in a single task. In this work, we enable the application of generic meta-learning algorithms to settings where this task segmentation is unavailable, such as continual online learning with a time-varying task. We present meta-learning via online changepoint analysis (MOCA), an approach which augments a meta-learning algorithm with a differentiable Bayesian changepoint detection scheme. The framework allows both training and testing directly on time series data without segmenting it into discrete tasks. We demonstrate the utility of this approach on a nonlinear meta-regression benchmark as well as two meta-image-classification benchmarks.</p>
+</span>
+<span id="bib_HarrisonSharmaEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{HarrisonSharmaEtAl2020,
+  author = {Harrison, J. and Sharma, A. and Finn, C. and Pavone, M.},
+  title = {Continuous Meta-Learning without Tasks},
+  booktitle = {{Int. Conf. on Machine Learning}},
+  year = {2020},
+  note = {Submitted},
+  address = {Vienna, Austria},
+  month = jul,
+  keywords = {sub},
+  owner = {apoorva},
+  timestamp = {2020-05-05}
+}
+</pre>
+</span>
+<!-- <span id="key_HarrisonSharmaEtAl2020" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -458,26 +487,26 @@
  
 
 
-<span class="entry" id="EstandiaSchifferEtAl2019">A. Estandia, M. Schiffer, F. Rossi, E. C. Kara, R. Rajagopal, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1905.00200">“On the Interaction between Autonomous Mobility on Demand Systems and Power Distribution Networks – An Optimal Power Flow Approach,”</a> <i>arXiv preprint arXiv:1905.00200</i>, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('EstandiaSchifferEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('EstandiaSchifferEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_EstandiaSchifferEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
+<span class="entry" id="JorgensenPavone2019">S. Jorgensen and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf">“The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenPavone2019','abstract')">Abstract</a>]</p>
+<span id="abs_JorgensenPavone2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Consider deploying a team of robots in order to visit sites in a risky environment (i.e., where a robot might be lost during a traversal), subject to team-based operational constraints such as limits on team composition, traffic throughputs, and launch constraints. We formalize this problem using a graph to represent the environment, enforcing probabilistic survival constraints for each robot, and using a matroid (which generalizes linear independence to sets) to capture the team-based operational constraints. The resulting ?Matroid Team Surviving Orienteers? (MTSO) problem has broad applications for robotics such as informative path planning, resource delivery, and search and rescue. We demonstrate that the objective for the MTSO problem has submodular structure, which leads us to develop two polynomial time algorithms which are guaranteed to find a solution with value within a constant factor of the optimum. The second of our algorithms is an extension of the accelerated continuous greedy algorithm, and can be applied to much broader classes of constraints while maintaining bounds on suboptimality. In addition to in-depth analysis, we demonstrate the efficiency of our approaches by applying them to a scenario where a team of robots must gather information while avoiding dangers in the Coral Triangle and characterize scaling and parameter selection using a synthetic dataset.</p>
 </span>
-<span id="bib_EstandiaSchifferEtAl2019" class="bibtex noshow">
-	<pre>@article{EstandiaSchifferEtAl2019,
-  author = {Estandia, A. and Schiffer, M. and Rossi, F. and Kara, E. C. and Rajagopal, R. and Pavone, M.},
-  title = {On the Interaction between Autonomous Mobility on Demand Systems and Power Distribution Networks -- An Optimal Power Flow Approach},
-  journal = {arXiv preprint arXiv:1905.00200},
+<span id="bib_JorgensenPavone2019" class="bibtex noshow">
+	<pre>@article{JorgensenPavone2019,
+  author = {Jorgensen, S. and Pavone, M.},
+  title = {The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal},
+  journal = {{Int. Journal of Robotics Research}},
   year = {2019},
   note = {Submitted},
+  url = {/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf},
   keywords = {sub},
-  owner = {samauro},
-  timestamp = {2019-09-02},
-  url = {https://arxiv.org/abs/1905.00200}
+  owner = {bylard},
+  timestamp = {2019-08-02}
 }
 </pre>
 </span>
-<!-- <span id="key_EstandiaSchifferEtAl2019" >
+<!-- <span id="key_JorgensenPavone2019" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -512,26 +541,26 @@
  
 
 
-<span class="entry" id="JorgensenPavone2019">S. Jorgensen and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf">“The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenPavone2019','abstract')">Abstract</a>]</p>
-<span id="abs_JorgensenPavone2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Consider deploying a team of robots in order to visit sites in a risky environment (i.e., where a robot might be lost during a traversal), subject to team-based operational constraints such as limits on team composition, traffic throughputs, and launch constraints. We formalize this problem using a graph to represent the environment, enforcing probabilistic survival constraints for each robot, and using a matroid (which generalizes linear independence to sets) to capture the team-based operational constraints. The resulting ?Matroid Team Surviving Orienteers? (MTSO) problem has broad applications for robotics such as informative path planning, resource delivery, and search and rescue. We demonstrate that the objective for the MTSO problem has submodular structure, which leads us to develop two polynomial time algorithms which are guaranteed to find a solution with value within a constant factor of the optimum. The second of our algorithms is an extension of the accelerated continuous greedy algorithm, and can be applied to much broader classes of constraints while maintaining bounds on suboptimality. In addition to in-depth analysis, we demonstrate the efficiency of our approaches by applying them to a scenario where a team of robots must gather information while avoiding dangers in the Coral Triangle and characterize scaling and parameter selection using a synthetic dataset.</p>
+<span class="entry" id="EstandiaSchifferEtAl2019">A. Estandia, M. Schiffer, F. Rossi, E. C. Kara, R. Rajagopal, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1905.00200">“On the Interaction between Autonomous Mobility on Demand Systems and Power Distribution Networks – An Optimal Power Flow Approach,”</a> <i>arXiv preprint arXiv:1905.00200</i>, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('EstandiaSchifferEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('EstandiaSchifferEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_EstandiaSchifferEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
 </span>
-<span id="bib_JorgensenPavone2019" class="bibtex noshow">
-	<pre>@article{JorgensenPavone2019,
-  author = {Jorgensen, S. and Pavone, M.},
-  title = {The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal},
-  journal = {{Int. Journal of Robotics Research}},
+<span id="bib_EstandiaSchifferEtAl2019" class="bibtex noshow">
+	<pre>@article{EstandiaSchifferEtAl2019,
+  author = {Estandia, A. and Schiffer, M. and Rossi, F. and Kara, E. C. and Rajagopal, R. and Pavone, M.},
+  title = {On the Interaction between Autonomous Mobility on Demand Systems and Power Distribution Networks -- An Optimal Power Flow Approach},
+  journal = {arXiv preprint arXiv:1905.00200},
   year = {2019},
   note = {Submitted},
-  url = {/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf},
   keywords = {sub},
-  owner = {bylard},
-  timestamp = {2019-08-02}
+  owner = {samauro},
+  timestamp = {2019-09-02},
+  url = {https://arxiv.org/abs/1905.00200}
 }
 </pre>
 </span>
-<!-- <span id="key_JorgensenPavone2019" >
+<!-- <span id="key_EstandiaSchifferEtAl2019" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -567,6 +596,32 @@
  
 
 
+<span class="entry" id="SchifferBoysenEtAl2018">M. Schiffer, N. Boysen, G. Laporte, and M. Pavone, <a class="entry-title" href="">“Optimal picking policies in e-commerce warehouses,”</a> <i>Management Science</i>, 2018. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SchifferBoysenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchifferBoysenEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_SchifferBoysenEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In e-commerce warehouses, online retailers increase their efficiency by using a mixed-shelves (or scattered storage) concept, where unit loads are purposefully broken down into single items, which are individually stored in multiple locations. Irrespective of the stock keeping units a customer jointly orders, this storage strategy increases the likelihood that somewhere in the warehouse the items of the requested stock keeping units will be in close vicinity, which may significantly reduce an order picker’s unproductive walking time. This paper optimizes picker routing through such mixed-shelves warehouses. Specifically, we introduce a generic exact algorithm that covers a multitude of picking policies, independently of the underlying picking zone layout, and is suitable for real-time applications. Besides its generality, this algorithm provides a new state of the art in terms of solvable instance sizes and computational times, providing average reductions of 67% compared with the best known algorithm. Using this algorithm we compare three different real-world e-commerce warehouse settings that differ slightly in their application of scattered storage and in their picking policies. Our results reveal that the right combination of drop-off points, dynamic batching, the utilization of picking carts, and the picking zone layout can greatly improve the picking performance. In particular, some combinations of policies yield efficiency increases of more than 30%.</p>
+</span>
+<span id="bib_SchifferBoysenEtAl2018" class="bibtex noshow">
+	<pre>@article{SchifferBoysenEtAl2018,
+  author = {Schiffer, M. and Boysen, N. and Laporte, G. and Pavone, M.},
+  title = {Optimal picking policies in e-commerce warehouses},
+  journal = {{Management Science}},
+  year = {2018},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {schiffer},
+  timestamp = {2018-08-14}
+}
+</pre>
+</span>
+<!-- <span id="key_SchifferBoysenEtAl2018" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="ChinchaliLivingstonEtAl2018">S. P. Chinchali, S. C. Livingston, M. Chen, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Chinchali.Livingston.Chen.Pavone.IJRR18.pdf">“Multi-objective optimal control for proactive decision-making with temporal logic models,”</a> <i>Int. Journal of Robotics Research</i>, 2018. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('ChinchaliLivingstonEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChinchaliLivingstonEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_ChinchaliLivingstonEtAl2018" class="abstract noshow">
@@ -587,32 +642,6 @@
 </pre>
 </span>
 <!-- <span id="key_ChinchaliLivingstonEtAl2018" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SchifferBoysenEtAl2018">M. Schiffer, N. Boysen, G. Laporte, and M. Pavone, <a class="entry-title" href="">“Optimal picking policies in e-commerce warehouses,”</a> <i>Management Science</i>, 2018. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SchifferBoysenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchifferBoysenEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_SchifferBoysenEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In e-commerce warehouses, online retailers increase their efficiency by using a mixed-shelves (or scattered storage) concept, where unit loads are purposefully broken down into single items, which are individually stored in multiple locations. Irrespective of the stock keeping units a customer jointly orders, this storage strategy increases the likelihood that somewhere in the warehouse the items of the requested stock keeping units will be in close vicinity, which may significantly reduce an order picker’s unproductive walking time. This paper optimizes picker routing through such mixed-shelves warehouses. Specifically, we introduce a generic exact algorithm that covers a multitude of picking policies, independently of the underlying picking zone layout, and is suitable for real-time applications. Besides its generality, this algorithm provides a new state of the art in terms of solvable instance sizes and computational times, providing average reductions of 67% compared with the best known algorithm. Using this algorithm we compare three different real-world e-commerce warehouse settings that differ slightly in their application of scattered storage and in their picking policies. Our results reveal that the right combination of drop-off points, dynamic batching, the utilization of picking carts, and the picking zone layout can greatly improve the picking performance. In particular, some combinations of policies yield efficiency increases of more than 30%.</p>
-</span>
-<span id="bib_SchifferBoysenEtAl2018" class="bibtex noshow">
-	<pre>@article{SchifferBoysenEtAl2018,
-  author = {Schiffer, M. and Boysen, N. and Laporte, G. and Pavone, M.},
-  title = {Optimal picking policies in e-commerce warehouses},
-  journal = {{Management Science}},
-  year = {2018},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {schiffer},
-  timestamp = {2018-08-14}
-}
-</pre>
-</span>
-<!-- <span id="key_SchifferBoysenEtAl2018" >
 	<b>Keywords</b>:
 	sub
 </span> --></li></ol>
