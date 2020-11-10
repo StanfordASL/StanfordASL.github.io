@@ -212,28 +212,27 @@
  
 
 
-<span class="entry" id="NakanoyaChinchaliEtAl2021">M. Nakanoya, S. Chinchali, A. Anemogiannis, A. Datta, S. Katti, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2011.03216">“Task-relevant Representation Learning for Networked Robotic Perception,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('NakanoyaChinchaliEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('NakanoyaChinchaliEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_NakanoyaChinchaliEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Today, even the most compute-and-power constrained robots can measure complex, high data-rate video and LIDAR sensory streams. Often, such robots, ranging from low-power drones to space and subterranean rovers, need to transmit high-bitrate sensory data to a remote compute server if they are uncertain or cannot scalably run complex perception or mapping tasks locally. However, today’s representations for sensory data are mostly designed for human, not robotic, perception and thus often waste precious compute or wireless network resources to transmit unimportant parts of a scene that are unnecessary for a high-level robotic task. This paper presents an algorithm to learn task-relevant representations of sensory data that are co-designed with a pre-trained robotic perception model’s ultimate objective. Our algorithm aggressively compresses robotic sensory data by up to 11x more than competing methods. Further, it achieves high accuracy and robust generalization on diverse tasks including Mars terrain classification with low-power deep learning accelerators, neural motion planning, and environmental timeseries classification.</p>
+<span class="entry" id="BylardBonalliEtAl2021">A. Bylard, R. Bonalli, and M. Pavone, <a class="entry-title" href="">“Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BylardBonalliEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BylardBonalliEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_BylardBonalliEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Despite decades of work in fast reactive planning and control, challenges remain in developing reactive motion policies on non-Euclidean manifolds and enforcing constraints while avoiding undesirable potential function local minima. This work presents a principled method for designing and fusing desired robot task behaviors into a stable robot motion policy, leveraging the geometric structure of non-Euclidean manifolds, which are prevalent in robot configuration and task spaces. Our Pullback Bundle Dynamical Systems (PBDS) framework drives desired task behaviors and prioritizes tasks using separate position-dependent and position/velocity-dependent Riemannian metrics, respectively, thus simplifying individual task design and modular composition of tasks. For enforcing constraints, we provide a class of metric-based tasks, eliminating local minima by imposing non-conflicting potential functions only for goal region attraction. We also provide a geometric optimization problem for combining tasks inspired by Riemannian Motion Policies (RMPs) that reduces to a simple least-squares problem, and we show that our approach is geometrically well-defined. We demonstrate the PBDS framework on the sphere S2 and at 300-500 Hz on a manipulator arm, and we provide task design guidance and an open-source Julia library implementation. Overall, this work presents a fast, easy-to-use framework for generating motion policies without unwanted potential function local minima on general manifolds.</p>
 </span>
-<span id="bib_NakanoyaChinchaliEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{NakanoyaChinchaliEtAl2021,
-  author = {Nakanoya, M. and Chinchali, S. and Anemogiannis, A. and Datta, A. and Katti, S. and Pavone, M.},
-  title = {Task-relevant Representation Learning for Networked Robotic Perception},
+<span id="bib_BylardBonalliEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{BylardBonalliEtAl2021,
+  author = {Bylard, A. and Bonalli, R. and Pavone, M.},
+  title = {Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2021},
   note = {Submitted},
   address = {Xi'an, China},
   month = may,
-  url = {https://arxiv.org/abs/2011.03216},
   keywords = {sub},
-  owner = {csandeep},
-  timestamp = {2020-11-09}
+  owner = {bylard},
+  timestamp = {2020-11-10}
 }
 </pre>
 </span>
-<!-- <span id="key_NakanoyaChinchaliEtAl2021" >
+<!-- <span id="key_BylardBonalliEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -299,26 +298,28 @@
  
 
 
-<span class="entry" id="LewSharmaHarrisonPavone2020">T. Lew, A. Sharma, J. Harrison, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.11700.pdf">“Safe Model-Based Meta-Reinforcement Learning: A Sequential Exploration-Exploitation Framework,”</a> 2020. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LewSharmaHarrisonPavone2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewSharmaHarrisonPavone2020','abstract')">Abstract</a>]</p>
-<span id="abs_LewSharmaHarrisonPavone2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Safe deployment of autonomous robots in diverse environments requires agents that are capable of safe and efficient adaptation to new scenarios. Indeed, achieving both data efficiency and well-calibrated safety has been a central problem in robotic learning and adaptive control due in part to the tension between these objectives. In this work, we develop a framework for probabilistically safe operation with uncertain dynamics. This framework relies on Bayesian meta-learning for efficient inference of system dynamics with calibrated uncertainty. We leverage the model structure to construct confidence bounds which hold throughout the learning process, and factor this uncertainty into a model-based planning framework. By decomposing the problem of control under uncertainty into discrete exploration and exploitation phases, our framework extends to problems with high initial uncertainty while maintaining probabilistic safety and persistent feasibility guarantees during every phase of operation. We validate our approach on the problem of a nonlinear free flying space robot manipulating a payload in cluttered environments, and show it can safely learn and reach a goal.</p>
+<span class="entry" id="NakanoyaChinchaliEtAl2021">M. Nakanoya, S. Chinchali, A. Anemogiannis, A. Datta, S. Katti, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2011.03216">“Task-relevant Representation Learning for Networked Robotic Perception,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('NakanoyaChinchaliEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('NakanoyaChinchaliEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_NakanoyaChinchaliEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Today, even the most compute-and-power constrained robots can measure complex, high data-rate video and LIDAR sensory streams. Often, such robots, ranging from low-power drones to space and subterranean rovers, need to transmit high-bitrate sensory data to a remote compute server if they are uncertain or cannot scalably run complex perception or mapping tasks locally. However, today’s representations for sensory data are mostly designed for human, not robotic, perception and thus often waste precious compute or wireless network resources to transmit unimportant parts of a scene that are unnecessary for a high-level robotic task. This paper presents an algorithm to learn task-relevant representations of sensory data that are co-designed with a pre-trained robotic perception model’s ultimate objective. Our algorithm aggressively compresses robotic sensory data by up to 11x more than competing methods. Further, it achieves high accuracy and robust generalization on diverse tasks including Mars terrain classification with low-power deep learning accelerators, neural motion planning, and environmental timeseries classification.</p>
 </span>
-<span id="bib_LewSharmaHarrisonPavone2020" class="bibtex noshow">
-	<pre>@inproceedings{LewSharmaHarrisonPavone2020,
-  author = {Lew, T. and Sharma, A. and Harrison, J. and Pavone, M.},
-  title = {Safe Model-Based Meta-Reinforcement Learning: A Sequential Exploration-Exploitation Framework},
-  year = {2020},
+<span id="bib_NakanoyaChinchaliEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{NakanoyaChinchaliEtAl2021,
+  author = {Nakanoya, M. and Chinchali, S. and Anemogiannis, A. and Datta, A. and Katti, S. and Pavone, M.},
+  title = {Task-relevant Representation Learning for Networked Robotic Perception},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2021},
   note = {Submitted},
-  month = aug,
-  url = {https://arxiv.org/pdf/2008.11700.pdf},
+  address = {Xi'an, China},
+  month = may,
+  url = {https://arxiv.org/abs/2011.03216},
   keywords = {sub},
-  owner = {lewt},
-  timestamp = {2020-08-26}
+  owner = {csandeep},
+  timestamp = {2020-11-09}
 }
 </pre>
 </span>
-<!-- <span id="key_LewSharmaHarrisonPavone2020" >
+<!-- <span id="key_NakanoyaChinchaliEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -345,6 +346,33 @@
 </pre>
 </span>
 <!-- <span id="key_LandryDaiEtAl2020" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LewSharmaHarrisonPavone2020">T. Lew, A. Sharma, J. Harrison, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.11700.pdf">“Safe Model-Based Meta-Reinforcement Learning: A Sequential Exploration-Exploitation Framework,”</a> 2020. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewSharmaHarrisonPavone2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewSharmaHarrisonPavone2020','abstract')">Abstract</a>]</p>
+<span id="abs_LewSharmaHarrisonPavone2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Safe deployment of autonomous robots in diverse environments requires agents that are capable of safe and efficient adaptation to new scenarios. Indeed, achieving both data efficiency and well-calibrated safety has been a central problem in robotic learning and adaptive control due in part to the tension between these objectives. In this work, we develop a framework for probabilistically safe operation with uncertain dynamics. This framework relies on Bayesian meta-learning for efficient inference of system dynamics with calibrated uncertainty. We leverage the model structure to construct confidence bounds which hold throughout the learning process, and factor this uncertainty into a model-based planning framework. By decomposing the problem of control under uncertainty into discrete exploration and exploitation phases, our framework extends to problems with high initial uncertainty while maintaining probabilistic safety and persistent feasibility guarantees during every phase of operation. We validate our approach on the problem of a nonlinear free flying space robot manipulating a payload in cluttered environments, and show it can safely learn and reach a goal.</p>
+</span>
+<span id="bib_LewSharmaHarrisonPavone2020" class="bibtex noshow">
+	<pre>@inproceedings{LewSharmaHarrisonPavone2020,
+  author = {Lew, T. and Sharma, A. and Harrison, J. and Pavone, M.},
+  title = {Safe Model-Based Meta-Reinforcement Learning: A Sequential Exploration-Exploitation Framework},
+  year = {2020},
+  note = {Submitted},
+  month = aug,
+  url = {https://arxiv.org/pdf/2008.11700.pdf},
+  keywords = {sub},
+  owner = {lewt},
+  timestamp = {2020-08-26}
+}
+</pre>
+</span>
+<!-- <span id="key_LewSharmaHarrisonPavone2020" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -490,26 +518,26 @@
  
 
 
-<span class="entry" id="SinghLandryEtAl2019">S. Singh, B. Landry, A. Majumdar, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Landry.ea.IJRR19.pdf">“Robust Feedback Motion Planning via Contraction Theory,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinghLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghLandryEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_SinghLandryEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
+<span class="entry" id="JorgensenPavone2019">S. Jorgensen and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf">“The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenPavone2019','abstract')">Abstract</a>]</p>
+<span id="abs_JorgensenPavone2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Consider deploying a team of robots in order to visit sites in a risky environment (i.e., where a robot might be lost during a traversal), subject to team-based operational constraints such as limits on team composition, traffic throughputs, and launch constraints. We formalize this problem using a graph to represent the environment, enforcing probabilistic survival constraints for each robot, and using a matroid (which generalizes linear independence to sets) to capture the team-based operational constraints. The resulting ?Matroid Team Surviving Orienteers? (MTSO) problem has broad applications for robotics such as informative path planning, resource delivery, and search and rescue. We demonstrate that the objective for the MTSO problem has submodular structure, which leads us to develop two polynomial time algorithms which are guaranteed to find a solution with value within a constant factor of the optimum. The second of our algorithms is an extension of the accelerated continuous greedy algorithm, and can be applied to much broader classes of constraints while maintaining bounds on suboptimality. In addition to in-depth analysis, we demonstrate the efficiency of our approaches by applying them to a scenario where a team of robots must gather information while avoiding dangers in the Coral Triangle and characterize scaling and parameter selection using a synthetic dataset.</p>
 </span>
-<span id="bib_SinghLandryEtAl2019" class="bibtex noshow">
-	<pre>@article{SinghLandryEtAl2019,
-  author = {Singh, S. and Landry, B. and Majumdar, A. and Slotine, J-J. E. and Pavone, M.},
-  title = {Robust Feedback Motion Planning via Contraction Theory},
+<span id="bib_JorgensenPavone2019" class="bibtex noshow">
+	<pre>@article{JorgensenPavone2019,
+  author = {Jorgensen, S. and Pavone, M.},
+  title = {The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal},
   journal = {{Int. Journal of Robotics Research}},
   year = {2019},
   note = {Submitted},
+  url = {/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf},
   keywords = {sub},
-  owner = {ssingh19},
-  timestamp = {2019-09-11},
-  url = {/wp-content/papercite-data/pdf/Singh.Landry.ea.IJRR19.pdf}
+  owner = {bylard},
+  timestamp = {2019-08-02}
 }
 </pre>
 </span>
-<!-- <span id="key_SinghLandryEtAl2019" >
+<!-- <span id="key_JorgensenPavone2019" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -544,26 +572,26 @@
  
 
 
-<span class="entry" id="JorgensenPavone2019">S. Jorgensen and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf">“The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JorgensenPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JorgensenPavone2019','abstract')">Abstract</a>]</p>
-<span id="abs_JorgensenPavone2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Consider deploying a team of robots in order to visit sites in a risky environment (i.e., where a robot might be lost during a traversal), subject to team-based operational constraints such as limits on team composition, traffic throughputs, and launch constraints. We formalize this problem using a graph to represent the environment, enforcing probabilistic survival constraints for each robot, and using a matroid (which generalizes linear independence to sets) to capture the team-based operational constraints. The resulting ?Matroid Team Surviving Orienteers? (MTSO) problem has broad applications for robotics such as informative path planning, resource delivery, and search and rescue. We demonstrate that the objective for the MTSO problem has submodular structure, which leads us to develop two polynomial time algorithms which are guaranteed to find a solution with value within a constant factor of the optimum. The second of our algorithms is an extension of the accelerated continuous greedy algorithm, and can be applied to much broader classes of constraints while maintaining bounds on suboptimality. In addition to in-depth analysis, we demonstrate the efficiency of our approaches by applying them to a scenario where a team of robots must gather information while avoiding dangers in the Coral Triangle and characterize scaling and parameter selection using a synthetic dataset.</p>
+<span class="entry" id="SinghLandryEtAl2019">S. Singh, B. Landry, A. Majumdar, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Landry.ea.IJRR19.pdf">“Robust Feedback Motion Planning via Contraction Theory,”</a> <i>Int. Journal of Robotics Research</i>, 2019. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinghLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghLandryEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_SinghLandryEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
 </span>
-<span id="bib_JorgensenPavone2019" class="bibtex noshow">
-	<pre>@article{JorgensenPavone2019,
-  author = {Jorgensen, S. and Pavone, M.},
-  title = {The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal},
+<span id="bib_SinghLandryEtAl2019" class="bibtex noshow">
+	<pre>@article{SinghLandryEtAl2019,
+  author = {Singh, S. and Landry, B. and Majumdar, A. and Slotine, J-J. E. and Pavone, M.},
+  title = {Robust Feedback Motion Planning via Contraction Theory},
   journal = {{Int. Journal of Robotics Research}},
   year = {2019},
   note = {Submitted},
-  url = {/wp-content/papercite-data/pdf/Jorgensen.Pavone.IJRR19.pdf},
   keywords = {sub},
-  owner = {bylard},
-  timestamp = {2019-08-02}
+  owner = {ssingh19},
+  timestamp = {2019-09-11},
+  url = {/wp-content/papercite-data/pdf/Singh.Landry.ea.IJRR19.pdf}
 }
 </pre>
 </span>
-<!-- <span id="key_JorgensenPavone2019" >
+<!-- <span id="key_SinghLandryEtAl2019" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
