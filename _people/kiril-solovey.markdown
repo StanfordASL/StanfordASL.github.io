@@ -10,9 +10,9 @@ email: kirilsol@stanford.edu
 website: kirilsol.github.io
 ---
 
-Kiril Solovey is a Postdoctoral Scholar at the Department of Aeronautics and Astronautics, Stanford University, hosted by Prof. Marco Pavone. Prior to Stanford, he completed with honors his B.Sc., M.Sc., and Ph.D. studies in the School of Computer Science at Tel Aviv University, Israel, where he was advised by Prof. Dan Halperin.
+Kiril Solovey is a roboticist specializing in multi-robot systems and their applications to smart mobility. He is currently a Postdoctoral Scholar at the Department of Aeronautics and Astronautics, Stanford University, working with Marco Pavone, where he is supported by the Center for Automotive Research (CARS). He obtained a PhD in Computer Science from Tel Aviv University, where he was advised by Dan Halperin.
 
-His research interests lie at the interface of computer science and robotics. His work pursues deeper mathematical insights into the structural properties of common robotic tasks, aiming to leverage those insights in effective algorithmic approaches. Kiril's research pertains to the following three research streams, which span the full spectrum of robotics; from enhancing the autonomy of individual robots, to controlling robotic teams, to operating large-scale autonomous transportation systems.
+Kiril's research focuses on the design of effective control and decision-making mechanisms to allow multi-robot systems to tackle complex problems for the benefit of the society. His work draws upon ideas that span across the disciplines of engineering, computer science, and transportation science, to develop scalable optimization approaches with substantial guarantees regarding quality and robustness of the solution. For his work he received multiple awards, including the Clore Scholars and Fulbright Postdoctoral Fellowships, best paper awards and nominations (at Robotics: Science and Systems, International Conference on Robotics and Automation, International Symposium on Multi-Robot and Multi-Agent System, and European Control Conference), and teaching awards.
 
 In addition to his academic interests, he takes pleasure in being outdoors (mountain biking and hiking), traveling around the world, and enjoys food, cooking, music, books, and meditation.
 
