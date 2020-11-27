@@ -241,7 +241,7 @@
  
 
 
-<span class="entry" id="DayanSoloveyEtAl2021">D. Dayan, K. Solovey, P. Pavone, and D. Halperin, <a class="entry-title" href="">“Near-Optimal Multi-Robot Motion Planning with Finite Sampling,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (Submitted)</span> 
+<span class="entry" id="DayanSoloveyEtAl2021">D. Dayan, K. Solovey, P. Pavone, and D. Halperin, <a class="entry-title" href="https://arxiv.org/abs/2011.08944">“Near-Optimal Multi-Robot Motion Planning with Finite Sampling,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('DayanSoloveyEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DayanSoloveyEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_DayanSoloveyEtAl2021" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> An underlying structure in several sampling-based methods for continuous multi-robot motion planning (MRMP) is the tensor roadmap (TR), which emerges from combining multiple PRM graphs constructed for the individual robots via a tensor product. We study the conditions under which the TR encodes a near-optimal solution for MRMP—satisfying these conditions implies near optimality for a variety of popular planners, including dRRT*, and the discrete methods M* and CBS when applied to the continuous domain. We develop the first finite-sample analysis of this kind, which specifies the number of samples, their deterministic distribution, and magnitude of the connection radii that should be used by each individual PRM graph, to guarantee near-optimality using the TR. This significantly improves upon a previous asymptotic analysis, wherein the number of samples tends to infinity, and supports guaranteed high-quality solutions in practice, within bounded running time. To achieve our new result, we first develop a sampling scheme, which we call the staggered grid, for finite-sample motion planning for individual robots, which requires significantly less samples than previous work. We then extend it to the much more involved MRMP setting which requires to account for interactions among multiple robots. Finally, we report on a few experiments that serve as a verification of our theoretical findings and raise interesting questions for further investigation.</p>
@@ -255,6 +255,7 @@
   note = {Submitted},
   address = {Xi'an, China},
   month = may,
+  url = {https://arxiv.org/abs/2011.08944},
   keywords = {sub},
   owner = {kirilsol},
   timestamp = {2020-11-19}
@@ -269,7 +270,7 @@
  
 
 
-<span class="entry" id="SoloveyBandyopadhyayEtAl2021">K. Solovey, S. Bandyopadhyay, R. Fossi, M. T. Wolf, and P. Pavone, <a class="entry-title" href="">“Fast Near-Optimal Heterogeneous Task Allocation via Flow Decomposition,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (Submitted)</span> 
+<span class="entry" id="SoloveyBandyopadhyayEtAl2021">K. Solovey, S. Bandyopadhyay, R. Fossi, M. T. Wolf, and P. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2011.03603">“Fast Near-Optimal Heterogeneous Task Allocation via Flow Decomposition,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SoloveyBandyopadhyayEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SoloveyBandyopadhyayEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_SoloveyBandyopadhyayEtAl2021" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Multi-robot systems are uniquely well-suited to performing complex tasks such as patrolling and tracking, information gathering, and pick-up and delivery problems, offering significantly higher performance than single-robot systems. A fundamental building block in most multi-robot systems is task allocation: assigning robots to tasks (e.g., patrolling an area, or servicing a transportation request) as they appear based on the robots’ states to maximize reward. In many practical situations, the allocation must account for heterogeneous capabilities (e.g., availability of appropriate sensors or actuators) to ensure the feasibility of execution, and to promote a higher reward, over a long time horizon. To this end, we present the FlowDec algorithm for efficient heterogeneous task-allocation achieving an approximation factor of at least 1/2 of the optimal reward. Our approach decomposes the heterogeneous problem into several homogeneous subproblems that can be solved efficiently using min-cost flow. Through simulation experiments, we show that our algorithm is faster by several orders of magnitude than a MILP approach.</p>
@@ -283,6 +284,7 @@
   note = {Submitted},
   address = {Xi'an, China},
   month = may,
+  url = {https://arxiv.org/abs/2011.03603},
   keywords = {sub},
   owner = {kirilsol},
   timestamp = {2020-11-19}
@@ -413,7 +415,7 @@
 <span class="entry" id="LandryDaiEtAl2020">B. Landry, H. Dai, and M. Pavone, <a class="entry-title" href="">“SEAGuL: Sample Efficient Adversarially Guided Learning of Value Functions,”</a> 2020. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LandryDaiEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LandryDaiEtAl2020','abstract')">Abstract</a>]</p>
 <span id="abs_LandryDaiEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Value functions are powerful abstractions broadly used across optimal control and robotics algorithms. Several lines of work have attempted to leverage trajectory optimization to learn value function approximations, usually by solving a large number of trajectory optimization problems as a means to generate training data. Even though these methods point to a promising direction, for sufficiently complex tasks, their sampling requirements can become computationally intractable. In this work, we leverage insights from adversarial learning in order to improve the sampling efficiency of a simple value function learning algorithm. We demonstrate how generating adversarial samples for this task presents a unique challenge due to the loss function that does not admit a closed form expression of the samples, but that instead requires the solution to a nonlinear optimization problem. Our key insight is that it is still possible to compute adversarial samples for this learning problem with virtually no computational overhead, including without having to keep track of shifting distributions or having to train generative models. We apply our method on two robotic control tasks, and demonstrate that with value function approximations trained over a limited number of samples, adversarial training leads to better performance for both tasks.</p>
+	<p class="abstract"><b>Abstract:</b> Value functions are powerful abstractions broadly used across optimal control and robotics algorithms. Several lines of work have attempted to leverage trajectory optimization to learn value function approximations, usually by solving a large number of trajectory optimization problems as a means to generate training data. Even though these methods point to a promising direction, for sufficiently complex tasks, their sampling requirements can become computationally intractable. In this work, we leverage insights from adversarial learning in order to improve the sampling efficiency of a simple value function learning algorithm. We demonstrate how generating adversarial samples for this task presents a unique challenge due to the loss function that does not admit a closed form expression of the samples, but that instead requires the solution to a nonlinear optimization problem. Our key insight is that by leveraging duality theory from optimization, it is still possible to compute adversarial samples for this learning problem with virtually no computational overhead, including without having to keep track of shifting distributions of approximation errors or having to train generative models. We apply our method, named SEAGuL, to a canonical control task (balancing the acrobot) and a more challenging and highly dynamic nonlinear control task (the perching of a small glider). We demonstrate that compared to random sampling, with the same number of samples, training value function approximations using SEAGuL leads to improved generalization errors that also translate to control performance improvement.</p>
 </span>
 <span id="bib_LandryDaiEtAl2020" class="bibtex noshow">
 	<pre>@inproceedings{LandryDaiEtAl2020,
@@ -424,7 +426,7 @@
   month = aug,
   keywords = {sub},
   owner = {blandry},
-  timestamp = {2020-08-12}
+  timestamp = {2020-11-23}
 }
 </pre>
 </span>
