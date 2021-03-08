@@ -234,7 +234,7 @@
  
 
 
-<span class="entry" id="BylardBonalliEtAl2021">A. Bylard, R. Bonalli, and M. Pavone, <a class="entry-title" href="">“Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (Submitted)</span> 
+<span class="entry" id="BylardBonalliEtAl2021">A. Bylard, R. Bonalli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2101.01297">“Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('BylardBonalliEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BylardBonalliEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_BylardBonalliEtAl2021" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Despite decades of work in fast reactive planning and control, challenges remain in developing reactive motion policies on non-Euclidean manifolds and enforcing constraints while avoiding undesirable potential function local minima. This work presents a principled method for designing and fusing desired robot task behaviors into a stable robot motion policy, leveraging the geometric structure of non-Euclidean manifolds, which are prevalent in robot configuration and task spaces. Our Pullback Bundle Dynamical Systems (PBDS) framework drives desired task behaviors and prioritizes tasks using separate position-dependent and position/velocity-dependent Riemannian metrics, respectively, thus simplifying individual task design and modular composition of tasks. For enforcing constraints, we provide a class of metric-based tasks, eliminating local minima by imposing non-conflicting potential functions only for goal region attraction. We also provide a geometric optimization problem for combining tasks inspired by Riemannian Motion Policies (RMPs) that reduces to a simple least-squares problem, and we show that our approach is geometrically well-defined. We demonstrate the PBDS framework on the sphere S2 and at 300-500 Hz on a manipulator arm, and we provide task design guidance and an open-source Julia library implementation. Overall, this work presents a fast, easy-to-use framework for generating motion policies without unwanted potential function local minima on general manifolds.</p>
@@ -245,16 +245,42 @@
   title = {Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2021},
-  note = {Submitted},
   address = {Xi'an, China},
   month = may,
-  keywords = {sub},
+  url = {https://arxiv.org/abs/2101.01297},
   owner = {bylard},
-  timestamp = {2020-11-10}
+  timestamp = {2021-02-28}
 }
 </pre>
 </span>
 <!-- <span id="key_BylardBonalliEtAl2021" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LewEtAl2021">T. Lew, A. Sharma, J. Harrison, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.11700.pdf">“Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework,”</a> 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_LewEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> To safely deploy learning-based systems in highly uncertain environments, one must ensure that they always satisfy constraints. In this work, we propose a practical and theoretically justified approach to maintaining safety in the presence of dynamics uncertainty. Our approach leverages Bayesian meta-learning with last-layer adaptation: the expressiveness of neural-network features trained offline, paired with efficient last-layer online adaptation, enables the derivation of tight confidence sets which contract around the true dynamics as the model adapts online. We exploit these confidence sets to plan trajectories that guarantee the safety of the system. Our approach handles problems with high dynamics uncertainty where reaching the goal safely is initially infeasible by first exploring to gather data and reduce uncertainty, before autonomously exploiting the acquired information to safely perform the task. Under reasonable assumptions, we prove that our framework provides safety guarantees in the form of a single joint chance constraint. Furthermore, we use this theoretical analysis to motivate regularization of the model to improve performance. We extensively demonstrate our approach in simulation and on hardware.</p>
+</span>
+<span id="bib_LewEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{LewEtAl2021,
+  author = {Lew, T. and Sharma, A. and Harrison, J. and Bylard, A. and Pavone, M.},
+  title = {Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework},
+  year = {2021},
+  note = {Submitted},
+  month = mar,
+  url = {https://arxiv.org/pdf/2008.11700.pdf},
+  keywords = {sub},
+  owner = {lewt},
+  timestamp = {2021-03-05}
+}
+</pre>
+</span>
+<!-- <span id="key_LewEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -517,7 +543,7 @@ $( window ).resize(function() {
   <a href="https://github.com/StanfordASL" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_github.png" alt=""></a>
 </div>
 <div class="copyright-text">
-  © Autonomous Systems Lab 2020. All rights reserved.
+  © Autonomous Systems Lab 2021. All rights reserved.
 </div>
 </footer>
   </body>
