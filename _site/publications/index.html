@@ -299,6 +299,33 @@
  
 
 
+<span class="entry" id="RichardsAzizanEtAl2021">S. M. Richards, N. Azizan, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2103.04490.pdf">“Adaptive-Control-Oriented Meta-Learning for Nonlinear Systems,”</a> 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('RichardsAzizanEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('RichardsAzizanEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_RichardsAzizanEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Real-time adaptation is imperative to the control of robots operating in complex, dynamic environments. Adaptive control laws can endow even nonlinear systems with good trajectory tracking performance, provided that any uncertain dynamics terms are linearly parameterizable with known nonlinear features. However, it is often difficult to specify such features a priori, such as for aerodynamic disturbances on rotorcraft or interaction forces between a manipulator arm and various objects. In this paper, we turn to data-driven modeling with neural networks to learn, offline from past data, an adaptive controller with an internal parametric model of these nonlinear features. Our key insight is that we can better prepare the controller for deployment with control-oriented meta-learning of features in closed-loop simulation, rather than regression-oriented meta-learning of features to fit input-output data. Specifically, we meta-learn the adaptive controller with closed-loop tracking simulation as the base-learner and the average tracking error as the meta-objective. With a nonlinear planar rotorcraft subject to wind, we demonstrate that our adaptive controller outperforms other controllers trained with regression-oriented meta-learning when deployed in closed-loop for trajectory tracking control.</p>
+</span>
+<span id="bib_RichardsAzizanEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{RichardsAzizanEtAl2021,
+  author = {Richards, S. M. and Azizan, N. and Slotine, J.-J. E. and Pavone, M.},
+  title = {Adaptive-Control-Oriented Meta-Learning for Nonlinear Systems},
+  year = {2021},
+  note = {Submitted},
+  month = mar,
+  url = {https://arxiv.org/pdf/2103.04490.pdf},
+  keywords = {sub},
+  owner = {spenrich},
+  timestamp = {2021-03-09}
+}
+</pre>
+</span>
+<!-- <span id="key_RichardsAzizanEtAl2021" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="LewEtAl2021">T. Lew, A. Sharma, J. Harrison, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.11700.pdf">“Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework,”</a> 2021. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LewEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_LewEtAl2021" class="abstract noshow">
@@ -319,59 +346,6 @@
 </pre>
 </span>
 <!-- <span id="key_LewEtAl2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="BonalliLewSICON2021">R. Bonalli, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2009.05182">“Sequential Convex Programming For Non-Linear Stochastic Optimal Control,”</a> <i>SIAM Journal on Control and Optimization</i>, 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BonalliLewSICON2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliLewSICON2021','abstract')">Abstract</a>]</p>
-<span id="abs_BonalliLewSICON2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
-</span>
-<span id="bib_BonalliLewSICON2021" class="bibtex noshow">
-	<pre>@article{BonalliLewSICON2021,
-  author = {Bonalli, R. and Lew, T. and Pavone, M.},
-  title = {Sequential Convex Programming For Non-Linear Stochastic Optimal Control},
-  journal = {{SIAM Journal on Control and Optimization}},
-  year = {2021},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {lew},
-  timestamp = {2021-01-29},
-  url = {https://arxiv.org/abs/2009.05182}
-}
-</pre>
-</span>
-<!-- <span id="key_BonalliLewSICON2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="LanzettiSchifferEtAl2021">N. Lanzetti, M. Schiffer, M. Ostrovsky, and M. Pavone, <a class="entry-title" href="">“On the Interplay Between Self-Driving Cars and Public Transportation,”</a> in <i>ACM Conference on Economics and Computation</i>, 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LanzettiSchifferEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LanzettiSchifferEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_LanzettiSchifferEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Cities worldwide struggle with overloaded transportation systems and their externalities, such as traffic congestion and emissions. The emerging autonomous transportation technology has a potential to alleviate these issues. At the same time, the decisions of profit-maximizing operators running large autonomous fleets could have a negative impact on other stakeholders, e.g., by disproportionately cannibalizing public transport, and therefore could make the transportation system even less efficient and sustainable. A careful analysis of these tradeoffs requires modeling the main modes of transportation, including public transport, within a unified framework. In this paper, we propose such a framework, which allows us to study the interplay among mobility service providers, public transport authorities, and customers. In particular, we analyze the effect of autonomous ride-hailing services on the demand for public transportation. Our framework combines a graph-theoretic network model for the transportation system with a game-theoretic market model in which mobility service providers are profit-maximizers, while customers select individually-optimal transportation options. We show how to reformulate the decision problem of each mobility service provider as a tractable second-order conic program. This allows us to compute equilibria via best response. Moreover, we show that the degenerate monopolistic case of a single mobility service provider can efficiently be solved as a quadratic program. We apply our framework to data for the city of Berlin, Germany, and present sensitivity analyses to study parameters that mobility service providers or municipalities can influence to steer the overall system. We show that depending on market conditions and policy restrictions, autonomous ride-hailing systems may complement or cannibalize a public transportation system, serving between 7 % and 80 % of all customers. We discuss the main factors behind differences in these outcomes as well as strategic design options available to policymakers. Among others, we show that the monopolistic and the competitive cases yield similar modal shares, but differ in the profit outcome of each mobility service provider.</p>
-</span>
-<span id="bib_LanzettiSchifferEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{LanzettiSchifferEtAl2021,
-  author = {Lanzetti, N. and Schiffer, M. and Ostrovsky, M. and Pavone, M.},
-  booktitle = {ACM Conference on Economics and Computation},
-  title = {On the Interplay Between Self-Driving Cars and Public Transportation},
-  year = {2021},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {borisi},
-  timestamp = {2020-12-11}
-}
-</pre>
-</span>
-<!-- <span id="key_LanzettiSchifferEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -406,6 +380,33 @@
  
 
 
+<span class="entry" id="BonalliLewSICON2021">R. Bonalli, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2009.05182">“Sequential Convex Programming For Non-Linear Stochastic Optimal Control,”</a> <i>SIAM Journal on Control and Optimization</i>, 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BonalliLewSICON2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliLewSICON2021','abstract')">Abstract</a>]</p>
+<span id="abs_BonalliLewSICON2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
+</span>
+<span id="bib_BonalliLewSICON2021" class="bibtex noshow">
+	<pre>@article{BonalliLewSICON2021,
+  author = {Bonalli, R. and Lew, T. and Pavone, M.},
+  title = {Sequential Convex Programming For Non-Linear Stochastic Optimal Control},
+  journal = {{SIAM Journal on Control and Optimization}},
+  year = {2021},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {lew},
+  timestamp = {2021-01-29},
+  url = {https://arxiv.org/abs/2009.05182}
+}
+</pre>
+</span>
+<!-- <span id="key_BonalliLewSICON2021" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="BonalliLewTAC2021">R. Bonalli, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2009.05038">“Analysis of Theoretical and Numerical Properties of Sequential Convex Programming for Continuous-Time Optimal Control,”</a> <i>IEEE Transactions on Automatic Control</i>, 2021. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('BonalliLewTAC2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliLewTAC2021','abstract')">Abstract</a>]</p>
 <span id="abs_BonalliLewTAC2021" class="abstract noshow">
@@ -426,6 +427,32 @@
 </pre>
 </span>
 <!-- <span id="key_BonalliLewTAC2021" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LanzettiSchifferEtAl2021">N. Lanzetti, M. Schiffer, M. Ostrovsky, and M. Pavone, <a class="entry-title" href="">“On the Interplay Between Self-Driving Cars and Public Transportation,”</a> in <i>ACM Conference on Economics and Computation</i>, 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LanzettiSchifferEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LanzettiSchifferEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_LanzettiSchifferEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Cities worldwide struggle with overloaded transportation systems and their externalities, such as traffic congestion and emissions. The emerging autonomous transportation technology has a potential to alleviate these issues. At the same time, the decisions of profit-maximizing operators running large autonomous fleets could have a negative impact on other stakeholders, e.g., by disproportionately cannibalizing public transport, and therefore could make the transportation system even less efficient and sustainable. A careful analysis of these tradeoffs requires modeling the main modes of transportation, including public transport, within a unified framework. In this paper, we propose such a framework, which allows us to study the interplay among mobility service providers, public transport authorities, and customers. In particular, we analyze the effect of autonomous ride-hailing services on the demand for public transportation. Our framework combines a graph-theoretic network model for the transportation system with a game-theoretic market model in which mobility service providers are profit-maximizers, while customers select individually-optimal transportation options. We show how to reformulate the decision problem of each mobility service provider as a tractable second-order conic program. This allows us to compute equilibria via best response. Moreover, we show that the degenerate monopolistic case of a single mobility service provider can efficiently be solved as a quadratic program. We apply our framework to data for the city of Berlin, Germany, and present sensitivity analyses to study parameters that mobility service providers or municipalities can influence to steer the overall system. We show that depending on market conditions and policy restrictions, autonomous ride-hailing systems may complement or cannibalize a public transportation system, serving between 7 % and 80 % of all customers. We discuss the main factors behind differences in these outcomes as well as strategic design options available to policymakers. Among others, we show that the monopolistic and the competitive cases yield similar modal shares, but differ in the profit outcome of each mobility service provider.</p>
+</span>
+<span id="bib_LanzettiSchifferEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{LanzettiSchifferEtAl2021,
+  author = {Lanzetti, N. and Schiffer, M. and Ostrovsky, M. and Pavone, M.},
+  booktitle = {ACM Conference on Economics and Computation},
+  title = {On the Interplay Between Self-Driving Cars and Public Transportation},
+  year = {2021},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {borisi},
+  timestamp = {2020-12-11}
+}
+</pre>
+</span>
+<!-- <span id="key_LanzettiSchifferEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -2623,7 +2650,6 @@
   title = {Meta-Learning Priors for Efficient Online Bayesian Regression},
   booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
   year = {2018},
-  note = {In Press},
   address = {Merida, Mexico},
   month = oct,
   url = {https://arxiv.org/pdf/1807.08912.pdf},

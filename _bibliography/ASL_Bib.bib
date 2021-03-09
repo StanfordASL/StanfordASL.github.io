@@ -2647,7 +2647,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Meta-Learning Priors for Efficient Online Bayesian Regression},
   booktitle    = proc_WAFR,
   year         = {2018},
-  note         = {In Press},
   abstract = {Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. In particular, the predominant implementation of GP regression is kernel-based, as it enables fitting of arbitrary nonlinear functions by leveraging kernel functions as infinite-dimensional features. While incorporating prior information has the potential to drastically improve data efficiency of kernel-based GP regression, expressing complex priors through the choice of kernel function and associated hyperparameters is often challenging and unintuitive. Furthermore, the computational complexity of kernel-based GP regression scales poorly with the number of samples, limiting its application in regimes where a large amount of data is available. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior density. These features are neural networks, which are trained via a meta-learning approach. ALPaCA extracts all prior information from the dataset, rather than relying on the choice of arbitrary, restrictive kernel hyperparameters. Furthermore, it substantially reduces sample complexity, and allows scaling to large systems. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.},
   address  = {Merida, Mexico},
   month    = oct,
@@ -3762,6 +3761,19 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   owner     = {lew},
   timestamp = {2021-01-29},
   url   = {https://arxiv.org/abs/2009.05182},
+}
+
+@Inproceedings{RichardsAzizanEtAl2021,
+    author       = {Richards, S. M. and Azizan, N. and Slotine, J.-J. E. and Pavone, M.},
+    title        = {Adaptive-Control-Oriented Meta-Learning for Nonlinear Systems},
+    year         = {2021},
+    note         = {Submitted},
+    abstract = {Real-time adaptation is imperative to the control of robots operating in complex, dynamic environments. Adaptive control laws can endow even nonlinear systems with good trajectory tracking performance, provided that any uncertain dynamics terms are linearly parameterizable with known nonlinear features. However, it is often difficult to specify such features a priori, such as for aerodynamic disturbances on rotorcraft or interaction forces between a manipulator arm and various objects. In this paper, we turn to data-driven modeling with neural networks to learn, offline from past data, an adaptive controller with an internal parametric model of these nonlinear features. Our key insight is that we can better prepare the controller for deployment with control-oriented meta-learning of features in closed-loop simulation, rather than regression-oriented meta-learning of features to fit input-output data. Specifically, we meta-learn the adaptive controller with closed-loop tracking simulation as the base-learner and the average tracking error as the meta-objective. With a nonlinear planar rotorcraft subject to wind, we demonstrate that our adaptive controller outperforms other controllers trained with regression-oriented meta-learning when deployed in closed-loop for trajectory tracking control.},
+    month    = mar,
+    url      = {https://arxiv.org/pdf/2103.04490.pdf},
+    keywords     = {sub},
+    owner        = {spenrich},
+    timestamp    = {2021-03-09},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
