@@ -3686,12 +3686,12 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Fast Near-Optimal Heterogeneous Task Allocation via Flow Decomposition},
   booktitle    = proc_IEEE_ICRA,
   year         = {2021},
-  note         = {Submitted},
+  note         = {In Press},
   abstract = {Multi-robot systems are uniquely well-suited to performing complex tasks such as patrolling and tracking, information gathering, and pick-up and delivery problems, offering significantly higher performance than single-robot systems. A fundamental building block in most multi-robot systems is task allocation: assigning robots to tasks (e.g., patrolling an area, or servicing a transportation request) as they appear based on the robots' states to maximize reward. In many practical situations, the allocation must account for heterogeneous capabilities (e.g., availability of appropriate sensors or actuators) to ensure the feasibility of execution, and to promote a higher reward, over a long time horizon. To this end, we present the FlowDec algorithm for efficient heterogeneous task-allocation achieving an approximation factor of at least 1/2 of the optimal reward. Our approach decomposes the heterogeneous problem into several homogeneous subproblems that can be solved efficiently using min-cost flow. Through simulation experiments, we show that our algorithm is faster by several orders of magnitude than a MILP approach.},
   address  = {Xi'an, China},
   month    = may,
   url      = {https://arxiv.org/abs/2011.03603},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {kirilsol},
   timestamp    = {2020-12-07},
 }
@@ -3701,12 +3701,12 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Near-Optimal Multi-Robot Motion Planning with Finite Sampling},
   booktitle    = proc_IEEE_ICRA,
   year         = {2021},
-  note         = {Submitted},
+  note         = {In Press},
   abstract = {An underlying structure in several sampling-based methods for continuous multi-robot motion planning (MRMP) is the tensor roadmap (TR), which emerges from combining multiple PRM graphs constructed for the individual robots via a tensor product. We study the conditions under which the TR encodes a near-optimal solution for MRMP---satisfying these conditions implies near optimality for a variety of popular planners, including dRRT*, and the discrete methods M* and CBS when applied to the continuous domain. We develop the first finite-sample analysis of this kind, which specifies the number of samples, their deterministic distribution, and magnitude of the connection radii that should be used by each individual PRM graph, to guarantee near-optimality using the TR. This significantly improves upon a previous asymptotic analysis, wherein the number of samples tends to infinity, and supports guaranteed high-quality solutions in practice, within bounded running time. To achieve our new result, we first develop a sampling scheme, which we call the staggered grid, for finite-sample motion planning for individual robots, which requires significantly less samples than previous work. We then extend it to the much more involved MRMP setting which requires to account for interactions among multiple robots. Finally, we report on a few experiments that serve as a verification of our theoretical findings and raise interesting questions for further investigation.},
   address  = {Xi'an, China},
   month    = may,
   url      = {https://arxiv.org/abs/2011.08944},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {kirilsol},
   timestamp    = {2020-12-07},
 }
@@ -3774,6 +3774,19 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
     keywords     = {sub},
     owner        = {spenrich},
     timestamp    = {2021-03-09},
+}
+
+@Inproceedings{SharmaAzizanEtAl2021,
+  author       = {Sharma, A. and Azizan, N. and Pavone, M.},
+  title        = {Sketching Curvature for Efficient Out-of-Distribution Detection for Deep Neural Networks},
+  year         = {2021},
+  note         = {Submitted},
+  abstract = {In order to safely deploy Deep Neural Networks (DNNs) within the perception pipelines of real-time decision making systems, there is a need for safeguards that can detect out-of-training-distribution (OoD) inputs both efficiently and accurately. Building on recent work leveraging the local curvature of DNNs to reason about epistemic uncertainty, we propose Sketching Curvature of OoD Detection (SCOD), an architecture-agnostic framework for equipping any trained DNN with a task-relevant epistemic uncertainty estimate. Offline, given a trained model and its training data, SCOD employs tools from matrix sketching to tractably compute a low-rank approximation of the Fisher information matrix, which characterizes which directions in the weight space are most influential on the predictions over the training data. Online, we estimate uncertainty by measuring how much perturbations orthogonal to these directions can alter predictions at a new test input. We apply SCOD to pre-trained networks of varying architectures on several tasks, ranging from regression to classification. We demonstrate that SCOD achieves comparable or better OoD detection performance with lower computational burden relative to existing baselines.},
+  month    = mar,
+  url      = {https://arxiv.org/abs/2102.12567},
+  keywords     = {sub},
+  owner        = {apoorva},
+  timestamp    = {2021-03-09},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
