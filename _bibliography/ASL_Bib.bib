@@ -594,6 +594,7 @@
 @String { proc_IWSCFF               = {{Int. Workshop on Satellite Constellations and Formation Flying}} }
 @String { proc_JAXA_SST             = {{Proc. of Space Sciences and Technology Conference}} }
 @String { proc_JPC                  = {{LPI Asteroids, Comets, Meteors}} }
+@String{proc_L4DC                      = {{Learning for Dynamics \& Control Conference}}}
 @String { proc_LION                 = {{Int. Conf. on Learning and Intelligent Optimization}} }
 @String{proc_LIPIcs_DROPS         = {{LIPIcs-Leibniz Int. Proc. in Informatics}}}
 @String { proc_LPIACM               = {{LPI Asteroids, Comets, Meteors}} }
@@ -3175,6 +3176,17 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   url      = {https://arxiv.org/abs/2009.07517},
 }
 
+@inproceedings{IvanovicLeeEtAl2021,
+  author = {Ivanovic, B. and Lee, K-H. and Tokmakov, P. and Wulfe, B. and McAllister, R. and Gaidon, A. and Pavone, M.},
+  title = {Heterogeneous-Agent Trajectory Forecasting Incorporating Class Uncertainty},
+  month = oct,
+  year = {2021},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {borisi},
+  timestamp = {2021-03-18}
+}
+
 @Inproceedings{NishimuraIvanovicEtAl2020,
   author       = {Nishimura, H. and Ivanovic, B. and Gaidon, A. and Pavone, M. and Schwager, M.},
   title        = {Risk-Sensitive Sequential Action Control with Multi-Modal Human Trajectory Forecasting for Safe Crowd-Robot Interaction},
@@ -3533,16 +3545,17 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   timestamp    = {2020-06-12},
 }
 
-@Inproceedings{LandryDaiEtAl2020,
+@Inproceedings{LandryDaiEtAl2021,
   author       = {Landry, B. and Dai, H. and Pavone, M.},
   title        = {SEAGuL: Sample Efficient Adversarially Guided Learning of Value Functions},
-  year         = {2020},
-  note         = {Submitted},
+  booktitle    = proc_L4DC,
+  year         = {2021},
+  note         = {In Press},
   abstract = {Value functions are powerful abstractions broadly used across optimal control and robotics algorithms. Several lines of work have attempted to leverage trajectory optimization to learn value function approximations, usually by solving a large number of trajectory optimization problems as a means to generate training data. Even though these methods point to a promising direction, for sufficiently complex tasks, their sampling requirements can become computationally intractable. In this work, we leverage insights from adversarial learning in order to improve the sampling efficiency of a simple value function learning algorithm. We demonstrate how generating adversarial samples for this task presents a unique challenge due to the loss function that does not admit a closed form expression of the samples, but that instead requires the solution to a nonlinear optimization problem. Our key insight is that by leveraging duality theory from optimization, it is still possible to compute adversarial samples for this learning problem with virtually no computational overhead, including without having to keep track of shifting distributions of approximation errors or having to train generative models. We apply our method, named SEAGuL, to a canonical control task (balancing the acrobot) and a more challenging and highly dynamic nonlinear control task (the perching of a small glider). We demonstrate that compared to random sampling, with the same number of samples, training value function approximations using SEAGuL leads to improved generalization errors that also translate to control performance improvement.},
-  month    = aug,
-  keywords     = {sub},
+  month    = dec,
+  keywords     = {press},
   owner        = {blandry},
-  timestamp    = {2020-11-23},
+  timestamp    = {2021-03-15},
 }
 
 @Inproceedings{LewEtAl2021,
@@ -3712,18 +3725,16 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
 }
 
 @Inproceedings{DaiLandryEtAl2020,
-  author       = {Dai, H. and Landry, B. and Pavone, M.},
+  author       = {Dai, H. and Landry, B. and Pavone, M. and Tedrake, R.},
   title        = {Counter-Example Guided Synthesis of Neural Network Lyapunov Functions for Piecewise Linear Systems},
   booktitle    = proc_IEEE_CDC,
   year         = {2020},
-  note         = {In Press},
   abstract = {We introduce an algorithm for synthesizing and verifying piecewise linear Lyapunov functions to prove global exponential stability of piecewise linear dynamical systems. The Lyapunov functions we synthesize are parameterized by feedforward neural networks with leaky ReLU activation units. To train these neural networks, we design a loss function that measures the maximal violation of the Lyapunov conditions in the state space. We show that this maximal violation can be computed by solving a mixed-integer linear program (MILP). Compared to previous learning-based approaches, our learning approach is able to certify with high precision that the learned neural network satisfies the Lyapunov conditions not only for sampled states, but over the entire state space. Moreover, compared to previous optimization-based approaches that require a pre-specified partition of the state space when synthesizing piecewise Lyapunov functions, our method can automatically search for both the partition and the Lyapunov function simultaneously. We demonstrate our algorithm on both continuous and discrete-time systems, including some for which known strategies for partitioning of the Lyapunov function would require introducing higher order Lyapunov functions.},
   address  = {Jeju Island, Republic of Korea},
   month    = dec,
   url      = {http://groups.csail.mit.edu/robotics-center/public_papers/Dai20.pdf},
-  keywords     = {press},
   owner        = {blandry},
-  timestamp    = {2020-11-29},
+  timestamp    = {2021-03-15},
 }
 
 @Article{LorenzettiMcClellanEtAl2021,

@@ -231,28 +231,26 @@
  
 
 
-<span class="entry" id="DaiLandryEtAl2020">H. Dai, B. Landry, and M. Pavone, <a class="entry-title" href="http://groups.csail.mit.edu/robotics-center/public_papers/Dai20.pdf">“Counter-Example Guided Synthesis of Neural Network Lyapunov Functions for Piecewise Linear Systems,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Jeju Island, Republic of Korea, 2020. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('DaiLandryEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DaiLandryEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_DaiLandryEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We introduce an algorithm for synthesizing and verifying piecewise linear Lyapunov functions to prove global exponential stability of piecewise linear dynamical systems. The Lyapunov functions we synthesize are parameterized by feedforward neural networks with leaky ReLU activation units. To train these neural networks, we design a loss function that measures the maximal violation of the Lyapunov conditions in the state space. We show that this maximal violation can be computed by solving a mixed-integer linear program (MILP). Compared to previous learning-based approaches, our learning approach is able to certify with high precision that the learned neural network satisfies the Lyapunov conditions not only for sampled states, but over the entire state space. Moreover, compared to previous optimization-based approaches that require a pre-specified partition of the state space when synthesizing piecewise Lyapunov functions, our method can automatically search for both the partition and the Lyapunov function simultaneously. We demonstrate our algorithm on both continuous and discrete-time systems, including some for which known strategies for partitioning of the Lyapunov function would require introducing higher order Lyapunov functions.</p>
+<span class="entry" id="LandryDaiEtAl2021">B. Landry, H. Dai, and M. Pavone, <a class="entry-title" href="">“SEAGuL: Sample Efficient Adversarially Guided Learning of Value Functions,”</a> in <i>Learning for Dynamics &amp; Control Conference</i>, 2021. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LandryDaiEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LandryDaiEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_LandryDaiEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Value functions are powerful abstractions broadly used across optimal control and robotics algorithms. Several lines of work have attempted to leverage trajectory optimization to learn value function approximations, usually by solving a large number of trajectory optimization problems as a means to generate training data. Even though these methods point to a promising direction, for sufficiently complex tasks, their sampling requirements can become computationally intractable. In this work, we leverage insights from adversarial learning in order to improve the sampling efficiency of a simple value function learning algorithm. We demonstrate how generating adversarial samples for this task presents a unique challenge due to the loss function that does not admit a closed form expression of the samples, but that instead requires the solution to a nonlinear optimization problem. Our key insight is that by leveraging duality theory from optimization, it is still possible to compute adversarial samples for this learning problem with virtually no computational overhead, including without having to keep track of shifting distributions of approximation errors or having to train generative models. We apply our method, named SEAGuL, to a canonical control task (balancing the acrobot) and a more challenging and highly dynamic nonlinear control task (the perching of a small glider). We demonstrate that compared to random sampling, with the same number of samples, training value function approximations using SEAGuL leads to improved generalization errors that also translate to control performance improvement.</p>
 </span>
-<span id="bib_DaiLandryEtAl2020" class="bibtex noshow">
-	<pre>@inproceedings{DaiLandryEtAl2020,
-  author = {Dai, H. and Landry, B. and Pavone, M.},
-  title = {Counter-Example Guided Synthesis of Neural Network Lyapunov Functions for Piecewise Linear Systems},
-  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
-  year = {2020},
+<span id="bib_LandryDaiEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{LandryDaiEtAl2021,
+  author = {Landry, B. and Dai, H. and Pavone, M.},
+  title = {SEAGuL: Sample Efficient Adversarially Guided Learning of Value Functions},
+  booktitle = {{Learning for Dynamics \& Control Conference}},
+  year = {2021},
   note = {In Press},
-  address = {Jeju Island, Republic of Korea},
   month = dec,
-  url = {http://groups.csail.mit.edu/robotics-center/public_papers/Dai20.pdf},
   keywords = {press},
   owner = {blandry},
-  timestamp = {2020-11-29}
+  timestamp = {2021-03-15}
 }
 </pre>
 </span>
-<!-- <span id="key_DaiLandryEtAl2020" >
+<!-- <span id="key_LandryDaiEtAl2021" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -260,27 +258,28 @@
  
 
 
-<span class="entry" id="LandryDaiEtAl2020">B. Landry, H. Dai, and M. Pavone, <a class="entry-title" href="">“SEAGuL: Sample Efficient Adversarially Guided Learning of Value Functions,”</a> 2020. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LandryDaiEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LandryDaiEtAl2020','abstract')">Abstract</a>]</p>
-<span id="abs_LandryDaiEtAl2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Value functions are powerful abstractions broadly used across optimal control and robotics algorithms. Several lines of work have attempted to leverage trajectory optimization to learn value function approximations, usually by solving a large number of trajectory optimization problems as a means to generate training data. Even though these methods point to a promising direction, for sufficiently complex tasks, their sampling requirements can become computationally intractable. In this work, we leverage insights from adversarial learning in order to improve the sampling efficiency of a simple value function learning algorithm. We demonstrate how generating adversarial samples for this task presents a unique challenge due to the loss function that does not admit a closed form expression of the samples, but that instead requires the solution to a nonlinear optimization problem. Our key insight is that by leveraging duality theory from optimization, it is still possible to compute adversarial samples for this learning problem with virtually no computational overhead, including without having to keep track of shifting distributions of approximation errors or having to train generative models. We apply our method, named SEAGuL, to a canonical control task (balancing the acrobot) and a more challenging and highly dynamic nonlinear control task (the perching of a small glider). We demonstrate that compared to random sampling, with the same number of samples, training value function approximations using SEAGuL leads to improved generalization errors that also translate to control performance improvement.</p>
+<span class="entry" id="DaiLandryEtAl2020">H. Dai, B. Landry, M. Pavone, and R. Tedrake, <a class="entry-title" href="http://groups.csail.mit.edu/robotics-center/public_papers/Dai20.pdf">“Counter-Example Guided Synthesis of Neural Network Lyapunov Functions for Piecewise Linear Systems,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Jeju Island, Republic of Korea, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('DaiLandryEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DaiLandryEtAl2020','abstract')">Abstract</a>]</p>
+<span id="abs_DaiLandryEtAl2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We introduce an algorithm for synthesizing and verifying piecewise linear Lyapunov functions to prove global exponential stability of piecewise linear dynamical systems. The Lyapunov functions we synthesize are parameterized by feedforward neural networks with leaky ReLU activation units. To train these neural networks, we design a loss function that measures the maximal violation of the Lyapunov conditions in the state space. We show that this maximal violation can be computed by solving a mixed-integer linear program (MILP). Compared to previous learning-based approaches, our learning approach is able to certify with high precision that the learned neural network satisfies the Lyapunov conditions not only for sampled states, but over the entire state space. Moreover, compared to previous optimization-based approaches that require a pre-specified partition of the state space when synthesizing piecewise Lyapunov functions, our method can automatically search for both the partition and the Lyapunov function simultaneously. We demonstrate our algorithm on both continuous and discrete-time systems, including some for which known strategies for partitioning of the Lyapunov function would require introducing higher order Lyapunov functions.</p>
 </span>
-<span id="bib_LandryDaiEtAl2020" class="bibtex noshow">
-	<pre>@inproceedings{LandryDaiEtAl2020,
-  author = {Landry, B. and Dai, H. and Pavone, M.},
-  title = {SEAGuL: Sample Efficient Adversarially Guided Learning of Value Functions},
+<span id="bib_DaiLandryEtAl2020" class="bibtex noshow">
+	<pre>@inproceedings{DaiLandryEtAl2020,
+  author = {Dai, H. and Landry, B. and Pavone, M. and Tedrake, R.},
+  title = {Counter-Example Guided Synthesis of Neural Network Lyapunov Functions for Piecewise Linear Systems},
+  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
   year = {2020},
-  note = {Submitted},
-  month = aug,
-  keywords = {sub},
+  address = {Jeju Island, Republic of Korea},
+  month = dec,
+  url = {http://groups.csail.mit.edu/robotics-center/public_papers/Dai20.pdf},
   owner = {blandry},
-  timestamp = {2020-11-23}
+  timestamp = {2021-03-15}
 }
 </pre>
 </span>
-<!-- <span id="key_LandryDaiEtAl2020" >
+<!-- <span id="key_DaiLandryEtAl2020" >
 	<b>Keywords</b>:
-	sub
+	
 </span> --></li>
 <li>
  
