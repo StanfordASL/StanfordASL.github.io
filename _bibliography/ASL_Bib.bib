@@ -3213,17 +3213,17 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   url      = {https://arxiv.org/abs/2010.09164},
 }
 
-@Inproceedings{HarrisonSharmaEtAl2020,
+@InProceedings{HarrisonSharmaEtAl2020,
   author       = {Harrison, J. and Sharma, A. and Finn, C. and Pavone, M.},
-  title        = {Continuous Meta-Learning without Tasks},
   booktitle    = proc_NIPS,
+  title        = {Continuous Meta-Learning without Tasks},
   year         = {2020},
+  note         = {Submitted},
   abstract = {Meta-learning is a promising strategy for learning to efficiently learn within new tasks, using data gathered from a distribution of tasks. However, the meta-learning literature thus far has focused on the task segmented setting, where at train-time, offline data is assumed to be split according to the underlying task, and at test-time, the algorithms are optimized to learn in a single task. In this work, we enable the application of generic meta-learning algorithms to settings where this task segmentation is unavailable, such as continual online learning with a time-varying task. We present meta-learning via online changepoint analysis (MOCA), an approach which augments a meta-learning algorithm with a differentiable Bayesian changepoint detection scheme. The framework allows both training and testing directly on time series data without segmenting it into discrete tasks. We demonstrate the utility of this approach on a nonlinear meta-regression benchmark as well as two meta-image-classification benchmarks.},
-  address  = {},
   month    = dec,
+  url      = {https://arxiv.org/abs/1912.08866},
   owner        = {apoorva},
   timestamp    = {2020-05-05},
-  url      = {https://arxiv.org/abs/1912.08866}
 }
 
 @Inproceedings{LorenzettiChenEtAl2018,
@@ -3580,19 +3580,6 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
 	timestamp    = {2020-11-07},
 }
 
-@Inproceedings{YangTsaoEtAl2020,
-  author       = {Yang, K. and Tsao, M. and Xin, X. and Pavone, M.},
-  title        = {Planning and Operations of Mixed Fleets in Mobility-on-Demand Systems},  
-  year         = {2020},
-  note         = {Submitted},
-  abstract = {Automated vehicles (AVs) are expected to be beneficial for Mobility-on-Demand (MoD), thanks to their ability of being globally coordinated. To facilitate the steady transition towards full autonomy, we consider the transition period of AV deployment, whereby an MoD system operates a mixed fleet of automated vehicles (AVs) and human-driven vehicles (HVs). In such systems, AVs are centrally coordinated by the operator, and the HVs might strategically respond to the coordination of AVs. We devise computationally tractable strategies to coordinate mixed fleets in MoD systems. Specifically, we model an MoD system with a mixed fleet using a Stackelberg framework where the MoD operator serves as the leader and human-driven vehicles serve as the followers. We develop two models: 1) a steady-state model to analyze the properties of the problem and determine the planning variables (e.g., compensations, prices, and the fleet size of AVs), and 2) a time-varying model to design a real-time coordination algorithm for AVs. The proposed models are validated using a case study inspired by real operational data of a MoD service in Singapore. Results show that the proposed algorithms can significantly improve system performance.},
-  month    = jul,
-  url      = {http://arxiv.org/abs/2008.08131},
-  keywords     = {sub},
-  owner        = {ykd07},
-  timestamp    = {2020-08-20},
-}
-
 @InProceedings{TsaoEtAl2020,
   author       = {Marco Pavone and Amin Saberi and Maximilian Schiffer and Matthew Tsao},
   title        = {Online Hypergraph Matching with Delays},
@@ -3866,6 +3853,20 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp    = {2021-03-23},
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
+@Inproceedings{GammelliYangEtAl2021,
+  author       = {Gammelli, D. and Yang, K. and Harrison, J. and Rodrigues, F. and Pereira, F. C. and Pavone, M.},
+  title        = {Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems},
+  year         = {2021},
+  note         = {Submitted},
+  keywords     = {sub},
+  owner        = {jh2},
+  timestamp    = {2021-03-23},
+}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
+@Article{TsaoEtAl2021,
+  author = {Marco Pavone and Amin Saberi and Maximilien Schiffer and Matthew Tsao},
+  title  = {Online Hypergraph Matching with Delays},
+  year   = {2021},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
