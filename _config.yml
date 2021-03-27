@@ -37,7 +37,7 @@ exclude:
 
 # This instructs Jekyll to also build what's inside the
 # AA 274 course website folder.
-include: ['aa274a', 'aa274_aut1920', 'aa274_win1819', 'aa203', 'aa203_sp1819', 'ITSC2019']
+include: ['aa274a', 'aa274_aut1920', 'aa274_win1819', 'aa203', 'aa203_sp1819', 'aa203_sp1920', 'ITSC2019']
 
 
 collections:
@@ -73,6 +73,9 @@ collections:
     output: false
     permalink: /:collection/:title/
   aa203_sp1819:
+    output: false
+    permalink: /:collection/:title/
+  aa203_sp1920:
     output: false
     permalink: /:collection/:title/
   itsc2019:

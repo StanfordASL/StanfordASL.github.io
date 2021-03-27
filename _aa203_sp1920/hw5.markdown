@@ -3,7 +3,7 @@ title: "Homework 5"
 seq_number: 5
 posted_date: 2020-05-22 23:00:00
 due_date: 2020-06-01 23:59:00
-pdf_link: "/aa203/pdfs/homework/AA203_HW5.pdf"
+pdf_link: "/aa203_sp1920/pdfs/homework/AA203_HW5.pdf"
 code_link: "https://github.com/StanfordASL/AA203-Homework/tree/master/2020/HW5"
 md_group: "assignments"
 ---
