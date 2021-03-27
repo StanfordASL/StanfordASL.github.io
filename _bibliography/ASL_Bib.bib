@@ -3213,16 +3213,15 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   url      = {https://arxiv.org/abs/2010.09164},
 }
 
-@Inproceedings{HarrisonSharmaEtAl2020,
+@InProceedings{HarrisonSharmaEtAl2020,
   author       = {Harrison, J. and Sharma, A. and Finn, C. and Pavone, M.},
+  booktitle    = proc_NIPS,
   title        = {Continuous Meta-Learning without Tasks},
-  booktitle    = proc_ICML,
   year         = {2020},
   note         = {Submitted},
   abstract = {Meta-learning is a promising strategy for learning to efficiently learn within new tasks, using data gathered from a distribution of tasks. However, the meta-learning literature thus far has focused on the task segmented setting, where at train-time, offline data is assumed to be split according to the underlying task, and at test-time, the algorithms are optimized to learn in a single task. In this work, we enable the application of generic meta-learning algorithms to settings where this task segmentation is unavailable, such as continual online learning with a time-varying task. We present meta-learning via online changepoint analysis (MOCA), an approach which augments a meta-learning algorithm with a differentiable Bayesian changepoint detection scheme. The framework allows both training and testing directly on time series data without segmenting it into discrete tasks. We demonstrate the utility of this approach on a nonlinear meta-regression benchmark as well as two meta-image-classification benchmarks.},
-  address  = {Vienna, Austria},
-  month    = jul,
-  keywords     = {sub},
+  month    = dec,
+  url      = {https://arxiv.org/abs/1912.08866},
   owner        = {apoorva},
   timestamp    = {2020-05-05},
 }
@@ -3325,7 +3324,7 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   note         = {In Press},
   abstract = {A number of prototypical optimization problems in multi-agent systems (e.g., task allocation and network load-sharing) exhibit a highly local structure: that is, each agent's decision variables are only directly coupled to few other agent's variables through the objective function or the constraints. In this paper, we develop a rigorous notion of "locality" that quantifies the degree to which agents can compute their portion of the global solution of such a distributed optimization problem based solely on information in their local neighborhood. We build upon the results of Rebeschini and Tatikonda (2019) to develop a more general theory of locality that fully captures the importance of problem data to individual solution components, as opposed to a theory that only captures response to perturbations. This analysis provides a theoretical basis for a rather simple algorithm in which agents individually solve a truncated sub-problem of the global problem, where the size of the sub-problem used depends on the locality of the problem, and the desired accuracy. Numerical results show that the proposed theoretical bounds are remarkably tight for well-conditioned problems.},
   url      = {/wp-content/papercite-data/pdf/Brown.Rossi.ea.TCNS20.pdf},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {rabrown1},
   timestamp    = {2021-01-13},
 }
@@ -3535,14 +3534,12 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   author       = {Choudhury, S. and Solovey, K. and Kochenderfer, M. Pavone, M.},
   title        = {Efficient Large-Scale Multi-Drone Delivery Using Transit Networks},
   journal      = jrn_JAIR,
-  year         = {2020},
-  note         = {Submitted},
+  year         = {2021},
   abstract = {We consider the problem of controlling a large fleet of drones to deliver packages simultaneously across broad urban areas. To conserve their limited flight range, drones can seamlessly hop between and ride on top of public transit vehicles (e.g., buses and trams). We design a novel comprehensive algorithmic framework that strives to minimize the maximum time to complete any delivery. We address the multifaceted complexity of the problem through a two-layer approach. First, the upper layer assigns drones to package delivery sequences with a provably near-optimal polynomial-time task allocation algorithm. Then, the lower layer executes the allocation by periodically routing the fleet over the transit network while employing efficient bounded-suboptimal multi-agent pathfinding techniques tailored to our setting. We present extensive experiments supporting the efficiency of our approach on settings with up to 200 drones, 5000 packages, and large transit networks of up to 8000 stops in San Francisco and the Washington DC area. Our results show that the framework can compute solutions within a few seconds (up to 2 minutes for the largest settings) on commodity hardware, and that drones travel up to 450% of their flight range by using public transit.},
-  month    = jun,
-  url      = {https://arxiv.org/pdf/1909.11840.pdf},
-  keywords     = {sub},
+  month    = mar,
+  url      = {https://doi.org/10.1613/jair.1.12450},
   owner        = {kirilsol},
-  timestamp    = {2020-06-12},
+  timestamp    = {2021-03-23},
 }
 
 @Inproceedings{LandryDaiEtAl2021,
@@ -3576,27 +3573,11 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
     author       = {Lew, T. and Pavone, M.},
     booktitle    = proc_CoRL,
     year         = {2020},
-  	note         = {In Press},
 	abstract = {Reachability analysis is at the core of many applications, from neural network verification, to safe trajectory planning of uncertain systems. However, this problem is notoriously challenging, and current approaches tend to be either too restrictive, too slow, too conservative, or approximate and therefore lack guarantees. In this paper, we propose a simple yet effective sampling-based approach to perform reachability analysis for arbitrary dynamical systems. Our key novel idea consists of using random set theory to give a rigorous interpretation of our method, and prove that it returns sets which are guaranteed to converge to the convex hull of the true reachable sets. Additionally, we leverage recent work on robust deep learning and propose a new adversarial sampling approach to robustify our algorithm and accelerate its convergence. We demonstrate that our method is faster and less conservative than prior work, present results for approximate reachability analysis of neural networks and robust trajectory optimization of high-dimensional uncertain nonlinear systems, and discuss future applications.},
 	month    = aug,
   	url      = {https://arxiv.org/abs/2008.10180},
-  	keywords     = {press},
 	owner        = {lewt},
 	timestamp    = {2020-11-07},
-}
-
-@Inproceedings{YangTsaoEtAl2020,
-  author       = {Yang, K. and Tsao, M. and Xin, X. and Pavone, M.},
-  title        = {Planning and Operations of Mixed Fleets in Mobility-on-Demand Systems},
-  booktitle    = proc_ISTTT,
-  year         = {2020},
-  note         = {Submitted},
-  abstract = {Automated vehicles (AVs) are expected to be beneficial for Mobility-on-Demand (MoD), thanks to their ability of being globally coordinated. To facilitate the steady transition towards full autonomy, we consider the transition period of AV deployment, whereby an MoD system operates a mixed fleet of automated vehicles (AVs) and human-driven vehicles (HVs). In such systems, AVs are centrally coordinated by the operator, and the HVs might strategically respond to the coordination of AVs. We devise computationally tractable strategies to coordinate mixed fleets in MoD systems. Specifically, we model an MoD system with a mixed fleet using a Stackelberg framework where the MoD operator serves as the leader and human-driven vehicles serve as the followers. We develop two models: 1) a steady-state model to analyze the properties of the problem and determine the planning variables (e.g., compensations, prices, and the fleet size of AVs), and 2) a time-varying model to design a real-time coordination algorithm for AVs. The proposed models are validated using a case study inspired by real operational data of a MoD service in Singapore. Results show that the proposed algorithms can significantly improve system performance.},
-  month    = jul,
-  url      = {http://arxiv.org/abs/2008.08131},
-  keywords     = {sub},
-  owner        = {ykd07},
-  timestamp    = {2020-08-20},
 }
 
 @InProceedings{TsaoEtAl2020,
@@ -3655,16 +3636,13 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
 @Inproceedings{NakanoyaChinchaliEtAl2021,
   author       = {Nakanoya, M. and Chinchali, S. and Anemogiannis, A. and Datta, A. and Katti, S. and Pavone, M.},
   title        = {Task-relevant Representation Learning for Networked Robotic Perception},
-  booktitle    = proc_IEEE_ICRA,
   year         = {2021},
   note         = {Submitted},
   abstract = {Today, even the most compute-and-power constrained robots can measure complex, high data-rate video and LIDAR sensory streams. Often, such robots, ranging from low-power drones to space and subterranean rovers, need to transmit high-bitrate sensory data to a remote compute server if they are uncertain or cannot scalably run complex perception or mapping tasks locally. However, today's representations for sensory data are mostly designed for human, not robotic, perception and thus often waste precious compute or wireless network resources to transmit unimportant parts of a scene that are unnecessary for a high-level robotic task. This paper presents an algorithm to learn task-relevant representations of sensory data that are co-designed with a pre-trained robotic perception model's ultimate objective. Our algorithm aggressively compresses robotic sensory data by up to 11x more than competing methods. Further, it achieves high accuracy and robust generalization on diverse tasks including Mars terrain classification with low-power deep learning accelerators, neural motion planning, and environmental timeseries classification.},
-  address  = {Xi'an, China},
-  month    = may,
   url      = {https://arxiv.org/abs/2011.03216},
   keywords     = {sub},
   owner        = {csandeep},
-  timestamp    = {2020-11-09},
+  timestamp    = {2021-03-23},
 }
 
 @Inproceedings{ChinchaliPergamentEtAl2020,
@@ -3686,12 +3664,14 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems},
   booktitle    = proc_IEEE_ICRA,
   year         = {2021},
+  note         = {In Press},
   abstract = {Despite decades of work in fast reactive planning and control, challenges remain in developing reactive motion policies on non-Euclidean manifolds and enforcing constraints while avoiding undesirable potential function local minima. This work presents a principled method for designing and fusing desired robot task behaviors into a stable robot motion policy, leveraging the geometric structure of non-Euclidean manifolds, which are prevalent in robot configuration and task spaces. Our Pullback Bundle Dynamical Systems (PBDS) framework drives desired task behaviors and prioritizes tasks using separate position-dependent and position/velocity-dependent Riemannian metrics, respectively, thus simplifying individual task design and modular composition of tasks. For enforcing constraints, we provide a class of metric-based tasks, eliminating local minima by imposing non-conflicting potential functions only for goal region attraction. We also provide a geometric optimization problem for combining tasks inspired by Riemannian Motion Policies (RMPs) that reduces to a simple least-squares problem, and we show that our approach is geometrically well-defined. We demonstrate the PBDS framework on the sphere S2 and at 300-500 Hz on a manipulator arm, and we provide task design guidance and an open-source Julia library implementation. Overall, this work presents a fast, easy-to-use framework for generating motion policies without unwanted potential function local minima on general manifolds.},
   address  = {Xi'an, China},
   month    = may,
   url      = {https://arxiv.org/abs/2101.01297},
+  keywords     = {press},
   owner        = {bylard},
-  timestamp    = {2021-02-28},
+  timestamp    = {2021-03-23},
 }
 
 @Inproceedings{SoloveyBandyopadhyayEtAl2021,
@@ -3800,6 +3780,105 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   timestamp    = {2021-03-09},
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
+@Article{RossiBandyopadhyayEtAl2021,
+  author    = {Rossi, Federico and Bandyopadhyay, Saptarshi and Wolf, Michael T. and Pavone, Marco},
+  title     = {Multi-Agent Algorithms for Collective Behavior - A structural and application-focused atlas},
+  year      = {2021},
+  abstract  = {The goal of this paper is to provide a survey and application-focused atlas of collective behavior coordination algorithms for multi-agent system, classified according to their underlying mathematical structure. 
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
+We survey the general family of collective behavior algorithms for multi-agent systems and classify them according to their underlying mathematical structure. In doing so, we aim to capture fundamental mathematical properties of algorithms (e.g., scalability with respect to the number of agents and bandwidth use) and to show how the same algorithm or family of algorithms can be used for multiple tasks and applications.
+
+Collectively, this paper provides an application-focused atlas of algorithms for collective behavior algorithms, with three objectives:
+
+1. to act as a tutorial guide to practitioners in the selection of coordination algorithms for a given application;
+2. to highlight how mathematically similar algorithms can be used for a variety of tasks, ranging from low-level control to high-level coordination;
+3. to explore the state-of-the-art in the field of control of multi-agent systems and identify areas for future research.},
+  keywords  = {sub},
+  note    =   {Submitted},
+  url       = {https://arxiv.org/abs/2103.11067},
+}
+
+@Inproceedings{JalotaPaccagnanEtAl2021,
+  author       = {Jalota, D. and Paccagnan, D. and Schiffer, M. and Pavone, M.},
+  title        = {On Online Traffic Routing: Deterministic Limits and Data-driven Enhancements},
+  booktitle    = {ACM Conference on Economics and Computation},
+  year         = {2021},
+  note         = {Submitted},
+  abstract = {Over the past decade, GPS enabled traffic applications, such as Google Maps andWaze, have become ubiquitous and have had a significant influence on billions of daily commuters? travel patterns. A consequence of the online route suggestions of such applications, e.g., via greedy routing, has often been an increase in traffic congestion since the induced travel patterns may be far from the system optimum routing pattern. Spurred by the widespread impact of navigational applications on travel patterns, this work studies online traffic routing in the context of capacity-constrained parallel road networks and analyzes this problem from two perspectives. First, we perform a worst-case analysis to identify the limits of deterministic online routing and show that the ratio between the online solution of any deterministic algorithm and the optimal offline solution is unbounded, even in simplistic settings. This result motivates us to move beyond worst-case analysis. Here, we consider algorithms that exploit knowledge of past problem instances and show how to design a data-driven algorithm whose performance can be quantified and formally generalized to unseen future instances. Finally, we present numerical experiments based on two application cases for the San Francisco Bay Area and evaluate the performance of our approach. Our results show that the data-driven algorithm often outperforms commonly used greedy online routing algorithms, in particular, in scenarios where the user types are heterogeneous and the network is congested.},
+  keywords     = {sub},
+  owner        = {devanshjalota},
+  timestamp    = {2021-03-23},
+}
+
+@Article{ChapmanBonalliEtAlTAC2021,
+  author    = {Chapman, M. P. and Bonalli, R. and Smith, K. M. and Yang, I. and Pavone, M. and Tomlin, C. J.},
+  title     = {Risk-sensitive safety analysis using Conditional Value-at-Risk},
+  journal   = jrn_IEEE_TAC,
+  year      = {2021},
+  note      = {Submitted},
+  keywords  = {sub},
+  owner     = {bonalli},
+  timestamp = {2021-03-23},
+  url   = {https://arxiv.org/abs/2101.12086},
+}
+
+@Inproceedings{DyroHarrisonEtAl2021,
+  author       = {Dyro, R. and Harrison, J. and Sharma, A. and Pavone, M.},
+  title        = {Particle MPC for Uncertain and Learning-Based Control},
+  year         = {2021},
+  note         = {Submitted},
+  abstract = {Autonomous decision-making in novel or changing environments requires quantification and consideration of uncertainties in the system or environment dynamics that impact downstream control performance. Thus, as robotic systems move from highly structured environments to open worlds, incorporating uncertainty in learning or estimation into the control pipeline is essential for robust and efficient performance. In this paper we present a nonlinear particle model predictive control (PMPC) approach to control under uncertainty. This approach, due to the particle representation of uncertainty, is capable of handling arbitrary uncertainty specifications. We implement our nonlinear PMPC scheme with a sequential convex programming non-convex optimization scheme, and we discuss practical implementation of such a framework. We investigate our approach for two robotic systems across three problem settings: time-varying, partially observed dynamics; sensing uncertainty; and model-based reinforcement learning, and show that our approach improves performance over baselines in all settings.},
+  keywords     = {sub},
+  owner        = {jh2},
+  timestamp    = {2021-03-23},
+}
+
+@Inproceedings{SinhaHarrisonEtAl2021,
+  author       = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
+  title        = {Robust Adaptive Model Predictive Control with Matched and Unmatched Uncertainty},
+  year         = {2021},
+  note         = {Submitted},
+  keywords     = {sub},
+  owner        = {jh2},
+  timestamp    = {2021-03-23},
+}
+
+@Inproceedings{WillesHarrisonEtAl2021,
+  author       = {Willes, J. and Harrison, J. and Harakeh, A. and Finn, C. and Pavone, M. and Waslander, S.},
+  title        = {Open-Set Incremental Learning via Bayesian Prototypical Embeddings},
+  year         = {2021},
+  note         = {Submitted},
+  keywords     = {sub},
+  owner        = {jh2},
+  timestamp    = {2021-03-23},
+}
+
+@Inproceedings{GammelliYangEtAl2021,
+  author       = {Gammelli, D. and Yang, K. and Harrison, J. and Rodrigues, F. and Pereira, F. C. and Pavone, M.},
+  title        = {Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems},
+  year         = {2021},
+  note         = {Submitted},
+  keywords     = {sub},
+  owner        = {jh2},
+  timestamp    = {2021-03-23},
+}
+
+@Article{TsaoEtAl2021,
+  author = {Marco Pavone and Amin Saberi and Maximilien Schiffer and Matthew Tsao},
+  title  = {Online Hypergraph Matching with Delays},
+  year   = {2021},
+}
+
+@inproceedings{SalzmannPavoneEtAl2021,
+  author = {Salzmann, T. and Pavone, M. and Ryll, M.},
+  title = {Motron: Multimodal Probabilistic Human Motion Forecasting},
+  month = oct,
+  year = {2021},
+  note = {Submitted},
+  abstract = {Autonomous systems and humans are increasingly sharing the same space. Robots work side by side or even hand in hand with humans to balance each other's limitations. Such cooperative interactions are ever more sophisticated. Thus, the ability to reason not just about a human's center of gravity position, but also its granular motion is an important prerequisite for human-robot interaction. Though, many algorithms ignore the multimodal nature of humans or neglect uncertainty in their motion forecasts. We present Motron, a multimodal, probabilistic, graph-structured model, that captures human's multimodality using probabilistic methods while being able to output deterministic motions and corresponding confidence values for each mode. Our model aims to be tightly integrated with the robotic planning-control-interaction loop; outputting physically feasible human motions and being computationally efficient. We demonstrate the performance of our model on several challenging real-world motion forecasting datasets, outperforming a wide array of generative methods while providing state-of-the-art deterministic capabilities.},
+  keywords = {sub},
+  owner = {salzmann},
+  timestamp = {2021-03-18}
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
