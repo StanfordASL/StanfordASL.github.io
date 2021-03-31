@@ -129,19 +129,15 @@
                                 
                             
                                 
-                            
-                                
-                            
-                                
-                            
-                                
-                            
-                                
                                     
                                     <li class="page-scroll">
                                         <a href="/projects/">Projects</a>
                                     </li>
                                     
+                                
+                            
+                                
+                            
                                 
                             
                                 
@@ -173,17 +169,19 @@
                                 
                             
                                 
-                            
-                                
-                            
-                                
-                            
-                                
                                     
                                     <li class="page-scroll">
                                         <a href="/people/">People</a>
                                     </li>
                                     
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
                                 
                             
                                 
@@ -355,29 +353,28 @@
  
 
 
-<span class="entry" id="SinghChenEtAl2018">S. Singh, M. Chen, S. L. Herbert, C. J. Tomlin, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1808.00649">“Robust Tracking with Model Mismatch for Fast and Safe Planning: an SOS Optimization Approach,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinghChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghChenEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_SinghChenEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In the pursuit of real-time motion planning, a commonly adopted practice is to compute a trajectory by running a planning algorithm on a simplified, low-dimensional dynamical model, and then employ a feedback tracking controller that tracks such a trajectory by accounting for the full, high-dimensional system dynamics. While this strategy of planning with model mismatch generally yields fast computation times, there are no guarantees of dynamic feasibility, which hampers application to safety-critical systems. Building upon recent work that addressed this problem through the lens of Hamilton-Jacobi (HJ) reachability, we devise an algorithmic framework whereby one computes, offline, for a pair of "planner" (i.e., low-dimensional) and "tracking" (i.e., high-dimensional) models, a feedback tracking controller and associated tracking bound. This bound is then used as a safety margin when generating motion plans via the low-dimensional model. Specifically, we harness the computational tool of sum-of-squares (SOS) programming to design a bilinear optimization algorithm for the computation of the feedback tracking controller and associated tracking bound. The algorithm is demonstrated via numerical experiments, with an emphasis on investigating the trade-off between the increased computational scalability afforded by SOS and its intrinsic conservativeness. Collectively, our results enable scaling the appealing strategy of planning with model mismatch to systems that are beyond the reach of HJ analysis, while maintaining safety guarantees.</p>
+<span class="entry" id="LandryChenEtAl2018">B. Landry, M. Chen, S. Hemley, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.11553.pdf">“Reach-Avoid Problems via Sum-of-Squares Optimization and Dynamic Programming,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Madrid, Spain, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LandryChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LandryChenEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_LandryChenEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Reach-avoid problems involve driving a system to a set of desirable configurations while keeping it away from undesirable ones. Providing mathematical guarantees for such scenarios is challenging but have numerous potential practical applications. Due to the challenges, analysis of reach-avoid problems involves making trade-offs between generality of system dynamics, generality of problem setups, optimality of solutions, and computational complexity. In this paper, we combine sum-of-squares optimization and dynamic programming to address the reach-avoid problem, and provide a conservative solution that maintains reaching and avoidance guarantees. Our method is applicable to polynomial system dynamics and to general problem setups, and is more computationally scalable than previous related methods. Through a numerical example involving two single integrators, we validate our proposed theory and compare our method to Hamilton-Jacobi reachability. Having validated our theory, we demonstrate the computational scalability of our method by computing the reach-avoid set of a system with two kinematic cars.</p>
 </span>
-<span id="bib_SinghChenEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{SinghChenEtAl2018,
-  author = {Singh, S. and Chen, M. and Herbert, S. L. and Tomlin, C. J. and Pavone, M.},
-  title = {Robust Tracking with Model Mismatch for Fast and Safe Planning: an {SOS} Optimization Approach},
-  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
+<span id="bib_LandryChenEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{LandryChenEtAl2018,
+  author = {Landry, B. and Chen, M. and Hemley, S. and Pavone, M.},
+  title = {Reach-Avoid Problems via Sum-of-Squares Optimization and Dynamic Programming},
+  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
   year = {2018},
-  address = {Merida, Mexico},
+  address = {Madrid, Spain},
   month = oct,
-  url = {https://arxiv.org/abs/1808.00649},
-  keywords = {press},
-  owner = {ssingh19},
-  timestamp = {2019-07-27}
+  url = {https://arxiv.org/pdf/1807.11553.pdf},
+  owner = {blandry},
+  timestamp = {2018-03-03}
 }
 </pre>
 </span>
-<!-- <span id="key_SinghChenEtAl2018" >
+<!-- <span id="key_LandryChenEtAl2018" >
 	<b>Keywords</b>:
-	press
+	
 </span> --></li>
 <li>
  
@@ -412,28 +409,29 @@
  
 
 
-<span class="entry" id="LandryChenEtAl2018">B. Landry, M. Chen, S. Hemley, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.11553.pdf">“Reach-Avoid Problems via Sum-of-Squares Optimization and Dynamic Programming,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, Madrid, Spain, 2018.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LandryChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LandryChenEtAl2018','abstract')">Abstract</a>]</p>
-<span id="abs_LandryChenEtAl2018" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Reach-avoid problems involve driving a system to a set of desirable configurations while keeping it away from undesirable ones. Providing mathematical guarantees for such scenarios is challenging but have numerous potential practical applications. Due to the challenges, analysis of reach-avoid problems involves making trade-offs between generality of system dynamics, generality of problem setups, optimality of solutions, and computational complexity. In this paper, we combine sum-of-squares optimization and dynamic programming to address the reach-avoid problem, and provide a conservative solution that maintains reaching and avoidance guarantees. Our method is applicable to polynomial system dynamics and to general problem setups, and is more computationally scalable than previous related methods. Through a numerical example involving two single integrators, we validate our proposed theory and compare our method to Hamilton-Jacobi reachability. Having validated our theory, we demonstrate the computational scalability of our method by computing the reach-avoid set of a system with two kinematic cars.</p>
+<span class="entry" id="SinghChenEtAl2018">S. Singh, M. Chen, S. L. Herbert, C. J. Tomlin, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1808.00649">“Robust Tracking with Model Mismatch for Fast and Safe Planning: an SOS Optimization Approach,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinghChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghChenEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_SinghChenEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In the pursuit of real-time motion planning, a commonly adopted practice is to compute a trajectory by running a planning algorithm on a simplified, low-dimensional dynamical model, and then employ a feedback tracking controller that tracks such a trajectory by accounting for the full, high-dimensional system dynamics. While this strategy of planning with model mismatch generally yields fast computation times, there are no guarantees of dynamic feasibility, which hampers application to safety-critical systems. Building upon recent work that addressed this problem through the lens of Hamilton-Jacobi (HJ) reachability, we devise an algorithmic framework whereby one computes, offline, for a pair of "planner" (i.e., low-dimensional) and "tracking" (i.e., high-dimensional) models, a feedback tracking controller and associated tracking bound. This bound is then used as a safety margin when generating motion plans via the low-dimensional model. Specifically, we harness the computational tool of sum-of-squares (SOS) programming to design a bilinear optimization algorithm for the computation of the feedback tracking controller and associated tracking bound. The algorithm is demonstrated via numerical experiments, with an emphasis on investigating the trade-off between the increased computational scalability afforded by SOS and its intrinsic conservativeness. Collectively, our results enable scaling the appealing strategy of planning with model mismatch to systems that are beyond the reach of HJ analysis, while maintaining safety guarantees.</p>
 </span>
-<span id="bib_LandryChenEtAl2018" class="bibtex noshow">
-	<pre>@inproceedings{LandryChenEtAl2018,
-  author = {Landry, B. and Chen, M. and Hemley, S. and Pavone, M.},
-  title = {Reach-Avoid Problems via Sum-of-Squares Optimization and Dynamic Programming},
-  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
+<span id="bib_SinghChenEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{SinghChenEtAl2018,
+  author = {Singh, S. and Chen, M. and Herbert, S. L. and Tomlin, C. J. and Pavone, M.},
+  title = {Robust Tracking with Model Mismatch for Fast and Safe Planning: an {SOS} Optimization Approach},
+  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
   year = {2018},
-  address = {Madrid, Spain},
+  address = {Merida, Mexico},
   month = oct,
-  url = {https://arxiv.org/pdf/1807.11553.pdf},
-  owner = {blandry},
-  timestamp = {2018-03-03}
+  url = {https://arxiv.org/abs/1808.00649},
+  keywords = {press},
+  owner = {ssingh19},
+  timestamp = {2019-07-27}
 }
 </pre>
 </span>
-<!-- <span id="key_LandryChenEtAl2018" >
+<!-- <span id="key_SinghChenEtAl2018" >
 	<b>Keywords</b>:
-	
+	press
 </span> --></li>
 <li>
  

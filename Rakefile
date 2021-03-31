@@ -1,7 +1,7 @@
 desc "Build _site/ for production"
 task :build do
   puts "\n## Building Jekyll to _site/"
-  status = system("JEKYLL_ENV=production jekyll build")
+  status = system("JEKYLL_ENV=production bundle exec jekyll build")
   puts status ? "Success" : "Failed"
 end
 

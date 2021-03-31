@@ -3,7 +3,7 @@ title:  "Homework 0"
 seq_number: 0
 posted_date:   2021-03-30 11:00:00
 pdf_link: "/aa203/pdfs/homework/AA203_HW0.pdf"
-code_link: "https://github.com/StanfordASL/AA203-Homework/tree/master/2021/HW0"
+code_link: "https://github.com/StanfordASL/AA203-Homework/tree/master/HW0"
 md_group: "assignments"
 ---
 
