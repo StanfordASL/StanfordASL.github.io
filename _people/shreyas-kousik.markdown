@@ -3,7 +3,7 @@ layout: person
 title:  "Shreyas Kousik"
 last:   "Kousik"
 date:   2020-11-03 00:00:00 -0700
-position: postdoc
+position: 
 excerpt: "Verifiable perception and planning for autonomous robots"
 img: ShreyasKousik.png
 email: skousik@stanford.edu
