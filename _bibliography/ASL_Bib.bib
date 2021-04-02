@@ -2662,14 +2662,12 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Signal Temporal Logic meets {Hamilton-Jacobi} Reachability: Connections and Applications},
   booktitle    = proc_WAFR,
   year         = {2018},
-  note         = {In Press},
   abstract = {Signal temporal logic (STL) and Hamilton-Jacobi (HJ) reachability analysis are effective mathematical tools for formally analyzing the behavior of robotic systems. STL is a specification language that uses a combination of logic and temporal operators to precisely express real-valued and time-dependent requirements on system behaviors. While recursively defined STL specifications are extremely expressive and controller synthesis methods exist, so far there has not been work that quantifies the set of states from which STL formulas can be satisfied. HJ reachability, on the other hand, is a method for computing the reachable set, that is the set of states from which a system is able to reach a goal while satisfying state and control constraints. While reasoning about system requirements through sets of states is useful for predetermining whether it is possible to satisfy desired system properties as well as obtaining state feedback controllers, so far the applicability of HJ reachability has been limited to relatively simple reach-avoid specifications. In this paper, we merge STL and HJ reachability into a single framework that combines the key advantage of both methods ? expressiveness of specifications and set quantification. To do this, we establish a correspondence between temporal and reachability operators, and utilize the idea of least-restrictive feasible controller sets (LRFCSs) to break down controller synthesis for complex STL formulas into a sequence of reachability and elementary set operations. LRFCSs are crucial for avoiding controller conflicts among the different reachability operations. In addition, the synthesized state feedback controllers are guaranteed to satisfy STL specifications if determined to be possible by our framework, and violate specifications minimally if not. We demonstrate our method through numerical simulations and robotic experiments.},
   address  = {Merida, Mexico},
   month    = oct,
   url      = {/wp-content/papercite-data/pdf/Chen.Tam.Livingston.Pavone.WAFR18.pdf},
-  keywords     = {press},
   owner        = {bylard},
-  timestamp    = {2019-12-21},
+  timestamp    = {2021-03-25},
 }
 
 @Inproceedings{SinghSindhwaniEtAl2018,
@@ -3881,4 +3879,29 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp = {2021-03-18}
 }
 
+@Inproceedings{LeungPavone2021,
+  author       = {Leung, K. and Pavone, M.},
+  title        = {Control Synthesis with Heterogeneous Structure: Imitation-based Trajectory-feedback Control with Signal Temporal Logic Specifications},
+  year         = {2021},
+  note         = {Submitted},
+  abstract = {There is underlying structural information that influences how a robot should operate in complex environments, e.g., road rules govern how (self-driving) vehicles on the road should behave. However, seamlessly incorporating a variety of structural information into a robot control policy remains challenging both computationally and theoretically. In this work, we develop a control policy synthesis technique that utilizes heterogeneous structural information, specifically temporal logic and human demonstrations, to (i) foster better policy exploration, and (ii) achieve more intuitive and higher-performing robot behaviors. Specifically, we design an imitation-based neural network controller that satisfies desired spatio-temporal properties expressed as Signal Temporal Logic specifications. Due to challenges in neural network verification, we supplement our neural network controller with a lightweight online adaptive scheme that refines the controller to account for disturbances to the system. We demonstrate the efficacy of our approach with an illustrative case study and show that our proposed method outperforms a state-of-the-art shooting method in both performance and computation time, and achieves near real-time performance.},
+  keywords     = {sub},
+  owner        = {karenl7},
+  timestamp    = {2021-03-25},
+}
+
+@Inproceedings{JalotaEtAl2021,
+  author       = {Jalota, D. and Solovey, K. and Zoepf, S. and Pavone, M.},
+  title        = {Balancing Fairness and Efficiency in Traffic Routing via Interpolated Traffic Assignment},
+  booktitle    = proc_IEEE_CDC,
+  year         = {2021},
+  note         = {Submitted},
+  abstract = {System optimum (SO) routing, wherein the total travel time of all users is minimized, is a holy grail for transportation authorities. However, SO routing may discriminate against users who incur much larger travel times than others to achieve high system efficiency, i.e., low total travel times. To address the inherent unfairness of SO routing, we study the $\beta$-fair SO problem whose goal is to minimize the total travel time while guaranteeing a $\beta\geq 1$ level of unfairness, which specifies the maximal ratio between the travel times of different users with shared origins and destinations. To obtain feasible solutions to the $\beta$-fair SO problem while achieving high system efficiency, we develop a new convex program, the Interpolated Traffic Assignment Problem (I-TAP), which interpolates between a fair and an efficient traffic-assignment objective. We then leverage the structure of I-TAP to develop two pricing mechanisms to collectively enforce the I-TAP solution in the presence of selfish homogeneous and heterogeneous users, respectively, that independently choose routes to minimize their own travel costs. We mention that this is the first study of pricing in the context of fair routing. Finally, we use origin-destination demand data for a range of transportation networks to numerically evaluate the performance of I-TAP as compared to a state-of-the-art algorithm. The numerical results indicate that our approach is faster by several orders of magnitude, while achieving higher system efficiency for most levels of unfairness.},
+  keywords     = {sub},
+  owner        = {devanshjalota},
+  timestamp    = {2021-03-26},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
