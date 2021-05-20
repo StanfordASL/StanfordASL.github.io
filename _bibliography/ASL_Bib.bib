@@ -3636,13 +3636,14 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
 @Inproceedings{NakanoyaChinchaliEtAl2021,
   author       = {Nakanoya, M. and Chinchali, S. and Anemogiannis, A. and Datta, A. and Katti, S. and Pavone, M.},
   title        = {Task-relevant Representation Learning for Networked Robotic Perception},
+  booktitle    = proc_RSS,
   year         = {2021},
-  note         = {Submitted},
   abstract = {Today, even the most compute-and-power constrained robots can measure complex, high data-rate video and LIDAR sensory streams. Often, such robots, ranging from low-power drones to space and subterranean rovers, need to transmit high-bitrate sensory data to a remote compute server if they are uncertain or cannot scalably run complex perception or mapping tasks locally. However, today's representations for sensory data are mostly designed for human, not robotic, perception and thus often waste precious compute or wireless network resources to transmit unimportant parts of a scene that are unnecessary for a high-level robotic task. This paper presents an algorithm to learn task-relevant representations of sensory data that are co-designed with a pre-trained robotic perception model's ultimate objective. Our algorithm aggressively compresses robotic sensory data by up to 11x more than competing methods. Further, it achieves high accuracy and robust generalization on diverse tasks including Mars terrain classification with low-power deep learning accelerators, neural motion planning, and environmental timeseries classification.},
+  address  = {Online},
+  month    = jul,
   url      = {https://arxiv.org/abs/2011.03216},
-  keywords     = {sub},
   owner        = {csandeep},
-  timestamp    = {2021-03-23},
+  timestamp    = {2021-05-19},
 }
 
 @Inproceedings{ChinchaliPergamentEtAl2020,
@@ -3757,14 +3758,16 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
 @Inproceedings{RichardsAzizanEtAl2021,
     author       = {Richards, S. M. and Azizan, N. and Slotine, J.-J. E. and Pavone, M.},
     title        = {Adaptive-Control-Oriented Meta-Learning for Nonlinear Systems},
+    booktitle    = proc_RSS,
     year         = {2021},
-    note         = {Submitted},
+    note         = {In press},
     abstract = {Real-time adaptation is imperative to the control of robots operating in complex, dynamic environments. Adaptive control laws can endow even nonlinear systems with good trajectory tracking performance, provided that any uncertain dynamics terms are linearly parameterizable with known nonlinear features. However, it is often difficult to specify such features a priori, such as for aerodynamic disturbances on rotorcraft or interaction forces between a manipulator arm and various objects. In this paper, we turn to data-driven modeling with neural networks to learn, offline from past data, an adaptive controller with an internal parametric model of these nonlinear features. Our key insight is that we can better prepare the controller for deployment with control-oriented meta-learning of features in closed-loop simulation, rather than regression-oriented meta-learning of features to fit input-output data. Specifically, we meta-learn the adaptive controller with closed-loop tracking simulation as the base-learner and the average tracking error as the meta-objective. With a nonlinear planar rotorcraft subject to wind, we demonstrate that our adaptive controller outperforms other controllers trained with regression-oriented meta-learning when deployed in closed-loop for trajectory tracking control.},
-    month    = mar,
+    address  = {Virtual},
+    month    = jul,
     url      = {https://arxiv.org/pdf/2103.04490.pdf},
-    keywords     = {sub},
+    keywords     = {press},
     owner        = {spenrich},
-    timestamp    = {2021-03-09},
+    timestamp    = {2021-05-11},
 }
 
 @Inproceedings{SharmaAzizanEtAl2021,
@@ -3784,7 +3787,7 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   author    = {Rossi, Federico and Bandyopadhyay, Saptarshi and Wolf, Michael T. and Pavone, Marco},
   title     = {Multi-Agent Algorithms for Collective Behavior - A structural and application-focused atlas},
   year      = {2021},
-  abstract  = {The goal of this paper is to provide a survey and application-focused atlas of collective behavior coordination algorithms for multi-agent system, classified according to their underlying mathematical structure. 
+  abstract  = {The goal of this paper is to provide a survey and application-focused atlas of collective behavior coordination algorithms for multi-agent system, classified according to their underlying mathematical structure.
 
 We survey the general family of collective behavior algorithms for multi-agent systems and classify them according to their underlying mathematical structure. In doing so, we aim to capture fundamental mathematical properties of algorithms (e.g., scalability with respect to the number of agents and bandwidth use) and to show how the same algorithm or family of algorithms can be used for multiple tasks and applications.
 
@@ -3904,6 +3907,19 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp    = {2021-03-26},
 }
 
+@Inproceedings{DaiLandryEtAl2021,
+  author       = {Dai, H. and Landry, B. and Yang, L. and Pavone, M. and Tedrake, R.},
+  title        = {Lyapunov-Stable Neural-Network Control},
+  booktitle    = proc_RSS,
+  year         = {2021},
+  note         = {In Press},
+  abstract = {Deep learning has had a far reaching impact in robotics. Specifically, deep reinforcement learning algorithms have been highly effective in synthesizing neural-network controllers for a wide range of tasks. However, despite this empirical success, these controllers still lack theoretical guarantees on their performance, such as Lyapunov stability (i.e., all trajectories of the closed-loop system are guaranteed to converge to a goal state under the control policy). This is in stark contrast to traditional model based controller design, where principled approaches (like LQR) can synthesize stable controllers with provable guarantees. To address this gap, we propose a generic method to synthesize a Lyapunov-stable neural-network controller, together with a neural-network Lyapunov function to simultaneously certify its stability. Our approach formulates the Lyapunov condition verification as a mixed-integer linear program (MIP). Our MIP verifier either certifies the Lyapunov condition, or generates counter-examples that can help improve the candidate controller and the Lyapunov function. We also present an optimization program to compute an inner approximation of the region-of-attraction for the closed-loop system. We apply our approach to robots including an inverted pendulum, a 2D and a 3D quadrotor, and showcase that our neural-network controller outperforms a baseline LQR controller.},
+  address  = {Virtual},
+  month    = jul,
+  owner        = {blandry},
+  timestamp    = {2021-05-11},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year;note] opt[]}

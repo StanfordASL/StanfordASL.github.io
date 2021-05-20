@@ -129,6 +129,8 @@
                                 
                             
                                 
+                            
+                                
                                     
                                     <li class="page-scroll">
                                         <a href="/projects/">Projects</a>
@@ -169,19 +171,17 @@
                                 
                             
                                 
+                            
+                                
+                            
+                                
+                            
+                                
                                     
                                     <li class="page-scroll">
                                         <a href="/people/">People</a>
                                     </li>
                                     
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                            
                                 
                             
                                 
@@ -264,6 +264,33 @@
  
 
 
+<span class="entry" id="DaiLandryEtAl2021">H. Dai, B. Landry, L. Yang, M. Pavone, and R. Tedrake, <a class="entry-title" href="">“Lyapunov-Stable Neural-Network Control,”</a> in <i>Robotics: Science and Systems</i>, Virtual, 2021.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('DaiLandryEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DaiLandryEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_DaiLandryEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Deep learning has had a far reaching impact in robotics. Specifically, deep reinforcement learning algorithms have been highly effective in synthesizing neural-network controllers for a wide range of tasks. However, despite this empirical success, these controllers still lack theoretical guarantees on their performance, such as Lyapunov stability (i.e., all trajectories of the closed-loop system are guaranteed to converge to a goal state under the control policy). This is in stark contrast to traditional model based controller design, where principled approaches (like LQR) can synthesize stable controllers with provable guarantees. To address this gap, we propose a generic method to synthesize a Lyapunov-stable neural-network controller, together with a neural-network Lyapunov function to simultaneously certify its stability. Our approach formulates the Lyapunov condition verification as a mixed-integer linear program (MIP). Our MIP verifier either certifies the Lyapunov condition, or generates counter-examples that can help improve the candidate controller and the Lyapunov function. We also present an optimization program to compute an inner approximation of the region-of-attraction for the closed-loop system. We apply our approach to robots including an inverted pendulum, a 2D and a 3D quadrotor, and showcase that our neural-network controller outperforms a baseline LQR controller.</p>
+</span>
+<span id="bib_DaiLandryEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{DaiLandryEtAl2021,
+  author = {Dai, H. and Landry, B. and Yang, L. and Pavone, M. and Tedrake, R.},
+  title = {Lyapunov-Stable Neural-Network Control},
+  booktitle = {{Robotics: Science and Systems}},
+  year = {2021},
+  note = {In Press},
+  address = {Virtual},
+  month = jul,
+  owner = {blandry},
+  timestamp = {2021-05-11}
+}
+</pre>
+</span>
+<!-- <span id="key_DaiLandryEtAl2021" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="DaiLandryEtAl2020">H. Dai, B. Landry, M. Pavone, and R. Tedrake, <a class="entry-title" href="http://groups.csail.mit.edu/robotics-center/public_papers/Dai20.pdf">“Counter-Example Guided Synthesis of Neural Network Lyapunov Functions for Piecewise Linear Systems,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Jeju Island, Republic of Korea, 2020.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('DaiLandryEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DaiLandryEtAl2020','abstract')">Abstract</a>]</p>
 <span id="abs_DaiLandryEtAl2020" class="abstract noshow">
@@ -318,33 +345,6 @@
  
 
 
-<span class="entry" id="LorenzettiLandryEtAl2019">J. Lorenzetti, B. Landry, S. Singh, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1811.06590.pdf">“Reduced Order Model Predictive Control For Setpoint Tracking,”</a> in <i>European Control Conference</i>, Naples, Italy, 2019.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','abstract')">Abstract</a>]</p>
-<span id="abs_LorenzettiLandryEtAl2019" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.</p>
-</span>
-<span id="bib_LorenzettiLandryEtAl2019" class="bibtex noshow">
-	<pre>@inproceedings{LorenzettiLandryEtAl2019,
-  author = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
-  title = {Reduced Order Model Predictive Control For Setpoint Tracking},
-  booktitle = {{European Control Conference}},
-  year = {2019},
-  address = {Naples, Italy},
-  month = jun,
-  url = {https://arxiv.org/pdf/1811.06590.pdf},
-  owner = {jlorenze},
-  timestamp = {2019-04-26}
-}
-</pre>
-</span>
-<!-- <span id="key_LorenzettiLandryEtAl2019" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="LandryManchesterEtAl2019">B. Landry, Z. Manchester, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1902.03319.pdf">“A Differentiable Augmented Lagrangian Method for Bilevel Nonlinear Optimization,”</a> in <i>Robotics: Science and Systems</i>, Freiburg im Breisgau, Germany, 2019.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LandryManchesterEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LandryManchesterEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_LandryManchesterEtAl2019" class="abstract noshow">
@@ -365,6 +365,33 @@
 </pre>
 </span>
 <!-- <span id="key_LandryManchesterEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LorenzettiLandryEtAl2019">J. Lorenzetti, B. Landry, S. Singh, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1811.06590.pdf">“Reduced Order Model Predictive Control For Setpoint Tracking,”</a> in <i>European Control Conference</i>, Naples, Italy, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LorenzettiLandryEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_LorenzettiLandryEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Despite the success of model predictive control (MPC), its application to high-dimensional systems, such as flexible structures and coupled fluid/rigid-body systems, remains a largely open challenge due to excessive computational complexity. A promising solution approach is to leverage reduced order models for designing the model predictive controller. In this paper we present a reduced order MPC scheme that enables setpoint tracking while robustly guaranteeing constraint satisfaction for linear, discrete, time-invariant systems. Setpoint tracking is enabled by designing the MPC cost function to account for the steady-state error between the full and reduced order models. Robust constraint satisfaction is accomplished by solving (offline) a set of linear programs to provide bounds on the errors due to bounded disturbances, state estimation, and model approximation. The approach is validated on a synthetic system as well as a high-dimensional linear model of a flexible rod, obtained using finite element methods.</p>
+</span>
+<span id="bib_LorenzettiLandryEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{LorenzettiLandryEtAl2019,
+  author = {Lorenzetti, J. and Landry, B. and Singh, S. and Pavone, M.},
+  title = {Reduced Order Model Predictive Control For Setpoint Tracking},
+  booktitle = {{European Control Conference}},
+  year = {2019},
+  address = {Naples, Italy},
+  month = jun,
+  url = {https://arxiv.org/pdf/1811.06590.pdf},
+  owner = {jlorenze},
+  timestamp = {2019-04-26}
+}
+</pre>
+</span>
+<!-- <span id="key_LorenzettiLandryEtAl2019" >
 	<b>Keywords</b>:
 	
 </span> --></li>
