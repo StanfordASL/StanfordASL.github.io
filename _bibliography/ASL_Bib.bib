@@ -3487,7 +3487,7 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   timestamp    = {2020-01-09},
 }
 
-@Inproceedings{LewBonalliECC2020,
+@Inproceedings{LewBonalliEtAl2020,
   author       = {Lew, T. and Bonalli, R. and Pavone, M.},
   title        = {Chance-Constrained Sequential Convex Programming for Robust Trajectory Optimization},
   booktitle    = proc_EUCA_ECC,
@@ -3496,7 +3496,6 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   address  = {St. Petersburg, Russia},
   month    = may,
   url      = {/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf},
-  keywords     = {press},
   owner        = {lew},
   timestamp    = {2020-03-16},
 }
@@ -3623,14 +3622,12 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Soft Robot Optimal Control Via Reduced Order Finite Element Models},
   booktitle    = proc_IEEE_ICRA,
   year         = {2021},
-  note         = {In Press},
   abstract = {Finite element methods have been successfully used to develop physics-based models of soft robots that capture the nonlinear dynamic behavior induced by continuous deformation. These high-fidelity models are therefore ideal for designing controllers for complex dynamic tasks such as trajectory optimization and trajectory tracking. However, finite element models are also typically very high-dimensional, which makes real-time control challenging. In this work we propose an approach for finite element model-based control of soft robots that leverages model order reduction techniques to significantly increase computational efficiency. In particular, a constrained optimal control problem is formulated based on a nonlinear reduced order finite element model and is solved via sequential convex programming. This approach is demonstrated through simulation of a cable-driven soft robot for a constrained trajectory tracking task, where a 9768-dimensional finite element model is used for controller design.},
   address  = {Xi'an, China},
   month    = may,
   url      = {https://arxiv.org/abs/2011.02092},
-  keywords     = {press},
   owner        = {stonkens},
-  timestamp    = {2021-02-28},
+  timestamp    = {2021-06-10},
 }
 
 @Inproceedings{NakanoyaChinchaliEtAl2021,
@@ -3761,11 +3758,11 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
     booktitle    = proc_RSS,
     year         = {2021},
     note         = {In press},
+    keywords     = {press},
     abstract = {Real-time adaptation is imperative to the control of robots operating in complex, dynamic environments. Adaptive control laws can endow even nonlinear systems with good trajectory tracking performance, provided that any uncertain dynamics terms are linearly parameterizable with known nonlinear features. However, it is often difficult to specify such features a priori, such as for aerodynamic disturbances on rotorcraft or interaction forces between a manipulator arm and various objects. In this paper, we turn to data-driven modeling with neural networks to learn, offline from past data, an adaptive controller with an internal parametric model of these nonlinear features. Our key insight is that we can better prepare the controller for deployment with control-oriented meta-learning of features in closed-loop simulation, rather than regression-oriented meta-learning of features to fit input-output data. Specifically, we meta-learn the adaptive controller with closed-loop tracking simulation as the base-learner and the average tracking error as the meta-objective. With a nonlinear planar rotorcraft subject to wind, we demonstrate that our adaptive controller outperforms other controllers trained with regression-oriented meta-learning when deployed in closed-loop for trajectory tracking control.},
     address  = {Virtual},
     month    = jul,
     url      = {https://arxiv.org/pdf/2103.04490.pdf},
-    keywords     = {press},
     owner        = {spenrich},
     timestamp    = {2021-05-11},
 }
@@ -3773,14 +3770,15 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
 @Inproceedings{SharmaAzizanEtAl2021,
   author       = {Sharma, A. and Azizan, N. and Pavone, M.},
   title        = {Sketching Curvature for Efficient Out-of-Distribution Detection for Deep Neural Networks},
+  booktitle    = proc_UAI,
   year         = {2021},
-  note         = {Submitted},
+  note         = {In press},
   abstract = {In order to safely deploy Deep Neural Networks (DNNs) within the perception pipelines of real-time decision making systems, there is a need for safeguards that can detect out-of-training-distribution (OoD) inputs both efficiently and accurately. Building on recent work leveraging the local curvature of DNNs to reason about epistemic uncertainty, we propose Sketching Curvature of OoD Detection (SCOD), an architecture-agnostic framework for equipping any trained DNN with a task-relevant epistemic uncertainty estimate. Offline, given a trained model and its training data, SCOD employs tools from matrix sketching to tractably compute a low-rank approximation of the Fisher information matrix, which characterizes which directions in the weight space are most influential on the predictions over the training data. Online, we estimate uncertainty by measuring how much perturbations orthogonal to these directions can alter predictions at a new test input. We apply SCOD to pre-trained networks of varying architectures on several tasks, ranging from regression to classification. We demonstrate that SCOD achieves comparable or better OoD detection performance with lower computational burden relative to existing baselines.},
-  month    = mar,
+  month    = jul,
   url      = {https://arxiv.org/abs/2102.12567},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {apoorva},
-  timestamp    = {2021-03-09},
+  timestamp    = {2021-05-24},
 }
 
 @Article{RossiBandyopadhyayEtAl2021,
@@ -3838,12 +3836,14 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 
 @Inproceedings{SinhaHarrisonEtAl2021,
   author       = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
-  title        = {Robust Adaptive Model Predictive Control with Matched and Unmatched Uncertainty},
+  title        = {Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty},
   year         = {2021},
   note         = {Submitted},
   keywords     = {sub},
-  owner        = {jh2},
-  timestamp    = {2021-03-23},
+  abstract = {We propose a learning-based robust predictive control algorithm that can handle large uncertainty in the dynamics for a class of discrete-time systems that are nominally linear with an additive nonlinear dynamics component. Such systems commonly model the nonlinear effects of an unknown environment on a nominal system. Motivated by an inability of existing learning-based predictive control algorithms to achieve safety guarantees in the presence of uncertainties of large magnitude in this setting, we achieve significant performance improvements by optimizing over a novel class of nonlinear feedback policies inspired by certainty equivalent ``estimate-and-cancel'' control laws pioneered in classical adaptive control. In contrast with previous work in robust adaptive MPC, this allows us to take advantage of the structure in the a priori unknown dynamics that are learned online through function approximation. Our approach also extends typical nonlinear adaptive control methods to systems with state and input constraints even when an additive uncertain function cannot directly be canceled from the dynamics. Moreover, our approach allows us to apply contemporary statistical estimation techniques to certify the safety of the system through persistent constraint satisfaction with high probability. We show that our method allows us to consider larger unknown terms in the dynamics than existing methods through simulated examples.},
+  url      = {https://arxiv.org/pdf/2104.08261.pdf},
+  owner        = {rhnsinha},
+  timestamp    = {2021-06-04},
 }
 
 @Inproceedings{WillesHarrisonEtAl2021,
@@ -3922,4 +3922,4 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 
 @Comment{jabref-meta: databaseType:bibtex;}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year;note] opt[]}
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
