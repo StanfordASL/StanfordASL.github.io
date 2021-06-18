@@ -240,7 +240,34 @@
  
 
 
-<span class="entry" id="BylardBonalliEtAl2021">A. Bylard, R. Bonalli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2101.01297">“Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021. (In Press)</span> 
+<span class="entry" id="MalyutaEtAl2021">D. Malyuta, T. P. Reynolds, M. Szmuk, T. Lew, R. Bonalli, M. Pavone, and B. Acikmese, <a class="entry-title" href="https://arxiv.org/abs/2106.09125">“Convex Optimization for Trajectory Generation,”</a> 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('MalyutaEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MalyutaEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_MalyutaEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Reliable and efficient trajectory generation methods are a fundamental need for autonomous dynamical systems of tomorrow. The goal of this article is to provide a comprehensive tutorial of three major convex optimization-based trajectory generation methods:  lossless convexification (LCvx), and two sequential convex programming algorithms known as SCvx and GuSTO. In this article, trajectory generation is the computation of a dynamically feasible state and control signal that satisfies a set of constraints while optimizing key mission objectives.  The trajectory generation problem is almost always nonconvex, which typically means that it is not readily amenable to efficient and reliable solution onboard an autonomous vehicle.  The three algorithms that we discuss use problem reformulation and a systematic algorithmic strategy to nonetheless solve nonconvex trajectory generation tasks through the use of a convex optimizer. The theoretical guarantees and computational speed offered by convex optimization have made the algorithms popular in both research and industry circles.  To date, the list of applications include rocket landing, spacecraft hypersonic reentry, spacecraft rendezvous and docking, aerial motion planning for fixed-wing and quadrotor vehicles, robot motion planning, and more.  Among these applications are high-profile rocket flights conducted by organizations like NASA, Masten Space Systems, SpaceX, and Blue Origin. This article aims to give the reader the tools and understanding necessary to work with each algorithm, and to know what each method can and cannot do. A publicly available source code repository supports the numerical examples provided at the end of this article. By the end of the article, the reader should be ready to use each method, to extend them, and to contribute to their many exciting modern applications.</p>
+</span>
+<span id="bib_MalyutaEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{MalyutaEtAl2021,
+  author = {Malyuta, D. and Reynolds, T.~P. and Szmuk, M. and Lew, T. and Bonalli, R. and Pavone, M. and Acikmese, B.},
+  title = {Convex Optimization for Trajectory Generation},
+  year = {2021},
+  note = {Submitted},
+  month = jun,
+  url = {https://arxiv.org/abs/2106.09125},
+  keywords = {sub},
+  owner = {lewt},
+  timestamp = {2021-06-18}
+}
+</pre>
+</span>
+<!-- <span id="key_MalyutaEtAl2021" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="BylardBonalliEtAl2021">A. Bylard, R. Bonalli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2101.01297">“Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Xi’an, China, 2021.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('BylardBonalliEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BylardBonalliEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_BylardBonalliEtAl2021" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Despite decades of work in fast reactive planning and control, challenges remain in developing reactive motion policies on non-Euclidean manifolds and enforcing constraints while avoiding undesirable potential function local minima. This work presents a principled method for designing and fusing desired robot task behaviors into a stable robot motion policy, leveraging the geometric structure of non-Euclidean manifolds, which are prevalent in robot configuration and task spaces. Our Pullback Bundle Dynamical Systems (PBDS) framework drives desired task behaviors and prioritizes tasks using separate position-dependent and position/velocity-dependent Riemannian metrics, respectively, thus simplifying individual task design and modular composition of tasks. For enforcing constraints, we provide a class of metric-based tasks, eliminating local minima by imposing non-conflicting potential functions only for goal region attraction. We also provide a geometric optimization problem for combining tasks inspired by Riemannian Motion Policies (RMPs) that reduces to a simple least-squares problem, and we show that our approach is geometrically well-defined. We demonstrate the PBDS framework on the sphere S2 and at 300-500 Hz on a manipulator arm, and we provide task design guidance and an open-source Julia library implementation. Overall, this work presents a fast, easy-to-use framework for generating motion policies without unwanted potential function local minima on general manifolds.</p>
@@ -251,11 +278,9 @@
   title = {Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2021},
-  note = {In Press},
   address = {Xi'an, China},
-  month = may,
+  month = {#may#},
   url = {https://arxiv.org/abs/2101.01297},
-  keywords = {press},
   owner = {bylard},
   timestamp = {2021-03-23}
 }
@@ -263,34 +288,7 @@
 </span>
 <!-- <span id="key_BylardBonalliEtAl2021" >
 	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="ChapmanBonalliEtAlTAC2021">M. P. Chapman, R. Bonalli, K. M. Smith, I. Yang, M. Pavone, and C. J. Tomlin, <a class="entry-title" href="https://arxiv.org/abs/2101.12086">“Risk-sensitive safety analysis using Conditional Value-at-Risk,”</a> <i>IEEE Transactions on Automatic Control</i>, 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ChapmanBonalliEtAlTAC2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChapmanBonalliEtAlTAC2021','abstract')">Abstract</a>]</p>
-<span id="abs_ChapmanBonalliEtAlTAC2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
-</span>
-<span id="bib_ChapmanBonalliEtAlTAC2021" class="bibtex noshow">
-	<pre>@article{ChapmanBonalliEtAlTAC2021,
-  author = {Chapman, M. P. and Bonalli, R. and Smith, K. M. and Yang, I. and Pavone, M. and Tomlin, C. J.},
-  title = {Risk-sensitive safety analysis using Conditional Value-at-Risk},
-  journal = {{IEEE Transactions on Automatic Control}},
-  year = {2021},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {bonalli},
-  timestamp = {2021-03-23},
-  url = {https://arxiv.org/abs/2101.12086}
-}
-</pre>
-</span>
-<!-- <span id="key_ChapmanBonalliEtAlTAC2021" >
-	<b>Keywords</b>:
-	sub
+	
 </span> --></li>
 <li>
  
@@ -343,6 +341,33 @@
 </pre>
 </span>
 <!-- <span id="key_BonalliLewSICON2021" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ChapmanBonalliEtAlTAC2021">M. P. Chapman, R. Bonalli, K. M. Smith, I. Yang, M. Pavone, and C. J. Tomlin, <a class="entry-title" href="https://arxiv.org/abs/2101.12086">“Risk-sensitive safety analysis using Conditional Value-at-Risk,”</a> <i>IEEE Transactions on Automatic Control</i>, 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChapmanBonalliEtAlTAC2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChapmanBonalliEtAlTAC2021','abstract')">Abstract</a>]</p>
+<span id="abs_ChapmanBonalliEtAlTAC2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
+</span>
+<span id="bib_ChapmanBonalliEtAlTAC2021" class="bibtex noshow">
+	<pre>@article{ChapmanBonalliEtAlTAC2021,
+  author = {Chapman, M. P. and Bonalli, R. and Smith, K. M. and Yang, I. and Pavone, M. and Tomlin, C. J.},
+  title = {Risk-sensitive safety analysis using Conditional Value-at-Risk},
+  journal = {{IEEE Transactions on Automatic Control}},
+  year = {2021},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {bonalli},
+  timestamp = {2021-03-23},
+  url = {https://arxiv.org/abs/2101.12086}
+}
+</pre>
+</span>
+<!-- <span id="key_ChapmanBonalliEtAlTAC2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
