@@ -354,25 +354,52 @@
  
 
 
-<span class="entry" id="SoloveyJansonETAL2020">K. Solovey, L. Janson, E. Schmerling, E. Frazzoli, and M. Pavone, <a class="entry-title" href="https://ieeexplore.ieee.org/document/9196553">“Revisiting the Asymptotic Optimality of RRT*,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SoloveyJansonETAL2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SoloveyJansonETAL2020','abstract')">Abstract</a>]</p>
-<span id="abs_SoloveyJansonETAL2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> RRT* is one of the most widely used sampling-based algorithms for asymptotically-optimal motion planning. This algorithm laid the foundations for optimality in motion planning as a whole, and inspired the development of numerous new algorithms in the field, many of which build upon RRT* itself. In this paper, we first identify a logical gap in the optimality proof of RRT*, which was developed in Karaman and Frazzoli (2011). Then, we present an alternative and mathematically-rigorous proof for asymptotic optimality. Our proof suggests that the connection radius used by RRT* should be increased from γ(\frac\log nn)^1/d to γ’ (\frac\log nn)^1/(d+1) in order to account for the additional dimension of time that dictates the samples’ ordering. Here gamma, γ’ are constants, and n, d are the number of samples and the dimension of the problem, respectively.</p>
+<span class="entry" id="JalotaEtAl2022">D. Jalota, K. Solovey, K. Gopalakrishnan, S. Zoepf, H. Balakrishnan, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2106.10407">“When Efficiency meets Equity in Congestion Pricing and Revenue Refunding Schemes,”</a> in <i>ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization</i>, 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JalotaEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JalotaEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_JalotaEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Congestion pricing has long been hailed as a means to mitigate traffic congestion; however, its practical adoption has been limited due to the resulting social inequity issue, e.g., low-income users are priced out off certain roads. This issue has spurred interest in the design of equitable mechanisms that aim to refund the collected toll revenues as lump-sum transfers to users. Although revenue refunding has been extensively studied for over three decades, there has been no thorough characterization of how such schemes can be designed to simultaneously achieve system efficiency and equity objectives. In this work, we bridge this gap through the study of congestion pricing and revenue refunding (CPRR) schemes in non-atomic congestion games. We first develop CPRR schemes, which in comparison to the untolled case, simultaneously (i) increase system efficiency and (ii) decrease wealth inequality, while being (iii) user-favorable: irrespective of their initial wealth or values-of-time (which may differ across users) users would experience a lower travel cost after the implementation of the proposed scheme. We then characterize the set of optimal user-favorable CPRR schemes that simultaneously maximize system efficiency and minimize wealth inequality. These results assume a well-studied behavior model of users minimizing a linear function of their travel times and tolls, without considering refunds. We also study a more complex behavior model wherein users are influenced by and react to the amount of refund that they receive. Although, in general, the two models can result in different outcomes in terms of system efficiency and wealth inequality, we establish that those outcomes coincide when the aforementioned optimal CPRR scheme is implemented. Overall, our work demonstrates that through appropriate refunding policies we can achieve system efficiency while reducing wealth inequality.</p>
 </span>
-<span id="bib_SoloveyJansonETAL2020" class="bibtex noshow">
-	<pre>@inproceedings{SoloveyJansonETAL2020,
-  author = {Solovey, K. and Janson, L. and Schmerling, E. and Frazzoli, E. and Pavone, M.},
-  title = {Revisiting the Asymptotic Optimality of RRT*},
+<span id="bib_JalotaEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{JalotaEtAl2022,
+  author = {Jalota, D. and Solovey, K. and Gopalakrishnan, K. and Zoepf, S. and Balakrishnan, H. and Pavone, M.},
+  title = {When Efficiency meets Equity in Congestion Pricing and Revenue Refunding Schemes},
+  booktitle = {ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization},
+  year = {2021},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {devanshjalota},
+  timestamp = {2021-06-22},
+  url = {https://arxiv.org/abs/2106.10407}
+}
+</pre>
+</span>
+<!-- <span id="key_JalotaEtAl2022" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="TsaoSoloveyETAL2020">M. Tsao, K. Solovey, and M. Pavone, <a class="entry-title" href="https://ieeexplore.ieee.org/document/9196917">“Sample Complexity of Probabilistic Roadmaps via Epsilon-nets,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('TsaoSoloveyETAL2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TsaoSoloveyETAL2020','abstract')">Abstract</a>]</p>
+<span id="abs_TsaoSoloveyETAL2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We study fundamental theoretical aspects of probabilistic roadmaps (PRM) in the finite time (non-asymptotic) regime. In particular, we investigate how completeness and optimality guarantees of the approach are influenced by the underlying deterministic sampling distribution \mathcalX and connection radius r>0. We develop the notion of (δ,ε)-completeness of the parameters \mathcalX,r, which indicates that for every motion-planning problem of clearance at least δ>0, PRM using \mathcalX,r returns a solution no longer than 1+εtimes the shortest δ-clear path. Leveraging the concept of ε-nets, we characterize in terms of lower and upper bounds the number of samples needed to guarantee (δ,ε)-completeness. This is in contrast with previous work which mostly considered the asymptotic regime in which the number of samples tends to infinity. In practice, we propose a sampling distribution inspired by ε-nets that achieves nearly the same coverage as grids while using significantly fewer samples.</p>
+</span>
+<span id="bib_TsaoSoloveyETAL2020" class="bibtex noshow">
+	<pre>@inproceedings{TsaoSoloveyETAL2020,
+  author = {Tsao, M. and Solovey, K. and Pavone, M.},
+  title = {Sample Complexity of Probabilistic Roadmaps via Epsilon-nets},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2020},
   address = {Paris, France},
   month = may,
-  url = {https://ieeexplore.ieee.org/document/9196553},
+  url = {https://ieeexplore.ieee.org/document/9196917},
   timestamp = {2020-02-25}
 }
 </pre>
 </span>
-<!-- <span id="key_SoloveyJansonETAL2020" >
+<!-- <span id="key_TsaoSoloveyETAL2020" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -407,6 +434,32 @@
  
 
 
+<span class="entry" id="SoloveyJansonETAL2020">K. Solovey, L. Janson, E. Schmerling, E. Frazzoli, and M. Pavone, <a class="entry-title" href="https://ieeexplore.ieee.org/document/9196553">“Revisiting the Asymptotic Optimality of RRT*,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SoloveyJansonETAL2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SoloveyJansonETAL2020','abstract')">Abstract</a>]</p>
+<span id="abs_SoloveyJansonETAL2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> RRT* is one of the most widely used sampling-based algorithms for asymptotically-optimal motion planning. This algorithm laid the foundations for optimality in motion planning as a whole, and inspired the development of numerous new algorithms in the field, many of which build upon RRT* itself. In this paper, we first identify a logical gap in the optimality proof of RRT*, which was developed in Karaman and Frazzoli (2011). Then, we present an alternative and mathematically-rigorous proof for asymptotic optimality. Our proof suggests that the connection radius used by RRT* should be increased from γ(\frac\log nn)^1/d to γ’ (\frac\log nn)^1/(d+1) in order to account for the additional dimension of time that dictates the samples’ ordering. Here gamma, γ’ are constants, and n, d are the number of samples and the dimension of the problem, respectively.</p>
+</span>
+<span id="bib_SoloveyJansonETAL2020" class="bibtex noshow">
+	<pre>@inproceedings{SoloveyJansonETAL2020,
+  author = {Solovey, K. and Janson, L. and Schmerling, E. and Frazzoli, E. and Pavone, M.},
+  title = {Revisiting the Asymptotic Optimality of RRT*},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2020},
+  address = {Paris, France},
+  month = may,
+  url = {https://ieeexplore.ieee.org/document/9196553},
+  timestamp = {2020-02-25}
+}
+</pre>
+</span>
+<!-- <span id="key_SoloveyJansonETAL2020" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="BrownRossiEtAl20">R. A. Brown, F. Rossi, K. Solovey, M. T. Wolf, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Brown.Rossi.ea.ECC20.pdf">“Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('BrownRossiEtAl20','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownRossiEtAl20','abstract')">Abstract</a>]</p>
 <span id="abs_BrownRossiEtAl20" class="abstract noshow">
@@ -427,32 +480,6 @@
 </pre>
 </span>
 <!-- <span id="key_BrownRossiEtAl20" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="TsaoSoloveyETAL2020">M. Tsao, K. Solovey, and M. Pavone, <a class="entry-title" href="https://ieeexplore.ieee.org/document/9196917">“Sample Complexity of Probabilistic Roadmaps via Epsilon-nets,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, Paris, France, 2020.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('TsaoSoloveyETAL2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TsaoSoloveyETAL2020','abstract')">Abstract</a>]</p>
-<span id="abs_TsaoSoloveyETAL2020" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We study fundamental theoretical aspects of probabilistic roadmaps (PRM) in the finite time (non-asymptotic) regime. In particular, we investigate how completeness and optimality guarantees of the approach are influenced by the underlying deterministic sampling distribution \mathcalX and connection radius r>0. We develop the notion of (δ,ε)-completeness of the parameters \mathcalX,r, which indicates that for every motion-planning problem of clearance at least δ>0, PRM using \mathcalX,r returns a solution no longer than 1+εtimes the shortest δ-clear path. Leveraging the concept of ε-nets, we characterize in terms of lower and upper bounds the number of samples needed to guarantee (δ,ε)-completeness. This is in contrast with previous work which mostly considered the asymptotic regime in which the number of samples tends to infinity. In practice, we propose a sampling distribution inspired by ε-nets that achieves nearly the same coverage as grids while using significantly fewer samples.</p>
-</span>
-<span id="bib_TsaoSoloveyETAL2020" class="bibtex noshow">
-	<pre>@inproceedings{TsaoSoloveyETAL2020,
-  author = {Tsao, M. and Solovey, K. and Pavone, M.},
-  title = {Sample Complexity of Probabilistic Roadmaps via Epsilon-nets},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2020},
-  address = {Paris, France},
-  month = may,
-  url = {https://ieeexplore.ieee.org/document/9196917},
-  timestamp = {2020-02-25}
-}
-</pre>
-</span>
-<!-- <span id="key_TsaoSoloveyETAL2020" >
 	<b>Keywords</b>:
 	
 </span> --></li>
