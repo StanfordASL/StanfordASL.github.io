@@ -966,8 +966,8 @@
   url      = {https://arxiv.org/abs/2106.14827},
   owner        = {borisi},
   timestamp    = {2021-06-29},
-  note         = {In Press},
-  keywords     = {press},
+  note         = {Submitted},
+  keywords     = {sub},
 }
 
 @Article{JansonIchterEtAl2015,
@@ -3866,15 +3866,14 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp    = {2021-03-23},
 }
 
-@Inproceedings{GammelliYangEtAl2021,
+@InProceedings{GammelliYangEtAl2021,
   author       = {Gammelli, D. and Yang, K. and Harrison, J. and Rodrigues, F. and Pereira, F. C. and Pavone, M.},
   title        = {Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems},
   year         = {2021},
   note         = {Submitted},
-  keywords     = {sub},
-  abstract = {Autonomous mobility-on-demand (AMoD) systems represent a rapidly developing mode of transportation wherein travel requests are dynamically handled by a coordinated fleet of robotic, self-driving vehicles. Given a graph representation of the transportation network - one where, for example, nodes represent areas of the city, and edges the connectivity between them - we argue that the AMoD control problem is naturally cast as a node-wise decision-making problem. In this paper, we propose a deep reinforcement learning framework to control the rebalancing of AMoD systems through graph neural networks. Crucially, we demonstrate that graph neural networks enable reinforcement learning agents to recover behavior policies that are significantly more transferable, generalizable, and scalable than policies learned through other approaches. Empirically, we show how the learned policies exhibit promising zero-shot transfer capabilities when faced with critical portability tasks such as inter-city generalization, service area expansion, and adaptation to potentially complex urban topologies.
-}, 
+  abstract = {Autonomous mobility-on-demand (AMoD) systems represent a rapidly developing mode of transportation wherein travel requests are dynamically handled by a coordinated fleet of robotic, self-driving vehicles. Given a graph representation of the transportation network - one where, for example, nodes represent areas of the city, and edges the connectivity between them - we argue that the AMoD control problem is naturally cast as a node-wise decision-making problem. In this paper, we propose a deep reinforcement learning framework to control the rebalancing of AMoD systems through graph neural networks. Crucially, we demonstrate that graph neural networks enable reinforcement learning agents to recover behavior policies that are significantly more transferable, generalizable, and scalable than policies learned through other approaches. Empirically, we show how the learned policies exhibit promising zero-shot transfer capabilities when faced with critical portability tasks such as inter-city generalization, service area expansion, and adaptation to potentially complex urban topologies.},
   url      = {https://arxiv.org/abs/2104.11434},
+  keywords     = {sub},
   owner        = {jh2},
   timestamp    = {2021-03-23},
 }
@@ -3894,11 +3893,16 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp    = {2021-06-15},
 }
 
-
 @Article{TsaoEtAl2021,
-  author = {Marco Pavone and Amin Saberi and Maximilien Schiffer and Matthew Tsao},
-  title  = {Online Hypergraph Matching with Delays},
-  year   = {2021},
+  author       = {Marco Pavone and Amin Saberi and Maximilien Schiffer and Matthew Tsao},
+  title        = {Online Hypergraph Matching with Delays},
+  year         = {2021},
+  month        = aug,
+  note         = {Submitted},
+  abstract = {We study an online hypergraph matching problem inspired by ridesharing and delivery applications. The vertices of a hypergraph are revealed sequentially and must be matched within d timesteps of their reveal, otherwise they will leave the system in favor of an outside option. Hyperedges can contain at most k vertices and are revealed to the algorithm once all of its vertices have arrived, and can only be included into the matching before any of its vertices leave the system. We study utility maximization and cost minimization objectives in this model. In the utility maximization setting, we show that the optimal competitive ratio is 1/d whenever k >= 3, and is achievable in polynomial-time for any fixed k. For the cost minimization setting, we assume costs are monotone, which is a natural assumption in ridesharing and delivery problems. When k = 2, we show that the optimal competitive ratio for deterministic algorithms is \frac{3}{2} and is achieved by a polynomial-time thresholding algorithm. When k>2, we show that a polynomial-time randomized batching algorithm is (2 - 1/d)log k-competitive, and it is NP-hard to achieve a competitive ratio better than $\log k - O (\log \log k)$.},
+  comment      = {This manuscript was first submitted to Operations Research on 01-27-2021. The first round of revision was submitted on 08-10-2021.},
+  owner        = {mwtsao},
+  timestamp    = {2021-08-10},
 }
 
 @inproceedings{SalzmannPavoneEtAl2021,
@@ -4004,16 +4008,27 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 
 @Article{LeungArechigaEtAl2021,
   author       = {Leung, K. and Ar\'{e}chiga, N. and Pavone, M.},
-  title        = {Back-propagation through signal temporal logic specifications: Infusing logical structure into gradient-based methods},
+  title        = {Backpropagation through signal temporal logic specifications: Infusing logical structure into gradient-based methods},
   journal      = jrn_SAGE_IJRR,
   year         = {2021},
   note         = {Submitted},
   abstract = {This paper presents a technique, named STLCG, to compute the quantitative semantics of Signal Temporal Logic (STL) formulas using computation graphs. STLCG provides a platform which enables the incorporation of logical specifications into robotics problems that benefit from gradient-based solutions. Specifically, STL is a powerful and expressive formal language that can specify spatial and temporal properties of signals generated by both continuous and hybrid systems. The quantitative semantics of STL provide a robustness metric, i.e., how much a signal satisfies or violates an STL specification. In this work, we devise a systematic methodology for translating STL robustness formulas into computation graphs. With this representation, and by leveraging off-the-shelf automatic differentiation tools, we are able to efficiently backpropagate through STL robustness formulas and hence enable a natural and easy-to-use integration of STL specifications with many gradient-based approaches used in robotics. Through a number of examples stemming from various robotics applications, we demonstrate that STLCG is versatile, computationally efficient, and capable of incorporating human-domain knowledge into the problem formulation.},
   keywords     = {sub},
   owner        = {karenl7},
-  timestamp    = {2021-07-12},
+  timestamp    = {2021-07-13},
+}
+
+@Article{CauligiCulbertsonEtAl2021,
+  author       = {Cauligi, A. and Culbertson, P. and Schmerling, E. and Schwager, M. and Stellato, B. and Pavone, M.},
+  title        = {{CoCo}: Online Mixed-Integer Control via Supervised Learning},
+  journal      = jrn_IEEE_RAL,
+  year         = {2021},
+  note         = {Submitted},
+  abstract = {Many robotics problems, from robot motion planning to object manipulation, can be modeled as mixed-integer convex programs (MICPs). However, state-of-the-art algorithms are still unable to solve MICPs for control problems quickly enough for online use and existing heuristics can typically only find suboptimal solutions that might degrade robot performance. In this work, we turn to data-driven methods and present the Combinatorial Offline, Convex Online (CoCo) algorithm for quickly finding high quality solutions for MICPs. CoCo consists of a two-stage approach. In the offline phase, we train a neural network classifier that maps the problem parameters to a (logical strategy), which we define as the discrete arguments and relaxed big-M constraints associated with the optimal solution for that problem. Online, the classifier is applied to select a candidate logical strategy given new problem parameters; applying this logical strategy allows us to solve the original MICP as a convex optimization problem. We show through numerical experiments how CoCo finds near optimal solutions to MICPs arising in robot planning and control with 1 to 2 orders of magnitude solution speedup compared to other data-driven approaches and solvers.},
+  url      = {http://arxiv.org/abs/2107.08143},
+  keywords     = {sub},
+  owner        = {acauligi},
+  timestamp    = {2021-07-20},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
-
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
