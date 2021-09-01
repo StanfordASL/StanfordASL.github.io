@@ -3335,13 +3335,16 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   author       = {Brown, R. A. and Rossi, F. and Solovey, K. and Tsao, M. and Wolf, M. T. and Pavone, M.},
   title        = {On Local Computation for Network-Structured Convex Optimization in Multi-Agent Systems},
   journal      = jrn_IEEE_TCNS,
-  year         = {2020},
+  volume       = {8},
+  number       = {2},
+  pages        = {542-554},
+  year         = {2021},
   note         = {In Press},
   abstract = {A number of prototypical optimization problems in multi-agent systems (e.g., task allocation and network load-sharing) exhibit a highly local structure: that is, each agent's decision variables are only directly coupled to few other agent's variables through the objective function or the constraints. In this paper, we develop a rigorous notion of "locality" that quantifies the degree to which agents can compute their portion of the global solution of such a distributed optimization problem based solely on information in their local neighborhood. We build upon the results of Rebeschini and Tatikonda (2019) to develop a more general theory of locality that fully captures the importance of problem data to individual solution components, as opposed to a theory that only captures response to perturbations. This analysis provides a theoretical basis for a rather simple algorithm in which agents individually solve a truncated sub-problem of the global problem, where the size of the sub-problem used depends on the locality of the problem, and the desired accuracy. Numerical results show that the proposed theoretical bounds are remarkably tight for well-conditioned problems.},
   url      = {/wp-content/papercite-data/pdf/Brown.Rossi.ea.TCNS20.pdf},
   keywords     = {press},
   owner        = {rabrown1},
-  timestamp    = {2021-01-13},
+  timestamp    = {2021-08-31},
 }
 
 @Inproceedings{ZardiniEtAl2020,
@@ -3895,13 +3898,14 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 }
 
 @Article{TsaoEtAl2021,
-  author       = {Marco Pavone and Amin Saberi and Maximilien Schiffer and Matthew Tsao},
+  author       = {Marco Pavone and Amin Saberi and Maximilian Schiffer and Matthew Tsao},
   title        = {Online Hypergraph Matching with Delays},
   year         = {2021},
   month        = aug,
   note         = {Submitted},
   abstract = {We study an online hypergraph matching problem inspired by ridesharing and delivery applications. The vertices of a hypergraph are revealed sequentially and must be matched within d timesteps of their reveal, otherwise they will leave the system in favor of an outside option. Hyperedges can contain at most k vertices and are revealed to the algorithm once all of its vertices have arrived, and can only be included into the matching before any of its vertices leave the system. We study utility maximization and cost minimization objectives in this model. In the utility maximization setting, we show that the optimal competitive ratio is 1/d whenever k >= 3, and is achievable in polynomial-time for any fixed k. For the cost minimization setting, we assume costs are monotone, which is a natural assumption in ridesharing and delivery problems. When k = 2, we show that the optimal competitive ratio for deterministic algorithms is \frac{3}{2} and is achieved by a polynomial-time thresholding algorithm. When k>2, we show that a polynomial-time randomized batching algorithm is (2 - 1/d)log k-competitive, and it is NP-hard to achieve a competitive ratio better than $\log k - O (\log \log k)$.},
   comment      = {This manuscript was first submitted to Operations Research on 01-27-2021. The first round of revision was submitted on 08-10-2021.},
+  keywords     = {sub},
   owner        = {mwtsao},
   timestamp    = {2021-08-10},
 }
@@ -4059,6 +4063,14 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp    = {2021-08-23},
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
+@Article{TsaoYangZoepfPavone2021,
+  author       = {Matthew Tsao, Kaidi Yang, Stephen Zoepf, Marco Pavone},
+  title        = {Trust but Verify: Cryptographic Data Privacy for Mobility Management},
+  year         = {2021},
+  note         = {Submitted},
+  abstract = {The era of Big Data has brought with it a richer understanding of user behavior through massive data sets, which can help organizations optimize the quality of their services. In the context of transportation research, mobility data can provide Municipal Authorities (MA) with insights on how to operate, regulate, or improve the transportation network. Mobility data, however, may contain sensitive information about end users and trade secrets of Mobility Providers (MP). Due to this data privacy concern, MPs may be reluctant to contribute their datasets to MA. Using ideas from cryptography, we propose an interactive protocol between a MA and a MP in which MA obtains insights from mobility data without MP having to reveal its trade secrets or sensitive data of its users. This is accomplished in two steps: a commitment step, and a computation step. In the first step, Merkle commitments and aggregated traffic measurements are used to generate a cryptographic commitment. In the second step, MP extracts insights from the data and sends them to MA. Using the commitment and zero-knowledge proofs, MA can certify that the information received from MP is accurate, without needing to directly inspect the mobility data. We also present a differentially private version of the protocol that is suitable for the large query regime. The protocol is verifiable for both MA and MP in the sense that dishonesty from one party can be detected by the other. The protocol can be readily extended to the more general setting with multiple MPs via secure multi-party computation.},
+  keywords     = {sub},
+  url          = {https://arxiv.org/abs/2104.07768},
+}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
+@Comment{jabref-meta: databaseType:bibtex;}
