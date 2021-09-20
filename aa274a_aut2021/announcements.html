@@ -1,14 +1,14 @@
 ---
 title: Announcements
-permalink: /aa274a/announcements.html
-group: "aa274a_navigation"
+permalink: /aa274a_aut2021/announcements.html
+group: "aa274a_aut2021_navigation"
 order: 4
 ---
 <!DOCTYPE html>
 <html>
-{% include aa274a_head.html %}
+{% include aa274a_aut2021_head.html %}
 <body id="page-top" class="index">
-  {% include aa274a_navbar.html %}
+  {% include aa274a_aut2021_navbar.html %}
   <header>
     <div class="container">
       <div class="row">
@@ -17,7 +17,7 @@ order: 4
           <p>Announcements related to the course, homeworks, projects, logistics, etc will be posted here. Please check this page regularly for the latest announcements.</p>
         </div>
       </div>
-      {% assign sorted_anncmts = (site.aa274a | where:'md_group', "announcements" | sort: 'date') | reverse %}
+      {% assign sorted_anncmts = (site.aa274a_aut2021 | where:'md_group', "announcements" | sort: 'date') | reverse %}
       {% for anncmt in sorted_anncmts %}
       <hr />
       <div class="row">
