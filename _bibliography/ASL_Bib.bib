@@ -4073,4 +4073,68 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   url          = {https://arxiv.org/abs/2104.07768},
 }
 
+@Article{ZhaoLakshmananEtAl2022,
+  author       = {Zhao, P. and Lakshmanan, A. and Ackerman, K. and Gahlawat, A. and Pavone, M. and Hovakimyan, N.},
+  title        = {Tube-Certified Trajectory Tracking for Nonlinear Systems With Robust Control Contraction Metrics},
+  journal      = jrn_IEEE_RAL,
+  year         = {2022},
+  note         = {Submitted},
+  abstract = {This paper presents an approach to guaranteed trajectory tracking for nonlinear control-affine systems subject to external disturbances based on robust control contraction metrics (CCM) that aim to minimize the L-infinity gain from the disturbances to the deviation of actual variables of interests from their nominal counterparts. The guarantee is in the form of invariant tubes, computed offline, around any nominal trajectories in which the actual states and inputs of the system are guaranteed to stay despite disturbances. Under mild assumptions, we prove that the proposed robust CCM (RCCM) approach yields tighter tubes than an existing approach based on CCM and input-to-state stability analysis. We show how the RCCM-based tracking controller together with tubes can be incorporated into a feedback motion planning framework to plan safe-guaranteed trajectories for robotic systems. Simulation results for a planar quadrotor illustrate the effectiveness of the proposed method and also empirically demonstrate significantly reduced conservatism compared to the CCM-based approach.},
+  url      = {https://arxiv.org/abs/2109.04453},
+  keywords     = {sub},
+  owner        = {borisi},
+  timestamp    = {2021-09-19},
+}
+
+@Article{ChenMillerEtAl2021,
+  author       = {Chen, T. G. and Miller, B. and Winston, C. and Schneider, S. and Bylard, A. and Pavone, M. and Cutkosky, M. R.},
+  title        = {ReachBot: A Small Robot with Exceptional Reach for Rough Terrain},
+  journal      = jrn_IEEE_RAL,
+  year         = {2022},
+  note         = {Submitted},
+  abstract = {ReachBot is a new concept for planetary exploration, consisting of a small body and long, lightweight extending arms loaded primarily in tension. The arms are equipped with spined grippers for anchoring on rock surfaces. The design and testing of a planar prototype is presented here. Experiments with rock grasping and coordinated locomotion illustrate the advantages of low inertia passive grippers, triggered by impact and using stored mechanical energy for the internal force. Gripper design involves a trade-off among the range of possible grasp angles, maximum grasp force, required triggering force, and required reset force. The current prototype can pull with up to 8 N when gripping volcanic rock, limited only by the strength of the 3D printed components. Calculations predict a maximum pull of 26 N for the same spines and stronger materials.},
+  url      = {/wp-content/papercite-data/pdf/Chen.Miller.ea.RAL22.pdf},
+  keywords     = {sub},
+  owner        = {bylard},
+  timestamp    = {2021-09-19},
+}
+
+@Article{Wollenstein-BetechSalazarEtAl2022,
+  author    = {Wollenstein-Betech, S. and Salazar, M. and Houshmand, A. and Pavone, M. and Paschalidis, I. C. and Cassandras, C. G.},
+  title     = {Routing and Rebalancing Intermodal Autonomous Mobility-on-Demand Systems in Mixed Traffic},
+  journal   = jrn_IEEE_RAL,
+  year      = {2022},
+  note      = {Submitted},
+  url   = {https://drive.google.com/file/d/1ywtYsLluQ78UBl1bMW2prqioBrQ6fo0p/view},
+  keywords  = {sub},
+  owner     = {borisi},
+  timestamp = {2021-09-19},
+}
+
+@Inproceedings{IvanovicLinEtAl2022,
+  author       = {Ivanovic, B. and Lin, Y. and Shrivastava, S. and Chakravarty, P. and Pavone, M.},
+  title        = {Propagating State Uncertainty Through Trajectory Forecasting},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2022},
+  note         = {Submitted},
+  abstract = {Uncertainty pervades through the modern robotic autonomy stack, with nearly every component (e.g., sensors, detection, classification, tracking, behavior prediction) producing continuous or discrete probabilistic distributions. Trajectory forecasting, in particular, is surrounded by uncertainty as its inputs are produced by (noisy) upstream perception and its outputs are predictions that are often probabilistic for use in downstream planning. However, most trajectory forecasting methods do not account for upstream uncertainty, instead taking only the most-likely values. As a result, perceptual uncertainties are not propagated through forecasting and predictions are frequently overconfident. To address this, we present a novel method for incorporating perceptual state uncertainty in trajectory forecasting, a key component of which is a new statistical distance-based loss function which encourages predicting uncertainties that better match upstream perception. We evaluate our approach both in illustrative simulations and on large-scale, real-world data, demonstrating its efficacy in propagating perceptual state uncertainty through prediction and producing more calibrated predictions.},
+  keywords     = {sub},
+  owner        = {borisi},
+  timestamp    = {2021-09-19},
+}
+
+@Inproceedings{LuoZhaoEtAl2022,
+  author       = {Luo, R. and Zhao, S. and Kuck, J. and Ivanovic, B. and Savarese, S. and Schmerling, E. and Pavone, M.},
+  title        = {Sample-Efficient Safety Assurances using Conformal Prediction},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2022},
+  note         = {Submitted},
+  abstract = {When deploying machine learning models in high-stakes robotics applications, the ability to detect unsafe situations is crucial. Early warning systems can provide alerts when an unsafe situation is imminent (in the absence of corrective action). To reliably improve safety, these warning systems should have a provable false negative rate; i.e., of the situations than are unsafe, fewer than epsilon will occur without an alert. In this work, we present a framework that combines a statistical inference technique known as conformal prediction with a simulator of robot/environment dynamics, in order to tune warning systems to provably achieve an epsilon false negative rate using as few as 1/epsilon data points. We apply our framework to a driver warning system and a robotic grasping application, and empirically demonstrate guaranteed false negative rate and low false detection (positive) rate using very little data.},
+  keywords     = {sub},
+  owner        = {rsluo},
+  timestamp    = {2021-09-20},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year;note] opt[]}

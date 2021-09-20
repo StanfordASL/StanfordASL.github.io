@@ -1,3 +1,10 @@
+desc "Pull latest changes"
+task :pull do
+  puts "\n## Pulling the latest changes"
+  status = system("git pull")
+  puts status ? "Success" : "Failed"
+end
+
 desc "Build _site/ for production"
 task :build do
   puts "\n## Building Jekyll to _site/"
@@ -39,5 +46,5 @@ task :deploy do
 end
 
 desc "Commit and deploy _site/"
-task :publish => [:build, :commit, :deploy] do
+task :publish => [:pull, :build, :commit, :deploy] do
 end
