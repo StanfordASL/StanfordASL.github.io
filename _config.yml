@@ -62,15 +62,6 @@ collections:
   # gallery:
   #   output: true
   #   permalink: /:collection/:title/
-  # Principal of Robot Autonomy I (redirect)
-  PoRA-I:
-    output: false
-    permalink: /:collection/:title/
-  # AA203 (redirect)
-  aa203:
-    output: false
-    permalink: /:collection/:title/
-  # itsc2019
   itsc2019:
     output: false
     permalink: /:collection/:title/
