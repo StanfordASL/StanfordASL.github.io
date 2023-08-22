@@ -1,0 +1,49 @@
+<!-- Footer -->
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div> -->
+
+<!-- Made with (L) by Federico in October 2017
+CSS: Bootstrap (without the JS)
+http://getbootstrap.com/
+Bloated, but so convenient.
+Plus, it's probably already in your browser cache (hence the CDN).
+If you want the Jekyll project for your own website,
+feel free to drop me a line!
+-F
+-->
+
+<!-- <hr class="footer-line"/> -->
+<script type="text/javascript">
+function footerAlign() {
+  $('footer').css('display', 'block');
+  $('footer').css('height', 'auto');
+  var footerHeight = $('footer').outerHeight();
+  $('body').css('padding-bottom', footerHeight);
+  $('footer').css('height', footerHeight);
+}
+
+
+$(document).ready(function(){
+  footerAlign();
+});
+
+$( window ).resize(function() {
+  footerAlign();
+});
+</script>
+
+<footer class="footer">
+<div id="social-icons">
+  <a href="https://twitter.com/stanfordasl" target="_blank"><img src="{{site.baseurl}}/img/ASL_twitter.png" alt=""></a>
+  <a href="https://www.instagram.com/stanfordasl" target="_blank"><img src="{{site.baseurl}}/img/ASL_instagram.png" alt=""></a>
+  <a href="https://github.com/StanfordASL" target="_blank"><img src="{{site.baseurl}}/img/ASL_github.png" alt=""></a>
+</div>
+<div class="copyright-text">
+  © Autonomous Systems Lab 2021. All rights reserved.
+</div>
+</footer>

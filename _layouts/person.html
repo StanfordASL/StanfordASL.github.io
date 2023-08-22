@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+{% include relBase.html %}
+  <body id="page-top" class="index">
+    {% include navbar.html %}
+    <header>
+      <div class="container">
+        <div class="row" style="margin-top: 40px;">
+  	      <div class="col-md-5" style="margin-bottom: 20px;">
+  	        {% if page.img %}  <img src="{{ relBase }}img/people/{{ page.img }}" alt="{{ page.title }}" class="img-responsive">{% endif %}
+
+            {% if page.position != "externalresearchaffiliate" %}
+            <h3>Contacts:</h3>
+
+            {% if page.email %}
+            <div>
+              <strong>Email:</strong> {{page.email | replace: "@", " <i>at</i> " | replace: ".", " <i>dot</i> "}}
+            </div>
+            {% endif %}
+
+            {% if page.phone %}
+            <div>
+              <strong>Phone:</strong> {{page.phone}}
+            </div>
+            {% endif %}
+
+            {% endif %}
+
+            <div style="margin-top:10px;">
+              {% if page.website %}
+              <span style="margin-right:10px;">
+                <a href="{{page.website}}" target="_blank" title="Personal Webpage">
+                  <i class="fa fa-home fa-2x" style="color:black;"></i>
+                </a>
+              </span>
+              {% endif %}
+
+              {% if page.github %}
+              <span style="margin-right:10px;">
+                <a href="https://github.com/{{page.github}}" target="_blank" title="Github">
+                  <i class="fa fa-github fa-2x" style="color:black;"></i>
+                </a>
+              </span>
+              {% endif %}
+
+              {% if page.linkedin %}
+              <span style="margin-right:10px;">
+                <a href="https://www.linkedin.com/in/{{page.linkedin}}" target="_blank" title="LinkedIn">
+                  <i class="fa fa-linkedin-square fa-2x" style="color:black;"></i>
+                </a>
+              </span>
+              {% endif %}
+
+              {% if page.gscholar %}
+              <span style="margin-right:10px;">
+                <a href="https://scholar.google.com/citations?user={{page.gscholar}}" target="_blank" title="Google Scholar">
+                  <i class="fa fa-graduation-cap fa-2x" style="color:black;"></i>
+                </a>
+              </span>
+              {% endif %}
+
+              {% if page.twitter %}
+              <span style="margin-right:10px;">
+                <a href="https://twitter.com/{{page.twitter}}" target="_blank" title="Twitter">
+                  <i class="fa fa-twitter fa-2x" style="color:black;"></i>
+                </a>
+              </span>
+              {% endif %}
+            </div>
+  		    </div>
+    		  <div class="col-md-7">
+            <h2 style="margin-top: 0px;">{{ page.title }}</h2>
+    		    <hr>
+            {{ page.content }}
+            <br>
+            {% if page.current %}
+              <i>Currently at {{page.current}}</i>
+            {% endif %}
+    		  </div>
+  		</div>
+      <div class="row">
+        <div class="col-md-12">
+        {% if page.position != "faculty" and page.position != "externalresearchaffiliate" %}
+          <h2 style="margin-top: 0px;">ASL Publications</h2>
+          {% if page.altlast.size > 0 %}
+            {% assign first_initial = page.title | slice: 0 %}
+            {% assign person_name = page.last | append: ". " | append: first_initial %}
+            {% assign person_name_alt = page.altlast | append: ". " | append: first_initial %}
+            {% bibliography -q @*[author ~= {{ person_name }} || author ~= {{ person_name_alt }}] %}
+          {% else %}
+            {% assign first_initial = page.title | slice: 0 %}
+            {% assign person_name = page.last | append: ". " | append: first_initial %}
+            {% bibliography -q @*[author ~= {{ person_name }}] %}
+          {% endif %}
+        {% endif %}
+        </div>
+      </div>
+	  </div>
+    </header>
+    {% include javascript.html %}
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,18 @@
+---
+---
+{% assign anchor_title = '<a class="entry-title" href="'| append: entry.url | append: '">“' | append: entry.title | append: ',”</a>' %}
+{% capture entry_status %}{%if entry.keywords contains "sub"%} (Submitted){%endif%}{%if entry.keywords contains "press"%} (In Press){%endif%}{%if entry.keywords contains "prep"%} (In Preparation){%endif%}</span>{% endcapture %} 
+
+{% assign original_title = '“' | append: entry.title | append: ',”' %}
+{{ reference | replace: original_title, anchor_title | replace: '</span class="entry">', entry_status}} 
+<p class="infolinks">[<a href="javascript:toggleInfo('{{key}}','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('{{key}}','abstract')">Abstract</a>]</p>
+<span id="abs_{{key}}" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> {{entry.abstract}}</p>
+</span>
+<span id="bib_{{key}}" class="bibtex noshow">
+	<pre>{{ entry.bibtex }}</pre>
+</span>
+<!-- <span id="key_{{key}}" >
+	<b>Keywords</b>:
+	{{ entry.keywords }}
+</span> -->

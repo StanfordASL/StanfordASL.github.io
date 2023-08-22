@@ -1,0 +1,60 @@
+<ol type="1">
+<li>obtain access to the VisualSVN administrative console (GUI)</li>
+</ol>
+<ul>
+<li>there’s Windows Remote Desktop access</li>
+<li>Remmina Remote Desktop Client works well for from-Linux
+connections</li>
+<li>Server: segovia.stanford.edu Username: your Stanford username
+Password: your Stanford password</li>
+</ul>
+<ol start="2" type="1">
+<li><p>obtain access to a linux machine</p></li>
+<li><p>on the linux machine, follow steps from</p></li>
+</ol>
+<ul>
+<li><p>https://uit.stanford.edu/service/ssl/selfsigned</p></li>
+<li><p>when last checked (2022), they were:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="ex">$</span> head /dev/urandom <span class="op">&gt;</span> /dev/null</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">$</span> openssl genrsa <span class="at">-rand</span> /dev/urandom <span class="at">-out</span> segovia.key 2048</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="ex">$</span> openssl req <span class="at">-new</span> <span class="at">-x509</span> <span class="at">-days</span> 3652 <span class="at">-key</span> segovia.key <span class="at">-out</span> segovia.pem</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">FILL</span> IN the prompts, add <span class="kw">`</span>segovia.stanford.edu<span class="kw">`</span> <span class="ex">under</span> <span class="kw">`</span>Common Name<span class="kw">`</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> openssl x509 <span class="at">-x509toreq</span> <span class="at">-in</span> segovia.pem <span class="at">-out</span> segovia.csr <span class="at">-signkey</span> segovia.key</span></code></pre></div></li>
+<li><p>you should now have 3 files: <code>segovia.csr</code>,
+<code>segovia.key</code>, <code>segovia.pem</code></p></li>
+</ul>
+<ol start="4" type="1">
+<li>upload the <code>segovia.csr</code> file to</li>
+</ol>
+<ul>
+<li>https://uit.stanford.edu/service/ssl/selfsigned</li>
+<li>you might need to create a general Stanford IT ticket to ask to be
+made admin of segovia.stanford.edu</li>
+<li>wait for a certificate signing email (about 10 min when I did
+it)</li>
+</ul>
+<ol start="5" type="1">
+<li>download the first link from the certificate signing email</li>
+</ol>
+<ul>
+<li>this should be a <code>*.cer</code> file</li>
+</ul>
+<ol start="6" type="1">
+<li><p>concatenate the downloaded <code>*.cer</code> file and
+<code>segovia.pem</code> in a text editor</p></li>
+<li><p>copy the concatenated file to the segovia windows machine (e.g.,
+clipboard)</p></li>
+<li><p>in VisualSVN console (GUI) go to</p></li>
+</ol>
+<ul>
+<li>https://www.visualsvn.com/support/topic/00134/</li>
+<li><code>Actions</code> | <code>Properties</code></li>
+<li><code>Certificate</code> tab, then
+<code>Change Certificate</code></li>
+<li><code>Import signed certificate with the private key</code></li>
+<li>choose the concatenate certificate and private key file</li>
+<li>if VisualSVN accepts the key, click <code>Apply</code>, DONE</li>
+</ul>

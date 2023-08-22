@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+{% include relBase.html %}
+  <body id="page-top" class="index">
+    {% include navbar.html %}
+    <header>
+      <div class="blue-stripe">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="{{site.baseurl}}/img/projects/{{page.imgfolder}}/{{page.imgtop}}" alt="">
+              <p class="project-overtext"><span>{{ page.title }}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="project-question">
+              <h1 class="large-title">Research Question</h1>
+              <br>
+              <p class="project-question-text">{{ page.question }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blue-stripe">
+        <div class="container">
+          <div class="row" style="margin-top: 30px; margin-bottom: 60px;">
+            <div class="col-md-12 white-text" style="text-align: justify;">
+              <h2 class="white-text">Summary</h2>
+              {{ page.blurb }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="{{site.baseurl}}/img/projects/{{page.imgfolder}}/{{page.img1}}" alt="" style="margin: auto;">
+          </div>
+        </div>
+      </div>
+      <div class="blue-stripe">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12 white-text" style="margin-top: 40px;">
+              <h1 id='title' class="white-text">Research Team</h1>
+              {{ page.people | replace: ", ","<br/>" }}
+            </div>
+            <div class="col-md-6 col-xs-12" style="padding-left: 0px;">
+              <img src="{{site.baseurl}}/img/projects/{{page.imgfolder}}/{{page.img2}}" alt="" style="margin: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="margin-top: 40px;">
+          <div class="col-md-12">
+            <h4 class="bibliography">Related Works</h4>
+            {{ page.content }}
+          </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-md-12">
+            <a href="/projects/">< Back to Projects</a>
+          </div>
+        </div>
+	    </div>
+    </header>
+    {% include javascript.html %}
+    {% include footer.html %}
+  </body>
+</html>

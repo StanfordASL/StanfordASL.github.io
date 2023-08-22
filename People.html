@@ -1,0 +1,194 @@
+---
+title: People
+permalink: /people/
+group: "navigation"
+order: 4
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  {% include relBase.html %}
+  <body id="page-top" class="index">
+    {% include navbar.html %}
+      <header>
+      <div class="blue-stripe" style="height: 80px; margin-bottom: 40px;">
+        <div class="container">
+          <div class="row">
+      	    <div class="col-sm-12">
+              <h1 class="white-text"><b>Director</b></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+          <div class="row person-row">
+          {% assign sortedPeople = site.people | sort: 'last' %}
+          {% for person in sortedPeople %}{% if person.position == "faculty" %}
+            <div class="col-sm-4">
+              <a href={{person.url}}><img class="img-responsive" src="{{ relBase }}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}" ></a>
+            </div>
+            <div class="col-sm-8">
+              <h3 style="margin-top: 0px;"><a href={{person.url}}>{{ person.title }}</a></h3>
+              <hr class="person-sep">
+              <div class="person-excerpt">{{ person.content }}</div>
+            </div>
+          {% endif %}{% endfor %}
+        </div>
+      </div>
+
+        <div class="blue-stripe" style="height: 80px; margin-top: 20px; margin-bottom: 40px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="white-text"><b>Research Team</b></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        {% assign loopindex = 0 %}
+        {% for person in sortedPeople %}{% if person.position == "postdoc" or person.position == "phd" %}   
+          {% assign loopindex = loopindex | plus: 1 %}
+          {% assign rowfinder = loopindex | modulo: 4 %}
+          {% if rowfinder == 1 %}
+          <div class="row person-row">
+          {% endif %}
+            <div class="col-3 col-sm-3 col-md-3">
+              <a href={{person.url}}><img class="img-responsive img-resize" src="{{ relBase }}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}"></a>
+              <h6 class="person-name"><a href={{person.url}}>{{ person.title }}</a></h6>
+              {% if person.position == "postdoc" %}
+              <p class="person-position">Postdoctoral Scholar</p>
+              {% elsif person.position == "phd" %}
+              <p class="person-position">PhD Student</p>
+              {% endif %}
+              <hr class="person-sep">
+              <p class="person-excerpt">{{ person.excerpt }}</p>
+            </div>
+          {% if rowfinder == 0 %}
+          </div>
+          {% endif %}
+        {% endif %}{% endfor %}
+        {% if rowfinder != 0 %}
+          <!-- In case the last row has < 4 people. -->
+          </div>
+        {% endif %}
+        </div>
+
+        <div class="blue-stripe" style="height: 80px; margin-bottom: 40px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="white-text"><b>External Research Affiliates</b></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        {% assign loopindex = 0 %}
+        {% for person in sortedPeople %}{% if person.position == "externalresearchaffiliate" %}   
+          {% assign loopindex = loopindex | plus: 1 %}
+          {% assign rowfinder = loopindex | modulo: 4 %}
+          {% if rowfinder == 1 %}
+          <div class="row person-row">
+          {% endif %}
+            <div class="col-3 col-sm-3 col-md-3">
+              <a href={{person.url}}><img class="img-responsive img-resize alumni-img" src="{{ relBase }}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}"></a>
+              <h6 class="person-name"><a href={{person.url}}>{{ person.title }}</a></h6>
+              <hr class="person-sep">
+              <p class="person-position">{{ person.current }}</p>
+              <!-- <p class="person-excerpt">{{ person.excerpt }}</p> -->
+            </div>
+          {% if rowfinder == 0 %}
+          </div>
+          {% endif %}
+        {% endif %}{% endfor %}
+        {% if rowfinder != 0 %}
+          <!-- In case the last row has < 4 people. -->
+          </div>
+        {% endif %}
+      </div>
+
+        <div class="blue-stripe" style="height: 80px; margin-bottom: 40px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="white-text"><b>Alumni</b></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        {% assign loopindex = 0 %}
+        {% for person in sortedPeople %}{% if person.position == "alumni" %}   
+          {% assign loopindex = loopindex | plus: 1 %}
+          {% assign rowfinder = loopindex | modulo: 4 %}
+          {% if rowfinder == 1 %}
+          <div class="row person-row">
+          {% endif %}
+            <div class="col-3 col-sm-3 col-md-3">
+              <a href={{person.url}}><img class="img-responsive img-resize alumni-img" src="{{ relBase }}{{person.imgurl}}{{ person.img}}" alt="{{ person.title }}"></a>
+              <h6 class="person-name"><a href={{person.url}}>{{ person.title }}</a></h6>
+              <hr class="person-sep">
+              <p class="person-position">{{ person.current }}</p>
+              <!-- <p class="person-excerpt">{{ person.excerpt }}</p> -->
+            </div>
+          {% if rowfinder == 0 %}
+          </div>
+          {% endif %}
+        {% endif %}{% endfor %}
+        {% if rowfinder != 0 %}
+          <!-- In case the last row has < 4 people. -->
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="blue-stripe" style="margin-bottom: 25px;">
+        <div class="container">
+          <div class="row" style="padding-bottom: 10.4px;">
+            <div class="col-sm-12">
+              <h1 class="white-text"><b>Visiting Faculty, Scholars, and Students</b></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            {% for person in sortedPeople %}{% if person.position == "visiting" %}
+              {{ person.content }}
+            {% endif %}{% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="blue-stripe" style="margin-top: 20px; margin-bottom: 40px;">
+        <div class="container">
+          <div class="row" style="padding-bottom: 10.4px;">
+            <div class="col-sm-12">
+              <h1 class="white-text"><b><a name="inclusivity" id="inclusivity">Statement of Diversity, Equity, and Inclusivity</a></b></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>As researchers and teachers, we in the Autonomous Systems Lab recognize the importance and value of having diversity in our research group and the value of having members from all walks of life. Both in our day-to-day activities and research itself, we seek to be inclusive and mindful of this diversity in the lab, the classroom, and in our interactions. Further, we acknowledge that educating ourselves on the matters of inclusivity and diversity is a life-long learning process that must be a part of our entire research and professional careers.
+
+To this end, the Autonomous Systems Lab is committed to fostering the following principles to maintain an inclusive and vibrant environment on a daily basis:
+<ul>
+<li>We affirm all people, regardless of their age, culture, race, ethnic origin, religion, sexual orientation, gender, gender identity, disabilities, marital status, nationality, and socioeconomic status.</li>
+<li>We strive to maintain an environment of mutual respect for every member of the lab and community and one that rejects discrimination, prejudice, and intolerance.</li>
+<li>We commit to continuously educating ourselves and seek to incorporate ideas of diversity and inclusivity to our daily conversations on the broader impacts of our research.</li>
+</ul>
+
+Finally, in order to ensure that we hold ourselves accountable and continue to uphold these principles beyond the current moment, we commit to holding meetings and events on a quarterly basis, dedicated to reflecting on the lab's diversity and culture and making changes as necessary. 
+</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    {% include javascript.html %}
+    {% include footer.html %}
+  </body>
+</html>

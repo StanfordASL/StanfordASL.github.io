@@ -1,0 +1,67 @@
+---
+title: Publications
+permalink: /publications/
+group: "navigation"
+order: 3
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+  <body id="page-top" class="index">
+  	{% include navbar.html %}
+  	<header>
+      <div class="blue-stripe" style="height: 80px; margin-bottom: 20px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="white-text"><b>Preprints</b></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          {% bibliography -q @*[keywords=sub] %}
+          </div>
+        </div>
+      </div>
+
+      <div class="blue-stripe" style="height: 80px; margin-bottom: 20px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="white-text"><b>Publications</b></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+      	  <div class="col-md-12">
+          {% bibliography -q @article[keywords!=sub],@inproceedings[keywords!=sub],@incollection,@techreport %}
+      	  </div>
+    	  </div>
+      </div>
+
+      <div class="blue-stripe" style="height: 80px; margin-bottom: 20px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="white-text"><b>Theses</b></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          {% bibliography -q @phdthesis %}
+          </div>
+        </div>
+      </div>
+    </header>
+    {% include javascript.html %}
+    {% include footer.html %}
+  </body>
+</html>

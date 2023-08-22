@@ -1,0 +1,112 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Autonomous Systems Laboratory
+email: stanford-asl@lists.stanford.edu
+description: > # this means to ignore newlines until "baseurl:"
+  The Autonomous Systems Lab (ASL) develops methodologies for the analysis, design, and control of autonomous systems, with a particular emphasis on large-scale robotic networks and autonomous aerospace vehicles. The lab combines expertise from control theory, robotics, optimization, and operations research to develop the theoretical foundations for networked autonomous systems operating in uncertain, rapidly-changing, and potentially adversarial environments.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://stanfordasl.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+canonical_url: "http://asl.stanford.edu" # the URL we use for canonical links.
+twitter_username: StanfordASL
+github_username:  StanfordASL
+
+# Build settings
+markdown: kramdown
+encoding: utf-8
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# See https://github.com/jekyll/minima/issues/709, can be removed when minima ships another release
+sass:
+  quiet_deps: true
+
+
+# This instructs Jekyll to also build what's inside the
+# AA 274 course website folder.
+include: ['ITSC2019']
+
+
+collections:
+  slides:
+  # press:
+  faqs:
+    output: true
+    permalink: /:collection/:title/
+  projects:
+    output: true
+    permalink: /:collection/:title/
+  people:
+    output: true
+    permalink: /:collection/:title/
+  # press:
+  #   output: true
+  #   permalink: /:collection/:title/
+  # gallery:
+  #   output: true
+  #   permalink: /:collection/:title/
+  # AA 274 file locations.
+  aa274a:
+    output: false
+    permalink: /:collection/:title/
+  # AA 203 file locations.
+  aa203:
+    output: false
+    permalink: /:collection/:title/
+  itsc2019:
+    output: false
+    permalink: /:collection/:title/
+
+
+defaults:
+  - scope:
+      path: ""
+      type: people
+    values:
+      imgurl: /img/people/
+  - scope:
+      path: ""
+      type: projects
+    values:
+      imgurl: /img/projects/
+  - scope:
+      path: ""
+      type: slides
+    values:
+      imgurl: /img/slides/
+  # - scope:
+  #     path: ""
+  #     type: press
+  #   values:
+  #     imgurl: /img/press/
+
+
+scholar:
+  style: ieee-asl
+  source: ./_bibliography
+  bibliography: ASL_Bib.bib
+  sort_by: year, month
+  order: descending, descending
+  group_by: none
+  #type_order: [article,inproceedings,techreport,thesis]
+  type_aliases: {Incollection: techreport}
+  bibliography_template: bib
+  reference_tagname: span class="entry"
+  bibliography_group_tag: 'h3'

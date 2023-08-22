@@ -1,0 +1,73 @@
+---
+title: FAQ
+permalink: /faq/
+group: "navigation"
+order: 7
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body id="page-top" class="index">
+  {% include navbar.html %}
+  <header>
+    <div class="blue-stripe" style="margin-bottom: 20px;">
+      <div class="container">
+        <div class="row" style="padding-bottom: 10.4px;">
+          <div class="col-sm-12">
+            <h1 class="white-text"><b>Frequently Asked Questions (FAQs)</b></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>I get a large amount of email, and I try my best to respond to them all. However, before sending me a message, please check whether your inquiry may be addressed by one of the frequently-asked questions below.</p>
+        </div>
+      </div>
+    </div>
+    <div class="blue-stripe" style="margin-top: 20px;">
+      <div class="container">
+        <div class="row" style="padding-bottom: 10.4px;">
+          <div class="col-sm-12">
+            <h1 class="white-text"><b>Admitted Students</b></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      {% assign sorted = site.faqs | sort: 'order' %}
+      {% for faq in sorted %}{% if faq.type == "admitted" %}
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 class="faq-question">{{faq.question}}</h4>
+          <p>{{faq.content}}</p>
+        </div>
+      </div>
+      {% endif %}{% endfor %}
+    </div>
+    <div class="blue-stripe" style="margin-top: 20px;">
+      <div class="container">
+        <div class="row" style="padding-bottom: 10.4px;">
+          <div class="col-sm-12">
+            <h1 class="white-text"><b>Prospective Students</b></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      {% assign sorted = site.faqs | sort: 'order' %}
+      {% for faq in sorted %}{% if faq.type == "prospective" %}
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 class="faq-question">{{faq.question}}</h4>
+          <p>{{faq.content}}</p>
+        </div>
+      </div>
+      {% endif %}{% endfor %}
+    </div>
+  </header>
+  {% include javascript.html %}
+  {% include footer.html %}
+</body>
+</html>

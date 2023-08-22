@@ -1,0 +1,115 @@
+---
+title: Autonomous and Connected Transportation Systems - Modeling, Control, and Deployment
+permalink: /itsc2019/
+group: "itsc19_navigation"
+order: 1
+---
+<!DOCTYPE html>
+<html>
+{% include itsc19_head.html %}
+<body id="page-top" class="index">
+  
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>   </h4>
+          <h1>Autonomous and Connected Transportation Systems: Modeling, Control, and Deployment</h1>
+          <h4>ITSC 2019 Workshop</h4>
+          <p><b>Date and time:</b> 09:00-17:00, Sunday, October 27, 2019</p>
+          <p><b>Organizers:</b> <a href="http://asl.stanford.edu/people/mauro-salazar/">Mauro Salazar</a>, <a href="http://asl.stanford.edu/people/ramon-iglesias/">Ramon Iglesias</a>, <a href="https://cars.stanford.edu/people/stephen-zoepf">Stephen Zoepf</a>, <a href="http://web.stanford.edu/~pavone/">Marco Pavone</a></p>
+          <p><b>The workshop will start at 9 AM.</b></p>
+        </div>
+      </div>
+      <div class="row vertical-align">
+        <div class="col-xs-6"><img style="max-height: 50px;" src="/img/ASL_Logo.svg" class="pull-right"></div>
+        <div class="col-xs-6"><img style="max-height: 65px;" src="/img/itsc2019/carslogo.png" class="pull-left"></div>
+      </div>
+      <div class="row text-center">
+        <img id="aa274-banner-image" src="/img/itsc2019/banner/workshop_banner.svg">
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Overview</h3>
+          <p>Public debate about the future of mobility and transportation is increasingly informed by predictions about the impact of Autonomous Vehicles (AVs). As AVs are approaching market-readiness, it becomes more critical that we answer questions about them:
+            <ul>
+              <li/>How can we design profitable and sustainable mobility systems that leverage AVs?
+              <li/>What will these new forms of mobility and transportation mean for society?
+              <li/>How can we ensure that such technologies benefit all members of society, improving equity rather than undermining it?
+            </ul>
+          This workshop will gather experts from transportation, operations research, robotics, and urban planning in order to:
+          <ol>
+            <li/>identify challenges and opportunities for the future of transportation that are triggered by the advent of AVs,
+            <li/>identify modeling and control methodologies to address them,
+            <li/>share insights from early deployments and turn such insights into an actionable research roadmap.
+          </ol>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Schedule</h3>
+          <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg .tg-vnl4{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-2g2i{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:center;vertical-align:top}
+          </style>
+          <table class="tg">
+            <tr>
+              <th class="tg-2g2i">Speaker</th>
+              <th class="tg-vnl4">Time</th>
+              <th class="tg-vnl4">Title</th>
+              <th class="tg-vnl4">Abstract</th>
+            </tr>
+            {% assign talks = site.itsc2019 | where:'md_group', "itsc19_talks" | sort: 'start_date' %}
+              {% for talk in talks %}
+              <tr>
+                <td class="tg-vnl4">
+                    {{talk.speaker}}
+                </td>
+                <td class="tg-vnl4">
+                    {{talk.start_date | date: "%R"}} - {{talk.end_date | date: "%R"}}
+                </td>
+                <td class="tg-vnl4">
+                    {% if talk.pdf_url %}
+                      <a href="{{talk.pdf_url}}">{{talk.title}}</a>
+                    {% else %}
+                      {{talk.title}}
+                    {% endif %}
+                </td>
+                <td class="tg-vnl4">
+                    {{talk.content}}
+                </td>
+              </tr>
+              {% endfor %}
+          </table>
+          <p><b>Update:</b> Michal Čáp and Salomon Wollenstein-Betech had to cancel last-minute due to unforeseen circumstances.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Speakers</h3>
+          <table class="aa274_people table table-borderless">
+            {% assign speakers = site.itsc2019 | where:'md_group', "itsc19_speakers"%}
+            {% for speaker in speakers %}
+            <tr>
+                <th class="col-md-3">
+                  <a href="{{ speaker.ext_link }}"><img class="itsc_headshot" src="/img/itsc2019/people/{{speaker.img}}"></a>
+                  <a href="{{ speaker.ext_link }}">{{ speaker.name }}</a>
+                </th>
+                <th class="col-md-9">
+                  <p>{{speaker.content}}</p>
+                </th>
+            </tr>
+            {% endfor %}
+          </table>
+        </div>
+      </div>
+    </div>
+  </header>
+  {% include javascript.html %}
+  {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,91 @@
+.aa274_name h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#aa274-banner-image {
+  display: inline-block;
+}
+
+.aa274_people {
+  width: 100%;
+  margin: 0px;
+}
+
+.aa274_people th {
+  padding: 0em;
+}
+
+.aa274_headshot {
+  width: 150px;
+  height: 150px;
+}
+
+.itsc_headshot {
+  width: 150px;
+  height: auto;
+}
+
+.aa274-homework-title {
+  margin-top: 0px;
+}
+
+.aa274-homework-posted-date {
+  color: grey;
+}
+
+.aa274-homework-due-date {
+  color: red;
+}
+
+#aa274-navbar-text {
+  margin-top: -13px;
+  margin-bottom: -20px;
+  text-align: center;
+  width: 54%;
+}
+
+p > a:link, p > a:active, p > a:focus {
+  color: #2864B7 !important;
+
+}
+p > a, p > a:hover {
+  color: #2864B7 !important;
+
+}
+
+td > a:link, td > a:active, td > a:focus {
+  color: #2864B7 !important;
+
+}
+td > a, td > a:hover {
+  color: #2864B7 !important;
+
+}
+
+/*.navbar-default .navbar-nav > li > a {
+  color: #222 !important;
+}
+.nav > li.active > a {
+  color: rgb(40, 100, 183) !important;
+}
+.nav > li.active > a:hover {
+  color: rgb(40, 100, 183) !important;
+}
+li > span >a:link, a:active, a:focus, .entry-title {
+  color: #337ab7 !important;
+}*/
+
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
