@@ -33,6 +33,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+plugins:
+  - jekyll-redirect-from
 
 # See https://github.com/jekyll/minima/issues/709, can be removed when minima ships another release
 sass:
@@ -63,6 +65,11 @@ collections:
   #   output: true
   #   permalink: /:collection/:title/
   itsc2019:
+    output: false
+    permalink: /:collection/:title/
+
+  # redirect to Principle of Robot Autonomy I sites
+  aa274a:
     output: false
     permalink: /:collection/:title/
 
