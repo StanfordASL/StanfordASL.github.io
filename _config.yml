@@ -69,9 +69,13 @@ collections:
     permalink: /:collection/:title/
 
   # redirect to Principle of Robot Autonomy I sites
+  aa174a:
+    output: false
+    permalink: /:collection/:title/
   aa274a:
     output: false
     permalink: /:collection/:title/
+
 
 
 defaults:
