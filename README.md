@@ -51,11 +51,9 @@ request. If you are unfamilier with the PR workflow, you can follow the steps be
     ```
     Note: modify the commit message to something related to your change
 
-4. Create a PR either from the Github project page or run the following command
-
-    ```sh
-    gh pr create -B main
-    ```
+4. Create a PR from the
+[Github project page](https://github.com/StanfordASL/StanfordASL.github.io/tree/alvin/ci)
+following the prompt on the top of the page.
 
 5. Go to the [PR page](https://github.com/StanfordASL/StanfordASL.github.io/pulls) and find your
 PR. Wait for a few minutes for the CI checks to pass (there will be a ✅ on the bottom of the PR
