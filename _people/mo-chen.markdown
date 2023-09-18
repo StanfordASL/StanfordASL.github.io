@@ -1,7 +1,7 @@
 ---
 layout: person
 title:  "Mo Chen"
-last:   " Chen"
+last:   "Chen"
 date:   2017-09-01 00:00:00 -0700
 position: alumni
 excerpt: "Robotic safety"
