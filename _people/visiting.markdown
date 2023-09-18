@@ -18,6 +18,7 @@ position: visiting
 <li><h6 class="visiting-name">Thomas Lew.</h6> <p class="visiting-excerpt">ETH Zürich. <i>Now an ASL PhD student.</i></p></li>
 <li><h6 class="visiting-name">Florian Mahlknecht.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Layla Martin.</h6> <p class="visiting-excerpt">Technical University of Munich.</p></li>
+<li><h6 class="visiting-name">Jonas Matt.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Dejan Milojevic.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Luca Paparusso.</h6> <p class="visiting-excerpt">Politecnico Di Milano.</p></li>
 <li><h6 class="visiting-name">Ernesto Poccia.</h6> <p class="visiting-excerpt">Scuola Superiore di Studi Universitari e di Perfezionamento Sant'Anna di Pisa.</p></li>
