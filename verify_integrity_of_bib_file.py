@@ -1,4 +1,4 @@
-"""This script checks if the _bibliography/ASL_Bib.bib is correctly formatted"""
+"""This script checks if the _bibliography/ASL_Bib.bib is correctly formatted."""
 
 from __future__ import annotations
 
