@@ -1,0 +1,22 @@
+name: Bib tex verification
+on:
+  pull_request:
+    branches: [ "main" ]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        python3 -m pip install bibtexparser==2.0.0b2
+    - name: Run the bib integrity verification script
+      run: |
+        python3 verify_integrity_of_bib_file.py
