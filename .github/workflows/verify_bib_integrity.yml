@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
-        python3 -m pip install bibtexparser
+        python3 -m pip install bibtexparser==2.0.0b2
     - name: Run the bib integrity verification script
       run: |
         python verify_integrity_of_bib_file.py
