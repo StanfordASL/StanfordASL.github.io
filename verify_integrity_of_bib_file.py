@@ -19,6 +19,7 @@ def check_for_parsing_errors(bib_filename: str | Path):
             print(block.raw)
             print("----------------------------------------------------")
         print(f"#############################################################################")
+        assert False, "Some entries have errors, I will not continue"
     return db
 
 
