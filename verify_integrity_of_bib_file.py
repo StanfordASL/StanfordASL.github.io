@@ -26,12 +26,11 @@ def check_for_deleted_entries(bib_filename: str | Path):
     """Check if the new proposed bib lacks any entries that are present in previous main branch.
     Fail if yes."""
     current_commit = check_output(["git", "rev-parse", "HEAD"]).strip().decode("utf-8")
-    main_diverge_branch = (
-        check_output(["git", "merge-base", "HEAD", "origin/main"]).strip().decode("utf-8")
-    )
+    main_branch = check_output(["git", "rev-parse", "origin/main"]).strip().decode("utf-8")
+    assert current_commit != main_branch
     db_new = check_for_parsing_errors(bib_filename)
     try:
-        check_call(["git", "checkout", main_diverge_branch])
+        check_call(["git", "checkout", main_branch])
         db_main = bib.parse_file(bib_filename)
         deleted_entries = set(e.key for e in db_main.entries) - set(e.key for e in db_new.entries)
         if len(deleted_entries) > 0:
