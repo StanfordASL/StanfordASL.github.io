@@ -7,6 +7,7 @@ position: visiting
 <li><h6 class="visiting-name">Nicoletta Bof.</h6> <p class="visiting-excerpt">University of Padova.</p></li>
 <li><h6 class="visiting-name">Felix Böwing.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Jan Carius.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
+<li><h6 class="visiting-name">Davide Celestini.</h6> <p class="visiting-excerpt">Politecnico di Torino.</p></li>
 <li><h6 class="visiting-name">Claudia Conte.</h6> <p class="visiting-excerpt">University of Naples Federico II.</p></li>
 <li><h6 class="visiting-name">Roman Engeler.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Javier V. Gómez.</h6> <p class="visiting-excerpt">Universidad Carlos III de Madrid.</p></li>
@@ -26,9 +27,10 @@ position: visiting
 <li><h6 class="visiting-name">Simon Romanski.</h6> <p class="visiting-excerpt">Karlsruhe Institute of Technology.</p></li>
 <li><h6 class="visiting-name">Tim Salzmann.</h6> <p class="visiting-excerpt">Technical University of Munich.</p></li>
 <li><h6 class="visiting-name">Simon Schaefer.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
+<li><h6 class="visiting-name">Benedikt Schesch.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Maximilian Schiffer (visiting professor).</h6> <p class="visiting-excerpt">Technical University of Munich.</p></li>
 <li><h6 class="visiting-name">Jan Schilliger.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
-<li><h6 class="visiting-name">Mauro Salazar Villalon.</h6> <p class="visiting-excerpt">ETH Zürich. <i>Now an ASL Postdoctoral Scholar.</i></p></li>
+<li><h6 class="visiting-name">Mauro Salazar Villalon.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Wolf Vollprecht.</h6> <p class="visiting-excerpt">ETH Zürich</p></li>
 <li><h6 class="visiting-name">Ji Hyun Yang (visiting professor).</h6> <p class="visiting-excerpt">Kookmin University.</p></li>
 <li><h6 class="visiting-name">Matteo Zallio.</h6> <p class="visiting-excerpt">Technological University Dublin.</p></li>
