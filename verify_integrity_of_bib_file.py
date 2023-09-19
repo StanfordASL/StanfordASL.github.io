@@ -3,12 +3,12 @@ from __future__ import annotations
 from pathlib import Path
 from subprocess import check_call, check_output
 
-from bibtexparser import parse_file
+import bibtexparser as bib
 
 
 def check_for_parsing_errors(bib_filename: str | Path):
     """Check whether there are any formatting errors in the bib file whatsoever, fail if yes."""
-    db = parse_file(bib_filename)
+    db = bib.parse_file(bib_filename)
     if len(db.failed_blocks) > 0:
         print(f"Error, bib file {bib_filename} failed to parse ##################################")
         for block in db.failed_blocks:
@@ -27,12 +27,12 @@ def check_for_deleted_entries(bib_filename: str | Path):
     Fail if yes."""
     current_commit = check_output(["git", "rev-parse", "HEAD"]).strip().decode("utf-8")
     main_diverge_branch = (
-        check_output(["git", "merge-base", "HEAD", "main"]).strip().decode("utf-8")
+        check_output(["git", "merge-base", "HEAD", "origin/main"]).strip().decode("utf-8")
     )
     db_new = check_for_parsing_errors(bib_filename)
     try:
         check_call(["git", "checkout", main_diverge_branch])
-        db_main = parse_file(bib_filename)
+        db_main = bib.parse_file(bib_filename)
         deleted_entries = set(e.key for e in db_main.entries) - set(e.key for e in db_new.entries)
         if len(deleted_entries) > 0:
             print(f"Error, the new bib file {bib_filename} deletes entries #######################")
