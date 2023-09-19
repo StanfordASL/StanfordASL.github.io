@@ -1,3 +1,5 @@
+"""This script checks if the _bibliography/ASL_Bib.bib is correctly formatted"""
+
 from __future__ import annotations
 
 from pathlib import Path
