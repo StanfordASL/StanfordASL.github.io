@@ -5,7 +5,7 @@ on:
 permissions:
   contents: read
 jobs:
-  build:
+  verify_bib:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the repo
