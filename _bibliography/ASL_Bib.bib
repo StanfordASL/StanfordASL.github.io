@@ -2137,6 +2137,30 @@
   url         = {https://solarsystem.nasa.gov/scitech/display.cfm?ST_ID=2547}
 }
 
+@inproceedings{PaparussoKousikEtAl2024,
+  title     = {{ZAPP!} Zonotope Agreement of Prediction and Planning for Continuous-Time Collision Avoidance with Discrete-Time Dynamics},
+  author    = {Paparusso, L. and Kousik, S. and Schmerling, E. and Braghin, F. and Pavone, M.},
+  abstract  = {The past few years have seen immense progress on two fronts that are critical to safe, widespread mobile robot deployment: predicting uncertain motion of multiple agents, and planning robot motion under uncertainty.  However, the numerical methods required on each front have resulted in a mismatch of representation for prediction and planning.  In prediction, numerical tractability is usually achieved by coarsely discretizing time, and by representing multimodal multi-agent interactions as distributions with infinite support.  On the other hand, safe planning typically requires very fine time discretization, paired with distributions with compact support, to reduce conservativeness and ensure numerical tractability.  The result is, when existing predictors are coupled with planning and control, one may often find unsafe motion plans.  This paper proposes ZAPP (Zonotope Agreement of Prediction and Planning) to resolve the representation mismatch.  ZAPP unites a prediction-friendly coarse time discretization and a planning-friendly zonotope uncertainty representation; the method also enables differentiating through a zonotope collision check, allowing one to integrate prediction and planning within a gradient-based optimization framework.  Numerical examples show how ZAPP can produce safer trajectories compared to baselines in interactive scenes.},
+  booktitle = proc_IEEE_ICRA,
+  owner     = {rdyro},
+  timestamp = {2023-09-28},
+  keywords  = {sub},
+  year      = {2024},
+  url       = {/wp-content/papercite-data/pdf/Paparusso.ea.ICRA24.pdf}
+}
+
+@inproceedings{BigazziEtAl2024,
+  title     = {Mapping High-level Semantic Regions in Indoor Environments without Object Recognition},
+  author    = {Bigazzi, R. and Baraldi, L. and Kousik, S. and Cucchiara, R. and Pavone, M.},
+  abstract  = {Robots require a semantic understanding of their surroundings to operate in an efficient and explainable way in human environments.  In the literature, there has been an extensive focus on object labeling and exhaustive scene graph generation; less effort has been focused on the task of purely identifying and mapping large semantic regions.  The present work proposes a method for semantic region mapping via embodied navigation in indoor environments, generating a high-level representation of the knowledge of the agent.  To enable region identification, the method uses a vision-to-language model to provide scene information for mapping.  By projecting egocentric scene understanding into the global frame, the proposed method generates a semantic map as a distribution over possible region labels at each location.  This mapping procedure is paired with a trained navigation policy to enable autonomous map generation.  The proposed method significantly outperforms a variety of baselines, including an object-based system and a pretrained scene classifier, in experiments in a photorealistic simulator.},
+  booktitle = proc_IEEE_ICRA,
+  owner     = {rdyro},
+  timestamp = {2023-09-28},
+  keywords  = {sub},
+  year      = {2024},
+  url       = {/wp-content/papercite-data/pdf/Bigazzi.ea.ICRA24.pdf}
+}
+
 @inproceedings{PavoneTreleavenEtAl2010,
   author    = {Pavone, M. and Treleaven, K. and Frazzoli, E.},
   title     = {Fundamental Performance Limits and Efficient Policies for {Transportation-On-Demand} Systems},
