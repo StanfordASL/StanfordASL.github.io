@@ -3913,6 +3913,30 @@
   timestamp = {2023-01-27}
 }
 
+@inproceedings{GuffantiGammelliEtAl2024,
+  author       = {Guffanti, T. and Gammelli, D. and D'Amico, S. and Pavone, M.},
+  title        = {Transformers for Trajectory Optimization with Application to Spacecraft Rendezvous},
+  booktitle    = proc_IEEE_AC,
+  year         = {2024},
+  abstract     = {Reliable and efficient trajectory optimization methods are a fundamental need for autonomous dynamical systems, effectively enabling applications including rocket landing, hypersonic reentry, spacecraft rendezvous, and docking. Within such safety-critical application areas, the complexity of the emerging trajectory optimization problems has motivated the application of AI-based techniques to enhance the performance of traditional approaches. However, current AI-based methods either attempt to fully replace traditional control algorithms, thus lacking constraint satisfaction guarantees and incurring in expensive simulation, or aim to solely imitate the behavior of traditional methods via supervised learning. To address these limitations, this paper proposes the Autonomous Rendezvous Transformer (ART) and assesses the capability of modern generative models to solve complex trajectory optimization problems, both from a forecasting and control standpoint. Specifically, this work assesses the capabilities of Transformers to (i) learn near-optimal policies from previously collected data, and (ii) warm-start a sequential optimizer for the solution of non-convex optimal control problems, thus guaranteeing hard constraint satisfaction. From a forecasting perspective, results highlight how ART outperforms other learning-based architectures at predicting known fuel-optimal trajectories. From a control perspective, empirical analyses show how policies learned through Transformers are able to generate near-optimal warmstarts, achieving trajectories that are (i) more fuel-efficient, (ii) obtained in fewer sequential optimizer iterations, and (iii) computed with an overall runtime comparable to benchmarks based on convex optimization.},
+  keywords     = {pub},
+  owner        = {gammelli},
+  timestamp    = {2023-11-15},
+  url         = {https://arxiv.org/abs/2310.13831}
+}
+
+@inproceedings{SinghalGammelliEtAl2024,
+  author       = {Singhal, A. and Gammelli, D. and Luke, J. and Gopalakrishnan, K. and Helmereich, D. and Pavone, M.},
+  title        = {Real-time Control of Electric Autonomous Mobility-on-Demand Systems via Graph Reinforcement Learning},
+  year         = {2024},
+  abstract     = {Operators of Electric Autonomous Mobility-on-Demand (E-AMoD) fleets need to make several real-time decisions such as matching available cars to ride requests, rebalancing idle cars to areas of high demand, and charging vehicles to ensure sufficient range. While this problem can be posed as a linear program that optimizes flows over a space-charge-time graph, the size of the resulting optimization problem does not allow for real-time implementation in realistic settings. In this work, we present the E-AMoD control problem through the lens of reinforcement learning and propose a graph network-based framework to achieve drastically improved scalability and superior performance over heuristics. Specifically, we adopt a bi-level formulation where we (1) leverage a graph network-based RL agent to specify a desired next state in the space-charge graph, and (2) solve more tractable linear programs to best achieve the desired state while ensuring feasibility. Experiments using real-world data from San Francisco and New York City show that our approach achieves up to 89% of the profits of the theoretically-optimal solution while achieving more than a 100x speedup in computational time. Furthermore, our approach outperforms the best domain-specific heuristics with comparable runtimes, with an increase in profits by up to 3x. Finally, we highlight promising zero-shot transfer capabilities of our learned policy on tasks such as inter-city generalization and service area expansion, thus showing the utility, scalability, and flexibility of our framework.},
+  keywords     = {sub},
+  note         = {Submitted},
+  owner        = {gammelli},
+  timestamp    = {2023-11-15},
+  url         = {https://arxiv.org/abs/2311.05780}
+}
+
 @incollection{FrazzoliPavone2014,
   author    = {Frazzoli, E. and Pavone, M.},
   title     = {Multi-Vehicle Routing},
