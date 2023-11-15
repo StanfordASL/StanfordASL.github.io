@@ -4007,6 +4007,19 @@
   url       = {/wp-content/papercite-data/pdf/Enders.Harrison.Pavone.Schiffer.L4DC23.pdf}
 }
 
+@article{ElhafsiSinhaEtAl2023,
+  author       = {Elhafsi, A. and Sinha, R. and Agia, C. and Schmerling, E. and Nesnas, I. A. D and Pavone, M.},
+  title        = {Semantic Anomaly Detection with Large Language Models},
+  journal      = jrn_Spr_AR,
+  year         = {2023},
+  asl_month    = oct,
+  asl_abstract = {As robots acquire increasingly sophisticated skills and see increasingly complex and varied environments, the threat of an edge case or anomalous failure is ever present. For example, Tesla cars have seen interesting failure modes ranging from autopilot disengagements due to inactive traffic lights carried by trucks to phantom braking caused by images of stop signs on roadside billboards. These system-level failures are not due to failures of any individual component of the autonomy stack but rather system-level deficiencies in semantic reasoning. Such edge cases, which we call semantic anomalies, are simple for a human to disentangle yet require insightful reasoning. To this end, we study the application of large language models (LLMs), endowed with broad contextual understanding and reasoning capabilities, to recognize such edge cases and introduce a monitoring framework for semantic anomaly detection in vision-based policies. Our experiments apply this framework to a finite state machine policy for autonomous driving and a learned policy for object manipulation. These experiments demonstrate that the LLM-based monitor can effectively identify semantic anomalies in a manner that shows agreement with human reasoning. Finally, we provide an extended discussion on the strengths and weaknesses of this approach and motivate a research outlook on how we can further use foundation models for semantic anomaly detection. Our project webpage can be found at https://sites.google.com/view/llm-anomaly-detection.},
+  asl_doi      = {10.1007/s10514-023-10132-6},
+  asl_url      = {https://doi.org/10.1007/s10514-023-10132-6},
+  owner        = {amine},
+  timestamp    = {2023-10-23},
+}
+
 @inproceedings{ElhafsiIvanovicEtAl2020,
   author    = {Elhafsi, A. and Ivanovic, B. and Janson, L. and Pavone, M.},
   title     = {Map-Predictive Motion Planning in Unknown Environments},
@@ -4920,16 +4933,16 @@
 }
 
 @article{LinAgiaEtAl2023,
-  author    = {Lin, K. and Agia, C. and Migimatsu, T. and Pavone, M. and Bohg, J.},
-  title     = {Text2Motion: From Natural Language Instructions to Feasible Plans},
-  journal   = jrn_Spr_AR,
-  year      = {2023},
-  note      = {Submitted},
-  abstract  = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82%, while prior state-of-the-art language-based planning methods only achieve 13%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
-  url       = {https://arxiv.org/abs/2303.12153},
-  keywords  = {sub},
-  owner     = {agia},
-  timestamp = {2023-05-18}
+  author       = {Lin, K. and Agia, C. and Migimatsu, T. and Pavone, M. and Bohg, J.},
+  title        = {Text2Motion: From Natural Language Instructions to Feasible Plans},
+  journal      = jrn_Spr_AR,
+  year         = {2023},
+  asl_month    = nov,
+  asl_abstract = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82%, while prior state-of-the-art language-based planning methods only achieve 13%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
+  asl_doi      = {10.1007/s10514-023-10131-7},
+  asl_url      = {https://doi.org/10.1007/s10514-023-10131-7},
+  owner        = {agia},
+  timestamp    = {2023-11-14},
 }
 
 @inproceedings{LewBonalliEtAl2023,
@@ -4942,18 +4955,6 @@
   owner     = {lew},
   timestamp = {2023-04-03},
   url       = {https://arxiv.org/abs/2303.17674}
-}
-
-@article{ElhafsiSinhaEtAl2023,
-  author    = {Elhafsi, A. and Sinha, R. and Agia, C. and Schmerling, E. and Nesnas, I. A. D and Pavone, M.},
-  title     = {Semantic Anomaly Detection with Large Language Models},
-  journal   = jrn_Spr_AR,
-  year      = {2023},
-  note      = {In Press},
-  abstract  = {As robots acquire increasingly sophisticated skills and see increasingly complex and varied environments, the threat of an edge case or anomalous failure is ever present. For example, Tesla cars have seen interesting failure modes ranging from autopilot disengagements due to inactive traffic lights carried by trucks to phantom braking caused by images of stop signs on roadside billboards. These system-level failures are not due to failures of any individual component of the autonomy stack but rather system-level deficiencies in semantic reasoning. Such edge cases, which we call semantic anomalies, are simple for a human to disentangle yet require insightful reasoning. To this end, we study the application of large language models (LLMs), endowed with broad contextual understanding and reasoning capabilities, to recognize such edge cases and introduce a monitoring framework for semantic anomaly detection in vision-based policies. Our experiments apply this framework to a finite state machine policy for autonomous driving and a learned policy for object manipulation. These experiments demonstrate that the LLM-based monitor can effectively identify semantic anomalies in a manner that shows agreement with human reasoning. Finally, we provide an extended discussion on the strengths and weaknesses of this approach and motivate a research outlook on how we can further use foundation models for semantic anomaly detection.},
-  url       = {https://arxiv.org/abs/2305.11307},
-  owner     = {amine},
-  timestamp = {2023-10-23}
 }
 
 @article{LewBonalliPavone2023,
