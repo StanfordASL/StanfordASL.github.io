@@ -1,6 +1,5 @@
 % Encoding: UTF-8
 
-
 @Preamble{"\newcommand{\noopsort}[1]{} " #
 "\newcommand{\printfirst}[2]{#1} " #
 "\newcommand{\singleletter}[1]{#1} " #
@@ -1476,6 +1475,29 @@
   url       = {/wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf}
 }
 
+@inproceedings{SinhaSharmaEtAl2022,
+  author    = {Sinha, R. and Sharma, S. and Banerjee, S. and Lew, T. and Luo, R. and Richards, S. M. and Sun, Y. and Schmerling, E. and Pavone, M.},
+  title     = {A System-Level View on Out-of-Distribution Data in Robotics},
+  year      = {2022},
+  keywords  = {sub},
+  abstract  = {When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of black-box learned components in the modern robot autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards trustworthy learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and its associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall system-level competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.},
+  url       = {https://arxiv.org/abs/2212.14020},
+  owner     = {rhnsinha},
+  timestamp = {2022-12-30}
+}
+
+@inproceedings{SinhaSchmerlingEtAl2023,
+  author    = {Sinha, R. and Schmerling, E. and Pavone, M.},
+  title     = {Closing the Loop on Runtime Monitors with Fallback-Safe MPC},
+  year      = {2023},
+  keywords  = {pub},
+  booktitle = proc_IEEE_CDC,
+  abstract  = {When we rely on deep-learned models for robotic perception, we must recognize that these models may behave unreliably on inputs dissimilar from the training data, compromising the closed-loop system's safety. This raises fundamental questions on how we can assess confidence in perception systems and to what extent we can take safety-preserving actions when external environmental changes degrade our perception model's performance. Therefore, we present a framework to certify the safety of a perception-enabled system deployed in novel contexts. To do so, we leverage robust model predictive control (MPC) to control the system using the perception estimates while maintaining the feasibility of a safety-preserving fallback plan that does not rely on the perception system. In addition, we calibrate a runtime monitor using recently proposed conformal prediction techniques to certifiably detect when the perception system degrades beyond the tolerance of the MPC controller, resulting in an end-to-end safety assurance. We show that this control framework and calibration technique allows us to certify the system's safety with orders of magnitudes fewer samples than required to retrain the perception network when we deploy in a novel context on a photo-realistic aircraft taxiing simulator. Furthermore, we illustrate the safety-preserving behavior of the MPC on simulated examples of a quadrotor.},
+  url       = {/wp-content/papercite-data/pdf/Sinha.Pavone.CDC23.pdf},
+  owner     = {rhnsinha},
+  timestamp = {2023-04-12}
+}
+
 
 @inproceedings{SinhaHarrisonEtAl2022,
   author    = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
@@ -1500,6 +1522,18 @@
   url       = {https://arxiv.org/abs/2212.01371},
   owner     = {rhnsinha},
   timestamp = {2023-01-30}
+}
+
+@InProceedings{SinghalGammelliEtAl2024,
+  author    = {Singhal, A. and Gammelli, D. and Luke, J. and Gopalakrishnan, K. and Helmreich, D. and Pavone, M.},
+  title     = {Real-time Control of Electric Autonomous Mobility-on-Demand Systems via Graph Reinforcement Learning},
+  year      = {2024},
+  note      = {Submitted},
+  abstract  = {Operators of Electric Autonomous Mobility-on-Demand (E-AMoD) fleets need to make several real-time decisions such as matching available cars to ride requests, rebalancing idle cars to areas of high demand, and charging vehicles to ensure sufficient range. While this problem can be posed as a linear program that optimizes flows over a space-charge-time graph, the size of the resulting optimization problem does not allow for real-time implementation in realistic settings. In this work, we present the E-AMoD control problem through the lens of reinforcement learning and propose a graph network-based framework to achieve drastically improved scalability and superior performance over heuristics. Specifically, we adopt a bi-level formulation where we (1) leverage a graph network-based RL agent to specify a desired next state in the space-charge graph, and (2) solve more tractable linear programs to best achieve the desired state while ensuring feasibility. Experiments using real-world data from San Francisco and New York City show that our approach achieves up to 89% of the profits of the theoretically-optimal solution while achieving more than a 100x speedup in computational time. Furthermore, our approach outperforms the best domain-specific heuristics with comparable runtimes, with an increase in profits by up to 3x. Finally, we highlight promising zero-shot transfer capabilities of our learned policy on tasks such as inter-city generalization and service area expansion, thus showing the utility, scalability, and flexibility of our framework.},
+  keywords  = {sub},
+  owner     = {gammelli},
+  timestamp = {2023-11-15},
+  url       = {https://arxiv.org/abs/2311.05780},
 }
 
 @inproceedings{SinghSindhwaniEtAl2018,
@@ -2137,30 +2171,6 @@
   url         = {https://solarsystem.nasa.gov/scitech/display.cfm?ST_ID=2547}
 }
 
-@inproceedings{PaparussoKousikEtAl2024,
-  title     = {{ZAPP!} Zonotope Agreement of Prediction and Planning for Continuous-Time Collision Avoidance with Discrete-Time Dynamics},
-  author    = {Paparusso, L. and Kousik, S. and Schmerling, E. and Braghin, F. and Pavone, M.},
-  abstract  = {The past few years have seen immense progress on two fronts that are critical to safe, widespread mobile robot deployment: predicting uncertain motion of multiple agents, and planning robot motion under uncertainty.  However, the numerical methods required on each front have resulted in a mismatch of representation for prediction and planning.  In prediction, numerical tractability is usually achieved by coarsely discretizing time, and by representing multimodal multi-agent interactions as distributions with infinite support.  On the other hand, safe planning typically requires very fine time discretization, paired with distributions with compact support, to reduce conservativeness and ensure numerical tractability.  The result is, when existing predictors are coupled with planning and control, one may often find unsafe motion plans.  This paper proposes ZAPP (Zonotope Agreement of Prediction and Planning) to resolve the representation mismatch.  ZAPP unites a prediction-friendly coarse time discretization and a planning-friendly zonotope uncertainty representation; the method also enables differentiating through a zonotope collision check, allowing one to integrate prediction and planning within a gradient-based optimization framework.  Numerical examples show how ZAPP can produce safer trajectories compared to baselines in interactive scenes.},
-  booktitle = proc_IEEE_ICRA,
-  owner     = {rdyro},
-  timestamp = {2023-09-28},
-  keywords  = {sub},
-  year      = {2024},
-  url       = {/wp-content/papercite-data/pdf/Paparusso.ea.ICRA24.pdf}
-}
-
-@inproceedings{BigazziEtAl2024,
-  title     = {Mapping High-level Semantic Regions in Indoor Environments without Object Recognition},
-  author    = {Bigazzi, R. and Baraldi, L. and Kousik, S. and Cucchiara, R. and Pavone, M.},
-  abstract  = {Robots require a semantic understanding of their surroundings to operate in an efficient and explainable way in human environments.  In the literature, there has been an extensive focus on object labeling and exhaustive scene graph generation; less effort has been focused on the task of purely identifying and mapping large semantic regions.  The present work proposes a method for semantic region mapping via embodied navigation in indoor environments, generating a high-level representation of the knowledge of the agent.  To enable region identification, the method uses a vision-to-language model to provide scene information for mapping.  By projecting egocentric scene understanding into the global frame, the proposed method generates a semantic map as a distribution over possible region labels at each location.  This mapping procedure is paired with a trained navigation policy to enable autonomous map generation.  The proposed method significantly outperforms a variety of baselines, including an object-based system and a pretrained scene classifier, in experiments in a photorealistic simulator.},
-  booktitle = proc_IEEE_ICRA,
-  owner     = {rdyro},
-  timestamp = {2023-09-28},
-  keywords  = {sub},
-  year      = {2024},
-  url       = {/wp-content/papercite-data/pdf/Bigazzi.ea.ICRA24.pdf}
-}
-
 @inproceedings{PavoneTreleavenEtAl2010,
   author    = {Pavone, M. and Treleaven, K. and Frazzoli, E.},
   title     = {Fundamental Performance Limits and Efficient Policies for {Transportation-On-Demand} Systems},
@@ -2512,6 +2522,18 @@
   url       = {/wp-content/papercite-data/pdf/Pavone.DAIMLER14.pdf}
 }
 
+@inproceedings{PaparussoKousikEtAl2024,
+  title     = {{ZAPP!} Zonotope Agreement of Prediction and Planning for Continuous-Time Collision Avoidance with Discrete-Time Dynamics},
+  author    = {Paparusso, L. and Kousik, S. and Schmerling, E. and Braghin, F. and Pavone, M.},
+  abstract  = {The past few years have seen immense progress on two fronts that are critical to safe, widespread mobile robot deployment: predicting uncertain motion of multiple agents, and planning robot motion under uncertainty.  However, the numerical methods required on each front have resulted in a mismatch of representation for prediction and planning.  In prediction, numerical tractability is usually achieved by coarsely discretizing time, and by representing multimodal multi-agent interactions as distributions with infinite support.  On the other hand, safe planning typically requires very fine time discretization, paired with distributions with compact support, to reduce conservativeness and ensure numerical tractability.  The result is, when existing predictors are coupled with planning and control, one may often find unsafe motion plans.  This paper proposes ZAPP (Zonotope Agreement of Prediction and Planning) to resolve the representation mismatch.  ZAPP unites a prediction-friendly coarse time discretization and a planning-friendly zonotope uncertainty representation; the method also enables differentiating through a zonotope collision check, allowing one to integrate prediction and planning within a gradient-based optimization framework.  Numerical examples show how ZAPP can produce safer trajectories compared to baselines in interactive scenes.},
+  booktitle = proc_IEEE_ICRA,
+  owner     = {rdyro},
+  timestamp = {2023-09-28},
+  keywords  = {sub},
+  year      = {2024},
+  url       = {/wp-content/papercite-data/pdf/Paparusso.ea.ICRA24.pdf}
+}
+
 @article{OnoPavoneEtAl2015,
   author    = {Ono, M. and Pavone, M. and Kuwata, Y. and Balaram, J.},
   title     = {Chance-Constrained Dynamic Programming with Application to Risk-Aware Robotic Space Exploration},
@@ -2567,6 +2589,17 @@
   timestamp = {2022-10-25}
 }
 
+@article{NakanoyaEtAl2021,
+  author    = {Nakanoya, Manabu and Narasimhan, Sai Shankar and Bhat, Sharachchandra and Anemogiannis, Alexandros and Datta, Akul and Katti, Sachin and Chinchali, Sandeep and Pavone, Marco},
+  title     = {Co-Design of Communication and Machine Inference for Cloud Robotics},
+  journal   = jrn_Spr_AR,
+  year      = {2023},
+  owner     = {rdyro},
+  timestamp = {2023-09-26},
+  keywords  = {pub},
+  abstract  = {Today, even the most compute-and-power constrained robots can measure complex, high data-rate video and LIDAR sensory streams. Often, such robots, ranging from low-power drones to space and subterranean rovers, need to transmit high-bitrate sensory data to a remote compute server if they are uncertain or cannot scalably run complex perception or mapping tasks locally. However, todayâ€™s representations for sensory data are mostly designed for human, not robotic, perception and thus often waste precious compute or wireless network resources to transmit unimportant parts of a scene that are unnecessary for a high-level robotic task. This paper presents an algorithm to learn task-relevant representations of sensory data that are co-designed with a pre-trained robotic perception modelâ€™s ultimate objective. Our algorithm aggressively compresses robotic sensory data by up to 11 x more than competing methods. Further, it achieves high accuracy and robust generalization on diverse tasks including Mars terrain classification with low-power deep learning accelerators, neural motion planning, and environmental timeseries classification.}
+}
+
 @inproceedings{NakanoyaChinchaliEtAl2021,
   author    = {Nakanoya, M. and Chinchali, S. and Anemogiannis, A. and Datta, A. and Katti, S. and Pavone, M.},
   title     = {Task-relevant Representation Learning for Networked Robotic Perception},
@@ -2578,17 +2611,6 @@
   url       = {https://arxiv.org/abs/2011.03216},
   owner     = {csandeep},
   timestamp = {2021-05-19}
-}
-
-@article{NakanoyaEtAl2021,
-  author    = {Nakanoya, Manabu and Narasimhan, Sai Shankar and Bhat, Sharachchandra and Anemogiannis, Alexandros and Datta, Akul and Katti, Sachin and Chinchali, Sandeep and Pavone, Marco},
-  title     = {Co-Design of Communication and Machine Inference for Cloud Robotics},
-  journal   = jrn_Spr_AR,
-  year      = {2023},
-  owner     = {rdyro},
-  timestamp = {2023-09-26},
-  keywords  = {pub},
-  abstract  = {Today, even the most compute-and-power constrained robots can measure complex, high data-rate video and LIDAR sensory streams. Often, such robots, ranging from low-power drones to space and subterranean rovers, need to transmit high-bitrate sensory data to a remote compute server if they are uncertain or cannot scalably run complex perception or mapping tasks locally. However, todayâ€™s representations for sensory data are mostly designed for human, not robotic, perception and thus often waste precious compute or wireless network resources to transmit unimportant parts of a scene that are unnecessary for a high-level robotic task. This paper presents an algorithm to learn task-relevant representations of sensory data that are co-designed with a pre-trained robotic perception modelâ€™s ultimate objective. Our algorithm aggressively compresses robotic sensory data by up to 11 x more than competing methods. Further, it achieves high accuracy and robust generalization on diverse tasks including Mars terrain classification with low-power deep learning accelerators, neural motion planning, and environmental timeseries classification.}
 }
 
 @article{MoteEgerstedtEtAl2020,
@@ -2862,6 +2884,19 @@
   timestamp = {2021-12-06}
 }
 
+@article{LinAgiaEtAl2023,
+  author       = {Lin, K. and Agia, C. and Migimatsu, T. and Pavone, M. and Bohg, J.},
+  title        = {Text2Motion: From Natural Language Instructions to Feasible Plans},
+  journal      = jrn_Spr_AR,
+  year         = {2023},
+  asl_month    = nov,
+  asl_abstract = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82%, while prior state-of-the-art language-based planning methods only achieve 13%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
+  asl_doi      = {10.1007/s10514-023-10131-7},
+  asl_url      = {https://doi.org/10.1007/s10514-023-10131-7},
+  owner        = {agia},
+  timestamp    = {2023-11-14},
+}
+
 @article{LewEtAl2022,
   author    = {Lew, T. and Sharma, A. and Harrison, J. and Bylard, A. and Pavone, M.},
   title     = {Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework},
@@ -2914,6 +2949,31 @@
   owner     = {lew},
   timestamp = {2022-06-22},
   url       = {https://arxiv.org/abs/2206.09963}
+}
+
+@article{LewBonalliPavone2023,
+  author    = {Lew, T. and Bonalli, R. and Pavone, M.},
+  title     = {Risk-Averse Trajectory Optimization via Sample Average Approximation},
+  journal   = jrn_IEEE_RAL,
+  year      = {2023},
+  note      = {In Press},
+  abstract  = {Trajectory optimization under uncertainty underpins a wide range of applications in robotics. However, existing methods are limited in terms of reasoning about sources of epistemic and aleatoric uncertainty, space and time correlations, nonlinear dynamics, and non-convex constraints. In this work, we first introduce a continuous-time planning formulation with an average-value-at-risk constraint over the entire planning horizon. Then, we propose a sample-based approximation that unlocks an efficient, general-purpose, and time-consistent algorithm for risk-averse trajectory optimization. We prove that the method is asymptotically optimal and derive finite-sample error bounds. Simulations demonstrate the high speed and reliability of the approach on problems with stochasticity in nonlinear dynamics, obstacle fields, interactions, and terrain parameters.},
+  url       = {https://arxiv.org/abs/2307.03167},
+  keywords  = {pub},
+  owner     = {lew},
+  timestamp = {2023-07-07}
+}
+
+@inproceedings{LewBonalliEtAl2023,
+  author    = {Lew, T. and Bonalli, R. and Pavone, M.},
+  title     = {Exact Characterization of the Convex Hulls of Reachable Sets},
+  booktitle = proc_IEEE_CDC,
+  year      = {2023},
+  abstract  = {We study the convex hulls of reachable sets of nonlinear systems with bounded disturbances. Reachable sets play a critical role in control, but remain notoriously challenging to compute, and existing over-approximation tools tend to be conservative or computationally expensive. In this work, we exactly characterize the convex hulls of reachable sets as the convex hulls of solutions of an ordinary differential equation from all possible initial values of the disturbances. This finite-dimensional characterization unlocks a tight estimation algorithm to over-approximate reachable sets that is significantly faster and more accurate than existing methods. We present applications to neural feedback loop analysis and robust model predictive control.},
+  keywords  = {pub},
+  owner     = {lew},
+  timestamp = {2023-04-03},
+  url       = {https://arxiv.org/abs/2303.17674}
 }
 
 @inproceedings{LewBonalliEtAl2020,
@@ -3857,6 +3917,18 @@
   timestamp = {2021-12-06}
 }
 
+@inproceedings{GuffantiGammelliEtAl2024,
+  author       = {Guffanti, T. and Gammelli, D. and D'Amico, S. and Pavone, M.},
+  title        = {Transformers for Trajectory Optimization with Application to Spacecraft Rendezvous},
+  booktitle    = proc_IEEE_AC,
+  year         = {2024},
+  abstract     = {Reliable and efficient trajectory optimization methods are a fundamental need for autonomous dynamical systems, effectively enabling applications including rocket landing, hypersonic reentry, spacecraft rendezvous, and docking. Within such safety-critical application areas, the complexity of the emerging trajectory optimization problems has motivated the application of AI-based techniques to enhance the performance of traditional approaches. However, current AI-based methods either attempt to fully replace traditional control algorithms, thus lacking constraint satisfaction guarantees and incurring in expensive simulation, or aim to solely imitate the behavior of traditional methods via supervised learning. To address these limitations, this paper proposes the Autonomous Rendezvous Transformer (ART) and assesses the capability of modern generative models to solve complex trajectory optimization problems, both from a forecasting and control standpoint. Specifically, this work assesses the capabilities of Transformers to (i) learn near-optimal policies from previously collected data, and (ii) warm-start a sequential optimizer for the solution of non-convex optimal control problems, thus guaranteeing hard constraint satisfaction. From a forecasting perspective, results highlight how ART outperforms other learning-based architectures at predicting known fuel-optimal trajectories. From a control perspective, empirical analyses show how policies learned through Transformers are able to generate near-optimal warmstarts, achieving trajectories that are (i) more fuel-efficient, (ii) obtained in fewer sequential optimizer iterations, and (iii) computed with an overall runtime comparable to benchmarks based on convex optimization.},
+  keywords     = {pub},
+  owner        = {gammelli},
+  timestamp    = {2023-11-15},
+  url         = {https://arxiv.org/abs/2310.13831}
+}
+
 @inproceedings{GarangerEtAl2020,
   author    = {Garanger, K. and Krajewski, M. and del Valle, I. and Raheja, U. and Rimoli, J. and Rath, M. Pavone, M.},
   title     = {Soft Tensegrity Systems for Planetary Landing and Exploration},
@@ -3911,30 +3983,6 @@
   keywords  = {pub},
   owner     = {gammelli},
   timestamp = {2023-01-27}
-}
-
-@inproceedings{GuffantiGammelliEtAl2024,
-  author       = {Guffanti, T. and Gammelli, D. and D'Amico, S. and Pavone, M.},
-  title        = {Transformers for Trajectory Optimization with Application to Spacecraft Rendezvous},
-  booktitle    = proc_IEEE_AC,
-  year         = {2024},
-  abstract     = {Reliable and efficient trajectory optimization methods are a fundamental need for autonomous dynamical systems, effectively enabling applications including rocket landing, hypersonic reentry, spacecraft rendezvous, and docking. Within such safety-critical application areas, the complexity of the emerging trajectory optimization problems has motivated the application of AI-based techniques to enhance the performance of traditional approaches. However, current AI-based methods either attempt to fully replace traditional control algorithms, thus lacking constraint satisfaction guarantees and incurring in expensive simulation, or aim to solely imitate the behavior of traditional methods via supervised learning. To address these limitations, this paper proposes the Autonomous Rendezvous Transformer (ART) and assesses the capability of modern generative models to solve complex trajectory optimization problems, both from a forecasting and control standpoint. Specifically, this work assesses the capabilities of Transformers to (i) learn near-optimal policies from previously collected data, and (ii) warm-start a sequential optimizer for the solution of non-convex optimal control problems, thus guaranteeing hard constraint satisfaction. From a forecasting perspective, results highlight how ART outperforms other learning-based architectures at predicting known fuel-optimal trajectories. From a control perspective, empirical analyses show how policies learned through Transformers are able to generate near-optimal warmstarts, achieving trajectories that are (i) more fuel-efficient, (ii) obtained in fewer sequential optimizer iterations, and (iii) computed with an overall runtime comparable to benchmarks based on convex optimization.},
-  keywords     = {pub},
-  owner        = {gammelli},
-  timestamp    = {2023-11-15},
-  url         = {https://arxiv.org/abs/2310.13831}
-}
-
-@inproceedings{SinghalGammelliEtAl2024,
-  author       = {Singhal, A. and Gammelli, D. and Luke, J. and Gopalakrishnan, K. and Helmereich, D. and Pavone, M.},
-  title        = {Real-time Control of Electric Autonomous Mobility-on-Demand Systems via Graph Reinforcement Learning},
-  year         = {2024},
-  abstract     = {Operators of Electric Autonomous Mobility-on-Demand (E-AMoD) fleets need to make several real-time decisions such as matching available cars to ride requests, rebalancing idle cars to areas of high demand, and charging vehicles to ensure sufficient range. While this problem can be posed as a linear program that optimizes flows over a space-charge-time graph, the size of the resulting optimization problem does not allow for real-time implementation in realistic settings. In this work, we present the E-AMoD control problem through the lens of reinforcement learning and propose a graph network-based framework to achieve drastically improved scalability and superior performance over heuristics. Specifically, we adopt a bi-level formulation where we (1) leverage a graph network-based RL agent to specify a desired next state in the space-charge graph, and (2) solve more tractable linear programs to best achieve the desired state while ensuring feasibility. Experiments using real-world data from San Francisco and New York City show that our approach achieves up to 89% of the profits of the theoretically-optimal solution while achieving more than a 100x speedup in computational time. Furthermore, our approach outperforms the best domain-specific heuristics with comparable runtimes, with an increase in profits by up to 3x. Finally, we highlight promising zero-shot transfer capabilities of our learned policy on tasks such as inter-city generalization and service area expansion, thus showing the utility, scalability, and flexibility of our framework.},
-  keywords     = {sub},
-  note         = {Submitted},
-  owner        = {gammelli},
-  timestamp    = {2023-11-15},
-  url         = {https://arxiv.org/abs/2311.05780}
 }
 
 @incollection{FrazzoliPavone2014,
@@ -4717,6 +4765,18 @@
   timestamp = {2020-03-19}
 }
 
+@inproceedings{BigazziEtAl2024,
+  title     = {Mapping High-level Semantic Regions in Indoor Environments without Object Recognition},
+  author    = {Bigazzi, R. and Baraldi, L. and Kousik, S. and Cucchiara, R. and Pavone, M.},
+  abstract  = {Robots require a semantic understanding of their surroundings to operate in an efficient and explainable way in human environments.  In the literature, there has been an extensive focus on object labeling and exhaustive scene graph generation; less effort has been focused on the task of purely identifying and mapping large semantic regions.  The present work proposes a method for semantic region mapping via embodied navigation in indoor environments, generating a high-level representation of the knowledge of the agent.  To enable region identification, the method uses a vision-to-language model to provide scene information for mapping.  By projecting egocentric scene understanding into the global frame, the proposed method generates a semantic map as a distribution over possible region labels at each location.  This mapping procedure is paired with a trained navigation policy to enable autonomous map generation.  The proposed method significantly outperforms a variety of baselines, including an object-based system and a pretrained scene classifier, in experiments in a photorealistic simulator.},
+  booktitle = proc_IEEE_ICRA,
+  owner     = {rdyro},
+  timestamp = {2023-09-28},
+  keywords  = {sub},
+  year      = {2024},
+  url       = {/wp-content/papercite-data/pdf/Bigazzi.ea.ICRA24.pdf}
+}
+
 @inproceedings{BanerjeeSharmaEtAl2022,
   author    = {Banerjee, S. and Sharma, A. and Schmerling, E. and Spolaor, M. and Nemerouf, M. and Pavone, M.},
   title     = {Data Lifecycle Management for Learning-based Aerospace Applications},
@@ -4933,69 +4993,6 @@
   timestamp = {2020-04-13}
 }
 
-@inproceedings{SinhaSharmaEtAl2022,
-  author    = {Sinha, R. and Sharma, S. and Banerjee, S. and Lew, T. and Luo, R. and Richards, S. M. and Sun, Y. and Schmerling, E. and Pavone, M.},
-  title     = {A System-Level View on Out-of-Distribution Data in Robotics},
-  year      = {2022},
-  keywords  = {sub},
-  abstract  = {When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of black-box learned components in the modern robot autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards trustworthy learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and its associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall system-level competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.},
-  url       = {https://arxiv.org/abs/2212.14020},
-  owner     = {rhnsinha},
-  timestamp = {2022-12-30}
-}
-
-@inproceedings{SinhaSchmerlingEtAl2023,
-  author    = {Sinha, R. and Schmerling, E. and Pavone, M.},
-  title     = {Closing the Loop on Runtime Monitors with Fallback-Safe MPC},
-  year      = {2023},
-  keywords  = {pub},
-  booktitle = proc_IEEE_CDC,
-  abstract  = {When we rely on deep-learned models for robotic perception, we must recognize that these models may behave unreliably on inputs dissimilar from the training data, compromising the closed-loop system's safety. This raises fundamental questions on how we can assess confidence in perception systems and to what extent we can take safety-preserving actions when external environmental changes degrade our perception model's performance. Therefore, we present a framework to certify the safety of a perception-enabled system deployed in novel contexts. To do so, we leverage robust model predictive control (MPC) to control the system using the perception estimates while maintaining the feasibility of a safety-preserving fallback plan that does not rely on the perception system. In addition, we calibrate a runtime monitor using recently proposed conformal prediction techniques to certifiably detect when the perception system degrades beyond the tolerance of the MPC controller, resulting in an end-to-end safety assurance. We show that this control framework and calibration technique allows us to certify the system's safety with orders of magnitudes fewer samples than required to retrain the perception network when we deploy in a novel context on a photo-realistic aircraft taxiing simulator. Furthermore, we illustrate the safety-preserving behavior of the MPC on simulated examples of a quadrotor.},
-  url       = {/wp-content/papercite-data/pdf/Sinha.Pavone.CDC23.pdf},
-  owner     = {rhnsinha},
-  timestamp = {2023-04-12}
-}
-
-@article{LinAgiaEtAl2023,
-  author       = {Lin, K. and Agia, C. and Migimatsu, T. and Pavone, M. and Bohg, J.},
-  title        = {Text2Motion: From Natural Language Instructions to Feasible Plans},
-  journal      = jrn_Spr_AR,
-  year         = {2023},
-  asl_month    = nov,
-  asl_abstract = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82%, while prior state-of-the-art language-based planning methods only achieve 13%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
-  asl_doi      = {10.1007/s10514-023-10131-7},
-  asl_url      = {https://doi.org/10.1007/s10514-023-10131-7},
-  owner        = {agia},
-  timestamp    = {2023-11-14},
-}
-
-@inproceedings{LewBonalliEtAl2023,
-  author    = {Lew, T. and Bonalli, R. and Pavone, M.},
-  title     = {Exact Characterization of the Convex Hulls of Reachable Sets},
-  booktitle = proc_IEEE_CDC,
-  year      = {2023},
-  abstract  = {We study the convex hulls of reachable sets of nonlinear systems with bounded disturbances. Reachable sets play a critical role in control, but remain notoriously challenging to compute, and existing over-approximation tools tend to be conservative or computationally expensive. In this work, we exactly characterize the convex hulls of reachable sets as the convex hulls of solutions of an ordinary differential equation from all possible initial values of the disturbances. This finite-dimensional characterization unlocks a tight estimation algorithm to over-approximate reachable sets that is significantly faster and more accurate than existing methods. We present applications to neural feedback loop analysis and robust model predictive control.},
-  keywords  = {pub},
-  owner     = {lew},
-  timestamp = {2023-04-03},
-  url       = {https://arxiv.org/abs/2303.17674}
-}
-
-@article{LewBonalliPavone2023,
-  author    = {Lew, T. and Bonalli, R. and Pavone, M.},
-  title     = {Risk-Averse Trajectory Optimization via Sample Average Approximation},
-  journal   = jrn_IEEE_RAL,
-  year      = {2023},
-  note      = {In Press},
-  abstract  = {Trajectory optimization under uncertainty underpins a wide range of applications in robotics. However, existing methods are limited in terms of reasoning about sources of epistemic and aleatoric uncertainty, space and time correlations, nonlinear dynamics, and non-convex constraints. In this work, we first introduce a continuous-time planning formulation with an average-value-at-risk constraint over the entire planning horizon. Then, we propose a sample-based approximation that unlocks an efficient, general-purpose, and time-consistent algorithm for risk-averse trajectory optimization. We prove that the method is asymptotically optimal and derive finite-sample error bounds. Simulations demonstrate the high speed and reliability of the approach on problems with stochasticity in nonlinear dynamics, obstacle fields, interactions, and terrain parameters.},
-  url       = {https://arxiv.org/abs/2307.03167},
-  keywords  = {pub},
-  owner     = {lew},
-  timestamp = {2023-07-07}
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: saveOrderConfig:specified;citationkey;false;author;true;title;true;}
-
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;note;year] opt[]}
