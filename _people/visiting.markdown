@@ -30,6 +30,7 @@ position: visiting
 <li><h6 class="visiting-name">Benedikt Schesch.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Maximilian Schiffer (visiting professor).</h6> <p class="visiting-excerpt">Technical University of Munich.</p></li>
 <li><h6 class="visiting-name">Jan Schilliger.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
+<li><h6 class="visiting-name">Carolin Schmidt.</h6> <p class="visiting-excerpt">Technical University of Denmark.</p></li>
 <li><h6 class="visiting-name">Mauro Salazar Villalon.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Wolf Vollprecht.</h6> <p class="visiting-excerpt">ETH Zürich</p></li>
 <li><h6 class="visiting-name">Ji Hyun Yang (visiting professor).</h6> <p class="visiting-excerpt">Kookmin University.</p></li>
