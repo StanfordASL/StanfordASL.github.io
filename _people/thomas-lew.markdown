@@ -3,8 +3,9 @@ layout: person
 title:  "Thomas Lew"
 last:   "Lew"
 date:   2020-03-19 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Safe learning, planning and control for uncertain systems"
+current: "Toyota Research Institute (TRI)"
 img: ThomasLew.jpg
 website: https://thomasjlew.github.io/
 gscholar: qdnDZkYAAAAJ

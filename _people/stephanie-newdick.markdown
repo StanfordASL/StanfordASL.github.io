@@ -4,8 +4,9 @@ title:  "Stephanie Newdick"
 last:   "Newdick"
 altlast: "Schneider"
 date:   2019-07-08 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Motion planning for autonomous and unconventional space robotics"
+current: "Blue Origin"
 img: StephNewdick.jpg
 email: snewdick@stanford.edu
 ---
