@@ -2119,19 +2119,19 @@
   keywords  = {}
 }
 
-@inproceedings{RibeiroLukeEtAl2023,
+@InProceedings{RibeiroLukeEtAl2023,
   author    = {Ribeiro, M. and Luke, J. and Martin, S. and Balogun, E. and Cezar, G. and Pavone, M. and Rajagopal, R.},
   title     = {Towards a 24/7 Carbon-Free Electric Fleet: A Digital Twin Framework},
   booktitle = proc_ICAE,
   year      = {2023},
+  volume    = {43},
   address   = {Doha, Qatar},
   month     = dec,
-  note      = {In press},
   abstract  = {Although vehicle electrification and utilization of on-site solar PV generation can begin reducing the greenhouse gas emissions associated with bus fleet operations, a method to intelligently coordinate bus-route assignments, bus charging, and energy storage is needed to fully decarbonize fleet operations while simultaneously minimizing electricity costs. This paper proposes a 24/7 Carbon-Free Electrified Fleet digital twin framework for modeling, controlling, and analyzing an electric bus fleet, co-located solar PV arrays, and a battery energy storage system. The framework consists of forecasting modules for marginal grid emissions factors, solar generation, and bus energy consumption that are input to the optimization module, which determines bus and battery operations at minimal electricity and emissions costs. We present a digital platform based on this framework, and for a case study of Stanford University's Marguerite Shuttle, the platform reduced peak charging demand by 99%, electric utility bill by $2778, and associated carbon emissions by 100% for one week of simulated operations for 38 buses. When accounting for operational uncertainty, the platform still reduced the utility bill by $784 and emissions by 63%.},
-  keywords  = {press},
+  doi       = {https://doi.org/10.46855/energy-proceedings-11033},
   owner     = {jthluke},
   timestamp = {2023-11-15},
-  url       = {https://www.enerarxiv.org/page/thesis.html?id=5047}
+  url       = {https://www.energy-proceedings.org/towards-a-24-7-carbon-free-electric-fleet%3A-a-digital-twin-framework/},
 }
 
 @inproceedings{ReidRovedaEtAl2014,
@@ -4669,6 +4669,18 @@
   timestamp = {2022-04-07}
 }
 
+@inproceedings{BrownEtAlCPAIOR2024,
+  author    = {Brown, R. A.  and Venturelli, D and Pavone, M. and Bernal Neira, D. E.},
+  booktitle = proc_CPAIOR,
+  title     = {Accelerating Continuous Variable Coherent Ising Machines via Momentum},
+  year      = {2024},
+  note      = {Submitted},
+  abstract  = {The Coherent Ising Machine (CIM) is a non-conventional architecture that takes inspiration from physical annealing processes to solve Ising problems heuristically. Its dynamics are naturally continuous and described by a set of ordinary differential equations that have been proven to be useful for the optimization of continuous variables non-convex quadratic optimization problems. The dynamics of such Continuous Variable CIMs (CV-CIM) encourage optimization via optical pulses whose amplitudes are determined by the negative gradient of the objective; however, standard gradient descent is known to be trapped by local minima and hampered by poor problem conditioning. In this work, we propose to modify the CV-CIM dynamics using more sophisticated pulse injections based on tried-and-true optimization techniques such as momentum and Adam. Through numerical experiments, we show that the momentum and Adam updates can significantly speed up the CV-CIM’s convergence and improve sample diversity over the original CV-CIM dynamics. We also find that the Adam-CV-CIM’s performance is more stable as a function of feedback strength, especially on poorly conditioned instances, resulting in an algorithm that is more robust, reliable, and easily tunable. More broadly, we identify the CIM dynamical framework as a fertile opportunity for exploring the intersection of classical optimization and modern analog computing.},
+  keywords  = {sub},
+  owner     = {rabrown1},
+  timestamp = {2024-01-22}
+}
+
 @inproceedings{BrownRossiEtAl20,
   author    = {Brown, R. A. and Rossi, F. and Solovey, K. and Wolf, M. T. and Pavone, M.},
   title     = {Exploiting Locality and Structure for Distributed Optimization in Multi-Agent Systems},
@@ -4705,18 +4717,6 @@
   keywords  = {press},
   url       = {https://arxiv.org/abs/2207.13630},
   timestamp = {2022-10-04}
-}
-
-@inproceedings{BrownEtAlCPAIOR2024,
-  author    = {Brown, R. A.  and Venturelli, D and Pavone, M. and Bernal Neira, D. E.},
-  booktitle = proc_CPAIOR,
-  title     = {Accelerating Continuous Variable Coherent Ising Machines via Momentum},
-  year      = {2024},
-  note      = {Submitted},
-  abstract  = {The Coherent Ising Machine (CIM) is a non-conventional architecture that takes inspiration from physical annealing processes to solve Ising problems heuristically. Its dynamics are naturally continuous and described by a set of ordinary differential equations that have been proven to be useful for the optimization of continuous variables non-convex quadratic optimization problems. The dynamics of such Continuous Variable CIMs (CV-CIM) encourage optimization via optical pulses whose amplitudes are determined by the negative gradient of the objective; however, standard gradient descent is known to be trapped by local minima and hampered by poor problem conditioning. In this work, we propose to modify the CV-CIM dynamics using more sophisticated pulse injections based on tried-and-true optimization techniques such as momentum and Adam. Through numerical experiments, we show that the momentum and Adam updates can significantly speed up the CV-CIM’s convergence and improve sample diversity over the original CV-CIM dynamics. We also find that the Adam-CV-CIM’s performance is more stable as a function of feedback strength, especially on poorly conditioned instances, resulting in an algorithm that is more robust, reliable, and easily tunable. More broadly, we identify the CIM dynamical framework as a fertile opportunity for exploring the intersection of classical optimization and modern analog computing.},
-  keywords  = {sub},
-  owner     = {rabrown1},
-  timestamp = {2024-01-22}
 }
 
 @article{BourdillonEtAl2022,
