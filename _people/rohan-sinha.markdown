@@ -4,7 +4,7 @@ title:  "Rohan Sinha"
 last:   "Sinha"
 date:   2021-04-20 00:00:00 -0700
 position: phd
-excerpt: "Safe learning-based control"
+excerpt: "Trustworthy autonomy and out-of-distribution generalization"
 img: rohan-sinha-picture.png
 email: rhnsinha@stanford.edu
 website: https://rohansinha.nl
