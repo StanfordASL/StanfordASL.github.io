@@ -390,6 +390,7 @@
 @String{jrn_SORMS                      = {{Surveys in Operations Research and Management Science}}}
 @String{jrn_Spr_A                      = {{Algorithmica}}}
 @String{jrn_Spr_AAM                    = {{Acta Applicandae Mathematicae}}}
+@String{jrn_Spr_AAMAS                  = {{Autonomous Agents and Multi-Agent Systems}}}
 @String{jrn_Spr_AMAI                   = {{Annals of Mathematics and Artificial Intelligence}}}
 @String{jrn_Spr_AOR                    = {{Annals of Operations Research}}}
 @String{jrn_Spr_AR                     = {{Autonomous Robots}}}
@@ -1170,7 +1171,7 @@
   booktitle = proc_IEEE_CDC,
   year      = {2023},
   abstract  = {Network routing problems are common across many engineering applications. Computing optimal routing policies requires knowledge about network demand, i.e., the origin and destination (OD) of all requests in the network. However, privacy considerations make it challenging to share individual OD data that would be required for computing optimal policies. Privacy can be particularly challenging in standard network routing problems because sources and sinks can be easily identified from flow conservation constraints, making feasibility and privacy mutually exclusive. In this paper, we present a differentially private algorithm for network routing problems. The main ingredient is a reformulation of network routing which moves all user data-dependent parameters out of the constraint set and into the objective function. We then present an algorithm for solving this formulation based on a differentially private variant of stochastic gradient descent. In this algorithm, differential privacy is achieved by injecting noise, and one may wonder if this noise injection compromises solution quality. We prove that our algorithm is both differentially private and asymptotically optimal as the size of the training set goes to infinity. We corroborate the theoretical results with numerical experiments on a road traffic network which show that our algorithm provides differentially private and near-optimal solutions in practice.},
-  address   = {Marina Bay Sands, Singapore},
+  address   = {Singapore},
   doi       = {10.1109/CDC49753.2023.10383207},
   url       = {https://ieeexplore.ieee.org/abstract/document/10383207/},
   owner     = {somrita},
@@ -2096,15 +2097,13 @@
   title     = {Control-Oriented Meta-Learning},
   year      = {2023},
   journal   = jrn_SAGE_IJRR,
-  volume    = {},
-  number    = {},
-  pages     = {},
-  note      = {In press},
+  volume    = {42},
+  number    = {10},
+  pages     = {777--797},
   owner     = {spenrich},
-  timestamp = {2023-02-03},
+  timestamp = {2024-02-29},
   abstract  = {Real-time adaptation is imperative to the control of robots operating in complex, dynamic environments. Adaptive control laws can endow even nonlinear systems with good trajectory tracking performance, provided that any uncertain dynamics terms are linearly parameterizable with known nonlinear features. However, it is often difficult to specify such features a priori, such as for aerodynamic disturbances on rotorcraft or interaction forces between a manipulator arm and various objects. In this paper, we turn to data-driven modeling with neural networks to learn, offline from past data, an adaptive controller with an internal parametric model of these nonlinear features. Our key insight is that we can better prepare the controller for deployment with control-oriented meta-learning of features in closed-loop simulation, rather than regression-oriented meta-learning of features to fit input-output data. Specifically, we meta-learn the adaptive controller with closed-loop tracking simulation as the base-learner and the average tracking error as the meta-objective. With both fully-actuated and underactuated nonlinear planar rotorcraft subject to wind, we demonstrate that our adaptive controller outperforms other controllers trained with regression-oriented meta-learning when deployed in closed-loop for trajectory tracking control.},
-  url       = {https://arxiv.org/abs/2204.06716},
-  keywords  = {press}
+  url       = {https://arxiv.org/abs/2204.06716}
 }
 
 @inproceedings{RichardsAzizanEtAl2021,
@@ -2601,21 +2600,22 @@
   year      = {2023},
   abstract  = {In this paper we present a trade study-based method to optimize the architecture of ReachBot, a new robotic concept that uses deployable booms as prismatic joints for mobility in environments with adverse gravity conditions and challenging terrain. Specifically, we introduce a design process wherein we analyze the compatibility of ReachBot's design with its mission. We incorporate terrain parameters and mission requirements to produce a final design optimized for mission-specific objectives. ReachBot's design parameters include (1) number of booms, (2) positions and orientations of the booms on ReachBot's chassis, (3) boom maximum extension, (4) boom cross-sectional geometry, and (5) number of active/passive degrees-of-freedom at each joint. Using first-order approximations, we analyze the relationships between these parameters and various performance metrics including stability, manipulability, and mechanical interference. We apply our method to a mission where ReachBot navigates and gathers data from a martian lava tube. The resulting design is shown in Fig.1.},
   booktitle = proc_IEEE_AC,
-  note      = {In press},
-  keywords  = {press},
   address   = {Big Sky, Montana},
   url       = {https://arxiv.org/abs/2210.11534},
   owner     = {schneids},
-  timestamp = {2022-10-25}
+  timestamp = {2024-02-29}
 }
 
 @article{NakanoyaEtAl2021,
   author    = {Nakanoya, Manabu and Narasimhan, Sai Shankar and Bhat, Sharachchandra and Anemogiannis, Alexandros and Datta, Akul and Katti, Sachin and Chinchali, Sandeep and Pavone, Marco},
   title     = {Co-Design of Communication and Machine Inference for Cloud Robotics},
   journal   = jrn_Spr_AR,
+  volume    = {47},
+  number    = {},
+  pages     = {579–-594},
   year      = {2023},
   owner     = {rdyro},
-  timestamp = {2023-09-26},
+  timestamp = {2024-02-29},
   keywords  = {pub},
   abstract  = {Today, even the most compute-and-power constrained robots can measure complex, high data-rate video and LIDAR sensory streams. Often, such robots, ranging from low-power drones to space and subterranean rovers, need to transmit high-bitrate sensory data to a remote compute server if they are uncertain or cannot scalably run complex perception or mapping tasks locally. However, todayâ€™s representations for sensory data are mostly designed for human, not robotic, perception and thus often waste precious compute or wireless network resources to transmit unimportant parts of a scene that are unnecessary for a high-level robotic task. This paper presents an algorithm to learn task-relevant representations of sensory data that are co-designed with a pre-trained robotic perception modelâ€™s ultimate objective. Our algorithm aggressively compresses robotic sensory data by up to 11 x more than competing methods. Further, it achieves high accuracy and robust generalization on diverse tasks including Mars terrain classification with low-power deep learning accelerators, neural motion planning, and environmental timeseries classification.}
 }
@@ -2909,13 +2909,16 @@
   author       = {Lin, K. and Agia, C. and Migimatsu, T. and Pavone, M. and Bohg, J.},
   title        = {Text2Motion: From Natural Language Instructions to Feasible Plans},
   journal      = jrn_Spr_AR,
+  volume       = {47},
+  number       = {},
+  pages        = {1345–-1365},
   year         = {2023},
   asl_month    = nov,
   asl_abstract = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82%, while prior state-of-the-art language-based planning methods only achieve 13%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
   asl_doi      = {10.1007/s10514-023-10131-7},
   asl_url      = {https://doi.org/10.1007/s10514-023-10131-7},
   owner        = {agia},
-  timestamp    = {2023-11-14}
+  timestamp    = {2024-02-29}
 }
 
 @article{LewEtAl2022,
@@ -2976,13 +2979,15 @@
   author    = {Lew, T. and Bonalli, R. and Pavone, M.},
   title     = {Risk-Averse Trajectory Optimization via Sample Average Approximation},
   journal   = jrn_IEEE_RAL,
+  volume    = {9},
+  number    = {2},
+  pages     = {1500--1507},
   year      = {2023},
-  note      = {In Press},
   abstract  = {Trajectory optimization under uncertainty underpins a wide range of applications in robotics. However, existing methods are limited in terms of reasoning about sources of epistemic and aleatoric uncertainty, space and time correlations, nonlinear dynamics, and non-convex constraints. In this work, we first introduce a continuous-time planning formulation with an average-value-at-risk constraint over the entire planning horizon. Then, we propose a sample-based approximation that unlocks an efficient, general-purpose, and time-consistent algorithm for risk-averse trajectory optimization. We prove that the method is asymptotically optimal and derive finite-sample error bounds. Simulations demonstrate the high speed and reliability of the approach on problems with stochasticity in nonlinear dynamics, obstacle fields, interactions, and terrain parameters.},
   url       = {https://arxiv.org/abs/2307.03167},
   keywords  = {pub},
   owner     = {lew},
-  timestamp = {2023-07-07}
+  timestamp = {2024-02-29}
 }
 
 @inproceedings{LewBonalliEtAl2023,
@@ -3259,12 +3264,15 @@
 @article{JorgensenPavone2019,
   author    = {Jorgensen, S. and Pavone, M.},
   title     = {The Matroid Team Servicing Orienteers Problem and its Variants: Constrained Routing of Heterogeneous Teams with Risky Traversal},
-  booktitle = jrn_SAGE_IJRR,
+  journal   = jrn_SAGE_IJRR,
+  volume    = {43},
+  number    = {1},
+  pages     = {34--52},
   year      = {2023},
   abstract  = {Consider deploying a team of robots in order to visit sites in a risky environment (i.e., where a robot might be lost during a traversal), subject to team-based operational constraints such as limits on team composition, traffic throughputs, and launch constraints. We formalize this problem using a graph to represent the environment, enforcing probabilistic survival constraints for each robot, and using a matroid (which generalizes linear independence to sets) to capture the team-based operational constraints. The resulting “Matroid Team Surviving Orienteers” (MTSO) problem has broad applications for robotics such as informative path planning, resource delivery, and search and rescue. We demonstrate that the objective for the MTSO problem has submodular structure, which leads us to develop two polynomial time algorithms which are guaranteed to find a solution with value within a constant factor of the optimum. The second of our algorithms is an extension of the accelerated continuous greedy algorithm, and can be applied to much broader classes of constraints while maintaining bounds on suboptimality. In addition to in-depth analysis, we demonstrate the efficiency of our approaches by applying them to a scenario where a team of robots must gather information while avoiding dangers in the Coral Triangle and characterize scaling and parameter selection using a synthetic dataset.},
   url       = {https://doi.org/10.1177/02783649231210326},
-  owner     = {rdyro},
-  timestamp = {2023-11-13}
+  owner     = {somrita},
+  timestamp = {2024-12-29}
 }
 
 @article{JorgensenChenEtAl2017b,
@@ -3439,15 +3447,19 @@
   timestamp = {2022-03-01}
 }
 
-@inproceedings{JalotaSoloveyEtAl2023,
+@article{JalotaSoloveyEtAl2023,
   author    = {Jalota, D. and Solovey, K. and Tsao, M. and Zoepf, S. and Pavone, M.},
   title     = {Balancing Fairness and Efficiency in Traffic Routing via Interpolated Traffic Assignment},
-  booktitle = {Journal of Autonomous Agents and Mult-Agent Systemsi},
+  journal   = jrn_Spr_AAMAS,
+  volume    = {37},
+  number    = {32},
+  pages     = {1--40},
   year      = {2023},
   abstract  = {System optimum (SO) routing, wherein the total travel time of all users is minimized, is a holy grail for transportation authorities. However, SO routing may discriminate against users who incur much larger travel times than others to achieve high system efficiency, i.e., low total travel times. To address the inherent unfairness of SO routing, we study the $\beta$-fair SO problem whose goal is to minimize the total travel time while guaranteeing a $\beta\geq 1$ level of unfairness, which specifies the maximal ratio between the travel times of different users with shared origins and destinations. To obtain feasible solutions to the $\beta$-fair SO problem while achieving high system efficiency, we develop a new convex program, the Interpolated Traffic Assignment Problem (I-TAP), which interpolates between a fair and an efficient traffic-assignment objective. We then leverage the structure of I-TAP to develop two pricing mechanisms to collectively enforce the I-TAP solution in the presence of selfish homogeneous and heterogeneous users, respectively, that independently choose routes to minimize their own travel costs. We mention that this is the first study of pricing in the context of fair routing. Finally, we use origin-destination demand data for a range of transportation networks to numerically evaluate the performance of I-TAP as compared to a state-of-the-art algorithm. The numerical results indicate that our approach is faster by several orders of magnitude, while achieving higher system efficiency for most levels of unfairness.},
   keywords  = {pub},
+  asl_url   = {https://link.springer.com/article/10.1007/s10458-023-09616-7},
   owner     = {devanshjalota},
-  timestamp = {2023-10-12}
+  timestamp = {2024-02-29}
 }
 
 @inproceedings{JalotaEtAl2021,
@@ -3480,10 +3492,13 @@
   author    = {Jalota, D. and Pavone, M. and Qi, Q. and Ye, Y.},
   title     = {Fisher Markets with Linear Constraints: Equilibrium Properties and Efficient Distributed Algorithms},
   journal   = jrn_Elsevier_GEB,
+  volume    = {141},
+  number    = {},
+  pages     = {223--260},
   year      = {2023},
   keywords  = {pub},
   owner     = {devanshjalota},
-  timestamp = {2021-06-22},
+  timestamp = {2024-02-29},
   url       = {https://arxiv.org/abs/2106.10412}
 }
 
@@ -4104,13 +4119,16 @@
   author       = {Elhafsi, A. and Sinha, R. and Agia, C. and Schmerling, E. and Nesnas, I. A. D and Pavone, M.},
   title        = {Semantic Anomaly Detection with Large Language Models},
   journal      = jrn_Spr_AR,
+  volume       = {47},
+  number       = {},
+  pages        = {1035–-1055},
   year         = {2023},
   asl_month    = oct,
   asl_abstract = {As robots acquire increasingly sophisticated skills and see increasingly complex and varied environments, the threat of an edge case or anomalous failure is ever present. For example, Tesla cars have seen interesting failure modes ranging from autopilot disengagements due to inactive traffic lights carried by trucks to phantom braking caused by images of stop signs on roadside billboards. These system-level failures are not due to failures of any individual component of the autonomy stack but rather system-level deficiencies in semantic reasoning. Such edge cases, which we call semantic anomalies, are simple for a human to disentangle yet require insightful reasoning. To this end, we study the application of large language models (LLMs), endowed with broad contextual understanding and reasoning capabilities, to recognize such edge cases and introduce a monitoring framework for semantic anomaly detection in vision-based policies. Our experiments apply this framework to a finite state machine policy for autonomous driving and a learned policy for object manipulation. These experiments demonstrate that the LLM-based monitor can effectively identify semantic anomalies in a manner that shows agreement with human reasoning. Finally, we provide an extended discussion on the strengths and weaknesses of this approach and motivate a research outlook on how we can further use foundation models for semantic anomaly detection. Our project webpage can be found at https://sites.google.com/view/llm-anomaly-detection.},
   asl_doi      = {10.1007/s10514-023-10132-6},
   asl_url      = {https://doi.org/10.1007/s10514-023-10132-6},
   owner        = {amine},
-  timestamp    = {2023-10-23}
+  timestamp    = {2024-02-29}
 }
 
 @inproceedings{ElhafsiIvanovicEtAl2020,
@@ -4164,12 +4182,15 @@
 @article{DayanSoloveyEtAl2021,
   author    = {Dayan, D. and Solovey, K. and Pavone, M. and Halperin, D.},
   title     = {Near-Optimal Multi-Robot Motion Planning with Finite Sampling},
-  booktitle = jrn_IEEE_TR,
+  journal   = jrn_IEEE_TR,
+  volume    = {39},
+  number    = {5},
+  pages     = {3422--3436},
   year      = {2023},
   abstract  = {An underlying structure in several sampling-based methods for continuous multi-robot motion planning (MRMP) is the tensor roadmap (TR), which emerges from combining multiple PRM graphs constructed for the individual robots via a tensor product. We study the conditions under which the TR encodes a near-optimal solution for MRMP---satisfying these conditions implies near optimality for a variety of popular planners, including dRRT*, and the discrete methods M* and CBS when applied to the continuous domain. We develop the first finite-sample analysis of this kind, which specifies the number of samples, their deterministic distribution, and magnitude of the connection radii that should be used by each individual PRM graph, to guarantee near-optimality using the TR. This significantly improves upon a previous asymptotic analysis, wherein the number of samples tends to infinity, and supports guaranteed high-quality solutions in practice, within bounded running time. To achieve our new result, we first develop a sampling scheme, which we call the staggered grid, for finite-sample motion planning for individual robots, which requires significantly less samples than previous work. We then extend it to the much more involved MRMP setting which requires to account for interactions among multiple robots. Finally, we report on a few experiments that serve as a verification of our theoretical findings and raise interesting questions for further investigation.},
   url       = {https://arxiv.org/abs/2011.08944},
   owner     = {kirilsol},
-  timestamp = {2020-12-07}
+  timestamp = {2024-02-29}
 }
 
 @inproceedings{DaiLandryEtAl2021,
