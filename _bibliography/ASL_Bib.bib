@@ -2781,12 +2781,24 @@
   booktitle = proc_IEEE_ICRA,
   title     = {Online Distribution Shift Detection via Recency Prediction},
   year      = {2024},
-  note      = {In press},
   abstract  = {When deploying modern machine learning-enabled robotic systems in high-stakes applications, detecting distributional shift is critical. However, most existing methods for detecting distribution shift are not well-suited to robotics settings, where data often arrives in a streaming fashion and may be very high-dimensional. In this work, we present an online method for detecting distributional shift with guarantees on the false positive rate --- i.e., when there is no distribution shift, our system is very unlikely (with probability $< \epsilon$) to falsely issue an alert; any alerts that are issued should therefore be heeded. Our method is specifically designed for efficient detection even with high dimensional data, and it empirically achieves up to 6x faster detection on realistic robotics settings compared to prior work while maintaining a low false negative rate in practice (whenever there is a distribution shift in our experiments, our method indeed emits an alert).},
   url       = {https://arxiv.org/abs/2211.09916},
-  keywords  = {press},
   owner     = {rdyro},
   timestamp = {2022-09-21}
+}
+
+@inproceedings{HindyLuoEtAl2024,
+  author    = {Hindy, A. and Luo, R. and Banerjee, S., Kuck, J., Schmerling, E. and Pavone, M.},
+  title     = {Diagnostic Runtime Monitoring with Martingales},
+  note      = {Submitted},
+  booktitle = proc_RSS,
+  year      = {2024},
+  abstract  = {Machine learning systems deployed in safety-critical robotics settings must be robust to distribution shifts. However, system designers must understand the \textit{cause} of a distribution shift in order to implement the appropriate intervention or mitigation strategy and prevent system failure. In this paper, we present a novel framework for diagnosing distribution shifts in a streaming fashion by deploying multiple stochastic martingales simultaneously. We show that knowledge of the underlying cause of a distribution shift can lead to proper interventions over the lifecycle of a deployed system. Our experimental framework can easily be adapted to different types of distribution shifts, models, and datasets. We find that our method outperforms existing work on diagnosing distribution shifts in terms of speed, accuracy, and flexibility, and validate the efficiency of our model in both simulated and live hardware settings. },
+  address   = {},
+  url       = {},
+  keyword   = {sub},
+  owner     = {somrita},
+  timestamp = {2024-02-09}
 }
 
 @inproceedings{LuoEtAl2022,
@@ -3002,7 +3014,20 @@
   keywords  = {pub},
   owner     = {lew},
   timestamp = {2023-04-03},
-  url       = {https://arxiv.org/abs/2303.17674}
+  url       = {https://arxiv.org/abs/2303.17674v2}
+}
+
+@article{LewBonalliPavoneTAC2024,
+  author       = {Lew, T. and Bonalli, R. and Pavone, M.},
+  title        = {Convex Hulls of Reachable Sets},
+  journal      = jrn_IEEE_TAC,
+  year         = {2024},
+  note         = {Submitted},
+  abstract     = {We study the convex hulls of reachable sets of nonlinear systems with bounded disturbances and uncertain initial conditions. Reachable sets play a critical role in control, but remain notoriously challenging to compute, and existing over-approximation tools tend to be conservative or computationally expensive. In this work, we characterize the convex hulls of reachable sets as the convex hulls of solutions of an ordinary differential equation with initial conditions on the sphere. This finite-dimensional characterization unlocks an efficient sampling-based estimation algorithm to accurately over-approximate reachable sets. We also study the structure of the boundary of the reachable convex hulls and derive error bounds for the estimation algorithm. We give applications to neural feedback loop analysis and robust MPC.},
+  url          = {https://arxiv.org/abs/2303.17674},
+  keywords     = {sub},
+  owner        = {lew},
+  timestamp    = {2024-03-01}
 }
 
 @inproceedings{LewBonalliEtAl2020,
