@@ -524,6 +524,7 @@
 @String{proc_COLING                    = {{Proc. of the Int. Conf. on Computational Linguistics}}}
 @String{proc_COLT                      = {{Proc. Computational Learning Theory}}}
 @String{proc_CoRL                      = {{Conf. on Robot Learning}}}
+@String{proc_CoRL_OOD                  = {{Conf. on Robot Learning - Workshop on Out-of-Distribution Generalization in Robotics}}}
 @String{proc_CPAIOR                    = {{Int. Conf. on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research}}}
 @String{proc_DARS                      = {{Int. Symp. on Distributed Autonomous Robotic Systems}}}
 @String{proc_ECCV                      = {{European Conf. on Computer Vision}}}
@@ -5124,6 +5125,29 @@
   asl_url      = {},
   owner        = {somrita},
   timestamp    = {2024-02-09}
+}
+
+@inproceedings{SalzmannArrizabalagaEtAl2023,
+  author    = {Salzmann, T. and Arrizabalaga, J. and Andersson, J. and Pavone, M. and Ryll, M.},
+  title     = {Learning for {CasADi}: Data-driven Models in Numerical Optimization},
+  year      = {2023},
+  keywords  = {sub},
+  abstract  = {While real-world problems are often challenging to analyze analytically, deep learning excels in modeling complex processes from data. Existing optimization frameworks like CasADi facilitate seamless usage of solvers but face challenges when integrating learned process models into numerical optimizations. To address this gap, we present the Learning for CasADi (L4CasADi) framework, enabling the seamless integration of PyTorch-learned models with CasADi for efficient and potentially hardware-accelerated numerical optimization. The applicability of L4CasADi is demonstrated with two tutorial examples: First, we optimize a fish's trajectory in a turbulent river for energy efficiency where the turbulent flow is represented by a PyTorch model. Second, we demonstrate how an implicit Neural Radiance Field environment representation can be easily leveraged for optimal control with L4CasADi. L4CasADi, along with examples and documentation, is available under MIT license at this https URL.},
+  url       = {https://arxiv.org/abs/2312.05873},
+  owner     = {somrita},
+  timestamp = {2024-03-01}
+}
+
+@inproceedings{FoutterSinhaEtAl2023,
+  author       = {Foutter, M. and Sinha, R. and Banerjee, S. and Pavone, M.},
+  title        = {Self-Supervised Model Generalization using Out-of-Distribution Detection},
+  booktitle    = proc_CoRL_OOD,
+  year         = {2023},
+  asl_abstract = {Autonomous agents increasingly rely on learned components to streamline safe and reliable decision making. However, data dissimilar to that seen in training, deemed to be Out-of-Distribution (OOD), creates undefined behavior in the output of our learned-components, which can have detrimental consequences in a safety critical setting such as autonomous satellite rendezvous. In the wild, we typically are exposed to a mix of in-and-out of distribution data where OOD inputs correspond to uncommon and unfamiliar data when a nominally competent system encounters a new situation. In this paper, we propose an architecture that detects the presence of OOD inputs in an online stream of data. The architecture then uses these OOD inputs to recognize domain invariant features between the original training and OOD domain to improve model inference. We demonstrate that our algorithm more than doubles model accuracy on the OOD domain with sparse, unlabeled OOD examples compared to a naive model without such data on shifted MNIST domains. Importantly, we also demonstrate our algorithm maintains strong accuracy on the original training domain, generalizing the model to a mix of in-and-out of distribution examples seen at deployment. Code for our experiment is available at: https://github.com/StanfordASL/CoRL_OODWorkshop_DANN-DL.},
+  asl_address  = {Atlanta, GA},
+  asl_url      = {https://openreview.net/forum?id=z5XS3BY13J},
+  owner        = {somrita},
+  timestamp    = {2024-03-01}
 }
 
 
