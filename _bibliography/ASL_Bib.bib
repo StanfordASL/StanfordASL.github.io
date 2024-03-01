@@ -1167,13 +1167,14 @@
 @inproceedings{TsaoGopalakrishnanEtAl2023,
   author    = {Tsao, M. and Gopalakrishnan, K. and Yang, K. and Pavone, M.},
   title     = {Differentially Private Stochastic Convex Optimization for Network Routing Applications},
-  booktitle = proc_AAMAS,
+  booktitle = proc_IEEE_CDC,
   year      = {2023},
-  note      = {Submitted},
   abstract  = {Network routing problems are common across many engineering applications. Computing optimal routing policies requires knowledge about network demand, i.e., the origin and destination (OD) of all requests in the network. However, privacy considerations make it challenging to share individual OD data that would be required for computing optimal policies. Privacy can be particularly challenging in standard network routing problems because sources and sinks can be easily identified from flow conservation constraints, making feasibility and privacy mutually exclusive. In this paper, we present a differentially private algorithm for network routing problems. The main ingredient is a reformulation of network routing which moves all user data-dependent parameters out of the constraint set and into the objective function. We then present an algorithm for solving this formulation based on a differentially private variant of stochastic gradient descent. In this algorithm, differential privacy is achieved by injecting noise, and one may wonder if this noise injection compromises solution quality. We prove that our algorithm is both differentially private and asymptotically optimal as the size of the training set goes to infinity. We corroborate the theoretical results with numerical experiments on a road traffic network which show that our algorithm provides differentially private and near-optimal solutions in practice.},
-  keywords  = {sub},
-  owner     = {gkarthik},
-  timestamp = {2022-11-22}
+  address   = {Marina Bay Sands, Singapore},
+  doi       = {10.1109/CDC49753.2023.10383207},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10383207/},
+  owner     = {somrita},
+  timestamp = {2024-02-29}
 }
 
 @inproceedings{TreleavenPavoneEtAl2012b,
@@ -2585,12 +2586,12 @@
   author    = {Stephanie Newdick and Nitin Ongole and Tony G. Chen and Edward Schmerling and Mark Cutkosky and Marco Pavone},
   title     = {Motion Planning for a Climbing Robot with Stochastic Grasps},
   year      = {2023},
-  note      = {Submitted},
   abstract  = {Motion planning for a multi-limbed climbing robot must consider the robot’s posture, joint torques, and how it uses contact forces to interact with its environment. This paper focuses on motion planning for a robot that uses nontraditional locomotion to explore unpredictable environments such as a martian cave. Our robotic concept, ReachBot, uses extendable and retractable booms as limbs to achieve a large reachable workspace while climbing. Each extendable boom is capped by a microspine gripper optimized for grasping in martian caves. ReachBot leverages its large workspace to navigate around obstacles, over crevasses, and through challenging terrain. Our planning approach must be versatile to accommodate variable terrain features and be robust to mitigate risks from the stochastic nature of spiny grippers. In this paper, we introduce a graph traversal algorithm to select a discrete sequence of grasps based on available terrain features suitable for grasping.  This discrete plan is complemented by a decoupled motion planner that considers the alternating phases of body movement and end-effector movement, using a combination of sampling-based planning and sequential convex programming to optimize individual phases. We use our motion planner to plan a trajectory across a simulated 2D cave environment with at least 95\% probability of success and demonstrate improved robustness over a baseline trajectory. Finally, we verify our motion planning algorithm through experimentation on a 2D planar prototype.},
   booktitle = proc_IEEE_ICRA,
-  keywords  = {sub},
-  owner     = {rdyro},
-  timestamp = {2022-09-21},
+  address   = {London, United Kingdom},
+  doi       = {10.1109/ICRA48891.2023.10160218},
+  owner     = {somrita},
+  timestamp = {2024-02-29},
   url       = {https://arxiv.org/abs/2209.10687}
 }
 
@@ -4919,11 +4920,10 @@
   booktitle = proc_IFAC_WC,
   title     = {Practical Deployment of Spectral Submanifold Reduction for Optimal Control of High-Dimensional Systems},
   year      = {2023},
-  note      = {Submitted},
   abstract  = {Real-time optimal control of high-dimensional, nonlinear systems remains a challenging task due to the computational intractability of their models. While several model-reduction and learning-based approaches for constructing low-dimensional surrogates of the original system have been proposed in the literature, these approaches suffer from fundamental issues which limit their application in real-world scenarios. Namely, they typically lack generalizability to different control tasks, ability to trade dimensionality for accuracy, and ability to preserve the structure of the dynamics. Recently, we proposed to extract low-dimensional dynamics on Spectral Submanifolds (SSMs) to overcome these issues and validated our approach in a highly accurate simulation environment. In this manuscript, we extend our framework to a real-world setting by employing time-delay embeddings to embed SSMs in an observable space of appropriate dimension. This allows us to learn highly accurate, low-dimensional dynamics purely from observational data. We show that these innovations extend Spectral Submanifold Reduction (SSMR) to real-world applications and showcase the effectiveness of SSMR on a soft robotic system.},
-  keywords  = {sub},
-  owner     = {jjalora},
-  timestamp = {2022-11-15},
+  address   = {Yokohama, Japan},
+  owner     = {somrita},
+  timestamp = {2024-02-29},
   url       = {/wp-content/papercite-data/pdf/Alora.Cenedese.IFAC23.pdf}
 }
 
@@ -4932,11 +4932,11 @@
   booktitle = proc_IEEE_ICRA,
   title     = {Data-Driven Spectral Submanifold Reduction for Nonlinear Optimal Control of High-Dimensional Robots},
   year      = {2023},
-  note      = {Submitted},
   abstract  = {Modeling and control of high-dimensional, nonlinear robotic systems remains a challenging task. While various model- and learning-based approaches have been proposed to address these challenges, they broadly lack generalizability to different control tasks and rarely preserve the structure of the dynamics. In this work, we propose a new, data-driven approach for extracting low-dimensional models from data using Spectral Submanifold Reduction (SSMR). In contrast to other data-driven methods which fit dynamical models to training trajectories, we identify the dynamics on generic, low-dimensional attractors embedded in the full phase space of the robotic system. This allows us to obtain computationally-tractable models for control which preserve the system's dominant dynamics and better track trajectories radically different from the training data. We demonstrate the superior performance and generalizability of SSMR in dynamic trajectory tracking tasks vis-a-vis the state of the art.},
-  keywords  = {sub},
-  owner     = {rdyro},
-  timestamp = {2022-09-21},
+  address   = {London, United Kingdom},
+  doi       = {10.1109/ICRA48891.2023.10160418},
+  owner     = {somrita},
+  timestamp = {2024-02-29},
   url       = {https://arxiv.org/abs/2209.05712}
 }
 
