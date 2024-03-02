@@ -1485,11 +1485,23 @@
   author    = {Sinha, R. and Sharma, S. and Banerjee, S. and Lew, T. and Luo, R. and Richards, S. M. and Sun, Y. and Schmerling, E. and Pavone, M.},
   title     = {A System-Level View on Out-of-Distribution Data in Robotics},
   year      = {2022},
-  keywords  = {sub},
+  keywords  = {},
   abstract  = {When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of black-box learned components in the modern robot autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards trustworthy learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and its associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall system-level competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.},
   url       = {https://arxiv.org/abs/2212.14020},
   owner     = {rhnsinha},
   timestamp = {2022-12-30}
+}
+
+@inproceedings{SinhaElhafsiEtAl2024,
+  author    = {Sinha, R. and Elhafsi, A. and Agia, C. and Foutter, M. and Schmerling, E. and Pavone, M.},
+  title     = {Real-Time Anomaly Detection and Planning with Large Language Models},
+  booktitle = proc_RSS,
+  keywords  = {sub},
+  note      = {Submitted},
+  abstract  = {Foundation models, e.g., large language models, trained on internet-scale data possess zero-shot generalization capabilities that make them a promising technology for anomaly detection for robotic systems. Fully realizing this promise, however, poses two challenges: (i) mitigating the considerable computational expense of these models such that they may be applied online, and (ii) incorporating their judgement regarding potential anomalies into a safe control framework. In this work we present a two-stage reasoning framework: a fast binary anomaly classifier based on analyzing observations in an LLM embedding space, which may trigger a slower fallback selection stage that utilizes the reasoning capabilities of generative LLMs. These stages correspond to branch points in a model predictive control strategy that maintains the joint feasibility of continuing along various fallback plans as soon as an anomaly is detected (while the selector decides), thus ensuring safety. We demonstrate that, even when instantiated with relatively small language models, our fast anomaly classifier outperforms autoregressive reasoning with state-of-the-art GPT models. This enables our runtime monitor to improve the trustworthiness of dynamic robotic systems under resource and time constraints.},
+  year      = {2024},
+  owner     = {rhnsinha},
+  timestamp = {2024-03-01}
 }
 
 @inproceedings{SinhaSchmerlingEtAl2023,
@@ -2784,6 +2796,8 @@
   booktitle = proc_IEEE_ICRA,
   title     = {Online Distribution Shift Detection via Recency Prediction},
   year      = {2024},
+  keywords  = {press},
+  note      = {In press},
   abstract  = {When deploying modern machine learning-enabled robotic systems in high-stakes applications, detecting distributional shift is critical. However, most existing methods for detecting distribution shift are not well-suited to robotics settings, where data often arrives in a streaming fashion and may be very high-dimensional. In this work, we present an online method for detecting distributional shift with guarantees on the false positive rate --- i.e., when there is no distribution shift, our system is very unlikely (with probability $< \epsilon$) to falsely issue an alert; any alerts that are issued should therefore be heeded. Our method is specifically designed for efficient detection even with high dimensional data, and it empirically achieves up to 6x faster detection on realistic robotics settings compared to prior work while maintaining a low false negative rate in practice (whenever there is a distribution shift in our experiments, our method indeed emits an alert).},
   url       = {https://arxiv.org/abs/2211.09916},
   owner     = {rdyro},
@@ -5189,6 +5203,7 @@
   asl_abstract = {Autonomous agents increasingly rely on learned components to streamline safe and reliable decision making. However, data dissimilar to that seen in training, deemed to be Out-of-Distribution (OOD), creates undefined behavior in the output of our learned-components, which can have detrimental consequences in a safety critical setting such as autonomous satellite rendezvous. In the wild, we typically are exposed to a mix of in-and-out of distribution data where OOD inputs correspond to uncommon and unfamiliar data when a nominally competent system encounters a new situation. In this paper, we propose an architecture that detects the presence of OOD inputs in an online stream of data. The architecture then uses these OOD inputs to recognize domain invariant features between the original training and OOD domain to improve model inference. We demonstrate that our algorithm more than doubles model accuracy on the OOD domain with sparse, unlabeled OOD examples compared to a naive model without such data on shifted MNIST domains. Importantly, we also demonstrate our algorithm maintains strong accuracy on the original training domain, generalizing the model to a mix of in-and-out of distribution examples seen at deployment. Code for our experiment is available at: https://github.com/StanfordASL/CoRL_OODWorkshop_DANN-DL.},
   asl_address  = {Atlanta, GA},
   asl_url      = {https://openreview.net/forum?id=z5XS3BY13J},
+  url          = {https://openreview.net/forum?id=z5XS3BY13J},
   owner        = {somrita},
   timestamp    = {2024-03-01}
 }
