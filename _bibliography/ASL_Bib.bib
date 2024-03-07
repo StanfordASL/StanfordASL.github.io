@@ -1507,18 +1507,6 @@
   timestamp = {2022-12-30}
 }
 
-@inproceedings{SinhaElhafsiEtAl2024,
-  author    = {Sinha, R. and Elhafsi, A. and Agia, C. and Foutter, M. and Schmerling, E. and Pavone, M.},
-  title     = {Real-Time Anomaly Detection and Planning with Large Language Models},
-  booktitle = proc_RSS,
-  keywords  = {sub},
-  note      = {Submitted},
-  abstract  = {Foundation models, e.g., large language models, trained on internet-scale data possess zero-shot generalization capabilities that make them a promising technology for anomaly detection for robotic systems. Fully realizing this promise, however, poses two challenges: (i) mitigating the considerable computational expense of these models such that they may be applied online, and (ii) incorporating their judgement regarding potential anomalies into a safe control framework. In this work we present a two-stage reasoning framework: a fast binary anomaly classifier based on analyzing observations in an LLM embedding space, which may trigger a slower fallback selection stage that utilizes the reasoning capabilities of generative LLMs. These stages correspond to branch points in a model predictive control strategy that maintains the joint feasibility of continuing along various fallback plans as soon as an anomaly is detected (while the selector decides), thus ensuring safety. We demonstrate that, even when instantiated with relatively small language models, our fast anomaly classifier outperforms autoregressive reasoning with state-of-the-art GPT models. This enables our runtime monitor to improve the trustworthiness of dynamic robotic systems under resource and time constraints.},
-  year      = {2024},
-  owner     = {rhnsinha},
-  timestamp = {2024-03-01}
-}
-
 @inproceedings{SinhaSchmerlingEtAl2023,
   author    = {Sinha, R. and Schmerling, E. and Pavone, M.},
   title     = {Closing the Loop on Runtime Monitors with Fallback-Safe MPC},
@@ -1557,16 +1545,31 @@
   timestamp = {2023-01-30}
 }
 
-@inproceedings{SinghalGammelliEtAl2024,
+@inproceedings{SinhaElhafsiEtAl2024,
+  author    = {Sinha, R. and Elhafsi, A. and Agia, C. and Foutter, M. and Schmerling, E. and Pavone, M.},
+  title     = {Real-Time Anomaly Detection and Planning with Large Language Models},
+  booktitle = proc_RSS,
+  keywords  = {sub},
+  note      = {Submitted},
+  abstract  = {Foundation models, e.g., large language models, trained on internet-scale data possess zero-shot generalization capabilities that make them a promising technology for anomaly detection for robotic systems. Fully realizing this promise, however, poses two challenges: (i) mitigating the considerable computational expense of these models such that they may be applied online, and (ii) incorporating their judgement regarding potential anomalies into a safe control framework. In this work we present a two-stage reasoning framework: a fast binary anomaly classifier based on analyzing observations in an LLM embedding space, which may trigger a slower fallback selection stage that utilizes the reasoning capabilities of generative LLMs. These stages correspond to branch points in a model predictive control strategy that maintains the joint feasibility of continuing along various fallback plans as soon as an anomaly is detected (while the selector decides), thus ensuring safety. We demonstrate that, even when instantiated with relatively small language models, our fast anomaly classifier outperforms autoregressive reasoning with state-of-the-art GPT models. This enables our runtime monitor to improve the trustworthiness of dynamic robotic systems under resource and time constraints.},
+  year      = {2024},
+  owner     = {rhnsinha},
+  timestamp = {2024-03-01}
+}
+
+@InProceedings{SinghalGammelliEtAl2024,
   author    = {Singhal, A. and Gammelli, D. and Luke, J. and Gopalakrishnan, K. and Helmreich, D. and Pavone, M.},
   title     = {Real-time Control of Electric Autonomous Mobility-on-Demand Systems via Graph Reinforcement Learning},
+  booktitle = proc_EUCA_ECC,
   year      = {2024},
-  note      = {Submitted},
+  address   = {Stockholm, Sweden},
+  month     = jun,
+  note      = {In press},
   abstract  = {Operators of Electric Autonomous Mobility-on-Demand (E-AMoD) fleets need to make several real-time decisions such as matching available cars to ride requests, rebalancing idle cars to areas of high demand, and charging vehicles to ensure sufficient range. While this problem can be posed as a linear program that optimizes flows over a space-charge-time graph, the size of the resulting optimization problem does not allow for real-time implementation in realistic settings. In this work, we present the E-AMoD control problem through the lens of reinforcement learning and propose a graph network-based framework to achieve drastically improved scalability and superior performance over heuristics. Specifically, we adopt a bi-level formulation where we (1) leverage a graph network-based RL agent to specify a desired next state in the space-charge graph, and (2) solve more tractable linear programs to best achieve the desired state while ensuring feasibility. Experiments using real-world data from San Francisco and New York City show that our approach achieves up to 89% of the profits of the theoretically-optimal solution while achieving more than a 100x speedup in computational time. Furthermore, our approach outperforms the best domain-specific heuristics with comparable runtimes, with an increase in profits by up to 3x. Finally, we highlight promising zero-shot transfer capabilities of our learned policy on tasks such as inter-city generalization and service area expansion, thus showing the utility, scalability, and flexibility of our framework.},
-  keywords  = {sub},
+  keywords  = {press},
   owner     = {gammelli},
   timestamp = {2023-11-15},
-  url       = {https://arxiv.org/abs/2311.05780}
+  url       = {https://arxiv.org/abs/2311.05780},
 }
 
 @inproceedings{SinghSindhwaniEtAl2018,
@@ -1932,6 +1935,17 @@
   url       = {https://arxiv.org/abs/2001.03093}
 }
 
+@inproceedings{SalzmannArrizabalagaEtAl2023,
+  author    = {Salzmann, T. and Arrizabalaga, J. and Andersson, J. and Pavone, M. and Ryll, M.},
+  title     = {Learning for {CasADi}: Data-driven Models in Numerical Optimization},
+  year      = {2023},
+  keywords  = {sub},
+  abstract  = {While real-world problems are often challenging to analyze analytically, deep learning excels in modeling complex processes from data. Existing optimization frameworks like CasADi facilitate seamless usage of solvers but face challenges when integrating learned process models into numerical optimizations. To address this gap, we present the Learning for CasADi (L4CasADi) framework, enabling the seamless integration of PyTorch-learned models with CasADi for efficient and potentially hardware-accelerated numerical optimization. The applicability of L4CasADi is demonstrated with two tutorial examples: First, we optimize a fish's trajectory in a turbulent river for energy efficiency where the turbulent flow is represented by a PyTorch model. Second, we demonstrate how an implicit Neural Radiance Field environment representation can be easily leveraged for optimal control with L4CasADi. L4CasADi, along with examples and documentation, is available under MIT license at this https URL.},
+  url       = {https://arxiv.org/abs/2312.05873},
+  owner     = {somrita},
+  timestamp = {2024-03-01}
+}
+
 @inproceedings{SalazarTsaoEtAl2019,
   author    = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
   title     = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
@@ -2154,20 +2168,19 @@
   keywords  = {}
 }
 
-@inproceedings{RibeiroLukeEtAl2023,
+@InProceedings{RibeiroLukeEtAl2023,
   author    = {Ribeiro, M. and Luke, J. and Martin, S. and Balogun, E. and Cezar, G. and Pavone, M. and Rajagopal, R.},
   title     = {Towards a 24/7 Carbon-Free Electric Fleet: A Digital Twin Framework},
   booktitle = proc_Energy,
   year      = {2023},
   volume    = {43},
-  number    = {6},
   address   = {Doha, Qatar},
   month     = dec,
   abstract  = {Although vehicle electrification and utilization of on-site solar PV generation can begin reducing the greenhouse gas emissions associated with bus fleet operations, a method to intelligently coordinate bus-route assignments, bus charging, and energy storage is needed to fully decarbonize fleet operations while simultaneously minimizing electricity costs. This paper proposes a 24/7 Carbon-Free Electrified Fleet digital twin framework for modeling, controlling, and analyzing an electric bus fleet, co-located solar PV arrays, and a battery energy storage system. The framework consists of forecasting modules for marginal grid emissions factors, solar generation, and bus energy consumption that are input to the optimization module, which determines bus and battery operations at minimal electricity and emissions costs. We present a digital platform based on this framework, and for a case study of Stanford University's Marguerite Shuttle, the platform reduced peak charging demand by 99%, electric utility bill by $2778, and associated carbon emissions by 100% for one week of simulated operations for 38 buses. When accounting for operational uncertainty, the platform still reduced the utility bill by $784 and emissions by 63%.},
   doi       = {https://doi.org/10.46855/energy-proceedings-11033},
   owner     = {jthluke},
   timestamp = {2023-11-15},
-  url       = {https://www.energy-proceedings.org/towards-a-24-7-carbon-free-electric-fleet%3A-a-digital-twin-framework/}
+  url       = {https://www.energy-proceedings.org/towards-a-24-7-carbon-free-electric-fleet%3A-a-digital-twin-framework/},
 }
 
 @inproceedings{ReidRovedaEtAl2014,
@@ -2639,6 +2652,18 @@
   timestamp = {2024-02-29}
 }
 
+@inproceedings{NeiraBrownEtAl2024,
+  author    = {Neira, D. E. B. and Brown, R. and Sathe, P. and Wudarski, F. and Pavone, M. and Rieffel, E. G. and Venturelli, D.},
+  title     = {Benchmarking the Operation of Quantum Heuristics and Ising Machines: Scoring Parameter Setting Strategies on Optimization Applications},
+  year      = {2024},
+  keywords  = {sub},
+  note      = {Submitted},
+  abstract  = {We discuss guidelines for evaluating the performance of parameterized stochastic solvers for optimization problems, with particular attention to systems that employ novel hardware, such as digital quantum processors running variational algorithms, analog processors performing quantum annealing, or coherent Ising Machines. We illustrate through an example a benchmarking procedure grounded in the statistical analysis of the expectation of a given performance metric measured in a test environment. In particular, we discuss the necessity and cost of setting parameters that affect the algorithm's performance. The optimal value of these parameters could vary significantly between instances of the same target problem. We present an open-source software package that facilitates the design, evaluation, and visualization of practical parameter tuning strategies for complex use of the heterogeneous components of the solver. We examine in detail an example using parallel tempering and a simulator of a photonic Coherent Ising Machine computing and display the scoring of an illustrative baseline family of parameter-setting strategies that feature an exploration-exploitation trade-off.},
+  url       = {https://arxiv.org/abs/2402.10255},
+  owner     = {rabrown1},
+  timestamp = {2024-03-01}
+}
+
 @article{NakanoyaEtAl2021,
   author    = {Nakanoya, Manabu and Narasimhan, Sai Shankar and Bhat, Sharachchandra and Anemogiannis, Alexandros and Datta, Akul and Katti, Sachin and Chinchali, Sandeep and Pavone, Marco},
   title     = {Co-Design of Communication and Machine Inference for Cloud Robotics},
@@ -2817,20 +2842,6 @@
   url       = {https://arxiv.org/abs/2211.09916},
   owner     = {rdyro},
   timestamp = {2022-09-21}
-}
-
-@inproceedings{HindyLuoEtAl2024,
-  author    = {Hindy, A. and Luo, R. and Banerjee, S. and Kuck, J. and Schmerling, E. and Pavone, M.},
-  title     = {Diagnostic Runtime Monitoring with Martingales},
-  note      = {Submitted},
-  booktitle = proc_RSS,
-  year      = {2024},
-  abstract  = {Machine learning systems deployed in safety-critical robotics settings must be robust to distribution shifts. However, system designers must understand the \textit{cause} of a distribution shift in order to implement the appropriate intervention or mitigation strategy and prevent system failure. In this paper, we present a novel framework for diagnosing distribution shifts in a streaming fashion by deploying multiple stochastic martingales simultaneously. We show that knowledge of the underlying cause of a distribution shift can lead to proper interventions over the lifecycle of a deployed system. Our experimental framework can easily be adapted to different types of distribution shifts, models, and datasets. We find that our method outperforms existing work on diagnosing distribution shifts in terms of speed, accuracy, and flexibility, and validate the efficiency of our model in both simulated and live hardware settings. },
-  address   = {},
-  url       = {},
-  keywords  = {sub},
-  owner     = {somrita},
-  timestamp = {2024-02-09}
 }
 
 @inproceedings{LuoEtAl2022,
@@ -3499,20 +3510,6 @@
   timestamp = {2023-07-02}
 }
 
-@inproceedings{JalotaEtAl2024,
-  author    = {Jalota, D. and Ostrovsky, M. and Pavone, M.},
-  title     = {When Simple is Near-Optimal in Security Games},
-  booktitle = proc_ACM_EC,
-  year      = {2024},
-  abstract  = {Fraudulent or illegal activities are ubiquitous across applications and involve users bypassing the rule of law, often with the strategic aim of obtaining some benefit that would otherwise be unattainable within the bounds of lawful conduct. However, user fraud is detrimental, as it may compromise safety or impose disproportionate negative externalities on particular population groups. To mitigate the potential harms of user fraud, we study the problem of policing such fraud as a security game between an administrator and users. In this game, an administrator deploys R security resources (e.g., police officers) across L locations and levies fines against users engaging in fraud at those locations. For this security game, we study both welfare and revenue maximization administrator objectives. In both settings, we show that computing the optimal administrator strategy is NP-hard and develop natural greedy algorithm variants for the respective settings that achieve at least half the welfare or revenue as the welfare-maximizing or revenue-maximizing solutions, respectively. We also establish a resource augmentation guarantee that our proposed greedy algorithms with one extra resource, i.e., R+1 resources, achieve at least the same welfare (revenue) as the welfare-maximizing (revenue-maximizing) outcome with R resources. Finally, since the welfare and revenue-maximizing solutions can differ significantly, we present a framework inspired by contract theory, wherein a revenue-maximizing administrator is compensated through contracts for the welfare it contributes. Beyond extending our theoretical results in the welfare and revenue maximization settings to studying equilibrium strategies in the contract game, we also present numerical experiments highlighting the efficacy of contracts in bridging the gap between the revenue and welfare-maximizing administrator outcomes.},
-  address   = {New Haven, United States},
-  month     = july,
-  keywords  = {sub},
-  url = {https://arxiv.org/abs/2402.11209},
-  owner     = {devanshjalota},
-  timestamp = {2024-03-01}
-}
-
 @inproceedings{JalotaSoloveyEtAl2022,
   author    = {Jalota, D. and Solovey, K. and Tsao, M. and Zoepf, S. and Pavone, M.},
   title     = {Balancing Fairness and Efficiency in Traffic Routing via Interpolated Traffic Assignment},
@@ -3538,6 +3535,19 @@
   timestamp = {2024-02-29}
 }
 
+@inproceedings{JalotaEtAl2021,
+  author    = {Jalota, D. and Solovey, K. and Gopalakrishnan, K. and Zoepf, S. and Balakrishnan, H. and Pavone, M.},
+  title     = {When Efficiency meets Equity in Congestion Pricing and Revenue Refunding Schemes},
+  booktitle = proc_ACM_EAAMO,
+  year      = {2021},
+  abstract  = {Congestion pricing has long been hailed as a means to mitigate traffic congestion; however, its practical adoption has been limited due to the resulting social inequity issue, e.g., low-income users are priced out off certain roads. This issue has spurred interest in the design of equitable mechanisms that aim to refund the collected toll revenues as lump-sum transfers to users. Although revenue refunding has been extensively studied for over three decades, there has been no thorough characterization of how such schemes can be designed to simultaneously achieve system efficiency and equity objectives. In this work, we bridge this gap through the study of congestion pricing and revenue refunding (CPRR) schemes in non-atomic congestion games. We first develop CPRR schemes, which in comparison to the untolled case, simultaneously (i) increase system efficiency and (ii) decrease wealth inequality, while being (iii) user-favorable: irrespective of their initial wealth or values-of-time (which may differ across users) users would experience a lower travel cost after the implementation of the proposed scheme. We then characterize the set of optimal user-favorable CPRR schemes that simultaneously maximize system efficiency and minimize wealth inequality. These results assume a well-studied behavior model of users minimizing a linear function of their travel times and tolls, without considering refunds. We also study a more complex behavior model wherein users are influenced by and react to the amount of refund that they receive. Although, in general, the two models can result in different outcomes in terms of system efficiency and wealth inequality, we establish that those outcomes coincide when the aforementioned optimal CPRR scheme is implemented. Overall, our work demonstrates that through appropriate refunding policies we can achieve system efficiency while reducing wealth inequality.},
+  address   = {Online},
+  month     = oct,
+  owner     = {devanshjalota},
+  timestamp = {2021-06-22},
+  url       = {https://dl.acm.org/doi/10.1145/3465416.3483296}
+}
+
 @inproceedings{JalotaSoloveyGopalakrishnanEtAl2023,
   author    = {Jalota, D. and Solovey, K. and Gopalakrishnan, K. and Zoepf, S. and Balakrishnan, H. and Pavone, M.},
   title     = {When Efficiency meets Equity in Congestion Pricing and Revenue Refunding Schemes},
@@ -3550,19 +3560,6 @@
   owner     = {devanshjalota},
   timestamp = {2021-06-22},
   url       = {https://ieeexplore.ieee.org/document/10319707}
-}
-
-@inproceedings{JalotaEtAl2021,
-  author    = {Jalota, D. and Solovey, K. and Gopalakrishnan, K. and Zoepf, S. and Balakrishnan, H. and Pavone, M.},
-  title     = {When Efficiency meets Equity in Congestion Pricing and Revenue Refunding Schemes},
-  booktitle = proc_ACM_EAAMO,
-  year      = {2021},
-  abstract  = {Congestion pricing has long been hailed as a means to mitigate traffic congestion; however, its practical adoption has been limited due to the resulting social inequity issue, e.g., low-income users are priced out off certain roads. This issue has spurred interest in the design of equitable mechanisms that aim to refund the collected toll revenues as lump-sum transfers to users. Although revenue refunding has been extensively studied for over three decades, there has been no thorough characterization of how such schemes can be designed to simultaneously achieve system efficiency and equity objectives. In this work, we bridge this gap through the study of congestion pricing and revenue refunding (CPRR) schemes in non-atomic congestion games. We first develop CPRR schemes, which in comparison to the untolled case, simultaneously (i) increase system efficiency and (ii) decrease wealth inequality, while being (iii) user-favorable: irrespective of their initial wealth or values-of-time (which may differ across users) users would experience a lower travel cost after the implementation of the proposed scheme. We then characterize the set of optimal user-favorable CPRR schemes that simultaneously maximize system efficiency and minimize wealth inequality. These results assume a well-studied behavior model of users minimizing a linear function of their travel times and tolls, without considering refunds. We also study a more complex behavior model wherein users are influenced by and react to the amount of refund that they receive. Although, in general, the two models can result in different outcomes in terms of system efficiency and wealth inequality, we establish that those outcomes coincide when the aforementioned optimal CPRR scheme is implemented. Overall, our work demonstrates that through appropriate refunding policies we can achieve system efficiency while reducing wealth inequality.},
-  address   = {Online},
-  month     = oct,
-  owner     = {devanshjalota},
-  timestamp = {2021-06-22},
-  url       = {https://dl.acm.org/doi/10.1145/3465416.3483296}
 }
 
 @inproceedings{JalotaEtAl2020,
@@ -3608,6 +3605,20 @@
   url       = {https://arxiv.org/abs/2109.08706}
 }
 
+@inproceedings{JalotaEtAl2024,
+  author    = {Jalota, D. and Ostrovsky, M. and Pavone, M.},
+  title     = {When Simple is Near-Optimal in Security Games},
+  booktitle = proc_ACM_EC,
+  year      = {2024},
+  abstract  = {Fraudulent or illegal activities are ubiquitous across applications and involve users bypassing the rule of law, often with the strategic aim of obtaining some benefit that would otherwise be unattainable within the bounds of lawful conduct. However, user fraud is detrimental, as it may compromise safety or impose disproportionate negative externalities on particular population groups. To mitigate the potential harms of user fraud, we study the problem of policing such fraud as a security game between an administrator and users. In this game, an administrator deploys R security resources (e.g., police officers) across L locations and levies fines against users engaging in fraud at those locations. For this security game, we study both welfare and revenue maximization administrator objectives. In both settings, we show that computing the optimal administrator strategy is NP-hard and develop natural greedy algorithm variants for the respective settings that achieve at least half the welfare or revenue as the welfare-maximizing or revenue-maximizing solutions, respectively. We also establish a resource augmentation guarantee that our proposed greedy algorithms with one extra resource, i.e., R+1 resources, achieve at least the same welfare (revenue) as the welfare-maximizing (revenue-maximizing) outcome with R resources. Finally, since the welfare and revenue-maximizing solutions can differ significantly, we present a framework inspired by contract theory, wherein a revenue-maximizing administrator is compensated through contracts for the welfare it contributes. Beyond extending our theoretical results in the welfare and revenue maximization settings to studying equilibrium strategies in the contract game, we also present numerical experiments highlighting the efficacy of contracts in bridging the gap between the revenue and welfare-maximizing administrator outcomes.},
+  address   = {New Haven, United States},
+  month     = july,
+  keywords  = {sub},
+  url = {https://arxiv.org/abs/2402.11209},
+  owner     = {devanshjalota},
+  timestamp = {2024-03-01}
+}
+
 @article{JalotaOstrovskyEtAl2023,
   author    = {Jalota, D. and Ostrovsky, M. and Pavone, M.},
   title     = {Matching with Transfers under Distributional Constraints},
@@ -3641,19 +3652,6 @@
   owner     = {devanshjalota},
   timestamp = {2022-05-03},
   url       = {https://arxiv.org/abs/2203.17150}
-}
-
-@inproceedings{BerriaudElokdaEtAl2024,
-  author    = {Berriaud, D. and Elokda, E. and Jalota, D. and Frazzoli, E. and Pavone, M. and Dorfler, F.},
-  title     = {To Spend or to Gain: Online Learning in Repeated Karma Auctions},
-  booktitle = proc_ACM_EC,
-  year      = {2024},
-  abstract  = {Recent years have seen a surge of artificial currency-based mechanisms in contexts where monetary instruments are deemed unfair or inappropriate, e.g., for traffic congestion management or allocation of food donations. Yet the applicability of these mechanisms remains limited, since it is challenging for users to learn how to bid an artificial currency that has no value outside the mechanism. Indeed, users must learn the value of the currency as well as how to optimally spend it in a coupled manner. In this paper, we study learning to bid in two prominent classes of artificial currency auctions: those in which currency is issued at the beginning of a finite period only to be spent over the period; and those where in addition to the initial endowment currency is transferred among users by redistributing payments in each time step. In the latter class the currency has been referred to as karma, since users do not only spend karma to acquire public resources but also gain karma for yielding them. In both classes, we propose a simple learning strategy, called adaptive karma pacing strategy, and show that a) it is asymptotically optimal for a single agent bidding against a stationary competition; b) it leads to convergent learning dynamics when all agents adopt it; and c) it constitutes an approximate Nash equilibrium as the number of agents grows. This requires a novel analysis in comparison to adaptive pacing strategies in monetary auctions, since we depart from the classical assumption that the currency has known value outside the auctions. The analysis is further complicated by the possibility to both spend and gain currency in auctions with redistribution.},
-  address   = {New Haven, United States},
-  month     = july,
-  keywords  = {sub},
-  owner     = {devanshjalota},
-  timestamp = {2024-03-01}
 }
 
 @inproceedings{IvanovicSchmerlingEtAl2018,
@@ -4008,6 +4006,20 @@
   year      = {2017}
 }
 
+@inproceedings{HindyLuoEtAl2024,
+  author    = {Hindy, A. and Luo, R. and Banerjee, S. and Kuck, J. and Schmerling, E. and Pavone, M.},
+  title     = {Diagnostic Runtime Monitoring with Martingales},
+  note      = {Submitted},
+  booktitle = proc_RSS,
+  year      = {2024},
+  abstract  = {Machine learning systems deployed in safety-critical robotics settings must be robust to distribution shifts. However, system designers must understand the \textit{cause} of a distribution shift in order to implement the appropriate intervention or mitigation strategy and prevent system failure. In this paper, we present a novel framework for diagnosing distribution shifts in a streaming fashion by deploying multiple stochastic martingales simultaneously. We show that knowledge of the underlying cause of a distribution shift can lead to proper interventions over the lifecycle of a deployed system. Our experimental framework can easily be adapted to different types of distribution shifts, models, and datasets. We find that our method outperforms existing work on diagnosing distribution shifts in terms of speed, accuracy, and flexibility, and validate the efficiency of our model in both simulated and live hardware settings. },
+  address   = {},
+  url       = {},
+  keywords  = {sub},
+  owner     = {somrita},
+  timestamp = {2024-02-09}
+}
+
 @inproceedings{HarrisonSharmaEtAl2018,
   author    = {Harrison, J. and Sharma, A. and Pavone, M.},
   title     = {Meta-Learning Priors for Efficient Online Bayesian Regression},
@@ -4138,6 +4150,19 @@
   owner     = {bylard},
   timestamp = {2017-01-28},
   url       = {http://web.stanford.edu/~pavone/papers/Frazzoli.Pavone.ESC13.pdf}
+}
+
+@inproceedings{FoutterSinhaEtAl2023,
+  author       = {Foutter, M. and Sinha, R. and Banerjee, S. and Pavone, M.},
+  title        = {Self-Supervised Model Generalization using Out-of-Distribution Detection},
+  booktitle    = proc_CoRL_OOD,
+  year         = {2023},
+  asl_abstract = {Autonomous agents increasingly rely on learned components to streamline safe and reliable decision making. However, data dissimilar to that seen in training, deemed to be Out-of-Distribution (OOD), creates undefined behavior in the output of our learned-components, which can have detrimental consequences in a safety critical setting such as autonomous satellite rendezvous. In the wild, we typically are exposed to a mix of in-and-out of distribution data where OOD inputs correspond to uncommon and unfamiliar data when a nominally competent system encounters a new situation. In this paper, we propose an architecture that detects the presence of OOD inputs in an online stream of data. The architecture then uses these OOD inputs to recognize domain invariant features between the original training and OOD domain to improve model inference. We demonstrate that our algorithm more than doubles model accuracy on the OOD domain with sparse, unlabeled OOD examples compared to a naive model without such data on shifted MNIST domains. Importantly, we also demonstrate our algorithm maintains strong accuracy on the original training domain, generalizing the model to a mix of in-and-out of distribution examples seen at deployment. Code for our experiment is available at: https://github.com/StanfordASL/CoRL_OODWorkshop_DANN-DL.},
+  asl_address  = {Atlanta, GA},
+  asl_url      = {https://openreview.net/forum?id=z5XS3BY13J},
+  url          = {https://openreview.net/forum?id=z5XS3BY13J},
+  owner        = {somrita},
+  timestamp    = {2024-03-01}
 }
 
 @inproceedings{FladerAhnEtAl2016,
@@ -4272,6 +4297,18 @@
   owner     = {rdyro},
   timestamp = {2022-02-05},
   url       = {https://arxiv.org/abs/2104.02213}
+}
+
+@inproceedings{DiCuevasQuiñonesEtAl2024,
+  author    = {Di, Julia and Cuevas-Quiñones, Sara and Newdick, Stephanie and Chen, Tony G. and Pavone, Marco and Lapôtre, Mathieu G. A. and Cutkosky, Mark},
+  title     = {Martian Exploration of Lava Tubes (MELT) with ReachBot: Scientific Investigation and Concept of Operations},
+  booktitle = proc_ICSR,
+  year      = {2024},
+  month     = june,
+  abstract  = {As natural access points to the subsurface, lava tubes and other caves have become premier targets of plane- tary missions for astrobiological analyses. Few existing robotic paradigms, however, are able to explore such challenging environments. ReachBot is a robot that enables navigation in planetary caves by using extendable and retractable limbs to locomote. In this paper, we outline the potential science return and mission operations for a notional mission that deploys ReachBot to a martian lava tube. We describe the motivating science goals and provide a science traceability matrix to guide payload selection. We also develop a Concept of Operations (ConOps) for ReachBot, providing a framework for deployment and activities on Mars, analyzing mission risks, and developing mitigation strategies.},
+  keywords  = {sub},
+  owner     = {rdyro},
+  timestamp = {2024-02-15}
 }
 
 @inproceedings{DeCastroLeungEtAl2020,
@@ -4913,18 +4950,6 @@
   timestamp = {2019-05-01}
 }
 
-@inproceedings{DiCuevasQuiñonesEtAl2024,
-  author    = {Di, Julia and Cuevas-Quiñones, Sara and Newdick, Stephanie and Chen, Tony G. and Pavone, Marco and Lapôtre, Mathieu G. A. and Cutkosky, Mark},
-  title     = {Martian Exploration of Lava Tubes (MELT) with ReachBot: Scientific Investigation and Concept of Operations},
-  booktitle = proc_ICSR,
-  year      = {2024},
-  month     = june,
-  abstract  = {As natural access points to the subsurface, lava tubes and other caves have become premier targets of plane- tary missions for astrobiological analyses. Few existing robotic paradigms, however, are able to explore such challenging environments. ReachBot is a robot that enables navigation in planetary caves by using extendable and retractable limbs to locomote. In this paper, we outline the potential science return and mission operations for a notional mission that deploys ReachBot to a martian lava tube. We describe the motivating science goals and provide a science traceability matrix to guide payload selection. We also develop a Concept of Operations (ConOps) for ReachBot, providing a framework for deployment and activities on Mars, analyzing mission risks, and developing mitigation strategies.},
-  keywords  = {sub},
-  owner     = {rdyro},
-  timestamp = {2024-02-15}
-}
-
 @inproceedings{BoewingSchifferEtAl2020,
   author    = {Boewing, F. and Schiffer, M. and Salazar, M. and Pavone, M.},
   title     = {A Vehicle Coordination and Charge Scheduling Algorithm for Electric Autonomous Mobility-on-Demand Systems},
@@ -4948,6 +4973,19 @@
   keywords  = {sub},
   year      = {2024},
   url       = {/wp-content/papercite-data/pdf/Bigazzi.ea.ICRA24.pdf}
+}
+
+@inproceedings{BerriaudElokdaEtAl2024,
+  author    = {Berriaud, D. and Elokda, E. and Jalota, D. and Frazzoli, E. and Pavone, M. and Dorfler, F.},
+  title     = {To Spend or to Gain: Online Learning in Repeated Karma Auctions},
+  booktitle = proc_ACM_EC,
+  year      = {2024},
+  abstract  = {Recent years have seen a surge of artificial currency-based mechanisms in contexts where monetary instruments are deemed unfair or inappropriate, e.g., for traffic congestion management or allocation of food donations. Yet the applicability of these mechanisms remains limited, since it is challenging for users to learn how to bid an artificial currency that has no value outside the mechanism. Indeed, users must learn the value of the currency as well as how to optimally spend it in a coupled manner. In this paper, we study learning to bid in two prominent classes of artificial currency auctions: those in which currency is issued at the beginning of a finite period only to be spent over the period; and those where in addition to the initial endowment currency is transferred among users by redistributing payments in each time step. In the latter class the currency has been referred to as karma, since users do not only spend karma to acquire public resources but also gain karma for yielding them. In both classes, we propose a simple learning strategy, called adaptive karma pacing strategy, and show that a) it is asymptotically optimal for a single agent bidding against a stationary competition; b) it leads to convergent learning dynamics when all agents adopt it; and c) it constitutes an approximate Nash equilibrium as the number of agents grows. This requires a novel analysis in comparison to adaptive pacing strategies in monetary auctions, since we depart from the classical assumption that the currency has known value outside the auctions. The analysis is further complicated by the possibility to both spend and gain currency in auctions with redistribution.},
+  address   = {New Haven, United States},
+  month     = july,
+  keywords  = {sub},
+  owner     = {devanshjalota},
+  timestamp = {2024-03-01}
 }
 
 @inproceedings{BanerjeeSharmaEtAl2022,
@@ -4985,6 +5023,19 @@
   url       = {https://arxiv.org/abs/2009.10191},
   owner     = {somrita},
   timestamp = {2020-09-18}
+}
+
+@inproceedings{BanerjeeBalabanEtAl2024,
+  author       = {Banerjee, S. and Balaban, B. and Shirley, M. and Bradner, K. and Pavone, M.},
+  title        = {Contingency Planning Using Bi-level Markov Decision Processes for Space Missions},
+  booktitle    = proc_IEEE_AC,
+  year         = {2024},
+  asl_abstract = {This work focuses on autonomous contingency planning for scientific missions by enabling rapid policy computation from any off-nominal point in the state space in the event of a delay or deviation from the nominal mission plan. Successful contingency planning involves managing risks and rewards, often probabilistically associated with actions, in stochastic scenarios. Markov Decision Processes (MDPs) are used to mathematically model decision-making in such scenarios. However, in the specific case of planetary rover traverse planning, the vast action space and long planning time horizon pose computational challenges. A bi-level MDP framework is proposed to improve computational tractability, while also aligning with existing mission planning practices and enhancing explainability and trustworthiness of AI-driven solutions. We discuss the conversion of a mission planning MDP into a bi-level MDP, and test the framework on RoverGridWorld, a modified GridWorld environment for rover mission planning. We demonstrate the computational tractability and near-optimal policies achievable with the bi-level MDP approach, highlighting the trade-offs between compute time and policy optimality as the problem's complexity grows. This work facilitates more efficient and flexible contingency planning in the context of scientific missions.},
+  asl_address  = {Big Sky, Montana},
+  asl_month    = mar,
+  asl_url      = {},
+  owner        = {somrita},
+  timestamp    = {2024-02-09}
 }
 
 @inproceedings{ArenaFortunaEtAl2006,
@@ -5190,57 +5241,6 @@
   owner     = {blandry},
   timestamp = {2020-04-13}
 }
-
-@inproceedings{BanerjeeBalabanEtAl2024,
-  author       = {Banerjee, S. and Balaban, B. and Shirley, M. and Bradner, K. and Pavone, M.},
-  title        = {Contingency Planning Using Bi-level Markov Decision Processes for Space Missions},
-  booktitle    = proc_IEEE_AC,
-  year         = {2024},
-  asl_abstract = {This work focuses on autonomous contingency planning for scientific missions by enabling rapid policy computation from any off-nominal point in the state space in the event of a delay or deviation from the nominal mission plan. Successful contingency planning involves managing risks and rewards, often probabilistically associated with actions, in stochastic scenarios. Markov Decision Processes (MDPs) are used to mathematically model decision-making in such scenarios. However, in the specific case of planetary rover traverse planning, the vast action space and long planning time horizon pose computational challenges. A bi-level MDP framework is proposed to improve computational tractability, while also aligning with existing mission planning practices and enhancing explainability and trustworthiness of AI-driven solutions. We discuss the conversion of a mission planning MDP into a bi-level MDP, and test the framework on RoverGridWorld, a modified GridWorld environment for rover mission planning. We demonstrate the computational tractability and near-optimal policies achievable with the bi-level MDP approach, highlighting the trade-offs between compute time and policy optimality as the problem's complexity grows. This work facilitates more efficient and flexible contingency planning in the context of scientific missions.},
-  asl_address  = {Big Sky, Montana},
-  asl_month    = mar,
-  asl_url      = {},
-  owner        = {somrita},
-  timestamp    = {2024-02-09}
-}
-
-@inproceedings{SalzmannArrizabalagaEtAl2023,
-  author    = {Salzmann, T. and Arrizabalaga, J. and Andersson, J. and Pavone, M. and Ryll, M.},
-  title     = {Learning for {CasADi}: Data-driven Models in Numerical Optimization},
-  year      = {2023},
-  keywords  = {sub},
-  abstract  = {While real-world problems are often challenging to analyze analytically, deep learning excels in modeling complex processes from data. Existing optimization frameworks like CasADi facilitate seamless usage of solvers but face challenges when integrating learned process models into numerical optimizations. To address this gap, we present the Learning for CasADi (L4CasADi) framework, enabling the seamless integration of PyTorch-learned models with CasADi for efficient and potentially hardware-accelerated numerical optimization. The applicability of L4CasADi is demonstrated with two tutorial examples: First, we optimize a fish's trajectory in a turbulent river for energy efficiency where the turbulent flow is represented by a PyTorch model. Second, we demonstrate how an implicit Neural Radiance Field environment representation can be easily leveraged for optimal control with L4CasADi. L4CasADi, along with examples and documentation, is available under MIT license at this https URL.},
-  url       = {https://arxiv.org/abs/2312.05873},
-  owner     = {somrita},
-  timestamp = {2024-03-01}
-}
-
-@inproceedings{FoutterSinhaEtAl2023,
-  author       = {Foutter, M. and Sinha, R. and Banerjee, S. and Pavone, M.},
-  title        = {Self-Supervised Model Generalization using Out-of-Distribution Detection},
-  booktitle    = proc_CoRL_OOD,
-  year         = {2023},
-  asl_abstract = {Autonomous agents increasingly rely on learned components to streamline safe and reliable decision making. However, data dissimilar to that seen in training, deemed to be Out-of-Distribution (OOD), creates undefined behavior in the output of our learned-components, which can have detrimental consequences in a safety critical setting such as autonomous satellite rendezvous. In the wild, we typically are exposed to a mix of in-and-out of distribution data where OOD inputs correspond to uncommon and unfamiliar data when a nominally competent system encounters a new situation. In this paper, we propose an architecture that detects the presence of OOD inputs in an online stream of data. The architecture then uses these OOD inputs to recognize domain invariant features between the original training and OOD domain to improve model inference. We demonstrate that our algorithm more than doubles model accuracy on the OOD domain with sparse, unlabeled OOD examples compared to a naive model without such data on shifted MNIST domains. Importantly, we also demonstrate our algorithm maintains strong accuracy on the original training domain, generalizing the model to a mix of in-and-out of distribution examples seen at deployment. Code for our experiment is available at: https://github.com/StanfordASL/CoRL_OODWorkshop_DANN-DL.},
-  asl_address  = {Atlanta, GA},
-  asl_url      = {https://openreview.net/forum?id=z5XS3BY13J},
-  url          = {https://openreview.net/forum?id=z5XS3BY13J},
-  owner        = {somrita},
-  timestamp    = {2024-03-01}
-}
-
-@inproceedings{NeiraBrownEtAl2024,
-  author    = {Neira, D. E. B. and Brown, R. and Sathe, P. and Wudarski, F. and Pavone, M. and Rieffel, E. G. and Venturelli, D.},
-  title     = {Benchmarking the Operation of Quantum Heuristics and Ising Machines: Scoring Parameter Setting Strategies on Optimization Applications},
-  year      = {2024},
-  keywords  = {sub},
-  note      = {Submitted},
-  abstract  = {We discuss guidelines for evaluating the performance of parameterized stochastic solvers for optimization problems, with particular attention to systems that employ novel hardware, such as digital quantum processors running variational algorithms, analog processors performing quantum annealing, or coherent Ising Machines. We illustrate through an example a benchmarking procedure grounded in the statistical analysis of the expectation of a given performance metric measured in a test environment. In particular, we discuss the necessity and cost of setting parameters that affect the algorithm's performance. The optimal value of these parameters could vary significantly between instances of the same target problem. We present an open-source software package that facilitates the design, evaluation, and visualization of practical parameter tuning strategies for complex use of the heterogeneous components of the solver. We examine in detail an example using parallel tempering and a simulator of a photonic Coherent Ising Machine computing and display the scoring of an illustrative baseline family of parameter-setting strategies that feature an exploration-exploitation trade-off.},
-  url       = {https://arxiv.org/abs/2402.10255},
-  owner     = {rabrown1},
-  timestamp = {2024-03-01}
-}
-
-
 
 @Comment{jabref-meta: databaseType:bibtex;}
 
