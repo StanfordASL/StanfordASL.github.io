@@ -18,3 +18,4 @@ Outside of the lab, Daniel can be typically found on the tennis court or golf co
 
 ### Awards:
 - NSF Graduate Research Fellowship, 2022
+- NASA Space Technology Graduate Research Opportunities Fellowship, 2024
