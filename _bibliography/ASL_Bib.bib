@@ -190,6 +190,7 @@
 @String{jrn_Elsevier_AA                = {{Acta Astronautica}}}
 @String{jrn_Elsevier_AB                = {{Animal Behaviour}}}
 @String{jrn_Elsevier_AI                = {{Artificial Intelligence}}}
+@String{jrn_Elsevier_APEN              = {{Applied Energy}}}
 @String{jrn_Elsevier_ARC               = {{Annual Reviews in Control}}}
 @String{jrn_Elsevier_ASR               = {{Advances in Space Research}}}
 @String{jrn_Elsevier_CDEG              = {{Chemie der Erde-Geochemistry}}}
@@ -1565,7 +1566,7 @@
   address   = {Stockholm, Sweden},
   month     = jun,
   note      = {In press},
-  abstract  = {Operators of Electric Autonomous Mobility-on-Demand (E-AMoD) fleets need to make several real-time decisions such as matching available cars to ride requests, rebalancing idle cars to areas of high demand, and charging vehicles to ensure sufficient range. While this problem can be posed as a linear program that optimizes flows over a space-charge-time graph, the size of the resulting optimization problem does not allow for real-time implementation in realistic settings. In this work, we present the E-AMoD control problem through the lens of reinforcement learning and propose a graph network-based framework to achieve drastically improved scalability and superior performance over heuristics. Specifically, we adopt a bi-level formulation where we (1) leverage a graph network-based RL agent to specify a desired next state in the space-charge graph, and (2) solve more tractable linear programs to best achieve the desired state while ensuring feasibility. Experiments using real-world data from San Francisco and New York City show that our approach achieves up to 89% of the profits of the theoretically-optimal solution while achieving more than a 100x speedup in computational time. Furthermore, our approach outperforms the best domain-specific heuristics with comparable runtimes, with an increase in profits by up to 3x. Finally, we highlight promising zero-shot transfer capabilities of our learned policy on tasks such as inter-city generalization and service area expansion, thus showing the utility, scalability, and flexibility of our framework.},
+  abstract  = {Operators of Electric Autonomous Mobility-on-Demand (E-AMoD) fleets need to make several real-time decisions such as matching available vehicles to ride requests, rebalancing idle vehicles to areas of high demand, and charging vehicles to ensure sufficient range. While this problem can be posed as a linear program that optimizes flows over a space-charge-time graph, the size of the resulting optimization problem does not allow for real-time implementation in realistic settings. In this work, we present the E-AMoD control problem through the lens of reinforcement learning and propose a graph network-based framework to achieve drastically improved scalability and superior performance over heuristics. Specifically, we adopt a bi-level formulation where we (1) leverage a graph network-based RL agent to specify a desired next state in the space-charge graph, and (2) solve more tractable linear programs to best achieve the desired state while ensuring feasibility. Experiments using real-world data from San Francisco and New York City show that our approach achieves up to 89% of the profits of the theoretically-optimal solution while achieving more than a 100x speedup in computational time. We further highlight promising zero-shot transfer capabilities of our learned policy on tasks such as inter-city generalization and service area expansion, thus showing the utility, scalability, and flexibility of our framework. Finally, our approach outperforms the best domain-specific heuristics with comparable runtimes, with an increase in profits by up to 3.2x.},
   keywords  = {press},
   owner     = {gammelli},
   timestamp = {2023-11-15},
@@ -2884,6 +2885,19 @@
   url       = {http://arxiv.org/abs/2107.00165}
 }
 
+@Article{LukeRibeiroEtAl2024,
+  author    = {Luke, J. and Ribeiro, M. and Martin, S. and Balogun, E. and Cezar, G. and Pavone, M. and Rajagopal, R.},
+  title     = {Optimal Coordination of Electric Buses and Battery Storage for Achieving a 24/7 Carbon-Free Electrified Fleet},
+  journal   = jrn_Elsevier_APEN,
+  note      = {Submitted},
+  abstract  = {Electrifying a commercial fleet, while concurrently adopting distributed energy resources, such as solar panels and battery storage, can significantly reduce the carbon intensity of its operation. However, coordinating the fleet operations with distributed resources requires an intelligent system to determine their joint dispatch. In this paper, we propose a 24/7 Carbon-Free Electrified Fleet digital twin framework for the coordination of an electric bus fleet, co-located photovoltaic solar arrays, and a battery energy storage system. The framework includes forecasting and surrogate modules for marginal grid emissions factors, solar generation, and bus energy consumption. These inputs are then passed into the optimization module to minimize emissions and the electricity bill. We evaluate the digital platform in a case study for Stanford University's Marguerite Shuttle fleet assuming (1) non-controllable loads are coupled behind-the-meter, and (2) a stand-alone depot. Additionally, we perform a techno-economic analysis, quantifying the value of a bus depot battery storage system. Fleet operators may leverage our flexible framework to determine electric bus and battery storage dispatch, reduce electricity costs, and achieve 24/7 carbon-free charging.},
+  doi       = {10.2139/ssrn.4815427},
+  keywords  = {sub},
+  owner     = {jthluke},
+  timestamp = {2024-05-07},
+  url       = {https://dx.doi.org/10.2139/ssrn.4815427},
+}
+
 @inproceedings{LorenzettiPavone2020b,
   author    = {Lorenzetti, J. and Pavone, M.},
   title     = {Error Bounds for Reduced Order Model Predictive Control},
@@ -3654,18 +3668,6 @@
   keywords  = {pub},
   owner     = {devanshjalota},
   timestamp = {2023-04-01}
-}
-
-@inproceedings{ChiuJalotaEtAl2024,
-  author    = {Chiu, C. and Jalota, D. and Pavone, M.},
-  title     = {Credit vs. Discount-Based Congestion Pricing: A Comparison Study},
-  booktitle = proc_IEEE_CDC,
-  year      = {2024},
-  abstract  = {Tolling, or congestion pricing, offers a promising traffic management policy for regulating congestion, but has also attracted criticism for placing outsized financial burdens on low-income users. Credit-based congestion pricing (CBCP) and discount-based congestion pricing (DBCP) policies, which respectively provide travel credits and toll discounts to low-income users on tolled roads, have emerged as promising mechanisms for reducing traffic congestion without worsening societal inequities. However, the optimal design of CBCP and DBCP policies, as well as their relative advantages and disadvantages, remain poorly understood. To address this, we study the effects of implementing CBCP and DBCP policies to route users on a network of multi-lane highways with tolled express lanes. We formulate a non-atomic routing game framework in which a subset of eligible users is granted toll relief in the form of a fixed budget or toll discount, while the remaining ineligible users must pay out-of-pocket. We prove the existence of Nash equilibrium traffic flow patterns corresponding to any given CBCP or DBCP policy. Under the additional assumption that eligible users have time-invariant VoTs, we provide a convex program to efficiently compute these equilibria. For networks consisting of a single edge, we identify conditions under which CBCP policies outperform DBCP policies (and vice versa), in the sense of improving eligible users' access to the express lane. Finally, we present empirical results from a CBCP pilot study of the San Mateo 101 Express Lane Project in California. Our empirical results corroborate our theoretical analysis of the impact of deploying credit-based and discount-based policies, and lend insights into the sensitivity of their impact with respect to the travel demand and users' VoTs.},
-  keywords  = {sub},
-  owner     = {devanshjalota},
-  url       = {https://arxiv.org/abs/2403.13923},
-  timestamp = {2024-03-25}
 }
 
 @inproceedings{JalotaEtAl2022,
@@ -4520,6 +4522,18 @@
   keywords  = {pub},
   owner     = {kirilsol},
   timestamp = {2021-10-17}
+}
+
+@inproceedings{ChiuJalotaEtAl2024,
+  author    = {Chiu, C. and Jalota, D. and Pavone, M.},
+  title     = {Credit vs. Discount-Based Congestion Pricing: A Comparison Study},
+  booktitle = proc_IEEE_CDC,
+  year      = {2024},
+  abstract  = {Tolling, or congestion pricing, offers a promising traffic management policy for regulating congestion, but has also attracted criticism for placing outsized financial burdens on low-income users. Credit-based congestion pricing (CBCP) and discount-based congestion pricing (DBCP) policies, which respectively provide travel credits and toll discounts to low-income users on tolled roads, have emerged as promising mechanisms for reducing traffic congestion without worsening societal inequities. However, the optimal design of CBCP and DBCP policies, as well as their relative advantages and disadvantages, remain poorly understood. To address this, we study the effects of implementing CBCP and DBCP policies to route users on a network of multi-lane highways with tolled express lanes. We formulate a non-atomic routing game framework in which a subset of eligible users is granted toll relief in the form of a fixed budget or toll discount, while the remaining ineligible users must pay out-of-pocket. We prove the existence of Nash equilibrium traffic flow patterns corresponding to any given CBCP or DBCP policy. Under the additional assumption that eligible users have time-invariant VoTs, we provide a convex program to efficiently compute these equilibria. For networks consisting of a single edge, we identify conditions under which CBCP policies outperform DBCP policies (and vice versa), in the sense of improving eligible users' access to the express lane. Finally, we present empirical results from a CBCP pilot study of the San Mateo 101 Express Lane Project in California. Our empirical results corroborate our theoretical analysis of the impact of deploying credit-based and discount-based policies, and lend insights into the sensitivity of their impact with respect to the travel demand and users' VoTs.},
+  keywords  = {sub},
+  owner     = {devanshjalota},
+  url       = {https://arxiv.org/abs/2403.13923},
+  timestamp = {2024-03-25}
 }
 
 @inproceedings{ChiodiniReidEtAl2018,
