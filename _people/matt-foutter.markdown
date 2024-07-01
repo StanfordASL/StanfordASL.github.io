@@ -12,8 +12,8 @@ email: mfoutter@stanford.edu
 # website:
 # gscholar:
 ---
-Matt is a PhD student in the Department of Aeronautics and Astronautics. Matt's research interests lie at the intersection of machine learning and robotics with the goal of enabling an autonomous robot to safely navigate in an unfamiliar environmnet. Specifically, he is interested in developing methodologies that monitor a robot's operation at deployment - premeptively catching failure modes and enacting safety preserving actions.
+Matt is a PhD student in the Department of Aeronautics and Astronautics. Matt's research interests lie at the intersection of machine learning and robotics with the goal of enabling an autonomous robot to safely navigate in an unfamiliar environment. Specifically, he is interested in developing methodologies that monitor a robot's operation at deployment - preemptively catching failure modes and enacting safety preserving actions.
 
 Prior to joining Stanford, Matt graduated summa cum laude from the University of Michigan, Ann Arbor, with a B.S.E in Aerospace Engineering and minor in Computer Science. There, he conducted research in classical control techniques with highly flexible wings under Prof. Carlos Cesnik in the Active Aeroelasticity and Structures Research Laboratory. Also, as an undergraduate, he raced a solar car 1,800 miles across Australia and interned at SpaceX and MIT Lincoln Lab.
 
-Outside of the lab, Matt enjoys his free time by reading and playing mulitple sports including basketball and table tennis.
+Outside of the lab, Matt enjoys his free time by reading and playing multiple sports including basketball and table tennis.
