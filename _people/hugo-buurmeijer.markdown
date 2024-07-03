@@ -1,4 +1,3 @@
-
 ---
 layout: person
 title: “Hugo Buurmeijer”
