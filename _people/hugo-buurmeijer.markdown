@@ -1,3 +1,4 @@
+
 ---
 layout: person
 title: “Hugo Buurmeijer”
@@ -11,7 +12,6 @@ github: hbuurmei
 linkedin: hbuurmei
 website: https://hbuurmei.github.io
 gscholar: ywP7WbMAAAAJ
-
 ---
 
 Hugo is a PhD student in the Department of Aeronautics and Astronautics at Stanford University. He completed his BSc degree in Aerospace Engineering at Delft University of Technology in 2022 and his MSc in Aeronautics and Astronautics at Stanford University in 2024. Additionally, he held a research fellow position at Harvard University in the Computational Robotics group directed by professor Heng Yang in 2023.
