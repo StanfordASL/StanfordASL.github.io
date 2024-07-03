@@ -3,8 +3,9 @@ layout: person
 title:  "Yixiao (Alvin) Sun"
 last:   "Sun"
 date:   2022-03-31 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Uncertainty calibration for deep models"
+current: "Skydio"
 img: AlvinSun.jpg
 email: alvinsun@stanford.edu
 github: alvinsunyixiao

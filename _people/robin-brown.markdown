@@ -3,8 +3,9 @@ layout: person
 title:  "Robin Brown"
 last:   "Brown"
 date:   2020-03-19 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Scalable algorithms for multi-agents systems"
+current: "OpenAI"
 img: RobinBrown.jpg
 email: rabrown1@stanford.edu
 ---

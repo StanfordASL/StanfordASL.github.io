@@ -10,6 +10,7 @@ position: visiting
 <li><h6 class="visiting-name">Davide Celestini.</h6> <p class="visiting-excerpt">Politecnico di Torino.</p></li>
 <li><h6 class="visiting-name">Claudia Conte.</h6> <p class="visiting-excerpt">University of Naples Federico II.</p></li>
 <li><h6 class="visiting-name">Roman Engeler.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
+<li><h6 class="visiting-name">Zhe Fu.</h6> <p class="visiting-excerpt">University of California, Berkeley.</p></li>
 <li><h6 class="visiting-name">Javier V. Gómez.</h6> <p class="visiting-excerpt">Universidad Carlos III de Madrid.</p></li>
 <li><h6 class="visiting-name">Alvaro Estandia Hentschel.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Dominik Helmreich.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
