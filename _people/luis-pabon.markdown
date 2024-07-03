@@ -9,7 +9,7 @@ img: LuisPabon.jpg
 email: lpabon@stanford.edu
 linkedin: luis-p
 website: https://luispabon.info/
-# gscholar:
+gscholar: cjt9tVkAAAAJ
 ---
 
 Luis is a Ph.D. student in the Department of Aeronautics and Astronautics. His research lies at the intersection of machine learning and control theory, targeting advancements in robotics and autonomous systems. Luis focuses on developing algorithms that enable robots to efficiently learn from their own experience, safely interact with the world around them, and adapt to unfamiliar environments.
