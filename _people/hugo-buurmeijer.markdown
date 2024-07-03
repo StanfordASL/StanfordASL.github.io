@@ -1,10 +1,10 @@
 ---
 layout: person
-title: “Hugo Buurmeijer”
-last:  “Buurmeijer”
-date:  2024-06-22 00:00:00
+title:  "Hugo Buurmeijer"
+last:   "Buurmeijer"
+date:   2024-06-22 00:00:00
 position: phd
-excerpt: “Optimal and learning-based control of high-dimensional robots”
+excerpt: "Optimal and learning-based control of high-dimensional robots"
 img: hbuurmei.jpeg
 email: hbuurmei@stanford.edu
 github: hbuurmei
