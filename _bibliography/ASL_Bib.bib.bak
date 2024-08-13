@@ -635,7 +635,6 @@
 @String{proc_RMAD                      = {{Randomization Methods in Algorithm Design}}}
 @String{proc_ROBOCOMM                  = {{Int. Conf. on Robot Communication and Coordination}}}
 @String{proc_RSS                       = {{Robotics: Science and Systems}}}
-@String{proc_RSS_SemRob                = {{Robotics: Science and Systems - Workshop on Semantics for Robotics: From Environment Understanding and Reasoning to Safe Interaction}}}
 @String{proc_SIAM_SODA                 = {{ACM-SIAM Symp. on Discrete Algorithms}}}
 @String{proc_SICE                      = {{SICE Annual Conference}}}
 @String{proc_SPIE                      = {{Proc. of SPIE}}}
@@ -4206,19 +4205,6 @@
   url          = {https://openreview.net/forum?id=z5XS3BY13J},
   owner        = {somrita},
   timestamp    = {2024-03-01}
-}
-
-@inproceedings{FoutterBohjEtAl2024,
-  author       = {Foutter, M. and Bhoj, P. and Sinha, R. and Elhafsi, A. and Banerjee, S. and Agia, C. and Kruger, J. and Guffanti, T. and Gammelli, D. and D'Amico, S. and Pavone, M.},
-  title        = {Adapting a Foundation Model for Space-based Tasks},
-  booktitle    = proc_RSS_SemRob,
-  year         = {2024},
-  asl_abstract = {Foundation models, e.g., large language models, possess attributes of intelligence which offer promise to endow a robot with the contextual understanding necessary to navigate complex, unstructured tasks in the wild. In the future of space robotics, we see three core challenges which motivate the use of a foundation model adapted to space-based applications: 1) Scalability of ground-in-the-loop operations; 2) Generalizing prior knowledge to novel environments; and 3) Multi-modality in tasks and sensor data. Therefore, as a first-step towards building a foundation model for space-based applications, we automatically label the AI4Mars dataset to curate a language annotated dataset of visual-question-answer tuples. We fine-tune a pretrained LLaVA checkpoint on this dataset to endow a vision-language model with the ability to perform spatial reasoning and navigation on Mars' surface. In this work, we demonstrate that 1) existing vision-language models are deficient visual reasoners in space-based applications, and 2) fine-tuning a vision-language model on extraterrestrial data significantly improves the quality of responses even with a limited training dataset of only a few thousand samples.},
-  asl_address  = {Delft, Netherlands},
-  asl_url      = {https://arxiv.org/abs/2408.05924},
-  url          = {https://arxiv.org/abs/2408.05924},
-  owner        = {foutter},
-  timestamp    = {2024-08-12}
 }
 
 @inproceedings{FladerAhnEtAl2016,
