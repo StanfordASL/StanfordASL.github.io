@@ -1776,6 +1776,18 @@
   timestamp = {2021-11-04}
 }
 
+@inproceedings{SchmidtGammelliEtAl2024,
+  author    = {Schmidt, C. and Gammelli, D. and Harrison, J. and Pavone, M. and Rodrigues, F.},
+  title     = {Offline Hierarchical Reinforcement Learning via Inverse Optimization},
+  booktitle = proc_NIPS,
+  keywords  = {sub},
+  note      = {Submitted},
+  abstract  = {Hierarchical policies enable strong performance in many sequential decision-making problems, such as those with high-dimensional action spaces, those requiring long-horizon planning, and settings with sparse rewards. However, learning hierarchical policies from static offline datasets presents a significant challenge. Crucially, actions taken by higher-level policies may not be directly observable within hierarchical controllers, and the offline dataset might have been generated using a different policy structure, hindering the use of standard offline learning algorithms. In this work, we propose OHIO: a framework for offline reinforcement learning (RL) of hierarchical policies. Our framework leverages knowledge of the policy structure to solve the \textit{inverse problem}, recovering the unobservable high-level actions that likely generated the observed data under our hierarchical policy. This approach constructs a dataset suitable for off-the-shelf offline training. We demonstrate our framework on robotic and network optimization problems and show that it substantially outperforms end-to-end RL methods and improves robustness. We investigate a variety of instantiations of our framework, both in direct deployment of policies trained offline and when online fine-tuning is performed.},
+  year      = {2024},
+  owner     = {gammelli},
+  timestamp = {2024-08-14}
+}
+
 @incollection{SchmerlingPavone2019,
   author    = {Schmerling, E. and Pavone, M.},
   title     = {Kinodynamic Planning},
@@ -4720,6 +4732,18 @@
   owner     = {bonalli},
   timestamp = {2021-03-23},
   url       = {https://arxiv.org/abs/2101.12086}
+}
+
+@article{CelestiniGammelliEtAl2024,
+  author       = {Celestini, D. and Gammelli, D. and Guffanti, T. and D'Amico, S. and Capelli, E. and Pavone, M.},
+  title        = {Transformer-based Model Predictive Control: Trajectory Optimization via Sequence Modeling},
+  journal      = jrn_IEEE_RAL,
+  year         = {2024},
+  note         = {Submitted},
+  abstract     = {Model predictive control (MPC) has established itself as the primary methodology for constrained control, enabling general-purpose robot autonomy in diverse real-world scenarios. However, for most problems of interest, MPC relies on the recursive solution of highly non-convex trajectory optimization problems, leading to high computational complexity and strong dependency on initialization. In this work, we present a unified framework to combine the main strengths of optimization-based and learning-based methods for MPC. Our approach entails embedding high-capacity, transformer-based neural network models within the optimization process for trajectory generation, whereby the transformer provides a near-optimal initial guess, or target plan, to a non-convex optimization problem. Our experiments, performed in simulation and the real world onboard a free flyer platform, demonstrate the capabilities of our framework to improve MPC convergence and runtime. Compared to purely optimization-based approaches, results show that our approach can improve trajectory generation performance by up to 75%, reduce the number of solver iterations by up to 45%, and improve overall MPC runtime by 7x without loss in performance.},
+  keywords     = {sub},
+  owner        = {gammelli},
+  timestamp    = {2024-08-14}
 }
 
 @inproceedings{CauligiCulbertsonEtAl2020,
