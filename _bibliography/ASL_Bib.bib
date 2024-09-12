@@ -1566,12 +1566,10 @@
   year      = {2024},
   address   = {Stockholm, Sweden},
   month     = jun,
-  note      = {In press},
   abstract  = {Operators of Electric Autonomous Mobility-on-Demand (E-AMoD) fleets need to make several real-time decisions such as matching available vehicles to ride requests, rebalancing idle vehicles to areas of high demand, and charging vehicles to ensure sufficient range. While this problem can be posed as a linear program that optimizes flows over a space-charge-time graph, the size of the resulting optimization problem does not allow for real-time implementation in realistic settings. In this work, we present the E-AMoD control problem through the lens of reinforcement learning and propose a graph network-based framework to achieve drastically improved scalability and superior performance over heuristics. Specifically, we adopt a bi-level formulation where we (1) leverage a graph network-based RL agent to specify a desired next state in the space-charge graph, and (2) solve more tractable linear programs to best achieve the desired state while ensuring feasibility. Experiments using real-world data from San Francisco and New York City show that our approach achieves up to 89% of the profits of the theoretically-optimal solution while achieving more than a 100x speedup in computational time. We further highlight promising zero-shot transfer capabilities of our learned policy on tasks such as inter-city generalization and service area expansion, thus showing the utility, scalability, and flexibility of our framework. Finally, our approach outperforms the best domain-specific heuristics with comparable runtimes, with an increase in profits by up to 3.2x.},
   doi       = {10.23919/ecc64448.2024.10591098},
-  keywords  = {press},
-  owner     = {gammelli},
-  timestamp = {2023-11-15},
+  owner     = {jthluke},
+  timestamp = {2024-09-12},
   url       = {https://arxiv.org/abs/2311.05780},
 }
 
@@ -2014,6 +2012,17 @@
   timestamp = {2020-02-12}
 }
 
+@article{RovedaPavone2024,
+  author={Roveda, L. and Pavone, M.},
+  journal=jrn_IEEE_RAL, 
+  title={Gradient Descent-Based Task-Orientation Robot Control Enhanced With Gaussian Process Predictions}, 
+  year={2024},
+  volume={9},
+  number={9},
+  pages={8035-8042},
+  keywords={Task analysis;Robots;Impedance;Position control;Gaussian processes;Uncertainty;Robot sensing systems;Uncertain orientation control;impedance control;interaction control;Gaussian process;gradient descent-based control},
+  doi={10.1109/LRA.2024.3438039}}
+
 @article{RossiZhangEtAl2017,
   author    = {Rossi, F. and Zhang, R. and Hindy, Y. and Pavone, M.},
   title     = {Routing Autonomous Vehicles in Congested Transportation Networks: Structural Properties and Coordination Algorithms},
@@ -2194,7 +2203,7 @@
   abstract  = {Although vehicle electrification and utilization of on-site solar PV generation can begin reducing the greenhouse gas emissions associated with bus fleet operations, a method to intelligently coordinate bus-route assignments, bus charging, and energy storage is needed to fully decarbonize fleet operations while simultaneously minimizing electricity costs. This paper proposes a 24/7 Carbon-Free Electrified Fleet digital twin framework for modeling, controlling, and analyzing an electric bus fleet, co-located solar PV arrays, and a battery energy storage system. The framework consists of forecasting modules for marginal grid emissions factors, solar generation, and bus energy consumption that are input to the optimization module, which determines bus and battery operations at minimal electricity and emissions costs. We present a digital platform based on this framework, and for a case study of Stanford University's Marguerite Shuttle, the platform reduced peak charging demand by 99%, electric utility bill by $2778, and associated carbon emissions by 100% for one week of simulated operations for 38 buses. When accounting for operational uncertainty, the platform still reduced the utility bill by $784 and emissions by 63%.},
   doi       = {10.46855/energy-proceedings-11033},
   owner     = {jthluke},
-  timestamp = {2023-11-15},
+  timestamp = {2024-08-12},
   url       = {https://www.energy-proceedings.org/towards-a-24-7-carbon-free-electric-fleet%3A-a-digital-twin-framework/},
 }
 
@@ -2210,17 +2219,6 @@
   owner     = {bylard},
   timestamp = {2017-02-20}
 }
-
-@article{RovedaPavone2024,
-  author={Roveda, L. and Pavone, M.},
-  journal=jrn_IEEE_RAL, 
-  title={Gradient Descent-Based Task-Orientation Robot Control Enhanced With Gaussian Process Predictions}, 
-  year={2024},
-  volume={9},
-  number={9},
-  pages={8035-8042},
-  keywords={Task analysis;Robots;Impedance;Position control;Gaussian processes;Uncertainty;Robot sensing systems;Uncertain orientation control;impedance control;interaction control;Gaussian process;gradient descent-based control},
-  doi={10.1109/LRA.2024.3438039}}
   abstract  = {This letter proposes a novel force-based task-orientation controller for interaction tasks with environmental orientation uncertainties. The main aim of the controller is to align the robot tool along the main task direction (e.g., along screwing, insertion, polishing, etc.) without the use of any external sensors (e.g., vision systems), relying only on end-effector wrench measurements/estimations. We propose a gradient descent-based orientation controller, enhancing its performance with the orientation predictions provided by a Gaussian Process model. Derivation of the controller is presented, together with simulation results (considering a probing task) and experimental results involving various re-orientation scenarios, i.e., i) a task with the robot in interaction with a soft environment, ii) a task with the robot in interaction with a stiff and inclined environment, and iii) a task to enable the assembly of a gear into its shaft. The proposed controller is compared against a state-of-the-art approach, highlighting its ability to re-orient the robot tool even in complex tasks (where the state-of-the-art method fails).},
   owner     = {lpabon},
   timestamp = {2024-08-19}
@@ -2912,7 +2910,7 @@
   url       = {https://arxiv.org/abs/2102.10809}
 }
 
-@inproceedings{LukeSalazarEtAl2021,
+@InProceedings{LukeSalazarEtAl2021,
   author    = {Luke, J. and Salazar, M. and Rajagopal, R. and Pavone, M.},
   title     = {Joint Optimization of Autonomous Electric Vehicle Fleet Operations and Charging Station Siting},
   booktitle = proc_IEEE_ITSC,
@@ -2922,8 +2920,8 @@
   abstract  = {Charging infrastructure is the coupling link between power and transportation networks, thus determining charging station siting is necessary for planning of power and transportation systems. While previous works have either optimized for charging station siting given historic travel behavior, or optimized fleet routing and charging given an assumed placement of the stations, this paper introduces a linear program that optimizes for station siting and macroscopic fleet operations in a joint fashion. Given an electricity retail rate and a set of travel demand requests, the optimization minimizes total cost for an autonomous EV fleet comprising of travel costs, station procurement costs, fleet procurement costs, and electricity costs, including demand charges. Specifically, the optimization returns the number of charging plugs for each charging rate (e.g., Level 2, DC fast charging) at each candidate location, as well as the optimal routing and charging of the fleet. From a case-study of an electric vehicle fleet operating in San Francisco, our results show that, albeit with range limitations, small EVs with low procurement costs and high energy efficiencies are the most cost-effective in terms of total ownership costs. Furthermore, the optimal siting of charging stations is more spatially distributed than the current siting of stations, consisting mainly of high-power Level 2 AC stations (16.8 kW) with a small share of DC fast charging stations and no standard 7.7kW Level 2 stations. Optimal siting reduces the total costs, empty vehicle travel, and peak charging load by up to 10%.},
   doi       = {10.1109/ITSC48978.2021.9565089},
   owner     = {jthluke},
-  timestamp = {2021-06-29},
-  url       = {http://arxiv.org/abs/2107.00165}
+  timestamp = {2023-11-15},
+  url       = {http://arxiv.org/abs/2107.00165},
 }
 
 @Article{LukeRibeiroEtAl2024,
@@ -2931,12 +2929,12 @@
   title     = {Optimal Coordination of Electric Buses and Battery Storage for Achieving a 24/7 Carbon-Free Electrified Fleet},
   journal   = jrn_Elsevier_APEN,
   year      = {2024},
-  note      = {Submitted},
+  note      = {In press},
   abstract  = {Electrifying a commercial fleet, while concurrently adopting distributed energy resources, such as solar panels and battery storage, can significantly reduce the carbon intensity of its operation. However, coordinating the fleet operations with distributed resources requires an intelligent system to determine their joint dispatch. In this paper, we propose a 24/7 Carbon-Free Electrified Fleet digital twin framework for the coordination of an electric bus fleet, co-located photovoltaic solar arrays, and a battery energy storage system. The framework includes forecasting and surrogate modules for marginal grid emissions factors, solar generation, and bus energy consumption. These inputs are then passed into the optimization module to minimize emissions and the electricity bill. We evaluate the digital platform in a case study for Stanford University's Marguerite Shuttle fleet assuming (1) non-controllable loads are coupled behind-the-meter, and (2) a stand-alone depot. Additionally, we perform a techno-economic analysis, quantifying the value of a bus depot battery storage system. Fleet operators may leverage our flexible framework to determine electric bus and battery storage dispatch, reduce electricity costs, and achieve 24/7 carbon-free charging.},
   doi       = {10.2139/ssrn.4815427},
-  keywords  = {sub},
+  keywords  = {press},
   owner     = {jthluke},
-  timestamp = {2024-05-07},
+  timestamp = {2024-09-12},
   url       = {https://dx.doi.org/10.2139/ssrn.4815427},
 }
 
