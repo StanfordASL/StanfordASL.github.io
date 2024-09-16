@@ -4293,13 +4293,13 @@
   title        = {Semantic Anomaly Detection with Large Language Models},
   journal      = jrn_Spr_AR,
   volume       = {47},
-  number       = {},
+  number       = {8},
   pages        = {1035--1055},
   year         = {2023},
-  month    = oct,
-  abstract = {As robots acquire increasingly sophisticated skills and see increasingly complex and varied environments, the threat of an edge case or anomalous failure is ever present. For example, Tesla cars have seen interesting failure modes ranging from autopilot disengagements due to inactive traffic lights carried by trucks to phantom braking caused by images of stop signs on roadside billboards. These system-level failures are not due to failures of any individual component of the autonomy stack but rather system-level deficiencies in semantic reasoning. Such edge cases, which we call semantic anomalies, are simple for a human to disentangle yet require insightful reasoning. To this end, we study the application of large language models (LLMs), endowed with broad contextual understanding and reasoning capabilities, to recognize such edge cases and introduce a monitoring framework for semantic anomaly detection in vision-based policies. Our experiments apply this framework to a finite state machine policy for autonomous driving and a learned policy for object manipulation. These experiments demonstrate that the LLM-based monitor can effectively identify semantic anomalies in a manner that shows agreement with human reasoning. Finally, we provide an extended discussion on the strengths and weaknesses of this approach and motivate a research outlook on how we can further use foundation models for semantic anomaly detection. Our project webpage can be found at https://sites.google.com/view/llm-anomaly-detection.},
-  doi      = {10.1007/s10514-023-10132-6},
-  url      = {https://doi.org/10.1007/s10514-023-10132-6},
+  month        = oct,
+  abstract     = {As robots acquire increasingly sophisticated skills and see increasingly complex and varied environments, the threat of an edge case or anomalous failure is ever present. For example, Tesla cars have seen interesting failure modes ranging from autopilot disengagements due to inactive traffic lights carried by trucks to phantom braking caused by images of stop signs on roadside billboards. These system-level failures are not due to failures of any individual component of the autonomy stack but rather system-level deficiencies in semantic reasoning. Such edge cases, which we call semantic anomalies, are simple for a human to disentangle yet require insightful reasoning. To this end, we study the application of large language models (LLMs), endowed with broad contextual understanding and reasoning capabilities, to recognize such edge cases and introduce a monitoring framework for semantic anomaly detection in vision-based policies. Our experiments apply this framework to a finite state machine policy for autonomous driving and a learned policy for object manipulation. These experiments demonstrate that the LLM-based monitor can effectively identify semantic anomalies in a manner that shows agreement with human reasoning. Finally, we provide an extended discussion on the strengths and weaknesses of this approach and motivate a research outlook on how we can further use foundation models for semantic anomaly detection. Our project webpage can be found at https://sites.google.com/view/llm-anomaly-detection.},
+  doi          = {10.1007/s10514-023-10132-6},
+  url          = {https://arxiv.org/abs/2305.11307},
   owner        = {amine},
   timestamp    = {2024-02-29}
 }
