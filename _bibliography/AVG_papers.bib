@@ -741,6 +741,117 @@
   year      = {2023},
 }
 
+@inproceedings{DingCaoEtAl2024,
+  author    = {Ding, W. and Cao, Y. and Zhao, D. and Xiao C. and Pavone, M.},
+  title     = {RealGen: Retrieval Augmented Generation for Controllable Traffic Scenarios},
+  booktitle = proc_ECCV,
+  year      = {2024},
+  abstract  = {Simulation plays a crucial role in the development of autonomous vehicles (AVs) due to the potential risks associated with real-world testing. Although significant progress has been made in the visual aspects of simulators, generating complex behavior among agents remains a formidable challenge. It is not only imperative to ensure realism in the scenarios generated but also essential to incorporate preferences and conditions to facilitate controllable generation for AV training and evaluation. Traditional methods, mainly relying on memorizing the distribution of training datasets, often fall short in generating unseen scenarios. Inspired by the success of retrieval augmented generation in large language models, we present RealGen, a novel retrieval-based in-context learning framework for traffic scenario generation. RealGen synthesizes new scenarios by combining behaviors from multiple retrieved examples in a gradient-free way, which may originate from templates or tagged scenarios. This in-context learning framework endows versatile generative capabilities, including the ability to edit scenarios, compose various behaviors, and produce critical scenarios. Evaluations show that RealGen offers considerable flexibility and controllability, marking a new direction in the field of controllable traffic scenario generation. Check our project website for more information: this https URL.},
+  address   = {Milan, Italy},
+  month     = sep,
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://arxiv.org/abs/2312.13303}
+}
+
+@inproceedings{GuSongEtAl2024,
+  author    = {Gu, X. and Song, G. and Gilitschenski, I. and Pavone, M. and Ivanovic, B.},
+  title     = {Producing and Leveraging Online Map Uncertainty in Trajectory Prediction},
+  booktitle = proc_IEEE_CVPR,
+  year      = {2024},
+  abstract  = {High-definition (HD) maps have played an integral role in the development of modern autonomous vehicle (AV) stacks, albeit with high associated labeling and maintenance costs. As a result, many recent works have proposed methods for estimating HD maps online from sensor data, enabling AVs to operate outside of previously-mapped regions. However, current online map estimation approaches are developed in isolation of their downstream tasks, complicating their integration in AV stacks. In particular, they do not produce uncertainty or confidence estimates. In this work, we extend multiple state-of-the-art online map estimation methods to additionally estimate uncertainty and show how this enables more tightly integrating online mapping with trajectory forecasting. In doing so, we find that incorporating uncertainty yields up to 50% faster training convergence and up to 15% better prediction performance on the real-world nuScenes driving dataset.},
+  keywords  = {pub},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://openaccess.thecvf.com/content/CVPR2024/papers/Gu_Producing_and_Leveraging_Online_Map_Uncertainty_in_Trajectory_Prediction_CVPR_2024_paper.pdf}
+}
+
+@inproceedings{IvanovicSongEtAl2024,
+  author    = {Ivanovic, B. and Song, G. and Gilitschenski, I. and Pavone, M.},
+  title     = {trajdata: A Unified Interface to Multiple Human Trajectory Datasets},
+  booktitle = proc_NIPS,
+  year      = {2024},
+  abstract  = {The field of trajectory forecasting has grown significantly in recent years, partially owing to the release of numerous large-scale, real-world human trajectory datasets for autonomous vehicles (AVs) and pedestrian motion tracking. While such datasets have been a boon for the community, they each use custom and unique data formats and APIs, making it cumbersome for researchers to train and evaluate methods across multiple datasets. To remedy this, we present trajdata: a unified interface to multiple human trajectory datasets. At its core, trajdata provides a simple, uniform, and efficient representation and API for trajectory and map data. As a demonstration of its capabilities, in this work we conduct a comprehensive empirical evaluation of existing trajectory datasets, providing users with a rich understanding of the data underpinning much of current pedestrian and AV motion forecasting research, and proposing suggestions for future datasets from these insights. trajdata is permissively licensed (Apache 2.0) and can be accessed online at https://github.com/NVlabs/trajdata.},
+  keywords  = {pub},
+  address   = {Red Hook, NY, USA},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/file/57bb67dbe17bfb660c8c63d089ea05b9-Paper-Datasets_and_Benchmarks.pdf}
+}
+
+@inproceedings{JinCheEtAl2024,
+  author    = {Jin, C. and Che, T. and Peng, H. and Li, Y. and Metaxas, D. and Pavone, M.},
+  title     = {Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate},
+  year      = {2024},
+  abstract  = {Generalization remains a central challenge in machine learning. In this work, we propose Learning from Teaching (LOT ), a novel regularization technique for deep neural networks to enhance generalization. Inspired by the human ability to capture concise and abstract patterns, we hypothesize that generalizable correlations are expected to be easier to imitate. LOT operationalizes this concept to improve generalization of the main model with auxiliary student learners. The student learners are trained by the main model and, in turn, provide feedback to help the main model capture more generalizable and imitable correlations. Our experimental results across several domains, including Computer Vision, Natural Language Processing, and methodologies like Reinforcement Learning, demonstrate that the introduction of LOT brings significant benefits compared to training models on the original dataset. The results suggest the effectiveness and efficiency of LOT in identifying generalizable information at the right scales while discarding spurious data correlations, thus making LOT a valuable addition to current machine learning. Code is available at https://github.com/jincan333/LoT.},
+  keywords  = {sub},
+  url = {https://arxiv.org/pdf/2402.02769},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18}
+}
+
+@inproceedings{KangEtAl2023,
+  author    = {Shucheng, K. and Chen, Y. and Yang, H. and Pavone, M.},
+  title     = {Verification and Synthesis of Robust Control Barrier Functions: Multilevel Polynomial Optimization and Semidefinite Relaxation},
+  booktitle = proc_IEEE_CDC,
+  year      = {2023},
+  abstract  = {We study the problem of verification and synthesis of robust control barrier functions (CBF) for control-affine polynomial systems with bounded additive uncertainty and convex polynomial constraints on the control. We first formulate robust CBF verification and synthesis as multilevel polynomial optimization problems (POP), where verification optimizes-in three levels-the uncertainty, control, and state, while synthesis additionally optimizes the parameter of a chosen parametric CBF candidate. We then show, by invoking the KKT conditions of the inner optimizations over uncertainty and control, the verification problem can be simplified as a single-level POP and the synthesis problem reduces to a min-max POP. This reduction leads to multilevel semidefinite relaxations. For the verification problem, we apply Lasserre's hierarchy of moment relaxations. For the synthesis problem, we draw connections to existing relaxation techniques for robust min-max POP, which first uses sum-of-squares programming to find increasingly tight polynomial lower bounds to the unknown value function of the verification POP, and then call Lasserre's hierarchy again to maximize the lower bounds. Both semidefinite relaxations guarantee asymptotic global convergence to optimality. We provide an in-depth study of our framework on the controlled Van der Pol Oscillator, both with and without additive uncertainty.},
+  address = {Singapore},
+  doi = {10.1109/CDC49753.2023.10383434},
+  url = {https://ieeexplore.ieee.org/document/10383434},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18}
+}
+
+@inproceedings{LiWangEtAl2024,
+  author    = {Li, B. and Wang, Y. and Mao, J. and Ivanovic, B. and Veer, S. and Leung, K. and Pavone, M.},
+  title     = {Driving Everywhere with Large Language Model Policy Adaptation},
+  booktitle = proc_IEEE_CVPR,
+  year      = {2024},
+  abstract  = {Adapting driving behavior to new environments, cus- toms, and laws is a long-standing problem in autonomous driving, precluding the widespread deployment of au- tonomous vehicles (AVs). In this paper, we present LLaDA, a simple yet powerful tool that enables human drivers and autonomous vehicles alike to drive everywhere by adapting their tasks and motion plans to traffic rules in new loca- tions. LLaDA achieves this by leveraging the impressive zero-shot generalizability of large language models (LLMs) in interpreting the traffic rules in the local driver handbook. Through an extensive user study, we show that LLaDA’s instructions are useful in disambiguating in-the-wild unexpected situations. We also demonstrate LLaDA’s ability to adapt AV motion planning policies in real-world datasets; LLaDA outperforms baseline planning approaches on all our metrics. Please check our website for more details: LLaDA.},
+  keywords  = {pub},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Driving_Everywhere_with_Large_Language_Model_Policy_Adaptation_CVPR_2024_paper.pdf}
+}
+
+@inproceedings{SinghWangEtAl2024,
+  author    = {Singh, G. and Wang, Y. and Yang, J. and Ivanovic, B. and Ahn, S. and Pavone, M. and Che, T.},
+  title     = {Parallelized Spatiotemporal Slot Binding for Videos},
+  year      = {2024},
+  booktitle = proc_ICML,
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  abstract  = {While modern best practices advocate for scalable architectures that support long-range interactions, object-centric models are yet to fully embrace these architectures. In particular, existing object-centric models for handling sequential inputs, due to their reliance on RNN-based implementation, show poor stability and capacity and are slow to train on long sequences. We introduce Parallelizable Spatiotemporal Binder or PSB, the first temporally-parallelizable slot learning architecture for sequential inputs. Unlike conventional RNN-based approaches, PSB produces object-centric representations, known as slots, for all time-steps in parallel. This is achieved by refining the initial slots across all time-steps through a fixed number of layers equipped with causal attention. By capitalizing on the parallelism induced by our architecture, the proposed model exhibits a significant boost in efficiency. In experiments, we test PSB extensively as an encoder within an auto-encoding framework paired with a wide variety of decoder options. Compared to the state-of-the-art, our architecture demonstrates stable training on longer sequences, achieves parallelization that results in a 60% increase in training speed, and yields performance that is on par with or better on unsupervised 2D and 3D object-centric scene decomposition and understanding.},
+  url       = {https://openreview.net/pdf?id=KpeGdDzucX},
+  address   = {Vienna, Austria},
+  month     = jul
+}
+
+@inproceedings{SharmaVeerEtAl2024,
+  author    = {Sharma, A. and Veer, S. and Hancock, A. and Yang, H. and Pavone, M. and Majumdar, A.},
+  title     = {PAC-Bayes generalization certificates for learned inductive conformal prediction},
+  booktitle = proc_NIPS,
+  year      = {2024},
+  abstract  = {Inductive Conformal Prediction (ICP) provides a practical and effective approach for equipping deep learning models with uncertainty estimates in the form of set-valued predictions which are guaranteed to contain the ground truth with high probability. Despite the appeal of this coverage guarantee, these sets may not be efficient: the size and contents of the prediction sets are not directly controlled, and instead depend on the underlying model and choice of score function. To remedy this, recent work has proposed learning model and score function parameters using data to directly optimize the efficiency of the ICP prediction sets. While appealing, the generalization theory for such an approach is lacking: direct optimization of empirical efficiency may yield prediction sets that are either no longer efficient on test data, or no longer obtain the required coverage on test data. In this work, we use PAC-Bayes theory to obtain generalization bounds on both the coverage and the efficiency of set-valued predictors which can be directly optimized to maximize efficiency while satisfying a desired test coverage. In contrast to prior work, our framework allows us to utilize the entire calibration dataset to learn the parameters of the model and score function, instead of requiring a separate hold-out set for obtaining test-time coverage guarantees. We leverage these theoretical results to provide a practical algorithm for using calibration data to simultaneously fine-tune the parameters of a model and score function while guaranteeing test-time coverage and efficiency of the resulting prediction sets. We evaluate the approach on regression and classification tasks, and outperform baselines calibrated using a Hoeffding bound-based PAC guarantee on ICP, especially in the low-data regime.},
+  keywords  = {pub},
+  address   = {Red Hook, NY, USA},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/file/9235c376df778f1aaf486a882afb7471-Paper-Conference.pdf}
+}
+
+@inproceedings{WengIvanovicEtAl2024,
+  author    = {Weng, X. and Ivanovic, B. and Wang, Y. and Wang, Y. and Pavone, M.},
+  title     = {PARA-Drive: Parallelized Architecture for Real-time Autonomous Driving},
+  booktitle = proc_IEEE_CVPR,
+  year      = {2024},
+  abstract  = {Recent works have proposed end-to-end autonomous ve- hicle (AV) architectures comprised of differentiable mod- ules, achieving state-of-the-art driving performance. While they provide advantages over the traditional perception- prediction-planning pipeline (e.g., removing information bottlenecks between components and alleviating integration challenges), they do so using a diverse combination of tasks, modules, and their interconnectivity. As of yet, however, there has been no systematic analysis of the necessity of these modules or the impact of their connectivity, placement, and internal representations on overall driving per- formance. Addressing this gap, our work conducts a comprehensive exploration of the design space of end-to-end modular AV stacks. Our findings culminate in the develop- ment of PARA-Drive1: a fully parallel end-to-end AV architecture. PARA-Drive not only achieves state-of-the-art performance in perception, prediction, and planning, but also significantly enhances runtime speed by nearly 3×, without compromising on interpretability or safety.},
+  keywords  = {pub},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://openaccess.thecvf.com/content/CVPR2024/papers/Weng_PARA-Drive_Parallelized_Architecture_for_Real-time_Autonomous_Driving_CVPR_2024_paper.pdf}
+}
 
 @inproceedings{ChristianosKarkusEtAl20232023,
   author    = {Christianos, F. and Karkus, P. and Ivanovic, B. and Albrecht, S. V. and Pavone, M.},
@@ -789,6 +900,20 @@
   booktitle = proc_IEEE_ICRA ,
   title     = {Receding Horizon Planning with Rule Hierarchies for Autonomous Vehicles},
   year      = {2023},
+}
+
+@inproceedings{VeerSharmaEtAl2023,
+  author    = {Veer, S. and Sharma, A. and Pavone, M.},
+  title     = {Multi-Predictor Fusion: Combining Learning-based and Rule-based Trajectory Predictors},
+  booktitle = proc_CoRL,
+  year      = {2023},
+  abstract  = {Trajectory prediction modules are key enablers for safe and efficient planning of autonomous vehicles (AVs), particularly in highly interactive traffic scenarios. Recently, learning-based trajectory predictors have experienced considerable success in providing state-of-the-art performance due to their ability to learn multimodal behaviors of other agents from data. In this paper, we present an algorithm called multi-predictor fusion (MPF) that augments the performance of learning-based predictors by imbuing them with motion planners that are tasked with satisfying logic-based rules. MPF probabilistically combines learning- and rule-based predictors by mixing trajectories from both standalone predictors in accordance with a belief distribution that reflects the online performance of each predictor. In our results, we show that MPF outperforms the two standalone predictors on various metrics and delivers the most consistent performance.},
+  address   = {Atlanta, GA, United States},
+  volume    = {229},
+  pages     = {2807--2820},
+  url = {https://proceedings.mlr.press/v229/veer23a.html},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18}
 }
 
 @inproceedings{LeungVeerEtAl2023,
