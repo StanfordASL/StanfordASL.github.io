@@ -1513,10 +1513,11 @@
   author    = {Sinha, R. and Schmerling, E. and Pavone, M.},
   title     = {Closing the Loop on Runtime Monitors with Fallback-Safe MPC},
   year      = {2023},
-  keywords  = {pub},
   booktitle = proc_IEEE_CDC,
   abstract  = {When we rely on deep-learned models for robotic perception, we must recognize that these models may behave unreliably on inputs dissimilar from the training data, compromising the closed-loop system's safety. This raises fundamental questions on how we can assess confidence in perception systems and to what extent we can take safety-preserving actions when external environmental changes degrade our perception model's performance. Therefore, we present a framework to certify the safety of a perception-enabled system deployed in novel contexts. To do so, we leverage robust model predictive control (MPC) to control the system using the perception estimates while maintaining the feasibility of a safety-preserving fallback plan that does not rely on the perception system. In addition, we calibrate a runtime monitor using recently proposed conformal prediction techniques to certifiably detect when the perception system degrades beyond the tolerance of the MPC controller, resulting in an end-to-end safety assurance. We show that this control framework and calibration technique allows us to certify the system's safety with orders of magnitudes fewer samples than required to retrain the perception network when we deploy in a novel context on a photo-realistic aircraft taxiing simulator. Furthermore, we illustrate the safety-preserving behavior of the MPC on simulated examples of a quadrotor.},
-  url       = {/wp-content/papercite-data/pdf/Sinha.Pavone.CDC23.pdf},
+  address   = {Singapore},
+  doi       = {10.1109/CDC49753.2023.10383965},
+  url       = {https://ieeexplore.ieee.org/document/10383965},
   owner     = {rhnsinha},
   timestamp = {2023-04-12}
 }
@@ -3122,10 +3123,11 @@
   booktitle = proc_IEEE_CDC,
   year      = {2023},
   abstract  = {We study the convex hulls of reachable sets of nonlinear systems with bounded disturbances. Reachable sets play a critical role in control, but remain notoriously challenging to compute, and existing over-approximation tools tend to be conservative or computationally expensive. In this work, we exactly characterize the convex hulls of reachable sets as the convex hulls of solutions of an ordinary differential equation from all possible initial values of the disturbances. This finite-dimensional characterization unlocks a tight estimation algorithm to over-approximate reachable sets that is significantly faster and more accurate than existing methods. We present applications to neural feedback loop analysis and robust model predictive control.},
-  keywords  = {pub},
+  address   = {Singapore},
+  doi       = {10.1109/CDC49753.2023.10383902},
   owner     = {lew},
   timestamp = {2023-04-03},
-  url       = {https://arxiv.org/abs/2303.17674v2}
+  url       = {https://ieeexplore.ieee.org/document/10383902}
 }
 
 @article{LewBonalliPavoneTAC2024,
@@ -3565,15 +3567,12 @@
 @inproceedings{JalotaTsaoEtAl2023,
   author    = {Jalota, D. and Tsao, M. and Pavone, M.},
   title     = {Catch Me If You Can: Combatting Fraud in Artificial Currency Based Government Benefits Programs},
-  booktitle = proc_WINE,
   year      = {2024},
   abstract  = {Artificial currencies have grown in popularity in many real-world resource allocation settings. In particular, they have gained traction in government benefits programs, e.g., food assistance or transit benefits programs, that provide support to eligible users in the population, e.g., through subsidized food or public transit. However, such programs are prone to two common fraud mechanisms: (i) \emph{misreporting fraud}, wherein users can misreport their private attributes to gain access to more artificial currency (credits) than they are entitled to, and (ii) \emph{black market fraud}, wherein users may seek to sell some of their credits in exchange for \emph{real} money. In this work, we develop mechanisms to address these two sources of fraud in artificial currency based government benefits programs. To address misreporting fraud, we propose an audit mechanism that induces a two-stage game between an administrator and users, wherein the administrator running the benefits program can audit users at some cost and levy fines against them for misreporting their information. For this audit game, we first investigate the conditions on the administrator’s budget to establish the existence of equilibria and present a linear programming approach to compute these equilibria under both the signaling game and Bayesian persuasion formulations. We then show that the decrease in misreporting fraud corresponding to our audit mechanism far outweighs the spending of the administrator to run it by establishing that its total costs are lower than that of the status quo with no audits. To highlight the practical viability of our audit mechanism in mitigating misreporting fraud, we present a case study on Washington D.C.'s federal transit benefits program where the proposed audit mechanism even demonstrates several orders of magnitude improvement in total cost compared to a no-audit strategy for some parameter ranges.},
-  address   = {Edinburgh, United Kingdom},
-  month     = july,
   url = {https://arxiv.org/abs/2402.16162},
   keywords  = {sub},
   owner     = {devanshjalota},
-  timestamp = {2023-07-02}
+  timestamp = {2024-07-02}
 }
 
 @inproceedings{JalotaSoloveyEtAl2022,
@@ -3674,11 +3673,8 @@
 @inproceedings{JalotaEtAl2024,
   author    = {Jalota, D. and Ostrovsky, M. and Pavone, M.},
   title     = {When Simple is Near-Optimal in Security Games},
-  booktitle = proc_WINE,
   year      = {2024},
   abstract  = {Fraudulent or illegal activities are ubiquitous across applications and involve users bypassing the rule of law, often with the strategic aim of obtaining some benefit that would otherwise be unattainable within the bounds of lawful conduct. However, user fraud is detrimental, as it may compromise safety or impose disproportionate negative externalities on particular population groups. To mitigate the potential harms of user fraud, we study the problem of policing such fraud as a security game between an administrator and users. In this game, an administrator deploys R security resources (e.g., police officers) across L locations and levies fines against users engaging in fraud at those locations. For this security game, we study both welfare and revenue maximization administrator objectives. In both settings, we show that computing the optimal administrator strategy is NP-hard and develop natural greedy algorithm variants for the respective settings that achieve at least half the welfare or revenue as the welfare-maximizing or revenue-maximizing solutions, respectively. We also establish a resource augmentation guarantee that our proposed greedy algorithms with one extra resource, i.e., R+1 resources, achieve at least the same welfare (revenue) as the welfare-maximizing (revenue-maximizing) outcome with R resources. Finally, since the welfare and revenue-maximizing solutions can differ significantly, we present a framework inspired by contract theory, wherein a revenue-maximizing administrator is compensated through contracts for the welfare it contributes. Beyond extending our theoretical results in the welfare and revenue maximization settings to studying equilibrium strategies in the contract game, we also present numerical experiments highlighting the efficacy of contracts in bridging the gap between the revenue and welfare-maximizing administrator outcomes.},
-  address   = {Edinburgh, United Kingdom},
-  month     = july,
   keywords  = {sub},
   url = {https://arxiv.org/abs/2402.11209},
   owner     = {devanshjalota},
@@ -3703,7 +3699,9 @@
   booktitle = proc_IEEE_CDC,
   year      = {2023},
   abstract  = {Credit-based congestion pricing (CBCP) has emerged as a mechanism to alleviate the social inequity concerns of road congestion pricing - a promising strategy for traffic congestion mitigation - by providing low-income users with travel credits to offset some of their toll payments. While CBCP offers immense potential for addressing inequity issues that hamper the practical viability of congestion pricing, the deployment of CBCP in practice is nascent, and the potential efficacy and optimal design of CBCP schemes have yet to be formalized. In this work, we study the design of CBCP schemes to achieve particular societal objectives and investigate their influence on traffic patterns when routing heterogeneous users with different values of time (VoTs) in a multi-lane highway with an express lane. We introduce a new non-atomic congestion game model of a mixed-economy, wherein eligible users receive travel credits while the remaining ineligible users pay out-of-pocket to use the express lane. In this setting, we investigate the effect of CBCP schemes on traffic patterns by characterizing the properties (i.e., existence, comparative statics) of the corresponding Nash equilibria and, in the setting when eligible users have time-invariant VoTs, develop a convex program to compute these equilibria. We further present a bi-level optimization framework to design optimal CBCP schemes to achieve a central planner's societal objectives. Finally, we conduct numerical experiments based on a case study of the San Mateo 101 Express Lanes Project, one of the first North American CBCP pilots. Our results demonstrate the potential of CBCP to enable low-income travelers to avail of the travel time savings provided by congestion pricing on express lanes while having comparatively low impacts on the travel costs of other road users.},
-  keywords  = {pub},
+  address = {Singapore},
+  doi = {10.1109/CDC49753.2023.10384266},
+  url = {https://ieeexplore.ieee.org/document/10384266},
   owner     = {devanshjalota},
   timestamp = {2023-04-01}
 }
