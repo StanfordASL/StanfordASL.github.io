@@ -1049,3 +1049,108 @@
   year      = {2022},
   keywords  = {pub}
 }
+
+@inproceedings{ChenLiuEtAl2024,
+  author    = {Chen, X. and Liu, Z. and Luo, K. Z. and Datta, S. and Polavaram, A. and Wang, Y. and You, Y. and Li, B. and Pavone, M. and Chao, W. L. and Campbell, M. and Hariharan, B. and Weinberger, K. Q.},
+  title     = {DiffuBox: Refining 3D Object Detection with Point Diffusion},
+  year      = {2024},
+  abstract  = {Ensuring robust 3D object detection and localization is crucial for many applications in robotics and autonomous driving. Recent models, however, face difficulties in maintaining high performance when applied to domains with differing sensor setups or geographic locations, often resulting in poor localization accuracy due to domain shift. To overcome this challenge, we introduce a novel diffusion-based box refinement approach. This method employs a domain-agnostic diffusion model, conditioned on the LiDAR points surrounding a coarse bounding box, to simultaneously refine the box's location, size, and orientation. We evaluate this approach under various domain adaptation settings, and our results reveal significant improvements across different datasets, object classes and detectors.},
+  keywords  = {sub},
+  url = {https://arxiv.org/abs/2405.16034},
+  owner     = {gammelli},
+  timestamp = {2024-09-18}
+}
+
+@inproceedings{PatrikarVeerEtAl2024,
+  author    = {Patrikar, J. and Veer, S. and Sharma, A. and Pavone, M. and Scherer, S.},
+  title     = {RuleFuser: An Evidential Bayes Approach for Rule Injection in Imitation Learned Planners and Predictors for Robustness under Distribution Shifts},
+  year      = {2024},
+  abstract  = {Modern motion planners for autonomous driving frequently use imitation learning (IL) to draw from expert driving logs. Although IL benefits from its ability to glean nuanced and multi-modal human driving behaviors from large datasets, the resulting planners often struggle with out-of-distribution (OOD) scenarios and with traffic rule compliance. On the other hand, classical rule-based planners, by design, can generate safe traffic rule compliant behaviors while being robust to OOD scenarios, but these planners fail to capture nuances in agent-to-agent interactions and human drivers' intent. RuleFuser, an evidential framework, combines IL planners with classical rule-based planners to draw on the complementary benefits of both, thereby striking a balance between imitation and safety. Our approach, tested on the real-world nuPlan dataset, combines the IL planner's high performance in in-distribution (ID) scenarios with the rule-based planners' enhanced safety in out-of-distribution (OOD) scenarios, achieving a 38.43% average improvement on safety metrics over the IL planner without much detriment to imitation metrics in OOD scenarios.},
+  keywords  = {sub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2405.11139}
+}
+
+@inproceedings{LuoWengEtAl2024,
+  author    = {Luo, K. Z. and Weng, X. and Wang, Y. and Wu, S. and Li, J. and Weinberger, K. Q. and Wang, Y. and Pavone, M.},
+  title     = {Augmenting lane perception and topology understanding with standard definition navigation maps},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2024},
+  abstract  = {Autonomous driving has traditionally relied heavily on costly and labor-intensive High Definition (HD) maps, hindering scalability. In contrast, Standard Definition (SD) maps are more affordable and have worldwide coverage, offering a scalable alternative. In this work, we systematically explore the effect of SD maps for real-time lane-topology understanding. We propose a novel framework to integrate SD maps into online map prediction and propose a Transformer-based encoder, SD Map Encoder Representations from transFormers, to leverage priors in SD maps for the lane-topology prediction task. This enhancement consistently and significantly boosts (by up to 60%) lane detection and topology prediction on current state-of-the-art online map prediction methods without bells and whistles and can be immediately incorporated into any Transformer-based lane-topology method. Code is available at https://github.com/NVlabs/SMERF.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10610276}
+}
+
+@inproceedings{HuangKarkusEtAl2024,
+  author    = {Huang, Z. and Karkus, P. and Ivanovic, B. and Chen, Y. and Pavone, M. and Lv, C.},
+  title     = {Dtpp: Differentiable joint conditional prediction and cost evaluation for tree policy planning in autonomous driving},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2024},
+  abstract  = {Motion prediction and cost evaluation are vital components in the decision-making system of autonomous vehicles. However, existing methods often ignore the importance of cost learning and treat them as separate modules. In this study, we employ a tree-structured policy planner and propose a differentiable joint training framework for both ego-conditioned prediction and cost models, resulting in a direct improvement of the final planning performance. For conditional prediction, we introduce a query-centric Transformer model that performs efficient ego-conditioned motion prediction. For planning cost, we propose a learnable context-aware cost function with latent interaction features, facilitating differentiable joint learning. We validate our proposed approach using the real-world nuPlan dataset and its associated planning test platform. Our framework not only matches state-of-the-art planning methods but outperforms other learning-based methods in planning quality, while operating more efficiently in terms of runtime. We show that joint training delivers significantly better performance than separate training of the two modules. Additionally, we find that tree-structured policy planning outperforms the conventional single-stage planning approach. Code is available: https://github.com/MCZhi/DTPP.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10610550}
+}
+
+@inproceedings{CaoIvanovicEtAl2024,
+  author    = {Cao, Y. and Ivanovic, B. and Xiao, C. and Pavone, M.},
+  title     = {Reinforcement learning with Human feedback for realistic traffic simulation},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2024},
+  abstract  = {In light of the challenges and costs of real-world testing, autonomous vehicle developers often rely on testing in simulation for the creation of reliable systems. A key element of effective simulation is the incorporation of realistic traffic models that align with human knowledge, an aspect that has proven challenging due to the need to balance realism and diversity. Towards this end, in this work we develop a framework that employs reinforcement learning from human feedback (RLHF) to enhance the realism of existing traffic models. This work also identifies two main challenges: capturing the nuances of human preferences on realism and unifying diverse traffic simulation models. To tackle these issues, we propose using human feedback for alignment and employ RLHF due to its sample efficiency. We also introduce the first dataset for realism alignment in traffic modeling to support such research. Our framework, named TrafficRLHF, demonstrates its proficiency in generating realistic traffic scenarios that are well-aligned with human preferences through comprehensive evaluations on the nuScenes dataset.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10610878}
+}
+
+@inproceedings{ChoIvanovicEtAl2024,
+  author    = {Cho, J. H. and Ivanovic, B. and Cao, Y. and Schmerling, E. and Wang, Y. and Weng, X. and Li, B. and You, Y. and Krähenbühl, P. and Wang, Y. and Pavone, M.},
+  title     = {Language-Image Models with 3D Understanding},
+  year      = {2024},
+  abstract  = {Multi-modal large language models (MLLMs) have shown incredible capabilities in a variety of 2D vision and language tasks. We extend MLLMs' perceptual capabilities to ground and reason about images in 3-dimensional space. To that end, we first develop a large-scale pre-training dataset for 2D and 3D called LV3D by combining multiple existing 2D and 3D recognition datasets under a common task formulation: as multi-turn question-answering. Next, we introduce a new MLLM named Cube-LLM and pre-train it on LV3D. We show that pure data scaling makes a strong 3D perception capability without 3D specific architectural design or training objective. Cube-LLM exhibits intriguing properties similar to LLMs: (1) Cube-LLM can apply chain-of-thought prompting to improve 3D understanding from 2D context information. (2) Cube-LLM can follow complex and diverse instructions and adapt to versatile input and output formats. (3) Cube-LLM can be visually prompted such as 2D box or a set of candidate 3D boxes from specialists. Our experiments on outdoor benchmarks demonstrate that Cube-LLM significantly outperforms existing baselines by 21.3 points of AP-BEV on the Talk2Car dataset for 3D grounded reasoning and 17.7 points on the DriveLM dataset for complex reasoning about driving scenarios, respectively. Cube-LLM also shows competitive results in general MLLM benchmarks such as refCOCO for 2D grounding with (87.0) average score, as well as visual question answering benchmarks such as VQAv2, GQA, SQA, POPE, etc. for complex reasoning. Our project is available at https://janghyuncho.github.io/Cube-LLM.},
+  keywords  = {sub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2405.03685}
+}
+
+@inproceedings{FanCongEtAl2024,
+  author    = {Fan, Z. and Cong, W. and Wen, K. and Wang, K. and Zhang, J. and Ding, X. and Xu, D. and Ivanovic, B. and Pavone, M. and Pavlakos, G. and Wang, Z. and Wang, Y.},
+  title     = {Instantsplat: Unbounded sparse-view pose-free gaussian splatting in 40 seconds},
+  year      = {2024},
+  abstract  = {While novel view synthesis (NVS) from a sparse set of images has advanced significantly in 3D computer vision, it relies on precise initial estimation of camera parameters using Structure-from-Motion (SfM). For instance, the recently developed Gaussian Splatting depends heavily on the accuracy of SfM-derived points and poses. However, SfM processes are time-consuming and often prove unreliable in sparse-view scenarios, where matched features are scarce, leading to accumulated errors and limited generalization capability across datasets. In this study, we introduce a novel and efficient framework to enhance robust NVS from sparse-view images. Our framework, InstantSplat, integrates multi-view stereo(MVS) predictions with point-based representations to construct 3D Gaussians of large-scale scenes from sparse-view data within seconds, addressing the aforementioned performance and efficiency issues by SfM. Specifically, InstantSplat generates densely populated surface points across all training views and determines the initial camera parameters using pixel-alignment. Nonetheless, the MVS points are not globally accurate, and the pixel-wise prediction from all views results in an excessive Gaussian number, yielding a overparameterized scene representation that compromises both training speed and accuracy. To address this issue, we employ a grid-based, confidence-aware Farthest Point Sampling to strategically position point primitives at representative locations in parallel. Next, we enhance pose accuracy and tune scene parameters through a gradient-based joint optimization framework from self-supervision. By employing this simplified framework, InstantSplat achieves a substantial reduction in training time, from hours to mere seconds, and demonstrates robust performance across various numbers of views in diverse datasets.},
+  keywords  = {sub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/pdf/2403.20309}
+}
+
+@inproceedings{SunTremblayEtAl2024,
+  author    = {Sun, F.-Y. and Tremblay, J. and Blukis, V. and Lin, K. and Xu, D. and Ivanovic, B. and Karkus, P. and Birchfield, S. and Fox, D. and Zhang, R. and Li, Y. and Wu, J. and Pavone, M. and Haber, N.},
+  title     = {Partial-View Object View Synthesis via Filtering Inversion},
+  booktitle = proc_3DV,
+  year      = {2024},
+  abstract  = {We propose Filtering Inversion (FINV), a learning framework and optimization process that predicts a renderable 3D object representation from one or few partial views. FINV addresses the challenge of synthesizing novel views of objects from partial observations, spanning cases where the object is not entirely in view, is partially occluded, or is only observed from similar views. To achieve this, FINV learns shape priors by training a 3D generative model. At inference, given one or more views of a novel real-world object, FINV first finds a set of latent codes for the object by inverting the generative model from multiple initial seeds. Maintaining the set of latent codes, FINV filters and resamples them after receiving each new observation, akin to particle filtering. The generator is then finetuned for each latent code on the available views in order to adapt to novel objects. We show that FINV successfully synthesizes novel views of real-world objects (e.g., chairs, tables, and cars), even if the generative prior is trained only on synthetic objects. The ability to address the sim-to-real problem allows FINV to be used for object categories without real-world datasets. FINV achieves state-of-the-art performance on multiple real-world datasets, recovers object shape and texture from partial and sparse views, is robust to occlusion, and is able to incrementally improves its representation with more observations.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10550566}
+}
+
+@inproceedings{PengXuEtAl2024,
+  author    = {Peng, C. and Xu, C. and Wang, Y. and Ding, M. and Yang, H. and Tomizuka, M. and Keutzer, K. and Pavone, M. and Zhan, W.},
+  title     = {Q-slam: Quadric representations for monocular slam},
+  booktitle = proc_CORL,
+  year      = {2024},
+  abstract  = {Monocular SLAM has long grappled with the challenge of accurately modeling 3D geometries. Recent advances in Neural Radiance Fields (NeRF)-based monocular SLAM have shown promise, yet these methods typically focus on novel view synthesis rather than precise 3D geometry modeling. This focus results in a significant disconnect between NeRF applications, i.e., novel-view synthesis and the requirements of SLAM. We identify that the gap results from the volumetric representations used in NeRF, which are often dense and noisy. In this study, we propose a novel approach that reimagines volumetric representations through the lens of quadric forms. We posit that most scene components can be effectively represented as quadric planes. Leveraging this assumption, we reshape the volumetric representations with million of cubes by several quadric planes, which leads to more accurate and efficient modeling of 3D scenes in SLAM contexts. Our method involves two key steps: First, we use the quadric assumption to enhance coarse depth estimations obtained from tracking modules, e.g., Droid-SLAM. This step alone significantly improves depth estimation accuracy. Second, in the subsequent mapping phase, we diverge from previous NeRF-based SLAM methods that distribute sampling points across the entire volume space. Instead, we concentrate sampling points around quadric planes and aggregate them using a novel quadric-decomposed Transformer. Additionally, we introduce an end-to-end joint optimization strategy that synchronizes pose estimation with 3D reconstruction.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2403.08125}
+}
+
