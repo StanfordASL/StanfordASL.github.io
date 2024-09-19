@@ -2747,14 +2747,12 @@
 }
 
 @inproceedings{MortonCutkoskyPavone2024,
-  author = {Morton, Daniel and Cutkosky, Mark and Pavone, Marco},
+  author = {Morton, D. and Cutkosky, M. and Pavone, M.},
   title = {Task-Driven Manipulation with Reconfigurable Parallel Robots},
   booktitle = proc_IEEE_IROS,
   year = {2024},
-  month = mar,
   abstract = {ReachBot, a proposed robotic platform, employs extendable booms as limbs for mobility in challenging environments, such as martian caves. When attached to the environment, ReachBot acts as a parallel robot, with reconfiguration driven by the ability to detach and re-place the booms. This ability enables manipulation-focused scientific objectives: for instance, through operating tools, or handling and transporting samples. To achieve these capabilities, we develop a two-part solution, optimizing for robustness against task uncertainty and stochastic failure modes. First, we present a mixed-integer stance planner to determine the positioning of ReachBot's booms to maximize the task wrench space about the nominal point(s). Second, we present a convex tension planner to determine boom tensions for the desired task wrenches, accounting for the probabilistic nature of microspine grasping. We demonstrate improvements in key robustness metrics from the field of dexterous manipulation, and show a large increase in the volume of the manipulation workspace. Finally, we employ Monte-Carlo simulation to validate the robustness of these methods, demonstrating good performance across a range of randomized tasks and environments, and generalization to cable-driven morphologies. We make our code available at our project webpage, https://stanfordasl.github.io/reachbot_manipulation},
-  note = {Submitted},
-  keywords = {sub},
+  keywords = {pub},
   url = {https://arxiv.org/pdf/2403.10768.pdf},
   owner = {dmorton},
   timestamp = {2024-03-16},
@@ -2862,6 +2860,18 @@
   timestamp = {2018-01-16}
 }
 
+@inproceedings{LuoSinhaEtAl2024,
+  author    = {Luo, R. and Sinha, R. and Sun, Y. and Hindy, A. and Zhao, S. and Savarese, S. and Schmerling, E. and Pavone, M.},
+  title     = {Online Distribution Shift Detection via Recency Prediction},
+  booktitle = {proc_IEEE_ICRA},
+  year      = {2024},
+  abstract  = {When deploying modern machine learning-enabled robotic systems in high-stakes applications, detecting distribution shift is critical. However, most existing methods for detecting distribution shift are not well-suited to robotics settings, where data often arrives in a streaming fashion and may be very high-dimensional. In this work, we present an online method for detecting distribution shift with guarantees on the false positive rate — i.e., when there is no distribution shift, our system is very unlikely (with probability < ε) to falsely issue an alert; any alerts that are issued should therefore be heeded. Our method is specifically designed for efficient detection even with high dimensional data, and it empirically achieves up to 11x faster detection on realistic robotics settings compared to prior work while maintaining a low false negative rate in practice (whenever there is a distribution shift in our experiments, our method indeed emits an alert). We demonstrate our approach in both simulation and hardware for a visual servoing task, and show that our method indeed issues an alert before a failure occurs.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10611114}
+}
+
 @inproceedings{LuoZhaoEtAl2022,
   author    = {Luo, R. and Zhao, S. and Kuck, J. and Ivanovic, B. and Savarese, S. and Schmerling, E. and Pavone, M.},
   title     = {Sample-Efficient Safety Assurances using Conformal Prediction},
@@ -2884,19 +2894,6 @@
   owner     = {rsluo},
   timestamp = {2023-02-10},
   url       = {https://arxiv.org/abs/2109.14082}
-}
-
-@inproceedings{LuoSinhaEtAl2023,
-  author    = {Luo, R. and Sinha, R. and Sun, Y. and Hindy, A. and Zhao, S. and Savarese, S. and Schmerling, E. and Pavone, M.},
-  booktitle = proc_IEEE_ICRA,
-  title     = {Online Distribution Shift Detection via Recency Prediction},
-  year      = {2024},
-  keywords  = {press},
-  note      = {In press},
-  abstract  = {When deploying modern machine learning-enabled robotic systems in high-stakes applications, detecting distributional shift is critical. However, most existing methods for detecting distribution shift are not well-suited to robotics settings, where data often arrives in a streaming fashion and may be very high-dimensional. In this work, we present an online method for detecting distributional shift with guarantees on the false positive rate --- i.e., when there is no distribution shift, our system is very unlikely (with probability $< \epsilon$) to falsely issue an alert; any alerts that are issued should therefore be heeded. Our method is specifically designed for efficient detection even with high dimensional data, and it empirically achieves up to 6x faster detection on realistic robotics settings compared to prior work while maintaining a low false negative rate in practice (whenever there is a distribution shift in our experiments, our method indeed emits an alert).},
-  url       = {https://arxiv.org/abs/2211.09916},
-  owner     = {rdyro},
-  timestamp = {2022-09-21}
 }
 
 @inproceedings{LuoEtAl2022,
@@ -4702,6 +4699,21 @@
   timestamp = {2021-10-06}
 }
 
+@article{ChenNewdickEtAl2024,
+  author    = {Chen, T. G. and Newdick, S. and Di, J. and Bosio, C. and Ongole, N. and Lapôtre, M. and Pavone, M. and Cutkosky, M. R.},
+  title     = {Locomotion as manipulation with ReachBot},
+  journal   = jrn_Science_R,
+  volume    = {9},
+  number    = {89},
+  pages     = {eadi9762},
+  year      = {2024},
+  abstract  = {Caves and lava tubes on the Moon and Mars are sites of geological and astrobiological interest but consist of terrain that is inaccessible with traditional robot locomotion. To support the exploration of these sites, we present ReachBot, a robot that uses extendable booms as appendages to manipulate itself with respect to irregular rock surfaces. The booms terminate in grippers equipped with microspines and provide ReachBot with a large workspace, allowing it to achieve force closure in enclosed spaces, such as the walls of a lava tube. To propel ReachBot, we present a contact-before-motion planner for nongaited legged locomotion that uses internal force control, similar to a multifingered hand, to keep its long, slender booms in tension. Motion planning also depends on finding and executing secure grips on rock features. We used a Monte Carlo simulation to inform gripper design and predict grasp strength and variability. In addition, we used a two-step perception system to identify possible grasp locations. To validate our approach and mechanisms under realistic conditions, we deployed a single ReachBot arm and gripper in a lava tube in the Mojave Desert. The field test confirmed that ReachBot will find many targets for secure grasps with the proposed kinematic design.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://www.science.org/doi/abs/10.1126/scirobotics.adi9762}
+}
+
 @inproceedings{ChenMillerEtAl2022,
   author    = {Chen, T. G. and Miller, B. and Winston, C. and Schneider, S. and Bylard, A. and Pavone, M. and Cutkosky, M. R.},
   title     = {{ReachBot:} {A} Small Robot with Exceptional Reach for Rough Terrain},
@@ -4760,9 +4772,8 @@
   title        = {Transformer-based Model Predictive Control: Trajectory Optimization via Sequence Modeling},
   journal      = jrn_IEEE_RAL,
   year         = {2024},
-  note         = {Submitted},
   abstract     = {Model predictive control (MPC) has established itself as the primary methodology for constrained control, enabling general-purpose robot autonomy in diverse real-world scenarios. However, for most problems of interest, MPC relies on the recursive solution of highly non-convex trajectory optimization problems, leading to high computational complexity and strong dependency on initialization. In this work, we present a unified framework to combine the main strengths of optimization-based and learning-based methods for MPC. Our approach entails embedding high-capacity, transformer-based neural network models within the optimization process for trajectory generation, whereby the transformer provides a near-optimal initial guess, or target plan, to a non-convex optimization problem. Our experiments, performed in simulation and the real world onboard a free flyer platform, demonstrate the capabilities of our framework to improve MPC convergence and runtime. Compared to purely optimization-based approaches, results show that our approach can improve trajectory generation performance by up to 75%, reduce the number of solver iterations by up to 45%, and improve overall MPC runtime by 7x without loss in performance.},
-  keywords     = {sub},
+  keywords     = {pub},
   owner        = {gammelli},
   timestamp    = {2024-08-14}
 }
@@ -4941,6 +4952,18 @@
   timestamp = {2022-02-17}
 }
 
+@inproceedings{BrownEtAlCPAIOR2024,
+  author    = {Brown, R. A. and Venturelli, D. and Pavone, M. and Bernal Neira, D. E.},
+  title     = {Accelerating Continuous Variable Coherent Ising Machines via Momentum},
+  booktitle = {proc_CPAIOR},
+  year      = {2024},
+  abstract  = {The Coherent Ising Machine (CIM) is a non-conventional architecture that takes inspiration from physical annealing processes to solve Ising problems heuristically. Its dynamics are naturally continuous and described by a set of ordinary differential equations that have been proven to be useful for the optimization of continuous variables non-convex quadratic optimization problems. The dynamics of such Continuous Variable CIMs (CV-CIM) encourage optimization via optical pulses whose amplitudes are determined by the negative gradient of the objective; however, standard gradient descent is known to be trapped by local minima and hampered by poor problem conditioning. In this work, we propose to modify the CV-CIM dynamics using more sophisticated pulse injections based on tried-and-true optimization techniques such as momentum and Adam. Through numerical experiments, we show that the momentum and Adam updates can significantly speed up the CV-CIM’s convergence and improve sample diversity over the original CV-CIM dynamics. We also find that the Adam-CV-CIM’s performance is more stable as a function of feedback strength, especially on poorly conditioned instances, resulting in an algorithm that is more robust, reliable, and easily tunable. More broadly, we identify the CIM dynamical framework as a fertile opportunity for exploring the intersection of classical optimization and modern analog computing.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-031-60597-0_8}
+}
+
 @unpublished{BrownBernalEtAl2022,
   author    = {Brown, R. and Bernal, D. and Sahasrabudhe, A. and Lott, A. and Venturelli, D. and Pavone, M.},
   title     = {Copositive optimization via Ising solvers},
@@ -4949,18 +4972,6 @@
   owner     = {rabrown1},
   url       = {/wp-content/papercite-data/pdf/Brown.Bernal.ea.pdf},
   timestamp = {2022-04-07}
-}
-
-@inproceedings{BrownEtAlCPAIOR2024,
-  author    = {Brown, R. A.  and Venturelli, D and Pavone, M. and Bernal Neira, D. E.},
-  booktitle = proc_CPAIOR,
-  title     = {Accelerating Continuous Variable Coherent Ising Machines via Momentum},
-  year      = {2024},
-  note      = {In press},
-  abstract  = {The Coherent Ising Machine (CIM) is a non-conventional architecture that takes inspiration from physical annealing processes to solve Ising problems heuristically. Its dynamics are naturally continuous and described by a set of ordinary differential equations that have been proven to be useful for the optimization of continuous variables non-convex quadratic optimization problems. The dynamics of such Continuous Variable CIMs (CV-CIM) encourage optimization via optical pulses whose amplitudes are determined by the negative gradient of the objective; however, standard gradient descent is known to be trapped by local minima and hampered by poor problem conditioning. In this work, we propose to modify the CV-CIM dynamics using more sophisticated pulse injections based on tried-and-true optimization techniques such as momentum and Adam. Through numerical experiments, we show that the momentum and Adam updates can significantly speed up the CV-CIM’s convergence and improve sample diversity over the original CV-CIM dynamics. We also find that the Adam-CV-CIM’s performance is more stable as a function of feedback strength, especially on poorly conditioned instances, resulting in an algorithm that is more robust, reliable, and easily tunable. More broadly, we identify the CIM dynamical framework as a fertile opportunity for exploring the intersection of classical optimization and modern analog computing.},
-  keywords  = {press},
-  owner     = {rabrown1},
-  timestamp = {2024-01-22}
 }
 
 @inproceedings{BrownRossiEtAl20,
@@ -5084,9 +5095,9 @@
   booktitle = proc_IEEE_ICRA,
   owner     = {rdyro},
   timestamp = {2023-09-28},
-  keywords  = {sub},
+  keywords  = {pub},
   year      = {2024},
-  url       = {/wp-content/papercite-data/pdf/Bigazzi.ea.ICRA24.pdf}
+  url       = {https://arxiv.org/abs/2403.07076}
 }
 
 @inproceedings{BerriaudElokdaEtAl2024,
@@ -5099,7 +5110,8 @@
   month     = july,
   keywords  = {sub},
   owner     = {devanshjalota},
-  timestamp = {2024-03-01}
+  timestamp = {2024-03-01},
+  url       = {https://arxiv.org/abs/2403.04057}
 }
 
 @inproceedings{BanerjeeSharmaEtAl2022,
