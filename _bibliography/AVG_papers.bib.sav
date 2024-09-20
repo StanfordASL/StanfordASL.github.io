@@ -1,0 +1,1376 @@
+% Encoding: UTF-8
+
+
+@String{ios_AAA                        = {{American Automobile Association}}}
+@String{ios_BNEF                       = {{Bloomberg New Energy Finance}}}
+@String{ios_ConsumerReports            = {{ConsumerReports.org}}}
+@String{ios_CT                         = {{Clean Technica}}}
+@String{ios_DTIC                       = {{DTIC}}}
+@String{ios_EIA                        = {{U.S. Energy Information Administration}}}
+@String{ios_FHWA                       = {{U.S. Federal Highway Administration}}}
+@String{ios_Google                     = {{Google}}}
+@String{ios_GreenCarReports            = {{GreenCarReports.com}}}
+@String{ios_Gurobi                     = {{Gurobi Optimization, LLC}}}
+@String{ios_IAAF                       = {{International Association of Athletics Federations}}}
+@String{ios_ILOG                       = {IBM ILOG}}
+@String{ios_IMBJ                       = {{IBM Japan}}}
+@String{ios_JAXA                       = {{JAXA}}}
+@String{ios_JPL                        = {{JPL}}}
+@String{ios_KMS                        = {{Kharkov Mathematics Society}}}
+@String{ios_LEI                        = {{London Economics International}}}
+@String{ios_Mathworks                  = {{The Mathworks, Inc.}}}
+@String{ios_McKinsey                   = {{McKinsey \& Company}}}
+@String{ios_MMA                        = {{Martin Marietta Aerospace}}}
+@String{ios_NASA                       = {{NASA}}}
+@String{ios_NASA_ESTO                  = {{NASA Earth Science Technology Office}}}
+@String{ios_NASA_MSFC                  = {{NASA Marshall Space Flight Center}}}
+@String{ios_NASA_NIAC                  = {{NASA NIAC Program}}}
+@String{ios_NASA_ODO                   = {{Planetary Science Division, NASA Science Mission Directorate}}}
+@String{ios_NASA_PSD                   = {{Planetary Science Division, NASA Science Mission Directorate}}}
+@String{ios_NBA                        = {{National Basketball Association}}}
+@String{ios_NBER                       = {{National Bureau of Economic Research}}}
+@String{ios_NHTSA                      = {{National Highway Traffic Safety Administration}}}
+@String{ios_NIST                       = {{National Inst.\ of Standards and Technology}}}
+@String{ios_NRC                        = {{National Research Council}}}
+@String{ios_NREL                       = {{National Renewable Energy Lab (NREL)}}}
+@String{ios_NVIDIA                     = {{NVIDIA}}}
+@String{ios_OECD                       = {{Organisation for Economic Co-operation and Development (OECD)}}}
+@String{ios_ONR                        = {{Office of Naval Research}}}
+@String{ios_PGE                        = {{Pacific Gas and Electric Company}}}
+@String{ios_RideGuru                   = {{RideGuru}}}
+@String{ios_SBAG                       = {{Small Bodies Assessment Group}}}
+@String{ios_UN                         = {{United Nations}}}
+@String{ios_univ_Amsterdam             = {{Universiteit van Amsterdam}}}
+@String{ios_univ_Bologna_LARDEIS       = {{LAR-DEIS, Univ.\ of Bologna}}}
+@String{ios_univ_Boston                = {{Boston University}}}
+@String{ios_univ_Bremen                = {{Universit\"at Bremen, Germany}}}
+@String{ios_univ_Bresca_EM             = {{Dept. of Economics and Management, Univ.\ of Bresca}}}
+@String{ios_univ_Caltech               = {{California Inst.\ of Technology}}}
+@String{ios_univ_Cambridge             = {{University of Cambridge}}}
+@String{ios_univ_Chicago               = {{Univ.\ of Chicago}}}
+@String{ios_univ_CMU                   = {{Carnegie Mellon University}}}
+@String{ios_univ_CMU_TRI               = {{The Robotics Institute, CMU}}}
+@String{ios_univ_Columbia              = {{Columbia University}}}
+@String{ios_univ_Cornell_ORIE          = {{School of Operations Research and Industrial Engineering, Cornell University}}}
+@String{ios_univ_Cranfield             = {{Cranfield University}}}
+@String{ios_univ_DTU                   = {{Technical Univ.\ of Denmark}}}
+@String{ios_univ_DUT                   = {{Delft Univ.\ of Technology}}}
+@String{ios_univ_EasternFinland        = {{Univ.\ of Eastern Finland}}}
+@String{ios_univ_ETH_IFA               = {{Institut f\"ur Automatik, ETH}}}
+@String{ios_univ_Florence              = {{Universit\'a di Firenze, Italy}}}
+@String{ios_univ_Harvard               = {{Harvard University}}}
+@String{ios_univ_HUB                   = {{Humboldt University of Berlin}}}
+@String{ios_univ_IllinoisState         = {{Illinois State University}}}
+@String{ios_univ_KIT                   = {{Karlsruhe Inst.\ of Technology}}}
+@String{ios_univ_Leningrad             = {{Vestnik Leningrad Univ.\ Math}}}
+@String{ios_univ_Liege                 = {{Universit\'{e} of Li\`{e}ge, Belgium}}}
+@String{ios_univ_Linkoping             = {{Link\"{o}ping University}}}
+@String{ios_univ_Maryland              = {{Univ.\ of Maryland}}}
+@String{ios_univ_Maryland_ISR          = {{Inst.\ for Systems Research, Univ.\ of Maryland}}}
+@String{ios_univ_Maryland_ISREE        = {{Inst.\ for Systems Research and EE Dept.\, Univ.\ of Maryland}}}
+@String{ios_univ_Massachusetts_Amherst = {{Univ.\ of Massachusetts at Amherst}}}
+@String{ios_univ_McGill                = {{McGill University}}}
+@String{ios_univ_Michigan              = {{Univ.\ of Michigan}}}
+@String{ios_univ_MINESPT               = {{MINES ParisTech}}}
+@String{ios_univ_MIT                   = {{Massachusetts Inst.\ of Technology}}}
+@String{ios_univ_MIT_AA                = {{Massachusetts Inst.\ of Technology, Dept.\ of Aeronautics and Astronautics}}}
+@String{ios_univ_MIT_CSAIL             = {{MIT CSAIL}}}
+@String{ios_univ_MIT_EECS              = {{MIT - EECS Department}}}
+@String{ios_univ_MIT_LIDS              = {{Laboratory for Information and Decision Systems, MIT}}}
+@String{ios_univ_MIT_LL                = {{MIT Lincoln Laboratory}}}
+@String{ios_univ_NorthCarolina_CS      = {{Dept. of Computer Science, Univ.\ of N. Carolina}}}
+@String{ios_univ_NYU_CS                = {{New York Univ.\ Comp. Sci. Dept.}}}
+@String{ios_univ_OhioState             = {{The Ohio State University}}}
+@String{ios_univ_Padua                 = {{Universit\'{a} di Padova, Italy}}}
+@String{ios_univ_Princeton_MAE         = {{Mechanical and Aerospace Engineering, Princeton University}}}
+@String{ios_univ_Rutgers               = {{Rutgers University}}}
+@String{ios_univ_Stanford              = {{Stanford University}}}
+@String{ios_univ_Stanford_AA           = {{Stanford University, Dept.\ of Aeronautics and Astronautics}}}
+@String{ios_univ_Stanford_CEE          = {{Stanford University, Inst.\ for Civil and Environmental Engineering}}}
+@String{ios_univ_Stanford_ICME         = {{Stanford University, Inst.\ for Computational \& Mathematical Engineering}}}
+@String{ios_univ_Stanford_ME           = {{Stanford University, Dept.\ of Mechanical Engineering}}}
+@String{ios_univ_Technion              = {{Technion -- Israel Inst.\ of Technology}}}
+@String{ios_univ_Technion_CIS          = {{Center for Intelligent Systems, Technion}}}
+@String{ios_univ_Tennessee             = {{The Univ.\ of Tennessee}}}
+@String{ios_univ_TexasAM_TIII          = {{Texas A\&M Transportation Inst.\ and INRIX, Inc}}}
+@String{ios_univ_Toronto               = {{Univ.\ of Toronto}}}
+@String{ios_univ_TUM                   = {{Technische Universit\"at M\"unchen}}}
+@String{ios_univ_Twente                = {{Univ.\ of Twente}}}
+@String{ios_univ_Twente_FAM            = {{Faculty of Applied Mathematics, Univ.\ of Twente}}}
+@String{ios_univ_UC3M                  = {{Universidad Carlos III de Madrid, Spain}}}
+@String{ios_univ_UCBerkeley            = {{Univ.\ of California, Berkeley}}}
+@String{ios_univ_UCBerkeley_EE         = {{Dept. of Electrical Engineering, Univ.\ of California, Berkeley}}}
+@String{ios_univ_UCBerkeley_EECS       = {{Dept. of EECS, Univ.\ of California, Berkeley}}}
+@String{ios_univ_UCBerkeley_ITS        = {{Inst.\ of Transportation Studies, Univ.\ of California, Berkeley}}}
+@String{ios_univ_UCL                   = {{Universit\'{e} catholique de Louvain, Belgium}}}
+@String{ios_univ_UCLA                  = {{Univ.\ of California, Los Angeles}}}
+@String{ios_univ_UCSB                  = {{Univ.\ of California at Santa Barbara}}}
+@String{ios_univ_UCSD                  = {{Univ.\ of California at San Diego}}}
+@String{ios_univ_UIUC                  = {{Univ.\ of Illinois at Urbana-Champaign}}}
+@String{ios_univ_UIUC_CSL_ITI          = {{Information Trust Inst.\, Univ.\ of Illinois at Urbana-Champaign, Coordinated Science Laboratory}}}
+@String{ios_univ_UNCCH_ORSA            = {{Dept. of Operations Research and System Analysis , UNC Chapel Hill}}}
+@String{ios_univ_UPenn                 = {{Univ.\ of Pennsylvania}}}
+@String{ios_univ_UPenn_CIS             = {{Dept.\ of Computer and Information Science, Univ.\ of Pennsylvania}}}
+@String{ios_univ_Waterloo              = {{Univ.\ of Waterloo}}}
+@String{ios_univ_WPI                   = {{Worcester Polytechnic Institute}}}
+@String{ios_univ_Wurzburg              = {{Universit\"at W\"urzburg, Germany}}}
+@String{ios_univ_Wurzburg_IFM          = {{Institut f\"ur Mathematik, Universit\"at W\"urzburg}}}
+@String{ios_univ_Yale                  = {{Yale University}}}
+@String{ios_univ_Yale_CSS              = {{Center for Systems Science, Yale University}}}
+@String{ios_USA                        = {{United Space Alliance}}}
+@String{ios_USCB                       = {{U.S. Census Bureau}}}
+@String{ios_USDC_UPD                   = {{U.S. Dept.\ of Commerce, Urban Planning Division}}}
+@String{ios_USDT                       = {{U.S. Dept.\ of Transportation}}}
+@String{ios_WHO                        = {{World Health Organization (WHO)}}}
+@String{ios_WSJ                        = {{The Wall Street Journal}}}
+@String{jrn_AAAI_AIM                   = {{AI Magazine}}}
+@String{jrn_AAAI_JAIR                  = {{Journal of Artificial Intelligence Research}}}
+@String{jrn_AAS_AAS                    = {{Advances in the Astronautical Sciences}}}
+@String{jrn_ACM_CACM                   = {{Communications of the ACM}}}
+@String{jrn_ACM_CS                     = {{ACM Computing Surveys}}}
+@String{jrn_ACM_JACM                   = {{Journal of the Association for Computing Machinery}}}
+@String{jrn_ACM_JRS                    = {{Journal of Robotic Systems}}}
+@String{jrn_ACM_MONET                  = {{Journal of Mobile Networks and Applications}}}
+@String{jrn_ACM_SenSys                 = {{ACM Conf.\ on Embedded Networked Sensor Systems (SenSys)}}}
+@String{jrn_ACM_SIGACT                 = {{ACM SIGACT}}}
+@String{jrn_ACM_TALG                   = {{ACM Transactions on Algorithms}}}
+@String{jrn_ACM_TOC                    = {{AMC Transactions on Graphics}}}
+@String{jrn_ACM_TOMACS                 = {{ACM Transactions on Modeling and Computer Simulation}}}
+@String{jrn_ACM_TOMS                   = {{ACM Transactions on Mathematical Software}}}
+@String{jrn_ACM_TOPLAS                 = {{ACM Transactions on Programming Languages and Systems (TOPLAS)}}}
+@String{jrn_ACS_EST                    = {{Environmental Science \& Technology}}}
+@String{jrn_AEA_JEL                    = {{Journal of Economic Literature}}}
+@String{jrn_AEA_JEP                    = {{Journal of Economic Perspectives}}}
+@String{jrn_AGU_GR                     = {{Journal of Geophysical Research}}}
+@String{jrn_AIAA_J                     = {{AIAA Journal}}}
+@String{jrn_AIAA_JACIC                 = {{AIAA Journal of Aerospace Computing, Information, and Communication}}}
+@String{jrn_AIAA_JAS                   = {{AIAA Journal of the Aerospace Sciences}}}
+@String{jrn_AIAA_JGCD                  = {{AIAA Journal of Guidance, Control, and Dynamics}}}
+@String{jrn_AIAA_JGCDCGC               = {{AIAA Journal of Guidance, Control, and Dynamics, Special Issue on Computational Guidance and Control}}}
+@String{jrn_AIAA_JSR                   = {{AIAA Journal of Spacecraft and Rockets}}}
+@String{jrn_AIP_PT                     = {{Physics Today}}}
+@String{jrn_AIP_RSI                    = {{Review of Scientific Instruments}}}
+@String{jrn_AIP_VSTA                   = {{Journal of Vacuum Science \& Technology A}}}
+@String{jrn_AJP                        = {{American Journal of Physics}}}
+@String{jrn_ALT                        = {{Algorithmic Learning Theory}}}
+@String{jrn_AMCS                       = {{Int.\ Journal of Applied Mathematics and Computer Science}}}
+@String{jrn_AMS_JAMC                   = {{Journal of Applied Meteorology}}}
+@String{jrn_AMS_P                      = {{Proc.\ of the American Mathematical Society}}}
+@String{jrn_AMS_T                      = {{Transactions of the American Mathematical Society}}}
+@String{jrn_AOR                        = {{Algorithmic Operations Research}}}
+@String{jrn_APA_PR                     = {{Psychological Review}}}
+@String{jrn_APS_PRE                    = {{Physical Review E}}}
+@String{jrn_APS_PRL                    = {{Physical Review Letters}}}
+@String{jrn_APS_RMP                    = {{Reviews of Modern Physics}}}
+@String{jrn_APT_AAP                    = {{Advances in Applied Probability}}}
+@String{jrn_APT_JAP                    = {{Journal of Applied Probability}}}
+@String{jrn_AR_CRAS                    = {{Annual Review of Control, Robotics, and Autonomous Systems}}}
+@String{jrn_ARC                        = {{Automation and Remote Control}}}
+@String{jrn_ASME_AMR                   = {{Applied Mechanics Reviews}}}
+@String{jrn_ASME_JBE                   = {{ASME Journal of Biomechanical Engineering}}}
+@String{jrn_ASME_JDSMC                 = {{ASME Journal of Dynamic Systems, Measurement, and Control}}}
+@String{jrn_ASME_JMD                   = {{ASME Journal of Mechanical Design}}}
+@String{jrn_ASME_JRU_B                 = {{ASME Journal of Risk and Uncertainty in Engineering Systems, Part B}}}
+@String{jrn_Brill_B                    = {{Behaviour}}}
+@String{jrn_CAM_MD                     = {{Macroeconomic Dynamics}}}
+@String{jrn_CC                         = {{Control and Cybernetics}}}
+@String{jrn_CFA_FAJ                    = {{Financial Analysts Journal}}}
+@String{jrn_CRC_HDCG                   = {{Handbook of Discrete and Computational Geometry}}}
+@String{jrn_CUP_MHCA                   = {{Mitigation of Hazardous Comets and Asteroids}}}
+@String{jrn_CUP_MPCPS                  = {{Mathematical Proc.\ of the Cambridge Philosophical Society}}}
+@String{jrn_CUP_R                      = {{Robotica}}}
+@String{jrn_DCDIS                      = {{Dynamics of Continuous Discrete and Impulsive Systems}}}
+@String{jrn_DMJ                        = {{Duke Math Journal}}}
+@String{jrn_DSA                        = {{Dynamic Systems and Applications}}}
+@String{jrn_EDPS_AA                    = {{Astronomy and Astrophysics}}}
+@String{jrn_EDPS_ESAIMCOCV             = {{ESAIM: Control, Optimisation \& Calculus of Variations}}}
+@String{jrn_Elsevier_AA                = {{Acta Astronautica}}}
+@String{jrn_Elsevier_AB                = {{Animal Behaviour}}}
+@String{jrn_Elsevier_AI                = {{Artificial Intelligence}}}
+@String{jrn_Elsevier_ARC               = {{Annual Reviews in Control}}}
+@String{jrn_Elsevier_ASR               = {{Advances in Space Research}}}
+@String{jrn_Elsevier_CDEG              = {{Chemie der Erde-Geochemistry}}}
+@String{jrn_Elsevier_CEP               = {{Control Engineering Practice}}}
+@String{jrn_Elsevier_CEUS              = {{Computers, Environment and Urban Systems}}}
+@String{jrn_Elsevier_CGTA              = {{Computational Geometry: Theory and Applications}}}
+@String{jrn_Elsevier_COR               = {{Computers \& Operations Research}}}
+@String{jrn_Elsevier_CRAS              = {{Comptes Rendus de l'Acad\'{e}mie des Sciences}}}
+@String{jrn_Elsevier_CSR               = {{Cognitive Systems Research}}}
+@String{jrn_Elsevier_CVIU              = {{Computer Vision and Image Understanding}}}
+@String{jrn_Elsevier_DAM               = {{Discrete Applied Mathematics}}}
+@String{jrn_Elsevier_DM                = {{Discrete Mathematics}}}
+@String{jrn_Elsevier_E                 = {{Energy}}}
+@String{jrn_Elsevier_EJOR              = {{European Journal of Operational Research}}}
+@String{jrn_Elsevier_EPSR              = {{Electric Power Systems Research}}}
+@String{jrn_Elsevier_FRL               = {{Finance Research Letters}}}
+@String{jrn_Elsevier_FSS               = {{Fuzzy Sets and Systems}}}
+@String{jrn_Elsevier_GEB               = {{Games and Economic Behavior}}}
+@String{jrn_Elsevier_HCG               = {{Handbook of Convex Geometry}}}
+@String{jrn_Elsevier_IC                = {{Information and Computation}}}
+@String{jrn_Elsevier_ICARUS            = {{Icarus}}}
+@String{jrn_Elsevier_IJTST             = {{Int.\ Journal of Transportation Science and Technology}}}
+@String{jrn_Elsevier_IPL               = {{Information Processing Letters}}}
+@String{jrn_Elsevier_JA                = {{Journal of Algorithms}}}
+@String{jrn_Elsevier_JBF               = {{Journal of Banking \& Finance}}}
+@String{jrn_Elsevier_JCAM              = {{Journal of Computational and Applied Mathematics}}}
+@String{jrn_Elsevier_JCSS              = {{Journal of Computer and System Sciences}}}
+@String{jrn_Elsevier_JCTSB             = {{Journal of Combinatorial Theory, Series B}}}
+@String{jrn_Elsevier_JDE               = {{Journal of Differential Equations}}}
+@String{jrn_Elsevier_JEBO              = {{Journal of Economic Behavior \& Organization}}}
+@String{jrn_Elsevier_JHM               = {{Journal of Hazardous Materials}}}
+@String{jrn_Elsevier_JMAA              = {{Journal of Mathematical Analysis and Applications}}}
+@String{jrn_Elsevier_JME               = {{Journal of Mathematical Economics}}}
+@String{jrn_Elsevier_JPC               = {{Journal of Process Control}}}
+@String{jrn_Elsevier_JPDC              = {{Journal of Parallel and Distributed Computing}}}
+@String{jrn_Elsevier_JSV               = {{Journal of Sound and Vibration}}}
+@String{jrn_Elsevier_JTB               = {{Journal of Theoretical Biology}}}
+@String{jrn_Elsevier_JUE               = {{Journal of Urban Economics}}}
+@String{jrn_Elsevier_LAIA              = {{Linear Algebra and its Applications}}}
+@String{jrn_Elsevier_MCM               = {{Mathematical and Computer Modelling}}}
+@String{jrn_Elsevier_N                 = {{Neurocomputing}}}
+@String{jrn_Elsevier_NAHS              = {{Nonlinear Analysis: Hybrid Systems}}}
+@String{jrn_Elsevier_NATMA             = {{Nonlinear Analysis: Theory, Methods \& Applications}}}
+@String{jrn_Elsevier_ORL               = {{Operations Research Letters}}}
+@String{jrn_Elsevier_PA                = {{Physica A: Statistical and Theoretical Physics}}}
+@String{jrn_Elsevier_PAS               = {{Progress in Aerospace Sciences}}}
+@String{jrn_Elsevier_PD                = {{Physica D: Nonlinear Phenomena}}}
+@String{jrn_Elsevier_PEF               = {{Procedia Economics and Finance}}}
+@String{jrn_Elsevier_PS                = {{Journal of Power Sources}}}
+@String{jrn_Elsevier_PSS               = {{Planetary and Space Science}}}
+@String{jrn_Elsevier_RAS               = {{Robotics and Autonomous Systems}}}
+@String{jrn_Elsevier_RMP               = {{Reports on Mathematical Physics}}}
+@String{jrn_Elsevier_RSER              = {{Renewable and Sustainable Energy Reviews}}}
+@String{jrn_Elsevier_SCL               = {{System and Control Letters}}}
+@String{jrn_Elsevier_SCP               = {{Science of Computer Programming}}}
+@String{jrn_Elsevier_SPA               = {{Stochastic Processes and their Applications}}}
+@String{jrn_Elsevier_TCS               = {{Theoretical Computer Science}}}
+@String{jrn_Elsevier_TEJ               = {{The Electricity Journal}}}
+@String{jrn_Elsevier_TP                = {{Transport Policy}}}
+@String{jrn_Elsevier_TR                = {{Transportation Research}}}
+@String{jrn_Elsevier_TRPA              = {{Transportation Research Part A: Policy and Practice}}}
+@String{jrn_Elsevier_TRPB              = {{Transportation Research Part B: Methodological}}}
+@String{jrn_Elsevier_TRPC              = {{Transportation Research Part C: Emerging Technologies}}}
+@String{jrn_Elsevier_TRPE              = {{Transportation Research Part E: Logistics and Transportation Review}}}
+@String{jrn_EPL                        = {{Europhysics Letters}}}
+@String{jrn_ESA                        = {{ESA Journal}}}
+@String{jrn_EUCA_EJC                   = {{European Journal of Control}}}
+@String{jrn_EUCASS_PPP                 = {{Progress in Propulsion Physics}}}
+@String{jrn_FM                         = {{Journal of Fluid Mechanics}}}
+@String{jrn_GCT                        = {{Geometric Control Theory}}}
+@String{jrn_GIC                        = {{Geometry, Imaging and Computing}}}
+@String{jrn_H_JR                       = {{Journal of Robotics}}}
+@String{jrn_IARIA_IJASM                = {{Int.\ Journal On Advances in Systems and Measurements}}}
+@String{jrn_ICE                        = {{Proc.\ of the Institution of Civil Engineers}}}
+@String{jrn_IEE_CTA                    = {{IEE Proceedings - Control Theory and Applications}}}
+@String{jrn_IEEE_A                     = {{IEEE Access}}}
+@String{jrn_IEEE_C                     = {{IEEE Computer}}}
+@String{jrn_IEEE_CSL                   = {{IEEE Control Systems Letters}}}
+@String{jrn_IEEE_CSM                   = {{IEEE Control Systems Magazine}}}
+@String{jrn_IEEE_ISA                   = {{IEEE Intelligent Systems and their Applications}}}
+@String{jrn_IEEE_JOE                   = {{IEEE Journal of Oceanic Engineering}}}
+@String{jrn_IEEE_JRA                   = {{IEEE Journal of Robotics and Automation}}}
+@String{jrn_IEEE_JSAC                  = {{IEEE Journal on Selected Areas in Communication}}}
+@String{jrn_IEEE_JSEE                  = {{Journal of Systems Engineering and Electronics}}}
+@String{jrn_IEEE_P                     = {{Proc.\ of the IEEE}}}
+@String{jrn_IEEE_PC                    = {{IEEE Pervasive Computing}}}
+@String{jrn_IEEE_RAL                   = {{IEEE Robotics and Automation Letters}}}
+@String{jrn_IEEE_RAM                   = {{IEEE Robotics and Automation Magazine}}}
+@String{jrn_IEEE_SensJ                 = {{IEEE Sensors Journal}}}
+@String{jrn_IEEE_SPM                   = {{IEEE Signal Processing Magazine}}}
+@String{jrn_IEEE_SysJ                  = {{IEEE Systems Journal}}}
+@String{jrn_IEEE_TAC                   = {{IEEE Transactions on Automatic Control}}}
+@String{jrn_IEEE_TAES                  = {{IEEE Transactions on Aerospace and Electronic Systems}}}
+@String{jrn_IEEE_TASE                  = {{IEEE Transactions on Automation Sciences and Engineering}}}
+@String{jrn_IEEE_TC                    = {{IEEE Transactions on Computers}}}
+@String{jrn_IEEE_TCAD                  = {{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}}}
+@String{jrn_IEEE_TCNS                  = {{IEEE Transactions on Control of Network Systems}}}
+@String{jrn_IEEE_TCS                   = {{IEEE Transactions on Circuits and Systems}}}
+@String{jrn_IEEE_TCSI                  = {{IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications}}}
+@String{jrn_IEEE_TCST                  = {{IEEE Transactions on Control Systems Technology}}}
+@String{jrn_IEEE_TCYB                  = {{IEEE Transactions on Cybernetics}}}
+@String{jrn_IEEE_TGRS                  = {{IEEE Transactions on Geosciences and Remote Sensing}}}
+@String{jrn_IEEE_TIE                   = {{IEEE Transactions on Industrial Electronics}}}
+@String{jrn_IEEE_TII                   = {{IEEE Transactions on Industrial Informatics}}}
+@String{jrn_IEEE_TIT                   = {{IEEE Transactions on Information Theory}}}
+@String{jrn_IEEE_TITS                  = {{IEEE Transactions on Intelligent Transportation Systems}}}
+@String{jrn_IEEE_TIV                   = {{IEEE Transactions on Intelligent Vehicles}}}
+@String{jrn_IEEE_TMC                   = {{IEEE Transactions on Mobile Computing}}}
+@String{jrn_IEEE_TNN                   = {{IEEE Transactions on Neural Networks}}}
+@String{jrn_IEEE_TNSE                  = {{IEEE Transactions on Network Science and Engineering}}}
+@String{jrn_IEEE_TOC                   = {{IEEE Transactions on Communications}}}
+@String{jrn_IEEE_TON                   = {{IEEE/ACM Transactions on Networking}}}
+@String{jrn_IEEE_TPAMI                 = {{IEEE Transactions on Pattern Analysis \& Machine Intelligence}}}
+@String{jrn_IEEE_TPAS                  = {{IEEE Transactions on Power Apparatus and Systems}}}
+@String{jrn_IEEE_TPD                   = {{IEEE Transactions on Power Delivery}}}
+@String{jrn_IEEE_TPE                   = {{IEEE Transactions on Power Electronics}}}
+@String{jrn_IEEE_TPS                   = {{IEEE Transactions on Power Systems}}}
+@String{jrn_IEEE_TR                    = {{IEEE Transactions on Robotics}}}
+@String{jrn_IEEE_TRA                   = {{IEEE Transactions on Robotics and Automation}}}
+@String{jrn_IEEE_TSE                   = {{IEEE Transactions on Sustainable Energy}}}
+@String{jrn_IEEE_TSG                   = {{IEEE Transactions on Smart Grid}}}
+@String{jrn_IEEE_TSMC                  = {{IEEE Transactions on Systems, Man, \& Cybernetics}}}
+@String{jrn_IEEE_TSMCA                 = {{IEEE Transactions on Systems, Man, \& Cybernetics, Part~A: Systems \& Humans}}}
+@String{jrn_IEEE_TSMCB                 = {{IEEE Transactions on Systems, Man, \& Cybernetics, Part~B: Cybernetics}}}
+@String{jrn_IEEE_TSMCC                 = {{IEEE Transactions on Systems, Man, \& Cybernetics, Part~C: Applications \& Reviews}}}
+@String{jrn_IEEE_TSP                   = {{IEEE Transactions on Signal Processing}}}
+@String{jrn_IEEE_TSSC                  = {{IEEE Transactions on Systems, Science, \& Cybernetics}}}
+@String{jrn_IET_JGRP                   = {{IET Control Theory \& Applications}}}
+@String{jrn_IFAC_A                     = {{Automatica}}}
+@String{jrn_IFAC_online                = {{IFAC-Papers Online}}}
+@String{jrn_IJNME                      = {{Int.\ Journal for Numerical Methods in Engineering}}}
+@String{jrn_IJVD                       = {{Int.\ Journal of Vehicle Design}}}
+@String{jrn_IMA_JMCI                   = {{IMA Journal of Mathematical Control and Information}}}
+@String{jrn_IMS_AAP                    = {{Annals of Applied Probability}}}
+@String{jrn_IMS_AAS                    = {{Annals of Applied Statistics}}}
+@String{jrn_IMS_AMS                    = {{Annals of Mathematical Statistics}}}
+@String{jrn_INFORMS_JOC                = {{INFORMS Journal on Computing}}}
+@String{jrn_INFORMS_MOR                = {{Mathematics of Operations Research}}}
+@String{jrn_INFORMS_MS                 = {{Management Science}}}
+@String{jrn_INFORMS_OR                 = {{Operations Research}}}
+@String{jrn_INFORMS_TS                 = {{Transportation Science}}}
+@String{jrn_IOP_CQG                    = {{Classical and Quantum Gravity}}}
+@String{jrn_IOP_JPAMG                  = {{Journal of Physics A: Mathematical and General}}}
+@String{jrn_IOP_N                      = {{Nonlinearity}}}
+@String{jrn_JAIR                       = {{Journal of Artificial Intelligence Research}}}
+@String{jrn_JASSS                      = {{Journal of Artificial Societies and Social Simulation}}}
+@String{jrn_JEM                        = {{Journal of Energy Markets}}}
+@String{jrn_JHUP_AJM                   = {{American Journal of Mathematics}}}
+@String{jrn_JMLR                       = {{Journal of Machine Learning Research}}}
+@String{jrn_JMSEC                      = {{Journal of Mathematics Systems, Estimation and Control}}}
+@String{jrn_JR                         = {{Journal of Risk}}}
+@String{jrn_JSTOR_IUMJ                 = {{Indiana Univ.\ Mathematics Journal}}}
+@String{jrn_LFNVAC                     = {{Journal of Low Frequency Noise, Vibration, and Active Control}}}
+@String{jrn_LMS_M                      = {{Mathematika}}}
+@String{jrn_LMS_P                      = {{Proc. London Mathematical Society}}}
+@String{jrn_MDPI_Sensors               = {{Sensors}}}
+@String{jrn_MDPI_Systems               = {{Systems}}}
+@String{jrn_MIT_NC                     = {{Neural Computation}}}
+@String{jrn_MJM                        = {{Milan Journal of Mathematics}}}
+@String{jrn_MSP_PJM                    = {{Pacific Journal of Mathematics}}}
+@String{jrn_MTNS                       = {{Mathematical Theory of Networks and Systems}}}
+@String{jrn_Nature                     = {{Nature}}}
+@String{jrn_Nature_CC                  = {{Nature Climate Change}}}
+@String{jrn_NPI_FTCGV                  = {{Foundations and Trends in Computer Graphics and Vision}}}
+@String{jrn_NPI_FTML                   = {{Foundations and Trends in Machine Learning}}}
+@String{jrn_NPI_FTN                    = {{Foundations and Trends in Networking}}}
+@String{jrn_NPI_FTSP                   = {{Foundations and Trends in Signal Processing}}}
+@String{jrn_OA_B                       = {{Biometrika}}}
+@String{jrn_OA_QJE                     = {{The Quarterly Journal of Economics}}}
+@String{jrn_OA_RFS                     = {{The Review of Financial Studies}}}
+@String{jrn_ORS_JORS                   = {{Journal of the Operational Research Society}}}
+@String{jrn_OU_MJ                      = {{Mathematical Journal of Okayama University}}}
+@String{jrn_OUP_B                      = {{Bioinformatics}}}
+@String{jrn_PC                         = {{Journal of Process Control}}}
+@String{jrn_PNAS                       = {{Proceedings of the National Academy of Sciences}}}
+@String{jrn_PO                         = {{PLoS ONE}}}
+@String{jrn_SAGE_IJARS                 = {{Int.\ Journal of Advanced Robotic Systems}}}
+@String{jrn_SAGE_IJRR                  = {{Int.\ Journal of Robotics Research}}}
+@String{jrn_SAGE_SI                    = {{Journal of Surgical Innovations}}}
+@String{jrn_Science                    = {{Science}}}
+@String{jrn_Science_R                  = {{Science Robotics}}}
+@String{jrn_SIAM_JADM                  = {{SIAM Journal on Algebraic and Discrete Methods}}}
+@String{jrn_SIAM_JADS                  = {{SIAM Journal on Applied Dynamical Systems}}}
+@String{jrn_SIAM_JAM                   = {{SIAM Journal on Applied Mathematics}}}
+@String{jrn_SIAM_JC                    = {{SIAM Journal on Control}}}
+@String{jrn_SIAM_JCM                   = {{SIAM Journal on Computing}}}
+@String{jrn_SIAM_JCO                   = {{SIAM Journal on Control and Optimization}}}
+@String{jrn_SIAM_JDM                   = {{SIAM Journal on Discrete Mathematics}}}
+@String{jrn_SIAM_JMA                   = {{SIAM Journal on Mathematical Analysis}}}
+@String{jrn_SIAM_JNA                   = {{SIAM Journal on Numerical Analysis}}}
+@String{jrn_SIAM_JO                    = {{SIAM Journal on Optimization}}}
+@String{jrn_SIAM_MAA                   = {{SIAM Journal on Matrix Analysis and Applications}}}
+@String{jrn_SIAM_R                     = {{SIAM Review}}}
+@String{jrn_SIAM_SISC                  = {{SIAM Journal on Scientific Computing}}}
+@String{jrn_SIAM_TPIA                  = {{Theory of Probability and Its Applications}}}
+@String{jrn_SORMS                      = {{Surveys in Operations Research and Management Science}}}
+@String{jrn_Spr_A                      = {{Algorithmica}}}
+@String{jrn_Spr_AAM                    = {{Acta Applicandae Mathematicae}}}
+@String{jrn_Spr_AMAI                   = {{Annals of Mathematics and Artificial Intelligence}}}
+@String{jrn_Spr_AOR                    = {{Annals of Operations Research}}}
+@String{jrn_Spr_AR                     = {{Autonomous Robots}}}
+@String{jrn_Spr_ARC                    = {{Automation and Remote Control}}}
+@String{jrn_Spr_ARMA                   = {{Archive for Rational Mechanics and Analysis}}}
+@String{jrn_Spr_ASTR                   = {{Astrodynamics}}}
+@String{jrn_Spr_BC                     = {{Biological Cybernetics}}}
+@String{jrn_Spr_BES                    = {{Behavioral Ecology and Sociobiology}}}
+@String{jrn_Spr_C                      = {{Combinatorica}}}
+@String{jrn_Spr_CC                     = {{Cooperative Control}}}
+@String{jrn_Spr_CELE                   = {{Celestial Mechanics and Dynamical Astronomy}}}
+@String{jrn_Spr_CPR                    = {{Control Problems in Robotics}}}
+@String{jrn_Spr_CSA                    = {{Cybernetics and Systems Analysis}}}
+@String{jrn_Spr_CSSP                   = {{Circuits, Systems and Signal Processing}}}
+@String{jrn_Spr_DCG                    = {{Discrete \& Computational Geometry}}}
+@String{jrn_Spr_EFM                    = {{Environmental Fluid Mechanics}}}
+@String{jrn_Spr_EJCO                   = {{EURO Journal on Computational Optimization}}}
+@String{jrn_Spr_EJTL                   = {{EURO Journal on Transportation and Logistics}}}
+@String{jrn_Spr_EMP                    = {{Earth, Moon, and Planets}}}
+@String{jrn_Spr_EPJB                   = {{European Physical Journal B}}}
+@String{jrn_Spr_FCM                    = {{Foundations of Computational Mathematics}}}
+@String{jrn_Spr_FS                     = {{Finance and Stochastics}}}
+@String{jrn_Spr_G                      = {{Journal of Geometry}}}
+@String{jrn_Spr_GO                     = {{Journal of Global Optimization}}}
+@String{jrn_Spr_IJCV                   = {{Int.\ Journal of Computer Vision}}}
+@String{jrn_Spr_JAS                    = {{Journal of the Astronautical Sciences}}}
+@String{jrn_Spr_JDCS                   = {{Journal of Dynamical and Control Systems}}}
+@String{jrn_Spr_JIRS                   = {{Journal of Intelligent \& Robotic Systems}}}
+@String{jrn_Spr_JNS                    = {{Journal of Nonlinear Science}}}
+@String{jrn_Spr_JOTA                   = {{Journal of Optimization Theory \& Applications}}}
+@String{jrn_Spr_JRU                    = {{Journal of Risk and Uncertainty}}}
+@String{jrn_Spr_LNCS                   = {{Lecture Notes in Computer Science}}}
+@String{jrn_Spr_MA                     = {{Mathematische Annalen}}}
+@String{jrn_Spr_MCSS                   = {{Mathematics of Control, Signals and Systems}}}
+@String{jrn_Spr_MCT                    = {{Mathematical Control Theory}}}
+@String{jrn_Spr_ML                     = {{Machine Learning}}}
+@String{jrn_Spr_MMOR                   = {{Mathematical Methods in Operations Research}}}
+@String{jrn_Spr_MP                     = {{Mathematical Programming}}}
+@String{jrn_Spr_NADEC                  = {{Nonlinear Analysis, Differential Equations and Control}}}
+@String{jrn_Spr_NETS                   = {{Networks and Spatial Economics}}}
+@String{jrn_Spr_NM                     = {{Numerische Mathematik}}}
+@String{jrn_Spr_NMPC                   = {{Nonlinear Model Predictive Control}}}
+@String{jrn_Spr_OL                     = {{Optimization Letters}}}
+@String{jrn_Spr_SHR                    = {{Springer Handbook of Robotics}}}
+@String{jrn_Spr_SMFTA                  = {{Systems, Models and Feedback: Theory and Applications}}}
+@String{jrn_Spr_SP                     = {{SpringerPlus}}}
+@String{jrn_Spr_SSR                    = {{Space Science Reviews}}}
+@String{jrn_Spr_TOCS                   = {{Theory of Computing Systems}}}
+@String{jrn_Spr_ZWG                    = {{Zeitschrift f\"ur Wahrscheinlichkeitstheorie und verwandte Gebiete}}}
+@String{jrn_SRJ                        = {{Space Research Journal}}}
+@String{jrn_ST                         = {{Space Technology}}}
+@String{jrn_TF_AR                      = {{Advanced Robotics}}}
+@String{jrn_TF_DSS                     = {{Dynamics and Stability of Systems}}}
+@String{jrn_TF_IJC                     = {{Int.\ Journal of Control}}}
+@String{jrn_TF_NAAJ                    = {{North American Actuarial Journal}}}
+@String{jrn_TF_TAIIE                   = {{AIIE Transactions}}}
+@String{jrn_TF_Transport               = {{Transport}}}
+@String{jrn_TF_VSD                     = {{Vehicle System Dynamics}}}
+@String{jrn_TRB_TRR                    = {{Transportation Research Record: Journal of the Transportation Research Board}}}
+@String{jrn_TRP                        = {{Transport Research Procedia}}}
+@String{jrn_UCP_BB                     = {{Biological Bulletin}}}
+@String{jrn_UCP_TAN                    = {{Nonlinear Model Predictive Control}}}
+@String{jrn_Wiley_AJC                  = {{Asian Journal of Control}}}
+@String{jrn_Wiley_C                    = {{Complexity}}}
+@String{jrn_Wiley_CGF                  = {{Computer Graphics Forum}}}
+@String{jrn_Wiley_CPAM                 = {{Communications on Pure and Applied Mathematics}}}
+@String{jrn_Wiley_E                    = {{Econometrica}}}
+@String{jrn_Wiley_GRL                  = {{Geophysical Research Letters}}}
+@String{jrn_Wiley_IJCTA                = {{Int. Journal of Circuit Theory and Applications}}}
+@String{jrn_Wiley_IJRNC                = {{Int.\ Journal of Robust and Nonlinear Control}}}
+@String{jrn_Wiley_JF                   = {{Journal of Finance}}}
+@String{jrn_Wiley_JFR                  = {{Journal of Field Robotics}}}
+@String{jrn_Wiley_JGRP                 = {{Journal of Geophysical Research: Planets}}}
+@String{jrn_Wiley_JGRSP                = {{Journal of Geophysical Research: Space Physics}}}
+@String{jrn_Wiley_JRSSSA               = {{Journal of the Royal Statistical Society: Series A}}}
+@String{jrn_Wiley_JRSSSB               = {{Journal of the Royal Statistical Society: Series B}}}
+@String{jrn_Wiley_MF                   = {{Mathematical Finance}}}
+@String{jrn_Wiley_MNRAS                = {{Monthly Notices of the Royal Astronomical Society}}}
+@String{jrn_Wiley_MPS                  = {{Meteoritics \& Planetary Science}}}
+@String{jrn_Wiley_N                    = {{Networks}}}
+@String{jrn_Wiley_NRL                  = {{Naval Research Logistics}}}
+@String{jrn_Wiley_OCAM                 = {{Optimal Control Applications and Methods}}}
+@String{jrn_WRR                        = {{Water Resources Research}}}
+@String{jrn_WS_IJCGA                   = {{Int.\ Journal of Computational Geometry \& Applications}}}
+@String{jrn_WS_IJMPC                   = {{Int.\ Journal of Modern Physics C}}}
+@String{jrn_WS_SD                      = {{Stochastics and Dynamics}}}
+@String{proc_3DV                 = {{International Conference on 3D Vision (3DV)}}}
+@String{proc_AAAI_AAAI                 = {{Proc.\ AAAI Conf.\ on Artificial Intelligence}}}
+@String{proc_AAAI_FS                   = {{AAAI Fall Symposium}}}
+@String{proc_AAAI_IJCAI                = {{Int.\ Joint Conf.\ on Artificial Intelligence}}}
+@String{proc_AAMAS                     = {{Proc.\ Int.\ Conf.\ on Autonomous Agents and Multiagent Systems}}}
+@String{proc_AAS_GC                    = {{AAS Guidance and Control Conference}}}
+@String{proc_AAS_GNC                   = {{AAS GN\&C Conference}}}
+@String{proc_ACL                       = {{Proc. Annual Meeting of the Association for Computational Linguistics}}}
+@String{proc_ACL_EMNLP                 = {{Proc.\ of Conf.\ on Empirical Methods in Natural Language Processing}}}
+@String{proc_ACM_EAAMO                 = {{ACM Conf.\ on Equity and Access in Algorithms, Mechanisms, and Optimization}}}
+@String{proc_ACM_EC                    = {{ACM Conf.\ on Economics and Computation}}}
+@String{proc_ACM_HotNets               = {{Proc.\ ACM Workshop on Hot Topics in Networks}}}
+@String{proc_ACM_HSCC                  = {{Hybrid Systems: Computation and Control}}}
+@String{proc_ACM_ICTS                  = {{Conf. on Innovations in Theoretical Computer Science}}}
+@String{proc_ACM_IPSN_conf             = {{Int.\ Conf.\ on Information Processing in Sensor Networks}}}
+@String{proc_ACM_IPSN_symp             = {{Int.\ Symp.\ on Information Processing in Sensor Networks}}}
+@String{proc_ACM_KDDM                  = {{ACM Int.\ Conf.\ on Knowledge Discovery and Data Mining}}}
+@String{proc_ACM_MobiHoc               = {{ACM Int.\ Symp.\ on Mobile Ad-Hoc Networking \& Computing}}}
+@String{proc_ACM_SIGCHI                = {{ACM CHI Conf.\ on Human Factors in Computing Systems}}}
+@String{proc_ACM_SIGGRAPH              = {{Proc.\ of SIGGRAPH}}}
+@String{proc_ACM_SIGPLAN               = {{ACM SIGPLAN Notices}}}
+@String{proc_ACM_SIGSPATIAL            = {{ACM SIGSPATIAL}}}
+@String{proc_ACM_SOCG                  = {{ACM Symp.\ on Computational Geometry}}}
+@String{proc_ACM_STOC                  = {{Symp.\ on the Theory of Computing}}}
+@String{proc_ACM_WSDM                  = {{ACM Int.\ Conf.\ on Web Search and Data Mining}}}
+@String{proc_ACML                      = {{Asian Conf.\ on Machine Learning}}}
+@String{proc_AIAA_ASC                  = {{AIAA/AAS Astrodynamics Specialist Conference}}}
+@String{proc_AIAA_ASM                  = {{AIAA Aerospace Sciences Meeting}}}
+@String{proc_AIAA_CFDC                 = {{AIAA Aviation Technology, Integration, and Operations (ATIO) Conference}}}
+@String{proc_AIAA_FDC                  = {{AIAA Computational Fluid Dynamics Conference}}}
+@String{proc_AIAA_GNC                  = {{AIAA Conf.\ on Guidance, Navigation and Control}}}
+@String{proc_AIAA_Scitech              = {{AIAA Scitech Forum}}}
+@String{proc_AIAA_SEC                  = {{AIAA Space Exploration Conference}}}
+@String{proc_AIAA_SFMM                 = {{AIAA/AAS Space Flight Mechanics Meeting}}}
+@String{proc_AIAA_SPACE                = {{AIAA SPACE Conferences \& Exposition}}}
+@String{proc_AIAA_SSC                  = {{AIAA/UTU Small Satellite Conference}}}
+@String{proc_AISTATS                   = {{Int.\ Conf.\ on Artificial Intelligence and Statistics}}}
+@String{proc_ASCE_ESC                  = {{Proc.\ ASCE Earth and Space Conference}}}
+@String{proc_ASME_DSCC                 = {{Proc.\ ASME Dynamic Systems and Control Conference}}}
+@String{proc_CCC                       = {{Chinese Control Conference}}}
+@String{proc_CCCG                      = {{Canadian Conf.\ on Computational Geometry}}}
+@String{proc_CoFAT                     = {{Conf.\ on Fairness, Accountability and Transparency}}}
+@String{proc_COLING                    = {{Proc.\ of the Int.\ Conf.\ on Computational Linguistics}}}
+@String{proc_COLT                      = {{Proc.\ Computational Learning Theory}}}
+@String{proc_CoRL                      = {{Conf.\ on Robot Learning}}}
+@String{proc_DARS                      = {{Int.\ Symp.\ on Distributed Autonomous Robotic Systems}}}
+@String{proc_ECCV                      = {{European Conf.\ on Computer Vision}}}
+@String{proc_ECCV-AI4S                 = {{European Conf.\ on Computer Vision - AI4Space Workshop}}}
+@String{proc_ESA_ASTRA                 = {{Adv. Space Technologies in Robotics and Automation}}}
+@String{proc_ESA_ECSD                  = {{European Conf.\ on Space Debris}}}
+@String{proc_ETAPS_TACAS               = {{Int.\ Conf.\ on Tools and Algorithms for the Construction and Analysis of Systems }}}
+@String{proc_EUCA_ECC                  = {{European Control Conference}}}
+@String{proc_EUCASS                    = {{European Conf.\ for Aeronautics and Space Sciences}}}
+@String{proc_EUSIPCO                   = {{European Signal Processing Conference}}}
+@String{proc_FSR                       = {{Field and Service Robotics}}}
+@String{proc_hEART                     = {{Symposium of the European Association for Research in Transportation (hEART)}}}
+@String{proc_HICSS                     = {{Hawaii Int.\ Conf.\ on System Sciences}}}
+@String{proc_HPTCDL                    = {{High Performance Technical Computing in Dynamic Languages}}}
+@String{proc_IAA_PDC                   = {{Planetary Defense Conference}}}
+@String{proc_IAC                       = {{Int.\ Astronautical Congress}}}
+@String{proc_ICAPS                     = {{Int.\ Conf.\ on Automated Planning and Scheduling}}}
+@String{proc_ICARCV                    = {{Int.\ Conf.\ on Control, Automation, Robotics and Vision}}}
+@String{proc_ICAS                      = {{Int.\ Congress of the Aeronautical Sciences}}}
+@String{proc_ICATT                     = {{Int.\ Conf.\ on Astrodynamics Tools and Techniques}}}
+@String{proc_ICCAS                     = {{Int.\ Conf.\ on Control, Automation and Systems}}}
+@String{proc_ICCPS                     = {{Int.\ Conf.\ on Cyber-Physical Systems}}}
+@String{proc_ICLR                      = {{Int.\ Conf.\ on Learning Representations}}}
+@String{proc_ICM                       = {{Int.\ Congress of Mathematicians}}}
+@String{proc_ICML                      = {{Int.\ Conf.\ on Machine Learning}}}
+@String{proc_IEEE_AC                   = {{IEEE Aerospace Conference}}}
+@String{proc_IEEE_ACC                  = {{American Control Conference}}}
+@String{proc_IEEE_Allerton             = {{Allerton Conf.\ on Communications, Control and Computing}}}
+@String{proc_IEEE_ASCC                 = {{Asian Control Conference}}}
+@String{proc_IEEE_AUCC                 = {{Australian Control Conference}}}
+@String{proc_IEEE_BD                   = {{IEEE Int.\ Conf.\ on Big Data}}}
+@String{proc_IEEE_CACSD                = {{IEEE Int.\ Symp.\ on Computer Aided Control Systems Design}}}
+@String{proc_IEEE_CCA                  = {{IEEE Conf.\ on Control Applications}}}
+@String{proc_IEEE_CDC                  = {{Proc.\ IEEE Conf.\ on Decision and Control}}}
+@String{proc_IEEE_CIRA                 = {{Proc.\ IEEE Int.\ Symp.\ on Computational Intelligence in Robotics and Automation}}}
+@String{proc_IEEE_CISS                 = {{IEEE Annual Conf.\ on Information Sciences and Systems}}}
+@String{proc_IEEE_CVPR                 = {{IEEE Conf.\ on Computer Vision and Pattern Recognition}}}
+@String{proc_IEEE_DASC                 = {{Digital Avionics Systems Conference}}}
+@String{proc_IEEE_FOCS                 = {{IEEE Symp.\ on Foundations of Computer Science}}}
+@String{proc_IEEE_ICAR                 = {{Int.\ Conf.\ on Advanced Robotics}}}
+@String{proc_IEEE_ICASE                = {{Int.\ Conf.\ on Automation Science and Engineering}}}
+@String{proc_IEEE_ICASSP               = {{IEEE Int.\ Conf.\ on Acoustics, Speech and Signal Processing}}}
+@String{proc_IEEE_ICCA                 = {{IEEE Int.\ Conf.\ on Control \& Automation}}}
+@String{proc_IEEE_ICCV                 = {{IEEE Int.\ Conf.\ on Computer Vision}}}
+@String{proc_IEEE_ICDM                 = {{IEEE Int.\ Conf.\ on Data Mining}}}
+@String{proc_IEEE_ICHRI                = {{IEEE Int.\ Conf.\ on Human-Robot Interaction}}}
+@String{proc_IEEE_ICRA                 = {{Proc.\ IEEE Conf.\ on Robotics and Automation}}}
+@String{proc_IEEE_INFOCOM              = {{IEEE Conf.\ on Computer Communications}}}
+@String{proc_IEEE_IPDPS                = {{IEEE Parallel and Distributed Processing Symposium}}}
+@String{proc_IEEE_IRC                  = {{IEEE Int.\ Conf.\ on Robotic Computing}}}
+@String{proc_IEEE_IROS                 = {{IEEE/RSJ Int.\ Conf.\ on Intelligent Robots \& Systems}}}
+@String{proc_IEEE_ISCAS                = {{Int.\ Symp.\ on Circuits and Systems}}}
+@String{proc_IEEE_ISGT_EU              = {{IEEE PES Innovative Smart Grid Technologies Conf. Europe}}}
+@String{proc_IEEE_ISIC                 = {{IEEE Int.\ Symp.\ on Intelligent Control}}}
+@String{proc_IEEE_ISRA                 = {{Proc.\ of the Int.\ Symp.\ on Robotics and Applications}}}
+@String{proc_IEEE_ITSC                 = {{Proc.\ IEEE Int.\ Conf.\ on Intelligent Transportation Systems}}}
+@String{proc_IEEE_IV                   = {{IEEE Intelligent Vehicles Symposium}}}
+@String{proc_IEEE_IV_ULAD              = {{IEEE Intelligent Vehicles Symposium: Workshop on Unsupervised Learning for Automated Driving}}}
+@String{proc_IEEE_MED                  = {{Mediterranean Conf.\ on Control and Automation}}}
+@String{proc_IEEE_PESGM                = {{IEEE Power Engineering Society General Meeting}}}
+@String{proc_IEEE_PICA                 = {{IEEE Int.\ Conf.\ on Power Industry Computer Applications}}}
+@String{proc_IEEE_PSCC                 = {{Power Systems Computation Conference}}}
+@String{proc_IEEE_SmartGridComm        = {{IEEE Int.\ Conf.\ on Smart Grid Communications (SmartGridComm)}}}
+@String{proc_IEEE_VPPC                 = {{IEEE Vehicle Power and Propulsion Conference}}}
+@String{proc_IEEE_WACV                 = {{IEEE Winter Conf.\ on Applications of Computer Vision}}}
+@String{proc_IEEE_WCPEC                = {{IEEE World Conf.\ on Photovoltaic Energy Conversion}}}
+@String{proc_IFAC_AAC                  = {{Advances in Automotive Control}}}
+@String{proc_IFAC_CADHS                = {{Proc. \ of the Conference on Analysis and Design of Hybrid Systems}}}
+@String{proc_IFAC_ICINCO               = {{Proc.\ of the IFAC/AAAI Int.\ Conf.\ on Informatics in Control, Automation and Robotics}}}
+@String{proc_IFAC_LHMNLC               = {{IFAC Workshop on Lagrangian and Hamiltonian Methods for Nonlinear Control}}}
+@String{proc_IFAC_NAASS                = {{IFAC Workshop on Networked \& Autonomous Air \& Space Systems}}}
+@String{proc_IFAC_NOLCOS               = {{IFAC Symp.\ on Nonlinear Control Systems}}}
+@String{proc_IFAC_WC                   = {{IFAC World Congress}}}
+@String{proc_IMR                       = {{Int.\ Meshing Roundtable}}}
+@String{proc_IREP_BPSDCS               = {{IREP Bulk Power Systems Dynamics and Control Symposium}}}
+@String{proc_iSAIRAS                   = {{Int.\ Symp.\ on Artificial Intelligence, Robotics and Automation in Space}}}
+@String{proc_ISER                      = {{Int.\ Symp.\ on Experimental Robotics}}}
+@String{proc_ISRR                      = {{Int.\ Symp.\ on Robotics Research}}}
+@String{proc_ISSFD                     = {{Int.\ Symp.\ on Space Flight Dynamics}}}
+@String{proc_ISTS                      = {{Int.\ Symp.\ on Space Technology and Science}}}
+@String{proc_ISTTT                     = {{Int.\ Symp.\ on Transportation and Traffic Theory}}}
+@String{proc_IWAMC                     = {{Int.\ Workshop on Advanced Motion Control}}}
+@String{proc_IWAVCHS                   = {{Proc. Int. Workshop on Applied Verification for Continuous and Hybrid Systems}}}
+@String{proc_IWSCFF                    = {{Int.\ Workshop on Satellite Constellations and Formation Flying}}}
+@String{proc_JAXA_SST                  = {{Proc.\ of Space Sciences and Technology Conference}}}
+@String{proc_JPC                       = {{LPI Asteroids, Comets, Meteors}}}
+@String{proc_L4DC                      = {{Learning for Dynamics \& Control Conference}}}
+@String{proc_LION                      = {{Int.\ Conf.\ on Learning and Intelligent Optimization}}}
+@String{proc_LIPIcs_DROPS              = {{LIPIcs-Leibniz Int.\ Proc.\ in Informatics}}}
+@String{proc_LOG                       = {{Learning on Graphs Conference}}}
+@String{proc_LPIACM                    = {{LPI Asteroids, Comets, Meteors}}}
+@String{proc_LPSC                      = {{Lunar and Planetary Science Conference}}}
+@String{proc_MAS_IPCO                  = {{Int.\ Conf.\ on Integer Programming and Combinatorial Optimization}}}
+@String{proc_MRS                       = {{MRS Proceedings}}}
+@String{proc_NASA_FMS                  = {{NASA GSFC Flight Mechanics Symposium}}}
+@String{proc_NIPS                      = {{Conf.\ on Neural Information Processing Systems}}}
+@String{proc_NIPS-AD                   = {{Conf.\ on Neural Information Processing Systems - Autodiff Workshop}}}
+@String{proc_NIPS-BDL                  = {{Conf.\ on Neural Information Processing Systems - Workshop on Bayesian Deep Learning}}}
+@String{proc_PAAMS-TAAPS               = {{Int.\ Conf.\ on Practical Applications of Agents and Multi-Agent Systems - Workshop on the application of agents to passenger transport (PAAMS-TAAPS)}}}
+@String{proc_RLDM                      = {{The Multi-disciplinary Conf.\ on Reinforcement Learning and Decision Making}}}
+@String{proc_RMAD                      = {{Randomization Methods in Algorithm Design}}}
+@String{proc_ROBOCOMM                  = {{Int.\ Conf.\ on Robot Communication and Coordination}}}
+@String{proc_RSS                       = {{Robotics: Science and Systems}}}
+@String{proc_SIAM_SODA                 = {{ACM-SIAM Symp.\ on Discrete Algorithms}}}
+@String{proc_SICE                      = {{SICE Annual Conference}}}
+@String{proc_SPIE                      = {{Proc.\ of SPIE}}}
+@String{proc_SPIE_DTNCS                = {{Defense Transformation and Network-Centric Systems}}}
+@String{proc_SPIE_SFDCRS               = {{SPIE Symp.\ on Sensor Fusion and Decentralized Control in Robotic Systems}}}
+@String{proc_SPIE_SPS                  = {{SPIE Small Payloads in Space}}}
+@String{proc_SPIE_SSM                  = {{SPIE Smart Structures and Materials}}}
+@String{proc_Spr_CAV                   = {{Proc.\ Int.\ Conf.\ Computer Aided Verification}}}
+@String{proc_Spr_CG                    = {{Int.\ Conf.\ on Computers and Games}}}
+@String{proc_Spr_FTRTFT_FORMATS        = {{Proc. Int. Symp. Formal Techniques in Real-Time and Fault-Tolerant Systems, Formal Modeling and Analysis of Timed Systems}}}
+@String{proc_Spr_ICADT                 = {{Proc.\ Int.\ Conf.\ on Algorithmic Decision Theory}}}
+@String{proc_Spr_NESC                  = {{Proc.\ Network Embedded Sensing and Control}}}
+@String{proc_Spr_VM3                   = {{Visualization and Mathematics III}}}
+@String{proc_TRB                       = {{Annual Meeting of the Transportation Research Board}}}
+@String{proc_UAI                       = {{Proc.\ Conf.\ on Uncertainty in Artificial Intelligence}}}
+@String{proc_UIST                      = {{ACM Symp.\ on User Interface Software and Technology }}}
+@String{proc_WAFDNMPC                  = {{Workshop on Assessment and Future Directions of NMPC}}}
+@String{proc_WAFR                      = {{Workshop on Algorithmic Foundations of Robotics}}}
+@String{proc_WINE                      = {The Conference on Web and Internet Economics (WINE)}}
+@String{pub_AFRI                       = {{Air Force Research Institute}}}
+@String{pub_AIAA                       = {{American Institute of Aeronautics and Astronautics}}}
+@String{pub_AKP                        = {{A. K. Peters}}}
+@String{pub_AMS                        = {{American Mathematical Society}}}
+@String{pub_AP                         = {{Academic Press}}}
+@String{pub_AS                         = {{Athena Scientific}}}
+@String{pub_AW                         = {{Addison-Wesley}}}
+@String{pub_BH                         = {{Birkh\"{a}user}}}
+@String{pub_BHB                        = {{Birkh\"{a}user Basel}}}
+@String{pub_CC                         = {{Courier Corporation}}}
+@String{pub_Cengage                    = {{Cengage Learning}}}
+@String{pub_CRC                        = {{CRC Press}}}
+@String{pub_CUP                        = {{Cambridge Univ.\ Press}}}
+@String{pub_DP                         = {{Dover Publications}}}
+@String{pub_Elsevier                   = {{Elsevier}}}
+@String{pub_GBPG                       = {{Gordon \& Breach Publishing Group}}}
+@String{pub_GPP                        = {{Gulf Professional Publishing}}}
+@String{pub_GV                         = {{Gauthier-Villars}}}
+@String{pub_HP                         = {{Hemisphere Publishing}}}
+@String{pub_HRW                        = {{Holt, Rinehart and Winston}}}
+@String{pub_HUP                        = {{Harvard Univ.\ Press}}}
+@String{pub_Hyperion                   = {{Hyperion}}}
+@String{pub_IEEE                       = {{IEEE Press}}}
+@String{pub_INFORMS                    = {{INFORMS}}}
+@String{pub_IP                         = {{Interscience Publishers}}}
+@String{pub_ISUP                       = {{Iowa State Univ.\ Press}}}
+@String{pub_JHUP                       = {{John Hopkins Univ.\ Press}}}
+@String{pub_KAP                        = {{Kluwer Academic Publishers}}}
+@String{pub_KPC                        = {{Krieger Publishing Company}}}
+@String{pub_LPI                        = {{Lunar and Planetary Institute}}}
+@String{pub_LST                        = {{Longman Scientific \& Technical}}}
+@String{pub_MAA                        = {{Mathematical Association of America}}}
+@String{pub_MD                         = {{Marcel Dekker}}}
+@String{pub_MGH                        = {{McGraw-Hill}}}
+@String{pub_MIT                        = {{MIT Press}}}
+@String{pub_MK                         = {{Morgan Kaufmann}}}
+@String{pub_MNP                        = {{Martinus Nijhoff Publishers}}}
+@String{pub_MSP                        = {{Mathematical Scientific Press}}}
+@String{pub_NAP                        = {{National Academy Press}}}
+@String{pub_NH                         = {{North-Holland}}}
+@String{pub_NHP                        = {{Nob Hill Publishing}}}
+@String{pub_NPI                        = {{Now Publishers Inc.}}}
+@String{pub_OReilly                    = {{O'Reilly}}}
+@String{pub_OUP                        = {{Oxford Univ.\ Press}}}
+@String{pub_PBG                        = {{Perseus Books Group}}}
+@String{pub_PH                         = {{Prentice Hall}}}
+@String{pub_PMUK                       = {{Palgrave Macmillan UK}}}
+@String{pub_PP                         = {{Pergamon Press}}}
+@String{pub_PPI                        = {{Publish or Perish, Inc.}}}
+@String{pub_PTRSA                      = {{Philosophical Transactions of the Royal Society A}}}
+@String{pub_PUP                        = {{Princeton Univ.\ Press}}}
+@String{pub_PWSPC                      = {{PWS Publishing Company}}}
+@String{pub_RPC                        = {{Reidel Publishing Company}}}
+@String{pub_RSPA                       = {{Proc.\ of the Royal Society of London A: Mathematical, Physical and Engineering Sciences}}}
+@String{pub_SIAM                       = {{SIAM}}}
+@String{pub_Springer                   = {{Springer}}}
+@String{pub_Springer_BH                = {{Springer Berlin Heidelberg}}}
+@String{pub_Springer_DD                = {{Springer Dordrecht}}}
+@String{pub_Springer_NED               = {{Springer Netherlands}}}
+@String{pub_Springer_NY                = {{Springer New York}}}
+@String{pub_SSBM                       = {{Springer Science \& Business Media}}}
+@String{pub_SUP                        = {{Stanford Univ.\ Press}}}
+@String{pub_SV                         = {{Springer-Verlag}}}
+@String{pub_TF                         = {{Taylor \& Francis}}}
+@String{pub_UAP                        = {{The Univ.\ of Arizona Press}}}
+@String{pub_Ubiquity                   = {{Ubiquity Press}}}
+@String{pub_UCP                        = {{The Univ.\ of Chicago Press}}}
+@String{pub_VHWS                       = {{V. H. Winston \& Sons}}}
+@String{pub_VNR                        = {{Van Nostrand Reinhold}}}
+@String{pub_WG                         = {{Walter de Gruyter}}}
+@String{pub_WHFC                       = {{W. H. Freeman \& Company}}}
+@String{pub_Wiley                      = {{John Wiley \& Sons}}}
+
+@String{pub_WSP                        = {{World Scientific Publishing}}}
+
+@InProceedings{YangPavoneEtAl2023,
+  author    = {Yang, J. and Pavone, M. and Wang, Y.},
+  title     = {{FreeNeRF}: Improving Few-shot Neural Rendering with Free Frequency Regularization},
+  booktitle = proc_IEEE_CVPR,
+  year      = {2023},
+  address   = {Vancouver, Canada},
+  month     = jun,
+  abstract  = {Novel view synthesis with sparse inputs is a challenging problem for neural radiance fields (NeRF). Recent efforts alleviate this challenge by introducing external supervision, such as pre-trained models and extra depth signals, or by using non-trivial patch-based rendering. In this paper, we present Frequency regularized NeRF (FreeNeRF), a surprisingly simple baseline that outperforms previous methods with minimal modifications to plain NeRF. We analyze the key challenges in few-shot neural rendering and find that frequency plays an important role in NeRF's training. Based on this analysis, we propose two regularization terms: one to regularize the frequency range of NeRF's inputs, and the other to penalize the near-camera density fields. Both techniques are “free lunches” that come at no additional computational cost. We demonstrate that even with just one line of code change, the original NeRF can achieve similar performance to other complicated methods in the few-shot setting. FreeNeRF achieves state-of-the-art performance across diverse datasets, including Blender, DTU, and LLFF. We hope that this simple baseline will motivate a rethinking of the fundamental role of frequency in NeRF's training, under both the low-data regime and beyond. This project is released at FreeNeRF.},
+  doi       = {10.1109/CVPR52729.2023.00798},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://arxiv.org/abs/2303.07418},
+}
+
+@InProceedings{YangPavone2023b,
+  author    = {Yang, H. and Pavone, M.},
+  title     = {Object Pose Estimation with Statistical Guarantees: Conformal Keypoint Detection and Geometric Uncertainty Propagation},
+  booktitle = proc_IEEE_CVPR,
+  year      = {2023},
+  address   = {Vancouver, Canada},
+  month     = jun,
+  abstract  = {The two-stage object pose estimation paradigm first detects semantic keypoints on the image and then estimates the 6D pose by minimizing reprojection errors. Despite performing well on standard benchmarks, existing techniques offer no provable guarantees on the quality and uncertainty of the estimation. In this paper, we inject two fundamental changes, namely conformal keypoint detection and geometric uncertainty propagation, into the two-stage paradigm and propose the first pose estimator that endows an estimation with provable and computable worst-case error bounds. On one hand, conformal keypoint detection applies the statistical machinery of inductive conformal prediction to convert heuristic keypoint detections into circular or elliptical prediction sets that cover the groundtruth keypoints with a user-specified marginal probability (e.g., 90%). Geometric uncertainty propagation, on the other, propagates the geometric constraints on the keypoints to the 6D object pose, leading to a Pose UnceRtainty SEt (PURSE) that guarantees coverage of the groundtruth pose with the same probability. The PURSE, however, is a nonconvex set that does not directly lead to estimated poses and uncertainties. Therefore, we develop RANdom SAmple averaGing (RANSAG) to compute an average pose and apply semidefinite relaxation to upper bound the worst-case errors between the average pose and the groundtruth. On the LineMOD Occlusion dataset we demonstrate: (i) the PURSE covers the groundtruth with valid probabilities; (ii) the worst-case error bounds provide correct uncertainty quantification; and (iii) the average pose achieves better or similar accuracy as representative methods based on sparse keypoints.},
+  doi       = {10.1109/CVPR52729.2023.00864},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://arxiv.org/abs/2303.12246},
+}
+
+@inproceedings{SunTremblayEtAl2023,
+  author    = {Sun, F.-Y. and Tremblay, J. and Blukis, V. and Lin, K. and Xu, D. and Ivanovic, B. and Karkus, P. and Gao, J. and Birchfield, S. and Fox, D. and Zhang, R. and Li, Y. and Wu, J. and Pavone, M. and Haber, N.},
+  booktitle = proc_3DV,
+  title     = {Sparse-View Object-Centric Reconstruction via Filtered 3D Inversion},
+  year      = {2024},
+}
+
+@inproceedings{ZhangCheEtAl2023,
+  author    = {Zhang, R. and Che, T. and Ivanovic, B. and Wang, R. and Pavone, M. and Bengio, Y. and Paull, L.},
+  booktitle = proc_ICLR ,
+  title     = {Robust and Controllable Object-Centric Learning through Energy-based Models},
+  year      = {2023},
+}
+
+@inproceedings{DingCaoEtAl2024,
+  author    = {Ding, W. and Cao, Y. and Zhao, D. and Xiao C. and Pavone, M.},
+  title     = {RealGen: Retrieval Augmented Generation for Controllable Traffic Scenarios},
+  booktitle = proc_ECCV,
+  year      = {2024},
+  abstract  = {Simulation plays a crucial role in the development of autonomous vehicles (AVs) due to the potential risks associated with real-world testing. Although significant progress has been made in the visual aspects of simulators, generating complex behavior among agents remains a formidable challenge. It is not only imperative to ensure realism in the scenarios generated but also essential to incorporate preferences and conditions to facilitate controllable generation for AV training and evaluation. Traditional methods, mainly relying on memorizing the distribution of training datasets, often fall short in generating unseen scenarios. Inspired by the success of retrieval augmented generation in large language models, we present RealGen, a novel retrieval-based in-context learning framework for traffic scenario generation. RealGen synthesizes new scenarios by combining behaviors from multiple retrieved examples in a gradient-free way, which may originate from templates or tagged scenarios. This in-context learning framework endows versatile generative capabilities, including the ability to edit scenarios, compose various behaviors, and produce critical scenarios. Evaluations show that RealGen offers considerable flexibility and controllability, marking a new direction in the field of controllable traffic scenario generation. Check our project website for more information: this https URL.},
+  address   = {Milan, Italy},
+  month     = sep,
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://arxiv.org/abs/2312.13303}
+}
+
+@inproceedings{GuSongEtAl2024,
+  author    = {Gu, X. and Song, G. and Gilitschenski, I. and Pavone, M. and Ivanovic, B.},
+  title     = {Producing and Leveraging Online Map Uncertainty in Trajectory Prediction},
+  booktitle = proc_IEEE_CVPR,
+  year      = {2024},
+  abstract  = {High-definition (HD) maps have played an integral role in the development of modern autonomous vehicle (AV) stacks, albeit with high associated labeling and maintenance costs. As a result, many recent works have proposed methods for estimating HD maps online from sensor data, enabling AVs to operate outside of previously-mapped regions. However, current online map estimation approaches are developed in isolation of their downstream tasks, complicating their integration in AV stacks. In particular, they do not produce uncertainty or confidence estimates. In this work, we extend multiple state-of-the-art online map estimation methods to additionally estimate uncertainty and show how this enables more tightly integrating online mapping with trajectory forecasting. In doing so, we find that incorporating uncertainty yields up to 50% faster training convergence and up to 15% better prediction performance on the real-world nuScenes driving dataset.},
+  keywords  = {pub},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://openaccess.thecvf.com/content/CVPR2024/papers/Gu_Producing_and_Leveraging_Online_Map_Uncertainty_in_Trajectory_Prediction_CVPR_2024_paper.pdf}
+}
+
+@inproceedings{IvanovicSongEtAl2024,
+  author    = {Ivanovic, B. and Song, G. and Gilitschenski, I. and Pavone, M.},
+  title     = {trajdata: A Unified Interface to Multiple Human Trajectory Datasets},
+  booktitle = proc_NIPS,
+  year      = {2024},
+  abstract  = {The field of trajectory forecasting has grown significantly in recent years, partially owing to the release of numerous large-scale, real-world human trajectory datasets for autonomous vehicles (AVs) and pedestrian motion tracking. While such datasets have been a boon for the community, they each use custom and unique data formats and APIs, making it cumbersome for researchers to train and evaluate methods across multiple datasets. To remedy this, we present trajdata: a unified interface to multiple human trajectory datasets. At its core, trajdata provides a simple, uniform, and efficient representation and API for trajectory and map data. As a demonstration of its capabilities, in this work we conduct a comprehensive empirical evaluation of existing trajectory datasets, providing users with a rich understanding of the data underpinning much of current pedestrian and AV motion forecasting research, and proposing suggestions for future datasets from these insights. trajdata is permissively licensed (Apache 2.0) and can be accessed online at https://github.com/NVlabs/trajdata.},
+  keywords  = {pub},
+  address   = {Red Hook, NY, USA},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/file/57bb67dbe17bfb660c8c63d089ea05b9-Paper-Datasets_and_Benchmarks.pdf}
+}
+
+@inproceedings{JinCheEtAl2024,
+  author    = {Jin, C. and Che, T. and Peng, H. and Li, Y. and Metaxas, D. and Pavone, M.},
+  title     = {Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate},
+  year      = {2024},
+  abstract  = {Generalization remains a central challenge in machine learning. In this work, we propose Learning from Teaching (LOT ), a novel regularization technique for deep neural networks to enhance generalization. Inspired by the human ability to capture concise and abstract patterns, we hypothesize that generalizable correlations are expected to be easier to imitate. LOT operationalizes this concept to improve generalization of the main model with auxiliary student learners. The student learners are trained by the main model and, in turn, provide feedback to help the main model capture more generalizable and imitable correlations. Our experimental results across several domains, including Computer Vision, Natural Language Processing, and methodologies like Reinforcement Learning, demonstrate that the introduction of LOT brings significant benefits compared to training models on the original dataset. The results suggest the effectiveness and efficiency of LOT in identifying generalizable information at the right scales while discarding spurious data correlations, thus making LOT a valuable addition to current machine learning. Code is available at https://github.com/jincan333/LoT.},
+  keywords  = {sub},
+  url = {https://arxiv.org/pdf/2402.02769},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18}
+}
+
+@inproceedings{KangEtAl2023,
+  author    = {Shucheng, K. and Chen, Y. and Yang, H. and Pavone, M.},
+  title     = {Verification and Synthesis of Robust Control Barrier Functions: Multilevel Polynomial Optimization and Semidefinite Relaxation},
+  booktitle = proc_IEEE_CDC,
+  year      = {2023},
+  abstract  = {We study the problem of verification and synthesis of robust control barrier functions (CBF) for control-affine polynomial systems with bounded additive uncertainty and convex polynomial constraints on the control. We first formulate robust CBF verification and synthesis as multilevel polynomial optimization problems (POP), where verification optimizes-in three levels-the uncertainty, control, and state, while synthesis additionally optimizes the parameter of a chosen parametric CBF candidate. We then show, by invoking the KKT conditions of the inner optimizations over uncertainty and control, the verification problem can be simplified as a single-level POP and the synthesis problem reduces to a min-max POP. This reduction leads to multilevel semidefinite relaxations. For the verification problem, we apply Lasserre's hierarchy of moment relaxations. For the synthesis problem, we draw connections to existing relaxation techniques for robust min-max POP, which first uses sum-of-squares programming to find increasingly tight polynomial lower bounds to the unknown value function of the verification POP, and then call Lasserre's hierarchy again to maximize the lower bounds. Both semidefinite relaxations guarantee asymptotic global convergence to optimality. We provide an in-depth study of our framework on the controlled Van der Pol Oscillator, both with and without additive uncertainty.},
+  address = {Singapore},
+  doi = {10.1109/CDC49753.2023.10383434},
+  url = {https://ieeexplore.ieee.org/document/10383434},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18}
+}
+
+@inproceedings{LiWangEtAl2024,
+  author    = {Li, B. and Wang, Y. and Mao, J. and Ivanovic, B. and Veer, S. and Leung, K. and Pavone, M.},
+  title     = {Driving Everywhere with Large Language Model Policy Adaptation},
+  booktitle = proc_IEEE_CVPR,
+  year      = {2024},
+  abstract  = {Adapting driving behavior to new environments, cus- toms, and laws is a long-standing problem in autonomous driving, precluding the widespread deployment of au- tonomous vehicles (AVs). In this paper, we present LLaDA, a simple yet powerful tool that enables human drivers and autonomous vehicles alike to drive everywhere by adapting their tasks and motion plans to traffic rules in new loca- tions. LLaDA achieves this by leveraging the impressive zero-shot generalizability of large language models (LLMs) in interpreting the traffic rules in the local driver handbook. Through an extensive user study, we show that LLaDA’s instructions are useful in disambiguating in-the-wild unexpected situations. We also demonstrate LLaDA’s ability to adapt AV motion planning policies in real-world datasets; LLaDA outperforms baseline planning approaches on all our metrics. Please check our website for more details: LLaDA.},
+  keywords  = {pub},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Driving_Everywhere_with_Large_Language_Model_Policy_Adaptation_CVPR_2024_paper.pdf}
+}
+
+@inproceedings{SinghWangEtAl2024,
+  author    = {Singh, G. and Wang, Y. and Yang, J. and Ivanovic, B. and Ahn, S. and Pavone, M. and Che, T.},
+  title     = {Parallelized Spatiotemporal Slot Binding for Videos},
+  year      = {2024},
+  booktitle = proc_ICML,
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  abstract  = {While modern best practices advocate for scalable architectures that support long-range interactions, object-centric models are yet to fully embrace these architectures. In particular, existing object-centric models for handling sequential inputs, due to their reliance on RNN-based implementation, show poor stability and capacity and are slow to train on long sequences. We introduce Parallelizable Spatiotemporal Binder or PSB, the first temporally-parallelizable slot learning architecture for sequential inputs. Unlike conventional RNN-based approaches, PSB produces object-centric representations, known as slots, for all time-steps in parallel. This is achieved by refining the initial slots across all time-steps through a fixed number of layers equipped with causal attention. By capitalizing on the parallelism induced by our architecture, the proposed model exhibits a significant boost in efficiency. In experiments, we test PSB extensively as an encoder within an auto-encoding framework paired with a wide variety of decoder options. Compared to the state-of-the-art, our architecture demonstrates stable training on longer sequences, achieves parallelization that results in a 60% increase in training speed, and yields performance that is on par with or better on unsupervised 2D and 3D object-centric scene decomposition and understanding.},
+  url       = {https://openreview.net/pdf?id=KpeGdDzucX},
+  address   = {Vienna, Austria},
+  month     = jul
+}
+
+@inproceedings{SharmaVeerEtAl2024,
+  author    = {Sharma, A. and Veer, S. and Hancock, A. and Yang, H. and Pavone, M. and Majumdar, A.},
+  title     = {PAC-Bayes generalization certificates for learned inductive conformal prediction},
+  booktitle = proc_NIPS,
+  year      = {2024},
+  abstract  = {Inductive Conformal Prediction (ICP) provides a practical and effective approach for equipping deep learning models with uncertainty estimates in the form of set-valued predictions which are guaranteed to contain the ground truth with high probability. Despite the appeal of this coverage guarantee, these sets may not be efficient: the size and contents of the prediction sets are not directly controlled, and instead depend on the underlying model and choice of score function. To remedy this, recent work has proposed learning model and score function parameters using data to directly optimize the efficiency of the ICP prediction sets. While appealing, the generalization theory for such an approach is lacking: direct optimization of empirical efficiency may yield prediction sets that are either no longer efficient on test data, or no longer obtain the required coverage on test data. In this work, we use PAC-Bayes theory to obtain generalization bounds on both the coverage and the efficiency of set-valued predictors which can be directly optimized to maximize efficiency while satisfying a desired test coverage. In contrast to prior work, our framework allows us to utilize the entire calibration dataset to learn the parameters of the model and score function, instead of requiring a separate hold-out set for obtaining test-time coverage guarantees. We leverage these theoretical results to provide a practical algorithm for using calibration data to simultaneously fine-tune the parameters of a model and score function while guaranteeing test-time coverage and efficiency of the resulting prediction sets. We evaluate the approach on regression and classification tasks, and outperform baselines calibrated using a Hoeffding bound-based PAC guarantee on ICP, especially in the low-data regime.},
+  keywords  = {pub},
+  address   = {Red Hook, NY, USA},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/file/9235c376df778f1aaf486a882afb7471-Paper-Conference.pdf}
+}
+
+@inproceedings{WengIvanovicEtAl2024,
+  author    = {Weng, X. and Ivanovic, B. and Wang, Y. and Wang, Y. and Pavone, M.},
+  title     = {PARA-Drive: Parallelized Architecture for Real-time Autonomous Driving},
+  booktitle = proc_IEEE_CVPR,
+  year      = {2024},
+  abstract  = {Recent works have proposed end-to-end autonomous ve- hicle (AV) architectures comprised of differentiable mod- ules, achieving state-of-the-art driving performance. While they provide advantages over the traditional perception- prediction-planning pipeline (e.g., removing information bottlenecks between components and alleviating integration challenges), they do so using a diverse combination of tasks, modules, and their interconnectivity. As of yet, however, there has been no systematic analysis of the necessity of these modules or the impact of their connectivity, placement, and internal representations on overall driving per- formance. Addressing this gap, our work conducts a comprehensive exploration of the design space of end-to-end modular AV stacks. Our findings culminate in the develop- ment of PARA-Drive1: a fully parallel end-to-end AV architecture. PARA-Drive not only achieves state-of-the-art performance in perception, prediction, and planning, but also significantly enhances runtime speed by nearly 3×, without compromising on interpretability or safety.},
+  keywords  = {pub},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18},
+  url       = {https://openaccess.thecvf.com/content/CVPR2024/papers/Weng_PARA-Drive_Parallelized_Architecture_for_Real-time_Autonomous_Driving_CVPR_2024_paper.pdf}
+}
+
+@InProceedings{ChristianosKarkusEtAl2023,
+  author    = {Christianos, F. and Karkus, P. and Ivanovic, B. and Albrecht, S. V. and Pavone, M.},
+  title     = {Planning with Occluded Traffic Agents using Bi-Level Variational Occlusion Models},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2023},
+  address   = {London, United Kingdom},
+  month     = may,
+  abstract  = {Reasoning with occluded traffic agents is a significant open challenge for planning for autonomous vehicles. Recent deep learning models have shown impressive results for predicting occluded agents based on the behaviour of nearby visible agents; however, as we show in experiments, these models are difficult to integrate into downstream planning. To this end, we propose Bi-Ievel Variational Occlusion Models (BiVO), a two-step generative model that first predicts likely locations of occluded agents, and then generates likely trajectories for the occluded agents. In contrast to existing methods, BiVO outputs a trajectory distribution which can then be sampled from and integrated into standard downstream planning. We evaluate the method in closed-loop replay simulation using the real-world nuScenes dataset. Our results suggest that BiVO can successfully learn to predict occluded agent trajectories, and these predictions lead to better subsequent motion plans in critical scenarios.},
+  doi       = {10.1109/ICRA48891.2023.10160604},
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2210.14584},
+}
+
+@InProceedings{XuChenEtAl2023,
+  author    = {Xu, D. and Chen, Y. and Ivanovic, B. and Pavone, M.},
+  title     = {{BITS}: Bi-level Imitation for Traffic Simulation},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2023},
+  address   = {London, United Kingdom},
+  month     = may,
+  abstract  = {Simulation is the key to scaling up validation and verification for robotic systems such as autonomous vehicles. Despite advances in high-fidelity physics and sensor simulation, a critical gap remains in simulating realistic behaviors of road users. This is because devising first principle models for human-like behaviors is generally infeasible. In this work, we take a data-driven approach to generate traffic behaviors from real-world driving logs. The method achieves high sample efficiency and behavior diversity by exploiting the bi-level hierarchy of high-level intent inference and low-level driving behavior imitation. The method also incorporates a planning module to obtain stable long-horizon behaviors. We empirically validate our method with scenarios from two large-scale driving datasets and show our method achieves balanced traffic simulation performance in realism, diversity, and long-horizon stability. We also explore ways to evaluate behavior realism and introduce a suite of evaluation metrics for traffic simulation. Finally, as part of our core contributions, we develop and open source a software tool that unifies data formats across different driving datasets and converts scenes from existing datasets into interactive simulation environments. For video results and code release, see https://bit.ly/3L9uzj3.},
+  doi       = {10.1109/ICRA48891.2023.10161167},
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2208.12403},
+}
+
+@inproceedings{CosnerChenEtAl2023,
+  author    = {Cosner, R. and Chen, Y. and Leung, K. and Pavone, M.},
+  booktitle = proc_IEEE_ICRA ,
+  title     = {Learning Responsibility Allocations for Safe Human-Robot Interaction with Applications to Autonomous Driving},
+  year      = {2023},
+}
+
+@InProceedings{ChenKarkusEtAl2023,
+  author    = {Chen, Y. and Karkus, P. and Ivanovic, B. and Weng, X. and Pavone, M.},
+  title     = {Tree-structured Policy Planning with Learned Behavior Models},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2023},
+  address   = {London, United Kingdom},
+  month     = may,
+  abstract  = {Autonomous vehicles (AVs) need to reason about the multimodal behavior of neighboring agents while planning their own motion. Many existing trajectory planners seek a single trajectory that performs well under all plausible futures simultaneously, ignoring bi-directional interactions and thus leading to overly conservative plans. Policy planning, whereby the ego agent plans a policy that reacts to the environment's multimodal behavior, is a promising direction as it can account for the action-reaction interactions between the AV and the environment. However, most existing policy planners do not scale to the complexity of real autonomous vehicle applications: they are either not compatible with modern deep learning prediction models, not interpretable, or not able to generate high quality trajectories. To fill this gap, we propose Tree Policy Planning (TPP), a policy planner that is compatible with state-of-the-art deep learning prediction models, generates multistage motion plans, and accounts for the influence of ego agent on the environment behavior. The key idea of TPP is to reduce the continuous optimization problem into a tractable discrete Markov Decision Process (MDP) through the construction of two tree structures: an ego trajectory tree for ego trajectory options, and a scenario tree for multi-modal ego-conditioned environment predictions. We demonstrate the efficacy of TPP in closed-loop simulations based on real-world nuScenes dataset and results show that TPP scales to realistic AV scenarios and significantly outperforms non-policy baselines.},
+  doi       = {10.1109/ICRA48891.2023.10161419},
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2301.11902},
+}
+
+@InProceedings{ZhongRempeEtAl2023,
+  author    = {Zhong, Z. and Rempe, D. and Xu, D. and Chen, Y. and Veer, S. and Che, T. and Ray, B. and Pavone, M.},
+  title     = {Guided Conditional Diffusion for Controllable Traffic Simulation},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2023},
+  address   = {London, United Kingdom},
+  month     = may,
+  abstract  = {Controllable and realistic traffic simulation is critical for developing and verifying autonomous vehicles. Typical heuristic-based traffic models offer flexible control to make vehicles follow specific trajectories and traffic rules. On the other hand, data-driven approaches generate realistic and human-like behaviors, improving transfer from simulated to real-world traffic. However, to the best of our knowledge, no traffic model offers both controllability and realism. In this work, we develop a conditional diffusion model for controllable traffic generation (CTG) that allows users to control desired properties of trajectories at test time (e.g., reach a goal or follow a speed limit) while maintaining realism and physical feasibility through enforced dynamics. The key technical idea is to leverage recent advances from diffusion modeling and differentiable logic to guide generated trajectories to meet rules defined using signal temporal logic (STL). We further extend guidance to multi-agent settings and enable interaction-based rules like collision avoidance. CTG is extensively evaluated on the nuScenes dataset for diverse and composite rules, demonstrating improvement over strong baselines in terms of the controllability-realism tradeoff. Demo videos can be found at https://aiasd.github.io/ctg.github.io},
+  doi       = {10.1109/ICRA48891.2023.10161463},
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2210.17366},
+}
+
+@InProceedings{IvanovicHarrisonEtAl2023,
+  author    = {Ivanovic, B. and Harrison, J. and Pavone, M.},
+  title     = {Expanding the Deployment Envelope of Behavior Prediction via Adaptive Meta-Learning},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2023},
+  address   = {London, United Kingdom},
+  month     = may,
+  abstract  = {Learning-based behavior prediction methods are increasingly being deployed in real-world autonomous systems, e.g., in fleets of self-driving vehicles, which are beginning to commercially operate in major cities across the world. Despite their advancements, however, the vast majority of prediction systems are specialized to a set of well-explored geographic regions or operational design domains, complicating deployment to additional cities, countries, or continents. Towards this end, we present a novel method for efficiently adapting behavior prediction models to new environments. Our approach leverages recent advances in meta-learning, specifically Bayesian regression, to augment existing behavior prediction models with an adaptive layer that enables efficient domain transfer via offline fine-tuning, online adaptation, or both. Experiments across multiple real-world datasets demonstrate that our method can efficiently adapt to a variety of unseen environments.},
+  doi       = {10.1109/ICRA48891.2023.10161155},
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2209.11820},
+}
+
+@InProceedings{VeerLeungEtAl2023,
+  author    = {Veer, S. and Leung, K. and Cosner, R. and Chen, Y. and Karkus, P. and Pavone, M.},
+  title     = {Receding Horizon Planning with Rule Hierarchies for Autonomous Vehicles},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2023},
+  address   = {London, United Kingdom},
+  month     = may,
+  abstract  = {Autonomous vehicles must often contend with conflicting planning requirements, e.g., safety and comfort could be at odds with each other if avoiding a collision calls for slamming the brakes. To resolve such conflicts, assigning importance ranking to rules (i.e., imposing a rule hierarchy) has been proposed, which, in turn, induces rankings on trajectories based on the importance of the rules they satisfy. On one hand, imposing rule hierarchies can enhance interpretability, but introduce combinatorial complexity to planning; while on the other hand, differentiable reward structures can be leveraged by modern gradient-based optimization tools, but are less interpretable and unintuitive to tune. In this paper, we present an approach to equivalently express rule hierar-chies as differentiable reward structures amenable to modern gradient-based optimizers, thereby, achieving the best of both worlds. We achieve this by formulating rank-preserving reward functions that are monotonic in the rank of the trajectories induced by the rule hierarchy; i.e., higher ranked trajectories receive higher reward. Equipped with a rule hierarchy and its corresponding rank-preserving reward function, we develop a two-stage planner that can efficiently resolve conflicting planning requirements. We demonstrate that our approach can generate motion plans in ~7-10 Hz for various challenging road navigation and intersection negotiation scenarios.},
+  doi       = {10.1109/ICRA48891.2023.10160622},
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2212.03323},
+}
+
+@inproceedings{VeerSharmaEtAl2023,
+  author    = {Veer, S. and Sharma, A. and Pavone, M.},
+  title     = {Multi-Predictor Fusion: Combining Learning-based and Rule-based Trajectory Predictors},
+  booktitle = proc_CoRL,
+  year      = {2023},
+  abstract  = {Trajectory prediction modules are key enablers for safe and efficient planning of autonomous vehicles (AVs), particularly in highly interactive traffic scenarios. Recently, learning-based trajectory predictors have experienced considerable success in providing state-of-the-art performance due to their ability to learn multimodal behaviors of other agents from data. In this paper, we present an algorithm called multi-predictor fusion (MPF) that augments the performance of learning-based predictors by imbuing them with motion planners that are tasked with satisfying logic-based rules. MPF probabilistically combines learning- and rule-based predictors by mixing trajectories from both standalone predictors in accordance with a belief distribution that reflects the online performance of each predictor. In our results, we show that MPF outperforms the two standalone predictors on various metrics and delivers the most consistent performance.},
+  address   = {Atlanta, GA, United States},
+  volume    = {229},
+  pages     = {2807--2820},
+  url = {https://proceedings.mlr.press/v229/veer23a.html},
+  owner     = {devanshjalota},
+  timestamp = {2024-09-18}
+}
+
+@inproceedings{LeungVeerEtAl2023,
+  author    = {Leung, K. and Veer, S. and Schmerling, E. and Pavone, M.},
+  booktitle = proc_IEEE_ACC,
+  title     = {Learning Autonomous Vehicle Safety Concepts from Demonstrations},
+  year      = {2023},
+}
+
+
+
+@inproceedings{YangPavone2022,
+  author    = {Yang, H. and Pavone, M.},
+  title     = {Conformal Semantic Keypoint Detection with Statistical Guarantees},
+  year      = {2022},
+  booktitle = {Conf.\ on Neural Information Processing Systems - Workshop on Robot Learning: Trustworthy Robotics},
+  keywords  = {pub}
+}
+
+@inproceedings{GuptaKarkusEtAl2022,
+  author    = {Gupta, T. and Karkus, P. and Che, T. and Xu, D. and  Pavone, M.},
+  title     = {Foundation Models for Semantic Novelty in Reinforcement Learning},
+  year      = {2022},
+  booktitle = {Conf.\ on Neural Information Processing Systems - Workshop on Foundation Models for Decision Making},
+  keywords  = {pub}
+}
+
+@inproceedings{IvanovicHarrisonEtAl2022,
+  author    = {Ivanovic, B. and Harrison, J. and  Pavone, M.},
+  title     = {Expanding the Deployment Envelope of Behavior Prediction via Adaptive Meta-Learning},
+  year      = {2022},
+  booktitle = {Conf.\ on Neural Information Processing Systems - Workshop on Meta-Learning},
+  keywords  = {pub}
+}
+
+@inproceedings{KarkusIvanovicEtAl2022,
+  author    = {Karkus, P. and Ivanovic, B. and Mannor, S. and Pavone, M.},
+  title     = {DiffStack: A Differentiable and Modular Control Stack for Autonomous Vehicles},
+  year      = {2022},
+  booktitle = {Conf.\ on Neural Information Processing Systems - Workshop on Machine Learning for Autonomous Driving},
+  keywords  = {pub}
+}
+
+@inproceedings{CaoXiaoEtAl2022,
+  author    = {Cao, Y. and Xiao, C. and Anandkumar, A. and Xu, D. and  Pavone, M.},
+  title     = {AdvDO: Realistic Adversarial Attacks for Trajectory Prediction},
+  year      = {2022},
+  booktitle = {Conf.\ on Neural Information Processing Systems - Workshop on Machine Learning for Autonomous Driving},
+  keywords  = {pub}
+}
+
+@inproceedings{CaoXuEtAl2022,
+  author    = {Cao, Y. and Xu, D. and Weng, X. and Mao, Z. and Anandkumar, A. and Xiao, C. and  Pavone, M.},
+  title     = {Robust Trajectory Prediction against Adversarial Attacks},
+  year      = {2022},
+  booktitle = {Conf.\ on Neural Information Processing Systems - Workshop on Machine Learning for Autonomous Driving},
+  keywords  = {pub}
+}
+
+@InProceedings{FaridVeerEtAl2022,
+  author    = {Farid, A. and Veer, S. and Ivanovic, B. and Leung, K. and Pavone, M.},
+  title     = {Task-Relevant Failure Detection for Trajectory Predictors in Autonomous Vehicles},
+  booktitle = proc_CoRL,
+  year      = {2022},
+  address   = {Auckland, New Zealand},
+  month     = dec,
+  abstract  = {In modern autonomy stacks, prediction modules are paramount to planning motions in the presence of other mobile agents. However, failures in prediction modules can mislead the downstream planner into making unsafe decisions. Indeed, the high uncertainty inherent to the task of trajectory forecasting ensures that such mispredictions occur frequently. Motivated by the need to improve safety of autonomous vehicles without compromising on their performance, we develop a probabilistic run-time monitor that detects when a "harmful" prediction failure occurs, i.e., a task-relevant failure detector. We achieve this by propagating trajectory prediction errors to the planning cost to reason about their impact on the AV. Furthermore, our detector comes equipped with performance measures on the false-positive and the false-negative rate and allows for data-free calibration. In our experiments we compared our detector with various others and found that our detector has the highest area under the receiver operator characteristic curve.
+},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://proceedings.mlr.press/v205/farid23a.html},
+}
+
+@InProceedings{KarkusIvanovicEtAl2022b,
+  author    = {Karkus, P. and Ivanovic, B. and Mannor, S. and Pavone, M.},
+  title     = {DiffStack: A Differentiable and Modular Control Stack for Autonomous Vehicles},
+  booktitle = proc_CoRL,
+  year      = {2022},
+  address   = {Auckland, New Zealand},
+  month     = dec,
+  abstract  = {Autonomous vehicle (AV) stacks are typically built in a modular fashion, with explicit components performing detection, tracking, prediction, planning, control, etc. While modularity improves reusability, interpretability, and generalizability, it also suffers from compounding errors, information bottlenecks, and integration challenges. To overcome these challenges, a prominent approach is to convert the AV stack into an end-to-end neural network and train it with data. While such approaches have achieved impressive results, they typically lack interpretability and reusability, and they eschew principled analytical components, such as planning and control, in favor of deep neural networks. To enable the joint optimization of AV stacks while retaining modularity, we present DiffStack, a differentiable and modular stack for prediction, planning, and control. Crucially, our model-based planning and control algorithms leverage recent advancements in differentiable optimization to produce gradients, enabling optimization of upstream components, such as prediction, via backpropagation through planning and control. Our results on the nuScenes dataset indicate that end-to-end training with DiffStack yields substantial improvements in open-loop and closed-loop planning metrics by, e.g., learning to make fewer prediction errors that would affect planning. Beyond these immediate benefits, DiffStack opens up new opportunities for fully data-driven yet modular and interpretable AV architectures.},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://proceedings.mlr.press/v205/karkus23a.html},
+}
+
+@InProceedings{CaoXuEtAl2022b,
+  author    = {Cao, Y. and Xu, D. and Weng, X. and Mao, Z. and Anandkumar, A. and Xiao, C. and Pavone, M.},
+  title     = {Robust Trajectory Prediction against Adversarial Attacks},
+  booktitle = proc_CoRL,
+  year      = {2022},
+  address   = {Auckland, New Zealand},
+  month     = dec,
+  abstract  = {Trajectory prediction using deep neural networks (DNNs) is an essential component of autonomous driving (AD) systems. However, these methods are vulnerable to adversarial attacks, leading to serious consequences such as collisions. In this work, we identify two key ingredients to defend trajectory prediction models against adversarial attacks including (1) designing effective adversarial training methods and (2) adding domain-specific data augmentation to mitigate the performance degradation on clean data. We demonstrate that our method is able to improve the performance by 46% on adversarial data and at the cost of only 3% performance degradation on clean data, compared to the model trained with clean data. Additionally, compared to existing robust methods, our method can improve performance by 21% on adversarial examples and 9% on clean data. Our robust model is evaluated with a planner to study its downstream impacts. We demonstrate that our model can significantly reduce the severe accident rates (e.g., collisions and off-road driving).},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://proceedings.mlr.press/v205/cao23a.html},
+}
+
+
+@inproceedings{CaoXiaoEtAl2022b,
+  author    = {Cao, Y. and Xiao, C. and Anandkumar, A. and Xu, D. and Pavone, M.},
+  booktitle = proc_ECCV,
+  title     = {AdvDO: Realistic Adversarial Attacks for Trajectory Prediction},
+  year      = {2022},
+  keywords  = {pub}
+}
+
+
+@inproceedings{TopanLeungEtAl2022,
+  author    = {Topan, S. and Leung, K. and Chen, Y. and Tupekar, P. and Schmerling, E. and Nilsson, J. and Cox, M. and Pavone, M.},
+  booktitle = proc_IEEE_IV,
+  title     = {Interaction-Dynamics-Aware Perception Zones for Obstacle Detection Safety Evaluation},
+  year      = {2022},
+  keywords  = {pub}
+}
+
+@inproceedings{IvanovicPavone2022,
+  author    = {Ivanovic, B. and Pavone, M.},
+  booktitle = proc_IEEE_IV,
+  title     = {Injecting Planning-Awareness into Prediction and Detection Evaluation},
+  year      = {2022},
+  keywords  = {pub}
+}
+
+@inproceedings{WengIvanovicEtAl2022,
+  author    = {Weng, X. and Ivanovic, B. and Pavone, M.},
+  booktitle = proc_IEEE_IV,
+  title     = {MTP: Multi-Hypothesis Tracking and Prediction for Reduced Error Propagation},
+  year      = {2022},
+  keywords  = {pub}
+}
+
+@inproceedings{WengIvanovicEtAl2022b,
+  author    = {Weng, X. and Ivanovic, B. and Kitani, K. and Pavone, M.},
+  booktitle = proc_IEEE_CVPR,
+  title     = {Whose Track Is It Anyway? {I}mproving Robustness to Tracking Errors with Affinity-Based Prediction},
+  year      = {2022},
+  keywords  = {pub}
+}
+
+@inproceedings{ChenIvanovicEtAl2022,
+  author    = {Chen, Y. and Ivanovic, B. and Pavone, M.},
+  booktitle = proc_IEEE_CVPR,
+  title     = {ScePT: Scene-consistent, Policy-based Trajectory Predictions for Planning},
+  year      = {2022},
+  keywords  = {pub}
+}
+
+@inproceedings{ChenLiuEtAl2024,
+  author    = {Chen, X. and Liu, Z. and Luo, K. Z. and Datta, S. and Polavaram, A. and Wang, Y. and You, Y. and Li, B. and Pavone, M. and Chao, W. L. and Campbell, M. and Hariharan, B. and Weinberger, K. Q.},
+  title     = {DiffuBox: Refining 3D Object Detection with Point Diffusion},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Ensuring robust 3D object detection and localization is crucial for many applications in robotics and autonomous driving. Recent models, however, face difficulties in maintaining high performance when applied to domains with differing sensor setups or geographic locations, often resulting in poor localization accuracy due to domain shift. To overcome this challenge, we introduce a novel diffusion-based box refinement approach. This method employs a domain-agnostic diffusion model, conditioned on the LiDAR points surrounding a coarse bounding box, to simultaneously refine the box's location, size, and orientation. We evaluate this approach under various domain adaptation settings, and our results reveal significant improvements across different datasets, object classes and detectors.},
+  keywords  = {sub},
+  url = {https://arxiv.org/abs/2405.16034},
+  owner     = {gammelli},
+  timestamp = {2024-09-18}
+}
+
+@inproceedings{PatrikarVeerEtAl2024,
+  author    = {Patrikar, J. and Veer, S. and Sharma, A. and Pavone, M. and Scherer, S.},
+  title     = {RuleFuser: An Evidential Bayes Approach for Rule Injection in Imitation Learned Planners and Predictors for Robustness under Distribution Shifts},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Modern motion planners for autonomous driving frequently use imitation learning (IL) to draw from expert driving logs. Although IL benefits from its ability to glean nuanced and multi-modal human driving behaviors from large datasets, the resulting planners often struggle with out-of-distribution (OOD) scenarios and with traffic rule compliance. On the other hand, classical rule-based planners, by design, can generate safe traffic rule compliant behaviors while being robust to OOD scenarios, but these planners fail to capture nuances in agent-to-agent interactions and human drivers' intent. RuleFuser, an evidential framework, combines IL planners with classical rule-based planners to draw on the complementary benefits of both, thereby striking a balance between imitation and safety. Our approach, tested on the real-world nuPlan dataset, combines the IL planner's high performance in in-distribution (ID) scenarios with the rule-based planners' enhanced safety in out-of-distribution (OOD) scenarios, achieving a 38.43% average improvement on safety metrics over the IL planner without much detriment to imitation metrics in OOD scenarios.},
+  keywords  = {sub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2405.11139}
+}
+
+@inproceedings{LuoWengEtAl2024,
+  author    = {Luo, K. Z. and Weng, X. and Wang, Y. and Wu, S. and Li, J. and Weinberger, K. Q. and Wang, Y. and Pavone, M.},
+  title     = {Augmenting lane perception and topology understanding with standard definition navigation maps},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2024},
+  abstract  = {Autonomous driving has traditionally relied heavily on costly and labor-intensive High Definition (HD) maps, hindering scalability. In contrast, Standard Definition (SD) maps are more affordable and have worldwide coverage, offering a scalable alternative. In this work, we systematically explore the effect of SD maps for real-time lane-topology understanding. We propose a novel framework to integrate SD maps into online map prediction and propose a Transformer-based encoder, SD Map Encoder Representations from transFormers, to leverage priors in SD maps for the lane-topology prediction task. This enhancement consistently and significantly boosts (by up to 60%) lane detection and topology prediction on current state-of-the-art online map prediction methods without bells and whistles and can be immediately incorporated into any Transformer-based lane-topology method. Code is available at https://github.com/NVlabs/SMERF.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10610276}
+}
+
+@inproceedings{HuangKarkusEtAl2024,
+  author    = {Huang, Z. and Karkus, P. and Ivanovic, B. and Chen, Y. and Pavone, M. and Lv, C.},
+  title     = {Dtpp: Differentiable joint conditional prediction and cost evaluation for tree policy planning in autonomous driving},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2024},
+  abstract  = {Motion prediction and cost evaluation are vital components in the decision-making system of autonomous vehicles. However, existing methods often ignore the importance of cost learning and treat them as separate modules. In this study, we employ a tree-structured policy planner and propose a differentiable joint training framework for both ego-conditioned prediction and cost models, resulting in a direct improvement of the final planning performance. For conditional prediction, we introduce a query-centric Transformer model that performs efficient ego-conditioned motion prediction. For planning cost, we propose a learnable context-aware cost function with latent interaction features, facilitating differentiable joint learning. We validate our proposed approach using the real-world nuPlan dataset and its associated planning test platform. Our framework not only matches state-of-the-art planning methods but outperforms other learning-based methods in planning quality, while operating more efficiently in terms of runtime. We show that joint training delivers significantly better performance than separate training of the two modules. Additionally, we find that tree-structured policy planning outperforms the conventional single-stage planning approach. Code is available: https://github.com/MCZhi/DTPP.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10610550}
+}
+
+@inproceedings{CaoIvanovicEtAl2024,
+  author    = {Cao, Y. and Ivanovic, B. and Xiao, C. and Pavone, M.},
+  title     = {Reinforcement learning with Human feedback for realistic traffic simulation},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2024},
+  abstract  = {In light of the challenges and costs of real-world testing, autonomous vehicle developers often rely on testing in simulation for the creation of reliable systems. A key element of effective simulation is the incorporation of realistic traffic models that align with human knowledge, an aspect that has proven challenging due to the need to balance realism and diversity. Towards this end, in this work we develop a framework that employs reinforcement learning from human feedback (RLHF) to enhance the realism of existing traffic models. This work also identifies two main challenges: capturing the nuances of human preferences on realism and unifying diverse traffic simulation models. To tackle these issues, we propose using human feedback for alignment and employ RLHF due to its sample efficiency. We also introduce the first dataset for realism alignment in traffic modeling to support such research. Our framework, named TrafficRLHF, demonstrates its proficiency in generating realistic traffic scenarios that are well-aligned with human preferences through comprehensive evaluations on the nuScenes dataset.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10610878}
+}
+
+@inproceedings{ChoIvanovicEtAl2024,
+  author    = {Cho, J. H. and Ivanovic, B. and Cao, Y. and Schmerling, E. and Wang, Y. and Weng, X. and Li, B. and You, Y. and Krähenbühl, P. and Wang, Y. and Pavone, M.},
+  title     = {Language-Image Models with 3D Understanding},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Multi-modal large language models (MLLMs) have shown incredible capabilities in a variety of 2D vision and language tasks. We extend MLLMs' perceptual capabilities to ground and reason about images in 3-dimensional space. To that end, we first develop a large-scale pre-training dataset for 2D and 3D called LV3D by combining multiple existing 2D and 3D recognition datasets under a common task formulation: as multi-turn question-answering. Next, we introduce a new MLLM named Cube-LLM and pre-train it on LV3D. We show that pure data scaling makes a strong 3D perception capability without 3D specific architectural design or training objective. Cube-LLM exhibits intriguing properties similar to LLMs: (1) Cube-LLM can apply chain-of-thought prompting to improve 3D understanding from 2D context information. (2) Cube-LLM can follow complex and diverse instructions and adapt to versatile input and output formats. (3) Cube-LLM can be visually prompted such as 2D box or a set of candidate 3D boxes from specialists. Our experiments on outdoor benchmarks demonstrate that Cube-LLM significantly outperforms existing baselines by 21.3 points of AP-BEV on the Talk2Car dataset for 3D grounded reasoning and 17.7 points on the DriveLM dataset for complex reasoning about driving scenarios, respectively. Cube-LLM also shows competitive results in general MLLM benchmarks such as refCOCO for 2D grounding with (87.0) average score, as well as visual question answering benchmarks such as VQAv2, GQA, SQA, POPE, etc. for complex reasoning. Our project is available at https://janghyuncho.github.io/Cube-LLM.},
+  keywords  = {sub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2405.03685}
+}
+
+@inproceedings{FanCongEtAl2024,
+  author    = {Fan, Z. and Cong, W. and Wen, K. and Wang, K. and Zhang, J. and Ding, X. and Xu, D. and Ivanovic, B. and Pavone, M. and Pavlakos, G. and Wang, Z. and Wang, Y.},
+  title     = {Instantsplat: Unbounded sparse-view pose-free gaussian splatting in 40 seconds},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {While novel view synthesis (NVS) from a sparse set of images has advanced significantly in 3D computer vision, it relies on precise initial estimation of camera parameters using Structure-from-Motion (SfM). For instance, the recently developed Gaussian Splatting depends heavily on the accuracy of SfM-derived points and poses. However, SfM processes are time-consuming and often prove unreliable in sparse-view scenarios, where matched features are scarce, leading to accumulated errors and limited generalization capability across datasets. In this study, we introduce a novel and efficient framework to enhance robust NVS from sparse-view images. Our framework, InstantSplat, integrates multi-view stereo(MVS) predictions with point-based representations to construct 3D Gaussians of large-scale scenes from sparse-view data within seconds, addressing the aforementioned performance and efficiency issues by SfM. Specifically, InstantSplat generates densely populated surface points across all training views and determines the initial camera parameters using pixel-alignment. Nonetheless, the MVS points are not globally accurate, and the pixel-wise prediction from all views results in an excessive Gaussian number, yielding a overparameterized scene representation that compromises both training speed and accuracy. To address this issue, we employ a grid-based, confidence-aware Farthest Point Sampling to strategically position point primitives at representative locations in parallel. Next, we enhance pose accuracy and tune scene parameters through a gradient-based joint optimization framework from self-supervision. By employing this simplified framework, InstantSplat achieves a substantial reduction in training time, from hours to mere seconds, and demonstrates robust performance across various numbers of views in diverse datasets.},
+  keywords  = {sub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/pdf/2403.20309}
+}
+
+@InProceedings{SunTremblayEtAl2024,
+  author    = {Sun, F.-Y. and Tremblay, J. and Blukis, V. and Lin, K. and Xu, D. and Ivanovic, B. and Karkus, P. and Birchfield, S. and Fox, D. and Zhang, R. and Li, Y. and Wu, J. and Pavone, M. and Haber, N.},
+  title     = {Partial-View Object View Synthesis via Filtering Inversion},
+  booktitle = proc_3DV,
+  year      = {2024},
+  address   = {Davos, Switzerland},
+  month     = mar,
+  abstract  = {We propose Filtering Inversion (FINV), a learning framework and optimization process that predicts a renderable 3D object representation from one or few partial views. FINV addresses the challenge of synthesizing novel views of objects from partial observations, spanning cases where the object is not entirely in view, is partially occluded, or is only observed from similar views. To achieve this, FINV learns shape priors by training a 3D generative model. At inference, given one or more views of a novel real-world object, FINV first finds a set of latent codes for the object by inverting the generative model from multiple initial seeds. Maintaining the set of latent codes, FINV filters and resamples them after receiving each new observation, akin to particle filtering. The generator is then finetuned for each latent code on the available views in order to adapt to novel objects. We show that FINV successfully synthesizes novel views of real-world objects (e.g., chairs, tables, and cars), even if the generative prior is trained only on synthetic objects. The ability to address the sim-to-real problem allows FINV to be used for object categories without real-world datasets. FINV achieves state-of-the-art performance on multiple real-world datasets, recovers object shape and texture from partial and sparse views, is robust to occlusion, and is able to incrementally improves its representation with more observations.},
+  doi       = {10.1109/3DV62453.2024.00105},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://arxiv.org/abs/2304.00673},
+}
+
+@inproceedings{PengXuEtAl2024,
+  author    = {Peng, C. and Xu, C. and Wang, Y. and Ding, M. and Yang, H. and Tomizuka, M. and Keutzer, K. and Pavone, M. and Zhan, W.},
+  title     = {Q-slam: Quadric representations for monocular slam},
+  booktitle = proc_CORL,
+  year      = {2024},
+  abstract  = {Monocular SLAM has long grappled with the challenge of accurately modeling 3D geometries. Recent advances in Neural Radiance Fields (NeRF)-based monocular SLAM have shown promise, yet these methods typically focus on novel view synthesis rather than precise 3D geometry modeling. This focus results in a significant disconnect between NeRF applications, i.e., novel-view synthesis and the requirements of SLAM. We identify that the gap results from the volumetric representations used in NeRF, which are often dense and noisy. In this study, we propose a novel approach that reimagines volumetric representations through the lens of quadric forms. We posit that most scene components can be effectively represented as quadric planes. Leveraging this assumption, we reshape the volumetric representations with million of cubes by several quadric planes, which leads to more accurate and efficient modeling of 3D scenes in SLAM contexts. Our method involves two key steps: First, we use the quadric assumption to enhance coarse depth estimations obtained from tracking modules, e.g., Droid-SLAM. This step alone significantly improves depth estimation accuracy. Second, in the subsequent mapping phase, we diverge from previous NeRF-based SLAM methods that distribute sampling points across the entire volume space. Instead, we concentrate sampling points around quadric planes and aggregate them using a novel quadric-decomposed Transformer. Additionally, we introduce an end-to-end joint optimization strategy that synchronizes pose estimation with 3D reconstruction.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2403.08125}
+}
+
+@inproceedings{TanIvanovicEtAl2024,
+  author    = {Tan, S. and Ivanovic, B. and Chen, Y. and Li, B. and Weng, X. and Cao, Y. and Kr\"{a}henb\"{u}hl, P. and Pavone, M.},
+  title     = {Promptable Closed-loop Traffic Simulation},
+  booktitle = proc_CORL,
+  year      = {2024},
+  abstract  = {Simulation stands as a cornerstone for safe and efficient autonomous driving development. At its core a simulation system ought to produce realistic, reactive, and controllable traffic patterns. In this paper, we propose ProSim, a multimodal promptable closed-loop traffic simulation framework. ProSim allows the user to give a complex set of numerical, categorical or textual prompts to instruct each agent's behavior and intention. ProSim then rolls out a traffic scenario in a closed-loop manner, modeling each agent's interaction with other traffic participants. Our experiments show that ProSim achieves high prompt controllability given different user prompts, while reaching competitive performance on the Waymo Sim Agents Challenge when no prompt is given. To support research on promptable traffic simulation, we create ProSim-Instruct-520k, a multimodal prompt-scenario paired driving dataset with over 10M text prompts for over 520k real-world driving scenarios. We will release code of ProSim as well as data and labeling tools of ProSim-Instruct-520k at https://ariostgx.github.io/ProSim.},
+  keywords  = {press},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2409.05863}
+}
+
+@inproceedings{ChenYangEtAl2024,
+  author    = {Chen, Z. and Yang, J. and Huang, J. and Lutio, R. d. and Esturo, J. M. and Ivanovic, B. and Litany, O. and Gojcic, Z. and Fidler, S. and Pavone, M. and Song, L. and Wang, Y.},
+  title     = {OmniRe: Omni Urban Scene Reconstruction},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {We introduce OmniRe, a holistic approach for efficiently reconstructing high-fidelity dynamic urban scenes from on-device logs. Recent methods for modeling driving sequences using neural radiance fields or Gaussian Splatting have demonstrated the potential of reconstructing challenging dynamic scenes, but often overlook pedestrians and other non-vehicle dynamic actors, hindering a complete pipeline for dynamic urban scene reconstruction. To that end, we propose a comprehensive 3DGS framework for driving scenes, named OmniRe, that allows for accurate, full-length reconstruction of diverse dynamic objects in a driving log. OmniRe builds dynamic neural scene graphs based on Gaussian representations and constructs multiple local canonical spaces that model various dynamic actors, including vehicles, pedestrians, and cyclists, among many others. This capability is unmatched by existing methods. OmniRe allows us to holistically reconstruct different objects present in the scene, subsequently enabling the simulation of reconstructed scenarios with all actors participating in real-time (~60Hz). Extensive evaluations on the Waymo dataset show that our approach outperforms prior state-of-the-art methods quantitatively and qualitatively by a large margin. We believe our work fills a critical gap in driving reconstruction.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2408.16760}
+}
+
+@inproceedings{LiZhuEtAl2024,
+  author    = {Li, B. and Zhu, L. and Tian, R. and Tan, S. and Chen, Y. and Lu, Y. and Cui, Y. and Veer, S. and Ehrlich, M. and Philion, J. and Weng, X. and Xue, F. and Tao, A. and Liu, M. Y. and Fidler, S. and Ivanovic, B. and Darrell, T. and Malik, J. and Han, S. and Pavone, M.},
+  title     = {Wolf: Captioning Everthing with a World Summarization Framework},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {We propose Wolf, a WOrLd summarization Framework for accurate video captioning. Wolf is an automated captioning framework that adopts a mixture-of-experts approach, leveraging complementary strengths of Vision Language Models (VLMs). By utilizing both image and video models, our framework captures different levels of information and summarizes them efficiently. Our approach can be applied to enhance video understanding, auto-labeling, and captioning. To evaluate caption quality, we introduce CapScore, an LLM-based metric to assess the similarity and quality of generated captions compared to the ground truth captions. We further build four human-annotated datasets in three domains: autonomous driving, general scenes, and robotics, to facilitate comprehensive comparisons. We show that Wolf achieves superior captioning performance compared to state-of-the-art approaches from the research community (VILA1.5, CogAgent) and commercial solutions (Gemini-Pro-1.5, GPT-4V). For instance, in comparison with GPT-4V, Wolf improves CapScore both quality-wise by 55.6% and similarity-wise by 77.4% on challenging driving videos. Finally, we establish a benchmark for video captioning and introduce a leaderboard, aiming to accelerate advancements in video understanding, captioning, and data alignment. Leaderboard: https://wolfv0.github.io/leaderboard.html.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2407.18908}
+}
+
+@inproceedings{FangZhuEtAl2024,
+  author    = {Fang, Y. and Zhu, L. and Lu, Y. and Wang, Y. and Molchanov, P. and Cho, J. H. and Pavone, M. and Han, S. and Yin, H.},
+  title     = {$VILA^2$: VILA Augmented VILA},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Visual language models (VLMs) have rapidly progressed, driven by the success of large language models (LLMs). While model architectures and training infrastructures advance rapidly, data curation remains under-explored. When data quantity and quality become a bottleneck, existing work either directly crawls more raw data from the Internet that does not have a guarantee of data quality or distills from black-box commercial models (e.g., GPT-4V / Gemini) causing the performance upper bounded by that model. In this work, we introduce a novel approach that includes a self-augment step and a specialist-augment step to iteratively improve data quality and model performance. In the self-augment step, a VLM recaptions its own pretraining data to enhance data quality, and then retrains from scratch using this refined dataset to improve model performance. This process can iterate for several rounds. Once self-augmentation saturates, we employ several specialist VLMs finetuned from the self-augmented VLM with domain-specific expertise, to further infuse specialist knowledge into the generalist VLM through task-oriented recaptioning and retraining. With the combined self-augmented and specialist-augmented training, we introduce $VILA^2$ (VILA-augmented-VILA), a VLM family that consistently improves the accuracy on a wide range of tasks over prior art, and achieves new state-of-the-art results on MMMU leaderboard among open-sourced models.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2407.17453}
+}
+
+@inproceedings{GuSongEtAl2024,
+  author    = {Gu, X. and Song, G. and Gilitschenski, I. and Pavone, M. and Ivanovic, B.},
+  title     = {Accelerating Online Mapping and Behavior Prediction via Direct BEV Feature Attention},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Understanding road geometry is a critical component of the autonomous vehicle (AV) stack. While high-definition (HD) maps can readily provide such information, they suffer from high labeling and maintenance costs. Accordingly, many recent works have proposed methods for estimating HD maps online from sensor data. The vast majority of recent approaches encode multi-camera observations into an intermediate representation, e.g., a bird's eye view (BEV) grid, and produce vector map elements via a decoder. While this architecture is performant, it decimates much of the information encoded in the intermediate representation, preventing downstream tasks (e.g., behavior prediction) from leveraging them. In this work, we propose exposing the rich internal features of online map estimation methods and show how they enable more tightly integrating online mapping with trajectory forecasting. In doing so, we find that directly accessing internal BEV features yields up to 73\% faster inference speeds and up to 29\% more accurate predictions on the real-world nuScenes dataset.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2407.06683}
+}
+
+@inproceedings{TianLiEtAl2024,
+  author    = {Tian, R. and Li, B. and Weng, X. and Chen, Y. and Schmerling, E. and Wang, Y. and Ivanovic, B. and Pavone, M.},
+  title     = {Tokenize the World into Object-level Knowledge to Address Long-tail Events in Autonomous Driving},
+  booktitle = proc_CORL,
+  year      = {2024},
+  abstract  = {The autonomous driving industry is increasingly adopting end-to-end learning from sensory inputs to minimize human biases in system design. Traditional end-to-end driving models, however, suffer from long-tail events due to rare or unseen inputs within their training distributions. To address this, we propose TOKEN, a novel Multi-Modal Large Language Model (MM-LLM) that tokenizes the world into object-level knowledge, enabling better utilization of LLM's reasoning capabilities to enhance autonomous vehicle planning in long-tail scenarios. TOKEN effectively alleviates data scarcity and inefficient tokenization by leveraging a traditional end-to-end driving model to produce condensed and semantically enriched representations of the scene, which are optimized for LLM planning compatibility through deliberate representation and reasoning alignment training stages. Our results demonstrate that TOKEN excels in grounding, reasoning, and planning capabilities, outperforming existing frameworks with a 27\% reduction in trajectory L2 error and a 39\% decrease in collision rates in long-tail scenarios. Additionally, our work highlights the importance of representation alignment and structured reasoning in sparking the common-sense reasoning capabilities of MM-LLMs for effective planning.},
+  keywords  = {press},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2407.00959}
+}
+
+@inproceedings{DaunerHallgartenEtAl2024,
+  author    = {Dauner, D. and Hallgarten, M. and Li, T. and Weng, X. and Huang, Z. and Yang, Z. and Li, H. and Gilitschenski, I. and Ivanovic, B. and Pavone, M. and Geiger, A. and Chitta, K.},
+  title     = {NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Benchmarking vision-based driving policies is challenging. On one hand, open-loop evaluation with real data is easy, but these results do not reflect closed-loop performance. On the other, closed-loop evaluation is possible in simulation, but is hard to scale due to its significant computational demands. Further, the simulators available today exhibit a large domain gap to real data. This has resulted in an inability to draw clear conclusions from the rapidly growing body of research on end-to-end autonomous driving. In this paper, we present NAVSIM, a middle ground between these evaluation paradigms, where we use large datasets in combination with a non-reactive simulator to enable large-scale real-world benchmarking. Specifically, we gather simulation-based metrics, such as progress and time to collision, by unrolling bird's eye view abstractions of the test scenes for a short simulation horizon. Our simulation is non-reactive, i.e., the evaluated policy and environment do not influence each other. As we demonstrate empirically, this decoupling allows open-loop metric computation while being better aligned with closed-loop evaluations than traditional displacement errors. NAVSIM enabled a new competition held at CVPR 2024, where 143 teams submitted 463 entries, resulting in several new insights. On a large set of challenging scenarios, we observe that simple methods with moderate compute requirements such as TransFuser can match recent large-scale end-to-end driving architectures such as UniAD. Our modular framework can potentially be extended with new datasets, data curation strategies, and metrics, and will be continually maintained to host future challenges. Our code is available at \url{https://github.com/autonomousvision/navsim}.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2406.15349}
+}
+
+@inproceedings{WangKimEtAl2024,
+  author    = {Wang, L. and Kim, S. W. and Yang, J. and Yu, C. and Ivanovic, B. and Waslander, S. L. and Wang, Y. and Fidler, S. and Pavone, M. and Karkus, P.},
+  title     = {DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by Distilling Neural Fields and Foundation Model Features},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {We propose DistillNeRF, a self-supervised learning framework addressing the challenge of understanding 3D environments from limited 2D observations in autonomous driving. Our method is a generalizable feedforward model that predicts a rich neural scene representation from sparse, single-frame multi-view camera inputs, and is trained self-supervised with differentiable rendering to reconstruct RGB, depth, or feature images. Our first insight is to exploit per-scene optimized Neural Radiance Fields (NeRFs) by generating dense depth and virtual camera targets for training, thereby helping our model to learn 3D geometry from sparse non-overlapping image inputs. Second, to learn a semantically rich 3D representation, we propose distilling features from pre-trained 2D foundation models, such as CLIP or DINOv2, thereby enabling various downstream tasks without the need for costly 3D human annotations. To leverage these two insights, we introduce a novel model architecture with a two-stage lift-splat-shoot encoder and a parameterized sparse hierarchical voxel representation. Experimental results on the NuScenes dataset demonstrate that DistillNeRF significantly outperforms existing comparable self-supervised methods for scene reconstruction, novel view synthesis, and depth estimation; and it allows for competitive zero-shot 3D semantic occupancy prediction, as well as open-world scene understanding through distilled foundation model features. Demos and code will be available at https://distillnerf.github.io/.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2406.12095}
+}
+
+@inproceedings{FanWangEtAl2024,
+  author    = {Fan, Z. and Wang, P. and Zhao, Y. and Zhao, Y. and Ivanovic, B. and Wang, Z. and Pavone, M. and Yang, H. F.},
+  title     = {Learning Traffic Crashes as Language: Datasets, Benchmarks, and What-if Causal Analyses},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {The increasing rate of road accidents worldwide results not only in significant loss of life but also imposes billions financial burdens on societies. Current research in traffic crash frequency modeling and analysis has predominantly approached the problem as classification tasks, focusing mainly on learning-based classification or ensemble learning methods. These approaches often overlook the intricate relationships among the complex infrastructure, environmental, human and contextual factors related to traffic crashes and risky situations. In contrast, we initially propose a large-scale traffic crash language dataset, named CrashEvent, summarizing 19,340 real-world crash reports and incorporating infrastructure data, environmental and traffic textual and visual information in Washington State. Leveraging this rich dataset, we further formulate the crash event feature learning as a novel text reasoning problem and further fine-tune various large language models (LLMs) to predict detailed accident outcomes, such as crash types, severity and number of injuries, based on contextual and environmental factors. The proposed model, CrashLLM, distinguishes itself from existing solutions by leveraging the inherent text reasoning capabilities of LLMs to parse and learn from complex, unstructured data, thereby enabling a more nuanced analysis of contributing factors. Our experiments results shows that our LLM-based approach not only predicts the severity of accidents but also classifies different types of accidents and predicts injury outcomes, all with averaged F1 score boosted from 34.9% to 53.8%. Furthermore, CrashLLM can provide valuable insights for numerous open-world what-if situational-awareness traffic safety analyses with learned reasoning features, which existing models cannot offer. We make our benchmark, datasets, and model public available for further exploration.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2406.10789}
+}
+
+@inproceedings{LiWangEtAl2024,
+  author    = {Li, Y. and Wang, Z. and Wang, Y. and Yu, Z. and Gojcic, Z. and Pavone, M. and Feng, C. and Alvarez, J. M.},
+  title     = {Memorize What Matters: Emergent Scene Decomposition from Multitraverse},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Humans naturally retain memories of permanent elements, while ephemeral moments often slip through the cracks of memory. This selective retention is crucial for robotic perception, localization, and mapping. To endow robots with this capability, we introduce 3D Gaussian Mapping (3DGM), a self-supervised, camera-only offline mapping framework grounded in 3D Gaussian Splatting. 3DGM converts multitraverse RGB videos from the same region into a Gaussian-based environmental map while concurrently performing 2D ephemeral object segmentation. Our key observation is that the environment remains consistent across traversals, while objects frequently change. This allows us to exploit self-supervision from repeated traversals to achieve environment-object decomposition. More specifically, 3DGM formulates multitraverse environmental mapping as a robust differentiable rendering problem, treating pixels of the environment and objects as inliers and outliers, respectively. Using robust feature distillation, feature residuals mining, and robust optimization, 3DGM jointly performs 3D mapping and 2D segmentation without human intervention. We build the Mapverse benchmark, sourced from the Ithaca365 and nuPlan datasets, to evaluate our method in unsupervised 2D segmentation, 3D reconstruction, and neural rendering. Extensive results verify the effectiveness and potential of our method for self-driving and robotics.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2405.17187}
+}
+
+@inproceedings{SinghWangEtAl2024,
+  author    = {Singh, G. and Wang, Y. and Yang, J. and Ivanovic, B. and Ahn, S. and Pavone, M. and Che, T.},
+  title     = {Parallelized Spatiotemporal Binding},
+  booktitle = proc_ICML,
+  year      = {2024},
+  abstract  = {While modern best practices advocate for scalable architectures that support long-range interactions, object-centric models are yet to fully embrace these architectures. In particular, existing object-centric models for handling sequential inputs, due to their reliance on RNN-based implementation, show poor stability and capacity and are slow to train on long sequences. We introduce Parallelizable Spatiotemporal Binder or PSB, the first temporally-parallelizable slot learning architecture for sequential inputs. Unlike conventional RNN-based approaches, PSB produces object-centric representations, known as slots, for all time-steps in parallel. This is achieved by refining the initial slots across all time-steps through a fixed number of layers equipped with causal attention. By capitalizing on the parallelism induced by our architecture, the proposed model exhibits a significant boost in efficiency. In experiments, we test PSB extensively as an encoder within an auto-encoding framework paired with a wide variety of decoder options. Compared to the state-of-the-art, our architecture demonstrates stable training on longer sequences, achieves parallelization that results in a 60% increase in training speed, and yields performance that is on par with or better on unsupervised 2D and 3D object-centric scene decomposition and understanding.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2402.17077}
+}
+
+@InProceedings{AntonanteVeerEtAl2023,
+  author    = {Antonante, P. and Veer, S. and Leung, K. and Weng, X. and Carlone, L. and Pavone, M.},
+  title     = {Task-Aware Risk Estimation of Perception Failures for Autonomous Vehicles},
+  booktitle = proc_RSS,
+  year      = {2023},
+  address   = {Daegu, Republic of Korea},
+  month     = jul,
+  doi       = {10.15607/RSS.2023.XIX.100},
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+  url       = {https://roboticsconference.org/2023/program/papers/100/},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
