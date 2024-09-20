@@ -1079,7 +1079,7 @@
   timestamp = {2020-02-27}
 }
 
-@Article{ValenzuelaDeglerisEtAl2023,
+@Article{ValenzuelaDeglerisEtAl2022,
   author    = {Valenzuela, L. F. and Degleris, A. and Gamal, A. E. and Pavone, M. and Rajagopal, R.},
   title     = {Dynamic Locational Marginal Emissions via Implicit Differentiation},
   journal   = jrn_IEEE_TPS,
@@ -1948,7 +1948,7 @@
   url       = {https://arxiv.org/pdf/2203.04132.pdf}
 }
 
-@Article{SalzmannKaufmannEtAl2023,
+@Article{SalzmannPavoneEtAl2022_2,
   author    = {Salzmann, T. and Kaufmann, E. and Arrizabalaga, J. and Pavone, M. and Scaramuzza, D. and Ryll, M.},
   title     = {Real-Time Neural {MPC}: Deep Learning Model Predictive Control for Quadrotors and Agile Robotic Platforms},
   journal   = jrn_IEEE_RAL,
@@ -4257,18 +4257,16 @@
 }
 
 @InProceedings{FoutterSinhaEtAl2023,
-  author       = {Foutter, M. and Sinha, R. and Banerjee, S. and Pavone, M.},
-  title        = {Self-Supervised Model Generalization using Out-of-Distribution Detection},
-  booktitle    = proc_CoRL_OOD,
-  year         = {2023},
-  address      = {Atlanta, Georgia},
-  month        = nov,
-  abstract     = {Autonomous agents increasingly rely on learned components to streamline safe and reliable decision making. However, data dissimilar to that seen in training, deemed to be Out-of-Distribution (OOD), creates undefined behavior in the output of our learned-components, which can have detrimental consequences in a safety critical setting such as autonomous satellite rendezvous. In the wild, we typically are exposed to a mix of in-and-out of distribution data where OOD inputs correspond to uncommon and unfamiliar data when a nominally competent system encounters a new situation. In this paper, we propose an architecture that detects the presence of OOD inputs in an online stream of data. The architecture then uses these OOD inputs to recognize domain invariant features between the original training and OOD domain to improve model inference. We demonstrate that our algorithm more than doubles model accuracy on the OOD domain with sparse, unlabeled OOD examples compared to a naive model without such data on shifted MNIST domains. Importantly, we also demonstrate our algorithm maintains strong accuracy on the original training domain, generalizing the model to a mix of in-and-out of distribution examples seen at deployment. Code for our experiment is available at: https://github.com/StanfordASL/CoRL_OODWorkshop_DANN-DL},
-  asl_abstract = {Autonomous agents increasingly rely on learned components to streamline safe and reliable decision making. However, data dissimilar to that seen in training, deemed to be Out-of-Distribution (OOD), creates undefined behavior in the output of our learned-components, which can have detrimental consequences in a safety critical setting such as autonomous satellite rendezvous. In the wild, we typically are exposed to a mix of in-and-out of distribution data where OOD inputs correspond to uncommon and unfamiliar data when a nominally competent system encounters a new situation. In this paper, we propose an architecture that detects the presence of OOD inputs in an online stream of data. The architecture then uses these OOD inputs to recognize domain invariant features between the original training and OOD domain to improve model inference. We demonstrate that our algorithm more than doubles model accuracy on the OOD domain with sparse, unlabeled OOD examples compared to a naive model without such data on shifted MNIST domains. Importantly, we also demonstrate our algorithm maintains strong accuracy on the original training domain, generalizing the model to a mix of in-and-out of distribution examples seen at deployment. Code for our experiment is available at: https://github.com/StanfordASL/CoRL_OODWorkshop_DANN-DL.},
-  asl_url      = {https://openreview.net/forum?id=z5XS3BY13J},
-  owner        = {jthluke},
-  timestamp    = {2024-09-20},
-  url          = {https://openreview.net/forum?id=z5XS3BY13J},
+  author    = {Foutter, M. and Sinha, R. and Banerjee, S. and Pavone, M.},
+  title     = {Self-Supervised Model Generalization using Out-of-Distribution Detection},
+  booktitle = proc_CoRL_OOD,
+  year      = {2023},
+  address   = {Atlanta, Georgia},
+  month     = nov,
+  abstract  = {Autonomous agents increasingly rely on learned components to streamline safe and reliable decision making. However, data dissimilar to that seen in training, deemed to be Out-of-Distribution (OOD), creates undefined behavior in the output of our learned-components, which can have detrimental consequences in a safety critical setting such as autonomous satellite rendezvous. In the wild, we typically are exposed to a mix of in-and-out of distribution data where OOD inputs correspond to uncommon and unfamiliar data when a nominally competent system encounters a new situation. In this paper, we propose an architecture that detects the presence of OOD inputs in an online stream of data. The architecture then uses these OOD inputs to recognize domain invariant features between the original training and OOD domain to improve model inference. We demonstrate that our algorithm more than doubles model accuracy on the OOD domain with sparse, unlabeled OOD examples compared to a naive model without such data on shifted MNIST domains. Importantly, we also demonstrate our algorithm maintains strong accuracy on the original training domain, generalizing the model to a mix of in-and-out of distribution examples seen at deployment. Code for our experiment is available at: https://github.com/StanfordASL/CoRL_OODWorkshop_DANN-DL},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://openreview.net/forum?id=z5XS3BY13J},
 }
 
 @inproceedings{FoutterBohjEtAl2024,
