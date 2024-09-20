@@ -1033,7 +1033,6 @@
   keywords  = {pub}
 }
 
-
 @inproceedings{WengIvanovicEtAl2022b,
   author    = {Weng, X. and Ivanovic, B. and Kitani, K. and Pavone, M.},
   booktitle = proc_IEEE_CVPR,
@@ -1154,3 +1153,122 @@
   url       = {https://arxiv.org/abs/2403.08125}
 }
 
+@inproceedings{TanIvanovicEtAl2024,
+  author    = {Tan, S. and Ivanovic, B. and Chen, Y. and Li, B. and Weng, X. and Cao, Y. and Kr\"{a}henb\"{u}hl, P. and Pavone, M.},
+  title     = {Promptable Closed-loop Traffic Simulation},
+  booktitle = proc_CORL,
+  year      = {2024},
+  abstract  = {Simulation stands as a cornerstone for safe and efficient autonomous driving development. At its core a simulation system ought to produce realistic, reactive, and controllable traffic patterns. In this paper, we propose ProSim, a multimodal promptable closed-loop traffic simulation framework. ProSim allows the user to give a complex set of numerical, categorical or textual prompts to instruct each agent's behavior and intention. ProSim then rolls out a traffic scenario in a closed-loop manner, modeling each agent's interaction with other traffic participants. Our experiments show that ProSim achieves high prompt controllability given different user prompts, while reaching competitive performance on the Waymo Sim Agents Challenge when no prompt is given. To support research on promptable traffic simulation, we create ProSim-Instruct-520k, a multimodal prompt-scenario paired driving dataset with over 10M text prompts for over 520k real-world driving scenarios. We will release code of ProSim as well as data and labeling tools of ProSim-Instruct-520k at https://ariostgx.github.io/ProSim.},
+  keywords  = {press},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2409.05863}
+}
+
+@inproceedings{ChenYangEtAl2024,
+  author    = {Chen, Z. and Yang, J. and Huang, J. and Lutio, R. d. and Esturo, J. M. and Ivanovic, B. and Litany, O. and Gojcic, Z. and Fidler, S. and Pavone, M. and Song, L. and Wang, Y.},
+  title     = {OmniRe: Omni Urban Scene Reconstruction},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {We introduce OmniRe, a holistic approach for efficiently reconstructing high-fidelity dynamic urban scenes from on-device logs. Recent methods for modeling driving sequences using neural radiance fields or Gaussian Splatting have demonstrated the potential of reconstructing challenging dynamic scenes, but often overlook pedestrians and other non-vehicle dynamic actors, hindering a complete pipeline for dynamic urban scene reconstruction. To that end, we propose a comprehensive 3DGS framework for driving scenes, named OmniRe, that allows for accurate, full-length reconstruction of diverse dynamic objects in a driving log. OmniRe builds dynamic neural scene graphs based on Gaussian representations and constructs multiple local canonical spaces that model various dynamic actors, including vehicles, pedestrians, and cyclists, among many others. This capability is unmatched by existing methods. OmniRe allows us to holistically reconstruct different objects present in the scene, subsequently enabling the simulation of reconstructed scenarios with all actors participating in real-time (~60Hz). Extensive evaluations on the Waymo dataset show that our approach outperforms prior state-of-the-art methods quantitatively and qualitatively by a large margin. We believe our work fills a critical gap in driving reconstruction.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2408.16760}
+}
+
+@inproceedings{LiZhuEtAl2024,
+  author    = {Li, B. and Zhu, L. and Tian, R. and Tan, S. and Chen, Y. and Lu, Y. and Cui, Y. and Veer, S. and Ehrlich, M. and Philion, J. and Weng, X. and Xue, F. and Tao, A. and Liu, M. Y. and Fidler, S. and Ivanovic, B. and Darrell, T. and Malik, J. and Han, S. and Pavone, M.},
+  title     = {Wolf: Captioning Everthing with a World Summarization Framework},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {We propose Wolf, a WOrLd summarization Framework for accurate video captioning. Wolf is an automated captioning framework that adopts a mixture-of-experts approach, leveraging complementary strengths of Vision Language Models (VLMs). By utilizing both image and video models, our framework captures different levels of information and summarizes them efficiently. Our approach can be applied to enhance video understanding, auto-labeling, and captioning. To evaluate caption quality, we introduce CapScore, an LLM-based metric to assess the similarity and quality of generated captions compared to the ground truth captions. We further build four human-annotated datasets in three domains: autonomous driving, general scenes, and robotics, to facilitate comprehensive comparisons. We show that Wolf achieves superior captioning performance compared to state-of-the-art approaches from the research community (VILA1.5, CogAgent) and commercial solutions (Gemini-Pro-1.5, GPT-4V). For instance, in comparison with GPT-4V, Wolf improves CapScore both quality-wise by 55.6% and similarity-wise by 77.4% on challenging driving videos. Finally, we establish a benchmark for video captioning and introduce a leaderboard, aiming to accelerate advancements in video understanding, captioning, and data alignment. Leaderboard: https://wolfv0.github.io/leaderboard.html.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2407.18908}
+}
+
+@inproceedings{FangZhuEtAl2024,
+  author    = {Fang, Y. and Zhu, L. and Lu, Y. and Wang, Y. and Molchanov, P. and Cho, J. H. and Pavone, M. and Han, S. and Yin, H.},
+  title     = {$VILA^2$: VILA Augmented VILA},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Visual language models (VLMs) have rapidly progressed, driven by the success of large language models (LLMs). While model architectures and training infrastructures advance rapidly, data curation remains under-explored. When data quantity and quality become a bottleneck, existing work either directly crawls more raw data from the Internet that does not have a guarantee of data quality or distills from black-box commercial models (e.g., GPT-4V / Gemini) causing the performance upper bounded by that model. In this work, we introduce a novel approach that includes a self-augment step and a specialist-augment step to iteratively improve data quality and model performance. In the self-augment step, a VLM recaptions its own pretraining data to enhance data quality, and then retrains from scratch using this refined dataset to improve model performance. This process can iterate for several rounds. Once self-augmentation saturates, we employ several specialist VLMs finetuned from the self-augmented VLM with domain-specific expertise, to further infuse specialist knowledge into the generalist VLM through task-oriented recaptioning and retraining. With the combined self-augmented and specialist-augmented training, we introduce $VILA^2$ (VILA-augmented-VILA), a VLM family that consistently improves the accuracy on a wide range of tasks over prior art, and achieves new state-of-the-art results on MMMU leaderboard among open-sourced models.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2407.17453}
+}
+
+@inproceedings{GuSongEtAl2024,
+  author    = {Gu, X. and Song, G. and Gilitschenski, I. and Pavone, M. and Ivanovic, B.},
+  title     = {Accelerating Online Mapping and Behavior Prediction via Direct BEV Feature Attention},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Understanding road geometry is a critical component of the autonomous vehicle (AV) stack. While high-definition (HD) maps can readily provide such information, they suffer from high labeling and maintenance costs. Accordingly, many recent works have proposed methods for estimating HD maps online from sensor data. The vast majority of recent approaches encode multi-camera observations into an intermediate representation, e.g., a bird's eye view (BEV) grid, and produce vector map elements via a decoder. While this architecture is performant, it decimates much of the information encoded in the intermediate representation, preventing downstream tasks (e.g., behavior prediction) from leveraging them. In this work, we propose exposing the rich internal features of online map estimation methods and show how they enable more tightly integrating online mapping with trajectory forecasting. In doing so, we find that directly accessing internal BEV features yields up to 73\% faster inference speeds and up to 29\% more accurate predictions on the real-world nuScenes dataset.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2407.06683}
+}
+
+@inproceedings{TianLiEtAl2024,
+  author    = {Tian, R. and Li, B. and Weng, X. and Chen, Y. and Schmerling, E. and Wang, Y. and Ivanovic, B. and Pavone, M.},
+  title     = {Tokenize the World into Object-level Knowledge to Address Long-tail Events in Autonomous Driving},
+  booktitle = proc_CORL,
+  year      = {2024},
+  abstract  = {The autonomous driving industry is increasingly adopting end-to-end learning from sensory inputs to minimize human biases in system design. Traditional end-to-end driving models, however, suffer from long-tail events due to rare or unseen inputs within their training distributions. To address this, we propose TOKEN, a novel Multi-Modal Large Language Model (MM-LLM) that tokenizes the world into object-level knowledge, enabling better utilization of LLM's reasoning capabilities to enhance autonomous vehicle planning in long-tail scenarios. TOKEN effectively alleviates data scarcity and inefficient tokenization by leveraging a traditional end-to-end driving model to produce condensed and semantically enriched representations of the scene, which are optimized for LLM planning compatibility through deliberate representation and reasoning alignment training stages. Our results demonstrate that TOKEN excels in grounding, reasoning, and planning capabilities, outperforming existing frameworks with a 27\% reduction in trajectory L2 error and a 39\% decrease in collision rates in long-tail scenarios. Additionally, our work highlights the importance of representation alignment and structured reasoning in sparking the common-sense reasoning capabilities of MM-LLMs for effective planning.},
+  keywords  = {press},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2407.00959}
+}
+
+@inproceedings{DaunerHallgartenEtAl2024,
+  author    = {Dauner, D. and Hallgarten, M. and Li, T. and Weng, X. and Huang, Z. and Yang, Z. and Li, H. and Gilitschenski, I. and Ivanovic, B. and Pavone, M. and Geiger, A. and Chitta, K.},
+  title     = {NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Benchmarking vision-based driving policies is challenging. On one hand, open-loop evaluation with real data is easy, but these results do not reflect closed-loop performance. On the other, closed-loop evaluation is possible in simulation, but is hard to scale due to its significant computational demands. Further, the simulators available today exhibit a large domain gap to real data. This has resulted in an inability to draw clear conclusions from the rapidly growing body of research on end-to-end autonomous driving. In this paper, we present NAVSIM, a middle ground between these evaluation paradigms, where we use large datasets in combination with a non-reactive simulator to enable large-scale real-world benchmarking. Specifically, we gather simulation-based metrics, such as progress and time to collision, by unrolling bird's eye view abstractions of the test scenes for a short simulation horizon. Our simulation is non-reactive, i.e., the evaluated policy and environment do not influence each other. As we demonstrate empirically, this decoupling allows open-loop metric computation while being better aligned with closed-loop evaluations than traditional displacement errors. NAVSIM enabled a new competition held at CVPR 2024, where 143 teams submitted 463 entries, resulting in several new insights. On a large set of challenging scenarios, we observe that simple methods with moderate compute requirements such as TransFuser can match recent large-scale end-to-end driving architectures such as UniAD. Our modular framework can potentially be extended with new datasets, data curation strategies, and metrics, and will be continually maintained to host future challenges. Our code is available at \url{https://github.com/autonomousvision/navsim}.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2406.15349}
+}
+
+@inproceedings{WangKimEtAl2024,
+  author    = {Wang, L. and Kim, S. W. and Yang, J. and Yu, C. and Ivanovic, B. and Waslander, S. L. and Wang, Y. and Fidler, S. and Pavone, M. and Karkus, P.},
+  title     = {DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by Distilling Neural Fields and Foundation Model Features},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {We propose DistillNeRF, a self-supervised learning framework addressing the challenge of understanding 3D environments from limited 2D observations in autonomous driving. Our method is a generalizable feedforward model that predicts a rich neural scene representation from sparse, single-frame multi-view camera inputs, and is trained self-supervised with differentiable rendering to reconstruct RGB, depth, or feature images. Our first insight is to exploit per-scene optimized Neural Radiance Fields (NeRFs) by generating dense depth and virtual camera targets for training, thereby helping our model to learn 3D geometry from sparse non-overlapping image inputs. Second, to learn a semantically rich 3D representation, we propose distilling features from pre-trained 2D foundation models, such as CLIP or DINOv2, thereby enabling various downstream tasks without the need for costly 3D human annotations. To leverage these two insights, we introduce a novel model architecture with a two-stage lift-splat-shoot encoder and a parameterized sparse hierarchical voxel representation. Experimental results on the NuScenes dataset demonstrate that DistillNeRF significantly outperforms existing comparable self-supervised methods for scene reconstruction, novel view synthesis, and depth estimation; and it allows for competitive zero-shot 3D semantic occupancy prediction, as well as open-world scene understanding through distilled foundation model features. Demos and code will be available at https://distillnerf.github.io/.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2406.12095}
+}
+
+@inproceedings{FanWangEtAl2024,
+  author    = {Fan, Z. and Wang, P. and Zhao, Y. and Zhao, Y. and Ivanovic, B. and Wang, Z. and Pavone, M. and Yang, H. F.},
+  title     = {Learning Traffic Crashes as Language: Datasets, Benchmarks, and What-if Causal Analyses},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {The increasing rate of road accidents worldwide results not only in significant loss of life but also imposes billions financial burdens on societies. Current research in traffic crash frequency modeling and analysis has predominantly approached the problem as classification tasks, focusing mainly on learning-based classification or ensemble learning methods. These approaches often overlook the intricate relationships among the complex infrastructure, environmental, human and contextual factors related to traffic crashes and risky situations. In contrast, we initially propose a large-scale traffic crash language dataset, named CrashEvent, summarizing 19,340 real-world crash reports and incorporating infrastructure data, environmental and traffic textual and visual information in Washington State. Leveraging this rich dataset, we further formulate the crash event feature learning as a novel text reasoning problem and further fine-tune various large language models (LLMs) to predict detailed accident outcomes, such as crash types, severity and number of injuries, based on contextual and environmental factors. The proposed model, CrashLLM, distinguishes itself from existing solutions by leveraging the inherent text reasoning capabilities of LLMs to parse and learn from complex, unstructured data, thereby enabling a more nuanced analysis of contributing factors. Our experiments results shows that our LLM-based approach not only predicts the severity of accidents but also classifies different types of accidents and predicts injury outcomes, all with averaged F1 score boosted from 34.9% to 53.8%. Furthermore, CrashLLM can provide valuable insights for numerous open-world what-if situational-awareness traffic safety analyses with learned reasoning features, which existing models cannot offer. We make our benchmark, datasets, and model public available for further exploration.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2406.10789}
+}
+
+@inproceedings{LiWangEtAl2024,
+  author    = {Li, Y. and Wang, Z. and Wang, Y. and Yu, Z. and Gojcic, Z. and Pavone, M. and Feng, C. and Alvarez, J. M.},
+  title     = {Memorize What Matters: Emergent Scene Decomposition from Multitraverse},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Humans naturally retain memories of permanent elements, while ephemeral moments often slip through the cracks of memory. This selective retention is crucial for robotic perception, localization, and mapping. To endow robots with this capability, we introduce 3D Gaussian Mapping (3DGM), a self-supervised, camera-only offline mapping framework grounded in 3D Gaussian Splatting. 3DGM converts multitraverse RGB videos from the same region into a Gaussian-based environmental map while concurrently performing 2D ephemeral object segmentation. Our key observation is that the environment remains consistent across traversals, while objects frequently change. This allows us to exploit self-supervision from repeated traversals to achieve environment-object decomposition. More specifically, 3DGM formulates multitraverse environmental mapping as a robust differentiable rendering problem, treating pixels of the environment and objects as inliers and outliers, respectively. Using robust feature distillation, feature residuals mining, and robust optimization, 3DGM jointly performs 3D mapping and 2D segmentation without human intervention. We build the Mapverse benchmark, sourced from the Ithaca365 and nuPlan datasets, to evaluate our method in unsupervised 2D segmentation, 3D reconstruction, and neural rendering. Extensive results verify the effectiveness and potential of our method for self-driving and robotics.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2405.17187}
+}
