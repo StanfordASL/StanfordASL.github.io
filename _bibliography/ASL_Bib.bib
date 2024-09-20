@@ -1054,6 +1054,18 @@
   timestamp = {2020-10-19}
 }
 
+@inproceedings{WangBrownEtAl2024,
+  author    = {Wang, I. W. and Brown, R. and Patti, T. L. and Anandkumar, A. and Pavone, M. and Yelin, S. F.},
+  title     = {Sum-of-Squares inspired Quantum Metaheuristic for Polynomial Optimization with the Hadamard Test and Approximate Amplitude Constraints},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Quantum computation shows promise for addressing numerous classically intractable problems, such as optimization tasks. Many optimization problems are NP-hard, meaning that they scale exponentially with problem size and thus cannot be addressed at scale by traditional computing paradigms. The recently proposed quantum algorithm https://arxiv.org/abs/2206.14999 addresses this challenge for some NP-hard problems, and is based on classical semidefinite programming (SDP). In this manuscript, we generalize the SDP-inspired quantum algorithm to sum-of-squares programming, which targets a broader problem set. Our proposed algorithm addresses degree-k polynomial optimization problems with $N \leq 2n$ variables (which are representative of many NP-hard problems) using $O(nk)$ qubits, $O(k)$ quantum measurements, and $O(poly(n))$ classical calculations. We apply the proposed algorithm to the prototypical Max-kSAT problem and compare its performance against classical sum-of-squares, state-of-the-art heuristic solvers, and random guessing. Simulations show that the performance of our algorithm surpasses that of classical sum-of-squares after rounding. Our results further demonstrate that our algorithm is suitable for large problems and approximates the best known classical heuristics, while also providing a more generalizable approach compared to problem-specific heuristics.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2408.07774}
+}
+
 @inproceedings{VerbruggenSalazarEtAl2019,
   author    = {Verbruggen, F. J. R. and Salazar, M. and Pavone, M. and Hofman, T.},
   title     = {Joint Design and Control of Electric Vehicle Propulsion Systems},
@@ -1067,17 +1079,19 @@
   timestamp = {2020-02-27}
 }
 
-@article{ValenzuelaDeglerisEtAl2022,
+@Article{ValenzuelaDeglerisEtAl2023,
   author    = {Valenzuela, L. F. and Degleris, A. and Gamal, A. E. and Pavone, M. and Rajagopal, R.},
-  title     = {Dynamic locational marginal emissions via implicit differentiation},
+  title     = {Dynamic Locational Marginal Emissions via Implicit Differentiation},
   journal   = jrn_IEEE_TPS,
-  note      = {In Press},
-  year      = {2024},
-  abstract  = {Locational marginal emissions rates (LMEs) estimate the rate of change in emissions due to a small change in demand in a transmission network, and are an important metric for assessing the impact of various energy policies or interventions. In this work, we develop a new method for computing the LMEs of an electricity system via implicit differentiation. The method is model agnostic; it can compute LMEs for almost any convex optimization-based dispatch model, including some of the complex dispatch models employed by system operators in real electricity systems. In particular, this method lets us derive LMEs for dynamic dispatch models, i.e., models with temporal constraints such as ramping and storage. Using real data from the U.S. electricity system, we validate the proposed method by comparing emissions predictions with another state-of-the-art method. We show that incorporating dynamic constraints improves prediction by 8.2%.  Finally, we use simulations on a realistic 240-bus model of WECC to demonstrate the flexibility of the tool and the importance of incorporating dynamic constraints. Namely, static LMEs and dynamic LMEs exhibit an average RMS deviation of 28.40%, implying dynamic constraints are essential to accurately modeling emissions rates.},
-  url       = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10049684},
-  owner     = {rdyro},
-  timestamp = {2024-01-08},
-  keywords  = {pub}
+  year      = {2023},
+  volume    = {39},
+  number    = {1},
+  pages     = {1138--1147},
+  abstract  = {Locational marginal emissions rates (LMEs) estimate the rate of change in emissions due to a small change in demand in a transmission network, and are an important metric for assessing the impact of various energy policies or interventions. In this work, we develop a new method for computing the LMEs of an electricity system via implicit differentiation. The method is model agnostic; it can compute LMEs for any convex optimization-based dispatch model, including some of the complex dispatch models employed by system operators in real electricity systems. In particular, this method lets us derive LMEs for dynamic dispatch models, which have temporal constraints such as ramping and storage. Using real data from the U.S. electricity system, we validate the proposed method against a state-of-the-art merit-order-based method and show that incorporating dynamic constraints improves model accuracy by 8.2%. Finally, we use simulations on a realistic 240-bus model of WECC to demonstrate the flexibility of the tool and the importance of incorporating dynamic constraints. In this example, static and dynamic LMEs deviate from one another by 28.4% on average, implying dynamic constraints are essential in accurately modeling emissions rates.},
+  doi       = {10.1109/TPWRS.2023.3247345},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://arxiv.org/abs/2302.14282},
 }
 
 @article{ValenzuelaBrownEtAl2024,
@@ -1264,6 +1278,18 @@
   url       = {https://arxiv.org/abs/2011.02092},
   owner     = {stonkens},
   timestamp = {2021-06-10}
+}
+
+@inproceedings{ThummAgiaEtAl2024,
+  author    = {Thumm, J. and Agia, C. and Pavone, M. and Althoff, M.},
+  title     = {Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction},
+  booktitle = proc_CoRL,
+  year      = {2024},
+  abstract  = {Adjusting robot behavior to human preferences can require intensive human feedback, preventing quick adaptation to new users and changing circumstances. Moreover, current approaches typically treat user preferences as a reward, which requires a manual balance between task success and user satisfaction. To integrate new user preferences in a zero-shot manner, our proposed Text2Interaction framework invokes a large language model to generate a task plan, motion preferences as Python code, and parameters of a safe controller. By maximizing the combined probability of task completion and user satisfaction instead of a weighted sum of rewards, we can reliably find plans that fulfill both requirements. We find that 83% of users working with Text2Interaction agree that it integrates their preferences into the robot's plan, and 94% prefer Text2Interaction over the baseline. Our ablation study shows that Text2Interaction aligns better with unseen preferences than other baselines while maintaining a high success rate.},
+  keywords  = {press},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2408.06105}
 }
 
 @inproceedings{ThorpeLewEtAl2022,
@@ -1922,19 +1948,19 @@
   url       = {https://arxiv.org/pdf/2203.04132.pdf}
 }
 
-@article{SalzmannPavoneEtAl2022_2,
+@Article{SalzmannKaufmannEtAl2023,
   author    = {Salzmann, T. and Kaufmann, E. and Arrizabalaga, J. and Pavone, M. and Scaramuzza, D. and Ryll, M.},
+  title     = {Real-Time Neural {MPC}: Deep Learning Model Predictive Control for Quadrotors and Agile Robotic Platforms},
   journal   = jrn_IEEE_RAL,
-  title     = {Real-time Neural {MPC}: Deep Learning Model Predictive Control for Quadrotors and Agile Robotic Platforms},
+  year      = {2023},
   volume    = {8},
   number    = {4},
   pages     = {2397--2404},
-  year      = {2023},
-  abstract  = {Model Predictive Control (MPC) has become a popular framework in embedded control for high-performance autonomous systems. However, to achieve good control performance using MPC, an accurate dynamics model is key. To maintain real-time operation, the dynamics models used on embedded systems have been limited to simple first-principle models, which substantially limits their representative power. In contrast to such simple models, machine learning approaches, specifically neural networks, have been shown to accurately model even complex dynamic effects, but their large computational complexity hindered combination with fast real-time iteration loops. With this work, we present Real-time Neural MPC, a framework to efficiently integrate large, complex neural network architectures as dynamics models within a model-predictive control pipeline. Our experiments, performed in simulation and the real world onboard a highly agile quadrotor platform, demonstrate the capabilities of the described system to run learned models with, previously infeasible, large modeling capacity using gradient-based online optimization MPC. Compared to prior implementations of neural networks in online optimization MPC we can leverage models of over 4000 times larger parametric capacity in a 50Hz real-time window on an embedded platform. Further, we show the feasibility of our framework on real-world problems by reducing the positional tracking error by up to 82% when compared to state-of-the-art MPC approaches without neural network dynamics.},
-  url       = {https://arxiv.org/pdf/2203.07747.pdf},
-  keywords  = {pub},
-  owner     = {salzmann},
-  timestamp = {2023-03-01}
+  abstract  = {Model Predictive Control (MPC) has become a popular framework in embedded control for high-performance autonomous systems. However, to achieve good control performance using MPC, an accurate dynamics model is key. To maintain real-time operation, the dynamics models used on embedded systems have been limited to simple first-principle models, which substantially limits their representative power. In contrast to such simple models, machine learning approaches, specifically neural networks, have been shown to accurately model even complex dynamic effects, but their large computational complexity hindered combination with fast real-time iteration loops. With this work, we present Real-time Neural MPC , a framework to efficiently integrate large, complex neural network architectures as dynamics models within a model-predictive control pipeline. Our experiments, performed in simulation and the real world onboard a highly agile quadrotor platform, demonstrate the capabilities of the described system to run learned models with, previously infeasible, large modeling capacity using gradient-based online optimization MPC. Compared to prior implementations of neural networks in online optimization MPC we can leverage models of over 4000 times larger parametric capacity in a 50 Hz real-time window on an embedded platform. Further, we show the feasibility of our framework on real-world problems by reducing the positional tracking error by up to 82% when compared to state-of-the-art MPC approaches without neural network dynamics.},
+  doi       = {10.1109/LRA.2023.3246839},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://arxiv.org/abs/2203.07747.pdf},
 }
 
 @inproceedings{SalzmannIvanovicEtAl2020,
@@ -2675,29 +2701,32 @@
   url       = {https://arxiv.org/abs/2009.05702}
 }
 
-@inproceedings{NewdickOngoleEtAl2023,
-  author    = {Stephanie Newdick and Nitin Ongole and Tony G. Chen and Edward Schmerling and Mark Cutkosky and Marco Pavone},
+@InProceedings{NewdickOngoleEtAl2023,
+  author    = {Newdick, S. and Ongole, N and Chen, T. G. and Schmerling, E. and Cutkosky, M. R. and Pavone, M.},
   title     = {Motion Planning for a Climbing Robot with Stochastic Grasps},
-  year      = {2023},
-  abstract  = {Motion planning for a multi-limbed climbing robot must consider the robot’s posture, joint torques, and how it uses contact forces to interact with its environment. This paper focuses on motion planning for a robot that uses nontraditional locomotion to explore unpredictable environments such as a martian cave. Our robotic concept, ReachBot, uses extendable and retractable booms as limbs to achieve a large reachable workspace while climbing. Each extendable boom is capped by a microspine gripper optimized for grasping in martian caves. ReachBot leverages its large workspace to navigate around obstacles, over crevasses, and through challenging terrain. Our planning approach must be versatile to accommodate variable terrain features and be robust to mitigate risks from the stochastic nature of spiny grippers. In this paper, we introduce a graph traversal algorithm to select a discrete sequence of grasps based on available terrain features suitable for grasping.  This discrete plan is complemented by a decoupled motion planner that considers the alternating phases of body movement and end-effector movement, using a combination of sampling-based planning and sequential convex programming to optimize individual phases. We use our motion planner to plan a trajectory across a simulated 2D cave environment with at least 95\% probability of success and demonstrate improved robustness over a baseline trajectory. Finally, we verify our motion planning algorithm through experimentation on a 2D planar prototype.},
   booktitle = proc_IEEE_ICRA,
+  year      = {2023},
   address   = {London, United Kingdom},
+  month     = may,
+  abstract  = {ReachBot is a robot that uses extendable and retractable booms as limbs to move around unpredictable environments such as martian caves. Each boom is capped by a microspine gripper designed for grasping rocky surfaces. Motion planning for ReachBot must be versatile to accommo-date variable terrain features and robust to mitigate risks from the stochastic nature of grasping with spines. In this paper, we introduce a graph traversal algorithm to select a discrete sequence of grasps based on available terrain features suitable for grasping. This discrete plan is complemented by a decoupled motion planner that considers the alternating phases of body movement and end-effector movement, using a combination of sampling-based planning and sequential convex programming to optimize individual phases. We use our motion planner to plan a trajectory across a simulated 2D cave environment with at least 90% probability of success and demonstrate improved robustness over a baseline trajectory. Finally, we use a simplified prototype to verify a body movement trajectory generated by our motion planning algorithm.},
   doi       = {10.1109/ICRA48891.2023.10160218},
-  owner     = {somrita},
-  timestamp = {2024-02-29},
-  url       = {https://arxiv.org/abs/2209.10687}
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2209.10687},
 }
 
-@inproceedings{NewdickChenEtAl2023,
-  author    = {Stephanie Newdick and Tony G. Chen and Benjamin Hockman and Edward Schmerling and Mark R. Cutkosky and Marco Pavone},
+@InProceedings{NewdickChenEtAl2023,
+  author    = {Newdick, S. and Chen, T. G. and Hockman, B. and Schmerling, E. and Cutkosky, M. R. and Pavone, M.},
   title     = {Designing ReachBot: System Design Process with a Case Study of a Martian Lava Tube Mission},
-  year      = {2023},
-  abstract  = {In this paper we present a trade study-based method to optimize the architecture of ReachBot, a new robotic concept that uses deployable booms as prismatic joints for mobility in environments with adverse gravity conditions and challenging terrain. Specifically, we introduce a design process wherein we analyze the compatibility of ReachBot's design with its mission. We incorporate terrain parameters and mission requirements to produce a final design optimized for mission-specific objectives. ReachBot's design parameters include (1) number of booms, (2) positions and orientations of the booms on ReachBot's chassis, (3) boom maximum extension, (4) boom cross-sectional geometry, and (5) number of active/passive degrees-of-freedom at each joint. Using first-order approximations, we analyze the relationships between these parameters and various performance metrics including stability, manipulability, and mechanical interference. We apply our method to a mission where ReachBot navigates and gathers data from a martian lava tube. The resulting design is shown in Fig.1.},
   booktitle = proc_IEEE_AC,
+  year      = {2023},
   address   = {Big Sky, Montana},
+  month     = mar,
+  abstract  = {In this paper we present a trade study-based method to optimize the architecture of ReachBot, a new robotic concept that uses deployable booms as prismatic joints for mobility in environments with adverse gravity conditions and challenging terrain. Specifically, we introduce a design process wherein we analyze the compatibility of ReachBot's design with its mission. We incorporate terrain parameters and mission requirements to produce a final design optimized for mission-specific objectives. ReachBot's design parameters include (1) number of booms, (2) positions and orientations of the booms on ReachBot's chassis, (3) boom maximum extension, (4) boom cross-sectional geome-try, and (5) number of active/passive degrees-of-freedom at each joint. Using first-order approximations, we analyze the relationships between these parameters and various performance metrics including stability, manipulability, and mechanical in-terference. We apply our method to a mission where ReachBot navigates and gathers data from a martian lava tube. The resulting design is shown in Fig. 1.},
+  doi       = {10.1109/AERO55745.2023.10115893},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
   url       = {https://arxiv.org/abs/2210.11534},
-  owner     = {schneids},
-  timestamp = {2024-02-29}
 }
 
 @inproceedings{NeiraBrownEtAl2024,
@@ -2867,18 +2896,6 @@
   timestamp = {2018-01-16}
 }
 
-@inproceedings{LuoSinhaEtAl2023,
-  author    = {Luo, R. and Sinha, R. and Sun, Y. and Hindy, A. and Zhao, S. and Savarese, S. and Schmerling, E. and Pavone, M.},
-  title     = {Online Distribution Shift Detection via Recency Prediction},
-  booktitle = {proc_IEEE_ICRA},
-  year      = {2024},
-  abstract  = {When deploying modern machine learning-enabled robotic systems in high-stakes applications, detecting distribution shift is critical. However, most existing methods for detecting distribution shift are not well-suited to robotics settings, where data often arrives in a streaming fashion and may be very high-dimensional. In this work, we present an online method for detecting distribution shift with guarantees on the false positive rate — i.e., when there is no distribution shift, our system is very unlikely (with probability < ε) to falsely issue an alert; any alerts that are issued should therefore be heeded. Our method is specifically designed for efficient detection even with high dimensional data, and it empirically achieves up to 11x faster detection on realistic robotics settings compared to prior work while maintaining a low false negative rate in practice (whenever there is a distribution shift in our experiments, our method indeed emits an alert). We demonstrate our approach in both simulation and hardware for a visual servoing task, and show that our method indeed issues an alert before a failure occurs.},
-  keywords  = {pub},
-  owner     = {gammelli},
-  timestamp = {2024-09-19},
-  url       = {https://ieeexplore.ieee.org/abstract/document/10611114}
-}
-
 @inproceedings{LuoZhaoEtAl2022,
   author    = {Luo, R. and Zhao, S. and Kuck, J. and Ivanovic, B. and Savarese, S. and Schmerling, E. and Pavone, M.},
   title     = {Sample-Efficient Safety Assurances using Conformal Prediction},
@@ -2901,6 +2918,18 @@
   owner     = {rsluo},
   timestamp = {2023-02-10},
   url       = {https://arxiv.org/abs/2109.14082}
+}
+
+@inproceedings{LuoSinhaEtAl2023,
+  author    = {Luo, R. and Sinha, R. and Sun, Y. and Hindy, A. and Zhao, S. and Savarese, S. and Schmerling, E. and Pavone, M.},
+  title     = {Online Distribution Shift Detection via Recency Prediction},
+  booktitle = {proc_IEEE_ICRA},
+  year      = {2024},
+  abstract  = {When deploying modern machine learning-enabled robotic systems in high-stakes applications, detecting distribution shift is critical. However, most existing methods for detecting distribution shift are not well-suited to robotics settings, where data often arrives in a streaming fashion and may be very high-dimensional. In this work, we present an online method for detecting distribution shift with guarantees on the false positive rate — i.e., when there is no distribution shift, our system is very unlikely (with probability < ε) to falsely issue an alert; any alerts that are issued should therefore be heeded. Our method is specifically designed for efficient detection even with high dimensional data, and it empirically achieves up to 11x faster detection on realistic robotics settings compared to prior work while maintaining a low false negative rate in practice (whenever there is a distribution shift in our experiments, our method indeed emits an alert). We demonstrate our approach in both simulation and hardware for a visual servoing task, and show that our method indeed issues an alert before a failure occurs.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-09-19},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10611114}
 }
 
 @inproceedings{LuoEtAl2022,
@@ -3234,16 +3263,19 @@
   timestamp = {2020-04-09}
 }
 
-@article{LeungArechigaEtAl2021,
+@Article{LeungArechigaEtAl2021,
   author    = {Leung, K. and Ar\'{e}chiga, N. and Pavone, M.},
   title     = {Backpropagation through signal temporal logic specifications: Infusing logical structure into gradient-based methods},
   journal   = jrn_SAGE_IJRR,
-  year      = {2022},
-  abstract  = {This paper presents a technique, named STLCG, to compute the quantitative semantics of Signal Temporal Logic (STL) formulas using computation graphs. STLCG provides a platform which enables the incorporation of logical specifications into robotics problems that benefit from gradient-based solutions. Specifically, STL is a powerful and expressive formal language that can specify spatial and temporal properties of signals generated by both continuous and hybrid systems. The quantitative semantics of STL provide a robustness metric, i.e., how much a signal satisfies or violates an STL specification. In this work, we devise a systematic methodology for translating STL robustness formulas into computation graphs. With this representation, and by leveraging off-the-shelf automatic differentiation tools, we are able to efficiently backpropagate through STL robustness formulas and hence enable a natural and easy-to-use integration of STL specifications with many gradient-based approaches used in robotics. Through a number of examples stemming from various robotics applications, we demonstrate that STLCG is versatile, computationally efficient, and capable of incorporating human-domain knowledge into the problem formulation.},
-  keywords  = {pub},
-  owner     = {rdyro},
-  timestamp = {2023-09-26},
-  url       = {https://doi.org/10.1177/02783649221082115}
+  year      = {2023},
+  volume    = {42},
+  number    = {6},
+  pages     = {356--370},
+  abstract  = {This paper presents a technique, named STLCG, to compute the quantitative semantics of Signal Temporal Logic (STL) formulas using computation graphs. STLCG provides a platform which enables the incorporation of logical specifications into robotics problems that benefit from gradient-based solutions. Specifically, STL is a powerful and expressive formal language that can specify spatial and temporal properties of signals generated by both continuous and hybrid systems. The quantitative semantics of STL provide a robustness metric, that is, how much a signal satisfies or violates an STL specification. In this work, we devise a systematic methodology for translating STL robustness formulas into computation graphs. With this representation, and by leveraging off-the-shelf automatic differentiation tools, we are able to efficiently backpropagate through STL robustness formulas and hence enable a natural and easy-to-use integration of STL specifications with many gradient-based approaches used in robotics. Through a number of examples stemming from various robotics applications, we demonstrate that STLCG is versatile, computationally efficient, and capable of incorporating human-domain knowledge into the problem formulation.},
+  doi       = {10.1177/02783649221082115},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://arxiv.org/abs/2008.00097},
 }
 
 @misc{LeungArechigaEtAl2018,
@@ -3663,20 +3695,19 @@
   url       = {https://arxiv.org/abs/2106.10412}
 }
 
-@article{JalotaPaccagnanEtAl2023,
+@Article{JalotaPaccagnanEtAl2023,
   author    = {Jalota, D. and Paccagnan, D. and Schiffer, M. and Pavone, M.},
   title     = {Online Routing Over Parallel Networks: Deterministic Limits and Data-driven Enhancements},
   journal   = jrn_INFORMS_JOC,
+  year      = {2023},
   volume    = {35},
   number    = {3},
   pages     = {560--577},
-  year      = {2023},
-  abstract  = {Over the past decade, GPS enabled traffic applications, such as Google Maps andWaze, have become ubiquitous and have had a significant influence on billions of daily commuters? travel patterns. A consequence of the online route suggestions of such applications, e.g., via greedy routing, has often been an increase in traffic congestion since the induced travel patterns may be far from the system optimum routing pattern. Spurred by the widespread impact of navigational applications on travel patterns, this work studies online traffic routing in the context of capacity-constrained parallel road networks and analyzes this problem from two perspectives. First, we perform a worst-case analysis to identify the limits of deterministic online routing and show that the ratio between the online solution of any deterministic algorithm and the optimal offline solution is unbounded, even in simplistic settings. This result motivates us to move beyond worst-case analysis. Here, we consider algorithms that exploit knowledge of past problem instances and show how to design a data-driven algorithm whose performance can be quantified and formally generalized to unseen future instances. Finally, we present numerical experiments based on two application cases for the San Francisco Bay Area and evaluate the performance of our approach. Our results show that the data-driven algorithm often outperforms commonly used greedy online routing algorithms, in particular, in scenarios where the user types are heterogeneous and the network is congested.},
-  booktitle = jrn_INFORMS_JOC,
-  keywords  = {pub},
-  owner     = {devanshjalota},
-  timestamp = {2023-01-01},
-  url       = {https://arxiv.org/abs/2109.08706}
+  abstract  = {Over the past decade, GPS-enabled traffic applications such as Google Maps and Waze have become ubiquitous and have had a significant influence on billions of daily commuters’ travel patterns. A consequence of the online route suggestions of such applications, for example, via greedy routing, has often been an increase in traffic congestion since the induced travel patterns may be far from the system optimum. Spurred by the widespread impact of traffic applications on travel patterns, this work studies online traffic routing in the context of capacity-constrained parallel road networks and analyzes this problem from two perspectives. First, we perform a worst-case analysis to identify the limits of deterministic online routing. Although we find that deterministic online algorithms achieve finite, problem/instance-dependent competitive ratios in special cases, we show that for a general setting the competitive ratio is unbounded. This result motivates us to move beyond worst-case analysis. Here, we consider algorithms that exploit knowledge of past problem instances and show how to design data-driven algorithms whose performance can be quantified and formally generalized to unseen future instances. We then present numerical experiments based on an application case for the San Francisco Bay Area to evaluate the performance of the proposed data-driven algorithms compared with the greedy algorithm and two look-ahead heuristics with access to additional information on the values of time and arrival time parameters of users. Our results show that the developed data-driven algorithms outperform commonly used greedy online-routing algorithms. Furthermore, our work sheds light on the interplay between data availability and achievable solution quality.},
+  doi       = {10.1287/ijoc.2023.1275},
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2109.08706},
 }
 
 @inproceedings{JalotaEtAl2024,
@@ -4189,6 +4220,18 @@
   timestamp = {2022-03-02}
 }
 
+@InProceedings{GammelliHarrisonEtAl2023,
+  author    = {Gammelli, D. and Harrison, J. and Yang, K. and Pavone, M. and Rodrigues, F. and Pereira, F. C.},
+  title     = {Graph Reinforcement Learning for Network Control via Bi-Level Optimization},
+  booktitle = proc_ICML,
+  year      = {2023},
+  address   = {Honolulu, Hawaii},
+  month     = jul,
+  abstract  = {Optimization problems over dynamic networks have been extensively studied and widely used in the past decades to formulate numerous real-world problems. However, (1) traditional optimization-based approaches do not scale to large networks, and (2) the design of good heuristics or approximation algorithms often requires significant manual trial-and-error. In this work, we argue that data-driven strategies can automate this process and learn efficient algorithms without compromising optimality. To do so, we present network control problems through the lens of reinforcement learning and propose a graph network-based framework to handle a broad class of problems. Instead of naively computing actions over high-dimensional graph elements, e.g., edges, we propose a bi-level formulation where we (1) specify a desired next state via RL, and (2) solve a convex program to best achieve it, leading to drastically improved scalability and performance. We further highlight a collection of desirable features to system designers, investigate design decisions, and present experiments on real-world control problems showing the utility, scalability, and flexibility of our framework.},
+  owner     = {jthluke},
+  timestamp = {2024-09-19},
+}
+
 @inproceedings{GammelliHarrisonEtAl2022,
   author    = {Gammelli, D. and Harrison, J. and Yang, K. and Pavone, M. And Rodrigues, F. and Pereira C. Francisco},
   booktitle = proc_LOG,
@@ -4198,17 +4241,6 @@
   keywords  = {pub},
   owner     = {gammelli},
   timestamp = {2022-11-24}
-}
-
-@inproceedings{GammelliHarrisonEtAl2023,
-  author    = {Gammelli, D. and Harrison, J. and Yang, K. and Pavone, M. And Rodrigues, F. and Pereira C. Francisco},
-  title     = {Graph Reinforcement Learning for Network Control via Bi-Level Optimization},
-  booktitle = proc_ICML,
-  year      = {2023},
-  abstract  = {Dynamic network flow models have been extensively studied and widely used in the past decades to formulate many problems with great real-world impact, such as transportation, supply chain management, power grid control, and more. Within this context, time-expansion techniques currently represent a generic approach for solving control problems over dynamic networks. However, the complexity of these methods does not allow traditional approaches to scale to large networks, especially when these need to be solved recursively over a receding horizon (e.g., to yield a sequence of actions in model predictive control). Moreover, tractable optimization-based approaches are often limited to simple linear deterministic settings and are not able to handle environments with stochastic, non-linear, or unknown dynamics. In this work, we present dynamic network flow problems through the lens of reinforcement learning and propose a graph network-based framework that can handle a wide variety of problems and learn efficient algorithms without significantly compromising optimality. Instead of a naive and poorly-scalable formulation, in which agent actions (and thus network outputs) consist of actions on edges, we present a two-phase decomposition. The first phase consists of an RL agent specifying desired outcomes to the actions. The second phase exploits the problem structure to solve a convex optimization problem and achieve (as best as possible) these desired outcomes. This formulation leads to dramatically improved scalability and performance. We further highlight a collection of features that are potentially desirable to system designers, investigate design decisions, and present experiments showing the utility, scalability, and flexibility of our framework.},
-  keywords  = {pub},
-  owner     = {gammelli},
-  timestamp = {2023-01-27}
 }
 
 @incollection{FrazzoliPavone2014,
@@ -4224,17 +4256,17 @@
   url       = {http://web.stanford.edu/~pavone/papers/Frazzoli.Pavone.ESC13.pdf}
 }
 
-@inproceedings{FoutterSinhaEtAl2023,
-  author       = {Foutter, M. and Sinha, R. and Banerjee, S. and Pavone, M.},
-  title        = {Self-Supervised Model Generalization using Out-of-Distribution Detection},
-  booktitle    = proc_CoRL_OOD,
-  year         = {2023},
-  asl_abstract = {Autonomous agents increasingly rely on learned components to streamline safe and reliable decision making. However, data dissimilar to that seen in training, deemed to be Out-of-Distribution (OOD), creates undefined behavior in the output of our learned-components, which can have detrimental consequences in a safety critical setting such as autonomous satellite rendezvous. In the wild, we typically are exposed to a mix of in-and-out of distribution data where OOD inputs correspond to uncommon and unfamiliar data when a nominally competent system encounters a new situation. In this paper, we propose an architecture that detects the presence of OOD inputs in an online stream of data. The architecture then uses these OOD inputs to recognize domain invariant features between the original training and OOD domain to improve model inference. We demonstrate that our algorithm more than doubles model accuracy on the OOD domain with sparse, unlabeled OOD examples compared to a naive model without such data on shifted MNIST domains. Importantly, we also demonstrate our algorithm maintains strong accuracy on the original training domain, generalizing the model to a mix of in-and-out of distribution examples seen at deployment. Code for our experiment is available at: https://github.com/StanfordASL/CoRL_OODWorkshop_DANN-DL.},
-  asl_address  = {Atlanta, GA},
-  asl_url      = {https://openreview.net/forum?id=z5XS3BY13J},
-  url          = {https://openreview.net/forum?id=z5XS3BY13J},
-  owner        = {somrita},
-  timestamp    = {2024-03-01}
+@InProceedings{FoutterSinhaEtAl2023,
+  author    = {Foutter, M. and Sinha, R. and Banerjee, S. and Pavone, M.},
+  title     = {Self-Supervised Model Generalization using Out-of-Distribution Detection},
+  booktitle = proc_CoRL_OOD,
+  year      = {2023},
+  address   = {Atlanta, Georgia},
+  month     = nov,
+  abstract  = {Autonomous agents increasingly rely on learned components to streamline safe and reliable decision making. However, data dissimilar to that seen in training, deemed to be Out-of-Distribution (OOD), creates undefined behavior in the output of our learned-components, which can have detrimental consequences in a safety critical setting such as autonomous satellite rendezvous. In the wild, we typically are exposed to a mix of in-and-out of distribution data where OOD inputs correspond to uncommon and unfamiliar data when a nominally competent system encounters a new situation. In this paper, we propose an architecture that detects the presence of OOD inputs in an online stream of data. The architecture then uses these OOD inputs to recognize domain invariant features between the original training and OOD domain to improve model inference. We demonstrate that our algorithm more than doubles model accuracy on the OOD domain with sparse, unlabeled OOD examples compared to a naive model without such data on shifted MNIST domains. Importantly, we also demonstrate our algorithm maintains strong accuracy on the original training domain, generalizing the model to a mix of in-and-out of distribution examples seen at deployment. Code for our experiment is available at: https://github.com/StanfordASL/CoRL_OODWorkshop_DANN-DL},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://openreview.net/forum?id=z5XS3BY13J},
 }
 
 @inproceedings{FoutterBohjEtAl2024,
@@ -4248,18 +4280,6 @@
   url          = {https://arxiv.org/abs/2408.05924},
   owner        = {foutter},
   timestamp    = {2024-08-12}
-}
-
-@inproceedings{DyroFoutterEtAl2024,
-  author       = {Dyro, R. and Foutter, M. and Li, R. and Di Lillo, L. and Schmerling, E. and Zhou, X. and Pavone, M.},
-  title        = {Realistic Extreme Behavior Generation for Improved AV Testing},
-  booktitle    = proc_IEEE_ICRA,
-  year         = {2025},
-  abstract     = {This work introduces a framework to diagnose the strengths and shortcomings of Autonomous Vehicle (AV) collision avoidance technology with synthetic yet realistic potential collision scenarios adapted from real-world, collision-free data. Our framework generates counterfactual collisions with diverse crash properties, e.g., crash angle and velocity, between an adversary and a target vehicle by adding perturbations to the adversary's predicted trajectory from a learned AV behavior model. Our main contribution is to ground these adversarial perturbations in realistic behavior as defined through the lens of data-alignment in the behavior model's parameter space. Then, we cluster these synthetic counterfactuals to identify plausible and representative collision scenarios to form the basis of a test suite for downstream AV system evaluation. We demonstrate our framework using two state-of-the-art behavior prediction models as sources of realistic adversarial perturbations, and show that our scenario clustering evokes interpretable failure modes from a baseline AV policy under evaluation.},
-  url          = {/wp-content/papercite-data/pdf/Dyro.Foutter.Li.ea.ICRA2025.pdf},
-  owner        = {foutter},
-  keywords     = {sub},
-  timestamp    = {2024-09-15}
 }
 
 @inproceedings{FladerAhnEtAl2016,
@@ -4396,6 +4416,18 @@
   url       = {https://arxiv.org/abs/2104.02213}
 }
 
+@inproceedings{DyroFoutterEtAl2024,
+  author       = {Dyro, R. and Foutter, M. and Li, R. and Di Lillo, L. and Schmerling, E. and Zhou, X. and Pavone, M.},
+  title        = {Realistic Extreme Behavior Generation for Improved AV Testing},
+  booktitle    = proc_IEEE_ICRA,
+  year         = {2025},
+  abstract     = {This work introduces a framework to diagnose the strengths and shortcomings of Autonomous Vehicle (AV) collision avoidance technology with synthetic yet realistic potential collision scenarios adapted from real-world, collision-free data. Our framework generates counterfactual collisions with diverse crash properties, e.g., crash angle and velocity, between an adversary and a target vehicle by adding perturbations to the adversary's predicted trajectory from a learned AV behavior model. Our main contribution is to ground these adversarial perturbations in realistic behavior as defined through the lens of data-alignment in the behavior model's parameter space. Then, we cluster these synthetic counterfactuals to identify plausible and representative collision scenarios to form the basis of a test suite for downstream AV system evaluation. We demonstrate our framework using two state-of-the-art behavior prediction models as sources of realistic adversarial perturbations, and show that our scenario clustering evokes interpretable failure modes from a baseline AV policy under evaluation.},
+  url          = {/wp-content/papercite-data/pdf/Dyro.Foutter.Li.ea.ICRA2025.pdf},
+  owner        = {foutter},
+  keywords     = {sub},
+  timestamp    = {2024-09-15}
+}
+
 @inproceedings{DiCuevasQuiñonesEtAl2024,
   author    = {Di, J. and Cuevas-Quinones, S. and Newdick, S. and Chen, T. G. and Pavone, M. and Lapôtre, Mathieu G. A. and Cutkosky, M.},
   title     = {Martian Exploration of Lava Tubes (MELT) with ReachBot: Scientific Investigation and Concept of Operations},
@@ -4406,6 +4438,18 @@
   owner     = {amine},
   url       = {https://arxiv.org/abs/2406.13857},
   timestamp = {2024-09-19}
+}
+
+@inproceedings{DeglerisValenzuelaEtAl2024,
+  author    = {Degleris, A. and Valenzuela, L. F. and Rajagopal, R. and Pavone, M. and Gamal, A. E.},
+  title     = {Fast Grid Emissions Sensitivities using Parallel Decentralized Implicit Differentiation},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Marginal emissions rates -- the sensitivity of carbon emissions to electricity demand -- are important for evaluating the impact of emissions mitigation measures. Like locational marginal prices, locational marginal emissions rates (LMEs) can vary geographically, even between nearby locations, and may be coupled across time periods because of, for example, storage and ramping constraints. This temporal coupling makes computing LMEs computationally expensive for large electricity networks with high storage and renewable penetrations. Recent work demonstrates that decentralized algorithms can mitigate this problem by decoupling timesteps during differentiation. Unfortunately, we show these potential speedups are negated by the sparse structure inherent in power systems problems. We address these limitations by introducing a parallel, reverse-mode decentralized differentiation scheme that never explicitly instantiates the solution map Jacobian. We show both theoretically and empirically that parallelization is necessary to achieve non-trivial speedups when computing grid emissions sensitivities. Numerical results on a 500 node system indicate that our method can achieve greater than 10x speedups over centralized and serial decentralized approaches.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2408.10620}
 }
 
 @inproceedings{DeCastroLeungEtAl2020,
@@ -4963,6 +5007,16 @@
   timestamp = {2022-02-17}
 }
 
+@unpublished{BrownBernalEtAl2022,
+  author    = {Brown, R. and Bernal, D. and Sahasrabudhe, A. and Lott, A. and Venturelli, D. and Pavone, M.},
+  title     = {Copositive optimization via Ising solvers},
+  note      = {Int. Conf. on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research. Extended Abstract.},
+  year      = {2022},
+  owner     = {rabrown1},
+  url       = {/wp-content/papercite-data/pdf/Brown.Bernal.ea.pdf},
+  timestamp = {2022-04-07}
+}
+
 @inproceedings{BrownEtAlCPAIOR2024,
   author    = {Brown, R. A. and Venturelli, D. and Pavone, M. and Bernal Neira, D. E.},
   title     = {Accelerating Continuous Variable Coherent Ising Machines via Momentum},
@@ -4973,16 +5027,6 @@
   owner     = {gammelli},
   timestamp = {2024-09-19},
   url       = {https://link.springer.com/chapter/10.1007/978-3-031-60597-0_8}
-}
-
-@unpublished{BrownBernalEtAl2022,
-  author    = {Brown, R. and Bernal, D. and Sahasrabudhe, A. and Lott, A. and Venturelli, D. and Pavone, M.},
-  title     = {Copositive optimization via Ising solvers},
-  note      = {Int. Conf. on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research. Extended Abstract.},
-  year      = {2022},
-  owner     = {rabrown1},
-  url       = {/wp-content/papercite-data/pdf/Brown.Bernal.ea.pdf},
-  timestamp = {2022-04-07}
 }
 
 @inproceedings{BrownRossiEtAl20,
@@ -5027,15 +5071,22 @@
   timestamp = {2024-09-19}
 }
 
-@article{BourdillonEtAl2022,
+@Article{BourdillonEtAl2023,
   author    = {Bourdillon, A. and Garg, A. and Wang, H. and Woo, Y. and Pavone, M. and Boyd, J.},
   title     = {Integration of Reinforcement Learning in a Virtual Robotic Surgical Simulation},
   journal   = jrn_SAGE_SI,
-  year      = {2022},
-  abstract  = {Background. The revolutions in AI hold tremendous capacity to augment human achievements in surgery, but robust integration of deep learning algorithms with high-ï¿½?delity surgical simulation remains a challenge. We present a novel application of reinforcement learning (RL) for automating surgical maneuvers in a graphical simulation. Methods. In the Unity3D game engine, the Machine Learning-Agents package was integrated with the NVIDIA FleX particle simulator for developing autonomously behaving RL-trained scissors. Proximal Policy Optimization (PPO) was used to reward movements and desired behavior such as movement along desired trajectory and optimized cutting maneuvers along the deformable tissue-like object. Constant and proportional reward functions were tested, and TensorFlow analytics was used to informed hyperparameter tuning and evaluate performance. Results.  RL-trained scissors reliably manipulated the rendered tissue that was simulated with soft-tissue properties. A desirable trajectory of the autonomously behaving scissors was achieved along 1 axis. Proportional rewards performed better compared to constant rewards. Cumulative reward and PPO metrics did not consistently improve across RL-trained scissors in the setting for movement across 2 axes (horizontal and depth). Conclusion.  Game engines hold promising potential for the design and implementation of RL-based solutions to simulated surgical subtasks. Task completion was sufï¿½?ciently achieved in one-dimensional movement in simulations with and without tissue-rendering. Further work is needed to optimize network architecture and parameter tuning for increasing complexity.},
-  owner     = {rdyro},
-  timestamp = {2022-06-14},
-  url       = {https://journals.sagepub.com/doi/full/10.1177/15533506221095298}
+  year      = {2023},
+  volume    = {30},
+  number    = {1},
+  pages     = {94--102},
+  abstract  = {Background. The revolutions in AI hold tremendous capacity to augment human achievements in surgery, but robust integration of deep learning algorithms with high-fidelity surgical simulation remains a challenge. We present a novel application of reinforcement learning (RL) for automating surgical maneuvers in a graphical simulation.
+Methods. In the Unity3D game engine, the Machine Learning-Agents package was integrated with the NVIDIA FleX particle simulator for developing autonomously behaving RL-trained scissors. Proximal Policy Optimization (PPO) was used to reward movements and desired behavior such as movement along desired trajectory and optimized cutting maneuvers along the deformable tissue-like object. Constant and proportional reward functions were tested, and TensorFlow analytics was used to informed hyperparameter tuning and evaluate performance.
+Results. RL-trained scissors reliably manipulated the rendered tissue that was simulated with soft-tissue properties. A desirable trajectory of the autonomously behaving scissors was achieved along 1 axis. Proportional rewards performed better compared to constant rewards. Cumulative reward and PPO metrics did not consistently improve across RL-trained scissors in the setting for movement across 2 axes (horizontal and depth).
+Conclusion. Game engines hold promising potential for the design and implementation of RL-based solutions to simulated surgical subtasks. Task completion was sufficiently achieved in one-dimensional movement in simulations with and without tissue-rendering. Further work is needed to optimize network architecture and parameter tuning for increasing complexity.},
+  doi       = {10.1177/15533506221095298},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {https://journals.sagepub.com/doi/full/10.1177/15533506221095298},
 }
 
 @article{BonalliLewESAIM2022,
@@ -5129,15 +5180,18 @@
   url       = {https://arxiv.org/abs/2403.04057}
 }
 
-@inproceedings{BanerjeeSharmaEtAl2022,
+@InProceedings{BanerjeeSharmaEtAl2023,
   author    = {Banerjee, S. and Sharma, A. and Schmerling, E. and Spolaor, M. and Nemerouf, M. and Pavone, M.},
   title     = {Data Lifecycle Management in Evolving Input Distributions for Learning-based Aerospace Applications},
   booktitle = proc_IEEE_AC,
   year      = {2023},
-  abstract  = {As input distributions evolve over a mission lifetime, maintaining performance of learning-based models becomes challenging. This paper presents a framework to incrementally retrain a model by selecting a subset of test inputs to label, which allows the model to adapt to changing input distributions. Algorithms within this framework are evaluated based on (1) model performance throughout mission lifetime and (2) cumulative costs associated with labeling and model retraining. We provide an open-source benchmark of a satellite pose estimation model trained on images of a satellite in space and deployed in novel scenarios (e.g., different backgrounds or misbehaving pixels), where algorithms are evaluated on their ability to maintain high performance by retraining on a subset of inputs. We also propose a novel algorithm to select a diverse subset of inputs for labeling, by characterizing the information gain from an input using Bayesian uncertainty quantification and choosing a subset that maximizes collective information gain using concepts from batch active learning. We show that our algorithm outperforms others on the benchmark, e.g., achieves comparable performance to an algorithm that labels 100% of inputs, while only labeling 50% of inputs, resulting in low costs and high performance over the mission lifetime.},
+  address   = {Big Sky, Montana},
+  month     = mar,
+  abstract  = {Learning-enabling components are increasingly popular in many aerospace applications, including satellite pose estimation. However, as input distributions evolve over a mission lifetime, it becomes challenging to maintain performance of learned models. In this work, we present an open-source benchmark of a satellite pose estimation model trained on images of a satellite in space and deployed in novel input scenarios (e.g., different backgrounds or misbehaving pixels). We propose a framework to incrementally retrain a model by selecting a subset of test inputs to label, which allows the model to adapt to changing input distributions. Algorithms within this framework are evaluated based on (1) model performance throughout mission lifetime and (2) cumulative costs associated with labeling and model retraining. We also propose a novel algorithm to select a diverse subset of inputs for labeling, by characterizing the information gain from an input using Bayesian uncertainty quantification and choosing a subset that maximizes collective information gain using concepts from batch active learning. We show that our algorithm outperforms others on the benchmark, e.g., achieves comparable performance to an algorithm that labels 100% of inputs, while only labeling 50% of inputs, resulting in low costs and high performance over the mission lifetime.},
+  doi       = {10.1109/AERO55745.2023.10115970},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
   url       = {https://arxiv.org/abs/2209.06855},
-  owner     = {somrita},
-  timestamp = {2022-09-14}
 }
 
 @inproceedings{BanerjeeEtAl2020,
@@ -5234,16 +5288,18 @@
   timestamp = {2023-09-11}
 }
 
-@inproceedings{AloraCenedeseEtAl2023b,
+@InProceedings{AloraCenedeseEtAl2023b,
   author    = {Alora, J.I. and Cenedese, M. and Schmerling, E. and Haller, G. and Pavone, M.},
-  booktitle = proc_IFAC_WC,
   title     = {Practical Deployment of Spectral Submanifold Reduction for Optimal Control of High-Dimensional Systems},
+  booktitle = proc_IFAC_WC,
   year      = {2023},
-  abstract  = {Real-time optimal control of high-dimensional, nonlinear systems remains a challenging task due to the computational intractability of their models. While several model-reduction and learning-based approaches for constructing low-dimensional surrogates of the original system have been proposed in the literature, these approaches suffer from fundamental issues which limit their application in real-world scenarios. Namely, they typically lack generalizability to different control tasks, ability to trade dimensionality for accuracy, and ability to preserve the structure of the dynamics. Recently, we proposed to extract low-dimensional dynamics on Spectral Submanifolds (SSMs) to overcome these issues and validated our approach in a highly accurate simulation environment. In this manuscript, we extend our framework to a real-world setting by employing time-delay embeddings to embed SSMs in an observable space of appropriate dimension. This allows us to learn highly accurate, low-dimensional dynamics purely from observational data. We show that these innovations extend Spectral Submanifold Reduction (SSMR) to real-world applications and showcase the effectiveness of SSMR on a soft robotic system.},
   address   = {Yokohama, Japan},
-  owner     = {somrita},
-  timestamp = {2024-02-29},
-  url       = {/wp-content/papercite-data/pdf/Alora.Cenedese.IFAC23.pdf}
+  month     = jul,
+  abstract  = {Real-time optimal control of high-dimensional, nonlinear systems remains a challenging task due to the computational intractability of their models. While several model-reduction and learning-based approaches for constructing low-dimensional surrogates of the original system have been proposed in the literature, these approaches suffer from fundamental issues which limit their application in real-world scenarios. Namely, they typically lack generalizability to different control tasks, ability to trade dimensionality for accuracy, and ability to preserve the structure of the dynamics. Recently, we proposed to extract low-dimensional dynamics on Spectral Submanifolds (SSMs) to overcome these issues and validated our approach in a highly accurate simulation environment. In this manuscript, we extend our framework to a real-world setting by employing time-delay embeddings to embed SSMs in an observable space of appropriate dimension. This allows us to learn highly accurate, low-dimensional dynamics purely from observational data. We show that these innovations extend Spectral Submanifold Reduction (SSMR) to real-world applications and showcase the effectiveness of SSMR on a soft robotic system.},
+  doi       = {10.1016/j.ifacol.2023.10.1734},
+  owner     = {jthluke},
+  timestamp = {2024-09-20},
+  url       = {/wp-content/papercite-data/pdf/Alora.Cenedese.IFAC23.pdf},
 }
 
 @inproceedings{AloraCenedeseEtAl2023,
@@ -5381,42 +5437,6 @@
   url       = {https://dl.acm.org/doi/10.1145/3290605.3300589},
   owner     = {blandry},
   timestamp = {2020-04-13}
-}
-
-@inproceedings{DeglerisValenzuelaEtAl2024,
-  author    = {Degleris, A. and Valenzuela, L. F. and Rajagopal, R. and Pavone, M. and Gamal, A. E.},
-  title     = {Fast Grid Emissions Sensitivities using Parallel Decentralized Implicit Differentiation},
-  booktitle = {},
-  year      = {2024},
-  abstract  = {Marginal emissions rates -- the sensitivity of carbon emissions to electricity demand -- are important for evaluating the impact of emissions mitigation measures. Like locational marginal prices, locational marginal emissions rates (LMEs) can vary geographically, even between nearby locations, and may be coupled across time periods because of, for example, storage and ramping constraints. This temporal coupling makes computing LMEs computationally expensive for large electricity networks with high storage and renewable penetrations. Recent work demonstrates that decentralized algorithms can mitigate this problem by decoupling timesteps during differentiation. Unfortunately, we show these potential speedups are negated by the sparse structure inherent in power systems problems. We address these limitations by introducing a parallel, reverse-mode decentralized differentiation scheme that never explicitly instantiates the solution map Jacobian. We show both theoretically and empirically that parallelization is necessary to achieve non-trivial speedups when computing grid emissions sensitivities. Numerical results on a 500 node system indicate that our method can achieve greater than 10x speedups over centralized and serial decentralized approaches.},
-  keywords  = {sub},
-  owner     = {amine},
-  timestamp = {2024-09-19},
-  url       = {https://arxiv.org/abs/2408.10620}
-}
-
-@inproceedings{WangBrownEtAl2024,
-  author    = {Wang, I. W. and Brown, R. and Patti, T. L. and Anandkumar, A. and Pavone, M. and Yelin, S. F.},
-  title     = {Sum-of-Squares inspired Quantum Metaheuristic for Polynomial Optimization with the Hadamard Test and Approximate Amplitude Constraints},
-  booktitle = {},
-  year      = {2024},
-  abstract  = {Quantum computation shows promise for addressing numerous classically intractable problems, such as optimization tasks. Many optimization problems are NP-hard, meaning that they scale exponentially with problem size and thus cannot be addressed at scale by traditional computing paradigms. The recently proposed quantum algorithm https://arxiv.org/abs/2206.14999 addresses this challenge for some NP-hard problems, and is based on classical semidefinite programming (SDP). In this manuscript, we generalize the SDP-inspired quantum algorithm to sum-of-squares programming, which targets a broader problem set. Our proposed algorithm addresses degree-k polynomial optimization problems with $N \leq 2n$ variables (which are representative of many NP-hard problems) using $O(nk)$ qubits, $O(k)$ quantum measurements, and $O(poly(n))$ classical calculations. We apply the proposed algorithm to the prototypical Max-kSAT problem and compare its performance against classical sum-of-squares, state-of-the-art heuristic solvers, and random guessing. Simulations show that the performance of our algorithm surpasses that of classical sum-of-squares after rounding. Our results further demonstrate that our algorithm is suitable for large problems and approximates the best known classical heuristics, while also providing a more generalizable approach compared to problem-specific heuristics.},
-  keywords  = {sub},
-  owner     = {amine},
-  timestamp = {2024-09-19},
-  url       = {https://arxiv.org/abs/2408.07774}
-}
-
-@inproceedings{ThummAgiaEtAl2024,
-  author    = {Thumm, J. and Agia, C. and Pavone, M. and Althoff, M.},
-  title     = {Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction},
-  booktitle = proc_CoRL,
-  year      = {2024},
-  abstract  = {Adjusting robot behavior to human preferences can require intensive human feedback, preventing quick adaptation to new users and changing circumstances. Moreover, current approaches typically treat user preferences as a reward, which requires a manual balance between task success and user satisfaction. To integrate new user preferences in a zero-shot manner, our proposed Text2Interaction framework invokes a large language model to generate a task plan, motion preferences as Python code, and parameters of a safe controller. By maximizing the combined probability of task completion and user satisfaction instead of a weighted sum of rewards, we can reliably find plans that fulfill both requirements. We find that 83% of users working with Text2Interaction agree that it integrates their preferences into the robot's plan, and 94% prefer Text2Interaction over the baseline. Our ablation study shows that Text2Interaction aligns better with unseen preferences than other baselines while maintaining a high success rate.},
-  keywords  = {press},
-  owner     = {amine},
-  timestamp = {2024-09-19},
-  url       = {https://arxiv.org/abs/2408.06105}
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
