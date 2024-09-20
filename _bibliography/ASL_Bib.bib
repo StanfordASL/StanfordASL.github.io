@@ -1552,12 +1552,13 @@
   author    = {Sinha, R. and Elhafsi, A. and Agia, C. and Foutter, M. and Schmerling, E. and Pavone, M.},
   title     = {Real-Time Anomaly Detection and Planning with Large Language Models},
   booktitle = proc_RSS,
-  keywords  = {sub},
-  note      = {Submitted},
   abstract  = {Foundation models, e.g., large language models, trained on internet-scale data possess zero-shot generalization capabilities that make them a promising technology for anomaly detection for robotic systems. Fully realizing this promise, however, poses two challenges: (i) mitigating the considerable computational expense of these models such that they may be applied online, and (ii) incorporating their judgement regarding potential anomalies into a safe control framework. In this work we present a two-stage reasoning framework: a fast binary anomaly classifier based on analyzing observations in an LLM embedding space, which may trigger a slower fallback selection stage that utilizes the reasoning capabilities of generative LLMs. These stages correspond to branch points in a model predictive control strategy that maintains the joint feasibility of continuing along various fallback plans as soon as an anomaly is detected (while the selector decides), thus ensuring safety. We demonstrate that, even when instantiated with relatively small language models, our fast anomaly classifier outperforms autoregressive reasoning with state-of-the-art GPT models. This enables our runtime monitor to improve the trustworthiness of dynamic robotic systems under resource and time constraints.},
+  address   = {Delft, Netherlands},
+  month     = jul,
   year      = {2024},
-  owner     = {rhnsinha},
-  timestamp = {2024-03-01}
+  owner     = {amine},
+  url       = {https://arxiv.org/abs/2407.08735},
+  timestamp = {2024-09-19}
 }
 
 @InProceedings{SinghalGammelliEtAl2024,
@@ -1951,9 +1952,10 @@
 
 @inproceedings{SalzmannArrizabalagaEtAl2023,
   author    = {Salzmann, T. and Arrizabalaga, J. and Andersson, J. and Pavone, M. and Ryll, M.},
+  booktitle = proc_L4DC,
   title     = {Learning for {CasADi}: Data-driven Models in Numerical Optimization},
-  year      = {2023},
-  keywords  = {sub},
+  year      = {2024},
+  month     = jul,
   abstract  = {While real-world problems are often challenging to analyze analytically, deep learning excels in modeling complex processes from data. Existing optimization frameworks like CasADi facilitate seamless usage of solvers but face challenges when integrating learned process models into numerical optimizations. To address this gap, we present the Learning for CasADi (L4CasADi) framework, enabling the seamless integration of PyTorch-learned models with CasADi for efficient and potentially hardware-accelerated numerical optimization. The applicability of L4CasADi is demonstrated with two tutorial examples: First, we optimize a fish's trajectory in a turbulent river for energy efficiency where the turbulent flow is represented by a PyTorch model. Second, we demonstrate how an implicit Neural Radiance Field environment representation can be easily leveraged for optimal control with L4CasADi. L4CasADi, along with examples and documentation, is available under MIT license at this https URL.},
   url       = {https://arxiv.org/abs/2312.05873},
   owner     = {somrita},
@@ -2014,15 +2016,20 @@
 }
 
 @article{RovedaPavone2024,
-  author={Roveda, L. and Pavone, M.},
-  journal=jrn_IEEE_RAL, 
-  title={Gradient Descent-Based Task-Orientation Robot Control Enhanced With Gaussian Process Predictions}, 
-  year={2024},
-  volume={9},
-  number={9},
-  pages={8035-8042},
-  keywords={Task analysis;Robots;Impedance;Position control;Gaussian processes;Uncertainty;Robot sensing systems;Uncertain orientation control;impedance control;interaction control;Gaussian process;gradient descent-based control},
-  doi={10.1109/LRA.2024.3438039}}
+  author    = {Roveda, L. and Pavone, M.},
+  journal   = jrn_IEEE_RAL, 
+  title     = {Gradient Descent-Based Task-Orientation Robot Control Enhanced With Gaussian Process Predictions}, 
+  year      = {2024},
+  abstract  = {This letter proposes a novel force-based task-orientation controller for interaction tasks with environmental orientation uncertainties. The main aim of the controller is to align the robot tool along the main task direction (e.g., along screwing, insertion, polishing, etc.) without the use of any external sensors (e.g., vision systems), relying only on end-effector wrench measurements/estimations. We propose a gradient descent-based orientation controller, enhancing its performance with the orientation predictions provided by a Gaussian Process model. Derivation of the controller is presented, together with simulation results (considering a probing task) and experimental results involving various re-orientation scenarios, i.e., i) a task with the robot in interaction with a soft environment, ii) a task with the robot in interaction with a stiff and inclined environment, and iii) a task to enable the assembly of a gear into its shaft. The proposed controller is compared against a state-of-the-art approach, highlighting its ability to re-orient the robot tool even in complex tasks (where the state-of-the-art method fails).},
+  volume    = {9},
+  number    = {9},
+  pages     = {8035--8042},
+  month     = sep,
+  doi       = {10.1109/LRA.2024.3438039},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10621597}, 
+  owner     = {amine},
+  timestamp = {2024-09-19}
+}
 
 @article{RossiZhangEtAl2017,
   author    = {Rossi, F. and Zhang, R. and Hindy, Y. and Pavone, M.},
@@ -2751,7 +2758,7 @@
   title = {Task-Driven Manipulation with Reconfigurable Parallel Robots},
   booktitle = proc_IEEE_IROS,
   year = {2024},
-  abstract = {ReachBot, a proposed robotic platform, employs extendable booms as limbs for mobility in challenging environments, such as martian caves. When attached to the environment, ReachBot acts as a parallel robot, with reconfiguration driven by the ability to detach and re-place the booms. This ability enables manipulation-focused scientific objectives: for instance, through operating tools, or handling and transporting samples. To achieve these capabilities, we develop a two-part solution, optimizing for robustness against task uncertainty and stochastic failure modes. First, we present a mixed-integer stance planner to determine the positioning of ReachBot's booms to maximize the task wrench space about the nominal point(s). Second, we present a convex tension planner to determine boom tensions for the desired task wrenches, accounting for the probabilistic nature of microspine grasping. We demonstrate improvements in key robustness metrics from the field of dexterous manipulation, and show a large increase in the volume of the manipulation workspace. Finally, we employ Monte-Carlo simulation to validate the robustness of these methods, demonstrating good performance across a range of randomized tasks and environments, and generalization to cable-driven morphologies. We make our code available at our project webpage, https://stanfordasl.github.io/reachbot_manipulation},
+  abstract = {ReachBot, a proposed robotic platform, employs extendable booms as limbs for mobility in challenging environments, such as martian caves. When attached to the environment, ReachBot acts as a parallel robot, with reconfiguration driven by the ability to detach and re-place the booms. This ability enables manipulation-focused scientific objectives: for instance, through operating tools, or handling and transporting samples. To achieve these capabilities, we develop a two-part solution, optimizing for robustness against task uncertainty and stochastic failure modes. First, we present a mixed-integer stance planner to determine the positioning of ReachBot's booms to maximize the task wrench space about the nominal point(s). Second, we present a convex tension planner to determine boom tensions for the desired task wrenches, accounting for the probabilistic nature of microspine grasping. We demonstrate improvements in key robustness metrics from the field of dexterous manipulation, and show a large increase in the volume of the manipulation workspace. Finally, we employ Monte-Carlo simulation to validate the robustness of these methods, demonstrating good performance across a range of randomized tasks and environments, and generalization to cable-driven morphologies. We make our code available at our project webpage, https://stanfordasl.github.io/reachbot_manipulation.},
   keywords = {pub},
   url = {https://arxiv.org/pdf/2403.10768.pdf},
   owner = {dmorton},
@@ -3034,13 +3041,13 @@
   title        = {Text2Motion: From Natural Language Instructions to Feasible Plans},
   journal      = jrn_Spr_AR,
   volume       = {47},
-  number       = {},
+  number       = {8},
   pages        = {1345–-1365},
   year         = {2023},
-  asl_month    = nov,
-  asl_abstract = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82%, while prior state-of-the-art language-based planning methods only achieve 13%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
-  asl_doi      = {10.1007/s10514-023-10131-7},
-  asl_url      = {https://doi.org/10.1007/s10514-023-10131-7},
+  month        = nov,
+  abstract     = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82%, while prior state-of-the-art language-based planning methods only achieve 13%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
+  doi          = {10.1007/s10514-023-10131-7},
+  url          = {https://doi.org/10.1007/s10514-023-10131-7},
   owner        = {agia},
   timestamp    = {2024-02-29}
 }
@@ -3156,9 +3163,15 @@
 @article{LewBonalliJansonPavone2024,
   author    = {Lew, T. and Bonalli, R. and Janson, L. and Pavone, M.},
   title     = {Estimating the convex hull of the image of a set with smooth boundary: error bounds and applications},
-  year      = {2024},
   journal   = jrn_Spr_DCG,
+  year      = {2024},
   abstract  = {We study the problem of estimating the convex hull of the image $f(X)\subset\mathbb{R}^n$ of a compact set $X\subset\mathbb{R}^m$ with smooth boundary through a smooth function $f:\mathbb{R}^m\to\mathbb{R}^n$. Assuming that $f$ is a diffeomorphism or a submersion, we derive new bounds on the Hausdorff distance between the convex hull of $f(X)$ and the convex hull of the images $f(x_i)$ of $M$ samples $x_i$ on the boundary of $X$. When applied to the problem of geometric inference from random samples, our results give tighter and more general error bounds than the state of the art. We present applications to the problems of robust optimization, of reachability analysis of dynamical systems, and of robust trajectory optimization under bounded uncertainty.},
+  volume    = {},
+  number    = {},
+  pages     = {1--39},
+  year      = {2024},
+  month     = aug,
+  doi       = {10.1007/s00454-024-00683-5},
   url       = {https://arxiv.org/abs/2302.13970},
   owner     = {lew},
   timestamp = {2023-02-27}
@@ -4071,11 +4084,10 @@
   author    = {Hindy, A. and Luo, R. and Banerjee, S. and Kuck, J. and Schmerling, E. and Pavone, M.},
   title     = {Diagnostic Runtime Monitoring with Martingales},
   note      = {Submitted},
-  booktitle = proc_RSS,
+  booktitle = {},
   year      = {2024},
-  abstract  = {Machine learning systems deployed in safety-critical robotics settings must be robust to distribution shifts. However, system designers must understand the \textit{cause} of a distribution shift in order to implement the appropriate intervention or mitigation strategy and prevent system failure. In this paper, we present a novel framework for diagnosing distribution shifts in a streaming fashion by deploying multiple stochastic martingales simultaneously. We show that knowledge of the underlying cause of a distribution shift can lead to proper interventions over the lifecycle of a deployed system. Our experimental framework can easily be adapted to different types of distribution shifts, models, and datasets. We find that our method outperforms existing work on diagnosing distribution shifts in terms of speed, accuracy, and flexibility, and validate the efficiency of our model in both simulated and live hardware settings. },
-  address   = {},
-  url       = {},
+  abstract  = {Machine learning systems deployed in safety-critical robotics settings must be robust to distribution shifts. However, system designers must understand the \textit{cause} of a distribution shift in order to implement the appropriate intervention or mitigation strategy and prevent system failure. In this paper, we present a novel framework for diagnosing distribution shifts in a streaming fashion by deploying multiple stochastic martingales simultaneously. We show that knowledge of the underlying cause of a distribution shift can lead to proper interventions over the lifecycle of a deployed system. Our experimental framework can easily be adapted to different types of distribution shifts, models, and datasets. We find that our method outperforms existing work on diagnosing distribution shifts in terms of speed, accuracy, and flexibility, and validate the efficiency of our model in both simulated and live hardware settings.},
+  url       = {https://arxiv.org/abs/2407.21748},
   keywords  = {sub},
   owner     = {somrita},
   timestamp = {2024-02-09}
@@ -4343,9 +4355,9 @@
   month        = oct,
   abstract     = {As robots acquire increasingly sophisticated skills and see increasingly complex and varied environments, the threat of an edge case or anomalous failure is ever present. For example, Tesla cars have seen interesting failure modes ranging from autopilot disengagements due to inactive traffic lights carried by trucks to phantom braking caused by images of stop signs on roadside billboards. These system-level failures are not due to failures of any individual component of the autonomy stack but rather system-level deficiencies in semantic reasoning. Such edge cases, which we call semantic anomalies, are simple for a human to disentangle yet require insightful reasoning. To this end, we study the application of large language models (LLMs), endowed with broad contextual understanding and reasoning capabilities, to recognize such edge cases and introduce a monitoring framework for semantic anomaly detection in vision-based policies. Our experiments apply this framework to a finite state machine policy for autonomous driving and a learned policy for object manipulation. These experiments demonstrate that the LLM-based monitor can effectively identify semantic anomalies in a manner that shows agreement with human reasoning. Finally, we provide an extended discussion on the strengths and weaknesses of this approach and motivate a research outlook on how we can further use foundation models for semantic anomaly detection. Our project webpage can be found at https://sites.google.com/view/llm-anomaly-detection.},
   doi          = {10.1007/s10514-023-10132-6},
-  url          = {https://doi.org/10.1007/s10514-023-10132-6},
+  url          = {https://arxiv.org/abs/2305.11307},
   owner        = {amine},
-  timestamp    = {2024-02-29}
+  timestamp    = {2024-09-19}
 }
 
 @inproceedings{ElhafsiIvanovicEtAl2020,
@@ -4386,15 +4398,15 @@
 }
 
 @inproceedings{DiCuevasQuiñonesEtAl2024,
-  author    = {Di, Julia and Cuevas-Quiñones, Sara and Newdick, Stephanie and Chen, Tony G. and Pavone, Marco and Lapôtre, Mathieu G. A. and Cutkosky, Mark},
+  author    = {Di, J. and Cuevas-Quinones, S. and Newdick, S. and Chen, T. G. and Pavone, M. and Lapôtre, Mathieu G. A. and Cutkosky, M.},
   title     = {Martian Exploration of Lava Tubes (MELT) with ReachBot: Scientific Investigation and Concept of Operations},
   booktitle = proc_ICSR,
   year      = {2024},
   month     = june,
-  abstract  = {As natural access points to the subsurface, lava tubes and other caves have become premier targets of plane- tary missions for astrobiological analyses. Few existing robotic paradigms, however, are able to explore such challenging environments. ReachBot is a robot that enables navigation in planetary caves by using extendable and retractable limbs to locomote. In this paper, we outline the potential science return and mission operations for a notional mission that deploys ReachBot to a martian lava tube. We describe the motivating science goals and provide a science traceability matrix to guide payload selection. We also develop a Concept of Operations (ConOps) for ReachBot, providing a framework for deployment and activities on Mars, analyzing mission risks, and developing mitigation strategies.},
-  keywords  = {sub},
-  owner     = {rdyro},
-  timestamp = {2024-02-15}
+  abstract  = {As natural access points to the subsurface, lava tubes and other caves have become premier targets of planetary missions for astrobiological analyses. Few existing robotic paradigms, however, are able to explore such challenging environments. ReachBot is a robot that enables navigation in planetary caves by using extendable and retractable limbs to locomote. In this paper, we outline the potential science return and mission operations for a notional mission that deploys ReachBot to a martian lava tube. We describe the motivating science goals and provide a science traceability matrix to guide payload selection. We also develop a Concept of Operations (ConOps) for ReachBot, providing a framework for deployment and activities on Mars, analyzing mission risks, and developing mitigation strategies.},
+  owner     = {amine},
+  url       = {https://arxiv.org/abs/2406.13857},
+  timestamp = {2024-09-19}
 }
 
 @inproceedings{DeCastroLeungEtAl2020,
@@ -5005,11 +5017,15 @@
   author    = {Brown, R. A. and Bernal Neira, D. E. and Venturelli, D. and Pavone, M.},
   title     = {A Copositive Framework for Analysis of Hybrid Ising-Classical Algorithms},
   journal   = jrn_SIAM_JO,
-  note      = {In press},
+  volume    = {34},
+  number    = {2},
+  pages     = {1455--1489},
   year      = {2024},
-  keywords  = {press},
+  month     = jun,
+  abstract  = {Recent years have seen significant advances in quantum/quantum-inspired technologies capable of approximately searching for the ground state of Ising spin Hamiltonians. The promise of leveraging such technologies to accelerate the solution of difficult optimization problems has spurred an increased interest in exploring methods to integrate Ising problems as part of their solution process, with existing approaches ranging from direct transcription to hybrid quantum-classical approaches rooted in existing optimization algorithms. While it is widely acknowledged that quantum computers should augment classical computers, rather than replace them entirely, comparatively little attention has been directed toward deriving analytical characterizations of their interactions. In this paper, we present a formal analysis of hybrid algorithms in the context of solving mixed-binary quadratic programs (MBQP) via Ising solvers. By leveraging an existing completely positive reformulation of MBQPs, as well as a new strong-duality result, we show the exactness of the dual problem over the cone of copositive matrices, thus allowing the resulting reformulation to inherit the straightforward analysis of convex optimization. We propose to solve this reformulation with a hybrid quantum-classical cutting-plane algorithm. Using existing complexity results for convex cutting-plane algorithms, we deduce that the classical portion of this hybrid framework is guaranteed to be polynomial time. This suggests that when applied to NP-hard problems, the complexity of the solution is shifted onto the subroutine handled by the Ising solver.},
+  doi       = {10.1137/22M1514581},
   url       = {https://arxiv.org/abs/2207.13630},
-  timestamp = {2022-10-04}
+  timestamp = {2024-09-19}
 }
 
 @article{BourdillonEtAl2022,
@@ -5366,6 +5382,42 @@
   url       = {https://dl.acm.org/doi/10.1145/3290605.3300589},
   owner     = {blandry},
   timestamp = {2020-04-13}
+}
+
+@inproceedings{DeglerisValenzuelaEtAl2024,
+  author    = {Degleris, A. and Valenzuela, L. F. and Rajagopal, R. and Pavone, M. and Gamal, A. E.},
+  title     = {Fast Grid Emissions Sensitivities using Parallel Decentralized Implicit Differentiation},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Marginal emissions rates -- the sensitivity of carbon emissions to electricity demand -- are important for evaluating the impact of emissions mitigation measures. Like locational marginal prices, locational marginal emissions rates (LMEs) can vary geographically, even between nearby locations, and may be coupled across time periods because of, for example, storage and ramping constraints. This temporal coupling makes computing LMEs computationally expensive for large electricity networks with high storage and renewable penetrations. Recent work demonstrates that decentralized algorithms can mitigate this problem by decoupling timesteps during differentiation. Unfortunately, we show these potential speedups are negated by the sparse structure inherent in power systems problems. We address these limitations by introducing a parallel, reverse-mode decentralized differentiation scheme that never explicitly instantiates the solution map Jacobian. We show both theoretically and empirically that parallelization is necessary to achieve non-trivial speedups when computing grid emissions sensitivities. Numerical results on a 500 node system indicate that our method can achieve greater than 10x speedups over centralized and serial decentralized approaches.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2408.10620}
+}
+
+@inproceedings{WangBrownEtAl2024,
+  author    = {Wang, I. W. and Brown, R. and Patti, T. L. and Anandkumar, A. and Pavone, M. and Yelin, S. F.},
+  title     = {Sum-of-Squares inspired Quantum Metaheuristic for Polynomial Optimization with the Hadamard Test and Approximate Amplitude Constraints},
+  booktitle = {},
+  year      = {2024},
+  abstract  = {Quantum computation shows promise for addressing numerous classically intractable problems, such as optimization tasks. Many optimization problems are NP-hard, meaning that they scale exponentially with problem size and thus cannot be addressed at scale by traditional computing paradigms. The recently proposed quantum algorithm https://arxiv.org/abs/2206.14999 addresses this challenge for some NP-hard problems, and is based on classical semidefinite programming (SDP). In this manuscript, we generalize the SDP-inspired quantum algorithm to sum-of-squares programming, which targets a broader problem set. Our proposed algorithm addresses degree-k polynomial optimization problems with $N \leq 2n$ variables (which are representative of many NP-hard problems) using $O(nk)$ qubits, $O(k)$ quantum measurements, and $O(poly(n))$ classical calculations. We apply the proposed algorithm to the prototypical Max-kSAT problem and compare its performance against classical sum-of-squares, state-of-the-art heuristic solvers, and random guessing. Simulations show that the performance of our algorithm surpasses that of classical sum-of-squares after rounding. Our results further demonstrate that our algorithm is suitable for large problems and approximates the best known classical heuristics, while also providing a more generalizable approach compared to problem-specific heuristics.},
+  keywords  = {sub},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2408.07774}
+}
+
+@inproceedings{ThummAgiaEtAl2024,
+  author    = {Thumm, J. and Agia, C. and Pavone, M. and Althoff, M.},
+  title     = {Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction},
+  booktitle = proc_CoRL,
+  year      = {2024},
+  abstract  = {Adjusting robot behavior to human preferences can require intensive human feedback, preventing quick adaptation to new users and changing circumstances. Moreover, current approaches typically treat user preferences as a reward, which requires a manual balance between task success and user satisfaction. To integrate new user preferences in a zero-shot manner, our proposed Text2Interaction framework invokes a large language model to generate a task plan, motion preferences as Python code, and parameters of a safe controller. By maximizing the combined probability of task completion and user satisfaction instead of a weighted sum of rewards, we can reliably find plans that fulfill both requirements. We find that 83% of users working with Text2Interaction agree that it integrates their preferences into the robot's plan, and 94% prefer Text2Interaction over the baseline. Our ablation study shows that Text2Interaction aligns better with unseen preferences than other baselines while maintaining a high success rate.},
+  keywords  = {press},
+  owner     = {amine},
+  timestamp = {2024-09-19},
+  url       = {https://arxiv.org/abs/2408.06105}
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
