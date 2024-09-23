@@ -915,6 +915,33 @@
   url       = {https://arxiv.org/abs/2301.11902},
 }
 
+@InProceedings{ZhongRempeEtAl2023b,
+	title = 	 {Language-Guided Traffic Simulation via Scene-Level Diffusion},
+	author =       {Zhong, Z. and Rempe, D. and Chen, Y. and Ivanovic, B. and Cao, Y. and Xu, D. and Pavone, M. and Ray, B.},
+	booktitle = 	 {Proceedings of The 7th Conference on Robot Learning},
+	pages = 	 {144--177},
+	year = 	 {2023},
+	editor = 	 {Tan, Jie and Toussaint, Marc and Darvish, Kourosh},
+	volume = 	 {229},
+	series = 	 {Proceedings of Machine Learning Research},
+	month = 	 {06--09 Nov},
+	publisher =    {PMLR},
+	pdf = 	 {https://proceedings.mlr.press/v229/zhong23a/zhong23a.pdf},
+	url = 	 {https://proceedings.mlr.press/v229/zhong23a.html},
+	abstract = 	 {Realistic and controllable traffic simulation is a core capability that is necessary to accelerate autonomous vehicle (AV) development. However, current approaches for controlling learning-based traffic models require significant domain expertise and are difficult for practitioners to use. To remedy this, we present CTG++, a scene-level conditional diffusion model that can be guided by language instructions. Developing this requires tackling two challenges: the need for a realistic and controllable traffic model backbone, and an effective method to interface with a traffic model using language. To address these challenges, we first propose a scene-level diffusion model equipped with a spatio-temporal transformer backbone, which generates realistic and controllable traffic. We then harness a large language model (LLM) to convert a user’s query into a loss function, guiding the diffusion model towards query-compliant generation. Through comprehensive evaluation, we demonstrate the effectiveness of our proposed method in generating realistic, query-compliant traffic simulations.}
+	owner={jjalora},
+}
+
+@inproceedings{DingEtAl2023,
+	title={Bayesian reparameterization of reward-conditioned reinforcement learning with energy-based models},
+	author={Ding, Wenhao and Che, Tong and Zhao, Ding and Pavone, Marco},
+	booktitle={International Conference on Machine Learning},
+	pages={8053--8066},
+	year={2023},
+	organization={PMLR},
+	owner={jjalora},
+}
+
 @InProceedings{ZhongRempeEtAl2023,
   author    = {Zhong, Z. and Rempe, D. and Xu, D. and Chen, Y. and Veer, S. and Che, T. and Ray, B. and Pavone, M.},
   title     = {Guided Conditional Diffusion for Controllable Traffic Simulation},
@@ -926,8 +953,33 @@
   doi       = {10.1109/ICRA48891.2023.10161463},
   owner     = {jthluke},
   timestamp = {2024-09-19},
-  url       = {https://arxiv.org/abs/2210.17366},
+  url       = {https://arxiv.org/abs/2210.17366}
 }
+
+@InProceedings{HsuEtAl2023,
+	author={Hsu, K. and Leung, K. and Chen, Y. and Fisac, J.F. and Pavone, M.},
+	booktitle={2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+	title={Interpretable Trajectory Prediction for Autonomous Vehicles via Counterfactual Responsibility}, 
+	year={2023},
+	owner={jjalora},
+	pages={5918-5925},
+}
+
+@InProceedings{TopanEtAl2023,
+	author={Topan, S. and Chen, Y. and Schmerling, E. and Leung, K. and Nilsson, J. and Cox, M. and Pavone, M.},
+	booktitle={2023 IEEE Intelligent Vehicles Symposium (IV)}, 
+	title={Refining Obstacle Perception Safety Zones via Maneuver-Based Decomposition}, 
+	year={2023},
+	volume={},
+	number={},
+	pages={1-8},
+	abstract={A critical task for developing safe autonomous driving stacks is to determine whether an obstacle is safety-critical, i.e., poses an imminent threat to the autonomous vehicle. Our previous work showed that Hamilton Jacobi reachability theory can be applied to compute interaction-dynamics-aware perception safety zones that better inform an ego vehicle’s perception module which obstacles are considered safety-critical. For completeness, these zones are typically larger than absolutely necessary, forcing the perception module to pay attention to a larger collection of objects for the sake of conservatism. As an improvement, we propose a maneuver-based decomposition of our safety zones that leverages information about the ego maneuver to reduce the zone volume. In particular, we propose a "temporal convolution" operation that produces safety zones for specific ego maneuvers, thus limiting the ego’s behavior to reduce the size of the safety zones. We show with numerical experiments that maneuver-based zones are significantly smaller (up to 76% size reduction) than the baseline while maintaining completeness.},
+	doi={10.1109/IV55152.2023.10186702},
+	ISSN={2642-7214},
+	month={June},
+	owner={jjalora}
+	}
+
 
 @InProceedings{IvanovicHarrisonEtAl2023,
   author    = {Ivanovic, B. and Harrison, J. and Pavone, M.},
@@ -971,14 +1023,14 @@
   timestamp = {2024-09-18}
 }
 
-@inproceedings{LeungVeerEtAl2023,
+@InProceedings{LeungVeerEtAl2023,
   author    = {Leung, K. and Veer, S. and Schmerling, E. and Pavone, M.},
   booktitle = proc_IEEE_ACC,
   title     = {Learning Autonomous Vehicle Safety Concepts from Demonstrations},
+  pages={3193-3200},
   year      = {2023},
+  owner={jjalora}
 }
-
-
 
 @inproceedings{YangPavone2022,
   author    = {Yang, H. and Pavone, M.},
@@ -1152,6 +1204,64 @@
   owner     = {gammelli},
   timestamp = {2024-09-19},
   url       = {https://ieeexplore.ieee.org/abstract/document/10610276}
+}
+
+@article{MaEtAl2023,
+	title={Dolphins: Multimodal Language Model for Driving}, 
+	author={Ma, Y. and Cao, Y. and  Sun, Y. and Pavone, M. and Xiao, C.},
+	year={2023},
+	eprint={2312.00438},
+	archivePrefix={arXiv},
+	owner={jjalora}
+}
+
+@article{ChenEtAl2023,
+	title={Categorical Traffic Transformer: Interpretable and Diverse Behavior Prediction with Tokenized Latent},
+	author={Chen, Y. and Tonkens, S. and Pavone, M.},
+	archivePrefix={arXiv},
+	eprint={2311.18307},
+	owner={jjalora},
+	year={2023}
+}
+
+@article{MaoEtAl2023,
+	author = {Mao, J. and Ye, J. and Qian, Y. and Pavone, M, and Wang, Y.},
+	title = {A Language Agent for Autonomous Driving},
+	archivePrefix={arXiv},
+	eprint={2311.10813},
+	owner={jjalora},
+	year = {2023}
+}
+
+@article{YangEtAl2023,
+	title={Emernerf: Emergent spatial-temporal scene decomposition via self-supervision},
+	author={Yang, J. and Ivanovic, B. and Litany, O. and Weng, X. and Kim, S.W. and Li, B. and Che, T. and Xu, D. and Fidler, S. and Pavone, M. and Wang, Y.},
+	archivePrefix={arXiv},
+	eprint={2311.02077},
+	owner={jjalora},
+	year={2023}
+}
+
+@article{ChenEtAl2024,
+	author={Chen, Y. and Veer, S. and Karkus, P. and Pavone, M.},
+	journal={IEEE Robotics and Automation Letters}, 
+	title={Interactive Joint Planning for Autonomous Vehicles}, 
+	year={2024},
+	volume={9},
+	number={2},
+	pages={987-994},
+	owner={jjalora}
+	
+}
+
+@inproceedings{
+	tan2023language,
+	title={Language Conditioned Traffic Generation},
+	author={Tan, S. and Ivanovic, B. and Weng, X. and Pavone, M. and Kraehenbuehl, P.},
+	booktitle={7th Annual Conference on Robot Learning},
+	year={2023},
+	url={https://openreview.net/forum?id=PK2debCKaG},
+	owner={jjalora}
 }
 
 @inproceedings{HuangKarkusEtAl2024,
