@@ -1280,16 +1280,18 @@
   timestamp = {2021-06-10}
 }
 
-@inproceedings{ThummAgiaEtAl2024,
+@article{ThummAgiaEtAl2024,
   author    = {Thumm, J. and Agia, C. and Pavone, M. and Althoff, M.},
   title     = {Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction},
   booktitle = proc_CoRL,
   year      = {2024},
-  abstract  = {Adjusting robot behavior to human preferences can require intensive human feedback, preventing quick adaptation to new users and changing circumstances. Moreover, current approaches typically treat user preferences as a reward, which requires a manual balance between task success and user satisfaction. To integrate new user preferences in a zero-shot manner, our proposed Text2Interaction framework invokes a large language model to generate a task plan, motion preferences as Python code, and parameters of a safe controller. By maximizing the combined probability of task completion and user satisfaction instead of a weighted sum of rewards, we can reliably find plans that fulfill both requirements. We find that 83% of users working with Text2Interaction agree that it integrates their preferences into the robot's plan, and 94% prefer Text2Interaction over the baseline. Our ablation study shows that Text2Interaction aligns better with unseen preferences than other baselines while maintaining a high success rate.},
+  abstract  = {Adjusting robot behavior to human preferences can require intensive human feedback, preventing quick adaptation to new users and changing circumstances. Moreover, current approaches typically treat user preferences as a reward, which requires a manual balance between task success and user satisfaction. To integrate new user preferences in a zero-shot manner, our proposed Text2Interaction framework invokes large language models to generate a task plan, motion preferences as Python code, and parameters of a safety controller. By maximizing the combined probability of task completion and user satisfaction instead of a weighted sum of rewards, we can reliably find plans that fulfill both requirements. We find that 83 % of users working with Text2Interaction agree that it integrates their preferences into the plan of the robot, and 94 % prefer Text2Interaction over the baseline. Our ablation study shows that Text2Interaction aligns better with unseen preferences than other baselines while maintaining a high success rate. Real-world demonstrations and code are made available at sites.google.com/view/text2interaction.},
+  address   = {Munich, Germany},
   keywords  = {press},
-  owner     = {amine},
-  timestamp = {2024-09-19},
-  url       = {https://arxiv.org/abs/2408.06105}
+  month     = nov,
+  url       = {https://arxiv.org/abs/2408.06105},
+  owner     = {agia},
+  timestamp = {2024-09-19}
 }
 
 @inproceedings{ThorpeLewEtAl2022,
@@ -5434,6 +5436,20 @@ Conclusion. Game engines hold promising potential for the design and implementat
   asl_url      = {https://arxiv.org/abs/2401.11371},
   owner        = {agia},
   timestamp    = {2024-03-01}
+}
+
+@article{AgiaSinhaEtAl2024,
+  author    = {Agia, C. and Sinha, R. and Yang, J. and Cao, Z. and Antonova, R. and Pavone, M. and Jeannette Bohg},
+  title     = {Unpacking Failure Modes of Generative Policies: Runtime Monitoring of Consistency and Progress},
+  booktitle = proc_CoRL,
+  year      = {2024},
+  abstract  = {Robot behavior policies trained via imitation learning are prone to failure under conditions that deviate from their training data. Thus, algorithms that monitor learned policies at test time and provide early warnings of failure are necessary to facilitate scalable deployment. We propose Sentinel, a runtime monitoring framework that splits the detection of failures into two complementary categories: 1) Erratic failures, which we detect using statistical measures of temporal action consistency, and 2) task progression failures, where we use Vision Language Models (VLMs) to detect when the policy confidently and consistently takes actions that do not solve the task. Our approach has two key strengths. First, because learned policies exhibit diverse failure modes, combining complementary detectors leads to significantly higher accuracy at failure detection. Second, using a statistical temporal action consistency measure ensures that we quickly detect when multimodal, generative policies exhibit erratic behavior at negligible computational cost. In contrast, we only use VLMs to detect failure modes that are less time-sensitive. We demonstrate our approach in the context of diffusion policies trained on robotic mobile manipulation domains in both simulation and the real world. By unifying temporal consistency detection and VLM runtime monitoring, Sentinel detects 18% more failures than using either of the two detectors alone and significantly outperforms baselines, thus highlighting the importance of assigning specialized detectors to complementary categories of failure. Qualitative results are made available at sites.google.com/stanford.edu/sentinel.},
+  address   = {Munich, Germany},
+  keywords  = {press},
+  month     = nov,
+  url       = {https://arxiv.org/abs/2410.04640},
+  owner     = {agia},
+  timestamp = {2024-10-20}
 }
 
 @inproceedings{AbtahiLandryEtAl2019,
