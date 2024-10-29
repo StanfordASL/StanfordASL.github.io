@@ -1307,6 +1307,19 @@
   timestamp = {2022-03-01}
 }
 
+@inproceedings{TakuboGammelliEtAl2024,
+  author    = {Takubo, Y. and Guffanti, T. and Gammelli, D. and Pavone, M. and D'Amico, D.},
+  title     = {Towards Robust Spacecraft Trajectory Optimization via Transformers},
+  booktitle = proc_IEEE_AC,
+  keywords  = {sub},
+  note      = {Submitted},
+  abstract  = {Future multi-spacecraft missions require robust autonomous trajectory optimization capabilities to ensure safe and efficient rendezvous operations. This capability hinges on solving non-convex optimal control problems in real time, although traditional iterative methods such as sequential convex programming impose significant computational challenges. To mitigate this burden, the Autonomous Rendezvous Transformer introduced a generative model trained to provide near-optimal initial guesses. This approach provides convergence to better local optima (e.g., fuel optimality), improves feasibility rates, and results in faster convergence speed of optimization algorithms through warm-starting. This work extends the capabilities of ART to address robust chance-constrained optimal control problems. Specifically, ART is applied to challenging rendezvous scenarios in Low Earth Orbit (LEO), ensuring fault-tolerant behavior under uncertainty. Through extensive experimentation, the proposed warm-starting strategy is shown to consistently produce high-quality reference trajectories, achieving up to 30\% cost improvement and 50\% reduction in infeasible cases compared to conventional methods, demonstrating robust performance across multiple state representations. Additionally, a post hoc evaluation framework is proposed to assess the quality of generated trajectories and mitigate runtime failures, marking an initial step toward the reliable deployment of AI-driven solutions in safety-critical autonomous systems such as spacecraft.},
+  year      = {2025},
+  owner     = {gammelli},
+  timestamp = {2024-10-29},
+  url       = {https://arxiv.org/abs/2410.05585},
+}
+
 @inproceedings{SushkoTedjaratiEtAl2017,
   author    = {A. Sushko and A. Tedjarati and J. Creus-Costa and S. Maldonado and K. Marshland and M. Pavone},
   title     = {Low cost, high endurance, altitude-controlled latex balloon for near-space research ({ValBal})},
@@ -1811,9 +1824,10 @@
   keywords  = {sub},
   note      = {Submitted},
   abstract  = {Hierarchical policies enable strong performance in many sequential decision-making problems, such as those with high-dimensional action spaces, those requiring long-horizon planning, and settings with sparse rewards. However, learning hierarchical policies from static offline datasets presents a significant challenge. Crucially, actions taken by higher-level policies may not be directly observable within hierarchical controllers, and the offline dataset might have been generated using a different policy structure, hindering the use of standard offline learning algorithms. In this work, we propose OHIO: a framework for offline reinforcement learning (RL) of hierarchical policies. Our framework leverages knowledge of the policy structure to solve the \textit{inverse problem}, recovering the unobservable high-level actions that likely generated the observed data under our hierarchical policy. This approach constructs a dataset suitable for off-the-shelf offline training. We demonstrate our framework on robotic and network optimization problems and show that it substantially outperforms end-to-end RL methods and improves robustness. We investigate a variety of instantiations of our framework, both in direct deployment of policies trained offline and when online fine-tuning is performed.},
-  year      = {2024},
+  year      = {2025},
   owner     = {gammelli},
-  timestamp = {2024-08-14}
+  timestamp = {2024-08-14},
+  url       = {https://arxiv.org/abs/2410.07933},
 }
 
 @incollection{SchmerlingPavone2019,
@@ -4857,6 +4871,19 @@
   owner        = {gammelli},
   timestamp    = {2024-08-14},
   url          = {https://ieeexplore.ieee.org/document/10685132}
+}
+
+@inproceedings{CelestiniGammelliEtAl2025,
+  author    = {Celestini, D. and Afsharrad, A. and Gammelli, D. and Guffanti, T. and Zardini, G. and Lall, S. and Capelli, E. and D'Amico, S. and Pavone, M.},
+  title     = {Generalizable Spacecraft Trajectory Generation via Multimodal Learning with Transformers},
+  booktitle = proc_IEEE_ACC,
+  keywords  = {sub},
+  note      = {Submitted},
+  abstract  = {Effective trajectory generation is essential for reliable on-board spacecraft autonomy. Among other approaches, learning-based warm-starting represents an appealing paradigm for solving the trajectory generation problem, effectively combining the benefits of optimization- and data-driven methods. Current approaches for learning-based trajectory generation often focus on fixed, single-scenario environments, where key scene characteristics, such as obstacle positions or final-time requirements, remain constant across problem instances. However, practical trajectory generation requires the scenario to be frequently reconfigured, making the single-scenario approach a potentially impractical solution. To address this challenge, we present a novel trajectory generation framework that generalizes across diverse problem configurations, by leveraging high-capacity transformer neural networks capable of learning from multimodal data sources. Specifically, our approach integrates transformer-based neural network models into the trajectory optimization process, encoding both scene-level information (e.g., obstacle locations, initial and goal states) and trajectory-level constraints (e.g., time bounds, fuel consumption targets) via multimodal representations. The transformer network then generates near-optimal initial guesses for non-convex optimization problems, significantly enhancing convergence speed and performance. The framework is validated through extensive simulations and real-world experiments on a free-flyer platform, achieving up to 30\% cost improvement and 80\% reduction in infeasible cases with respect to traditional approaches, and demonstrating robust generalization across diverse scenario variations.},
+  year      = {2025},
+  owner     = {gammelli},
+  timestamp = {2024-10-29},
+  url       = {https://arxiv.org/abs/2410.11723},
 }
 
 @inproceedings{CauligiCulbertsonEtAl2020,
