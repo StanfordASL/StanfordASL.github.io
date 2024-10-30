@@ -1087,10 +1087,10 @@
   volume    = {39},
   number    = {1},
   pages     = {1138--1147},
-  abstract  = {Locational marginal emissions rates (LMEs) estimate the rate of change in emissions due to a small change in demand in a transmission network, and are an important metric for assessing the impact of various energy policies or interventions. In this work, we develop a new method for computing the LMEs of an electricity system via implicit differentiation. The method is model agnostic; it can compute LMEs for any convex optimization-based dispatch model, including some of the complex dispatch models employed by system operators in real electricity systems. In particular, this method lets us derive LMEs for dynamic dispatch models, which have temporal constraints such as ramping and storage. Using real data from the U.S. electricity system, we validate the proposed method against a state-of-the-art merit-order-based method and show that incorporating dynamic constraints improves model accuracy by 8.2%. Finally, we use simulations on a realistic 240-bus model of WECC to demonstrate the flexibility of the tool and the importance of incorporating dynamic constraints. In this example, static and dynamic LMEs deviate from one another by 28.4% on average, implying dynamic constraints are essential in accurately modeling emissions rates.},
+  abstract  = {Locational marginal emissions rates (LMEs) estimate the rate of change in emissions due to a small change in demand in a transmission network, and are an important metric for assessing the impact of various energy policies or interventions. In this work, we develop a new method for computing the LMEs of an electricity system via implicit differentiation. The method is model agnostic; it can compute LMEs for any convex optimization-based dispatch model, including some of the complex dispatch models employed by system operators in real electricity systems. In particular, this method lets us derive LMEs for dynamic dispatch models, which have temporal constraints such as ramping and storage. Using real data from the U.S. electricity system, we validate the proposed method against a state-of-the-art merit-order-based method and show that incorporating dynamic constraints improves model accuracy by 8.2\%. Finally, we use simulations on a realistic 240-bus model of WECC to demonstrate the flexibility of the tool and the importance of incorporating dynamic constraints. In this example, static and dynamic LMEs deviate from one another by 28.4\% on average, implying dynamic constraints are essential in accurately modeling emissions rates.},
   doi       = {10.1109/TPWRS.2023.3247345},
   owner     = {jthluke},
-  timestamp = {2024-09-20},
+  timestamp = {2024-10-28},
   url       = {https://arxiv.org/abs/2302.14282},
 }
 
@@ -1280,16 +1280,18 @@
   timestamp = {2021-06-10}
 }
 
-@inproceedings{ThummAgiaEtAl2024,
+@Article{ThummAgiaEtAl2024,
   author    = {Thumm, J. and Agia, C. and Pavone, M. and Althoff, M.},
   title     = {Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction},
-  booktitle = proc_CoRL,
   year      = {2024},
-  abstract  = {Adjusting robot behavior to human preferences can require intensive human feedback, preventing quick adaptation to new users and changing circumstances. Moreover, current approaches typically treat user preferences as a reward, which requires a manual balance between task success and user satisfaction. To integrate new user preferences in a zero-shot manner, our proposed Text2Interaction framework invokes a large language model to generate a task plan, motion preferences as Python code, and parameters of a safe controller. By maximizing the combined probability of task completion and user satisfaction instead of a weighted sum of rewards, we can reliably find plans that fulfill both requirements. We find that 83% of users working with Text2Interaction agree that it integrates their preferences into the robot's plan, and 94% prefer Text2Interaction over the baseline. Our ablation study shows that Text2Interaction aligns better with unseen preferences than other baselines while maintaining a high success rate.},
+  month     = nov,
+  abstract  = {Adjusting robot behavior to human preferences can require intensive human feedback, preventing quick adaptation to new users and changing circumstances. Moreover, current approaches typically treat user preferences as a reward, which requires a manual balance between task success and user satisfaction. To integrate new user preferences in a zero-shot manner, our proposed Text2Interaction framework invokes large language models to generate a task plan, motion preferences as Python code, and parameters of a safety controller. By maximizing the combined probability of task completion and user satisfaction instead of a weighted sum of rewards, we can reliably find plans that fulfill both requirements. We find that 83\% of users working with Text2Interaction agree that it integrates their preferences into the plan of the robot, and 94\% prefer Text2Interaction over the baseline. Our ablation study shows that Text2Interaction aligns better with unseen preferences than other baselines while maintaining a high success rate. Real-world demonstrations and code are made available at sites.google.com/view/text2interaction.},
+  address   = {Munich, Germany},
+  booktitle = proc_CoRL,
   keywords  = {press},
-  owner     = {amine},
-  timestamp = {2024-09-19},
-  url       = {https://arxiv.org/abs/2408.06105}
+  owner     = {jthluke},
+  timestamp = {2024-10-28},
+  url       = {https://arxiv.org/abs/2408.06105},
 }
 
 @inproceedings{ThorpeLewEtAl2022,
@@ -1594,10 +1596,10 @@
   year      = {2024},
   address   = {Stockholm, Sweden},
   month     = jun,
-  abstract  = {Operators of Electric Autonomous Mobility-on-Demand (E-AMoD) fleets need to make several real-time decisions such as matching available vehicles to ride requests, rebalancing idle vehicles to areas of high demand, and charging vehicles to ensure sufficient range. While this problem can be posed as a linear program that optimizes flows over a space-charge-time graph, the size of the resulting optimization problem does not allow for real-time implementation in realistic settings. In this work, we present the E-AMoD control problem through the lens of reinforcement learning and propose a graph network-based framework to achieve drastically improved scalability and superior performance over heuristics. Specifically, we adopt a bi-level formulation where we (1) leverage a graph network-based RL agent to specify a desired next state in the space-charge graph, and (2) solve more tractable linear programs to best achieve the desired state while ensuring feasibility. Experiments using real-world data from San Francisco and New York City show that our approach achieves up to 89% of the profits of the theoretically-optimal solution while achieving more than a 100x speedup in computational time. We further highlight promising zero-shot transfer capabilities of our learned policy on tasks such as inter-city generalization and service area expansion, thus showing the utility, scalability, and flexibility of our framework. Finally, our approach outperforms the best domain-specific heuristics with comparable runtimes, with an increase in profits by up to 3.2x.},
+  abstract  = {Operators of Electric Autonomous Mobility-on-Demand (E-AMoD) fleets need to make several real-time decisions such as matching available vehicles to ride requests, rebalancing idle vehicles to areas of high demand, and charging vehicles to ensure sufficient range. While this problem can be posed as a linear program that optimizes flows over a space-charge-time graph, the size of the resulting optimization problem does not allow for real-time implementation in realistic settings. In this work, we present the E-AMoD control problem through the lens of reinforcement learning and propose a graph network-based framework to achieve drastically improved scalability and superior performance over heuristics. Specifically, we adopt a bi-level formulation where we (1) leverage a graph network-based RL agent to specify a desired next state in the space-charge graph, and (2) solve more tractable linear programs to best achieve the desired state while ensuring feasibility. Experiments using real-world data from San Francisco and New York City show that our approach achieves up to 89\% of the profits of the theoretically-optimal solution while achieving more than a 100x speedup in computational time. We further highlight promising zero-shot transfer capabilities of our learned policy on tasks such as inter-city generalization and service area expansion, thus showing the utility, scalability, and flexibility of our framework. Finally, our approach outperforms the best domain-specific heuristics with comparable runtimes, with an increase in profits by up to 3.2x.},
   doi       = {10.23919/ecc64448.2024.10591098},
   owner     = {jthluke},
-  timestamp = {2024-09-12},
+  timestamp = {2024-10-28},
   url       = {https://arxiv.org/abs/2311.05780},
 }
 
@@ -1956,10 +1958,10 @@
   volume    = {8},
   number    = {4},
   pages     = {2397--2404},
-  abstract  = {Model Predictive Control (MPC) has become a popular framework in embedded control for high-performance autonomous systems. However, to achieve good control performance using MPC, an accurate dynamics model is key. To maintain real-time operation, the dynamics models used on embedded systems have been limited to simple first-principle models, which substantially limits their representative power. In contrast to such simple models, machine learning approaches, specifically neural networks, have been shown to accurately model even complex dynamic effects, but their large computational complexity hindered combination with fast real-time iteration loops. With this work, we present Real-time Neural MPC , a framework to efficiently integrate large, complex neural network architectures as dynamics models within a model-predictive control pipeline. Our experiments, performed in simulation and the real world onboard a highly agile quadrotor platform, demonstrate the capabilities of the described system to run learned models with, previously infeasible, large modeling capacity using gradient-based online optimization MPC. Compared to prior implementations of neural networks in online optimization MPC we can leverage models of over 4000 times larger parametric capacity in a 50 Hz real-time window on an embedded platform. Further, we show the feasibility of our framework on real-world problems by reducing the positional tracking error by up to 82% when compared to state-of-the-art MPC approaches without neural network dynamics.},
+  abstract  = {Model Predictive Control (MPC) has become a popular framework in embedded control for high-performance autonomous systems. However, to achieve good control performance using MPC, an accurate dynamics model is key. To maintain real-time operation, the dynamics models used on embedded systems have been limited to simple first-principle models, which substantially limits their representative power. In contrast to such simple models, machine learning approaches, specifically neural networks, have been shown to accurately model even complex dynamic effects, but their large computational complexity hindered combination with fast real-time iteration loops. With this work, we present Real-time Neural MPC , a framework to efficiently integrate large, complex neural network architectures as dynamics models within a model-predictive control pipeline. Our experiments, performed in simulation and the real world onboard a highly agile quadrotor platform, demonstrate the capabilities of the described system to run learned models with, previously infeasible, large modeling capacity using gradient-based online optimization MPC. Compared to prior implementations of neural networks in online optimization MPC we can leverage models of over 4000 times larger parametric capacity in a 50 Hz real-time window on an embedded platform. Further, we show the feasibility of our framework on real-world problems by reducing the positional tracking error by up to 82\% when compared to state-of-the-art MPC approaches without neural network dynamics.},
   doi       = {10.1109/LRA.2023.3246839},
   owner     = {jthluke},
-  timestamp = {2024-09-20},
+  timestamp = {2024-10-28},
   url       = {https://arxiv.org/abs/2203.07747.pdf},
 }
 
@@ -1988,17 +1990,17 @@
   timestamp = {2024-03-01}
 }
 
-@inproceedings{SalazarTsaoEtAl2019,
+@InProceedings{SalazarTsaoEtAl2019,
   author    = {Salazar, M. and Tsao, M. and Aguiar, I. and Schiffer, M. and Pavone, M.},
   title     = {A Congestion-aware Routing Scheme for Autonomous Mobility-on-Demand Systems},
   booktitle = proc_EUCA_ECC,
   year      = {2019},
-  abstract  = {We study route-planning for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing scheme (CARS) that captures road-utilization-dependent travel times at a mesoscopic level via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. This approximation largely retains the key features of the BPR model, while allowing the design of a real-time, convex quadratic optimization algorithm to determine congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARS to existing routing approaches, namely a congestion-unaware and a threshold congestion model. Numerical results show that CARS significantly outperforms the other two approaches, with improvements in terms of travel time and global cost in the order of 20%.},
   address   = {Naples, Italy},
   month     = nov,
-  url       = {/wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf},
+  abstract  = {We study route-planning for Autonomous Mobility-on-Demand (AMoD) systems that accounts for the impact of road traffic on travel time. Specifically, we develop a congestion-aware routing scheme (CARS) that captures road-utilization-dependent travel times at a mesoscopic level via a piecewise affine approximation of the Bureau of Public Roads (BPR) model. This approximation largely retains the key features of the BPR model, while allowing the design of a real-time, convex quadratic optimization algorithm to determine congestion-aware routes for an AMoD fleet. Through a real-world case study of Manhattan, we compare CARS to existing routing approaches, namely a congestion-unaware and a threshold congestion model. Numerical results show that CARS significantly outperforms the other two approaches, with improvements in terms of travel time and global cost in the order of 20\%.},
   owner     = {samauro},
-  timestamp = {2020-03-08}
+  timestamp = {2020-03-08},
+  url       = {/wp-content/papercite-data/pdf/Salazar.Tsao.ea.ECC19.pdf},
 }
 
 @inproceedings{SalazarRossiEtAl2018,
@@ -2127,7 +2129,7 @@
   timestamp = {2018-06-30}
 }
 
-@article{RossiIglesiasEtAl2018b,
+@Article{RossiIglesiasEtAl2018b,
   author    = {Rossi, F. and Iglesias, R. and Alizadeh, M. and Pavone, M.},
   title     = {On the Interaction Between {Autonomous Mobility-on-Demand} Systems and the Power Network: Models and Coordination Algorithms},
   journal   = jrn_IEEE_TCNS,
@@ -2135,11 +2137,11 @@
   volume    = {7},
   number    = {1},
   pages     = {384--397},
-  abstract  = {We study the interaction between a fleet of electric self-driving vehicles servicing on-demand transportation requests (referred to as autonomous mobility-on-demand, or AMoD, systems) and the electric power network. We propose a joint model that captures the coupling between the two systems stemming from the vehiclesâ€™ charging requirements, capturing time-varying customer demand, battery depreciation, and power transmission constraints. First, we show that the model is amenable to efficient optimization. Then, we prove that the socially optimal solution to the joint problem is a general equilibrium if locational marginal pricing is used for electricity. Finally, we show that the equilibrium can be computed by selfish transportation and generator operators (aided by a nonprofit independent system operator) without sharing private information. We assess the performance of the approach and its robustness to stochastic fluctuations in demand through case studies and agent-based simulations. Collectively, these results provide a first-of-a-kind characterization of the interaction between AMoD systems and the power network, and shed additional light on the economic and societal value of AMoD.},
-  url       = {https://arxiv.org/abs/1709.04906},
+  abstract  = {We study the interaction between a fleet of electric self-driving vehicles servicing on-demand transportation requests (referred to as autonomous mobility-on-demand, or AMoD, systems) and the electric power network. We propose a joint model that captures the coupling between the two systems stemming from the vehicles' charging requirements, capturing time-varying customer demand, battery depreciation, and power transmission constraints. First, we show that the model is amenable to efficient optimization. Then, we prove that the socially optimal solution to the joint problem is a general equilibrium if locational marginal pricing is used for electricity. Finally, we show that the equilibrium can be computed by selfish transportation and generator operators (aided by a nonprofit independent system operator) without sharing private information. We assess the performance of the approach and its robustness to stochastic fluctuations in demand through case studies and agent-based simulations. Collectively, these results provide a first-of-a-kind characterization of the interaction between AMoD systems and the power network, and shed additional light on the economic and societal value of AMoD.},
   doi       = {10.1109/TCNS.2019.2923384},
-  owner     = {frossi2},
-  timestamp = {2020-03-20}
+  owner     = {jthluke},
+  timestamp = {2024-10-28},
+  url       = {https://arxiv.org/abs/1709.04906},
 }
 
 
@@ -2234,10 +2236,10 @@
   volume    = {43},
   address   = {Doha, Qatar},
   month     = dec,
-  abstract  = {Although vehicle electrification and utilization of on-site solar PV generation can begin reducing the greenhouse gas emissions associated with bus fleet operations, a method to intelligently coordinate bus-route assignments, bus charging, and energy storage is needed to fully decarbonize fleet operations while simultaneously minimizing electricity costs. This paper proposes a 24/7 Carbon-Free Electrified Fleet digital twin framework for modeling, controlling, and analyzing an electric bus fleet, co-located solar PV arrays, and a battery energy storage system. The framework consists of forecasting modules for marginal grid emissions factors, solar generation, and bus energy consumption that are input to the optimization module, which determines bus and battery operations at minimal electricity and emissions costs. We present a digital platform based on this framework, and for a case study of Stanford University's Marguerite Shuttle, the platform reduced peak charging demand by 99%, electric utility bill by $2778, and associated carbon emissions by 100% for one week of simulated operations for 38 buses. When accounting for operational uncertainty, the platform still reduced the utility bill by $784 and emissions by 63%.},
+  abstract  = {Although vehicle electrification and utilization of on-site solar PV generation can begin reducing the greenhouse gas emissions associated with bus fleet operations, a method to intelligently coordinate bus-route assignments, bus charging, and energy storage is needed to fully decarbonize fleet operations while simultaneously minimizing electricity costs. This paper proposes a 24/7 Carbon-Free Electrified Fleet digital twin framework for modeling, controlling, and analyzing an electric bus fleet, co-located solar PV arrays, and a battery energy storage system. The framework consists of forecasting modules for marginal grid emissions factors, solar generation, and bus energy consumption that are input to the optimization module, which determines bus and battery operations at minimal electricity and emissions costs. We present a digital platform based on this framework, and for a case study of Stanford University's Marguerite Shuttle, the platform reduced peak charging demand by 99\%, electric utility bill by \$2778, and associated carbon emissions by 100\% for one week of simulated operations for 38 buses. When accounting for operational uncertainty, the platform still reduced the utility bill by \$784 and emissions by 63\%.},
   doi       = {10.46855/energy-proceedings-11033},
   owner     = {jthluke},
-  timestamp = {2024-08-12},
+  timestamp = {2024-10-28},
   url       = {https://www.energy-proceedings.org/towards-a-24-7-carbon-free-electric-fleet%3A-a-digital-twin-framework/},
 }
 
@@ -2495,30 +2497,30 @@
   url         = {/wp-content/papercite-data/pdf/Pavone.ea.NIAC.Final.Report.2022.pdf}
 }
 
-@inproceedings{PavoneCastilloEtAl2013,
+@InProceedings{PavoneCastilloEtAl2013,
   author    = {Pavone, M. and Castillo, J. and Nesnas, I. and Hoffman, J. A. and Strange, N.},
   title     = {Spacecraft/Rover Hybrids for the Exploration of Small {Solar} {System} Bodies},
   booktitle = proc_IEEE_AC,
   year      = {2013},
-  abstract  = {In this paper we present a mission architecture for the systematic and affordable in-situ exploration of small Solar System bodies (such as asteroids, comets, and Martian moons). At a general level, a mother spacecraft would deploy on the surface of a small body one, or several, spacecraft/rover hybrids, which are small (<= 5 kg, ~15 Watts), multi-faceted robots enclosing three mutually orthogonal flywheels and surrounded by external spikes (in particular, there is no external propulsion). By accelerating/decelerating the flywheels and by exploiting the low gravity environment, the hybrids would be capable of performing both long excursions (by hopping) and short traverses to specific locations (through a sequence of controlled "tumbles"). Their control would rely on synergistic operations with the mother spacecraft (where most of hybrids perception and localization functionalities would be hosted), which would make the platforms minimalistic and in turn the entire mission architecture affordable. Specifically, in the first part of the paper we present preliminary models and laboratory experiments for the hybrids, first-order estimates for critical subsystems, and a preliminary study for synergistic mission operations. In the second part, we tailor our mission architecture to the exploration of Mars' moon Phobos. The mission aims at exploring Phobos' Stickney crater, whose spectral similarities with C-type asteroids and variety of terrain properties make it a particularly interesting exploration target to address both high-priority science for the Martian system and strategic knowledge gaps for the future human exploration of Mars.},
   address   = {Big Sky, Montana},
-  doi       = {10.1109/AERO.2013.6497160},
   month     = mar,
+  abstract  = {In this paper we present a mission architecture for the systematic and affordable in-situ exploration of small Solar System bodies (such as asteroids, comets, and Martian moons). At a general level, a mother spacecraft would deploy on the surface of a small body one, or several, spacecraft/rover hybrids, which are small (<= 5 kg, \~15 Watts), multi-faceted robots enclosing three mutually orthogonal flywheels and surrounded by external spikes (in particular, there is no external propulsion). By accelerating/decelerating the flywheels and by exploiting the low gravity environment, the hybrids would be capable of performing both long excursions (by hopping) and short traverses to specific locations (through a sequence of controlled "tumbles"). Their control would rely on synergistic operations with the mother spacecraft (where most of hybrids perception and localization functionalities would be hosted), which would make the platforms minimalistic and in turn the entire mission architecture affordable. Specifically, in the first part of the paper we present preliminary models and laboratory experiments for the hybrids, first-order estimates for critical subsystems, and a preliminary study for synergistic mission operations. In the second part, we tailor our mission architecture to the exploration of Mars' moon Phobos. The mission aims at exploring Phobos' Stickney crater, whose spectral similarities with C-type asteroids and variety of terrain properties make it a particularly interesting exploration target to address both high-priority science for the Martian system and strategic knowledge gaps for the future human exploration of Mars.},
+  doi       = {10.1109/AERO.2013.6497160},
   owner     = {bylard},
   timestamp = {2017-01-28},
-  url       = {/wp-content/papercite-data/pdf/Pavone.Castillo.ea.Aero13.pdf}
+  url       = {/wp-content/papercite-data/pdf/Pavone.Castillo.ea.Aero13.pdf},
 }
 
-@techreport{PavoneCastilloEtAl2012,
+@TechReport{PavoneCastilloEtAl2012,
   author      = {Pavone, M. and Castillo, J. and Hoffman, J. A. and Nesnas, I.},
   title       = {Spacecraft/Rover Hybrids for the Exploration of Small {Solar} {System} Bodies},
   institution = ios_NASA_NIAC,
   year        = {2012},
   note        = {Final report},
-  abstract    = {This study investigated a novel mission architecture for the systematic and affordable in-situ exploration of small Solar System bodies. Specifically, a mother spacecraft would deploy over the surface of a small body one, or several, spacecraft/rover hybrids, which are small, multi-faceted enclosed robots with internal actuation and external spikes. They would be capable of 1) long excursions (by hopping), 2) short traverses to specific locations (through a sequence of controlled tumbles), and 3) high-altitude, attitude-controlled ballistic flight (akin to spacecraft flight). Their control would rely on synergistic operations with the mother spacecraft (where most of hybrids' perception and localization functionalities would be hosted), which would make the platforms minimalistic and, in turn, the entire mission architecture affordable. The Phase I study was aimed at providing an initial feasibility assessment of the proposed architecture and had, in particular, four main objectives: 1) to characterize the expected science return of spatially-extended in-situ exploration at small Solar System bodies, 2) to demonstrate that a hybrid can achieve both large surface coverage via hopping and fine mobility via tumbling in low gravity environments (specifically, for a boulder-free environment with a gravity level on the order of mm/s^2, the requirement was 20\%-30\% motion accuracy with an average speed on the order of cm/s); 3) to provide first-order estimates for the critical subsystems, and 4) to study mission operations and a mission scenario to Phobos.},
+  abstract    = {This study investigated a novel mission architecture for the systematic and affordable in-situ exploration of small Solar System bodies. Specifically, a mother spacecraft would deploy over the surface of a small body one, or several, spacecraft/rover hybrids, which are small, multi-faceted enclosed robots with internal actuation and external spikes. They would be capable of 1) long excursions (by hopping), 2) short traverses to specific locations (through a sequence of controlled tumbles), and 3) high-altitude, attitude-controlled ballistic flight (akin to spacecraft flight). Their control would rely on synergistic operations with the mother spacecraft (where most of hybrids' perception and localization functionalities would be hosted), which would make the platforms minimalistic and, in turn, the entire mission architecture affordable. The Phase I study was aimed at providing an initial feasibility assessment of the proposed architecture and had, in particular, four main objectives: 1) to characterize the expected science return of spatially-extended in-situ exploration at small Solar System bodies, 2) to demonstrate that a hybrid can achieve both large surface coverage via hopping and fine mobility via tumbling in low gravity environments (specifically, for a boulder-free environment with a gravity level on the order of mm/s\^2, the requirement was 20\%-30\% motion accuracy with an average speed on the order of cm/s); 3) to provide first-order estimates for the critical subsystems, and 4) to study mission operations and a mission scenario to Phobos.},
   owner       = {bylard},
   timestamp   = {2017-01-28},
-  url         = {/wp-content/papercite-data/pdf/Pavone.ea.NIAC.Final.Report.2012.pdf}
+  url         = {/wp-content/papercite-data/pdf/Pavone.ea.NIAC.Final.Report.2012.pdf},
 }
 
 @inproceedings{PavoneBisnikEtAl2007,
@@ -2708,10 +2710,10 @@
   year      = {2023},
   address   = {London, United Kingdom},
   month     = may,
-  abstract  = {ReachBot is a robot that uses extendable and retractable booms as limbs to move around unpredictable environments such as martian caves. Each boom is capped by a microspine gripper designed for grasping rocky surfaces. Motion planning for ReachBot must be versatile to accommo-date variable terrain features and robust to mitigate risks from the stochastic nature of grasping with spines. In this paper, we introduce a graph traversal algorithm to select a discrete sequence of grasps based on available terrain features suitable for grasping. This discrete plan is complemented by a decoupled motion planner that considers the alternating phases of body movement and end-effector movement, using a combination of sampling-based planning and sequential convex programming to optimize individual phases. We use our motion planner to plan a trajectory across a simulated 2D cave environment with at least 90% probability of success and demonstrate improved robustness over a baseline trajectory. Finally, we use a simplified prototype to verify a body movement trajectory generated by our motion planning algorithm.},
+  abstract  = {ReachBot is a robot that uses extendable and retractable booms as limbs to move around unpredictable environments such as martian caves. Each boom is capped by a microspine gripper designed for grasping rocky surfaces. Motion planning for ReachBot must be versatile to accommo-date variable terrain features and robust to mitigate risks from the stochastic nature of grasping with spines. In this paper, we introduce a graph traversal algorithm to select a discrete sequence of grasps based on available terrain features suitable for grasping. This discrete plan is complemented by a decoupled motion planner that considers the alternating phases of body movement and end-effector movement, using a combination of sampling-based planning and sequential convex programming to optimize individual phases. We use our motion planner to plan a trajectory across a simulated 2D cave environment with at least 90\% probability of success and demonstrate improved robustness over a baseline trajectory. Finally, we use a simplified prototype to verify a body movement trajectory generated by our motion planning algorithm.},
   doi       = {10.1109/ICRA48891.2023.10160218},
   owner     = {jthluke},
-  timestamp = {2024-09-19},
+  timestamp = {2024-10-28},
   url       = {https://arxiv.org/abs/2209.10687},
 }
 
@@ -2951,7 +2953,7 @@
   year      = {2021},
   address   = {Indianapolis, IN},
   month     = sep,
-  abstract  = {Charging infrastructure is the coupling link between power and transportation networks, thus determining charging station siting is necessary for planning of power and transportation systems. While previous works have either optimized for charging station siting given historic travel behavior, or optimized fleet routing and charging given an assumed placement of the stations, this paper introduces a linear program that optimizes for station siting and macroscopic fleet operations in a joint fashion. Given an electricity retail rate and a set of travel demand requests, the optimization minimizes total cost for an autonomous EV fleet comprising of travel costs, station procurement costs, fleet procurement costs, and electricity costs, including demand charges. Specifically, the optimization returns the number of charging plugs for each charging rate (e.g., Level 2, DC fast charging) at each candidate location, as well as the optimal routing and charging of the fleet. From a case-study of an electric vehicle fleet operating in San Francisco, our results show that, albeit with range limitations, small EVs with low procurement costs and high energy efficiencies are the most cost-effective in terms of total ownership costs. Furthermore, the optimal siting of charging stations is more spatially distributed than the current siting of stations, consisting mainly of high-power Level 2 AC stations (16.8 kW) with a small share of DC fast charging stations and no standard 7.7kW Level 2 stations. Optimal siting reduces the total costs, empty vehicle travel, and peak charging load by up to 10%.},
+  abstract  = {Charging infrastructure is the coupling link between power and transportation networks, thus determining charging station siting is necessary for planning of power and transportation systems. While previous works have either optimized for charging station siting given historic travel behavior, or optimized fleet routing and charging given an assumed placement of the stations, this paper introduces a linear program that optimizes for station siting and macroscopic fleet operations in a joint fashion. Given an electricity retail rate and a set of travel demand requests, the optimization minimizes total cost for an autonomous EV fleet comprising of travel costs, station procurement costs, fleet procurement costs, and electricity costs, including demand charges. Specifically, the optimization returns the number of charging plugs for each charging rate (e.g., Level 2, DC fast charging) at each candidate location, as well as the optimal routing and charging of the fleet. From a case-study of an electric vehicle fleet operating in San Francisco, our results show that, albeit with range limitations, small EVs with low procurement costs and high energy efficiencies are the most cost-effective in terms of total ownership costs. Furthermore, the optimal siting of charging stations is more spatially distributed than the current siting of stations, consisting mainly of high-power Level 2 AC stations (16.8 kW) with a small share of DC fast charging stations and no standard 7.7kW Level 2 stations. Optimal siting reduces the total costs, empty vehicle travel, and peak charging load by up to 10\%.},
   doi       = {10.1109/ITSC48978.2021.9565089},
   owner     = {jthluke},
   timestamp = {2023-11-15},
@@ -2962,13 +2964,13 @@
   author    = {Luke, J. and Ribeiro, M. and Martin, S. and Balogun, E. and Cezar, G. and Pavone, M. and Rajagopal, R.},
   title     = {Optimal Coordination of Electric Buses and Battery Storage for Achieving a 24/7 Carbon-Free Electrified Fleet},
   journal   = jrn_Elsevier_APEN,
-  year      = {2024},
-  note      = {In press},
-  abstract  = {Electrifying a commercial fleet, while concurrently adopting distributed energy resources, such as solar panels and battery storage, can significantly reduce the carbon intensity of its operation. However, coordinating the fleet operations with distributed resources requires an intelligent system to determine their joint dispatch. In this paper, we propose a 24/7 Carbon-Free Electrified Fleet digital twin framework for the coordination of an electric bus fleet, co-located photovoltaic solar arrays, and a battery energy storage system. The framework includes forecasting and surrogate modules for marginal grid emissions factors, solar generation, and bus energy consumption. These inputs are then passed into the optimization module to minimize emissions and the electricity bill. We evaluate the digital platform in a case study for Stanford University's Marguerite Shuttle fleet assuming (1) non-controllable loads are coupled behind-the-meter, and (2) a stand-alone depot. Additionally, we perform a techno-economic analysis, quantifying the value of a bus depot battery storage system. Fleet operators may leverage our flexible framework to determine electric bus and battery storage dispatch, reduce electricity costs, and achieve 24/7 carbon-free charging.},
-  doi       = {10.2139/ssrn.4815427},
-  keywords  = {press},
+  year      = {2025},
+  volume    = {377},
+  number    = {124506},
+  abstract  = {Electrifying a commercial fleet while concurrently adopting distributed energy resources can significantly reduce the cost and carbon footprint of its operation. However, coordinating fleet operations with distributed resources requires an intelligent system to determine joint dispatch. In this paper, we propose a 24/7 Carbon-Free Electrified Fleet digital twin framework for the coordination of an electric bus fleet, co-located photovoltaic solar arrays, and a battery energy storage system. The framework optimizes electric bus and battery storage operations to minimize costs and emissions with the consideration of on-site solar generation, hourly marginal grid emissions factors, and predictions of bus energy consumption through a surrogate model. We evaluate the framework in a case study of Stanford University's Marguerite Shuttle electric bus fleet for both a campus depot, whereby non-controllable loads are coupled behind-the-meter, and a stand-alone depot. In a techno-economic analysis, we find that joint optimization of a campus depot's battery storage and bus operations saves at least \$1.79M USD in electricity costs over a 10-year horizon while also reducing 98\% of carbon emissions associated with the depot. For a stand-alone depot, sensitivity analyses show that 100\% elimination of depot emissions is achievable without any trade-off with bill savings, whereas for depots with reduced on-site solar capacity, using an emissions-aware optimization model can reduce the depot's carbon footprint by an additional 17\% at a carbon abatement cost of \$66 USD/tCO compared to a model that only minimizes electricity costs. Furthermore, optimized bus and battery operations have even greater impact in reducing electricity costs under new net billing tariff policies ("net energy metering (NEM) 3.0") compared to previous NEM 2.0 policies. As adoption of electric buses continues to grow, fleet operators may leverage our flexible framework to ensure smart, low-cost, and low-emissions fleet operations.},
+  doi       = {10.1016/j.apenergy.2024.124506},
   owner     = {jthluke},
-  timestamp = {2024-09-12},
+  timestamp = {2024-10-28},
   url       = {https://dx.doi.org/10.2139/ssrn.4815427},
 }
 
@@ -3065,20 +3067,20 @@
   timestamp = {2021-12-06}
 }
 
-@article{LinAgiaEtAl2023,
-  author       = {Lin, K. and Agia, C. and Migimatsu, T. and Pavone, M. and Bohg, J.},
-  title        = {Text2Motion: From Natural Language Instructions to Feasible Plans},
-  journal      = jrn_Spr_AR,
-  volume       = {47},
-  number       = {8},
-  pages        = {1345–-1365},
-  year         = {2023},
-  month        = nov,
-  abstract     = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82%, while prior state-of-the-art language-based planning methods only achieve 13%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
-  doi          = {10.1007/s10514-023-10131-7},
-  url          = {https://doi.org/10.1007/s10514-023-10131-7},
-  owner        = {agia},
-  timestamp    = {2024-02-29}
+@Article{LinAgiaEtAl2023,
+  author    = {Lin, K. and Agia, C. and Migimatsu, T. and Pavone, M. and Bohg, J.},
+  title     = {Text2Motion: From Natural Language Instructions to Feasible Plans},
+  journal   = jrn_Spr_AR,
+  year      = {2023},
+  volume    = {47},
+  number    = {8},
+  pages     = {1345–-1365},
+  month     = nov,
+  abstract  = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82\%, while prior state-of-the-art language-based planning methods only achieve 13\%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
+  doi       = {10.1007/s10514-023-10131-7},
+  owner     = {agia},
+  timestamp = {2024-02-29},
+  url       = {https://doi.org/10.1007/s10514-023-10131-7},
 }
 
 @article{LewEtAl2022,
@@ -3312,16 +3314,30 @@
   timestamp = {2021-12-06}
 }
 
-@inproceedings{LanzettiSchifferEtAl2021,
+@InProceedings{LanzettiSchifferEtAl2021,
   author    = {Lanzetti, N. and Schiffer, M. and Ostrovsky, M. and Pavone, M.},
-  booktitle = {Proceedings of the TSL Second Triennial Conference},
   title     = {On the Interplay Between Self-Driving Cars and Public Transportation: A Game-theoretic Perspective},
+  booktitle = {Proceedings of the TSL Second Triennial Conference},
   year      = {2021},
-  abstract  = {Cities worldwide struggle with overloaded transportation systems and their externalities, such as traffic congestion and emissions. The emerging autonomous transportation technology has a potential to alleviate these issues. At the same time, the decisions of profit-maximizing operators running large autonomous fleets could have a negative impact on other stakeholders, e.g., by disproportionately cannibalizing public transport, and therefore could make the transportation system even less efficient and sustainable. A careful analysis of these tradeoffs requires modeling the main modes of transportation, including public transport, within a unified framework. In this paper, we propose such a framework, which allows us to study the interplay among mobility service providers, public transport authorities, and customers. In particular, we analyze the effect of autonomous ride-hailing services on the demand for public transportation. Our framework combines a graph-theoretic network model for the transportation system with a game-theoretic market model in which mobility service providers are profit-maximizers, while customers select individually-optimal transportation options. We show how to reformulate the decision problem of each mobility service provider as a tractable second-order conic program. This allows us to compute equilibria via best response. Moreover, we show that the degenerate monopolistic case of a single mobility service provider can efficiently be solved as a quadratic program. We apply our framework to data for the city of Berlin, Germany, and present sensitivity analyses to study parameters that mobility service providers or municipalities can influence to steer the overall system. We show that depending on market conditions and policy restrictions, autonomous ride-hailing systems may complement or cannibalize a public transportation system, serving between 7 % and 80 % of all customers. We discuss the main factors behind differences in these outcomes as well as strategic design options available to policymakers. Among others, we show that the monopolistic and the competitive cases yield similar modal shares, but differ in the profit outcome of each mobility service provider.},
+  abstract  = {Cities worldwide struggle with overloaded transportation systems and their externalities, such as traffic congestion and emissions. The emerging autonomous transportation technology has a potential to alleviate these issues. At the same time, the decisions of profit-maximizing operators running large autonomous fleets could have a negative impact on other stakeholders, e.g., by disproportionately cannibalizing public transport, and therefore could make the transportation system even less efficient and sustainable. A careful analysis of these tradeoffs requires modeling the main modes of transportation, including public transport, within a unified framework. In this paper, we propose such a framework, which allows us to study the interplay among mobility service providers, public transport authorities, and customers. In particular, we analyze the effect of autonomous ride-hailing services on the demand for public transportation. Our framework combines a graph-theoretic network model for the transportation system with a game-theoretic market model in which mobility service providers are profit-maximizers, while customers select individually-optimal transportation options. We show how to reformulate the decision problem of each mobility service provider as a tractable second-order conic program. This allows us to compute equilibria via best response. Moreover, we show that the degenerate monopolistic case of a single mobility service provider can efficiently be solved as a quadratic program. We apply our framework to data for the city of Berlin, Germany, and present sensitivity analyses to study parameters that mobility service providers or municipalities can influence to steer the overall system. We show that depending on market conditions and policy restrictions, autonomous ride-hailing systems may complement or cannibalize a public transportation system, serving between 7\% and 80\% of all customers. We discuss the main factors behind differences in these outcomes as well as strategic design options available to policymakers. Among others, we show that the monopolistic and the competitive cases yield similar modal shares, but differ in the profit outcome of each mobility service provider.},
   keywords  = {pub},
   owner     = {borisi},
+  timestamp = {2020-12-11},
   url       = {https://arxiv.org/abs/2109.01627},
-  timestamp = {2020-12-11}
+}
+
+@Article{LanzettiSchifferEtAl2024,
+  author    = {Lanzetti, N. and Schiffer, M. and Ostrovsky, M. and Pavone, M.},
+  title     = {On the Interplay Between Self-Driving Cars and Public Transportation},
+  journal   = jrn_IEEE_TCNS,
+  year      = {2024},
+  volume    = {11},
+  number    = {3},
+  pages     = {1478-1490},
+  abstract  = {Worldwide, cities struggle with overloaded transportation systems and their externalities. The emerging autonomous transportation technology has the potential to alleviate these issues, but the decisions of profit-maximizing operators running large autonomous fleets could negatively impact other stakeholders and the transportation system. An analysis of these tradeoffs requires modeling the modes of transportation in a unified framework. In this article, we propose such a framework, which allows us to study the interplay among mobility service providers (MSPs), public transport authorities, and customers. Our framework combines a graph-theoretic network model for the transportation system with a game-theoretic market model in which MSPs are profit maximizers while customers select individually optimal transportation options. We apply our framework to data for the city of Berlin and present sensitivity analyses to study parameters that MSPs or municipalities can strategically influence. We show that autonomous ride-hailing systems may cannibalize a public transportation system, serving between 7\% and 80\% of all customers, depending on market conditions and policy restrictions.},
+  owner     = {lpabon},
+  timestamp = {2024-09-01},
+  url       = {https://ieeexplore.ieee.org/document/10337616},
 }
 
 @inproceedings{LandryManchesterEtAl2019,
@@ -3579,17 +3595,17 @@
   timestamp = {2017-03-07}
 }
 
-@inproceedings{JansonIchterEtAl2015b,
+@InProceedings{JansonIchterEtAl2015b,
   author    = {Janson, L. and Ichter, B. and Pavone, M.},
   title     = {Deterministic Sampling-Based Motion Planning: Optimality, Complexity, and Performance},
   booktitle = proc_ISRR,
   year      = {2015},
-  abstract  = {Probabilistic sampling-based algorithms, such as the probabilistic roadmap (PRM) and the rapidly-exploring random tree (RRT) algorithms, represent one of the most successful approaches to robotic motion planning, due to their strong theoretical properties (in terms of probabilistic completeness or even asymptotic optimality) and remarkable practical performance. Such algorithms are probabilistic in that they compute a path by connecting independently and identically distributed (i.i.d.) random points in the configuration space. Their randomization aspect, however, makes several tasks challenging, including certification for safety-critical applications and use of offline computation to improve real-time execution. Hence, an important open question is whether similar (or better) theoretical guarantees and practical performance could be obtained by considering deterministic, as opposed to random sampling sequences. The objective of this paper is to provide a rigorous answer to this question. The focus is on the PRM algorithm---our results, however, generalize to other batch-processing algorithms such as FMTâˆ—. Specifically, we first show that PRM, for a certain selection of tuning parameters and deterministic low-dispersion sampling sequences, is deterministically asymptotically optimal,i.e., it returns a path whose cost converges deterministically to the optimal one as the number of points goes to infinity. Second, we characterize the convergence rate, and we find that the factor of sub-optimality can be very explicitly upper-bounded in terms of the `2-dispersion of the sampling sequence and the connection radius of PRM. Third, we show that an asymptotically optimal version of PRM exists with computational and space complexity arbitrarily close to O(n) (the theoretical lower bound), where n is the number of points in the sequence. This is in stark contrast to the O(n logn) complexity results for existing asymptotically-optimal probabilistic planners. Finally, through numerical experiments, we show that planning with deterministic low-dispersion sampling generally provides superior performance in terms of path cost and success rate},
   address   = {Sestri Levante, Italy},
   month     = sep,
-  url       = {http://arxiv.org/pdf/1505.00023.pdf},
+  abstract  = {Probabilistic sampling-based algorithms, such as the probabilistic roadmap (PRM) and the rapidly-exploring random tree (RRT) algorithms, represent one of the most successful approaches to robotic motion planning, due to their strong theoretical properties (in terms of probabilistic completeness or even asymptotic optimality) and remarkable practical performance. Such algorithms are probabilistic in that they compute a path by connecting independently and identically distributed (i.i.d.) random points in the configuration space. Their randomization aspect, however, makes several tasks challenging, including certification for safety-critical applications and use of offline computation to improve real-time execution. Hence, an important open question is whether similar (or better) theoretical guarantees and practical performance could be obtained by considering deterministic, as opposed to random sampling sequences. The objective of this paper is to provide a rigorous answer to this question. The focus is on the PRM algorithm---our results, however, generalize to other batch-processing algorithms such as FMT*. Specifically, we first show that PRM, for a certain selection of tuning parameters and deterministic low-dispersion sampling sequences, is deterministically asymptotically optimal,i.e., it returns a path whose cost converges deterministically to the optimal one as the number of points goes to infinity. Second, we characterize the convergence rate, and we find that the factor of sub-optimality can be very explicitly upper-bounded in terms of the `2-dispersion of the sampling sequence and the connection radius of PRM. Third, we show that an asymptotically optimal version of PRM exists with computational and space complexity arbitrarily close to O(n) (the theoretical lower bound), where n is the number of points in the sequence. This is in stark contrast to the O(n logn) complexity results for existing asymptotically-optimal probabilistic planners. Finally, through numerical experiments, we show that planning with deterministic low-dispersion sampling generally provides superior performance in terms of path cost and success rate},
   owner     = {bylard},
-  timestamp = {2017-01-28}
+  timestamp = {2017-01-28},
+  url       = {http://arxiv.org/pdf/1505.00023.pdf},
 }
 
 @inproceedings{JansonHuEtAl2018,
@@ -3914,43 +3930,43 @@
   timestamp = {2018-05-06}
 }
 
-@inproceedings{IglesiasRossiEtAl2018,
+@InProceedings{IglesiasRossiEtAl2018,
   author    = {Iglesias, R. and Rossi, F. and Wang, K. and Hallac, D. and Leskovec, J. and Pavone, M.},
   title     = {Data-Driven Model Predictive Control of Autonomous Mobility-on-Demand Systems},
   booktitle = proc_IEEE_ICRA,
   year      = {2018},
-  abstract  = {The goal of this paper is to present an end-to-end, data-driven framework to control Autonomous Mobility-on-Demand systems (AMoD, i.e. fleets of self-driving vehicles). We first model the AMoD system using a time-expanded network, and present a formulation that computes the optimal rebalancing strategy (i.e., preemptive repositioning) and the minimum feasible fleet size for a given travel demand. Then, we adapt this formulation to devise a Model Predictive Control (MPC) algorithm that leverages short-term demand forecasts based on historical data to compute rebalancing strategies. We test the end-to-end performance of this controller with a state-of-the-art LSTM neural network to predict customer demand and real customer data from DiDi Chuxing: we show that this approach scales very well for large systems (indeed, the computational complexity of the MPC algorithm does not depend on the number of customers and of vehicles in the system) and outperforms state-of-the-art rebalancing strategies by reducing the mean customer wait time by up to to 89.6%.},
   address   = {Brisbane, Australia},
   month     = may,
-  url       = {/wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf},
+  abstract  = {The goal of this paper is to present an end-to-end, data-driven framework to control Autonomous Mobility-on-Demand systems (AMoD, i.e. fleets of self-driving vehicles). We first model the AMoD system using a time-expanded network, and present a formulation that computes the optimal rebalancing strategy (i.e., preemptive repositioning) and the minimum feasible fleet size for a given travel demand. Then, we adapt this formulation to devise a Model Predictive Control (MPC) algorithm that leverages short-term demand forecasts based on historical data to compute rebalancing strategies. We test the end-to-end performance of this controller with a state-of-the-art LSTM neural network to predict customer demand and real customer data from DiDi Chuxing: we show that this approach scales very well for large systems (indeed, the computational complexity of the MPC algorithm does not depend on the number of customers and of vehicles in the system) and outperforms state-of-the-art rebalancing strategies by reducing the mean customer wait time by up to to 89.6\%.},
   owner     = {frossi2},
-  timestamp = {2018-01-14}
+  timestamp = {2018-01-14},
+  url       = {/wp-content/papercite-data/pdf/Iglesias.Rossi.Wang.ea.ICRA18.pdf},
 }
 
-@inproceedings{IchterSchmerlingEtAl2017b,
+@InProceedings{IchterSchmerlingEtAl2017b,
   author    = {Ichter, B. and Schmerling, E. and Pavone, M.},
   title     = {Group Marching Tree: Sampling-Based Approximately Optimal Motion Planning on {GPUs}},
   booktitle = proc_IEEE_IRC,
   year      = {2017},
-  abstract  = {This paper presents a novel approach, named the Group Marching Tree (GMT*) algorithm, to planning on GPUs at rates amenable to application within control loops, allowing planning in real-world settings via repeated computation of near-optimal plans. GMT*, like the Fast Marching Tree (FMT*) algorithm, explores the state space with a ``lazy'' dynamic programming recursion on a set of samples to grow a tree of near-optimal paths. GMT*, however, alters the approach of FMT* with approximate dynamic programming by expanding, in parallel, the group of all active samples with cost below an increasing threshold, rather than only the minimum cost sample. This group approximation enables low-level parallelism over the sample set and removes the need for sequential data structures, while the ``lazy'' collision checking limits thread divergence---all contributing to a very efficient GPU implementation. While this approach incurs some suboptimality, we prove that GMT* remains asymptotically optimal up to a constant multiplicative factor. We show solutions for complex planning problems under differential constraints can be found in ~10 ms on a desktop GPU and ~30 ms on an embedded GPU, representing a significant speed up over the state of the art, with only small losses in performance. Finally, we present a scenario demonstrating the efficacy of planning within the control loop (~100 Hz) towards operating in dynamic, uncertain settings.},
   address   = {Taichung, Taiwan},
   month     = apr,
-  url       = {/wp-content/papercite-data/pdf/Ichter.Schmerling.Pavone.ICRC17.pdf},
+  abstract  = {This paper presents a novel approach, named the Group Marching Tree (GMT*) algorithm, to planning on GPUs at rates amenable to application within control loops, allowing planning in real-world settings via repeated computation of near-optimal plans. GMT*, like the Fast Marching Tree (FMT*) algorithm, explores the state space with a ``lazy'' dynamic programming recursion on a set of samples to grow a tree of near-optimal paths. GMT*, however, alters the approach of FMT* with approximate dynamic programming by expanding, in parallel, the group of all active samples with cost below an increasing threshold, rather than only the minimum cost sample. This group approximation enables low-level parallelism over the sample set and removes the need for sequential data structures, while the ``lazy'' collision checking limits thread divergence---all contributing to a very efficient GPU implementation. While this approach incurs some suboptimality, we prove that GMT* remains asymptotically optimal up to a constant multiplicative factor. We show solutions for complex planning problems under differential constraints can be found in \~10 ms on a desktop GPU and \~30 ms on an embedded GPU, representing a significant speed up over the state of the art, with only small losses in performance. Finally, we present a scenario demonstrating the efficacy of planning within the control loop (\~100 Hz) towards operating in dynamic, uncertain settings.},
   owner     = {bylard},
-  timestamp = {2017-03-07}
+  timestamp = {2017-03-07},
+  url       = {/wp-content/papercite-data/pdf/Ichter.Schmerling.Pavone.ICRC17.pdf},
 }
 
-@inproceedings{IchterSchmerlingEtAl2017,
+@InProceedings{IchterSchmerlingEtAl2017,
   author    = {Ichter, B. and Schmerling, E. and Agha-mohammadi, A. and Pavone, M.},
   title     = {Real-Time Stochastic Kinodynamic Motion Planning via Multiobjective Search on {GPUs}},
   booktitle = proc_IEEE_ICRA,
   year      = {2017},
-  abstract  = {In this paper we present the PUMP (Parallel Uncertainty-aware Multiobjective Planning) algorithm for addressing the stochastic kinodynamic motion planning problem, whereby we seek a low-cost, dynamically-feasible motion plan subject to a constraint on collision probability (CP). As a departure from previous methods for chance-constrained motion planning, PUMP directly considers both CP and the optimization objective at equal priority when planning through the free configuration space, achieving an unprecedented combination of cost performance, certified safety, and speed. Planning is conducted through a massively parallel multiobjective search, here implemented with a particular application focus on GPU hardware. PUMP explores the configuration space while maintaining a Pareto optimal front of motion plans, considering cost and approximate collision probability. We introduce a novel particle-based CP approximation scheme, designed for efficient GPU implementation, which accounts for dependencies over the history of a trajectory execution. Upon termination of the exploration phase, PUMP performs a search over the Pareto optimal set of solution motion plans to identify the lowest cost motion plan that is certified to satisfy the CP constraint (according to an asymptotically exact estimator). We present numerical experiments for quadrotor planning wherein PUMP identifies solutions in ~100 ms, evaluating over one hundred thousand partial plans through the course of its exploration phase. The results show that this multiobjective search achieves a lower motion plan cost, for the same collision probability constraint, compared to a safety buffer-based search heuristic and repeated RRT trials.},
   address   = {Singapore},
   month     = may,
-  url       = {http://arxiv.org/pdf/1607.06886.pdf},
+  abstract  = {In this paper we present the PUMP (Parallel Uncertainty-aware Multiobjective Planning) algorithm for addressing the stochastic kinodynamic motion planning problem, whereby we seek a low-cost, dynamically-feasible motion plan subject to a constraint on collision probability (CP). As a departure from previous methods for chance-constrained motion planning, PUMP directly considers both CP and the optimization objective at equal priority when planning through the free configuration space, achieving an unprecedented combination of cost performance, certified safety, and speed. Planning is conducted through a massively parallel multiobjective search, here implemented with a particular application focus on GPU hardware. PUMP explores the configuration space while maintaining a Pareto optimal front of motion plans, considering cost and approximate collision probability. We introduce a novel particle-based CP approximation scheme, designed for efficient GPU implementation, which accounts for dependencies over the history of a trajectory execution. Upon termination of the exploration phase, PUMP performs a search over the Pareto optimal set of solution motion plans to identify the lowest cost motion plan that is certified to satisfy the CP constraint (according to an asymptotically exact estimator). We present numerical experiments for quadrotor planning wherein PUMP identifies solutions in \~100 ms, evaluating over one hundred thousand partial plans through the course of its exploration phase. The results show that this multiobjective search achieves a lower motion plan cost, for the same collision probability constraint, compared to a safety buffer-based search heuristic and repeated RRT trials.},
   owner     = {bylard},
-  timestamp = {2017-03-07}
+  timestamp = {2017-03-07},
+  url       = {http://arxiv.org/pdf/1607.06886.pdf},
 }
 
 @article{IchterPavone2019,
@@ -3968,17 +3984,17 @@
   timestamp = {2019-02-01}
 }
 
-@inproceedings{IchterLandryEtAl2017,
+@InProceedings{IchterLandryEtAl2017,
   author    = {Ichter, B. and Landry, B. and Schmerling, E. and Pavone, M.},
   title     = {Perception-Aware Motion Planning via Multiobjective Search on {GPUs}},
   booktitle = proc_ISRR,
   year      = {2017},
-  abstract  = {In this paper we approach the robust motion planning problem through the lens of perception-aware planning, whereby we seek a low-cost motion plan subject to a separate constraint on perception localization quality. To solve this problem we introduce the Multiobjective Perception-Aware Planning (MPAP) algorithm which explores the state space via a multiobjective search, considering both cost and a perception heuristic. This perception-heuristic formulation allows us to both capture the history dependence of localization drift and represent complex modern perception methods. The solution trajectory from this heuristic-based search is then certified via Monte Carlo methods to be robust. The additional computational burden of perception-aware planning is offset through massive parallelization on a GPU. Through numerical experiments the algorithm is shown to find robust solutions in about a second. Finally, we demonstrate MPAP on a quadrotor flying perception-aware and perception-agnostic plans using Google Tango for localization, finding the quadrotor safely executes the perception-aware plan every time, while crashing over 20% of the time on the perception-agnostic due to loss of localization.},
   address   = {Puerto Varas, Chile},
   month     = dec,
-  url       = {https://arxiv.org/pdf/1705.02408.pdf},
+  abstract  = {In this paper we approach the robust motion planning problem through the lens of perception-aware planning, whereby we seek a low-cost motion plan subject to a separate constraint on perception localization quality. To solve this problem we introduce the Multiobjective Perception-Aware Planning (MPAP) algorithm which explores the state space via a multiobjective search, considering both cost and a perception heuristic. This perception-heuristic formulation allows us to both capture the history dependence of localization drift and represent complex modern perception methods. The solution trajectory from this heuristic-based search is then certified via Monte Carlo methods to be robust. The additional computational burden of perception-aware planning is offset through massive parallelization on a GPU. Through numerical experiments the algorithm is shown to find robust solutions in about a second. Finally, we demonstrate MPAP on a quadrotor flying perception-aware and perception-agnostic plans using Google Tango for localization, finding the quadrotor safely executes the perception-aware plan every time, while crashing over 20\% of the time on the perception-agnostic due to loss of localization.},
   owner     = {ichter},
-  timestamp = {2018-01-16}
+  timestamp = {2018-01-16},
+  url       = {https://arxiv.org/pdf/1705.02408.pdf},
 }
 
 @inproceedings{IchterHarrisonEtAl2018,
@@ -3994,17 +4010,17 @@
   timestamp = {2018-01-16}
 }
 
-@phdthesis{Ichter2018,
+@PhdThesis{Ichter2018,
   author    = {Ichter, B.},
   title     = {Massive Parallelism and Sampling Strategies for Robust and Real-Time Robotic Motion Planning},
   school    = ios_univ_Stanford_AA,
   year      = {2018},
-  abstract  = {Motion planning is a fundamental problem in robotics, whereby one seeks to compute a low-cost trajectory from an initial state to a goal region that avoids any obstacles. Sampling-based motion planning algorithms have emerged as an effective paradigm for planning with complex, high-dimensional robotic systems. These algorithms maintain only an implicit representation of the state space, constructed by sampling the free state space and locally connecting samples (under the supervision of a collision checking module). This thesis presents approaches towards enabling real-time and robust sampling-based motion planning with improved sampling strategies and massive parallelism. In the first part of this thesis, we discuss algorithms to leverage massively parallel hardware (GPUs) to accelerate planning and to consider robustness during the planning process. We present an algorithm capable of planning at rates amenable to application within control loops, ~10 ms. This algorithm uses approximate dynamic programming to explore the state space in a massively-parallel, near-optimal manner. We further present two algorithms capable of real-time, uncertainty-aware and perception-aware motion planning that exhaustively explore the state space via a multiobjective search. This search identifies a Pareto set of promising paths (in terms of cost and robustness) and certifies their robustness via Monte Carlo methods. We demonstrate the effectiveness of these algorithm in numerical simulations and a physical experiment on a quadrotor. In the second part of this thesis, we examine sampling-strategies for probing the state space; traditionally this has been uniform, independent, and identically distributed (i.i.d.) random points. We present a methodology for biasing the sample distribution towards regions of the state space in which the solution trajectory is likely to lie. This distribution is learned via a conditional variational autoencoder, allowing a general methodology, which can be used in combination with any samplingbased planner and can effectively exploit the underlying structure of a planning problem while maintaining the theoretical guarantees of sampling-based approaches. We also analyze the use of deterministic, low-dispersion samples instead of i.i.d. random points. We show that this allows deterministic asymptotic optimality (as opposed to probabilistic), a convergence rate bound in terms of the sample dispersion, reduced computational complexity, and improved practical performance. The technical approaches in this work are applicable to general robotic systems and lay the foundations of robustness and algorithmic speed required for robotic systems operating in the world.},
   address   = {Stanford, California},
   month     = sep,
-  url       = {https://stacks.stanford.edu/file/druid:xm179nc3440/IchterSubmitPhD-augmented.pdf},
+  abstract  = {Motion planning is a fundamental problem in robotics, whereby one seeks to compute a low-cost trajectory from an initial state to a goal region that avoids any obstacles. Sampling-based motion planning algorithms have emerged as an effective paradigm for planning with complex, high-dimensional robotic systems. These algorithms maintain only an implicit representation of the state space, constructed by sampling the free state space and locally connecting samples (under the supervision of a collision checking module). This thesis presents approaches towards enabling real-time and robust sampling-based motion planning with improved sampling strategies and massive parallelism. In the first part of this thesis, we discuss algorithms to leverage massively parallel hardware (GPUs) to accelerate planning and to consider robustness during the planning process. We present an algorithm capable of planning at rates amenable to application within control loops, \~10 ms. This algorithm uses approximate dynamic programming to explore the state space in a massively-parallel, near-optimal manner. We further present two algorithms capable of real-time, uncertainty-aware and perception-aware motion planning that exhaustively explore the state space via a multiobjective search. This search identifies a Pareto set of promising paths (in terms of cost and robustness) and certifies their robustness via Monte Carlo methods. We demonstrate the effectiveness of these algorithm in numerical simulations and a physical experiment on a quadrotor. In the second part of this thesis, we examine sampling-strategies for probing the state space; traditionally this has been uniform, independent, and identically distributed (i.i.d.) random points. We present a methodology for biasing the sample distribution towards regions of the state space in which the solution trajectory is likely to lie. This distribution is learned via a conditional variational autoencoder, allowing a general methodology, which can be used in combination with any samplingbased planner and can effectively exploit the underlying structure of a planning problem while maintaining the theoretical guarantees of sampling-based approaches. We also analyze the use of deterministic, low-dispersion samples instead of i.i.d. random points. We show that this allows deterministic asymptotic optimality (as opposed to probabilistic), a convergence rate bound in terms of the sample dispersion, reduced computational complexity, and improved practical performance. The technical approaches in this work are applicable to general robotic systems and lay the foundations of robustness and algorithmic speed required for robotic systems operating in the world.},
   owner     = {bylard},
-  timestamp = {2021-12-06}
+  timestamp = {2021-12-06},
+  url       = {https://stacks.stanford.edu/file/druid:xm179nc3440/IchterSubmitPhD-augmented.pdf},
 }
 
 @phdthesis{Hockman2018b,
@@ -4324,19 +4340,19 @@
   timestamp = {2017-01-28}
 }
 
-@article{EstandiaSchifferEtAl2019,
+@Article{EstandiaSchifferEtAl2019,
   author    = {Estandia, A. and Schiffer, M. and Rossi, F. and Luke, J. and Kara, E. C. and Rajagopal, R. and Pavone, M.},
   title     = {On the Interaction between Autonomous Mobility on Demand Systems and Power Distribution Networks -- An Optimal Power Flow Approach},
   journal   = jrn_IEEE_TCNS,
+  year      = {2021},
   volume    = {8},
   number    = {3},
   pages     = {1163--1176},
-  year      = {2021},
-  abstract  = {In future transportation systems, the charging behavior of electric Autonomous Mobility on Demand (AMoD) fleets, i.e., fleets of electric self-driving cars that service on-demand trip requests, will likely challenge power distribution networks (PDNs), causing overloads or voltage drops. In this paper, we show that these challenges can be significantly attenuated if the PDNs' operational constraints and exogenous loads (e.g., from homes or businesses) are accounted for when operating an electric AMoD fleet. We focus on a system-level perspective, assuming full coordination between the AMoD and the PDN operators. From this single entity perspective, we assess potential coordination benefits. Specifically, we extend previous results on an optimization-based modeling approach for electric AMoD systems to jointly control an electric AMoD fleet and a series of PDNs, and analyze the benefit of coordination under load balancing constraints. For a case study of Orange County, CA, we show that the coordination between the electric AMoD fleet and the PDNs eliminates 99% of the overloads and 50% of the voltage drops that the electric AMoD fleet would cause in an uncoordinated setting. Our results show that coordinating electric AMoD and PDNs can help maintain the reliability of PDNs under added electric AMoD charging load, thus significantly mitigating or deferring the need for PDN capacity upgrades.},
+  abstract  = {In future transportation systems, the charging behavior of electric Autonomous Mobility on Demand (AMoD) fleets, i.e., fleets of electric self-driving cars that service on-demand trip requests, will likely challenge power distribution networks (PDNs), causing overloads or voltage drops. In this paper, we show that these challenges can be significantly attenuated if the PDNs' operational constraints and exogenous loads (e.g., from homes or businesses) are accounted for when operating an electric AMoD fleet. We focus on a system-level perspective, assuming full coordination between the AMoD and the PDN operators. From this single entity perspective, we assess potential coordination benefits. Specifically, we extend previous results on an optimization-based modeling approach for electric AMoD systems to jointly control an electric AMoD fleet and a series of PDNs, and analyze the benefit of coordination under load balancing constraints. For a case study of Orange County, CA, we show that the coordination between the electric AMoD fleet and the PDNs eliminates 99\% of the overloads and 50\% of the voltage drops that the electric AMoD fleet would cause in an uncoordinated setting. Our results show that coordinating electric AMoD and PDNs can help maintain the reliability of PDNs under added electric AMoD charging load, thus significantly mitigating or deferring the need for PDN capacity upgrades.},
   doi       = {10.1109/TCNS.2021.3059225},
-  url       = {https://arxiv.org/abs/1905.00200},
   owner     = {jthluke},
-  timestamp = {2021-02-21}
+  timestamp = {2021-02-21},
+  url       = {https://arxiv.org/abs/1905.00200},
 }
 
 @incollection{EnrightFrazzoliEtAl2013,
@@ -4608,31 +4624,31 @@
   timestamp = {2018-03-19}
 }
 
-@inproceedings{ChoudhurySoloveyETAL2020,
+@InProceedings{ChoudhurySoloveyETAL2020,
   author    = {Choudhury, S. and Solovey, K. and Kochenderfer, M. Pavone, M.},
   title     = {Efficient Large-Scale Multi-Drone Delivery Using Transit Networks},
   booktitle = proc_IEEE_ICRA,
   year      = {2020},
-  abstract  = {We consider the problem of controlling a large fleet of drones to deliver packages simultaneously across broad urban areas. To conserve their limited flight range, drones can seamlessly hop between and ride on top of public transit vehicles (e.g., buses and trams). We design a novel comprehensive algorithmic framework that strives to minimize the maximum time to complete any delivery. We address the multifaceted complexity of the problem through a two-layer approach. First, the upper layer assigns drones to package delivery sequences with a provably near-optimal polynomial-time task allocation algorithm. Then, the lower layer executes the allocation by periodically routing the fleet over the transit network while employing efficient bounded-suboptimal multi-agent pathfinding techniques tailored to our setting. We present extensive experiments supporting the efficiency of our approach on settings with up to 200 drones, 5000 packages, and large transit networks of up to 8000 stops in San Francisco and the Washington DC area. Our results show that the framework can compute solutions within a few seconds (up to 2 minutes for the largest settings) on commodity hardware, and that drones travel up to 450% of their flight range by using public transit.},
   address   = {Paris, France},
   month     = may,
-  url       = {https://ieeexplore.ieee.org/document/9197313},
+  abstract  = {We consider the problem of controlling a large fleet of drones to deliver packages simultaneously across broad urban areas. To conserve their limited flight range, drones can seamlessly hop between and ride on top of public transit vehicles (e.g., buses and trams). We design a novel comprehensive algorithmic framework that strives to minimize the maximum time to complete any delivery. We address the multifaceted complexity of the problem through a two-layer approach. First, the upper layer assigns drones to package delivery sequences with a provably near-optimal polynomial-time task allocation algorithm. Then, the lower layer executes the allocation by periodically routing the fleet over the transit network while employing efficient bounded-suboptimal multi-agent pathfinding techniques tailored to our setting. We present extensive experiments supporting the efficiency of our approach on settings with up to 200 drones, 5000 packages, and large transit networks of up to 8000 stops in San Francisco and the Washington DC area. Our results show that the framework can compute solutions within a few seconds (up to 2 minutes for the largest settings) on commodity hardware, and that drones travel up to 450\% of their flight range by using public transit.},
   owner     = {kirilsol},
-  timestamp = {2020-09-22}
+  timestamp = {2020-09-22},
+  url       = {https://ieeexplore.ieee.org/document/9197313},
 }
 
-@article{ChoudhurySoloveyETAL2020j,
+@Article{ChoudhurySoloveyETAL2020j,
   author    = {Choudhury, S. and Solovey, K. and Kochenderfer, M. Pavone, M.},
   title     = {Efficient Large-Scale Multi-Drone Delivery Using Transit Networks},
   journal   = jrn_JAIR,
+  year      = {2021},
   volume    = {70},
   pages     = {757--788},
-  year      = {2021},
-  abstract  = {We consider the problem of controlling a large fleet of drones to deliver packages simultaneously across broad urban areas. To conserve their limited flight range, drones can seamlessly hop between and ride on top of public transit vehicles (e.g., buses and trams). We design a novel comprehensive algorithmic framework that strives to minimize the maximum time to complete any delivery. We address the multifaceted complexity of the problem through a two-layer approach. First, the upper layer assigns drones to package delivery sequences with a provably near-optimal polynomial-time task allocation algorithm. Then, the lower layer executes the allocation by periodically routing the fleet over the transit network while employing efficient bounded-suboptimal multi-agent pathfinding techniques tailored to our setting. We present extensive experiments supporting the efficiency of our approach on settings with up to 200 drones, 5000 packages, and large transit networks of up to 8000 stops in San Francisco and the Washington DC area. Our results show that the framework can compute solutions within a few seconds (up to 2 minutes for the largest settings) on commodity hardware, and that drones travel up to 450% of their flight range by using public transit.},
   month     = mar,
-  url       = {https://doi.org/10.1613/jair.1.12450},
+  abstract  = {We consider the problem of controlling a large fleet of drones to deliver packages simultaneously across broad urban areas. To conserve their limited flight range, drones can seamlessly hop between and ride on top of public transit vehicles (e.g., buses and trams). We design a novel comprehensive algorithmic framework that strives to minimize the maximum time to complete any delivery. We address the multifaceted complexity of the problem through a two-layer approach. First, the upper layer assigns drones to package delivery sequences with a provably near-optimal polynomial-time task allocation algorithm. Then, the lower layer executes the allocation by periodically routing the fleet over the transit network while employing efficient bounded-suboptimal multi-agent pathfinding techniques tailored to our setting. We present extensive experiments supporting the efficiency of our approach on settings with up to 200 drones, 5000 packages, and large transit networks of up to 8000 stops in San Francisco and the Washington DC area. Our results show that the framework can compute solutions within a few seconds (up to 2 minutes for the largest settings) on commodity hardware, and that drones travel up to 450\% of their flight range by using public transit.},
   owner     = {kirilsol},
-  timestamp = {2021-03-23}
+  timestamp = {2021-03-23},
+  url       = {https://doi.org/10.1613/jair.1.12450},
 }
 
 @inproceedings{ChoudhurySoloveyEtAl2022,
@@ -4726,29 +4742,29 @@
   timestamp = {2019-02-07}
 }
 
-@inproceedings{ChinchaliPergamentEtAl2020,
+@InProceedings{ChinchaliPergamentEtAl2020,
   author    = {Chinchali, S. and Pergament, E. and Nakanoya, M. and Cidon, E. and Zhang, E. and Bharadia, D. and Pavone, M. and Katti, S.},
   title     = {Sampling Training Data for Distributed Learning between Robots and the Cloud},
   booktitle = proc_ISER,
   year      = {2020},
-  abstract  = {Today's robotic fleets are increasingly measuring high-volume video and LIDAR sensory streams, which can be mined for valuable training data, such as rare scenes of road construction sites, to steadily improve robotic perception models. However, re-training perception models on growing volumes of rich sensory data in central compute servers (or the "cloud") places an enormous time and cost burden on network transfer, cloud storage, human annotation, and cloud computing resources. Hence, we introduce HarvestNet, an intelligent sampling algorithm that resides on-board a robot and reduces system bottlenecks by only storing rare, useful events to steadily improve perception models re-trained in the cloud. HarvestNet significantly improves the accuracy of machine-learning models on our novel dataset of road construction sites, field testing of self-driving cars, and streaming face recognition, while reducing cloud storage, dataset annotation time, and cloud compute time by between 65.7-81.3%. Further, it is between 1.05-2.58x more accurate than baseline algorithms and scalably runs on embedded deep learning hardware.},
   address   = {Valetta, Malta},
   month     = {March},
+  abstract  = {Today's robotic fleets are increasingly measuring high-volume video and LIDAR sensory streams, which can be mined for valuable training data, such as rare scenes of road construction sites, to steadily improve robotic perception models. However, re-training perception models on growing volumes of rich sensory data in central compute servers (or the "cloud") places an enormous time and cost burden on network transfer, cloud storage, human annotation, and cloud computing resources. Hence, we introduce HarvestNet, an intelligent sampling algorithm that resides on-board a robot and reduces system bottlenecks by only storing rare, useful events to steadily improve perception models re-trained in the cloud. HarvestNet significantly improves the accuracy of machine-learning models on our novel dataset of road construction sites, field testing of self-driving cars, and streaming face recognition, while reducing cloud storage, dataset annotation time, and cloud compute time by between 65.7-81.3\%. Further, it is between 1.05-2.58x more accurate than baseline algorithms and scalably runs on embedded deep learning hardware.},
   owner     = {csandeep},
-  timestamp = {2020-11-09}
+  timestamp = {2020-11-09},
 }
 
-@inproceedings{ChinchaliHuEtAl2018,
+@InProceedings{ChinchaliHuEtAl2018,
   author    = {Chinchali, S. and Hu, P. and Chu, T. and Sharma, M. and Bansal, M. and Misra, R. and Pavone, M. and Katti, S,},
   title     = {Cellular Network Traffic Scheduling with Deep Reinforcement Learning},
   booktitle = proc_AAAI_AAAI,
   year      = {2018},
-  abstract  = {Modern mobile networks are facing unprecedented growth in demand due to a new class of traffic from Internet of Things (IoT) devices such as smart wearables and autonomous cars. Future networks must schedule delay-tolerant software updates, data backup, and other transfers from IoT devices while maintaining strict service guarantees for conventional real-time applications such as voice-calling and video. This problem is extremely challenging because conventional traffic is highly dynamic across space and time, so its performance is significantly impacted if all IoT traffic is scheduled immediately when it originates. In this paper, we present a reinforcement learning (RL) based scheduler that can dynamically adapt to traffic variation, and to various reward functions set by network operators, to optimally schedule IoT traffic. Using 4 weeks of real network data from downtown Melbourne, Australia spanning diverse traffic patterns, we demonstrate that our RL scheduler can enable mobile networks to carry 14.7% more data with minimal impact on existing traffic, and outperforms heuristic schedulers by more than 2x. Our work is a valuable step towards designing autonomous, "self- driving" networks that learn to manage themselves from past data.},
   address   = {New Orleans, Louisiana},
   month     = feb,
-  url       = {/wp-content/papercite-data/pdf/Chinchali.ea.AAAI18.pdf},
+  abstract  = {Modern mobile networks are facing unprecedented growth in demand due to a new class of traffic from Internet of Things (IoT) devices such as smart wearables and autonomous cars. Future networks must schedule delay-tolerant software updates, data backup, and other transfers from IoT devices while maintaining strict service guarantees for conventional real-time applications such as voice-calling and video. This problem is extremely challenging because conventional traffic is highly dynamic across space and time, so its performance is significantly impacted if all IoT traffic is scheduled immediately when it originates. In this paper, we present a reinforcement learning (RL) based scheduler that can dynamically adapt to traffic variation, and to various reward functions set by network operators, to optimally schedule IoT traffic. Using 4 weeks of real network data from downtown Melbourne, Australia spanning diverse traffic patterns, we demonstrate that our RL scheduler can enable mobile networks to carry 14.7\% more data with minimal impact on existing traffic, and outperforms heuristic schedulers by more than 2x. Our work is a valuable step towards designing autonomous, "self- driving" networks that learn to manage themselves from past data.},
   owner     = {frossi2},
-  timestamp = {2018-04-10}
+  timestamp = {2018-04-10},
+  url       = {/wp-content/papercite-data/pdf/Chinchali.ea.AAAI18.pdf},
 }
 
 @inproceedings{ChengPavoneEtAl2021,
@@ -4831,16 +4847,16 @@
   url       = {https://arxiv.org/abs/2101.12086}
 }
 
-@article{CelestiniGammelliEtAl2024,
-  author       = {Celestini, D. and Gammelli, D. and Guffanti, T. and D'Amico, S. and Capelli, E. and Pavone, M.},
-  title        = {Transformer-based Model Predictive Control: Trajectory Optimization via Sequence Modeling},
-  journal      = jrn_IEEE_RAL,
-  year         = {2024},
-  abstract     = {Model predictive control (MPC) has established itself as the primary methodology for constrained control, enabling general-purpose robot autonomy in diverse real-world scenarios. However, for most problems of interest, MPC relies on the recursive solution of highly non-convex trajectory optimization problems, leading to high computational complexity and strong dependency on initialization. In this work, we present a unified framework to combine the main strengths of optimization-based and learning-based methods for MPC. Our approach entails embedding high-capacity, transformer-based neural network models within the optimization process for trajectory generation, whereby the transformer provides a near-optimal initial guess, or target plan, to a non-convex optimization problem. Our experiments, performed in simulation and the real world onboard a free flyer platform, demonstrate the capabilities of our framework to improve MPC convergence and runtime. Compared to purely optimization-based approaches, results show that our approach can improve trajectory generation performance by up to 75%, reduce the number of solver iterations by up to 45%, and improve overall MPC runtime by 7x without loss in performance.},
-  keywords     = {pub},
-  owner        = {gammelli},
-  timestamp    = {2024-08-14},
-  url          = {https://ieeexplore.ieee.org/document/10685132}
+@Article{CelestiniGammelliEtAl2024,
+  author    = {Celestini, D. and Gammelli, D. and Guffanti, T. and D'Amico, S. and Capelli, E. and Pavone, M.},
+  title     = {Transformer-based Model Predictive Control: Trajectory Optimization via Sequence Modeling},
+  journal   = jrn_IEEE_RAL,
+  year      = {2024},
+  abstract  = {Model predictive control (MPC) has established itself as the primary methodology for constrained control, enabling general-purpose robot autonomy in diverse real-world scenarios. However, for most problems of interest, MPC relies on the recursive solution of highly non-convex trajectory optimization problems, leading to high computational complexity and strong dependency on initialization. In this work, we present a unified framework to combine the main strengths of optimization-based and learning-based methods for MPC. Our approach entails embedding high-capacity, transformer-based neural network models within the optimization process for trajectory generation, whereby the transformer provides a near-optimal initial guess, or target plan, to a non-convex optimization problem. Our experiments, performed in simulation and the real world onboard a free flyer platform, demonstrate the capabilities of our framework to improve MPC convergence and runtime. Compared to purely optimization-based approaches, results show that our approach can improve trajectory generation performance by up to 75\%, reduce the number of solver iterations by up to 45\%, and improve overall MPC runtime by 7x without loss in performance.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2024-08-14},
+  url       = {https://ieeexplore.ieee.org/document/10685132},
 }
 
 @inproceedings{CauligiCulbertsonEtAl2020,
@@ -4952,17 +4968,17 @@
   timestamp = {2017-03-07}
 }
 
-@inproceedings{BylardBonalliEtAl2021,
+@InProceedings{BylardBonalliEtAl2021,
   author    = {Bylard, A. and Bonalli, R. and Pavone, M.},
   title     = {Composable Geometric Motion Policies using Multi-Task Pullback Bundle Dynamical Systems},
   booktitle = proc_IEEE_ICRA,
   year      = {2021},
-  abstract  = {Despite decades of work in fast reactive planning and control, challenges remain in developing reactive motion policies on non-Euclidean manifolds and enforcing constraints while avoiding undesirable potential function local minima. This work presents a principled method for designing and fusing desired robot task behaviors into a stable robot motion policy, leveraging the geometric structure of non-Euclidean manifolds, which are prevalent in robot configuration and task spaces. Our Pullback Bundle Dynamical Systems (PBDS) framework drives desired task behaviors and prioritizes tasks using separate position-dependent and position/velocity-dependent Riemannian metrics, respectively, thus simplifying individual task design and modular composition of tasks. For enforcing constraints, we provide a class of metric-based tasks, eliminating local minima by imposing non-conflicting potential functions only for goal region attraction. We also provide a geometric optimization problem for combining tasks inspired by Riemannian Motion Policies (RMPs) that reduces to a simple least-squares problem, and we show that our approach is geometrically well-defined. We demonstrate the PBDS framework on the sphere S2 and at 300-500 Hz on a manipulator arm, and we provide task design guidance and an open-source Julia library implementation. Overall, this work presents a fast, easy-to-use framework for generating motion policies without unwanted potential function local minima on general manifolds.},
   address   = {Xi'an, China},
-  month     = {#may#},
+  month     = may,
+  abstract  = {Despite decades of work in fast reactive planning and control, challenges remain in developing reactive motion policies on non-Euclidean manifolds and enforcing constraints while avoiding undesirable potential function local minima. This work presents a principled method for designing and fusing desired robot task behaviors into a stable robot motion policy, leveraging the geometric structure of non-Euclidean manifolds, which are prevalent in robot configuration and task spaces. Our Pullback Bundle Dynamical Systems (PBDS) framework drives desired task behaviors and prioritizes tasks using separate position-dependent and position/velocity-dependent Riemannian metrics, respectively, thus simplifying individual task design and modular composition of tasks. For enforcing constraints, we provide a class of metric-based tasks, eliminating local minima by imposing non-conflicting potential functions only for goal region attraction. We also provide a geometric optimization problem for combining tasks inspired by Riemannian Motion Policies (RMPs) that reduces to a simple least-squares problem, and we show that our approach is geometrically well-defined. We demonstrate the PBDS framework on the sphere S2 and at 300-500 Hz on a manipulator arm, and we provide task design guidance and an open-source Julia library implementation. Overall, this work presents a fast, easy-to-use framework for generating motion policies without unwanted potential function local minima on general manifolds.},
+  owner     = {jthluke},
+  timestamp = {2024-10-28},
   url       = {https://arxiv.org/abs/2101.01297},
-  owner     = {bylard},
-  timestamp = {2021-03-23}
 }
 
 @phdthesis{Bylard2021,
@@ -5151,17 +5167,17 @@ Conclusion. Game engines hold promising potential for the design and implementat
   timestamp = {2019-05-01}
 }
 
-@inproceedings{BoewingSchifferEtAl2020,
+@InProceedings{BoewingSchifferEtAl2020,
   author    = {Boewing, F. and Schiffer, M. and Salazar, M. and Pavone, M.},
   title     = {A Vehicle Coordination and Charge Scheduling Algorithm for Electric Autonomous Mobility-on-Demand Systems},
   booktitle = proc_IEEE_ACC,
   year      = {2020},
-  abstract  = {This paper presents an algorithmic framework to optimize the operation of an Autonomous Mobility-on-Demand system whereby a centrally controlled fleet of electric self-driving vehicles provides on-demand mobility. In particular, we first present a mixed-integer linear program that captures the joint vehicle coordination and charge scheduling problem, accounting for the battery level of the single vehicles and the energy availability in the power grid. Second, we devise a heuristic algorithm to compute near-optimal solutions in polynomial time. Finally, we apply our algorithm to realistic case studies for Newport Beach, CA. Our results validate the near optimality of our method with respect to the global optimum, whilst suggesting that through vehicle-to-grid operation we can enable a 100% penetration of renewable energy sources and still provide a high-quality mobility service.},
   address   = {Denver, CO, United States},
   month     = jun,
-  url       = {/wp-content/papercite-data/pdf/Boewing.ea.ACC20.pdf},
+  abstract  = {This paper presents an algorithmic framework to optimize the operation of an Autonomous Mobility-on-Demand system whereby a centrally controlled fleet of electric self-driving vehicles provides on-demand mobility. In particular, we first present a mixed-integer linear program that captures the joint vehicle coordination and charge scheduling problem, accounting for the battery level of the single vehicles and the energy availability in the power grid. Second, we devise a heuristic algorithm to compute near-optimal solutions in polynomial time. Finally, we apply our algorithm to realistic case studies for Newport Beach, CA. Our results validate the near optimality of our method with respect to the global optimum, whilst suggesting that through vehicle-to-grid operation we can enable a 100\% penetration of renewable energy sources and still provide a high-quality mobility service.},
   owner     = {samauro},
-  timestamp = {2020-03-19}
+  timestamp = {2020-03-19},
+  url       = {/wp-content/papercite-data/pdf/Boewing.ea.ACC20.pdf},
 }
 
 @inproceedings{BigazziEtAl2024,
@@ -5197,7 +5213,7 @@ Conclusion. Game engines hold promising potential for the design and implementat
   year      = {2023},
   address   = {Big Sky, Montana},
   month     = mar,
-  abstract  = {Learning-enabling components are increasingly popular in many aerospace applications, including satellite pose estimation. However, as input distributions evolve over a mission lifetime, it becomes challenging to maintain performance of learned models. In this work, we present an open-source benchmark of a satellite pose estimation model trained on images of a satellite in space and deployed in novel input scenarios (e.g., different backgrounds or misbehaving pixels). We propose a framework to incrementally retrain a model by selecting a subset of test inputs to label, which allows the model to adapt to changing input distributions. Algorithms within this framework are evaluated based on (1) model performance throughout mission lifetime and (2) cumulative costs associated with labeling and model retraining. We also propose a novel algorithm to select a diverse subset of inputs for labeling, by characterizing the information gain from an input using Bayesian uncertainty quantification and choosing a subset that maximizes collective information gain using concepts from batch active learning. We show that our algorithm outperforms others on the benchmark, e.g., achieves comparable performance to an algorithm that labels 100% of inputs, while only labeling 50% of inputs, resulting in low costs and high performance over the mission lifetime.},
+  abstract  = {Learning-enabling components are increasingly popular in many aerospace applications, including satellite pose estimation. However, as input distributions evolve over a mission lifetime, it becomes challenging to maintain performance of learned models. In this work, we present an open-source benchmark of a satellite pose estimation model trained on images of a satellite in space and deployed in novel input scenarios (e.g., different backgrounds or misbehaving pixels). We propose a framework to incrementally retrain a model by selecting a subset of test inputs to label, which allows the model to adapt to changing input distributions. Algorithms within this framework are evaluated based on (1) model performance throughout mission lifetime and (2) cumulative costs associated with labeling and model retraining. We also propose a novel algorithm to select a diverse subset of inputs for labeling, by characterizing the information gain from an input using Bayesian uncertainty quantification and choosing a subset that maximizes collective information gain using concepts from batch active learning. We show that our algorithm outperforms others on the benchmark, e.g., achieves comparable performance to an algorithm that labels 100\% of inputs, while only labeling 50\% of inputs, resulting in low costs and high performance over the mission lifetime.},
   doi       = {10.1109/AERO55745.2023.10115970},
   owner     = {jthluke},
   timestamp = {2024-09-20},
@@ -5340,18 +5356,18 @@ Conclusion. Game engines hold promising potential for the design and implementat
   timestamp = {2017-01-28}
 }
 
-@inproceedings{AllenPavoneEtAl2013,
+@InProceedings{AllenPavoneEtAl2013,
   author    = {Allen, R. and Pavone, M. and McQuin, C. and Issa Nesnas and Julie C. {Castillo-Rogez} and {Tam-Nguyen} Nguyen and Jeffrey A. Hoffman},
   title     = {Internally-Actuated Rovers for All-Access Surface Mobility: Theory and Experimentation},
   booktitle = proc_IEEE_ICRA,
   year      = {2013},
-  abstract  = {The future exploration of small Solar System bodies will, in part, depend on the availability of mobility platforms capable of performing both large surface coverage and short traverses to specific locations. Weak gravitational fields, however, make the adoption of traditional mobility systems difficult. In this paper we present a planetary mobility platform (called "spacecraft/rover hybrid") that relies on internal actuation. A hybrid is a small (~5 kg), multifaceted robot enclosing three mutually orthogonal flywheels and surrounded by external spikes or contact surfaces. By accelerating/decelerating the flywheels and by exploiting the low-gravity environment, such a platform can perform both long excursions (by hopping) and short, precise traverses (through controlled "tumbles"). This concept has the potential to lead to small, quasi-expendable, yet maneuverable rovers that are robust as they have no external moving parts. In the first part of the paper we characterize the dynamics of such platforms (including fundamental limitations of performance) and we discuss control and planning algorithms. In the second part, we discuss the development of a prototype and present experimental results both in simulations and on physical test stands emulating low-gravity environments. Collectively, our results lay the foundations for the design of internally-actuated rovers with controlled mobility (as opposed to random hopping motion).},
   address   = {Karlsruhe, Germany},
-  doi       = {10.1109/ICRA.2013.6631363},
   month     = may,
+  abstract  = {The future exploration of small Solar System bodies will, in part, depend on the availability of mobility platforms capable of performing both large surface coverage and short traverses to specific locations. Weak gravitational fields, however, make the adoption of traditional mobility systems difficult. In this paper we present a planetary mobility platform (called "spacecraft/rover hybrid") that relies on internal actuation. A hybrid is a small (\~5 kg), multifaceted robot enclosing three mutually orthogonal flywheels and surrounded by external spikes or contact surfaces. By accelerating/decelerating the flywheels and by exploiting the low-gravity environment, such a platform can perform both long excursions (by hopping) and short, precise traverses (through controlled "tumbles"). This concept has the potential to lead to small, quasi-expendable, yet maneuverable rovers that are robust as they have no external moving parts. In the first part of the paper we characterize the dynamics of such platforms (including fundamental limitations of performance) and we discuss control and planning algorithms. In the second part, we discuss the development of a prototype and present experimental results both in simulations and on physical test stands emulating low-gravity environments. Collectively, our results lay the foundations for the design of internally-actuated rovers with controlled mobility (as opposed to random hopping motion).},
+  doi       = {10.1109/ICRA.2013.6631363},
   owner     = {bylard},
   timestamp = {2017-01-28},
-  url       = {/wp-content/papercite-data/pdf/Allen.Pavone.ea.ICRA13.pdf}
+  url       = {/wp-content/papercite-data/pdf/Allen.Pavone.ea.ICRA13.pdf},
 }
 
 @inproceedings{AllenPavone2015,
@@ -5434,6 +5450,20 @@ Conclusion. Game engines hold promising potential for the design and implementat
   asl_url      = {https://arxiv.org/abs/2401.11371},
   owner        = {agia},
   timestamp    = {2024-03-01}
+}
+
+@Article{AgiaSinhaEtAl2024,
+  author    = {Agia, C. and Sinha, R. and Yang, J. and Cao, Z. and Antonova, R. and Pavone, M. and Jeannette Bohg},
+  title     = {Unpacking Failure Modes of Generative Policies: Runtime Monitoring of Consistency and Progress},
+  year      = {2024},
+  month     = nov,
+  abstract  = {Robot behavior policies trained via imitation learning are prone to failure under conditions that deviate from their training data. Thus, algorithms that monitor learned policies at test time and provide early warnings of failure are necessary to facilitate scalable deployment. We propose Sentinel, a runtime monitoring framework that splits the detection of failures into two complementary categories: 1) Erratic failures, which we detect using statistical measures of temporal action consistency, and 2) task progression failures, where we use Vision Language Models (VLMs) to detect when the policy confidently and consistently takes actions that do not solve the task. Our approach has two key strengths. First, because learned policies exhibit diverse failure modes, combining complementary detectors leads to significantly higher accuracy at failure detection. Second, using a statistical temporal action consistency measure ensures that we quickly detect when multimodal, generative policies exhibit erratic behavior at negligible computational cost. In contrast, we only use VLMs to detect failure modes that are less time-sensitive. We demonstrate our approach in the context of diffusion policies trained on robotic mobile manipulation domains in both simulation and the real world. By unifying temporal consistency detection and VLM runtime monitoring, Sentinel detects 18\% more failures than using either of the two detectors alone and significantly outperforms baselines, thus highlighting the importance of assigning specialized detectors to complementary categories of failure. Qualitative results are made available at sites.google.com/stanford.edu/sentinel.},
+  address   = {Munich, Germany},
+  booktitle = proc_CoRL,
+  keywords  = {press},
+  owner     = {agia},
+  timestamp = {2024-10-20},
+  url       = {https://arxiv.org/abs/2410.04640},
 }
 
 @inproceedings{AbtahiLandryEtAl2019,
