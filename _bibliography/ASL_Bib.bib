@@ -1280,18 +1280,19 @@
   timestamp = {2021-06-10}
 }
 
-@Article{ThummAgiaEtAl2024,
+@inproceedings{ThummAgiaEtAl2024,
   author    = {Thumm, J. and Agia, C. and Pavone, M. and Althoff, M.},
   title     = {Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction},
+  booktitle = proc_CoRL,
   year      = {2024},
   month     = nov,
   abstract  = {Adjusting robot behavior to human preferences can require intensive human feedback, preventing quick adaptation to new users and changing circumstances. Moreover, current approaches typically treat user preferences as a reward, which requires a manual balance between task success and user satisfaction. To integrate new user preferences in a zero-shot manner, our proposed Text2Interaction framework invokes large language models to generate a task plan, motion preferences as Python code, and parameters of a safety controller. By maximizing the combined probability of task completion and user satisfaction instead of a weighted sum of rewards, we can reliably find plans that fulfill both requirements. We find that 83\% of users working with Text2Interaction agree that it integrates their preferences into the plan of the robot, and 94\% prefer Text2Interaction over the baseline. Our ablation study shows that Text2Interaction aligns better with unseen preferences than other baselines while maintaining a high success rate. Real-world demonstrations and code are made available at sites.google.com/view/text2interaction.},
   address   = {Munich, Germany},
-  booktitle = proc_CoRL,
   keywords  = {press},
-  owner     = {jthluke},
-  timestamp = {2024-10-28},
-  url       = {https://arxiv.org/abs/2408.06105},
+  note      = {In press},
+  owner     = {agia},
+  timestamp = {2024-10-30},
+  url       = {https://arxiv.org/abs/2408.06105}
 }
 
 @inproceedings{ThorpeLewEtAl2022,
@@ -2157,8 +2158,6 @@
   timestamp = {2024-10-28},
   url       = {https://arxiv.org/abs/1709.04906},
 }
-
-
 
 @inproceedings{RossiBandyopadhyayEtAl2018,
   author    = {Rossi, F. and Bandyopadhyay, S. and Wolf, M. and Pavone, M.},
@@ -5225,6 +5224,19 @@ Conclusion. Game engines hold promising potential for the design and implementat
   url       = {https://arxiv.org/abs/2403.07076}
 }
 
+@inproceedings{BazziShahidEtAl2024,
+	author    = {Bazzi, M. and Shahid, A. and Agia, C. and Alora, J. and Forgione, M. and Piga, D. and Braghin, F. and Pavone, M. and Roveda, L.},
+	title     = {RoboMorph: In-Context Meta-Learning for Robot Dynamics Modeling},
+  booktitle = proc_IFAC_ICINCO,
+	year      = {2024},
+	month     = aug,
+  abstract  = {The landscape of Deep Learning has experienced a major shift with the pervasive adoption of Transformer-based architectures, particularly in Natural Language Processing (NLP). Novel avenues for physical applications, such as solving Partial Differential Equations and Image Vision, have been explored. However, in challenging domains like robotics, where high non-linearity poses significant challenges, Transformer-based applications are scarce. While Transformers have been used to provide robots with knowledge about high-level tasks, few efforts have been made to perform system identification. This paper proposes a novel methodology to learn a meta-dynamical model of a high-dimensional physical system, such as the Franka robotic arm, using a Transformer-based architecture without prior knowledge of the system's physical parameters. The objective is to predict quantities of interest (end-effector pose and joint positions) given the torque signals for each joint. This prediction can be useful as a component for Deep Model Predictive Control frameworks in robotics. The meta-model establishes the correlation between torques and positions and predicts the output for the complete trajectory. This work provides empirical evidence of the efficacy of the in-context learning paradigm, suggesting future improvements in learning the dynamics of robotic systems without explicit knowledge of physical parameters. Code, videos, and supplementary materials can be found at project website. See this https://sites.google.com/view/robomorph.},
+  address   = {Porto, Portugal},
+  owner     = {agia},
+  timestamp = {2024-10-30},
+	url       = {https://arxiv.org/abs/2409.11815}
+}
+
 @inproceedings{BerriaudElokdaEtAl2024,
   author    = {Berriaud, D. and Elokda, E. and Jalota, D. and Frazzoli, E. and Pavone, M. and Dorfler, F.},
   title     = {To Spend or to Gain: Online Learning in Repeated Karma Auctions},
@@ -5473,30 +5485,31 @@ Conclusion. Game engines hold promising potential for the design and implementat
 }
 
 @inproceedings{AgiaVilaEtAl2024,
-  author       = {Agia, C. and Vila, {G. C.} and Bandyopadhyay, S. and Bayard, {D. S.} and Cheung, K. and Lee, {C. H.} and Wood, E. and Aenishanslin, I. and Ardito, S. and Fesq, L. and Pavone, M. and Nesnas, {I. A. D.}},
-  title        = {Modeling Considerations for Developing Deep Space Autonomous Spacecraft and Simulators},
-  booktitle    = proc_IEEE_AC,
-  year         = {2024},
-  asl_abstract = {To extend the limited scope of autonomy used in prior missions for operation in distant and complex environments, there is a need to further develop and mature autonomy that jointly reasons over multiple subsystems, which we term system-level autonomy. System-level autonomy establishes situational awareness that resolves conflicting information across subsystems, which may necessitate the refinement and interconnection of the underlying spacecraft and environment onboard models. However, with a limited understanding of the assumptions and tradeoffs of modeling to arbitrary extents, designing onboard models to support system-level capabilities presents a significant challenge. In this paper, we provide a detailed analysis of the increasing levels of model fidelity for several key spacecraft subsystems, with the goal of informing future spacecraft functional- and system-level autonomy algorithms and the physics-based simulators on which they are validated. We do not argue for the adoption of a particular fidelity class of models but, instead, highlight the potential tradeoffs and opportunities associated with the use of models for onboard autonomy and in physics-based simulators at various fidelity levels. We ground our analysis in the context of deep space exploration of small bodies, an emerging frontier for autonomous spacecraft operation in space, where the choice of models employed onboard the spacecraft may determine mission success. We conduct our experiments in the Multi-Spacecraft Concept and Autonomy Tool (MuSCAT), a software suite for developing spacecraft autonomy algorithms.},
-  asl_address  = {Big Sky, Montana},
-  asl_month    = mar,
-  asl_url      = {https://arxiv.org/abs/2401.11371},
-  owner        = {agia},
-  timestamp    = {2024-03-01}
+  author    = {Agia, C. and Vila, {G. C.} and Bandyopadhyay, S. and Bayard, {D. S.} and Cheung, K. and Lee, {C. H.} and Wood, E. and Aenishanslin, I. and Ardito, S. and Fesq, L. and Pavone, M. and Nesnas, {I. A. D.}},
+  title     = {Modeling Considerations for Developing Deep Space Autonomous Spacecraft and Simulators},
+  booktitle = proc_IEEE_AC,
+  year      = {2024},
+  abstract  = {To extend the limited scope of autonomy used in prior missions for operation in distant and complex environments, there is a need to further develop and mature autonomy that jointly reasons over multiple subsystems, which we term system-level autonomy. System-level autonomy establishes situational awareness that resolves conflicting information across subsystems, which may necessitate the refinement and interconnection of the underlying spacecraft and environment onboard models. However, with a limited understanding of the assumptions and tradeoffs of modeling to arbitrary extents, designing onboard models to support system-level capabilities presents a significant challenge. In this paper, we provide a detailed analysis of the increasing levels of model fidelity for several key spacecraft subsystems, with the goal of informing future spacecraft functional- and system-level autonomy algorithms and the physics-based simulators on which they are validated. We do not argue for the adoption of a particular fidelity class of models but, instead, highlight the potential tradeoffs and opportunities associated with the use of models for onboard autonomy and in physics-based simulators at various fidelity levels. We ground our analysis in the context of deep space exploration of small bodies, an emerging frontier for autonomous spacecraft operation in space, where the choice of models employed onboard the spacecraft may determine mission success. We conduct our experiments in the Multi-Spacecraft Concept and Autonomy Tool (MuSCAT), a software suite for developing spacecraft autonomy algorithms.},
+  address   = {Big Sky, Montana},
+  month     = mar,
+  url       = {https://arxiv.org/abs/2401.11371},
+  owner     = {agia},
+  timestamp = {2024-10-30}
 }
 
-@Article{AgiaSinhaEtAl2024,
+@inproceedings{AgiaSinhaEtAl2024,
   author    = {Agia, C. and Sinha, R. and Yang, J. and Cao, Z. and Antonova, R. and Pavone, M. and Jeannette Bohg},
   title     = {Unpacking Failure Modes of Generative Policies: Runtime Monitoring of Consistency and Progress},
+  booktitle = proc_CoRL,
   year      = {2024},
   month     = nov,
   abstract  = {Robot behavior policies trained via imitation learning are prone to failure under conditions that deviate from their training data. Thus, algorithms that monitor learned policies at test time and provide early warnings of failure are necessary to facilitate scalable deployment. We propose Sentinel, a runtime monitoring framework that splits the detection of failures into two complementary categories: 1) Erratic failures, which we detect using statistical measures of temporal action consistency, and 2) task progression failures, where we use Vision Language Models (VLMs) to detect when the policy confidently and consistently takes actions that do not solve the task. Our approach has two key strengths. First, because learned policies exhibit diverse failure modes, combining complementary detectors leads to significantly higher accuracy at failure detection. Second, using a statistical temporal action consistency measure ensures that we quickly detect when multimodal, generative policies exhibit erratic behavior at negligible computational cost. In contrast, we only use VLMs to detect failure modes that are less time-sensitive. We demonstrate our approach in the context of diffusion policies trained on robotic mobile manipulation domains in both simulation and the real world. By unifying temporal consistency detection and VLM runtime monitoring, Sentinel detects 18\% more failures than using either of the two detectors alone and significantly outperforms baselines, thus highlighting the importance of assigning specialized detectors to complementary categories of failure. Qualitative results are made available at sites.google.com/stanford.edu/sentinel.},
   address   = {Munich, Germany},
-  booktitle = proc_CoRL,
   keywords  = {press},
-  owner     = {jthluke},
-  timestamp = {2024-10-28},
-  url       = {https://arxiv.org/abs/2410.04640},
+  note      = {In press},
+  owner     = {agia},
+  timestamp = {2024-10-30},
+  url       = {https://arxiv.org/abs/2410.04640}
 }
 
 @inproceedings{AbtahiLandryEtAl2019,
