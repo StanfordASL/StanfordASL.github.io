@@ -3138,17 +3138,19 @@
   timestamp = {2022-03-01}
 }
 
-@article{LewBonalliPavone2024,
+@Article{LewBonalliPavone2024,
   author    = {Lew, T. and Bonalli, R. and Pavone, M.},
   title     = {Sample Average Approximation for Stochastic Programming with Equality Constraints},
   journal   = jrn_SIAM_JO,
-  note      = {In press},
   year      = {2024},
+  volume    = {34},
+  number    = {4},
+  pages     = {3506--3533},
   abstract  = {We revisit the sample average approximation (SAA) approach for general non-convex stochastic programming. We show that applying the SAA approach to problems with expected value equality constraints does not necessarily result in asymptotic optimality guarantees as the number of samples increases. To address this issue, we relax the equality constraints. Then, we prove the asymptotic optimality of the modified SAA approach under mild smoothness and boundedness conditions on the equality constraint functions. Our analysis uses random set theory and concentration inequalities to characterize the approximation error from the sampling procedure. We apply our approach to the problem of stochastic optimal control for nonlinear dynamical systems subject to external disturbances modeled by a Wiener process. We verify our approach on a rocket-powered descent problem and show that our computed solutions allow for significant uncertainty reduction.},
-  keywords  = {press},
-  owner     = {lew},
-  timestamp = {2022-06-22},
-  url       = {https://arxiv.org/abs/2206.09963}
+  doi       = {doi.org/10.1137/23M1573227},
+  owner     = {jthluke},
+  timestamp = {2024-10-30},
+  url       = {https://arxiv.org/abs/2206.09963},
 }
 
 @article{LewBonalliPavone2023,
