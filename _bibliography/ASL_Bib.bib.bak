@@ -1307,6 +1307,19 @@
   timestamp = {2022-03-01}
 }
 
+@InProceedings{TakuboGammelliEtAl2024,
+  author    = {Takubo, Y. and Guffanti, T. and Gammelli, D. and Pavone, M. and {D'Amico}, S.},
+  title     = {Towards Robust Spacecraft Trajectory Optimization via Transformers},
+  booktitle = proc_IEEE_AC,
+  year      = {2025},
+  note      = {Submitted},
+  abstract  = {Future multi-spacecraft missions require robust autonomous trajectory optimization capabilities to ensure safe and efficient rendezvous operations. This capability hinges on solving non-convex optimal control problems in real time, although traditional iterative methods such as sequential convex programming impose significant computational challenges. To mitigate this burden, the Autonomous Rendezvous Transformer introduced a generative model trained to provide near-optimal initial guesses. This approach provides convergence to better local optima (e.g., fuel optimality), improves feasibility rates, and results in faster convergence speed of optimization algorithms through warm-starting. This work extends the capabilities of ART to address robust chance-constrained optimal control problems. Specifically, ART is applied to challenging rendezvous scenarios in Low Earth Orbit (LEO), ensuring fault-tolerant behavior under uncertainty. Through extensive experimentation, the proposed warm-starting strategy is shown to consistently produce high-quality reference trajectories, achieving up to 30\% cost improvement and 50\% reduction in infeasible cases compared to conventional methods, demonstrating robust performance across multiple state representations. Additionally, a post hoc evaluation framework is proposed to assess the quality of generated trajectories and mitigate runtime failures, marking an initial step toward the reliable deployment of AI-driven solutions in safety-critical autonomous systems such as spacecraft.},
+  keywords  = {sub},
+  owner     = {jthluke},
+  timestamp = {2024-10-30},
+  url       = {https://arxiv.org/abs/2410.05585},
+}
+
 @inproceedings{SushkoTedjaratiEtAl2017,
   author    = {A. Sushko and A. Tedjarati and J. Creus-Costa and S. Maldonado and K. Marshland and M. Pavone},
   title     = {Low cost, high endurance, altitude-controlled latex balloon for near-space research ({ValBal})},
@@ -1811,9 +1824,10 @@
   keywords  = {sub},
   note      = {Submitted},
   abstract  = {Hierarchical policies enable strong performance in many sequential decision-making problems, such as those with high-dimensional action spaces, those requiring long-horizon planning, and settings with sparse rewards. However, learning hierarchical policies from static offline datasets presents a significant challenge. Crucially, actions taken by higher-level policies may not be directly observable within hierarchical controllers, and the offline dataset might have been generated using a different policy structure, hindering the use of standard offline learning algorithms. In this work, we propose OHIO: a framework for offline reinforcement learning (RL) of hierarchical policies. Our framework leverages knowledge of the policy structure to solve the \textit{inverse problem}, recovering the unobservable high-level actions that likely generated the observed data under our hierarchical policy. This approach constructs a dataset suitable for off-the-shelf offline training. We demonstrate our framework on robotic and network optimization problems and show that it substantially outperforms end-to-end RL methods and improves robustness. We investigate a variety of instantiations of our framework, both in direct deployment of policies trained offline and when online fine-tuning is performed.},
-  year      = {2024},
+  year      = {2025},
   owner     = {gammelli},
-  timestamp = {2024-08-14}
+  timestamp = {2024-08-14},
+  url       = {https://arxiv.org/abs/2410.07933},
 }
 
 @incollection{SchmerlingPavone2019,
@@ -3078,8 +3092,8 @@
   month     = nov,
   abstract  = {We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82\%, while prior state-of-the-art language-based planning methods only achieve 13\%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills.},
   doi       = {10.1007/s10514-023-10131-7},
-  owner     = {agia},
-  timestamp = {2024-02-29},
+  owner     = {jthluke},
+  timestamp = {2024-10-28},
   url       = {https://doi.org/10.1007/s10514-023-10131-7},
 }
 
@@ -4433,16 +4447,17 @@
   url       = {https://arxiv.org/abs/2104.02213}
 }
 
-@inproceedings{DyroFoutterEtAl2024,
-  author       = {Dyro, R. and Foutter, M. and Li, R. and Di Lillo, L. and Schmerling, E. and Zhou, X. and Pavone, M.},
-  title        = {Realistic Extreme Behavior Generation for Improved AV Testing},
-  booktitle    = proc_IEEE_ICRA,
-  year         = {2025},
-  abstract     = {This work introduces a framework to diagnose the strengths and shortcomings of Autonomous Vehicle (AV) collision avoidance technology with synthetic yet realistic potential collision scenarios adapted from real-world, collision-free data. Our framework generates counterfactual collisions with diverse crash properties, e.g., crash angle and velocity, between an adversary and a target vehicle by adding perturbations to the adversary's predicted trajectory from a learned AV behavior model. Our main contribution is to ground these adversarial perturbations in realistic behavior as defined through the lens of data-alignment in the behavior model's parameter space. Then, we cluster these synthetic counterfactuals to identify plausible and representative collision scenarios to form the basis of a test suite for downstream AV system evaluation. We demonstrate our framework using two state-of-the-art behavior prediction models as sources of realistic adversarial perturbations, and show that our scenario clustering evokes interpretable failure modes from a baseline AV policy under evaluation.},
-  url          = {/wp-content/papercite-data/pdf/Dyro.Foutter.Li.ea.ICRA2025.pdf},
-  owner        = {foutter},
-  keywords     = {sub},
-  timestamp    = {2024-09-15}
+@InProceedings{DyroFoutterEtAl2024,
+  author    = {Dyro, R. and Foutter, M. and Li, R. and Di Lillo, L. and Schmerling, E. and Zhou, X. and Pavone, M.},
+  title     = {Realistic Extreme Behavior Generation for Improved {AV} Testing},
+  booktitle = proc_IEEE_ICRA,
+  year      = {2025},
+  note      = {Submitted},
+  abstract  = {This work introduces a framework to diagnose the strengths and shortcomings of Autonomous Vehicle (AV) collision avoidance technology with synthetic yet realistic potential collision scenarios adapted from real-world, collision-free data. Our framework generates counterfactual collisions with diverse crash properties, e.g., crash angle and velocity, between an adversary and a target vehicle by adding perturbations to the adversary's predicted trajectory from a learned AV behavior model. Our main contribution is to ground these adversarial perturbations in realistic behavior as defined through the lens of data-alignment in the behavior model's parameter space. Then, we cluster these synthetic counterfactuals to identify plausible and representative collision scenarios to form the basis of a test suite for downstream AV system evaluation. We demonstrate our framework using two state-of-the-art behavior prediction models as sources of realistic adversarial perturbations, and show that our scenario clustering evokes interpretable failure modes from a baseline AV policy under evaluation.},
+  keywords  = {sub},
+  owner     = {jthluke},
+  timestamp = {2024-10-30},
+  url       = {/wp-content/papercite-data/pdf/Dyro.Foutter.Li.ea.ICRA2025.pdf},
 }
 
 @inproceedings{DiCuevasQuiñonesEtAl2024,
@@ -4852,11 +4867,27 @@
   title     = {Transformer-based Model Predictive Control: Trajectory Optimization via Sequence Modeling},
   journal   = jrn_IEEE_RAL,
   year      = {2024},
+  volume    = {9},
+  number    = {11},
+  pages     = {9280--9827},
   abstract  = {Model predictive control (MPC) has established itself as the primary methodology for constrained control, enabling general-purpose robot autonomy in diverse real-world scenarios. However, for most problems of interest, MPC relies on the recursive solution of highly non-convex trajectory optimization problems, leading to high computational complexity and strong dependency on initialization. In this work, we present a unified framework to combine the main strengths of optimization-based and learning-based methods for MPC. Our approach entails embedding high-capacity, transformer-based neural network models within the optimization process for trajectory generation, whereby the transformer provides a near-optimal initial guess, or target plan, to a non-convex optimization problem. Our experiments, performed in simulation and the real world onboard a free flyer platform, demonstrate the capabilities of our framework to improve MPC convergence and runtime. Compared to purely optimization-based approaches, results show that our approach can improve trajectory generation performance by up to 75\%, reduce the number of solver iterations by up to 45\%, and improve overall MPC runtime by 7x without loss in performance.},
-  keywords  = {pub},
-  owner     = {gammelli},
-  timestamp = {2024-08-14},
+  doi       = {10.1109/LRA.2024.3466069},
+  owner     = {jthluke},
+  timestamp = {2024-10-30},
   url       = {https://ieeexplore.ieee.org/document/10685132},
+}
+
+@InProceedings{CelestiniGammelliEtAl2025,
+  author    = {Celestini, D. and Afsharrad, A. and Gammelli, D. and Guffanti, T. and Zardini, G. and Lall, S. and Capelli, E. and {D'Amico}, S. and Pavone, M.},
+  title     = {Generalizable Spacecraft Trajectory Generation via Multimodal Learning with Transformers},
+  booktitle = proc_IEEE_ACC,
+  year      = {2025},
+  note      = {Submitted},
+  abstract  = {Effective trajectory generation is essential for reliable on-board spacecraft autonomy. Among other approaches, learning-based warm-starting represents an appealing paradigm for solving the trajectory generation problem, effectively combining the benefits of optimization- and data-driven methods. Current approaches for learning-based trajectory generation often focus on fixed, single-scenario environments, where key scene characteristics, such as obstacle positions or final-time requirements, remain constant across problem instances. However, practical trajectory generation requires the scenario to be frequently reconfigured, making the single-scenario approach a potentially impractical solution. To address this challenge, we present a novel trajectory generation framework that generalizes across diverse problem configurations, by leveraging high-capacity transformer neural networks capable of learning from multimodal data sources. Specifically, our approach integrates transformer-based neural network models into the trajectory optimization process, encoding both scene-level information (e.g., obstacle locations, initial and goal states) and trajectory-level constraints (e.g., time bounds, fuel consumption targets) via multimodal representations. The transformer network then generates near-optimal initial guesses for non-convex optimization problems, significantly enhancing convergence speed and performance. The framework is validated through extensive simulations and real-world experiments on a free-flyer platform, achieving up to 30\% cost improvement and 80\% reduction in infeasible cases with respect to traditional approaches, and demonstrating robust generalization across diverse scenario variations.},
+  keywords  = {sub},
+  owner     = {gammelli},
+  timestamp = {2024-10-29},
+  url       = {https://arxiv.org/abs/2410.11723},
 }
 
 @inproceedings{CauligiCulbertsonEtAl2020,
@@ -5461,8 +5492,8 @@ Conclusion. Game engines hold promising potential for the design and implementat
   address   = {Munich, Germany},
   booktitle = proc_CoRL,
   keywords  = {press},
-  owner     = {agia},
-  timestamp = {2024-10-20},
+  owner     = {jthluke},
+  timestamp = {2024-10-28},
   url       = {https://arxiv.org/abs/2410.04640},
 }
 
