@@ -4305,16 +4305,16 @@
 }
 
 @inproceedings{FoutterBohjEtAl2024,
-  author       = {Foutter, M. and Bhoj, P. and Sinha, R. and Elhafsi, A. and Banerjee, S. and Agia, C. and Kruger, J. and Guffanti, T. and Gammelli, D. and D'Amico, S. and Pavone, M.},
-  title        = {Adapting a Foundation Model for Space-based Tasks},
-  booktitle    = proc_RSS_SemRob,
-  year         = {2024},
-  asl_abstract = {Foundation models, e.g., large language models, possess attributes of intelligence which offer promise to endow a robot with the contextual understanding necessary to navigate complex, unstructured tasks in the wild. In the future of space robotics, we see three core challenges which motivate the use of a foundation model adapted to space-based applications: 1) Scalability of ground-in-the-loop operations; 2) Generalizing prior knowledge to novel environments; and 3) Multi-modality in tasks and sensor data. Therefore, as a first-step towards building a foundation model for space-based applications, we automatically label the AI4Mars dataset to curate a language annotated dataset of visual-question-answer tuples. We fine-tune a pretrained LLaVA checkpoint on this dataset to endow a vision-language model with the ability to perform spatial reasoning and navigation on Mars' surface. In this work, we demonstrate that 1) existing vision-language models are deficient visual reasoners in space-based applications, and 2) fine-tuning a vision-language model on extraterrestrial data significantly improves the quality of responses even with a limited training dataset of only a few thousand samples.},
-  asl_address  = {Delft, Netherlands},
+  author       = {Foutter, M. and Gammelli, D. and Kruger, J. and Foss, E. and Bhoj, P. and Guffanti, T. and D'Amico, S. and Pavone, M.},
+  title        = {Space-LLaVA: a Vision-Language Model Adapted to Extraterrestrial Applications},
+  booktitle    = proc_IEEE_AC,
+  year         = {2025},
+  asl_abstract = {Foundation Models (FMs), e.g., large language models, possess attributes of intelligence which offer promise to endow a robot with the contextual understanding necessary to navigate complex, unstructured tasks in the wild. We see three core challenges in the future of space robotics that motivate building an FM for the space robotics community: 1) Scalability of ground-in-the-loop operations; 2) Generalizing prior knowledge to novel environments; and 3) Multi-modality in tasks and sensor data. As a first-step towards a space foundation model, we programmatically augment three extraterrestrial databases with fine-grained language annotations inspired by the sensory reasoning necessary to e.g., identify a site of scientific interest on Mars, building a synthetic dataset of visual-question-answer and visual instruction-following tuples. We fine-tune a pre-trained LLaVA 13B checkpoint on our augmented dataset to adapt a Vision-Language Model (VLM) to the visual semantic features in an extraterrestrial environment, demonstrating FMs as a tool for specialization and enhancing a VLM's zero-shot performance on unseen task types in comparison to state-of-the-art VLMs. Ablation studies show that fine-tuning the language backbone and vision-language adapter in concert is key to facilitate adaption while a small percentage, e.g., 20%, of the pre-training data can be used to safeguard against catastrophic forgetting.},
+  asl_address  = {Big Sky, Montana},
   asl_url      = {https://arxiv.org/abs/2408.05924},
   url          = {https://arxiv.org/abs/2408.05924},
   owner        = {foutter},
-  timestamp    = {2024-08-12}
+  timestamp    = {2025-01-21}
 }
 
 @inproceedings{FladerAhnEtAl2016,
