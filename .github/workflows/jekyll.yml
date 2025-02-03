@@ -68,6 +68,6 @@ jobs:
           path: _site/
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
         with:
-          artifact_name: github-pages
+          path: _site
