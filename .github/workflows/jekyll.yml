@@ -70,4 +70,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          folder: _site
+          artifact_name: github-pages
