@@ -3,8 +3,9 @@ layout: person
 title:  "Rachel Luo"
 last:   "Luo"
 date:   2021-04-05 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Uncertainty quantification for computer vision and robotics"
+current: "NVIDIA Research"
 img: RachelLuo.png
 email: rsluo@stanford.edu
 website: https://rsluo.github.io
