@@ -51,7 +51,7 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-artifact@v4
         with:
-          name: site-artifact
+          name: github-pages
           path: _site  # Change this to match your actual build output directory
 
   # Deployment job
