@@ -14,7 +14,5 @@ Abhishek is a PhD. candidate in Aeronautics and Astronautics. He received a BS i
 
 Abhishek's current research interests entail combining tools from trajectory optimization, optimal control, and machine learning towards problems in spacecraft robotics and systems with contact. In addition, he has worked on running experiments on the International Space Station with the Astrobee robot for grasping and control using gecko-inspired adhesives. 
 
-In his free time, Abhishek likes watching movies, learning German, and playing tennis.
-
 ### Awards:
 - 2016 NASA Space Technology Research Fellowship
