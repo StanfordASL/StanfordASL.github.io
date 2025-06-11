@@ -1,10 +1,10 @@
 ---
 layout: person
-title: “Milan Ganai”
-last:  “Ganai”
+title: "Milan Ganai"
+last:  "Ganai"
 date:  2025-05-15 00:00:00 -0700
 position: phd
-excerpt: “Safe AI and Reasoning for Autonomy”
+excerpt: "Safe AI and Reasoning for Autonomy"
 img: milanganai.jpeg
 email: mganai@stanford.edu
 github: milanganai

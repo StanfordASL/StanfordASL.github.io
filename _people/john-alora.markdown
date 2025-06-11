@@ -3,7 +3,7 @@ layout: person
 title:  "John Alora"
 last:   "Alora"
 date:   2020-03-19 00:00:00 -0700
-position: alumni
+position: externalresearchaffiliate
 excerpt: "Control of infinite-dimensional systems"
 current: "ASL Visiting Scholar"
 img: JohnAlora.jpg
