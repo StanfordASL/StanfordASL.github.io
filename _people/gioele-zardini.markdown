@@ -3,8 +3,9 @@ layout: person
 title:  "Gioele Zardini"
 last:   "Zardini"
 date:   2023-01-25 00:00:00 -0700
-position: postdoc
+position: alumni
 excerpt: "Autonomy, Co-Design, Mobility, Formal Methods"
+current: "Massachusets Institute of Technology"
 img: Zardini.jpg
 website: https://gioele.science
 ---
