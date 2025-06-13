@@ -1,10 +1,10 @@
 ---
 layout: person
-title: “Carmen”
-last: “Amo Alonso”
+title: "Carmen Amo Alonso"
+last: "Amo Alonso"
 date: 2025-06-01 00:00:00 -0700
 position: postdoc
-excerpt: “Optimal and learning-based control, manipulation, space robotics”
+excerpt: "Optimal and learning-based control, manipulation, space robotics"
 img: carmen.jpg
 email: camoalon@stanford.edu
 github: camoalon
