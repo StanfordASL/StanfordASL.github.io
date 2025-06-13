@@ -3,8 +3,9 @@ layout: person
 title:  "Justin Luke"
 last:   "Luke"
 date:   2020-03-19 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Grid integration of electric autonomous mobility-on-demand fleets"
+current: "Tesla"
 img: JustinLuke.jpg
 email: justin.luke@stanford.edu
 linkedin: justin-luke
