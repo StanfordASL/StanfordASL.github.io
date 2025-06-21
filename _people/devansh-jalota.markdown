@@ -3,7 +3,8 @@ layout: person
 title:  "Devansh Jalota"
 last:   "Jalota"
 date:   2020-03-19 00:00:00 -0700
-position: phd
+position: alumni
+current: Georgia Institute of Technology
 excerpt: "Algorithmic game theory, market design and optimization"
 img: DevanshJalota.jpg
 email: djalota@stanford.edu
