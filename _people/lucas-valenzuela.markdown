@@ -3,7 +3,8 @@ layout: person
 title:  "Lucas Valenzuela"
 last:   "Valenzuela"
 date:   2020-03-19 00:00:00 -0700
-position: phd
+position: alumni
+current: Synopsys
 excerpt: "Optimal management of societal infrastructure"
 img: LucasValenzuela.png
 email: lucasfv@stanford.edu
