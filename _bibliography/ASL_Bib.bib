@@ -5571,6 +5571,21 @@ Conclusion. Game engines hold promising potential for the design and implementat
   url       = {https://arxiv.org/abs/2409.11815}
 }
 
+@inproceedings{AgiasinhaEtAl2025,
+  author    = {Agia, C. and Sinha, R. and Yang, J. and Antonova, R. and Pavone, M. and Nishimura, H. and Itkina, M. and Bohg, J.},
+  title     = {CUPID: Curating Data your Robot Loves with Influence Functions},
+  booktitle = proc_CoRL,
+  year      = {2025},
+  month     = june,
+  abstract  = {In robot imitation learning, policy performance is tightly coupled with the quality and composition of the demonstration data. Yet, developing a precise understanding of how individual demonstrations contribute to downstream outcomes - such as closed-loop task success or failure - remains a persistent challenge. We propose CUPID, a robot data curation method based on a novel influence function-theoretic formulation for imitation learning policies. Given a set of evaluation rollouts, CUPID estimates the influence of each training demonstration on the policy's expected return. This enables ranking and selection of demonstrations according to their impact on the policy's closed-loop performance. We use CUPID to curate data by 1) filtering out training demonstrations that harm policy performance and 2) subselecting newly collected trajectories that will most improve the policy. Extensive simulated and hardware experiments show that our approach consistently identifies which data drives test-time performance. For example, training with less than 33% of curated data can yield state-of-the-art diffusion policies on the simulated RoboMimic benchmark, with similar gains observed in hardware. Furthermore, hardware experiments show that our method can identify robust strategies under distribution shift, isolate spurious correlations, and even enhance the post-training of generalist robot policies.},
+  address   = {Seoul, Korea},
+  keywords  = {press},
+  note      = {In press},
+  owner     = {agia},
+  timestamp = {2025-06-23},
+  url       = {https://arxiv.org/abs/2506.19121}
+}
+
 @inproceedings{KwokAgiaEtAl2025,
   author    = {Kwok, J. and Agia, C. and Sinha, R. and Foutter, M. and Li, S. and Stoica, I. and Mirhoseini, A. and Pavone, M.},
   title     = {RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models},
@@ -5585,6 +5600,7 @@ Conclusion. Game engines hold promising potential for the design and implementat
   timestamp = {2025-07-07},
   url       = {https://arxiv.org/abs/2506.17811}
 }
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: saveOrderConfig:specified;citationkey;false;author;true;title;true;}
