@@ -636,6 +636,7 @@
 @String{proc_ROBOCOMM                  = {{Int. Conf. on Robot Communication and Coordination}}}
 @String{proc_RSS                       = {{Robotics: Science and Systems}}}
 @String{proc_RSS_SemRob                = {{Robotics: Science and Systems - Workshop on Semantics for Robotics: From Environment Understanding and Reasoning to Safe Interaction}}}
+@String{proc_RSS_SpaRob                = {{Robotics: Science and Systems - Space Robotics Workshop}}}
 @String{proc_SIAM_SODA                 = {{ACM-SIAM Symp. on Discrete Algorithms}}}
 @String{proc_SICE                      = {{SICE Annual Conference}}}
 @String{proc_SPIE                      = {{Proc. of SPIE}}}
@@ -2797,6 +2798,17 @@
   timestamp = {2021-10-14}
 }
 
+@article{MortonAntonovaEtAl2025,
+  author = {Morton, Daniel and Antonova, Rika and Coltin, Brian and Pavone, Marco and Bohg, Jeannette},
+  title = {Deformable Cargo Transport in Microgravity with Astrobee},
+  year = {2025},
+  journal = proc_RSS_SpaRob,
+  abstract = {We present pyastrobee: a simulation environment and control stack for Astrobee in Python, with an emphasis on cargo manipulation and transport tasks. We also demonstrate preliminary success from a sampling-based MPC controller, using reduced-order models of NASA's cargo transfer bag (CTB) to control a high-order deformable finite element model. Our code is open-source, fully documented, and available at https://danielpmorton.github.io/pyastrobee},
+  url = {https://arxiv.org/pdf/2505.01630},
+  owner = {dmorton},
+  timestamp = {2025-05-02},
+}
+
 @inproceedings{MortonPavone2025,
    author = {Morton, D. and Pavone, M.},
    title = {Safe, Task-Consistent Manipulation with Operational Space Control Barrier Functions},
@@ -2815,7 +2827,6 @@
   booktitle = proc_IEEE_IROS,
   year = {2024},
   abstract = {ReachBot, a proposed robotic platform, employs extendable booms as limbs for mobility in challenging environments, such as martian caves. When attached to the environment, ReachBot acts as a parallel robot, with reconfiguration driven by the ability to detach and re-place the booms. This ability enables manipulation-focused scientific objectives: for instance, through operating tools, or handling and transporting samples. To achieve these capabilities, we develop a two-part solution, optimizing for robustness against task uncertainty and stochastic failure modes. First, we present a mixed-integer stance planner to determine the positioning of ReachBot's booms to maximize the task wrench space about the nominal point(s). Second, we present a convex tension planner to determine boom tensions for the desired task wrenches, accounting for the probabilistic nature of microspine grasping. We demonstrate improvements in key robustness metrics from the field of dexterous manipulation, and show a large increase in the volume of the manipulation workspace. Finally, we employ Monte-Carlo simulation to validate the robustness of these methods, demonstrating good performance across a range of randomized tasks and environments, and generalization to cable-driven morphologies. We make our code available at our project webpage, https://stanfordasl.github.io/reachbot_manipulation.},
-  keywords = {pub},
   url = {https://arxiv.org/pdf/2403.10768.pdf},
   owner = {dmorton},
   timestamp = {2024-03-16},
