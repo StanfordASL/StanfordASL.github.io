@@ -2874,6 +2874,19 @@
 	timestamp = {2025-04-24}
 }
 
+@article{MarchioriSinhaEtAl2025,
+	author    = {Marchiori, F. and Sinha, R. and Agia, C. and Robey, A. and Pappas, {G. J.} and Conti, M. and Pavone, M.},
+	title     = {Preventing Robotic Jailbreaking via Multimodal Domain Adaptation},
+	booktitle = proc_IEEE_ICRA,
+	year      = {2025},
+	note      = {Submitted},
+	abstract  = {Large Language Models (LLMs) and Vision-Language Models (VLMs) are increasingly deployed in robotic environments but remain vulnerable to jailbreaking attacks that bypass safety mechanisms and drive unsafe or physically harmful behaviors in the real world. Data-driven defenses such as jailbreak classifiers show promise, yet they struggle to generalize in domains where specialized datasets are scarce, limiting their effectiveness in robotics and other safety-critical contexts. To address this gap, we introduce J-DAPT, a lightweight framework for multimodal jailbreak detection through attention-based fusion and domain adaptation. J-DAPT integrates textual and visual embeddings to capture both semantic intent and environmental grounding, while aligning general-purpose jailbreak datasets with domain-specific reference data. Evaluations across autonomous driving, maritime robotics, and quadruped navigation show that J-DAPT boosts detection accuracy to nearly 100% with minimal overhead. These results demonstrate that J-DAPT provides a practical defense for securing VLMs in robotic applications. Additional materials are made available at https://j-dapt.github.io.},
+	url       = {https://arxiv.org/pdf/2509.23281},
+	keywords  = {sub},
+	owner     = {agia},
+	timestamp = {2025-10-21}
+}
+
 @article{MalyutaEtAl2022,
   author    = {Malyuta, D. and Reynolds, T.~P. and Szmuk, M. and Lew, T. and Bonalli, R. and Pavone, M. and Acikmese, B.},
   title     = {Convex Optimization for Trajectory Generation},
@@ -5558,6 +5571,21 @@ Conclusion. Game engines hold promising potential for the design and implementat
   url       = {https://arxiv.org/abs/2410.04640}
 }
 
+@inproceedings{AgiaSinhaEtAl2025,
+  author    = {Agia, C. and Sinha, R. and Yang, J. and Antonova, R. and Pavone, M. and Nishimura, H. and Itkina, M. and Bohg, J.},
+  title     = {CUPID: Curating Data your Robot Loves with Influence Functions},
+  booktitle = proc_CoRL,
+  year      = {2025},
+  month     = june,
+  abstract  = {In robot imitation learning, policy performance is tightly coupled with the quality and composition of the demonstration data. Yet, developing a precise understanding of how individual demonstrations contribute to downstream outcomes - such as closed-loop task success or failure - remains a persistent challenge. We propose CUPID, a robot data curation method based on a novel influence function-theoretic formulation for imitation learning policies. Given a set of evaluation rollouts, CUPID estimates the influence of each training demonstration on the policy's expected return. This enables ranking and selection of demonstrations according to their impact on the policy's closed-loop performance. We use CUPID to curate data by 1) filtering out training demonstrations that harm policy performance and 2) subselecting newly collected trajectories that will most improve the policy. Extensive simulated and hardware experiments show that our approach consistently identifies which data drives test-time performance. For example, training with less than 33% of curated data can yield state-of-the-art diffusion policies on the simulated RoboMimic benchmark, with similar gains observed in hardware. Furthermore, hardware experiments show that our method can identify robust strategies under distribution shift, isolate spurious correlations, and even enhance the post-training of generalist robot policies.},
+  address   = {Seoul, Korea},
+  keywords  = {press},
+  note      = {In press},
+  owner     = {agia},
+  timestamp = {2025-06-23},
+  url       = {https://arxiv.org/abs/2506.19121}
+}
+
 @inproceedings{AbtahiLandryEtAl2019,
   author    = {Abtahi, P. and Landry, B. and Yang, J. J. and Pavone, M. and Follmer, S. and Landay, J. A.},
   title     = {Beyond The Force: Using Quadcopters to Appropriate Objects and the Environment for Haptics in Virtual Reality},
@@ -5612,21 +5640,6 @@ Conclusion. Game engines hold promising potential for the design and implementat
   owner     = {hbuurmei},
   timestamp = {2025-09-18},
   url       = {https://arxiv.org/abs/2504.03157}
-}
-
-@inproceedings{AgiaSinhaEtAl2025,
-  author    = {Agia, C. and Sinha, R. and Yang, J. and Antonova, R. and Pavone, M. and Nishimura, H. and Itkina, M. and Bohg, J.},
-  title     = {CUPID: Curating Data your Robot Loves with Influence Functions},
-  booktitle = proc_CoRL,
-  year      = {2025},
-  month     = june,
-  abstract  = {In robot imitation learning, policy performance is tightly coupled with the quality and composition of the demonstration data. Yet, developing a precise understanding of how individual demonstrations contribute to downstream outcomes - such as closed-loop task success or failure - remains a persistent challenge. We propose CUPID, a robot data curation method based on a novel influence function-theoretic formulation for imitation learning policies. Given a set of evaluation rollouts, CUPID estimates the influence of each training demonstration on the policy's expected return. This enables ranking and selection of demonstrations according to their impact on the policy's closed-loop performance. We use CUPID to curate data by 1) filtering out training demonstrations that harm policy performance and 2) subselecting newly collected trajectories that will most improve the policy. Extensive simulated and hardware experiments show that our approach consistently identifies which data drives test-time performance. For example, training with less than 33% of curated data can yield state-of-the-art diffusion policies on the simulated RoboMimic benchmark, with similar gains observed in hardware. Furthermore, hardware experiments show that our method can identify robust strategies under distribution shift, isolate spurious correlations, and even enhance the post-training of generalist robot policies.},
-  address   = {Seoul, Korea},
-  keywords  = {press},
-  note      = {In press},
-  owner     = {agia},
-  timestamp = {2025-06-23},
-  url       = {https://arxiv.org/abs/2506.19121}
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
