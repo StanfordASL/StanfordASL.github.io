@@ -576,6 +576,7 @@
 @String{proc_IEEE_ICDM                 = {{IEEE Int. Conf. on Data Mining}}}
 @String{proc_IEEE_ICHRI                = {{IEEE Int. Conf. on Human-Robot Interaction}}}
 @String{proc_IEEE_ICRA                 = {{Proc. IEEE Conf. on Robotics and Automation}}}
+@String{proc_IEEE_ICRA_SVLM            = {{Proc. IEEE Conf. on Robotics and Automation: Workshop Safe-VLM}}}
 @String{proc_IEEE_INFOCOM              = {{IEEE Conf. on Computer Communications}}}
 @String{proc_IEEE_IPDPS                = {{IEEE Parallel and Distributed Processing Symposium}}}
 @String{proc_IEEE_IRC                  = {{IEEE Int. Conf. on Robotic Computing}}}
@@ -1309,17 +1310,54 @@
   timestamp = {2022-03-01}
 }
 
-@InProceedings{TakuboGammelliEtAl2024,
+@Inproceedings{TakuboGammelliEtAl2024,
   author    = {Takubo, Y. and Guffanti, T. and Gammelli, D. and Pavone, M. and {D'Amico}, S.},
   title     = {Towards Robust Spacecraft Trajectory Optimization via Transformers},
   booktitle = proc_IEEE_AC,
   year      = {2025},
-  note      = {Submitted},
   abstract  = {Future multi-spacecraft missions require robust autonomous trajectory optimization capabilities to ensure safe and efficient rendezvous operations. This capability hinges on solving non-convex optimal control problems in real time, although traditional iterative methods such as sequential convex programming impose significant computational challenges. To mitigate this burden, the Autonomous Rendezvous Transformer introduced a generative model trained to provide near-optimal initial guesses. This approach provides convergence to better local optima (e.g., fuel optimality), improves feasibility rates, and results in faster convergence speed of optimization algorithms through warm-starting. This work extends the capabilities of ART to address robust chance-constrained optimal control problems. Specifically, ART is applied to challenging rendezvous scenarios in Low Earth Orbit (LEO), ensuring fault-tolerant behavior under uncertainty. Through extensive experimentation, the proposed warm-starting strategy is shown to consistently produce high-quality reference trajectories, achieving up to 30\% cost improvement and 50\% reduction in infeasible cases compared to conventional methods, demonstrating robust performance across multiple state representations. Additionally, a post hoc evaluation framework is proposed to assess the quality of generated trajectories and mitigate runtime failures, marking an initial step toward the reliable deployment of AI-driven solutions in safety-critical autonomous systems such as spacecraft.},
-  keywords  = {sub},
+  keywords  = {pub},
   owner     = {jthluke},
   timestamp = {2024-10-30},
   url       = {https://arxiv.org/abs/2410.05585},
+}
+
+@Inproceedings{TakuboGammelliEtAl2025,
+  author    = {Takubo, Y. and Gammelli, D. and Pavone, M. and {D'Amico}, S.},
+  title     = {Agile Tradespace Exploration for Space Rendezvous Mission Design via Transformers},
+  booktitle = proc_IEEE_AC,
+  year      = {2026},
+  abstract  = {Future multi-spacecraft missions require robust autonomous trajectory optimization capabilities to ensure safe and efficient rendezvous operations. This capability hinges on solving non-convex optimal control problems in real time, although traditional iterative methods such as sequential convex programming impose significant computational challenges. To mitigate this burden, the Autonomous Rendezvous Transformer introduced a generative model trained to provide near-optimal initial guesses. This approach provides convergence to better local optima (e.g., fuel optimality), improves feasibility rates, and results in faster convergence speed of optimization algorithms through warm-starting. This work extends the capabilities of ART to address robust chance-constrained optimal control problems. Specifically, ART is applied to challenging rendezvous scenarios in Low Earth Orbit (LEO), ensuring fault-tolerant behavior under uncertainty. Through extensive experimentation, the proposed warm-starting strategy is shown to consistently produce high-quality reference trajectories, achieving up to 30\% cost improvement and 50\% reduction in infeasible cases compared to conventional methods, demonstrating robust performance across multiple state representations. Additionally, a post hoc evaluation framework is proposed to assess the quality of generated trajectories and mitigate runtime failures, marking an initial step toward the reliable deployment of AI-driven solutions in safety-critical autonomous systems such as spacecraft.},
+  keywords  = {sub},
+  note      = {Submitted},
+  owner     = {gammelli},
+  timestamp = {2025-10-23},
+  url       = {https://arxiv.org/abs/2510.03544?},
+}
+
+@Inproceedings{LiAlharbiGammelliEtAl2025,
+  author    = {Li, X. and Alharbi, M. and Gammelli, D. and Harrison, J. and Rodrigues, F. and Schiffer, M. and Pavone, M. and Frazzoli, E. and Zhao, J. and Zardini, G.},
+  title     = {Reproducibility in the Control of Autonomous Mobility-on-Demand Systems},
+  booktitle = jrn_IEEE_TR,
+  year      = {2025},
+  abstract  = {Autonomous Mobility-on-Demand (AMoD) systems, powered by advances in robotics, control, and Machine Learning (ML), offer a promising paradigm for future urban transportation. AMoD offers fast and personalized travel services by leveraging centralized control of autonomous vehicle fleets to optimize operations and enhance service performance. However, the rapid growth of this field has outpaced the development of standardized practices for evaluating and reporting results, leading to significant challenges in reproducibility. As AMoD control algorithms become increasingly complex and data-driven, a lack of transparency in modeling assumptions, experimental setups, and algorithmic implementation hinders scientific progress and undermines confidence in the results. This paper presents a systematic study of reproducibility in AMoD research. We identify key components across the research pipeline, spanning system modeling, control problems, simulation design, algorithm specification, and evaluation, and analyze common sources of irreproducibility. We survey prevalent practices in the literature, highlight gaps, and propose a structured framework to assess and improve reproducibility. Specifically, concrete guidelines are offered, along with a "reproducibility checklist", to support future work in achieving replicable, comparable, and extensible results. While focused on AMoD, the principles and practices we advocate generalize to a broader class of cyber-physical systems that rely on networked autonomy and data-driven control. This work aims to lay the foundation for a more transparent and reproducible research culture in the design and deployment of intelligent mobility systems.},
+  keywords  = {sub},
+  note      = {Submitted},
+  owner     = {gammelli},
+  timestamp = {2025-10-23},
+  url       = {https://arxiv.org/abs/2506.07345},
+}
+
+@Inproceedings{RoneckerFoutterGammelliEtAl2025,
+  author    = {Ronecker, M. P. and Foutter, M. and Elhafsi, A. and Gammelli, D. and Barakaiev, I. and Pavone, M. and Watzenig, D.},
+  title     = {Vision Foundation Model Embedding-based Semantic Anomaly Detection},
+  booktitle = proc_IEEE_ICRA_SVLM,
+  year      = {2025},
+  abstract  = {Semantic anomalies are contextually invalid or unusual combinations of familiar visual elements that can cause undefined behavior and failures in system-level reasoning for autonomous systems. This work explores semantic anomaly detection by leveraging the semantic priors of state-of-the-art vision foundation models, operating directly on the image. We propose a framework that compares local vision embeddings from runtime images to a database of nominal scenarios in which the autonomous system is deemed safe and performant. In this work, we consider two variants of the proposed framework: one using raw grid-based embeddings, and another leveraging instance segmentation for object-centric representations. To further improve robustness, we introduce a simple filtering mechanism to suppress false positives. Our evaluations on CARLA-simulated anomalies show that the instance-based method with filtering achieves performance comparable to GPT-4o, while providing precise anomaly localization. These results highlight the potential utility of vision embeddings from foundation models for real-time anomaly detection in autonomous systems.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2025-10-23},
+  url       = {https://arxiv.org/abs/2505.07998},
 }
 
 @inproceedings{SushkoTedjaratiEtAl2017,
@@ -1824,8 +1862,7 @@
   author    = {Schmidt, C. and Gammelli, D. and Harrison, J. and Pavone, M. and Rodrigues, F.},
   title     = {Offline Hierarchical Reinforcement Learning via Inverse Optimization},
   booktitle = proc_ICLR,
-  keywords  = {sub},
-  note      = {Submitted},
+  keywords  = {pub},
   abstract  = {Hierarchical policies enable strong performance in many sequential decision-making problems, such as those with high-dimensional action spaces, those requiring long-horizon planning, and settings with sparse rewards. However, learning hierarchical policies from static offline datasets presents a significant challenge. Crucially, actions taken by higher-level policies may not be directly observable within hierarchical controllers, and the offline dataset might have been generated using a different policy structure, hindering the use of standard offline learning algorithms. In this work, we propose OHIO: a framework for offline reinforcement learning (RL) of hierarchical policies. Our framework leverages knowledge of the policy structure to solve the \textit{inverse problem}, recovering the unobservable high-level actions that likely generated the observed data under our hierarchical policy. This approach constructs a dataset suitable for off-the-shelf offline training. We demonstrate our framework on robotic and network optimization problems and show that it substantially outperforms end-to-end RL methods and improves robustness. We investigate a variety of instantiations of our framework, both in direct deployment of policies trained offline and when online fine-tuning is performed.},
   year      = {2025},
   owner     = {gammelli},
@@ -4950,14 +4987,13 @@
   url       = {/wp-content/papercite-data/pdf/Celestini.Gammelli.ea.RAL24.pdf},
 }
 
-@InProceedings{CelestiniGammelliEtAl2025,
+@inproceedings{CelestiniGammelliEtAl2025,
   author    = {Celestini, D. and Afsharrad, A. and Gammelli, D. and Guffanti, T. and Zardini, G. and Lall, S. and Capelli, E. and {D'Amico}, S. and Pavone, M.},
   title     = {Generalizable Spacecraft Trajectory Generation via Multimodal Learning with Transformers},
   booktitle = proc_IEEE_ACC,
   year      = {2025},
-  note      = {Submitted},
   abstract  = {Effective trajectory generation is essential for reliable on-board spacecraft autonomy. Among other approaches, learning-based warm-starting represents an appealing paradigm for solving the trajectory generation problem, effectively combining the benefits of optimization- and data-driven methods. Current approaches for learning-based trajectory generation often focus on fixed, single-scenario environments, where key scene characteristics, such as obstacle positions or final-time requirements, remain constant across problem instances. However, practical trajectory generation requires the scenario to be frequently reconfigured, making the single-scenario approach a potentially impractical solution. To address this challenge, we present a novel trajectory generation framework that generalizes across diverse problem configurations, by leveraging high-capacity transformer neural networks capable of learning from multimodal data sources. Specifically, our approach integrates transformer-based neural network models into the trajectory optimization process, encoding both scene-level information (e.g., obstacle locations, initial and goal states) and trajectory-level constraints (e.g., time bounds, fuel consumption targets) via multimodal representations. The transformer network then generates near-optimal initial guesses for non-convex optimization problems, significantly enhancing convergence speed and performance. The framework is validated through extensive simulations and real-world experiments on a free-flyer platform, achieving up to 30\% cost improvement and 80\% reduction in infeasible cases with respect to traditional approaches, and demonstrating robust generalization across diverse scenario variations.},
-  keywords  = {sub},
+  keywords  = {pub},
   owner     = {gammelli},
   timestamp = {2024-10-29},
   url       = {https://arxiv.org/abs/2410.11723},
