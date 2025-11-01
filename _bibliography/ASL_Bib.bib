@@ -3578,6 +3578,17 @@
   url       = {/wp-content/papercite-data/pdf/Kuwata.Pavone.ea.CDC12.pdf}
 }
 
+@article{KuangEtAl2025,
+  author       = {Kuang, Y. and Geng, H. and Elhafsi, A. and Do, T. and Abbeel, P. and Malik, J. and Pavone, M. and Wang, Y.},
+  title        = {SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation via Skill Blending},
+  year         = {2025},
+  abstract     = {Humanoid robots hold significant potential in accomplishing daily tasks across diverse environments thanks to their flexibility and human-like morphology. Recent works have made significant progress in humanoid whole-body control and loco-manipulation leveraging optimal control or reinforcement learning. However, these methods require tedious task-specific tuning for each task to achieve satisfactory behaviors, limiting their versatility and scalability to diverse tasks in daily scenarios. To that end, we introduce SkillBlender, a novel hierarchical reinforcement learning framework for versatile humanoid loco-manipulation. SkillBlender first pretrains goal-conditioned task-agnostic primitive skills, and then dynamically blends these skills to accomplish complex loco-manipulation tasks with minimal task-specific reward engineering. We also introduce SkillBench, a parallel, cross-embodiment, and diverse simulated benchmark containing three embodiments, four primitive skills, and eight challenging loco-manipulation tasks, accompanied by a set of scientific evaluation metrics balancing accuracy and feasibility. Extensive simulated experiments show that our method significantly outperforms all baselines, while naturally regularizing behaviors to avoid reward hacking, resulting in more accurate and feasible movements for diverse loco-manipulation tasks in our daily scenarios. Our code and benchmark will be open-sourced to the community to facilitate future research.},
+  journal      = {CoRL 2024 Workshop on Whole-body Control and Bimanual Manipulation},
+  url          = {https://arxiv.org/abs/2506.09366},
+  owner        = {amine},
+  timestamp    = {2025-06-11}
+}
+
 @inproceedings{KoenigPavoneEtAl2014,
   author    = {Koenig, Adam W. and Pavone, M. and Castillo-Rogez, Julie C. and Nesnas, I. A. D.},
   title     = {A Dynamical Characterization of Internally-Actuated Microgravity Mobility Systems},
@@ -4536,6 +4547,7 @@
   title        = {Scan, Materialize, Simulate: A Generalizable Framework for Physically Grounded Robot Planning},
   year         = {2025},
   journal      = {ArXiv 2505.14938},
+  abstract     = {Autonomous robots must reason about the physical consequences of their actions to operate effectively in unstructured, real-world environments. We present Scan, Materialize, Simulate (SMS), a unified framework that combines 3D Gaussian Splatting for accurate scene reconstruction, visual foundation models for semantic segmentation, vision-language models for material property inference, and physics simulation for reliable prediction of action outcomes. By integrating these components, SMS enables generalizable physical reasoning and object-centric planning without the need to re-learn foundational physical dynamics. We empirically validate SMS in a billiards-inspired manipulation task and a challenging quadrotor landing scenario, demonstrating robust performance on both simulated domain transfer and real-world experiments. Our results highlight the potential of bridging differentiable rendering for scene reconstruction, foundation models for semantic understanding, and physics-based simulation to achieve physically grounded robot planning across diverse settings.},
   url          = {https://arxiv.org/pdf/2505.14938},
   keywords     = {sub},
   owner        = {amine},
