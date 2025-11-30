@@ -1883,6 +1883,19 @@
   timestamp = {2022-07-22}
 }
 
+@inproceedings{SchrothMortonEtAl2025,
+  author    = {Schroth, L. and Morton, D. and Lahr, A. and Gammelli, D. and Carron, A. and Pavone, M.},
+  title     = {Multi-Timescale Model Predictive Control for Slow-Fast Systems},
+  booktitle = proc_EUCA_ECC,
+  year      = {2025},
+  abstract  = {MPC has established itself as the primary methodology for constrained control, enabling autonomy across diverse applications. While model fidelity is crucial in MPC, solving the corresponding optimization problem in real time remains challenging when combining long horizons with high-fidelity models that capture both short-term dynamics and long-term behavior. Motivated by results on the EDS, which imply that, under certain conditions, the influence of modeling inaccuracies decreases exponentially along the prediction horizon, this paper proposes a multi-timescale MPC scheme for fast-sampled control. Tailored to systems with both fast and slow dynamics, the proposed approach improves computational efficiency by i) switching to a reduced model that captures only the slow, dominant dynamics and ii) exponentially increasing integration step sizes to progressively reduce model detail along the horizon. We evaluate the method on three practically motivated robotic control problems in simulation and observe speed-ups of up to an order of magnitude.},
+  month     = nov,
+  url       = {https://arxiv.org/pdf/2511.14311},
+  keywords  = {sub},
+  owner     = {dmorton},
+  timestamp = {2025-11-18}
+}
+
 @inproceedings{SchneiderBylardEtAl2022,
   author    = {Schneider, S. and Bylard, A. and Chen, T. G. and Wang, P. and Cutkosky, M. R. and Pavone, M.},
   title     = {{ReachBot:} {A} Small Robot for Large Mobile Manipulation Tasks},
@@ -2890,12 +2903,13 @@
    title = {Safe, Task-Consistent Manipulation with Operational Space Control Barrier Functions},
    booktitle = proc_IEEE_IROS,
    year = {2025},
+   pages = {187-194},
    abstract = {Safe real-time control of robotic manipulators in unstructured environments requires handling numerous safety constraints without compromising task performance. Traditional approaches, such as artificial potential fields (APFs), suffer from local minima, oscillations, and limited scalability, while model predictive control (MPC) can be computationally expensive. Control barrier functions (CBFs) offer a promising alternative due to their high level of robustness and low computational cost, but these safety filters must be carefully designed to avoid significant reductions in the overall performance of the manipulator. In this work, we introduce an Operational Space Control Barrier Function (OSCBF) framework that integrates safety constraints while preserving task-consistent behavior. Our approach scales to hundreds of simultaneous constraints while retaining real-time control rates, ensuring collision avoidance, singularity prevention, and workspace containment even in highly cluttered and dynamic settings. By explicitly accounting for the task hierarchy in the CBF objective, we prevent degraded performance across both joint-space and operational-space tasks, when at the limit of safety. Our open-source, high-performance software will be available at our project webpage, https://stanfordasl.github.io/oscbf/},
-   keywords = {sub},
    url = {https://arxiv.org/pdf/2503.06736},
    owner = {dmorton},
    timestamp = {2025-03-11},
- }
+   doi = {10.1109/IROS60139.2025.11246389}
+}
 
 @inproceedings{MortonCutkoskyPavone2024,
   author = {Morton, D. and Cutkosky, M. and Pavone, M.},
