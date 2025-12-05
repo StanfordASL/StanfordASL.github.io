@@ -13,11 +13,13 @@ position: visiting
 <li><h6 class="visiting-name">Kim Christensen.</h6> <p class="visiting-excerpt">Norwegian University of Science and Technology.</p></li>
 <li><h6 class="visiting-name">Clemens Christoph.</h6> <p class="visiting-excerpt">ETH Zurich.</p></li>
 <li><h6 class="visiting-name">Claudia Conte.</h6> <p class="visiting-excerpt">University of Naples Federico II.</p></li>
+<li><h6 class="visiting-name">Arpit Dwivedi (Master's Student).</h6> <p class="visiting-excerpt">Stanford University.</p></li>
 <li><h6 class="visiting-name">Patrick Eberhand.</h6> <p class="visiting-excerpt">ETH Zurich.</p></li>
 <li><h6 class="visiting-name">Tobias Enders.</h6> <p class="visiting-excerpt">Technical University of Munich.</p></li>
 <li><h6 class="visiting-name">Roman Engeler.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Zhe Fu.</h6> <p class="visiting-excerpt">University of California, Berkeley.</p></li>
 <li><h6 class="visiting-name">Marta Gazulla.</h6> <p class="visiting-excerpt">ETH Zurich.</p></li>
+<li><h6 class="visiting-name">Fabio Hübel.</h6> <p class="visiting-excerpt">ETH Zurich.</p></li>
 <li><h6 class="visiting-name">Javier V. Gómez.</h6> <p class="visiting-excerpt">Universidad Carlos III de Madrid.</p></li>
 <li><h6 class="visiting-name">Peter Hansen.</h6> <p class="visiting-excerpt">Technical University of Denmark.</p></li>
 <li><h6 class="visiting-name">Marvin Harms.</h6> <p class="visiting-excerpt">Norwegian University of Science and Technology.</p></li>
@@ -28,6 +30,7 @@ position: visiting
 <li><h6 class="visiting-name">Sarah Laamimach.</h6> <p class="visiting-excerpt">Technical University of Munich.</p></li>
 <li><h6 class="visiting-name">Nicolas Lanzetti.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Thomas Lew.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
+<li><h6 class="visiting-name">Adam Lilja.</h6> <p class="visiting-excerpt">Zenseact and Chalmers University of Technology.</p></li>
 <li><h6 class="visiting-name">Florian Mahlknecht.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Francesco Marchiori.</h6> <p class="visiting-excerpt">University of Padova.</p></li>
 <li><h6 class="visiting-name">Layla Martin.</h6> <p class="visiting-excerpt">Technical University of Munich.</p></li>
