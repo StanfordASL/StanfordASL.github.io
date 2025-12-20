@@ -1341,11 +1341,22 @@
   booktitle = proc_IEEE_AC,
   year      = {2026},
   abstract  = {Future multi-spacecraft missions require robust autonomous trajectory optimization capabilities to ensure safe and efficient rendezvous operations. This capability hinges on solving non-convex optimal control problems in real time, although traditional iterative methods such as sequential convex programming impose significant computational challenges. To mitigate this burden, the Autonomous Rendezvous Transformer introduced a generative model trained to provide near-optimal initial guesses. This approach provides convergence to better local optima (e.g., fuel optimality), improves feasibility rates, and results in faster convergence speed of optimization algorithms through warm-starting. This work extends the capabilities of ART to address robust chance-constrained optimal control problems. Specifically, ART is applied to challenging rendezvous scenarios in Low Earth Orbit (LEO), ensuring fault-tolerant behavior under uncertainty. Through extensive experimentation, the proposed warm-starting strategy is shown to consistently produce high-quality reference trajectories, achieving up to 30\% cost improvement and 50\% reduction in infeasible cases compared to conventional methods, demonstrating robust performance across multiple state representations. Additionally, a post hoc evaluation framework is proposed to assess the quality of generated trajectories and mitigate runtime failures, marking an initial step toward the reliable deployment of AI-driven solutions in safety-critical autonomous systems such as spacecraft.},
-  keywords  = {sub},
-  note      = {Submitted},
+  keywords  = {pub},
   owner     = {gammelli},
   timestamp = {2025-10-23},
   url       = {https://arxiv.org/abs/2510.03544?},
+}
+
+@Inproceedings{TakuboDwivediEtAl2026,
+  author    = {Takubo, Y. and Dwivedi, A. and Ramkumar, S. and Pabon, L. and Gammelli, D. and Pavone, M. and {D'Amico}, S.},
+  title     = {Semantic Trajectory Generation for Goal-Oriented Spacecraft Rendezvous},
+  booktitle = proc_AIAA_Scitech,
+  year      = {2026},
+  abstract  = {Reliable real-time trajectory generation is essential for future autonomous spacecraft. While recent progress in nonconvex guidance and control is paving the way for onboard autonomous trajectory optimization, these methods still rely on extensive expert input (e.g., waypoints, constraints, mission timelines, etc.), which limits the operational scalability in real rendezvous missions. This paper introduces SAGES (Semantic Autonomous Guidance Engine for Space), a trajectory-generation framework that translates natural-language commands into spacecraft trajectories that reflect high-level intent while respecting nonconvex constraints. Experiments in two settings -- fault-tolerant proximity operations with continuous-time constraint enforcement and a free-flying robotic platform -- demonstrate that SAGES reliably produces trajectories aligned with human commands, achieving over 90% semantic-behavioral consistency across diverse behavior modes. Ultimately, this work marks an initial step toward language-conditioned, constraint-aware spacecraft trajectory generation, enabling operators to interactively guide both safety and behavior through intuitive natural-language commands with reduced expert burden.},
+  keywords  = {pub},
+  owner     = {gammelli},
+  timestamp = {2025-12-20},
+  url       = {https://arxiv.org/abs/2512.09111},
 }
 
 @Inproceedings{TrescaSchmidtEtAl2026,
