@@ -4398,6 +4398,18 @@
   url       = {https://arxiv.org/abs/2003.10999}
 }
 
+@article{GanaiLuoEtAl2026,
+  author       = {Ganai, M. and Luo, K. and Frey, J. and Barrett, C. and Pavone, M.},
+  title        = {Self-Supervised Bootstrapping of Action-Predictive Embodied Reasoning},
+  year         = {2026},
+  journal      = {ArXiv 2602.08167},
+  abstract     = {Embodied Chain-of-Thought (CoT) reasoning has significantly enhanced Vision-Language-Action (VLA) models, yet current methods rely on rigid templates to specify reasoning primitives (e.g., objects in the scene, high-level plans, structural affordances). These templates can force policies to process irrelevant information that distracts from critical action-prediction signals. This creates a bottleneck: without successful policies, we cannot verify reasoning quality; without quality reasoning, we cannot build robust policies. We introduce R&B-EnCoRe, which enables models to bootstrap embodied reasoning from internet-scale knowledge through self-supervised refinement. By treating reasoning as a latent variable within importance-weighted variational inference, models can generate and distill a refined reasoning training dataset of embodiment-specific strategies without external rewards, verifiers, or human annotation. We validate R&B-EnCoRe across manipulation (Franka Panda in simulation, WidowX in hardware), legged navigation (bipedal, wheeled, bicycle, quadruped), and autonomous driving embodiments using various VLA architectures with 1B, 4B, 7B, and 30B parameters. Our approach achieves 28% gains in manipulation success, 101% improvement in navigation scores, and 21% reduction in collision-rate metric over models that indiscriminately reason about all available primitives. R&B-EnCoRe enables models to distill reasoning that is predictive of successful control, bypassing manual annotation engineering while grounding internet-scale knowledge in physical execution.},
+  url          = {https://arxiv.org/abs/2602.08167},
+  keywords     = {sub},
+  owner        = {mganai},
+  timestamp    = {2026-02-09}
+}
+
 @inproceedings{GanaiSinhaEtAl2025,
  author  = {Ganai, M. and Sinha, R. and Agia, C. and Morton, D. and Di Lillo, L. and Pavone, M.},
  title   = {Real-Time Out-of-Distribution Failure Prevention via Multi-Modal Reasoning},
