@@ -4752,6 +4752,17 @@
 	year={2024}
 }
 
+@inproceedings{ChristensenTufteEtAl2026,
+  author  = {Christensen, K. A. and Tufte, A. G. and Gusev, A. and Sinha, R. and Ganai, M. and Alsos, O. A. and Pavone, M. and Steinert, M.},
+  title   = {Foundation models on the bridge: Semantic hazard detection and safety maneuvers for maritime autonomy with vision-language models},
+  journal = {Ocean Engineering},
+  abstract = {The draft IMO MASS Code requires autonomous and remotely supervised maritime vessels to detect departures from their operational design domain, enter a predefined fallback that notifies the operator, permit immediate human override, and avoid changing the voyage plan without approval. Meeting these obligations in the alert-to-takeover gap calls for a short-horizon, human-overridable safe-keeping policy. Classical maritime autonomy stacks struggle when the correct action depends on meaning (e.g., a diver-down flag means people in the water, fire close by means hazard). We argue (i) that vision–language models (VLMs) provide semantic awareness for such out-of-distribution situations, and (ii) that a fast–slow anomaly pipeline with a short-horizon, human-overridable fallback makes this practical in the handover window. We introduce Semantic Lookout, a camera-only, candidate-constrained vision–language model bridge that selects one cautious action (or station-keeping) from water-valid, world-anchored trajectories under continuous human authority. On 40 harbor scenes we measure per-call scene understanding and latency, alignment with human consensus (model majority-of-three voting), short-horizon risk-relief on fire hazard scenes, and an on-water alert→bridge→operator handover. Sub-10 s models retain most of the awareness of slower state-of-the-art models. The bridge policy outperforms geometry-only baselines and increases standoff distance on fire scenes. A field run verifies end-to-end operation. These results support VLMs as a semantic fallback “bridge policy” compatible with the draft IMO MASS Code, within practical latency budgets, and motivate future work on domain-adapted, hybrid autonomy that pairs foundation-model semantics with multi-sensor bird’s-eye-view perception and short-horizon replanning.},
+  year    = {2026},
+  timestamp = {2026-02-12},
+  url = {https://arxiv.org/abs/2512.24470},
+  owner = {mganai}
+}
+
 @inproceedings{ChowTamarEtAl2015,
   author    = {Chow, Y. and Tamar, A. and Mannor, S. and Pavone, M.},
   title     = {Risk-Sensitive and Robust Decision-Making: a {CVaR} Optimization Approach},
