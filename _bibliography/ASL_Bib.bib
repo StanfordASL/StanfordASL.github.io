@@ -2909,6 +2909,18 @@
   timestamp = {2021-10-14}
 }
 
+@article{MortonPavone2026frax,
+  author = {Morton, Daniel and Pavone, Marco},
+  title = {frax: Fast Robot Kinematics and Dynamics in JAX},
+  year = {2026},
+  owner = {dmorton},
+  timestamp = {2026-04-06},
+  abstract = {In robot control, planning, and learning, there is a need for rigid-body dynamics libraries that are highly performant, easy to use, and compatible with CPUs and accelerators. While existing libraries often excel at either low-latency CPU execution or high-throughput GPU workloads, few provide a unified framework that targets multiple architectures without compromising performance or ease-of-use. To address this, we introduce frax, a JAX-based library for robot kinematics and dynamics, providing a high-performance, pure-Python interface across CPU, GPU, and TPU. Via a fully-vectorized approach to robot dynamics, frax enables efficient real-time control and parallelization, while supporting automatic differentiation for optimization-based methods. On CPU, frax achieves low-microsecond computation times suitable for kilohertz control rates, outperforming common libraries in Python and approaching optimized C++ implementations. On GPU, the same code scales to thousands of instances, reaching upwards of 100 million dynamics evaluations per second. We validate performance on a Franka Panda manipulator and a Unitree G1 humanoid, and release frax as an open-source library.},
+  keywords  = {sub},
+  url = {https://arxiv.org/pdf/2604.04310},
+  note = {Submitted to the ICRA 2026 Workshop on Frontiers of Optimization for Robotics},
+}
+
 @article{MortonAntonovaEtAl2025,
   author = {Morton, Daniel and Antonova, Rika and Coltin, Brian and Pavone, Marco and Bohg, Jeannette},
   title = {Deformable Cargo Transport in Microgravity with Astrobee},
