@@ -4459,13 +4459,11 @@
   title        = {Self-Supervised Bootstrapping of Action-Predictive Embodied Reasoning},
   booktitle    = proc_RSS,
   year         = {2026},
-  month        = april,
   abstract     = {Embodied Chain-of-Thought (CoT) reasoning has significantly enhanced Vision-Language-Action (VLA) models, yet current methods rely on rigid templates to specify reasoning primitives (e.g., objects in the scene, high-level plans, structural affordances). These templates can force policies to process irrelevant information that distracts from critical action-prediction signals. This creates a bottleneck: without successful policies, we cannot verify reasoning quality; without quality reasoning, we cannot build robust policies. We introduce R&B-EnCoRe, which enables models to bootstrap embodied reasoning from internet-scale knowledge through self-supervised refinement. By treating reasoning as a latent variable within importance-weighted variational inference, models can generate and distill a refined reasoning training dataset of embodiment-specific strategies without external rewards, verifiers, or human annotation. We validate R&B-EnCoRe across manipulation (Franka Panda in simulation, WidowX in hardware), legged navigation (bipedal, wheeled, bicycle, quadruped), and autonomous driving embodiments using various VLA architectures with 1B, 4B, 7B, and 30B parameters. Our approach achieves 28% gains in manipulation success, 101% improvement in navigation scores, and 21% reduction in collision-rate metric over models that indiscriminately reason about all available primitives. R&B-EnCoRe enables models to distill reasoning that is predictive of successful control, bypassing manual annotation engineering while grounding internet-scale knowledge in physical execution.},
   address      = {Sydney, Australia},
-  keywords     = {press},
   owner        = {mganai},
   url          = {https://arxiv.org/abs/2602.08167},
-  timestamp    = {2026-02-09},
+  timestamp    = {2026-04-26},
 }
 
 @inproceedings{GanaiSinhaEtAl2025,
@@ -4476,7 +4474,6 @@
  month     = july,
  abstract  = {While foundation models offer promise toward improving robot safety in out-of-distribution (OOD) scenarios, how to effectively harness their generalist knowledge for real-time, dynamically feasible response remains a crucial problem. We present FORTRESS, a joint reasoning and planning framework that generates semantically safe fallback strategies to prevent safety-critical, OOD failures. At a low frequency under nominal operation, FORTRESS uses multi-modal foundation models to anticipate possible failure modes and identify safe fallback sets. When a runtime monitor triggers a fallback response, FORTRESS rapidly synthesizes plans to fallback goals while inferring and avoiding semantically unsafe regions in real time. By bridging open-world, multi-modal reasoning with dynamics-aware planning, we eliminate the need for hard-coded fallbacks and human safety interventions. FORTRESS outperforms on-the-fly prompting of slow reasoning models in safety classification accuracy on synthetic benchmarks and real-world ANYmal robot data, and further improves system safety and planning success in simulation and on quadrotor hardware for urban navigation.},
  address   = {Seoul, Korea},
- keywords  = {press},
  owner     = {mganai},
  url    = {https://arxiv.org/abs/2505.10547},
  timestamp = {2025-06-08},
