@@ -34,6 +34,7 @@ position: visiting
 <li><h6 class="visiting-name">Florian Mahlknecht.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Francesco Marchiori.</h6> <p class="visiting-excerpt">University of Padova.</p></li>
 <li><h6 class="visiting-name">Layla Martin.</h6> <p class="visiting-excerpt">Technical University of Munich.</p></li>
+<li><h6 class="visiting-name">Mozhgan Nasr Azadani (visiting postdoc scholar).</h6> <p class="visiting-excerpt">University of Waterloo.</p></li>
 <li><h6 class="visiting-name">Jonas Matt.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Dejan Milojevic.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Luca Paparusso.</h6> <p class="visiting-excerpt">Politecnico Di Milano.</p></li>
