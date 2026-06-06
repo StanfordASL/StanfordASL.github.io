@@ -577,6 +577,7 @@
 @String{proc_IEEE_ICHRI                = {{IEEE Int. Conf. on Human-Robot Interaction}}}
 @String{proc_IEEE_ICRA                 = {{Proc. IEEE Conf. on Robotics and Automation}}}
 @String{proc_IEEE_ICRA_SVLM            = {{Proc. IEEE Conf. on Robotics and Automation: Workshop Safe-VLM}}}
+@String{proc_IEEE_ICRA_FOR             = {{Proc. IEEE Conf. on Robotics and Automation: Workshop on Frontiers of Optimization for Robotics}}}
 @String{proc_IEEE_INFOCOM              = {{IEEE Conf. on Computer Communications}}}
 @String{proc_IEEE_IPDPS                = {{IEEE Parallel and Distributed Processing Symposium}}}
 @String{proc_IEEE_IRC                  = {{IEEE Int. Conf. on Robotic Computing}}}
@@ -2930,16 +2931,26 @@
   timestamp = {2021-10-14}
 }
 
+@article{Morton2026constrained,
+  author = {Morton, Daniel and Mohnot, Pranit and Pavone, Marco},
+  title = {Constrained Whole-Body Tracking for Humanoid Robots},
+  year = {2026},
+  owner = {dmorton},
+  timestamp = {2026-05-29},
+  abstract = {Recent advances in reinforcement learning (RL) have demonstrated impressive whole-body agility for humanoid robots, yet ensuring safety and satisfying constraints -- particularly those specified after training -- remains a challenge. Towards this goal, we present ConstrainedMimic, a control framework that leverages whole-body kinematics and dynamics for real-time constraint enforcement within RL tracking policies. By integrating principles from operational space control and control barrier functions (CBFs), we enable the satisfaction of arbitrary runtime constraints on both the kinematic reference motion and the underlying dynamics. In whole-body motion-tracking and teleoperation experiments on a (simulated) Unitree G1 with a learned policy, we demonstrate collision avoidance (both with the robot body and external obstacles), joint limits, and center of mass stability constraints. By remaining consistent with the current contact mode and tracking objectives, we minimally restrict the capabilities of the policy when constraints are active. Our method is fully differentiable, runs on CPU, GPU, and TPU, and can be deployed at up to 300-500 Hz. All software will be freely available upon publication.},
+  keywords  = {sub},
+  url = {https://arxiv.org/pdf/2606.00374},
+}
+
 @article{MortonPavone2026frax,
   author = {Morton, Daniel and Pavone, Marco},
   title = {frax: Fast Robot Kinematics and Dynamics in JAX},
+  journal = proc_IEEE_ICRA_FOR,
   year = {2026},
   owner = {dmorton},
   timestamp = {2026-04-06},
   abstract = {In robot control, planning, and learning, there is a need for rigid-body dynamics libraries that are highly performant, easy to use, and compatible with CPUs and accelerators. While existing libraries often excel at either low-latency CPU execution or high-throughput GPU workloads, few provide a unified framework that targets multiple architectures without compromising performance or ease-of-use. To address this, we introduce frax, a JAX-based library for robot kinematics and dynamics, providing a high-performance, pure-Python interface across CPU, GPU, and TPU. Via a fully-vectorized approach to robot dynamics, frax enables efficient real-time control and parallelization, while supporting automatic differentiation for optimization-based methods. On CPU, frax achieves low-microsecond computation times suitable for kilohertz control rates, outperforming common libraries in Python and approaching optimized C++ implementations. On GPU, the same code scales to thousands of instances, reaching upwards of 100 million dynamics evaluations per second. We validate performance on a Franka Panda manipulator and a Unitree G1 humanoid, and release frax as an open-source library.},
-  keywords  = {sub},
   url = {https://arxiv.org/pdf/2604.04310},
-  note = {Submitted to the ICRA 2026 Workshop on Frontiers of Optimization for Robotics},
 }
 
 @article{MortonAntonovaEtAl2025,
